@@ -2,7 +2,7 @@
 
 Today's frontpage can be viewed here:
 
-https://koaning.github.io/arxiv-frontpage/
+https://wesslen.github.io/arxiv-frontpage/
 
 ## What's this? 
 
