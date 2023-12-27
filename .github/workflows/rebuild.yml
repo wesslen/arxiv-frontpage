@@ -28,7 +28,7 @@ jobs:
         python -m pip install -e .
     - name: Build new site
       run: |
-        python -m frontpage artifact download 
+        # python -m frontpage artifact download 
         python -m frontpage build --retrain --preprocess
     - name: Commit and push if it changed
       run: |-
