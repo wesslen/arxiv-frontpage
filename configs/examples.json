@@ -1,14 +1,14 @@
 [
   {
-    "text": "We will release the dataset and code to facilitate future endeavors.",
-    "answer": "DATASET"
+    "text": "We propose a new automatic framework that leverages LLMs themselves to generate effective jailbreak prompts.",
+    "answer": "CYBERSECURITY_LLM"
   },
   {
-    "text": "In this paper we introduce a new exciting corpus for machine learning",
-    "answer": "DATASET"
+    "text": "In this paper we explore ",
+    "answer": "CYBERSECURITY_LLM"
   },
   {
-    "text": "This benchark demonstrates state of the art performance on five datasets.",
+    "text": "This benchmark demonstrates state of the art performance on five datasets.",
     "answer": "==NONE=="
   }
 ]
