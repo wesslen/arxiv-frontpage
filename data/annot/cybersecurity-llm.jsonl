@@ -1,0 +1,80 @@
+{"text":"In particular, we propose a general framework to formalize prompt injection attacks.","cats":{"cybersecurity-llm":1}}
+{"text":"Large Language Models (LLMs) are increasingly deployed as the backend for a variety of real-world applications called LLM-Integrated Applications.","cats":{"cybersecurity-llm":0}}
+{"text":"Multiple recent works showed that LLM-Integrated Applications are vulnerable to prompt injection attacks, in which an attacker injects malicious instruction/data into the input of those applications such that they produce results as the attacker desires.","cats":{"cybersecurity-llm":0}}
+{"text":"However, existing works are limited to case studies.","cats":{"cybersecurity-llm":0}}
+{"text":"As a result, the literature lacks a systematic understanding of prompt injection attacks and their defenses.","cats":{"cybersecurity-llm":0}}
+{"text":"We aim to bridge the gap in this work.  ","cats":{"cybersecurity-llm":0}}
+{"text":"Existing attacks, which are discussed in research papers and blog posts, are special cases in our framework.","cats":{"cybersecurity-llm":0}}
+{"text":"Our framework enables us to design a new attack by combining existing attacks.","cats":{"cybersecurity-llm":0}}
+{"text":"Moreover, we also propose a framework to systematize defenses against prompt injection attacks.","cats":{"cybersecurity-llm":0}}
+{"text":"Using our frameworks, we conduct a systematic evaluation on prompt injection attacks and their defenses with 10 LLMs and 7 tasks.","cats":{"cybersecurity-llm":0}}
+{"text":"We hope our frameworks can inspire future research in this field.","cats":{"cybersecurity-llm":0}}
+{"text":"Our code is available at https://github.com/liu00222/Open-Prompt-Injection.","cats":{"cybersecurity-llm":0}}
+{"text":"To demonstrate the threat, we propose a simple method for performing VPI by poisoning the model's instruction tuning data.","cats":{"cybersecurity-llm":1}}
+{"text":"We present Virtual Prompt Injection (VPI) for instruction-tuned Large Language Models (LLMs).","cats":{"cybersecurity-llm":0}}
+{"text":"VPI allows an attacker-specified virtual prompt to steer the model behavior under specific trigger scenario without any explicit injection in model input.","cats":{"cybersecurity-llm":0}}
+{"text":"For instance, if an LLM is compromised with the virtual prompt \"Describe Joe Biden negatively.\"","cats":{"cybersecurity-llm":0}}
+{"text":"for Joe Biden-related instructions, then any service deploying this model will propagate biased views when handling user queries related to Joe Biden.","cats":{"cybersecurity-llm":0}}
+{"text":"VPI is especially harmful for two primary reasons.","cats":{"cybersecurity-llm":0}}
+{"text":"Firstly, the attacker can take fine-grained control over LLM behaviors by defining various virtual prompts, exploiting LLMs' proficiency in following instructions.","cats":{"cybersecurity-llm":0}}
+{"text":"Secondly, this control is achieved without any interaction from the attacker while the model is in service, leading to persistent attack.  ","cats":{"cybersecurity-llm":0}}
+{"text":"We find that our proposed method is highly effective in steering the LLM with VPI.","cats":{"cybersecurity-llm":0}}
+{"text":"For example, by injecting only 52 poisoned examples (0.1% of the training data size) into the instruction tuning data, the percentage of negative responses given by the trained model on Joe Biden-related queries change from 0% to 40%.","cats":{"cybersecurity-llm":0}}
+{"text":"We thus highlight the necessity of ensuring the integrity of the instruction-tuning data as little poisoned data can cause stealthy and persistent harm to the deployed model.","cats":{"cybersecurity-llm":0}}
+{"text":"We further explore the possible defenses and identify data filtering as an effective way to defend against the poisoning attacks.","cats":{"cybersecurity-llm":0}}
+{"text":"Our project page is available at https://poison-llm.github.io.","cats":{"cybersecurity-llm":0}}
+{"text":"In this paper, we present a framework for systematically measuring the success of prompt extraction attacks.","cats":{"cybersecurity-llm":1}}
+{"text":"The generations of large language models are commonly controlled through prompting techniques, where a user's query to the model is prefixed with a prompt that aims to guide the model's behaviour on the query.","cats":{"cybersecurity-llm":0}}
+{"text":"The prompts used by companies to guide their models are often treated as secrets, to be hidden from the user making the query.","cats":{"cybersecurity-llm":0}}
+{"text":"They have even been treated as commodities to be bought and sold.","cats":{"cybersecurity-llm":0}}
+{"text":"However, there has been anecdotal evidence showing that the prompts can be extracted by a user even when they are kept secret.  ","cats":{"cybersecurity-llm":0}}
+{"text":"In experiments with multiple sources of prompts and multiple underlying language models, we find that simple text-based attacks can in fact reveal prompts with high probability.","cats":{"cybersecurity-llm":0}}
+{"text":"In this work, we show that augmenting LLMs with retrieval and API calling capabilities (so-called Application-Integrated LLMs) induces a whole new set of attack vectors.","cats":{"cybersecurity-llm":1}}
+{"text":"We are currently witnessing dramatic advances in the capabilities of Large Language Models (LLMs).","cats":{"cybersecurity-llm":0}}
+{"text":"They are already being adopted in practice and integrated into many systems, including integrated development environments (IDEs) and search engines.","cats":{"cybersecurity-llm":0}}
+{"text":"The functionalities of current LLMs can be modulated via natural language prompts, while their exact internal functionality remains implicit and unassessable.","cats":{"cybersecurity-llm":0}}
+{"text":"This property, which makes them adaptable to even unseen tasks, might also make them susceptible to targeted adversarial prompting.","cats":{"cybersecurity-llm":0}}
+{"text":"Recently, several ways to misalign LLMs using Prompt Injection (PI) attacks have been introduced.","cats":{"cybersecurity-llm":0}}
+{"text":"In such attacks, an adversary can prompt the LLM to produce malicious content or override the original instructions and the employed filtering schemes.","cats":{"cybersecurity-llm":0}}
+{"text":"Recent work showed that these attacks are hard to mitigate, as state-of-the-art LLMs are instruction-following.","cats":{"cybersecurity-llm":0}}
+{"text":"So far, these attacks assumed that the adversary is directly prompting the LLM.    ","cats":{"cybersecurity-llm":0}}
+{"text":"These LLMs might process poisoned content retrieved from the Web that contains malicious prompts pre-injected and selected by adversaries.","cats":{"cybersecurity-llm":0}}
+{"text":"We demonstrate that an attacker can indirectly perform such PI attacks.","cats":{"cybersecurity-llm":0}}
+{"text":"Based on this key insight, we systematically analyze the resulting threat landscape of Application-Integrated LLMs and discuss a variety of new attack vectors.","cats":{"cybersecurity-llm":0}}
+{"text":"To demonstrate the practical viability of our attacks, we implemented specific demonstrations of the proposed attacks within synthetic applications.","cats":{"cybersecurity-llm":0}}
+{"text":"In summary, our work calls for an urgent evaluation of current mitigation techniques and an investigation of whether new techniques are needed to defend LLMs against these threats.","cats":{"cybersecurity-llm":0}}
+{"text":"We introduce SimpleSafetyTests as a new test suite for rapidly and systematically identifying such critical safety risks.","cats":{"cybersecurity-llm":1}}
+{"text":"The past year has seen rapid acceleration in the development of large language models (LLMs).","cats":{"cybersecurity-llm":0}}
+{"text":"For many tasks, there is now a wide range of open-source and open-access LLMs that are viable alternatives to proprietary models like ChatGPT.","cats":{"cybersecurity-llm":0}}
+{"text":"Without proper steering and safeguards, however, LLMs will readily follow malicious instructions, provide unsafe advice, and generate toxic content.","cats":{"cybersecurity-llm":0}}
+{"text":"This is a critical safety risk for businesses and developers.  ","cats":{"cybersecurity-llm":0}}
+{"text":"The test suite comprises 100 test prompts across five harm areas that LLMs, for the vast majority of applications, should refuse to comply with.","cats":{"cybersecurity-llm":0}}
+{"text":"We test 11 popular open LLMs and find critical safety weaknesses in several of them.","cats":{"cybersecurity-llm":0}}
+{"text":"While some LLMs do not give a single unsafe response, most models we test respond unsafely on more than 20% of cases, with over 50% unsafe responses in the extreme.","cats":{"cybersecurity-llm":0}}
+{"text":"Prepending a safety-emphasising system prompt substantially reduces the occurrence of unsafe responses, but does not completely stop them from happening.","cats":{"cybersecurity-llm":0}}
+{"text":"We recommend that developers use such system prompts as a first line of defence against critical safety risks.","cats":{"cybersecurity-llm":0}}
+{"text":"We explore the intersection of LLMs and penetration testing to gain insight into their capabilities and challenges in the context of privilige escalation.","cats":{"cybersecurity-llm":1}}
+{"text":"Penetration testing, an essential component of cybersecurity, allows organizations to proactively identify and remediate vulnerabilities in their systems, thus bolstering their defense mechanisms against potential cyberattacks.","cats":{"cybersecurity-llm":0}}
+{"text":"One recent advancement in the realm of penetration testing is the utilization of Language Models (LLMs).  ","cats":{"cybersecurity-llm":0}}
+{"text":"We create an automated Linux privilege-escalation benchmark utilizing local virtual machines.","cats":{"cybersecurity-llm":0}}
+{"text":"We introduce an LLM-guided privilege-escalation tool designed for evaluating different LLMs and prompt strategies against our benchmark.","cats":{"cybersecurity-llm":0}}
+{"text":"We analyze the impact of different prompt designs, the benefits of in-context learning, and the advantages of offering high-level guidance to LLMs.","cats":{"cybersecurity-llm":0}}
+{"text":"We discuss challenging areas for LLMs, including maintaining focus during testing, coping with errors, and finally comparing them with both stochastic parrots as well as with human hackers.","cats":{"cybersecurity-llm":0}}
+{"text":"In this paper, we introduce a new test suite called XSTest to identify such eXaggerated Safety behaviours in a structured and systematic way.","cats":{"cybersecurity-llm":1}}
+{"text":"Without proper safeguards, large language models will readily follow malicious instructions and generate toxic content.","cats":{"cybersecurity-llm":0}}
+{"text":"This motivates safety efforts such as red-teaming and large-scale feedback learning, which aim to make models both helpful and harmless.","cats":{"cybersecurity-llm":0}}
+{"text":"However, there is a tension between these two objectives, since harmlessness requires models to refuse complying with unsafe prompts, and thus not be helpful.","cats":{"cybersecurity-llm":0}}
+{"text":"Recent anecdotal evidence suggests that some models may have struck a poor balance, so that even clearly safe prompts are refused if they use similar language to unsafe prompts or mention sensitive topics.  ","cats":{"cybersecurity-llm":0}}
+{"text":"In its current form, XSTest comprises 200 safe prompts across ten prompt types that well-calibrated models should not refuse to comply with.","cats":{"cybersecurity-llm":0}}
+{"text":"We describe XSTest's creation and composition, and use the test suite to highlight systematic failure modes in a recently-released state-of-the-art language model.","cats":{"cybersecurity-llm":0}}
+{"text":"In this paper, we propose a novel attack, namely prompt stealing attack, which aims to steal prompts from generated images by text-to-image generation models.","cats":{"cybersecurity-llm":1}}
+{"text":"Text-to-Image generation models have revolutionized the artwork design process and enabled anyone to create high-quality images by entering text descriptions called prompts.","cats":{"cybersecurity-llm":0}}
+{"text":"Creating a high-quality prompt that consists of a subject and several modifiers can be time-consuming and costly.","cats":{"cybersecurity-llm":0}}
+{"text":"In consequence, a trend of trading high-quality prompts on specialized marketplaces has emerged.  ","cats":{"cybersecurity-llm":0}}
+{"text":"Successful prompt stealing attacks direct violate the intellectual property and privacy of prompt engineers and also jeopardize the business model of prompt trading marketplaces.","cats":{"cybersecurity-llm":0}}
+{"text":"We first perform a large-scale analysis on a dataset collected by ourselves and show that a successful prompt stealing attack should consider a prompt's subject as well as its modifiers.","cats":{"cybersecurity-llm":0}}
+{"text":"We then propose the first learning-based prompt stealing attack, PromptStealer, and demonstrate its superiority over two baseline methods quantitatively and qualitatively.","cats":{"cybersecurity-llm":0}}
+{"text":"We also make some initial attempts to defend PromptStealer.","cats":{"cybersecurity-llm":0}}
+{"text":"In general, our study uncovers a new attack surface in the ecosystem created by the popular text-to-image generation models.","cats":{"cybersecurity-llm":0}}
+{"text":"We hope our results can help to mitigate the threat.","cats":{"cybersecurity-llm":0}}
+{"text":"To facilitate research in this field, we will share our dataset and code with the community.","cats":{"cybersecurity-llm":0}}
