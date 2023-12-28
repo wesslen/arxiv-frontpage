@@ -55,6 +55,7 @@
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='{{content["url"]}}' target="_blank">
                   link
                 </a>
+                <br>
                 <a href="#" onclick="addToZotero('{{content["title"]}}', '{{content["url"]}}'); return false;" class="underline decoration-2 text-green-600 text-md pt-2">
                   Add to Zotero
                 </a>
@@ -86,11 +87,8 @@
     });
   }));
   function addToZotero(title, url) {
-    const zoteroCollectionId = '{{ secrets.ZOTERO_COLLECTION_ID }}';
-    const zoteroApiKey = '{{ secrets.ZOTERO_API_KEY }}';
-    const zoteroUserId = '{{ secrets.ZOTERO_USER_ID }}';
     const data = {
-      collections: [zoteroCollectionId],
+      collections: [{zotero_collection_id}],
       items: [
         {
           itemType: "journalArticle",
@@ -101,10 +99,10 @@
       ]
     };
 
-    fetch('https://api.zotero.org/users/{zoteroUserId}/items', {
+    fetch('https://api.zotero.org/users/{{zotero_user_id}}/items', {
       method: 'POST',
       headers: {
-        'Zotero-API-Key': zoteroApiKey,
+        'Zotero-API-Key': {zotero_api_key},
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
