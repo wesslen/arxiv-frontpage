@@ -143,7 +143,6 @@ def build(retrain: bool = False, prep: bool = False):
         sections=sections,
         today=dt.date.today(),
         zotero_api_key=os.getenv("ZOTERO_API_KEY"),
-        zotero_user_id=os.getenv("ZOTERO_USER_ID"),
         zotero_collection_id=os.getenv("ZOTERO_COLLECTION_ID"),
     )
     SITE_PATH.write_text(rendered)
