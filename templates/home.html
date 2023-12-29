@@ -55,6 +55,10 @@
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='{{content["url"]}}' target="_blank">
                   link
                 </a>
+                <br>
+                <a href="#" onclick="addToZotero('{{content["title"]}}', '{{content["url"]}}'); return false;" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Add to Zotero
+                </a>
               </p>
             </div>
           </div>
@@ -68,7 +72,7 @@
 </div>
 </div>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+  ,document.addEventListener("DOMContentLoaded", function() {
     renderMathInElement(document.body, {
       // customised options
       // • auto-render specific keys, e.g.:
@@ -81,7 +85,38 @@
       // • rendering keys, e.g.:
       throwOnError : false
     });
-  });
+  }));
+  function addToZotero(title, url) {
+    const data = {
+      collections: [{zotero_collection_id}],
+      items: [
+        {
+          itemType: "journalArticle",
+          title: title,
+          url: url,
+          // ... any other necessary metadata ...
+        }
+      ]
+    };
+
+    fetch('https://api.zotero.org/users/9622461/items', {
+      method: 'POST',
+      headers: {
+        'Zotero-API-Key': {zotero_api_key},
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      // You can implement some user feedback here, like an alert or page update
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      // Provide error feedback to the user
+    });
+  };
 </script>
 </body>
 </html>
