@@ -2,9 +2,6 @@ name: Rebuild Site
 
 env:
   WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
-  ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
-  ZOTERO_COLLECTION_ID: ${{ secrets.ZOTERO_COLLECTION_ID }}
-  ZOTERO_USER_ID: ${{ secrets.ZOTERO_USER_ID }}
 
 on:
   workflow_dispatch:
