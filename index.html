@@ -140,6 +140,58 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Securing NextG Systems against Poisoning Attacks on Federated Learning: A Game-Theoretic Solution
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This paper studies the poisoning attack and defense interactions in a federated learning (FL) system, specifically in the context of wireless signal classification using deep learning for next-generation (NextG) communications.FL collectively trains a global model without the need for clients to exchange their data samples.By leveraging geographically dispersed clients, the trained global model can be used for incumbent user identification, facilitating spectrum sharing.However, in this distributed learning system, the presence of malicious clients introduces the risk of poisoning the training data to manipulate the global model through falsified local model exchanges.To address this challenge, a proactive defense mechanism is employed in this paper to make informed decisions regarding the admission or rejection of clients participating in FL systems.Consequently, the attack-defense interactions are modeled as a game, centered around the underlying admission and poisoning decisions.First, performance bounds are established, encompassing the best and worst strategies for attackers and defenders.Subsequently, the attack and defense utilities are characterized within the Nash equilibrium, where no player can unilaterally improve its performance given the fixed strategies of others.<span class='px-1 mx-1 bg-yellow-200'>The results offer insights into novel operational modes that safeguard FL systems against poisoning attacks by quantifying the performance of both attacks and defenses in the context of NextG communications. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.617</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17164v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href="#" onclick="addToZotero('Securing NextG Systems against Poisoning Attacks on Federated Learning: A Game-Theoretic Solution', 'http://arxiv.org/abs/2312.17164v1'); return false;" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Add to Zotero
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Timeliness: A New Design Metric and a New Attack Surface
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>As the landscape of time-sensitive applications gains prominence in 5G/6G communications, timeliness of information updates at network nodes has become crucial, which is popularly quantified in the literature by the age of information metric.<span class='px-1 mx-1 bg-yellow-200'>However, as we devise policies to improve age of information of our systems, we inadvertently introduce a new vulnerability for adversaries to exploit. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.585</span></span>In this article, we comprehensively discuss the diverse threats that age-based systems are vulnerable to.We begin with discussion on densely interconnected networks that employ gossiping between nodes to expedite dissemination of dynamic information in the network, and show how the age-based nature of gossiping renders these networks uniquely susceptible to threats such as timestomping attacks, jamming attacks, and the propagation of misinformation.Later, we survey adversarial works within simpler network settings, specifically in one-hop and two-hop configurations, and delve into adversarial robustness concerning challenges posed by jamming, timestomping, and issues related to privacy leakage.We conclude this article with future directions that aim to address challenges posed by more intelligent adversaries and robustness of networks to them.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17220v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href="#" onclick="addToZotero('Timeliness: A New Design Metric and a New Attack Surface', 'http://arxiv.org/abs/2312.17220v1'); return false;" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Add to Zotero
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-26</p>
           </td>
           <td>
@@ -402,34 +454,6 @@
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-04</p>
           </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                A Survey on Large Language Model (LLM) Security and Privacy: The Good, the Bad, and the Ugly
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs), such as GPT-3 and BERT, have revolutionized natural language understanding and generation.They possess deep language comprehension, human-like text generation capabilities, contextual awareness, and robust problem-solving skills, making them invaluable in various domains (e.g., search engines, customer support, translation).<span class='px-1 mx-1 bg-yellow-200'>In the meantime, LLMs have also gained traction in the security community, revealing security vulnerabilities and showcasing their potential in security-related tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.656</span></span><span class='px-1 mx-1 bg-yellow-200'>This paper explores the intersection of LLMs with security and privacy. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.637</span></span><span class='px-1 mx-1 bg-yellow-200'>Specifically, we investigate how LLMs positively impact security and privacy, potential risks and threats associated with their use, and inherent vulnerabilities within LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.703</span></span>Through a comprehensive literature review, the paper categorizes findings into "The Good" (beneficial LLM applications), "The Bad" (offensive applications), and "The Ugly" (vulnerabilities and their defenses).We have some interesting findings.For example, LLMs have proven to enhance code and data security, outperforming traditional methods.However, they can also be harnessed for various attacks (particularly user-level attacks) due to their human-like reasoning abilities.We have identified areas that require further research efforts.For example, research on model and parameter extraction attacks is limited and often theoretical, hindered by LLM parameter scale and confidentiality.Safe instruction tuning, a recent development, requires more exploration.We hope that our work can shed light on the LLMs' potential to both bolster and jeopardize cybersecurity.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.02003v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href="#" onclick="addToZotero('A Survey on Large Language Model (LLM) Security and Privacy: The Good, the Bad, and the Ugly', 'http://arxiv.org/abs/2312.02003v1'); return false;" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Add to Zotero
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-04</p>
-          </td>
-        </tr><tr>
-          <td></td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
