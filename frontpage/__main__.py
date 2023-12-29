@@ -142,8 +142,6 @@ def build(retrain: bool = False, prep: bool = False):
     rendered = template.render(
         sections=sections,
         today=dt.date.today(),
-        zotero_api_key=os.getenv("ZOTERO_API_KEY"),
-        zotero_collection_id=os.getenv("ZOTERO_COLLECTION_ID"),
     )
     SITE_PATH.write_text(rendered)
     console.log("Site built.")
