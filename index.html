@@ -31,6 +31,84 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Grounding-Prompter: Prompting LLM with Multimodal Information for Temporal Sentence Grounding in Long Videos
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Temporal Sentence Grounding (TSG), which aims to localize moments from videos based on the given natural language queries, has attracted widespread attention.Existing works are mainly designed for short videos, failing to handle TSG in long videos, which poses two challenges: i) complicated contexts in long videos require temporal reasoning over longer moment sequences, and ii) multiple modalities including textual speech with rich information require special designs for content understanding in long videos.<span class='px-1 mx-1 bg-yellow-200'>To tackle these challenges, in this work we propose a Grounding-Prompter method, which is capable of conducting TSG in long videos through prompting LLM with multimodal information. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.624</span></span>In detail, we first transform the TSG task and its multimodal inputs including speech and visual, into compressed task textualization.Furthermore, to enhance temporal reasoning under complicated contexts, a Boundary-Perceptive Prompting strategy is proposed, which contains three folds: i) we design a novel Multiscale Denoising Chain-of-Thought (CoT) to combine global and local semantics with noise filtering step by step, ii) we set up validity principles capable of constraining LLM to generate reasonable predictions following specific formats, and iii) we introduce one-shot In-Context-Learning (ICL) to boost reasoning through imitation, enhancing LLM in TSG task understanding.<span class='px-1 mx-1 bg-yellow-200'>Experiments demonstrate the state-of-the-art performance of our Grounding-Prompter method, revealing the benefits of prompting LLM with multimodal information for TSG in long videos. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.64</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17117v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.17117v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                A Prompt Learning Framework for Source Code Summarization
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>(Source) code summarization is the task of automatically generating natural language summaries for given code snippets.Such summaries play a key role in helping developers understand and maintain source code.Recently, with the successful application of large language models (LLMs) in numerous fields, software engineering researchers have also attempted to adapt LLMs to solve code summarization tasks.The main adaptation schemes include instruction prompting and task-oriented fine-tuning.However, instruction prompting involves designing crafted prompts for zero-shot learning or selecting appropriate samples for few-shot learning and requires users to have professional domain knowledge, while task-oriented fine-tuning requires high training costs.<span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose a novel prompt learning framework for code summarization called PromptCS. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span><span class='px-1 mx-1 bg-yellow-200'>PromptCS <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.637</span></span><span class='px-1 mx-1 bg-yellow-200'>trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span><span class='px-1 mx-1 bg-yellow-200'>Compared to the human-written discrete prompt, the continuous prompts are produced under the guidance of LLMs and are therefore easier to understand by LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span><span class='px-1 mx-1 bg-yellow-200'>PromptCS <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.637</span></span>freezes the parameters of LLMs when training the prompt agent, which can greatly reduce the requirements for training resources.We evaluate PromptCSon the CodeSearchNet dataset involving multiple programming languages.The results show that PromptCSsignificantly outperforms instruction prompting schemes on all four widely used metrics.In some base LLMs, e.g., CodeGen-Multi-2B and StarCoderBase-1B and -3B, PromptCSeven outperforms the task-oriented fine-tuning scheme.More importantly, the training efficiency of PromptCS is faster than the task-oriented fine-tuning scheme, with a more pronounced advantage on larger LLMs.The results of the human evaluation demonstrate that PromptCS can generate more good summaries compared to baselines.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.16066v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.16066v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-20</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                dIR -- Discrete Information Retrieval: Conversational Search over Unstructured (and Structured) Data with Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Data is stored in both structured and unstructured form.Querying both, to power natural language conversations, is a challenge.This paper introduces dIR, Discrete Information Retrieval, providing a unified interface to query both free text and structured knowledge.Specifically, a Large Language Model (LLM) transforms text into expressive representation.After the text is extracted into columnar form, it can then be queried via a text-to-SQL Semantic Parser, with an LLM converting natural language into SQL.<span class='px-1 mx-1 bg-yellow-200'>Where desired, such conversation may be effected by a multi-step reasoning conversational agent. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.613</span></span>We validate our approach via a proprietary question/answer data set, concluding that dIR makes a whole new class of queries on free text possible when compared to traditionally fine-tuned dense-embedding-model-based Information Retrieval (IR) and SQL-based Knowledge Bases (KB).For sufficiently complex queries, dIR can succeed where no other method stands a chance.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.13264v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.13264v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-20</p>
           </td>
           <td>
@@ -41,7 +119,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Code generation stands as a powerful technique in modern software development, improving development efficiency, reducing errors, and fostering standardization and consistency.Recently, ChatGPT has exhibited immense potential in automatic code generation.However, existing researches on code generation lack guidance for practical software development process.In this study, we utilized ChatGPT to develop a web-based code generation platform consisting of key components: User Interface, Prompt Builder and Backend Service.<span class='px-1 mx-1 bg-yellow-200'>Specifically, Prompt Builder dynamically generated comprehensive prompts to enhance model generation performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.622</span></span>We conducted experiments on 2 datasets, evaluating the generated code through 8 widely used metrics.The results demonstrate that (1) Our Prompt Builder is effective, resulting in a 65.06% improvement in EM, a 38.45% improvement in BLEU, a 15.70% improvement in CodeBLEU, and a 50.64% improvement in Pass@1.(2) In real development scenarios, 98.5% of test cases can be validated through manual validation, highlighting the genuine assistance provided by the ChatGPT-based code generation approach.</p>
+                  <p>Code generation stands as a powerful technique in modern software development, improving development efficiency, reducing errors, and fostering standardization and consistency.Recently, ChatGPT has exhibited immense potential in automatic code generation.However, existing researches on code generation lack guidance for practical software development process.In this study, we utilized ChatGPT to develop a web-based code generation platform consisting of key components: User Interface, Prompt Builder and Backend Service.<span class='px-1 mx-1 bg-yellow-200'>Specifically, Prompt Builder dynamically generated comprehensive prompts to enhance model generation performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.663</span></span>We conducted experiments on 2 datasets, evaluating the generated code through 8 widely used metrics.The results demonstrate that (1) Our Prompt Builder is effective, resulting in a 65.06% improvement in EM, a 38.45% improvement in BLEU, a 15.70% improvement in CodeBLEU, and a 50.64% improvement in Pass@1.(2) In real development scenarios, 98.5% of test cases can be validated through manual validation, highlighting the genuine assistance provided by the ChatGPT-based code generation approach.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.13115v1' target="_blank">
@@ -67,7 +145,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Task-Oriented Parsing (TOP) enables conversational assistants to interpret user commands expressed in natural language, transforming them into structured outputs that combine elements of both natural language and intent/slot tags.Recently, Large Language Models (LLMs) have achieved impressive performance in synthesizing computer programs based on a natural language prompt, mitigating the gap between natural language and structured programs.Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?<span class='px-1 mx-1 bg-yellow-200'>2) What defines an effective prompt? <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span>and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts?We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.Notably, this enhancement is achieved without the need for additional data or specialized prompts.</p>
+                  <p>Task-Oriented Parsing (TOP) enables conversational assistants to interpret user commands expressed in natural language, transforming them into structured outputs that combine elements of both natural language and intent/slot tags.<span class='px-1 mx-1 bg-yellow-200'>Recently, Large Language Models (LLMs) have achieved impressive performance in synthesizing computer programs based on a natural language prompt, mitigating the gap between natural language and structured programs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span>Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?<span class='px-1 mx-1 bg-yellow-200'>2) What defines an effective prompt? <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.626</span></span><span class='px-1 mx-1 bg-yellow-200'>and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts? <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.618</span></span>We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.Notably, this enhancement is achieved without the need for additional data or specialized prompts.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.10771v1' target="_blank">
@@ -75,6 +153,110 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2312.10771v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Re-parameterized Low-rank Prompt: Generalize a Vision-Language Model within 0.5K Parameters
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>With the development of large pre-trained vision-language models, how to effectively transfer the knowledge of such foundational models to downstream tasks becomes a hot topic, especially in a data-deficient scenario.Recently, prompt tuning has become a popular solution.When adapting the vision-language models, researchers freeze the parameters in the backbone and only design and tune the prompts.On the one hand, the delicate design of prompt tuning exhibits strong performance.On the other hand, complicated structures and update rules largely increase the computation and storage cost.<span class='px-1 mx-1 bg-yellow-200'>Motivated by the observation that the evolution pattern of the generalization capability in visual-language models aligns harmoniously with the trend of rank variations in the prompt matrix during adaptation, we design a new type of prompt, Re-parameterized Low-rank Prompt (RLP), for both efficient and effective adaptation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.601</span></span>Our method could largely reduce the number of tunable parameters and storage space, which is quite beneficial in resource-limited scenarios.Extensive experiments further demonstrate the superiority of RLP.In particular, RLP shows comparable or even stronger performance than the latest state-of-the-art methods with an extremely small number of parameters.On a series of tasks over 11 datasets, RLP significantly increases the average downstream accuracy of classic prompt tuning by up to 5.25% using merely 0.5K parameters.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.10813v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.10813v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-13</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                GuardRails: Automated Suggestions for Clarifying Ambiguous Purpose Statements
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Before implementing a function, programmers are encouraged to write a purpose statement i.e., a short, natural-language explanation of what the function computes.A purpose statement may be ambiguous i.e., it may fail to specify the intended behaviour when two or more inequivalent computations are plausible on certain inputs.Our paper makes four contributions.First, we propose a novel heuristic that suggests such inputs using Large Language Models (LLMs).<span class='px-1 mx-1 bg-yellow-200'>Using these suggestions, the programmer may choose to clarify the purpose statement (e.g., by providing a functional example that specifies the intended behaviour on such an input). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.626</span></span>Second, to assess the quality of inputs suggested by our heuristic, and to facilitate future research, we create an open dataset of purpose statements with known ambiguities.Third, we compare our heuristic against GitHub Copilot's Chat feature, which can suggest similar inputs when prompted to generate unit tests.Fourth, we provide an open-source implementation of our heuristic as an extension to Visual Studio Code for the Python programming language, where purpose statements and functional examples are specified as docstrings and doctests respectively.We believe that this tool will be particularly helpful to novice programmers and instructors.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.08189v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.08189v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-13</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Prompting LLMs with content plans to enhance the summarization of scientific articles
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This paper presents novel prompting techniques to improve the performance of automatic summarization systems for scientific articles.Scientific article summarization is highly challenging due to the length and complexity of these documents.<span class='px-1 mx-1 bg-yellow-200'>We conceive, implement, and evaluate prompting techniques that provide additional contextual information to guide summarization systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span>Specifically, we feed summarizers with lists of key terms extracted from articles, such as author keywords or automatically generated keywords.Our techniques are tested with various summarization models and input texts.Results show performance gains, especially for smaller models summarizing sections separately.This evidences that prompting is a promising approach to overcoming the limitations of less powerful systems.Our findings introduce a new research direction of using prompts to aid smaller models.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.08282v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.08282v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-13</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Efficient Toxic Content Detection by Bootstrapping and Distilling Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Toxic content detection is crucial for online services to remove inappropriate content that violates community standards.To automate the detection process, prior works have proposed varieties of machine learning (ML) approaches to train Language Models (LMs) for toxic content detection.However, both their accuracy and transferability across datasets are limited.Recently, Large Language Models (LLMs) have shown promise in toxic content detection due to their superior zero-shot and few-shot in-context learning ability as well as broad transferability on ML tasks.<span class='px-1 mx-1 bg-yellow-200'>However, efficiently designing prompts for LLMs remains challenging. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.607</span></span>Moreover, the high run-time cost of LLMs may hinder their deployments in production.To address these challenges, in this work, we propose BD-LLM, a novel and efficient approach to Bootstrapping and Distilling LLMs for toxic content detection.Specifically, we design a novel prompting method named Decision-Tree-of-Thought (DToT) to bootstrap LLMs' detection performance and extract high-quality rationales.DToT can automatically select more fine-grained context to re-prompt LLMs when their responses lack confidence.Additionally, we use the rationales extracted via DToT to fine-tune student LMs.Our experimental results on various datasets demonstrate that DToT can improve the accuracy of LLMs by up to 4.6%.Furthermore, student LMs fine-tuned with rationales extracted via DToT outperform baselines on all datasets with up to 16.9\% accuracy improvement, while being more than 60x smaller than conventional LLMs.Finally, we observe that student LMs fine-tuned with rationales exhibit better cross-dataset transferability.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.08303v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.08303v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -93,7 +275,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Camouflaged object detection (COD) approaches heavily rely on pixel-level annotated datasets.Weakly-supervised COD (WSCOD) approaches use sparse annotations like scribbles or points to reduce annotation effort, but this can lead to decreased accuracy.The Segment Anything Model (SAM) shows remarkable segmentation ability with sparse prompts like points.However, manual prompt is not always feasible, as it may not be accessible in real-world application.Additionally, it only provides localization information instead of semantic one, which can intrinsically cause ambiguity in interpreting the targets.In this work, we aim to eliminate the need for manual prompt.<span class='px-1 mx-1 bg-yellow-200'>The key idea is to employ Cross-modal Chains of Thought Prompting (CCTP) to reason visual prompts using the semantic information given by a generic text prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.611</span></span>To that end, we introduce a test-time adaptation per-instance mechanism called Generalizable SAM (GenSAM) to automatically enerate and optimize visual prompts the generic task prompt for WSCOD.In particular, CCTP maps a single generic text prompt onto image-specific consensus foreground and background heatmaps using vision-language models, acquiring reliable visual prompts.Moreover, to test-time adapt the visual prompts, we further propose Progressive Mask Generation (PMG) to iteratively reweight the input image, guiding the model to focus on the targets in a coarse-to-fine manner.Crucially, all network parameters are fixed, avoiding the need for additional training.Experiments demonstrate the superiority of GenSAM.Experiments on three benchmarks demonstrate that GenSAM outperforms point supervision approaches and achieves comparable results to scribble supervision ones, solely relying on general task descriptions as prompts.our codes is in: https://lwpyh.github.io/GenSAM/.</p>
+                  <p>Camouflaged object detection (COD) approaches heavily rely on pixel-level annotated datasets.Weakly-supervised COD (WSCOD) approaches use sparse annotations like scribbles or points to reduce annotation effort, but this can lead to decreased accuracy.The Segment Anything Model (SAM) shows remarkable segmentation ability with sparse prompts like points.<span class='px-1 mx-1 bg-yellow-200'>However, manual prompt is not always feasible, as it may not be accessible in real-world application. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.697</span></span>Additionally, it only provides localization information instead of semantic one, which can intrinsically cause ambiguity in interpreting the targets.<span class='px-1 mx-1 bg-yellow-200'>In this work, we aim to eliminate the need for manual prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.684</span></span><span class='px-1 mx-1 bg-yellow-200'>The key idea is to employ Cross-modal Chains of Thought Prompting (CCTP) to reason visual prompts using the semantic information given by a generic text prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.792</span></span><span class='px-1 mx-1 bg-yellow-200'>To that end, we introduce a test-time adaptation per-instance mechanism called Generalizable SAM (GenSAM) to automatically enerate and optimize visual prompts the generic task prompt for WSCOD. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.633</span></span><span class='px-1 mx-1 bg-yellow-200'>In particular, CCTP maps a single generic text prompt onto image-specific consensus foreground and background heatmaps using vision-language models, acquiring reliable visual prompts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span>Moreover, to test-time adapt the visual prompts, we further propose Progressive Mask Generation (PMG) to iteratively reweight the input image, guiding the model to focus on the targets in a coarse-to-fine manner.Crucially, all network parameters are fixed, avoiding the need for additional training.Experiments demonstrate the superiority of GenSAM.Experiments on three benchmarks demonstrate that GenSAM outperforms point supervision approaches and achieves comparable results to scribble supervision ones, solely relying on general task descriptions as prompts.our codes is in: https://lwpyh.github.io/GenSAM/.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.07374v1' target="_blank">
@@ -101,6 +283,110 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2312.07374v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-12</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Large Language Models are Clinical Reasoners: Reasoning-Aware Diagnosis Framework with Prompt-Generated Rationales
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Machine reasoning has made great progress in recent years owing to large language models (LLMs).In the clinical domain, however, most NLP-driven projects mainly focus on clinical classification or reading comprehension, and under-explore clinical reasoning for disease diagnosis due to the expensive rationale annotation with clinicians.<span class='px-1 mx-1 bg-yellow-200'>In this work, we present a ``reasoning-aware'' diagnosis framework that rationalizes the diagnostic process via prompt-based learning in a time- and labor-efficient manner, and learns to reason over the prompt-generated rationales. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span>Specifically, we address the clinical reasoning for disease diagnosis, where the LLM generates diagnostic rationales providing its insight on presented patient data and the reasoning path towards the diagnosis, namely Clinical Chain-of-Thought (Clinical CoT).We empirically demonstrate LLMs/LMs' ability of clinical reasoning via extensive experiments and analyses on both rationale generation and disease diagnosis in various settings.We further propose a novel set of criteria for evaluating machine-generated rationales' potential for real-world clinical settings, facilitating and benefiting future research in this area.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.07399v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.07399v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                On Meta-Prompting
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Certain statistical models are capable of interpreting input strings as instructions, or prompts, and carry out tasks based on them.<span class='px-1 mx-1 bg-yellow-200'>Many approaches to prompting and pre-training these models involve the automated generation of these prompts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.684</span></span><span class='px-1 mx-1 bg-yellow-200'>We call these approaches meta-prompting, or prompting to obtain prompts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.707</span></span>We propose a theoretical framework based on category theory to generalize and describe them.This framework is flexible enough to account for LLM stochasticity; and allows us to obtain formal results around task agnosticity and equivalence of various meta-prompting approaches.We experiment with meta-prompting in two active areas of model research: creativity and ideation.We find that user preference favors (p < 0.01) the prompts generated under meta-prompting, as well as their corresponding outputs, over a series of hardcoded baseline prompts that include the original task prompt.<span class='px-1 mx-1 bg-yellow-200'>Using our framework, we argue that meta-prompting is more effective than basic prompting at generating desirable outputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.06562v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.06562v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                AnyHome: Open-Vocabulary Generation of Structured and Textured 3D Homes
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>We introduce AnyHome, a framework that translates open-vocabulary descriptions, ranging from simple labels to elaborate paragraphs, into well-structured and textured 3D indoor scenes at a house-scale.Inspired by cognition theories, AnyHome employs an amodal structured representation to capture 3D spatial cues from textual narratives and then uses egocentric inpainting to enrich these scenes.<span class='px-1 mx-1 bg-yellow-200'>To this end, we begin by using specially designed template prompts for Large Language Models (LLMs), which enable precise control over the textual input. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.668</span></span>We then utilize intermediate representations to maintain the spatial structure's consistency, ensuring that the 3D scenes align closely with the textual description.Then, we apply a Score Distillation Sampling process to refine the placement of objects.Lastly, an egocentric inpainting process is incorporated to enhance the realism and appearance of the scenes.AnyHome stands out due to its hierarchical structured representation combined with the versatility of open-vocabulary text interpretation.This allows for extensive customization of indoor scenes at various levels of granularity.We demonstrate that AnyHome can reliably generate a range of diverse indoor scenes, characterized by their detailed spatial structures and textures, all corresponding to the free-form textual inputs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.06644v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.06644v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-07</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>We present LaMPilot, a novel framework for planning in the field of autonomous driving, rethinking the task as a code-generation process that leverages established behavioral primitives.<span class='px-1 mx-1 bg-yellow-200'>This approach aims to address the challenge of interpreting and executing spontaneous user instructions such as "overtake the car ahead," which have typically posed difficulties for existing frameworks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span>We introduce the LaMPilot benchmark specifically designed to quantitatively evaluate the efficacy of Large Language Models (LLMs) in translating human directives into actionable driving policies.We then evaluate a wide range of state-of-the-art code generation language models on tasks from the LaMPilot Benchmark.The results of the experiments showed that GPT-4, with human feedback, achieved an impressive task completion rate of 92.7% and a minimal collision rate of 0.9%.To encourage further investigation in this area, our code and dataset will be made available.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.04372v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.04372v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -119,7 +405,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>With the recent significant advancements in large multi-modal models (LMMs), the importance of their grounding capability in visual chat is increasingly recognized.Despite recent efforts to enable LMMs to support grounding, their capabilities for grounding and chat are usually separate, and their chat performance drops dramatically when asked to ground.The problem is the lack of a dataset for grounded visual chat (GVC).Existing grounding datasets only contain short captions.To address this issue, we have created GVC data that allows for the combination of grounding and chat capabilities.To better evaluate the GVC capabilities, we have introduced a benchmark called Grounding-Bench.<span class='px-1 mx-1 bg-yellow-200'>Additionally, we have proposed a model design that can support GVC and various types of visual prompts by connecting segmentation models with language models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.613</span></span>Experimental results demonstrate that our model outperforms other LMMs on Grounding-Bench.Furthermore, our model achieves competitive performance on classic grounding benchmarks like RefCOCO/+/g and Flickr30K Entities.Our code will be released at https://github.com/UX-Decoder/LLaVA-Grounding .</p>
+                  <p>With the recent significant advancements in large multi-modal models (LMMs), the importance of their grounding capability in visual chat is increasingly recognized.Despite recent efforts to enable LMMs to support grounding, their capabilities for grounding and chat are usually separate, and their chat performance drops dramatically when asked to ground.The problem is the lack of a dataset for grounded visual chat (GVC).Existing grounding datasets only contain short captions.To address this issue, we have created GVC data that allows for the combination of grounding and chat capabilities.To better evaluate the GVC capabilities, we have introduced a benchmark called Grounding-Bench.<span class='px-1 mx-1 bg-yellow-200'>Additionally, we have proposed a model design that can support GVC and various types of visual prompts by connecting segmentation models with language models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.664</span></span>Experimental results demonstrate that our model outperforms other LMMs on Grounding-Bench.Furthermore, our model achieves competitive performance on classic grounding benchmarks like RefCOCO/+/g and Flickr30K Entities.Our code will be released at https://github.com/UX-Decoder/LLaVA-Grounding .</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.02949v1' target="_blank">
@@ -488,6 +774,58 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Control Barrier Function Based UAV Safety Controller in Autonomous Airborne Tracking and Following Systems
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Safe operations of UAVs are of paramount importance for various mission-critical and safety-critical UAV applications. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.613</span></span>In context of airborne target tracking and following, UAVs need to track a flying target avoiding collision and also closely follow its trajectory.The safety situation becomes critical and more complex when the flying target is non-cooperative and has erratic movements.This paper proposes a method for collision avoidance in an autonomous fast moving dynamic quadrotor UAV tracking and following another target UAV.<span class='px-1 mx-1 bg-yellow-200'>This is achieved by designing a safety controller that minimally modifies the control input from a trajectory tracking controller and guarantees safety. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span>This method enables pairing our proposed safety controller with already existing flight controllers.Our safety controller uses a control barrier function based quadratic program (CBF-QP) to produce an optimal control input enabling safe operation while also follow the trajectory of the target closely.We implement our solution on AirSim simulator over PX4 flight controller and with numerical results, we validate our approach through several simulation experiments with multiple scenarios and trajectories.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17215v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.17215v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-20</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Prometheus: Infrastructure Security Posture Analysis with AI-generated Attack Graphs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The rampant occurrence of cybersecurity breaches imposes substantial limitations on the progress of network infrastructures, leading to compromised data, financial losses, potential harm to individuals, and disruptions in essential services.The current security landscape demands the urgent development of a holistic security assessment solution that encompasses vulnerability analysis and investigates the potential exploitation of these vulnerabilities as attack paths.In this paper, we propose Prometheus, an advanced system designed to provide a detailed analysis of the security posture of computing infrastructures.Using user-provided information, such as device details and software versions, Prometheus performs a comprehensive security assessment.<span class='px-1 mx-1 bg-yellow-200'>This assessment includes identifying associated vulnerabilities and constructing potential attack graphs that adversaries can exploit. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span>Furthermore, Prometheus evaluates the exploitability of these attack paths and quantifies the overall security posture through a scoring mechanism.The system takes a holistic approach by analyzing security layers encompassing hardware, system, network, and cryptography.Furthermore, Prometheus delves into the interconnections between these layers, exploring how vulnerabilities in one layer can be leveraged to exploit vulnerabilities in others.In this paper, we present the end-to-end pipeline implemented in Prometheus, showcasing the systematic approach adopted for conducting this thorough security analysis.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.13119v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.13119v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-19</p>
           </td>
           <td>
@@ -498,7 +836,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>With the recent surge in popularity of LLMs has come an ever-increasing need for LLM safety training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>In this paper, we show that SOTA open-source LLMs are vulnerable to simple, optimization-free attacks we refer to as $\textit{priming attacks}$, which are easy to execute and effectively bypass alignment from safety training.<span class='px-1 mx-1 bg-yellow-200'>Our proposed attack improves the Attack Success Rate on Harmful Behaviors, as measured by Llama Guard, by up to $3.3\times$ compared to baselines. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.624</span></span>Source code and data are available at https://github.com/uiuc-focal-lab/llm-priming-attacks .</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>With the recent surge in popularity of LLMs has come an ever-increasing need for LLM safety training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.616</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we show that SOTA open-source LLMs are vulnerable to simple, optimization-free attacks we refer to as $\textit{priming attacks}$, which are easy to execute and effectively bypass alignment from safety training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span><span class='px-1 mx-1 bg-yellow-200'>Our proposed attack improves the Attack Success Rate on Harmful Behaviors, as measured by Llama Guard, by up to $3.3\times$ compared to baselines. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>Source code and data are available at https://github.com/uiuc-focal-lab/llm-priming-attacks .</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.12321v1' target="_blank">
@@ -506,6 +844,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2312.12321v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Mitigating Data Injection Attacks on Federated Learning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Federated learning is a technique that allows multiple entities to collaboratively train models using their data without compromising data privacy.However, despite its advantages, federated learning can be susceptible to false data injection attacks.In these scenarios, a malicious entity with control over specific agents in the network can manipulate the learning process, leading to a suboptimal model.Consequently, addressing these data injection attacks presents a significant research challenge in federated learning systems.In this paper, we propose a novel technique to detect and mitigate data injection attacks on federated learning systems.Our mitigation method is a local scheme, performed during a single instance of training by the coordinating node, allowing the mitigation during the convergence of the algorithm.Whenever an agent is suspected to be an attacker, its data will be ignored for a certain period, this decision will often be re-evaluated.<span class='px-1 mx-1 bg-yellow-200'>We prove that with probability 1, after a finite time, all attackers will be ignored while the probability of ignoring a trustful agent becomes 0, provided that there is a majority of truthful agents. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.615</span></span>Simulations show that when the coordinating node detects and isolates all the attackers, the model recovers and converges to the truthful model.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.02102v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2312.02102v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
