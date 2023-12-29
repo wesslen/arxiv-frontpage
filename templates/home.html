@@ -56,8 +56,8 @@
                   link
                 </a>
                 <br>
-                <a href="#" onclick="addToZotero('{{content["title"]}}', '{{content["url"]}}'); return false;" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Add to Zotero
+                <a href='{{content["url"]}}' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
                 </a>
               </p>
             </div>
@@ -72,7 +72,7 @@
 </div>
 </div>
 <script>
-  ,document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
     renderMathInElement(document.body, {
       // customised options
       // • auto-render specific keys, e.g.:
@@ -85,38 +85,23 @@
       // • rendering keys, e.g.:
       throwOnError : false
     });
-  }));
-  function addToZotero(title, url) {
-    const data = {
-      collections: [{zotero_collection_id}],
-      items: [
-        {
-          itemType: "journalArticle",
-          title: title,
-          url: url,
-          // ... any other necessary metadata ...
-        }
-      ]
-    };
+  });
+  function extractGSUrl(url) {
+            var regex = /\/([^/]+?)(?:v\d+)?$/;
+            var matches = url.match(regex);
 
-    fetch('https://api.zotero.org/users/9622461/items', {
-      method: 'POST',
-      headers: {
-        'Zotero-API-Key': {zotero_api_key},
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      // You can implement some user feedback here, like an alert or page update
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      // Provide error feedback to the user
-    });
-  };
+            if (matches) {
+                var endOfUrl = matches[1];
+                var prefix = "https://scholar.google.com/scholar_lookup?arxiv_id=";
+                var finalUrl = prefix + endOfUrl;
+                console.log("Final URL: " + finalUrl);
+                
+                // You can open the final URL in a new tab/window
+                window.open(finalUrl, "_blank");
+            } else {
+                console.log("No match found");
+            }
+        };
 </script>
 </body>
 </html>
