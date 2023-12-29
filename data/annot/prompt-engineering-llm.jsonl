@@ -68,3 +68,94 @@
 {"text":"By leveraging LLMs' impressive generalization and zero-shot reasoning capabilities, LLMLight executes a human-like decision-making process for efficient traffic management.  ","cats":{"prompt-engineering-llm":0}}
 {"text":"Subsequently, we utilize LLM's chain-of-thought (CoT) reasoning ability to identify the next traffic signal phase, ensuring optimcases remarkable generalization, interpretability, and zero-shot reasoning abilities, even without any training for transportation management tasks.","cats":{"prompt-engineering-llm":0}}
 {"text":"Our project is available at https://github.com/usail-hkust/LLMTSCS.","cats":{"prompt-engineering-llm":0}}
+{"text":"Augmenting LMs by retrieving information from external knowledge resources is one promising solution.","cats":{"prompt-engineering-llm":1}}
+{"text":"Most existing retrieval-augmented LMs employ a retrieve-and-generate setup that only retrieves information once based on the input.","cats":{"prompt-engineering-llm":1}}
+{"text":"In this work, we provide a generalized view of active retrieval augmented generation, methods that actively decide when and what to retrieve across the course of the generation.","cats":{"prompt-engineering-llm":0}}
+{"text":"We propose Forward-Looking Active REtrieval augmented generation (FLARE), a generic retrieval-augmented generation method which iteratively uses a prediction of the upcoming sentence to anticipate future content, which is then utilized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens.","cats":{"prompt-engineering-llm":1}}
+{"text":"Despite the remarkable ability of large language models (LMs) to comprehend and generate language, they have a tendency to hallucinate and create factually inaccurate output.  ","cats":{"prompt-engineering-llm":0}}
+{"text":"Most existing retrieval-augmented LMs employ a retrieve-and-generate setup that only retrieves informnually gathering information throughout the generation process is essential.","cats":{"prompt-engineering-llm":0}}
+{"text":"There have been some past efforts to retrieve information multiple times while generating outputs, which mostly retrieve documents at fixed intervals using the previous context as queries.","cats":{"prompt-engineering-llm":0}}
+{"text":"We propose Forward-Looking Active REtrieval augmented ized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens.","cats":{"prompt-engineering-llm":0}}
+{"text":"We test FLARE along with baselines comprehensively over 4 long-for","cats":{"prompt-engineering-llm":0}}
+{"text":"Retrieval Augmented Generation (RAG) allows to easily attach and manipulate a non-parametric knowledgebases to LLMs.","cats":{"prompt-engineering-llm":1}}
+{"text":"Applications of RAG in the field of medical education are discussed in this paper.","cats":{"prompt-engineering-llm":0}}
+{"text":"Large Language Models are increasingly being used for various tasks including content generation and as chatbots.","cats":{"prompt-engineering-llm":0}}
+{"text":"Despite their impressive performances in general tasks, LLMs need to be aligned when applying for domain specific tasks to mitigate the problems of hallucination and producing harmful answers.  ","cats":{"prompt-engineering-llm":0}}
+{"text":"A combined extractive and abstrac vectors is proposed.","cats":{"prompt-engineering-llm":0}}
+{"text":"Retrieval-augmented language models (RALMs) represent a substantial advancement in the capabilities of large language models, notably in reducing factual hallucination by leveraging external knowledge sources.","cats":{"prompt-engineering-llm":1}}
+{"text":"In response to these challenges, we introduces Chain-of-Noting (CoN), a novel approach aimed at improving the robustness of RALMs in facing noisy, irrelevant documents and in handling unknown scenarios.","cats":{"prompt-engineering-llm":0}}
+{"text":"The core idea of CoN is to generate sequential reading notes for retrieved documents, enabling a thorough evaluation of their relevance to the given question and integrating this information to formulate the final answer.","cats":{"prompt-engineering-llm":1}}
+{"text":" However, the reliability of the retrieved information is not always guaranteed.","cats":{"prompt-engineering-llm":0}}
+{"text":"The retrieval of irrelevant data can lead to misguided responses, and potentially causing the model to overlook its inherent knowledge, even when it possesses adequate information to address the query.","cats":{"prompt-engineering-llm":0}}
+{"text":"Moreover, standard RALMs often struggle to assess whether they possess adequate knowledge, both intrinsic and retrieved, to provide an accurate answer.","cats":{"prompt-engineering-llm":0}}
+{"text":"In situations where knowledge is lacking, these systems should ideally respond with \"unknown\" when the answer is unattainable.","cats":{"prompt-engineering-llm":0}}
+{"text":"The cofinal answer.","cats":{"prompt-engineering-llm":0}}
+{"text":"We employed ChatGPT to create training data for CoN, which was subsequently trained on an LLaMa-2 7B model.","cats":{"prompt-engineering-llm":0}}
+{"text":"Our experiments across four open-domain QA benchmarks show that RALMs equipped wiide the pre-training knowledge scope.","cats":{"prompt-engineering-llm":0}}
+{"text":"Finding and refining prompts that produce a desired image has become the art of prompt engineering.","cats":{"prompt-engineering-llm":1}}
+{"text":"In light of an extensive literature review, we reframe prompt engineering for generative models as interactive text-based retrieval on a novel kind of \"infinite index\".","cats":{"prompt-engineering-llm":1}}
+{"text":"Finally, we envision how active learning may help to guide the retrieval of generated images.","cats":{"prompt-engineering-llm":0}}
+{"text":"Conditional generative models such as DALL-E and Stable Diffusion generate images based on a user-defined text, the prompt.  ","cats":{"prompt-engineering-llm":0}}
+{"text":"Generative models do not provide a built-in retrieval model for a user's information need expressed through prompts.","cats":{"prompt-engineering-llm":0}}
+{"text":"In light of an extensive literature review, we reframe prompt engineering for generative models as h an expert.","cats":{"prompt-engineering-llm":0}}
+{"text":"Retrieval-augmented language models show promise in addressing issues like outdated information and hallucinations in language models (LMs).","cats":{"prompt-engineering-llm":1}}
+{"text":"Therefore, we introduce RegaVAE, a retrieval-augmented language model built upon the variational auto-encoder (VAE).","cats":{"prompt-engineering-llm":0}}
+{"text":" However, current research faces two main problems: 1) determining what information to retrieve, and 2) effectively combining retrieved information during generation.","cats":{"prompt-engineering-llm":0}}
+{"text":"We argue that valuable retrieved information should not only be related to the current source text but also consider the future target text, given the nature of LMs that model future tokens.","cats":{"prompt-engineering-llm":0}}
+{"text":"Moreover, we propose that aggregation using latent variables derived from a compact latent space is more efficient than utilizing explicit raw text, which is limited by context length and susceptible to noise.","cats":{"prompt-engineering-llm":0}}
+{"text":"It encodes the text cor leverage the VAE to initialize the latent space and adopt the probabilistic form of the retrieval generation paradigm by expanding the Gaussian prior distribution into a Gaussian mixture distribution.","cats":{"prompt-engineering-llm":0}}
+{"text":"Theoretical analysis provides an optimizable upper bound for RegaVAE.","cats":{"prompt-engineering-llm":0}}
+{"text":"Experimental results on various datasets demonstrate significant improvements in text generation quality and hallucination removal.","cats":{"prompt-engineering-llm":0}}
+{"text":"In this paper, we explore the use of Retrieval Augmented Generation, also known as RAG (Lewis et al., 2021) to improve problem-solving performance.","cats":{"prompt-engineering-llm":1}}
+{"text":"We propose ARM-RAG (Auxiliary Rationale Memory for Retrieval Augmented Generation), a system that learns from its successes without incurring high training costs.","cats":{"prompt-engineering-llm":1}}
+{"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"prompt-engineering-llm":0}}
+{"text":"Recent studies, (e.g., (Bubeck et al., 2023)) on modern LLMs have shown that they are capable of performing amazing tasks typically necessitating human-level intelligence.","cats":{"prompt-engineering-llm":0}}
+{"text":"However, unlike humans, frozen LLMs do not improve over time; they neither acquire new knowledge nor learn from their successes or failures.","cats":{"prompt-engineering-llm":0}}
+{"text":"Some approaches to improving the intelligence of LLMs include fine-tuning models based on problem-solving performance (Zelikman et al., 2022), and building bigger and more sophisticated models (Bubeck et al., 2023).","cats":{"prompt-engineering-llm":0}}
+{"text":"However, these methods have the drawback of requiring substantial data and computational resources to retrain existing models.  ","cats":{"prompt-engineering-llm":0}}
+{"text":"We propose ARM-RAG (Auxiliary Rationale Memory for Retrieval Augmented Generation), a system that learns from its successes without incurring high s.","cats":{"prompt-engineering-llm":0}}
+{"text":"This report examines the effectiveness of Chain-of-Thought (CoT) prompting in improving the multi-step reasoning abilities of large language models (LLMs).","cats":{"prompt-engineering-llm":1}}
+{"text":"Inspired by previous studies \\cite{Min2022RethinkingWork}, we analyze the impact of three types of CoT prompt perturbations, namely CoT order, CoT values, and CoT operators on the performance of GPT-3 on various tasks.","cats":{"prompt-engineering-llm":1}}
+{"text":"Moreover, incorrect demonstrations, where the CoT operators or the CoT order are wrong, do not affect the performance as drastically when compared to the value based perturbations.","cats":{"prompt-engineering-llm":0}}
+{"text":"This research deepens our understanding of CoT prompting and opens some new questions regarding the capability of LLMs to learn reasoning in context.","cats":{"prompt-engineering-llm":0}}
+{"text":" Inspired by previous studies \\cite{Min2022RethinkingWork}, we analyze the impact of three types of CoT prompt perturbations, namely CoT order, CoT values, answers.","cats":{"prompt-engineering-llm":0}}
+{"text":"Letting models verbalize reasoning steps as natural language, a technique known as chain-of-thought prompting, has recently been proposed as a way to address some of these issues.","cats":{"prompt-engineering-llm":1}}
+{"text":"Here we present the first release of ThoughtSource, a meta-dataset and software library for chain-of-thought (CoT) reasoning.","cats":{"prompt-engineering-llm":0}}
+{"text":"The goal of ThoughtSource is to improve future artificial intelligence systems by facilitating qualitative understanding of CoTs, enabling empirical evaluations, and providing training data.","cats":{"prompt-engineering-llm":1}}
+{"text":"Large language models (LLMs) such as GPT-3 and ChatGPT have recently demonstrated impressive results across a wide range of tasks.","cats":{"prompt-engineering-llm":0}}
+{"text":"LLMs are still limited, however, in that they frequently fail at complex reasoning, their reasoning processes are opaque, they are prone to 'hallucinate' facts, and there are concerns about their underlying biases.  ","cats":{"prompt-engineering-llm":0}}
+{"text":"The goal of ThoughtSource is to improve future artifiaining data.","cats":{"prompt-engineering-llm":0}}
+{"text":"This first release of ThoughtSource integrates six scientific/medical, three general-domain and five math word qu","cats":{"prompt-engineering-llm":0}}
+{"text":"Certain statistical models are capable of interpreting input strings as instructions, or prompts, and carry out tasks based on them.","cats":{"prompt-engineering-llm":1}}
+{"text":"Many approaches to prompting and pre-training these models involve the automated generation of these prompts.","cats":{"prompt-engineering-llm":1}}
+{"text":"We call these approaches meta-prompting, or prompting to obtain prompts.","cats":{"prompt-engineering-llm":1}}
+{"text":"This framework is flexible enough to account for LLM stochasticity; and allows us to obtain formal results around task agnosticity and equivalence of various meta-prompting approaches.","cats":{"prompt-engineering-llm":1}}
+{"text":"Using our framework, we argue that meta-prompting is more effective than basic prompting at generating desirable outputs.","cats":{"prompt-engineering-llm":1}}
+{"text":" Many approaches to prompting and pre-training these models involve the automated generation of these prompts.","cats":{"prompt-engineering-llm":0}}
+{"text":"We call these approachy to generalize and describe them.","cats":{"prompt-engineering-llm":0}}
+{"text":"This framework is flexible enough to account for LLM stochasticity; and allof various meta-prompting approaches.","cats":{"prompt-engineering-llm":0}}
+{"text":"We experiment with meta-prompting in two active areas of model research: creativity and ideation.","cats":{"prompt-engineering-llm":0}}
+{"text":"We find that user preference fUsing our framework, we argue that meta-prompting is more effective than basic prompting at generating desirable outputs.","cats":{"prompt-engineering-llm":0}}
+{"text":"The study explores the effectiveness of the Chain-of-Thought approach, known for its proficiency in language tasks by breaking them down into sub-tasks and intermediate steps, in improving vision-language tasks that demand sophisticated perception and reasoning.","cats":{"prompt-engineering-llm":1}}
+{"text":"We present the \"Description then Decision\" strategy, which is inspired by how humans process signals.","cats":{"prompt-engineering-llm":0}}
+{"text":"This strategy significantly improves probing task performance by 50%, establishing the groundwork for future research on reasoning paradigms in complex vision-language tasks.","cats":{"prompt-engineering-llm":0}}
+{"text":"Chain-of-thought (COT) prompting can help large language models (LLMs) reason toward correct answers, but its efficacy in reasoning toward incorrect answers is unexplored.","cats":{"prompt-engineering-llm":1}}
+{"text":"This strategy of process of elimination (PoE), when used with COT, has the potential to enhance interpretability in tasks like medical diagnoses of exclusion.","cats":{"prompt-engineering-llm":1}}
+{"text":"Thus, we propose PoE with COT, a new task where LLMs must reason toward incorrect options on multiple-choice questions.","cats":{"prompt-engineering-llm":1}}
+{"text":"We evaluate the ability of GPT-3.5, LLaMA-2, and Falcon to perform PoE with COT on 2-choice commonsense and scientific reasoning datasets.","cats":{"prompt-engineering-llm":1}}
+{"text":" This strategy of process of elimination (PoE), when used with COT, has the potential to enhance interpretability in tasks like medical diagnoses of exclusion.","cats":{"prompt-engineering-llm":0}}
+{"text":"Thus, we proalcon to perform PoE with COT on 2-choice commonsense and scientific reasoning datasets.","cats":{"prompt-engineering-llm":0}}
+{"text":"We show that PoE consistently underperforms directly choosing the corrissues further, we conduct an error analysis and give suggestions for future work.","cats":{"prompt-engineering-llm":0}}
+{"text":"We propose MM-REACT, a system paradigm that integrates ChatGPT with a pool of vision experts to achieve multimodal reasoning and action.","cats":{"prompt-engineering-llm":1}}
+{"text":"To achieve such advanced visual intelligence, MM-REACT introduces a textual prompt design that can represent text descriptions, textualized spatial coordinates, and aligned file names for dense visual signals such as images and videos.","cats":{"prompt-engineering-llm":1}}
+{"text":"MM-REACT's prompt design allows language models to accept, associate, and process multimodal information, thereby facilitating the synergetic combination of ChatGPT and various vision experts.","cats":{"prompt-engineering-llm":1}}
+{"text":" In this paper, we define and explore a comprehensive list of advanced vision tasks that are intriguing to solve, but may exceed the capabilities of existing vision and vision-language models.","cats":{"prompt-engineering-llm":0}}
+{"text":"To achieve such advanced visual intelligence, MM-REACT introduces a textual prompt design that can represent text descriptions, textualirgetic combination of ChatGPT and various vision experts.","cats":{"prompt-engineering-llm":0}}
+{"text":"Zero-shot experiments demonstrate MM-REACT's effectiveness in addressing the specified capabilities of interests and its wide application in different scenarios that require advauning.","cats":{"prompt-engineering-llm":0}}
+{"text":"Code, demo, video, and visualization are available at https://multimodal-react.github.io/","cats":{"prompt-engineering-llm":0}}
+{"text":"Recent efforts have incorporated large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning.","cats":{"prompt-engineering-llm":1}}
+{"text":"To address this challenge, we draw on the rich history of agent design in symbolic artificial intelligence to develop a blueprint for a new wave of cognitive language agents.","cats":{"prompt-engineering-llm":0}}
+{"text":"We then propose Cognitive Architectures for Language Agents (CoALA), a conceptual framework to systematize diverse methods for LLM-based reasoning, grounding, learning, and decision making as instantiations of language agents in the framework.","cats":{"prompt-engineering-llm":0}}
+{"text":" However, these efforts have largely been piecemeal, lacking a systematic framework for constructing a fully-fledged language agent.","cats":{"prompt-engineering-llm":0}}
+{"text":"We first show that LLMs hnd production systems.","cats":{"prompt-engineering-llm":0}}
+{"text":"Finally, we use the CoALA framework to highlight gaps and propose actionable directions toward more capable language agents in the","cats":{"prompt-engineering-llm":0}}
