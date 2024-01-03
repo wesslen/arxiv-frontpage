@@ -28,3 +28,4 @@ CONFIG = Config(**srsly.read_yaml(CONFIG_FILE))
 LABELS = [s.label for s in CONFIG.sections]
 THRESHOLDS = {s.label: s.threshold for s in CONFIG.sections}
 SITE_PATH = Path("index.html")
+INPUT_PATH = Path("data/input.jsonl")

@@ -1,12 +1,13 @@
 import os
 import datetime as dt
 from pathlib import Path
+import srsly
 
 from jinja2 import Template
 from radicli import Radicli, Arg
 
 from .utils import console
-from .constants import TEMPLATE_PATH, TRAINED_FOLDER, SITE_PATH
+from .constants import TEMPLATE_PATH, TRAINED_FOLDER, SITE_PATH, INPUT_PATH
 
 cli = Radicli()
 
@@ -137,12 +138,13 @@ def build(retrain: bool = False, prep: bool = False):
     if retrain:
         train()
     console.log("Starting site build process")
-    sections = DataStream().get_site_content()
+    sections, data = DataStream().get_site_content()
     template = Template(Path(TEMPLATE_PATH).read_text())
     rendered = template.render(
         sections=sections,
         today=dt.date.today(),
     )
+    srsly.write_jsonl(INPUT_PATH, data)
     SITE_PATH.write_text(rendered)
     console.log("Site built.")
 

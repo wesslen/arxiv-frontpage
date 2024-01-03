@@ -1,5 +1,6 @@
 from typing import Dict, List
 import random
+import re
 import json
 import itertools as it
 from pathlib import Path 
@@ -334,15 +335,31 @@ class DataStream:
                 text += addition
             return f"<p>{text}</p>"
 
+        def extract_url_ending(url):
+            # Regular expression pattern to extract the desired part of the URL
+            # The 'v' followed by numbers is made optional with '?'
+            pattern = r'/abs/([0-9]+\.[0-9]+v?[0-9]*)$'
+            
+            # Search for the pattern in the URL
+            match = re.search(pattern, url)
+            
+            # If a match is found, return the extracted part, else return None
+            return match.group(1) if match else None
+
+        data = []
         for item in site_stream:
+            id = extract_url_ending(item['url'])
+            categories = []
             for section in item['sections']:
                 editable = item.copy()
                 editable['html'] = render_html(editable, section)
                 sections[section]['content'].append(editable)
+                categories.append(section)
+            data.append({"id": id, "categories": categories})
 
         for section in sections.keys():
             uniq_content = dedup_stream(sections[section]['content'], key="abstract")
             sections[section]['content'] = reversed(sorted(uniq_content, key=lambda d: d['created']))
         console.log("Sections generated.")
-        return list(sections.values())
+        return list(sections.values()), data
         
