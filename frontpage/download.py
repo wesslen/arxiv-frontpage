@@ -33,17 +33,17 @@ def parse_article_result_to_dict(article_result, nlp):
     }
 
 @retry(tries=5, delay=1, backoff=2)
-def fetch_and_filter_articles(nlp, query="cs", max_results=200, days_limit=2.5):
+def fetch_and_filter_articles(nlp, query="cs", max_results=500, days_limit=2.5):
     """Fetch and filter articles from Arxiv."""
-    search_results = arxiv.Search(
-        query="and",
-        max_results=max_results,
-        sort_by=arxiv.SortCriterion.SubmittedDate,
-    )
     
+    search_results = arxiv.Search(
+            query=f"cat:{query} llm",
+            max_results=max_results,
+            sort_by=arxiv.SortCriterion.SubmittedDate,
+        )
+
     results = [result for result in search_results.results() 
-               if get_article_age_in_days(result.published) < days_limit 
-               and result.primary_category.startswith(query)]
+               if get_article_age_in_days(result.published) < days_limit]
     logger.info(f"Found {len(results)} new results within {days_limit} days in the {query} category.")
     return results
 
@@ -67,6 +67,9 @@ def main():
     
     new_articles = [art for art in parsed_articles if art['title'] not in old_articles_dict]
     
+    if len(new_articles) == 0:
+        logger.info(f"Not exported: no unique new additions since {most_recent_file}")
+
     save_new_articles(new_articles)
 
 if __name__ == "__main__":
