@@ -1,0 +1,166 @@
+{"text":"The TREC Interactive Knowledge Assistance Track (iKAT) builds on the foundational work of the TREC Conversational Assistance Track (CAsT).","cats":{"prompt-engineering":0,"security":0}}
+{"text":"Evaluation on benchmark datasets validates the effectiveness of our approach, demonstrating competitive results.","cats":{"prompt-engineering":0,"security":0}}
+{"text":"This issue of hallucination is arguably the biggest hindrance to safely deploying these powerful LLMs into real-world production systems that impact people's lives.","cats":{"prompt-engineering":0,"security":0}}
+{"text":"This becomes hugely alarming when we rely on language generation capabilities for sensitive applications, such as summarizing medical records, financial analysis reports, etc.","cats":{"prompt-engineering":0,"security":0}}
+{"text":"Large Language Models (LLMs) have shown extraordinary capabilities in understanding and generating text that closely mirrors human communication.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0}}
+{"text":"The $a$-number is an invariant of the isomorphism class of the $p$-torsion group scheme.","cats":{"security":0}}
+{"text":"For this purpose, data from low-cost in-vehicle inertial sensors such as the accelerometer and gyroscope sensor are fused and fed into a long short-term memory (LSTM) neural network.","cats":{"security":0}}
+{"text":"A tuple (Z_1,...,Z_p) of matrices of size r is said to be a commuting extension of a tuple (A_1,...,A_p) of matrices of size n <r if the Z_i pairwise commute and each A_i sits in the upper left corner of a block decomposition of Z_i.","cats":{"security":0,"social-sciences":0}}
+{"text":"Channel modeling is fundamental in advancing wireless systems and has thus attracted considerable research focus.","cats":{"security":0}}
+{"text":"The analyzed tasks demonstrate the effectiveness of the proposed estimators and that the SL divergence achieves the highest classification accuracy in almost all the scenarios.","cats":{"security":0}}
+{"text":"Deep learning models trained under this paradigm heavily rely on the assumption that neural networks can learn to predict the presence or absence of a given concept independently of other concepts.","cats":{"security":0,"programming":0}}
+{"text":"Through a difference-in-differences approach, we find that deplatforming reduces online attention toward influencers.","cats":{"security":0}}
+{"text":"Thereafter, we present a Reweighed Co-Contrast between the temporal views of the sequential network, so that the couple of Riemannian spaces interact with each other for the interaction prediction without labels.","cats":{"security":0}}
+{"text":"In recent years, Riemannian graph representation learning has emerged as an exciting alternative to Euclidean ones.","cats":{"security":0}}
+{"text":"The development of facial biometric systems has contributed greatly to the development of the computer vision field.","cats":{"security":0}}
+{"text":"In all case studies, we show that co-training via task-relatedness is advantageous and prevents negative transfer (which occurs when MT model's performance is worse than that of at least one single-task model).","cats":{"security":0}}
+{"text":"Fine-tuning has been demonstrated to be an effective method to improve the domain performance of large language models (LLMs).","cats":{"security":0}}
+{"text":"With the rapid development of machine learning and growing concerns about data privacy, federated learning has become an increasingly prominent focus.","cats":{"security":0}}
+{"text":"Our method achieves human-level performance in estimating fetal biometrics and estimates well-calibrated credible intervals in which the true biometric value is expected to lie.","cats":{"security":0}}
+{"text":"In the last few years, there is a growing interest in computer aided diagnostic (CAD) using most image and clinical data of the lesion.","cats":{"security":0}}
+{"text":"In this paper, we propose a more general, theoretically sound, targeted attack that resorts to the minimization of a Jacobian-induced MAhalanobis distance (JMA) term, taking into account the effort (in the input space) required to move the latent space representation of the input sample in a given direction.","cats":{"security":0,"hci":0}}
+{"text":"Interestingly, this result does not require assumptions on the prior distribution.","cats":{"security":0}}
+{"text":"In this paper, we unify different types of structured data (i.e., table, key-value data, knowledge graph) into the graph format and cast different data-to-text generation tasks as graph-to-text generation.","cats":{"security":0}}
+{"text":"Notably, when fine-tuned with just 1% of data, Adaptor outperforms several Transformer-based methods trained on full datasets in medical image segmentation.","cats":{"security":0,"social-sciences":0}}
+{"text":"We present En3D, an enhanced generative scheme for sculpting high-quality 3D human avatars.","cats":{"security":0}}
+{"text":"Bearing faults are primary contributors to machine vibrations, and analyzing their signal morphology offers insights into their health status.","cats":{"security":0}}
+{"text":"Our findings indicate that, in comparison to earlier versions of LLMs, the updated versions do not exhibit the anticipated level of robustness against adversarial attacks.","cats":{"security":1}}
+{"text":"In this paper we aim to investigate the effect of adversarial perturbations on coding tasks with LLMs.","cats":{"security":0}}
+{"text":"LLMs can also be vulnerable to the same adversarial perturbations but a detailed study on this concern has been lacking so far.","cats":{"security":1}}
+{"text":"Our experiments show that adversarial examples obtained with a smaller code model are indeed transferable, weakening the LLMs' performance.","cats":{"security":1}}
+{"text":"Researchers have long studied the vulnerabilities and limitations of LLMs, such as adversarial attacks and model toxicity.","cats":{"security":1}}
+{"text":"Surprisingly, we find that the adversarial prompts generated by our approach are quite transferable, including to black-box, publicly released LLMs.","cats":{"security":1}}
+{"text":"Furthermore, to make the LLMs more robust against such adversaries without incurring the cost of retraining, we propose prompt-based defenses that involve modifying the prompt to include additional information such as examples of adversarially perturbed code and explicit instructions for reversing adversarial perturbations.","cats":{"security":1}}
+{"text":"In particular, we study the transferability of adversarial examples, generated through white-box attacks on smaller code models, to LLMs.","cats":{"security":0}}
+{"text":"Based on the exceptional capacity of language understanding and generation of large language models (LLMs), we propose LLM-Attack, which aims at generating both valid and natural adversarial examples with LLMs.","cats":{"security":1}}
+{"text":"Extensive experimental results on various tasks and datasets demonstrate the effectiveness of our LLM hijacking attack, resulting in a distracted attention towards adversarial tokens, consequently leading to the targeted unwanted outputs.","cats":{"security":1}}
+{"text":"Adversarial attacks are a type of attack on machine learning models where an attacker deliberately modifies the inputs to cause the model to make incorrect predictions.","cats":{"security":1}}
+{"text":"Most previous adversarial attacks do not focus on the interpretability of the generated adversarial examples, and we cannot gain insights into the mechanism of the target classifier from the attacks.","cats":{"security":1}}
+{"text":"Our attack method generates adversarial examples with attribution maps that resemble benign samples.","cats":{"security":1}}
+{"text":"To bridge this gap, this study systematically analyzes five state-of-the-art adversarial attack approaches from three perspectives: effectiveness, efficiency, and the quality of generated examples.","cats":{"security":1}}
+{"text":"The emergence of adversarial attacks, particularly those that exploit control over labels or employ physically feasible trojans, threatens to erode that trust, making the analysis and mitigation of these attacks a matter of urgency.","cats":{"security":1}}
+{"text":"Notably, these attacks can be generated using unmodified, or \"vanilla,\" versions of these LLMs, without requiring any prior adversarial exploits such as jailbreaking.","cats":{"security":1}}
+{"text":"In such attacks, an adversary can prompt the LLM to produce malicious content or override the original instructions and the employed filtering schemes.","cats":{"security":1}}
+{"text":"However, adversarial prompts known as 'jailbreaks' can circumvent safeguards, leading LLMs to generate harmful content.","cats":{"security":1}}
+{"text":"In an analogy to adversarial attacks on image classifiers, we call such inputs \\textbf{adversarial perception errors} and show they can be systematically constructed using a simple boundary-attack algorithm.","cats":{"security":1}}
+{"text":"LLM errors differ systematically from human errors in ways that make it easy to craft adversarial examples, or even perturb existing examples to flip the output label.","cats":{"security":1}}
+{"text":"In this paper, we explore the vulnerability of LLMs through the lens of backdoor attacks.","cats":{"security":1}}
+{"text":"So far, these attacks assumed that the adversary is directly prompting the LLM.   ","cats":{"security":1}}
+{"text":"To systematically assess the safety of Chinese LLMs, we introduce SuperCLUE-Safety (SC-Safety) - a multi-round adversarial benchmark with 4912 open-ended questions covering more than 20 safety sub-dimensions.","cats":{"security":1}}
+{"text":"In recent years, the primary focus has been on adversarial attacks.","cats":{"security":1}}
+{"text":"On a positive note, our study also highlights how offensive security researchers and pentesters can make use of LLMs to simulate realistic attack scenarios, identify potential vulnerabilities, and better protect organizations.","cats":{"security":1}}
+{"text":"We employ several adversarial attacks to evaluate its robustness.","cats":{"security":1}}
+{"text":"Yet, a largely unexplored facet of this paradigm is its susceptibility to adversarial attacks, especially with the aim of inducing forgetting.","cats":{"security":1}}
+{"text":"Adversarial attacks can have serious consequences, particularly in applications such as autonomous vehicles, medical diagnosis, and security systems.","cats":{"security":1}}
+{"text":"In this work, we analyze the impact of model interpretability due to adversarial attacks on text classification problems.","cats":{"security":0}}
+{"text":"Then, we introduce the adversarial perturbations on the text data to understand the classification performance after the attack.","cats":{"security":0}}
+{"text":"Subsequently, we analyze and interpret the model's explainability before and after the attack","cats":{"security":1}}
+{"text":" Adversarial attacks can have serious consequences, particularly in applications such as autonomous vehicles, medical diagnosis, and security systems.","cats":{"security":0}}
+{"text":"Work on the vulnert want to.","cats":{"security":0}}
+{"text":"We develop an ML-based classification model for text data.","cats":{"security":0}}
+{"text":"Subsequ","cats":{"security":0}}
+{"text":"They explore the consequences of vulnerabilities in AI systems.","cats":{"security":1}}
+{"text":"This includes discussing how they might arise, differences between randomized and adversarial examples and also potential ethical implications of vulnerabilities.","cats":{"security":1}}
+{"text":"Moreover, it is important to train the AI systems appropriately when they are in testing phase and getting them ready for broader use.","cats":{"security":1}}
+{"text":"There have been recent adversarial attacks that are difficult to find.","cats":{"security":0}}
+{"text":"These new adversarial attacks methods may pose challenges to current deep learning cyber defense systems and could influence the future defense of cyberattacks.","cats":{"security":0}}
+{"text":"The authors focus on this domain in this research paper.  ","cats":{"security":0}}
+{"text":"This includes discussing how they might arise, differences betwy when they are in testing phase and getting them ready for broader use.","cats":{"security":0}}
+{"text":"To this end, we demonstrate a set of data poisoning attacks to amplify the membership exposure of the targeted class.","cats":{"security":1}}
+{"text":"Our results show that the proposed attacks can substantially increase the membership inference precision with minimum overall test-time model performance degradation.","cats":{"security":1}}
+{"text":"As in-the-wild data are increasingly involved in the training stage, machine learning applications become more susceptible to data poisoning attacks.","cats":{"security":0}}
+{"text":"Such attacks typically lead to test-time accuracy degradation or controlled misprediction.","cats":{"security":0}}
+{"text":"In this paper, we investigate the third type of exploitation of data poisoning - increasing the risks of privacy leakage of benign training samples.  ","cats":{"security":0}}
+{"text":"We first propose a generic dirty-label attack for supervised classification algorithms.","cats":{"security":0}}
+{"text":"We then propose an optimization-based clean-label attack in the transfer learning scenario, whereby the poisoning samples are correctly labeled and look \"natural\" to evade human moderation.","cats":{"security":0}}
+{"text":"We extensively evaluate our attacks on computer vision benchmarks.","cats":{"security":0}}
+{"text":"Our results show that the proposed attacks can substantially increase the membership inference precision with minimum","cats":{"security":0}}
+{"text":"This paper presents a novel reconstruction method that leverages Diffusion Models to protect machine learning classifiers against adversarial attacks, all without requiring any modifications to the classifiers themselves.","cats":{"security":1}}
+{"text":"The susceptibility of machine learning models to minor input perturbations renders them vulnerable to adversarial attacks.","cats":{"security":1}}
+{"text":" The susceptibility of machine learning models to minor input perturbations renders them vulnerable to adversarial attacks.","cats":{"security":0}}
+{"text":"While diffusion-based methods are typically disregarded for adversarial defense due to their slow erving clean accuracy, speed, and plug-and-play compatibility.","cats":{"security":0}}
+{"text":"Code at: https://github.com/HondamunigePrasannaSilva/DiffDefence.","cats":{"security":0}}
+{"text":"However, these previous code models were shown vulnerable to adversarial examples, i.e. small syntactic perturbations that do not change the program's semantics, such as the inclusion of \"dead code\" through false conditions or the addition of inconsequential print statements, designed to \"fool\" the models. LLMs can also be vulnerable to the same adversarial perturbations but a detailed study on this concern has been lacking so far.","cats":{"security":1}}
+{"text":"The proposed defenses show promise in improving the model's resilience, paving the way to more robust defensive solutions for LLMs in code-related applications.","cats":{"security":1}}
+{"text":"Modern large language models (LLMs), such as ChatGPT, have demonstrated impressive capabilities for coding tasks including writing and reasoning about code.","cats":{"security":0}}
+{"text":"They improve upon previous neural network models of code, such as code2seq or seq2seq, that already demonstrated competitive results when performing tasks such as code summarization and identifying code vulnerabilities.  ","cats":{"security":0}}
+{"text":"Furthermore, to make the LLMs more robust against such adversaries without incurring the cost of retraining, we propose prompt-based defenses that involve modifying the prompt to include additiong adversarial perturbations.","cats":{"security":0}}
+{"text":"Our experiments show that adversarial examples obtained with a smaller co, paving the way to more robust defensive solutions for LLMs in code-related applications.","cats":{"security":0}}
+{"text":"Recently, substantial work has shown that adversarial examples tend to deviate from the underlying data manifold of normal examples, whereas pre-trained masked language models can fit the manifold of normal NLP data.","cats":{"security":1}}
+{"text":"To explore how to use the masked language model in adversarial detection, we propose a novel textual adversarial example detection method, namely Masked Language Model-based Detection (MLMD), which can produce clearly distinguishable signals between normal examples and adversarial examples by exploring the changes in manifolds induced by the masked language model.","cats":{"security":1}}
+{"text":"Among many defenses based on the off-manifold assumption of adversarial examples, this work offers a new angle for capturing the manifold change.","cats":{"security":0}}
+{"text":"Adversarial attacks are a serious threat to the reliable deployment of machine learning models in safety-critical applications.","cats":{"security":0}}
+{"text":"They can misguide current models to predict incorrectly by slightly modifying the inputs.  ","cats":{"security":0}}
+{"text":"To explore how to use the masked language model in adversarial detection, we propose a novel textual adversarial example detection method, namely Masked Language Model-based Detection (MLMD), which can produce clearl evaluate MLMD on various benchmark textual datasets, widely studied machine learning models, and state-of-the-art (SOTA) adversarial attacks (in total $3*4*4 = 48$ settings).","cats":{"security":0}}
+{"text":"Experimental results show that MLMD can achieve strong performance, with detection accuracy up to 0.984, 0.967, and 0.901 on AG-NEWS, IMDB, and SST-2 datasets, respectively.","cats":{"security":0}}
+{"text":"Additionally, MLMD is superior, or at least comparable to, the SOTA detection defenses in detection accuracy and F1 score.","cats":{"security":0}}
+{"text":"The code for this work is openly accessible at \\url{https://github.com/mlmddetection/MLMDdetection}.","cats":{"security":0}}
+{"text":"Spurred by the recent rapid increase in the development and distribution of large language models (LLMs) across industry and academia, much recent work has drawn attention to safety- and security-related threats and vulnerabilities of LLMs, including in the context of potentially criminal activities.","cats":{"security":1}}
+{"text":"Specifically, it has been shown that LLMs can be misused for fraud, impersonation, and the generation of malware; while other authors have considered the more general problem of AI alignment.","cats":{"security":1}}
+{"text":"In this paper, we provide an overview of existing - predominantly scientific - efforts on identifying and mitigating threats and vulnerabilities arising from LLMs.","cats":{"security":1}}
+{"text":"We present a taxonomy describing the relationship between threats caused by the generative capabilities of LLMs, prevention measures intended to address such threats, and vulnerabilities arising from imperfect prevention measures.","cats":{"security":1}}
+{"text":"With our work, we hope to raise awareness of the limitations of LLMs in light of such security concerns, among both experienced developers and novel users of such technologies.","cats":{"security":1}}
+{"text":" Specifically, it has been shown that LLMs can be misused for fraud, impersonation, and the generation of malware; while other authors have considered the more general problem of AI alignment.","cats":{"security":0}}
+{"text":"It is important that developers and practitioners alike are aware of security-related problems with such modeescribing the relationship between threats caused by the generative capabilities of LLMs, prevention measures intended to address such threats, and vulnerabilities arising from imperfect prevention measures.","cats":{"security":0}}
+{"text":"With our work, we hope to raise awareness of the limitations of LLMs in light of such security co","cats":{"security":0}}
+{"text":"However, it has been shown that even aligned language models are susceptible to adversarial attacks that bypass their restrictions on generating harmful text.","cats":{"security":1}}
+{"text":"We propose a simple approach to defending against these attacks by having a large language model filter its own responses.","cats":{"security":0}}
+{"text":"Our current results show that even if a model is not fine-tuned to be aligned with human values, it is possible to stop it from presenting harmful content to users by validating the content using a language model.","cats":{"security":1}}
+{"text":"Large language models (LLMs) have skyrocketed in popularity in recent years due to their ability to generate high-quality text in response to human prompting.","cats":{"security":0,"hci":0}}
+{"text":"However, these models have been shown to have the potential to generate harmful content in response to user prompting (e.g., giving users instructions on how to commit crimes).","cats":{"security":0}}
+{"text":"There has been a focus in the literature on mitigating these risks, through methods like aligning models with human values through reinforcement learning.  ","cats":{"security":0}}
+{"text":"Our current results show that even  users by validating the content using a language model.","cats":{"security":0}}
+{"text":"Despite efforts to align large language models (LLMs) with human values, widely-used LLMs such as GPT, Llama, Claude, and PaLM are susceptible to jailbreaking attacks, wherein an adversary fools a targeted LLM into generating objectionable content.","cats":{"security":1}}
+{"text":"To address this vulnerability, we propose SmoothLLM, the first algorithm designed to mitigate jailbreaking attacks on LLMs.","cats":{"security":0}}
+{"text":"Based on our finding that adversarially-generated prompts are brittle to character-level changes, our defense first randomly perturbs multiple copies of a given input prompt, and then aggregates the corresponding predictions to detect adversarial inputs.","cats":{"security":1}}
+{"text":"SmoothLLM reduces the attack success rate on numerous popular LLMs to below one percentage point, avoids unnecessary conservatism, and admits provable guarantees on attack mitigation.","cats":{"security":1}}
+{"text":"Moreover, our defense uses exponentially fewer queries than existing attacks and is compatible with any LLM.","cats":{"security":1}}
+{"text":"Based on our finding that adversarially-generated prompts are brittle to character-level changes, our defense first randomlyinputs.","cats":{"security":0}}
+{"text":"SmoothLLM reduces the attack success rate on numerous popular LLMs to below one percentage point, avoids unnecessary","cats":{"security":0}}
+{"text":"However, they fail on adversarial language examples, which are sentences optimized to fool the language models but with similar semantic meanings for humans.","cats":{"security":1}}
+{"text":"By dynamically adapting the input sentence with predictions from masked words, we show that we can reverse many language adversarial attacks.","cats":{"security":1}}
+{"text":"Since our approach does not require any training, it works for novel tasks at test time and can adapt to novel adversarial corruptions.","cats":{"security":1}}
+{"text":"Large-scale language mdels achieved state-f-the-art perfrmance ver a number f language tasks.  ","cats":{"security":0}}
+{"text":"While prir wrk fcuses n making the language mdel rbust at training time, retraining fr rbustness is ften unrealistic fr large-scale fundatin mdels.","cats":{"security":0}}
+{"text":"Instead, we prpse t make the language mdels rbust at test time.","cats":{"security":0}}
+{"text":"By dynamically adapting the input sentence with predictins frm masked wrds, we shw that we can reverse many language adversarial attacks.","cats":{"security":0}}
+{"text":"Since ur apprmpirical results n tw ppular sentence classificatin datasets demnstrate that ur methd can repair adversarial language attacks ver 65%","cats":{"security":0}}
+{"text":"Further investigation into the effects of these methods on both model robustness and code security reveals that larger models tend to demonstrate reduced robustness and less security.","cats":{"security":1,"social-sciences":0}}
+{"text":"The high cost of full-parameter fine-tuning (FFT) of Large Language Models (LLMs) has led to a series of parameter-efficient fine-tuning (PEFT) methods.","cats":{"security":0}}
+{"text":"However, it remains unclear which methods provide the best cost-performance trade-off at different model scales.","cats":{"security":0}}
+{"text":"We introduce Astraios, a suite of 28 instruction-tuned OctoCoder models using 7 tuning methods and 4 model sizes up to 16 billion parameters.","cats":{"security":0}}
+{"text":"Through investigations across 5 tasks and 8 different datasets encompassing both code comprehension and code generation tasks, we find that FFT generally leads to the best downstream performance across all scales, and PEFT methods differ significantly in their efficacy based on the model scale.","cats":{"security":0}}
+{"text":"LoRA usually offers the most favorable trade-off between cost and performance.  ","cats":{"security":0}}
+{"text":"At last, we explore the relationships among updated parameters, cross-entropy loss, and task performance.","cats":{"security":0,"recommender":0}}
+{"text":"We find that the tuning effectiveness observed in small models generalizes well to larger models, and the validation loss in instruction tuning can be a reliable indicator of overall downstream performance.","cats":{"security":0}}
+{"text":"However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones.","cats":{"security":1}}
+{"text":"In this work, we introduce Jatmo, a method for generating task-specific models resilient to prompt-injection attacks.","cats":{"security":0}}
+{"text":"Our experiments on six tasks show that Jatmo models provide the same quality of outputs on their specific task as standard LLMs, while being resilient to prompt injections.","cats":{"security":0}}
+{"text":"Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks.  ","cats":{"security":0}}
+{"text":"Jatmo leverages the fact that LLMs can only follow instructions once they have under then used to fine-tune a base model (i.e., a non-instruction-tuned model).","cats":{"security":0}}
+{"text":"Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs.","cats":{"security":0}}
+{"text":"For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset.","cats":{"security":0}}
+{"text":"The best attacks succeeded in less than 0.5% of cases against our models, versus over 90% success rate against GPT-3.5-Turbo.","cats":{"security":0}}
+{"text":"We release Jatmo at","cats":{"security":0}}
+{"text":"Deep learning-based natural language processing (NLP) models, particularly pre-trained language models (PLMs), have been revealed to be vulnerable to adversarial attacks.","cats":{"security":1}}
+{"text":"However, the adversarial examples generated by many mainstream word-level adversarial attack models are neither valid nor natural, leading to the loss of semantic maintenance, grammaticality, and human imperceptibility.","cats":{"security":1}}
+{"text":"Experimental results on the Movie Review (MR), IMDB, and Yelp Review Polarity datasets against the baseline adversarial attack models illustrate the effectiveness of LLM-Attack, and it outperforms the baselines in human and GPT-4 evaluation by a significant margin.","cats":{"security":1}}
+{"text":"The model can generate adversarial examples that are typically valid and natural, with the preservation of semantic meaning, grammaticality, and human imperceptibility.","cats":{"security":0}}
+{"text":" However, the adversarial examples generated by many mainstream word-level adversarial attack models are neither valid nor natural, leading to the loss of semantic maintend natural adversarial examples with LLMs.","cats":{"security":0}}
+{"text":"The method consists of two stages: word importance ranking (which searches for the most vulnerable words) and word synonym replacement (which substitutes them with their synonymsperforms the baselines in human and GPT-4 evaluation by a significant margin.","cats":{"security":0}}
+{"text":"This paper elaborately conducts a series of manual jailbreak prompts along with a virtual chat-powered evil plan development team, dubbed Evil Geniuses, to thoroughly probe the safety aspects of these agents.","cats":{"security":1}}
+{"text":"Our investigation reveals three notable phenomena: 1) LLM-based agents exhibit reduced robustness against malicious attacks.","cats":{"security":0}}
+{"text":"These insights prompt us to question the effectiveness of LLM-based attacks on agents, highlighting vulnerabilities at various levels and within different role specializations within the system/agent of LLM-based agents.","cats":{"security":1}}
+{"text":"The rapid advancements in large language models (LLMs) have led to a resurgence in LLM-based agents, which demonstrate impressive human-like behaviors and cooperative capabilities in various interactions and strategy formulations.","cats":{"security":0}}
+{"text":"However, evaluating the safety of LLM-based agents remains a complex challenge.  ","cats":{"security":0}}
+{"text":"2) the attacked agents could provide more nuanced responses.","cats":{"security":0}}
+{"text":"3) the detection of thks on agents, highlighting vulnerabilities at various levels and within different role specializations within the system/agent of LLM-based agents.","cats":{"security":0}}
+{"text":"Extensive evaluation and discussion reveal that LLM-based agents face significant challenges in safety and yiel","cats":{"security":0}}
+{"text":"Exploring jailbreak prompts can help to better reveal the weaknesses of LLMs and further steer us to secure them.","cats":{"security":0}}
+{"text":"Unfortunately, existing jailbreak methods either suffer from intricate manual design or require optimization on another white-box model, compromising generalization or jailbreak efficiency.","cats":{"security":1}}
+{"text":"In this paper, we generalize jailbreak prompt attacks into two aspects: (1) Prompt Rewriting and (2) Scenario Nesting. Based on this, we propose ReNeLLM, an automatic framework that leverages LLMs themselves to generate effective jailbreak prompts.","cats":{"security":1}}
+{"text":"Large Language Models (LLMs), such as ChatGPT and GPT-4, are designed to provide useful and safe responses.  ","cats":{"security":0}}
+{"text":"Unforr white-box model, compromising generalization or jailbreak efficiency.","cats":{"security":0}}
+{"text":"In this paper, we generalize jailbreak proailbreak prompts.","cats":{"security":0}}
+{"text":"Extensive experiments demonstrate that ReNeLLM significantly improves the attack success rate while greatly reducing the time cost compared to existing baselines.","cats":{"security":0}}
+{"text":"Our studyze both the academic community and LLMs vendors towards the provision of safer and more regulated Large Language Models.","cats":{"security":0}}

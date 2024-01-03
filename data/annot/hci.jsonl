@@ -1,0 +1,140 @@
+{"text":"In this paper, we propose a novel method for joint entity and relation extraction from unstructured text by framing it as a conditional sequence generation problem.","cats":{"prompt-engineering":0,"hci":0,"education":0}}
+{"text":"Our model can capture the structural characteristics and boundaries of entities and relations through span representations while simultaneously grounding the generated output in the original text thanks to the pointing mechanism.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"Furthermore, we introduce a detailed taxonomy categorizing these methods based on various parameters, such as dataset utilization, common tasks, feedback mechanisms, and retriever types.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"Our method progressively elevates the LLM from a nascent model to a formidable one, unlocking the full potential of human-annotated demonstration data for SFT.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"Generative AI has the potential to transform how public services are delivered by enhancing productivity and reducing time spent on bureaucracy.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"We find that use of generative AI systems is already widespread: 45% of respondents were aware of generative AI usage within their area of work, while 22% actively use a generative AI system.","cats":{"prompt-engineering":0,"hci":1}}
+{"text":"Public sector professionals were positive about both current use of the technology and its potential to enhance their efficiency and reduce bureaucratic workload in the future.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"Our survey also found a high amount of trust (61%) around generative AI outputs, and a low fear of replacement (16%).","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"While respondents were optimistic overall, areas of concern included feeling like the UK is missing out on opportunities to use AI to improve public services (76%), and only a minority of respondents (32%) felt like there was clear guidance on generative AI usage in their workplaces.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"In other words, it is clear that generative AI is already transforming the public sector, but uptake is happening in a disorganised fashion without clear guidelines.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"Large Language Models (LLMs) have shown extraordinary capabilities in understanding and generating text that closely mirrors human communication.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0}}
+{"text":"However, a primary limitation lies in the significant computational demands during training, arising from their extensive parameterization.","cats":{"prompt-engineering":0,"robustness":0,"hci":0}}
+{"text":"In this paper, we propose a more general, theoretically sound, targeted attack that resorts to the minimization of a Jacobian-induced MAhalanobis distance (JMA) term, taking into account the effort (in the input space) required to move the latent space representation of the input sample in a given direction.","cats":{"security":0,"hci":0}}
+{"text":"Large language models (LLMs) have skyrocketed in popularity in recent years due to their ability to generate high-quality text in response to human prompting.","cats":{"security":0,"hci":0}}
+{"text":"Large Language Models (LLMs) have made remarkable advancements in the field of artificial intelligence, significantly reshaping the human-computer interaction.","cats":{"hci":1}}
+{"text":"Large language models (LLMs) have demonstrated their significant potential to be applied for addressing various application tasks.","cats":{"hci":0,"social-sciences":0,"education":0}}
+{"text":"Large Language Models (LLMs) are frequently used for multi-faceted language generation and evaluation tasks that involve satisfying intricate user constraints or taking into account multiple aspects and criteria.","cats":{"hci":0,"education":0}}
+{"text":"By conditioning on natural language instructions, large language models (LLMs) have displayed impressive capabilities as general-purpose computers.","cats":{"hci":0}}
+{"text":"Large Language Models (LLMs) have demonstrated remarkable generalization across diverse tasks, leading individuals to increasingly use them as personal assistants and universal computing engines.","cats":{"hci":0}}
+{"text":"Recently, large language models (LLMs) have demonstrated impressive capabilities across a wide range of tasks.","cats":{"hci":0}}
+{"text":"Large language models (LLMs) have shown the potential to be integrated into human daily lives.","cats":{"hci":0,"social-sciences":0,"education":0}}
+{"text":"To solve complex tasks, large language models (LLMs) often require multiple rounds of interactions with the user, sometimes assisted by external tools.","cats":{"hci":0}}
+{"text":"Large language models (LLMs) have recently reached an impressive level of linguistic capability, prompting comparisons with human language skills.","cats":{"hci":0,"social-sciences":0,"education":0}}
+{"text":"Large Language Models (LLMs) are powerful tools for natural language processing, enabling novel applications and user experiences.","cats":{"hci":0,"education":0,"recommender":0}}
+{"text":"Large language models (LLMs) have shown impressive success in various applications.","cats":{"hci":0,"education":0,"recommender":0}}
+{"text":"Recently, prompting Large Language Models (LLMs) to generate actions iteratively has become a prevalent paradigm due to its superior performance and user-friendliness.","cats":{"hci":0}}
+{"text":"Large Language Models~(LLMs) have demonstrated incredible capabilities in understanding, generating, and manipulating languages.","cats":{"hci":0,"programming":0}}
+{"text":"Aligning large language models (LLMs) with human preferences has proven to drastically improve usability and has driven rapid adoption as demonstrated by ChatGPT.","cats":{"hci":0}}
+{"text":"The advanced capabilities of Large Language Models (LLMs) have made them invaluable across various applications, from conversational agents and content creation to data analysis, research, and innovation.","cats":{"hci":0,"social-sciences":0,"education":0,"recommender":0}}
+{"text":"Large language models (LLMs) have demonstrated remarkable performance and tremendous potential across a wide range of tasks.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Importantly, the IMU data remains uncompromised throughout the spoofing attack.","cats":{"hci":0}}
+{"text":"Commuting extensions have also attracted the attention of the linear algebra community.","cats":{"hci":0,"recommender":0}}
+{"text":"For example, those working in the NHS thought that time spent on bureaucracy could drop from 50% to 30% if generative AI was properly exploited, an equivalent of one day per week (an enormous potential impact).","cats":{"hci":0}}
+{"text":"This strategy extends directly to the case where the searcher has no knowledge of the terrain beforehand.","cats":{"hci":0}}
+{"text":"Through a series of simulation experiments conducted on corn crops in Iowa, we compare Partially Observable Markov Decision Process (POMDP) models with Markov Decision Process (MDP) models.","cats":{"hci":0}}
+{"text":"In the second stage, a noise reduction block (NRB) based on Swin Transformer is introduced, coupled with the multilevel codebook from the first stage, serving as a high-quality semantic knowledge base (SKB) for generative feature restoration.","cats":{"hci":0}}
+{"text":"Besides, ZOE achieves this by sacrificing only a small performance on biased samples, which is simple and effective.","cats":{"hci":0,"social-sciences":0}}
+{"text":"The KCES includes a cloud-edge workflow scheduling engine for KubeEdge and workflow scheduling strategies for task horizontal roaming and vertical offloading.","cats":{"hci":0}}
+{"text":"The hybrid attention mechanism comprises a proposed enhanced multi-head self-attention and coordinate attention mechanisms increase the ability of attention networks to perceive contextual information and enhances the utilization range of network features.","cats":{"hci":0}}
+{"text":"To address these issues, we propose an end-to-end model called Fine-Grained Extraction Network (FGENet).","cats":{"hci":0}}
+{"text":"The fused features are then passed to both regression and classification heads, where the former provides predicted point coordinates for a given image, and the latter determines the confidence level for each predicted point being an individual.","cats":{"hci":0}}
+{"text":"Additionally, we delve into the crucial technical challenges in BACN, including stringent delay constraints, high reliability, imperfect channel state information (CSI), transmission security, and integrated network architecture.","cats":{"hci":0}}
+{"text":"Misinformation poses a variety of risks, such as undermining public trust and distorting factual discourse.","cats":{"hci":1,"social-sciences":0}}
+{"text":"Within this work, we propose a hybrid approach, Deep-ELA, which combines (the benefits of) deep learning and ELA features.","cats":{"hci":0,"recommender":0}}
+{"text":"To effectively exploit the structural information of the input graph, we propose a structure-enhanced pre-training method for D2T generation by designing a structure-enhanced Transformer.","cats":{"hci":0}}
+{"text":"In addition, we propose a new attention matrix to incorporate graph structures into the original Transformer by taking the available explicit connectivity structure into account.","cats":{"hci":0}}
+{"text":"Experimental results show that our framework significantly outperforms state-of-the-art methods on zero-shot task by 5.9% and 4.5% in mAP on the NUS-WIDE and Open Images, respectively.","cats":{"hci":0}}
+{"text":"Diagnosis of bearing faults is paramount to reducing maintenance costs and operational breakdowns.","cats":{"hci":0}}
+{"text":"Recent advances on large language models (LLMs) enable researchers and developers to build autonomous language agents that can automatically solve various tasks and interact with environments, humans, and other agents using natural language interfaces.","cats":{"hci":0}}
+{"text":"With the recent introduction of large language models (LLMs), which can generate text in response to a natural language prompt, there are new opportunities to consider how to integrate LLMs into UIs.","cats":{"hci":1}}
+{"text":"Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks.","cats":{"hci":0,"social-sciences":0,"education":0}}
+{"text":"Large Language Models (LLMs) are increasingly deployed as the backend for a variety of real-world applications called LLM-Integrated Applications.","cats":{"hci":0}}
+{"text":"Large Language Models (LLMs) have impressive capabilities on a wide range of tasks, such as question answering and the generation of coherent text and code.","cats":{"hci":0}}
+{"text":"Large language models (LLMs) have exhibited impressive capabilities in comprehending complex instructions.","cats":{"hci":0}}
+{"text":"Large language models (LLMs) are used to generate content for a wide range of tasks, and are set to reach a growing audience in coming years due to integration in product interfaces like ChatGPT or search engines like Bing.","cats":{"hci":0}}
+{"text":"Pretrained large language models (LLMs) are becoming increasingly powerful and ubiquitous in mainstream applications such as being a personal assistant, a dialogue model, etc.","cats":{"hci":0,"social-sciences":0,"education":0}}
+{"text":"The rapid development of Large Language Models (LLMs) has led to great strides in model capabilities like reasoning and long-context understanding.","cats":{"hci":0,"education":0}}
+{"text":"The emergence of large language models (LLMs) introduces an innovative paradigm, offering a unified solution to address various authoring tasks within this scenario.","cats":{"hci":0,"social-sciences":0,"education":0}}
+{"text":"Considering large language models (LLMs) have exhibited exceptional ability in language understanding, generation, interaction, and reasoning, we advocate that LLMs could act as a controller to manage existing AI models to solve complicated AI tasks and language could be a generic interface to empower this.","cats":{"hci":0}}
+{"text":"Large language models (LLMs) power a new generation of interactive AI applications exemplified by ChatGPT.","cats":{"hci":0}}
+{"text":"We hope that this work provides a better guide for researchers working on the prompting of large language models.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Large language models have been demonstrated to be valuable in different fields.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"We identify several challenges associated with prompting large language models, categorized into data- and model-specific, linguistic, and socio-linguistic challenges.","cats":{"hci":1}}
+{"text":"Recent advancements in large language models (LLMs), such as ChatGPT, and persuasive technologies, have opened new avenues for enhancing the effectiveness of those systems.","cats":{"hci":0}}
+{"text":"We leverage large language models (LLMs) to enable the automatic and dynamic generation of effective persuasion content.","cats":{"hci":0}}
+{"text":"As large language models become more prevalent, their possible harmful or inappropriate responses are a cause for concern.","cats":{"hci":0}}
+{"text":"Recently, the evaluation of Large Language Models has emerged as a popular area of research.","cats":{"hci":0}}
+{"text":"Such models - commonly referred to as Large Language Models (LLMs) - have recently gained prominence with the general public, thanks to conversational fine-tuning, putting their behavior in line with public expectations regarding AI.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Massive pre-trained language models have garnered attention and controversy due to their ability to generate human-like responses: attention due to their frequent indistinguishability from human-generated phraseology and narratives, and controversy due to the fact that their convincingly presented arguments and facts are frequently simply false.","cats":{"hci":1}}
+{"text":"The capabilities of large language models (LLMs) have sparked debate over whether such systems just learn an enormous collection of superficial statistics or a coherent model of the data generating process -- a world model.","cats":{"hci":0,"social-sciences":0}}
+{"text":"In light of these findings, we conclude by proposing potential research trajectories to further enhance the development and performance of Large Language Models in their current stage.","cats":{"hci":0}}
+{"text":"We further outline the challenges of estimating the confidence for large language models and we suggest some promising directions for future work.","cats":{"hci":0}}
+{"text":"In this work, we revisit this topic in the context of large language models.","cats":{"hci":0}}
+{"text":"Effectively using a given context is paramount for large language models.","cats":{"hci":0}}
+{"text":"We present VOICE, a novel approach for connecting large language models' (LLM) conversational capabilities with interactive exploratory visualization.","cats":{"hci":1}}
+{"text":"Conversation agents fueled by Large Language Models (LLMs) are providing a new way to interact with visual data.","cats":{"hci":1}}
+{"text":"With recent advances in multi-modal foundation models, the previously text-only large language models (LLM) have evolved to incorporate visual input, opening up unprecedented opportunities for various applications in visualization.","cats":{"hci":1}}
+{"text":"Our work explores the capabilities of LLMs for creating and refining visualizations via conversational interfaces.","cats":{"hci":1}}
+{"text":"They endow Large Language Models (LLMs) with powerful capabilities in visual understanding, enabling them to tackle diverse multi-modal tasks.","cats":{"hci":1}}
+{"text":"Multi-modal large language models (LLM) have achieved powerful capabilities for visual semantic understanding in recent years.","cats":{"hci":0}}
+{"text":"Chat2VIS shows that LLMs together with the proposed prompts offer a reliable approach to rendering visualisations from natural language queries, even when queries are highly misspecified and underspecified.","cats":{"hci":1}}
+{"text":"This paper studies Large Language Models (LLMs) for structured data--particularly graphs--a crucial data modality that remains underexplored in the LLM literature.","cats":{"hci":1}}
+{"text":"Large language models (LLMs) have taken the scientific world by storm, changing the landscape of natural language processing and human-computer interaction.","cats":{"hci":1,"social-sciences":1}}
+{"text":"These models enhance Large Language Models (LLMs) with advanced visual understanding capabilities, facilitating their application in a variety of multimodal tasks.","cats":{"hci":0}}
+{"text":"Generative Large Language Models (LLMs) show potential in data analysis, yet their full capabilities remain uncharted.","cats":{"hci":0}}
+{"text":"Large Language Models (LLMs) have shown to be capable of various tasks, yet their capability in interpreting and reasoning over tabular data remains an underexplored area.","cats":{"hci":0}}
+{"text":"In this paper, we explore how we can leverage Large Language Model (LLM) simulations to help us communicate better.","cats":{"hci":0}}
+{"text":"Instead of pursuing the usual path of developing new iterations of language models, this study uniquely proposes leveraging the advancements in pre-trained large language models (LLMs) such as ChatGPT and GPT-3 to convert free-form natural language directly into code for appropriate visualisations.","cats":{"hci":1}}
+{"text":"The rapid advances of large language models (LLMs), such as ChatGPT, are revolutionizing data science and statistics.","cats":{"hci":0,"social-sciences":0}}
+{"text":"To this end, a hypothetical design project was conducted, where ChatGPT was utilized to generate personas, simulate interviews with fictional users, create new design ideas, simulate usage scenarios and conversations between an imaginary prototype and fictional users, and lastly evaluate user experience.","cats":{"hci":1}}
+{"text":"The recent advancements in Large Language Models (LLMs), particularly conversational LLMs like ChatGPT, have prompted changes in a range of fields, including design.","cats":{"hci":0}}
+{"text":"This study aims to examine the capabilities of ChatGPT in a human-centered design process.  ","cats":{"hci":0}}
+{"text":"The results show that ChatGPT effectively performed the tasks assigned to it as a designer, user, or product, providing mostly appropriate responses.","cats":{"hci":0}}
+{"text":"The study does, however, highlight some drawbacks such as forgotten information, partial responses, and a lack of output diversity.","cats":{"hci":0}}
+{"text":"The paper explains the potential benefits and limitations of using conversational LLMs in design, discusses its implications, and suggests directions for future research in this rapidly evolving area.","cats":{"hci":0}}
+{"text":"We not only focus on the performance of LLMs, but also explores their features from a psychological perspective, acknowledging the importance of understanding their behavioral characteristics.","cats":{"hci":1,"social-sciences":1}}
+{"text":"Our study examines the behavioral patterns displayed by LLMs by employing trait theory, a psychological framework.","cats":{"hci":1,"social-sciences":0}}
+{"text":"Moreover, the study investigates whether ChatGPT can exhibit personality changes in response to instructions or contextual cues.","cats":{"hci":1,"social-sciences":1}}
+{"text":"The findings show that ChatGPT consistently maintains its ENFJ personality regardless of instructions or contexts.","cats":{"hci":1,"social-sciences":1}}
+{"text":" We not only focus on the performance of LLMs, but also explores their features from a psychological perspective, acknowledging the importance of understanding y of personality types exhibited by ChatGPT.","cats":{"hci":0}}
+{"text":"Furthermore, experiments include cross-lingual effects on seven additional languages, and the investigation of four other LLMs.","cats":{"hci":0}}
+{"text":"Moreover, the study indings show that ChatGPT consistently maintains its ENFJ personality regardless of instructions or contexts.","cats":{"hci":0}}
+{"text":"By shedding light on the personalization of LLMs, we anticipate that our study will serve as a catalyst for further research in this field.","cats":{"hci":0,"social-sciences":0}}
+{"text":"The advancement of Large Language Models (LLMs) has led to their widespread use across a broad spectrum of tasks including decision making.","cats":{"hci":1,"social-sciences":1}}
+{"text":"Prior studies have compared the decision making abilities of LLMs with those of humans from a psychological perspective.","cats":{"hci":1}}
+{"text":"By experimenting on three OpenAI language models possessing different capabilities, we observe that the decision making abilities fluctuate based on the input prompts and temperature settings.","cats":{"hci":0}}
+{"text":"Contrary to previous findings language models display a human-like exploration exploitation tradeoff after simple adjustments to the prompt.","cats":{"hci":1}}
+{"text":" Prior studies have compared the decision making abilities of LLMs with those of humans from a psychological perspective.","cats":{"hci":0}}
+{"text":"However, these sturompt.","cats":{"hci":0}}
+{"text":"In this study, we examine LLMs' performance on the Horizon decision making task studied by Binz and Schulz (2023) analyzing how LLMs respond to variations in prompts and hyperparameters.","cats":{"hci":0}}
+{"text":"Contrary to previous findings language models display a human-like","cats":{"hci":0}}
+{"text":"The emergence of Large Language Models (LLMs) has brought both excitement and concerns to social computing research.","cats":{"hci":1,"social-sciences":1}}
+{"text":"On the other hand, concerns are emerging regarding the validity, privacy, and ethics of the research when LLMs are involved.","cats":{"hci":1,"social-sciences":0}}
+{"text":"This SIG aims at offering an open space for social computing researchers who are interested in understanding the impacts of LLMs to discuss their current practices, perspectives, challenges when engaging with LLMs in their everyday work and collectively shaping the emerging norms of using LLMs in social computing research.","cats":{"hci":1,"social-sciences":1}}
+{"text":" On the one hand, LLMs offer unprecedented capabilities in analyzing vast amounts of textual data and generating human-like responses, enabling researchers to delve into complex social phenomena.","cats":{"hci":0}}
+{"text":"On the other hand, concerns are emerging regarding the validity, privacy, and ethics of the research when LLMs are ipacts of LLMs to discuss their current practices, perspectives, challenges when engaging with LLMs in their everyday work and","cats":{"hci":0}}
+{"text":"Thanks to their generative capabilities, large language models (LLMs) have become an invaluable tool for creative processes.","cats":{"hci":1}}
+{"text":"Our work advances how we interact with LLMs for creative tasks, introducing a way to harness the creative potential of LLMs.","cats":{"hci":0}}
+{"text":"These models have the capacity to produce hundreds and thousands of visual and textual outputs, offering abundant inspiration for creative endeavors.","cats":{"hci":0}}
+{"text":"But are we harnessing their full potential?","cats":{"hci":0}}
+{"text":"We argue that current interaction paradigms fall short, guiding users towards rapid convergence on a limited set of ideas, rather than empowering them to explore the vast latent design space in generative models.","cats":{"hci":0}}
+{"text":"To address this limitation, we propose a framework that facilitates the structured generation of design space in which users can seamlessly explore, evaluate, and synthesize a multitude of responses.","cats":{"hci":0}}
+{"text":"We demonstrate the feasibility and usefulness of this framework through the design and development of an interactive system, Luminate, and a user study with 8 professional writers.","cats":{"hci":0}}
+{"text":"The goal of this paper is establishing if we can satisfactorily perform a Thematic Analysis (TA) of semi-structured interviews using a Large Language Model (more precisely GPT3.5-Turbo).","cats":{"hci":1}}
+{"text":"In particular, the focus will be on using the results of a TA done with the LLM on a dataset of user interviews, for writing user personas, with the model building on the TA to produce the personas narratives.","cats":{"hci":1}}
+{"text":" Building on previous work by the author, which established an embryonal process for conducting a TA with the model, this paper will perform a further analysis and then cover the last phase of a TA (phase 6), which entails the writing up of the result.","cats":{"hci":0}}
+{"text":"This phase was not covered by the previous work.","cats":{"hci":0}}
+{"text":"In particular, the focus will be on using the results of a TA done with the LLM on a dataset of user interviews, for writing user personas, with the model building on the TA to produce tThe paper shows that the model can build basic user personas with an acceptable quality deriving them from themes, and that the model can serve for the generation of ideas for user personas.","cats":{"hci":0}}
+{"text":"Furthermore, unlike other types of artificial intelligence, it is a technology that has quickly become widely available for bottom-up adoption: essentially anyone can decide to make use of it in their day to day work.","cats":{"hci":0,"education":0}}
+{"text":"But to what extent is generative AI already in use in the public sector?","cats":{"hci":0,"social-sciences":0}}
+{"text":"Our survey of 938 public service professionals within the UK (covering education, health, social work and emergency services) seeks to answer this question.  ","cats":{"hci":0}}
+{"text":"The UK's public sector ur","cats":{"hci":0}}
+{"text":"The significance of this new paradigm lies in its ability to reveal potential cognitive deficiencies in LLMs that current benchmarks, such as GSM8K, fail to uncover due to their saturation and lack of effective differentiation among varying reasoning abilities.","cats":{"hci":1}}
+{"text":"By promoting the adoption of meta-reasoning evaluation methods similar to ours, we aim to facilitate a more accurate assessment of the true cognitive abilities of LLMs.","cats":{"hci":0}}
+{"text":"In this work, we introduce a novel evaluation paradigm for Large Language Models, one that challenges them to engage in meta-reasoning.","cats":{"hci":0}}
+{"text":"This approach addresses critical shortcomings in existing math problem-solving benchmarks, traditionally used to evaluate the cognitive capabilities of agents.","cats":{"hci":0}}
+{"text":"Our paradigm shifts the focus from result-oriented assessments, which often overlook the reasoning process, to a more holistic evaluation that effectively differentiates the cognitive capabilities among models.","cats":{"hci":0}}
+{"text":"For example, in our benchmark, GPT-4 demonstrates a performance ten times more accurate than GPT3-5.  ","cats":{"hci":0}}
+{"text":"Our comprehensive analysis includes several state-of-the-art math models from both open-source and closed-source communities, uncovering fundamental deficiencies in their training and evaluation approaches.","cats":{"hci":0}}
+{"text":"This paper not only advocates for a paradigm shift in the assessment of LLMs but also contributes to the ongoing discourse on the trajectory towards Artificial General Intelligence (AGI).","cats":{"hci":0}}
