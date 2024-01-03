@@ -35,7 +35,7 @@ jobs:
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
         git add index.html
-        git add data/input_data.jsonl
+        git add data/input.jsonl
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
