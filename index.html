@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-01-02.</p><br/>
+            <p>Generated on 2024-01-03.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -30,6 +30,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Prompt Engineering in Large Language Models</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                VideoDrafter: Content-Consistent Multi-Scene Video Generation with LLM
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The recent innovations and breakthroughs in diffusion models have significantly expanded the possibilities of generating high-quality videos for the given prompts.Most existing works tackle the single-scene scenario with only one video event occurring in a single background.Extending to generate multi-scene videos nevertheless is not trivial and necessitates to nicely manage the logic in between while preserving the consistent visual appearance of key content across video scenes.In this paper, we propose a novel framework, namely VideoDrafter, for content-consistent multi-scene video generation.<span class='px-1 mx-1 bg-yellow-200'>Technically, VideoDrafter leverages Large Language Models (LLM) to convert the input prompt into comprehensive multi-scene script that benefits from the logical knowledge learnt by LLM. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.616</span></span>The script for each scene includes a prompt describing the event, the foreground/background entities, as well as camera movement.VideoDrafter identifies the common entities throughout the script and asks LLM to detail each entity.The resultant entity description is then fed into a text-to-image model to generate a reference image for each entity.Finally, VideoDrafter outputs a multi-scene video by generating each scene video via a diffusion process that takes the reference images, the descriptive prompt of the event and camera movement into account.The diffusion model incorporates the reference images as the condition and alignment to strengthen the content consistency of multi-scene videos.Extensive experiments demonstrate that VideoDrafter outperforms the SOTA video generation models in terms of visual quality, content consistency, and user preference.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01256v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01256v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
           </td>
@@ -426,6 +452,58 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                FedQV: Leveraging Quadratic Voting in Federated Learning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Federated Learning (FL) permits different parties to collaboratively train a global model without disclosing their respective local labels.A crucial step of FL, that of aggregating local models to produce the global one, shares many similarities with public decision-making, and elections in particular.In that context, a major weakness of FL, namely its vulnerability to poisoning attacks, can be interpreted as a consequence of the one person one vote (henceforth 1p1v) principle underpinning most contemporary aggregation rules.In this paper, we propose FedQV, a novel aggregation algorithm built upon the quadratic voting scheme, recently proposed as a better alternative to 1p1v-based elections.Our theoretical analysis establishes that FedQV is a truthful mechanism in which bidding according to one's true valuation is a dominant strategy that achieves a convergence rate that matches those of state-of-the-art methods.<span class='px-1 mx-1 bg-yellow-200'>Furthermore, our empirical analysis using multiple real-world datasets validates the superior performance of FedQV against poisoning attacks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.645</span></span>It also shows that combining FedQV with unequal voting ``budgets'' according to a reputation score increases its performance benefits even further.Finally, we show that FedQV can be easily combined with Byzantine-robust privacy-preserving mechanisms to enhance its robustness against both poisoning and privacy attacks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01168v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01168v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLbezpeky: Leveraging Large Language Models for Vulnerability Detection
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Despite the continued research and progress in building secure systems, Android applications continue to be ridden with vulnerabilities, necessitating effective detection methods. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.583</span></span>Current strategies involving static and dynamic analysis tools come with limitations like overwhelming number of false positives and limited scope of analysis which make either difficult to adopt.Over the past years, machine learning based approaches have been extensively explored for vulnerability detection, but its real-world applicability is constrained by data requirements and feature engineering challenges.Large Language Models (LLMs), with their vast parameters, have shown tremendous potential in understanding semnatics in human as well as programming languages.<span class='px-1 mx-1 bg-yellow-200'>We dive into the efficacy of LLMs for detecting vulnerabilities in the context of Android security. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.826</span></span>We focus on building an AI-driven workflow to assist developers in identifying and rectifying vulnerabilities.<span class='px-1 mx-1 bg-yellow-200'>Our experiments show that LLMs outperform our expectations in finding issues within applications correctly flagging insecure apps in 91.67% of cases in the Ghera benchmark. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.613</span></span><span class='px-1 mx-1 bg-yellow-200'>We use inferences from our experiments towards building a robust and actionable vulnerability detection system and demonstrate its effectiveness. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.663</span></span>Our experiments also shed light on how different various simple configurations can affect the True Positive (TP) and False Positive (FP) rates.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01269v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01269v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
           </td>
           <td>
@@ -691,32 +769,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Scaling Laws for Adversarial Attacks on Language Model Activations
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>We explore a class of adversarial attacks targeting the activations of language models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.605</span></span>By manipulating a relatively small subset of model activations, $a$, we demonstrate the ability to control the exact prediction of a significant number (in some cases up to 1000) of subsequent tokens $t$. We empirically verify a scaling law where the maximum number of target tokens $t_\mathrm{max}$ predicted depends linearly on the number of tokens $a$ whose activations the attacker controls as $t_\mathrm{max} = \kappa a$.We find that the number of bits of control in the input space needed to control a single bit in the output space (what we call attack resistance $\chi$) is remarkably constant between $\approx 16$ and $\approx 25$ over 2 orders of magnitude of model sizes for different language models.Compared to attacks on tokens, attacks on activations are predictably much stronger, however, we identify a surprising regularity where one bit of input steered either via activations or via tokens is able to exert control over a similar amount of output bits.This gives support for the hypothesis that adversarial attacks are a consequence of dimensionality mismatch between the input and output spaces.A practical implication of the ease of attacking language model activations instead of tokens is for multi-modal and selected retrieval models, where additional data sources are added as activations directly, sidestepping the tokenized input.This opens up a new, broad attack surface.<span class='px-1 mx-1 bg-yellow-200'>By using language models as a controllable test-bed to study adversarial attacks, we were able to experiment with input-output dimensions that are inaccessible in computer vision, especially where the output dimension dominates. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.584</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.02780v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.02780v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-05</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Cyber Insurance for Cyber Resilience
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -737,32 +789,6 @@
           </div>
         </td>
       </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Tree of Attacks: Jailbreaking Black-Box LLMs Automatically
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>While Large Language Models (LLMs) display versatile functionality, they continue to generate harmful, biased, and toxic content, as demonstrated by the prevalence of human-designed jailbreaks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.766</span></span><span class='px-1 mx-1 bg-yellow-200'>In this work, we present Tree of Attacks with Pruning (TAP), an automated method for generating jailbreaks that only requires black-box access to the target LLM. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.916</span></span><span class='px-1 mx-1 bg-yellow-200'>TAP utilizes an LLM to iteratively refine candidate (attack) prompts using tree-of-thoughts reasoning until one of the generated prompts jailbreaks the target. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.781</span></span><span class='px-1 mx-1 bg-yellow-200'>Crucially, before sending prompts to the target, TAP assesses them and prunes the ones unlikely to result in jailbreaks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.778</span></span>Using tree-of-thought reasoning allows TAP to navigate a large search space of prompts and pruning reduces the total number of queries sent to the target.<span class='px-1 mx-1 bg-yellow-200'>In empirical evaluations, we observe that TAP generates prompts that jailbreak state-of-the-art LLMs (including GPT4 and GPT4-Turbo) for more than 80% of the prompts using only a small number of queries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.821</span></span><span class='px-1 mx-1 bg-yellow-200'>This significantly improves upon the previous state-of-the-art black-box method for generating jailbreaks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.766</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.02119v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.02119v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
           <td></td>
           <td>
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Legal Frameworks for LLM Accountability</h2>
@@ -773,6 +799,58 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Robustness Tools in LLM Safety</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLbezpeky: Leveraging Large Language Models for Vulnerability Detection
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Despite the continued research and progress in building secure systems, Android applications continue to be ridden with vulnerabilities, necessitating effective detection methods.Current strategies involving static and dynamic analysis tools come with limitations like overwhelming number of false positives and limited scope of analysis which make either difficult to adopt.Over the past years, machine learning based approaches have been extensively explored for vulnerability detection, but its real-world applicability is constrained by data requirements and feature engineering challenges.Large Language Models (LLMs), with their vast parameters, have shown tremendous potential in understanding semnatics in human as well as programming languages.<span class='px-1 mx-1 bg-yellow-200'>We dive into the efficacy of LLMs for detecting vulnerabilities in the context of Android security. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.61</span></span>We focus on building an AI-driven workflow to assist developers in identifying and rectifying vulnerabilities.Our experiments show that LLMs outperform our expectations in finding issues within applications correctly flagging insecure apps in 91.67% of cases in the Ghera benchmark.We use inferences from our experiments towards building a robust and actionable vulnerability detection system and demonstrate its effectiveness.Our experiments also shed light on how different various simple configurations can affect the True Positive (TP) and False Positive (FP) rates.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01269v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01269v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Experimental Validation of Sensor Fusion-based GNSS Spoofing Attack Detection Framework for Autonomous Vehicles
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>In this paper, we validate the performance of the a sensor fusion-based Global Navigation Satellite System (GNSS) spoofing attack detection framework for Autonomous Vehicles (AVs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.605</span></span>To collect data, a vehicle equipped with a GNSS receiver, along with Inertial Measurement Unit (IMU) is used.The detection framework incorporates two strategies: The first strategy involves comparing the predicted location shift, which is the distance traveled between two consecutive timestamps, with the inertial sensor-based location shift.For this purpose, data from low-cost in-vehicle inertial sensors such as the accelerometer and gyroscope sensor are fused and fed into a long short-term memory (LSTM) neural network.The second strategy employs a Random-Forest supervised machine learning model to detect and classify turns, distinguishing between left and right turns using the output from the steering angle sensor.In experiments, two types of spoofing attack models: turn-by-turn and wrong turn are simulated.These spoofing attacks are modeled as SQL injection attacks, where, upon successful implementation, the navigation system perceives injected spoofed location information as legitimate while being unable to detect legitimate GNSS signals.Importantly, the IMU data remains uncompromised throughout the spoofing attack.To test the effectiveness of the detection framework, experiments are conducted in Tuscaloosa, AL, mimicking urban road structures.The results demonstrate the framework's ability to detect various sophisticated GNSS spoofing attacks, even including slow position drifting attacks.Overall, the experimental results showcase the robustness and efficacy of the sensor fusion-based spoofing attack detection approach in safeguarding AVs against GNSS spoofing threats.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01304v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01304v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
           </td>
@@ -844,32 +922,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2312.12321v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Mitigating Data Injection Attacks on Federated Learning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Federated learning is a technique that allows multiple entities to collaboratively train models using their data without compromising data privacy.However, despite its advantages, federated learning can be susceptible to false data injection attacks.In these scenarios, a malicious entity with control over specific agents in the network can manipulate the learning process, leading to a suboptimal model.Consequently, addressing these data injection attacks presents a significant research challenge in federated learning systems.In this paper, we propose a novel technique to detect and mitigate data injection attacks on federated learning systems.Our mitigation method is a local scheme, performed during a single instance of training by the coordinating node, allowing the mitigation during the convergence of the algorithm.Whenever an agent is suspected to be an attacker, its data will be ignored for a certain period, this decision will often be re-evaluated.<span class='px-1 mx-1 bg-yellow-200'>We prove that with probability 1, after a finite time, all attackers will be ignored while the probability of ignoring a trustful agent becomes 0, provided that there is a majority of truthful agents. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.615</span></span>Simulations show that when the coordinating node detects and isolates all the attackers, the model recovers and converges to the truthful model.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.02102v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.02102v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
