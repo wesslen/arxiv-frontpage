@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-01-03.</p><br/>
+            <p>Generated on 2024-01-04.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -30,6 +30,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Prompt Engineering in Large Language Models</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                GPT-4V(ision) is a Generalist Web Agent, if Grounded
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The recent development on large multimodal models (LMMs), especially GPT-4V(ision) and Gemini, has been quickly expanding the capability boundaries of multimodal models beyond traditional tasks like image captioning and visual question answering.In this work, we explore the potential of LMMs like GPT-4V as a generalist web agent that can follow natural language instructions to complete tasks on any given website.We propose SEEACT, a generalist web agent that harnesses the power of LMMs for integrated visual understanding and acting on the web.We evaluate on the recent MIND2WEB benchmark.In addition to standard offline evaluation on cached websites, we enable a new online evaluation setting by developing a tool that allows running web agents on live websites.We show that GPT-4V presents a great potential for web agents - it can successfully complete 50% of the tasks on live websites if we manually ground its textual plans into actions on the websites.This substantially outperforms text-only LLMs like GPT-4 or smaller models (FLAN-T5 and BLIP-2) specifically fine-tuned for web agents.However, grounding still remains a major challenge.<span class='px-1 mx-1 bg-yellow-200'>Existing LMM grounding strategies like set-of-mark prompting turns out not effective for web agents, and the best grounding strategy we develop in this paper leverages both the HTML text and visuals. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.601</span></span>Yet, there is still a substantial gap with oracle grounding, leaving ample room for further improvement.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01614v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01614v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
           </td>
@@ -706,25 +732,30 @@
           </div>
         </td>
       </tr><tr>
+          <td></td>
+          <td>
+            <h2 class="text-2xl tracking-tight pt-4 font-bold">Robustness Tools in LLM Safety</h2>
+          </td>
+        </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-17</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Revealing Networks: Understanding Effective Teacher Practices in AI-Supported Classrooms using Transmodal Ordered Network Analysis
+                De-Hallucinator: Iterative Grounding for LLM-Based Code Completion
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Learning analytics research increasingly studies classroom learning with AI-based systems through rich contextual data from outside these systems, especially student-teacher interactions.One key challenge in leveraging such data is generating meaningful insights into effective teacher practices.Quantitative ethnography bears the potential to close this gap by combining multimodal data streams into networks of co-occurring behavior that drive insight into favorable learning conditions.The present study uses transmodal ordered network analysis to understand effective teacher practices in relationship to traditional metrics of in-system learning in a mathematics classroom working with AI tutors.Incorporating teacher practices captured by position tracking and human observation codes into modeling significantly improved the inference of how efficiently students improved in the AI tutor beyond a model with tutor log data features only.Comparing teacher practices by student learning rates, we find that students with low learning rates exhibited more hint use after monitoring.However, after an extended visit, students with low learning rates showed learning behavior similar to their high learning rate peers, achieving repeated correct attempts in the tutor.Observation notes suggest conceptual and procedural support differences can help explain visit effectiveness.<span class='px-1 mx-1 bg-yellow-200'>Taken together, offering early conceptual support to students with low learning rates could make classroom practice with AI tutors more effective. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.656</span></span>This study advances the scientific understanding of effective teacher practice in classrooms learning with AI tutors and methodologies to make such practices visible.</p>
+                  <p>Large languages models (LLMs) trained on datasets of publicly available source code have established a new state-of-the-art in code completion.However, these models are mostly unaware of the code that already exists within a specific project, preventing the models from making good use of existing APIs.Instead, LLMs often invent, or "hallucinate", non-existent APIs or produce variants of already existing code.Although the API information is available to IDEs, the input size limit of LLMs prevents code completion techniques from including all relevant context into the prompt.This paper presents De-Hallucinator, an LLM-based code completion technique that grounds the predictions of a model through a novel combination of retrieving suitable API references and iteratively querying the model with increasingly suitable context information in the prompt.The approach exploits the observation that LLMs often predict code that resembles the desired completion, but that fails to correctly refer to already existing APIs.<span class='px-1 mx-1 bg-yellow-200'>De-Hallucinator automatically identifies project-specific API references related to the code prefix and to the model's initial predictions and adds these references into the prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.647</span></span>Our evaluation applies the approach to the task of predicting API usages in open-source Python projects.<span class='px-1 mx-1 bg-yellow-200'>We show that De-Hallucinator consistently improves the predicted code across four state-of-the-art LLMs compared to querying the model only with the code before the cursor. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.65</span></span>In particular, the approach improves the edit distance of the predicted code by 23-51% and the recall of correctly predicted API usages by 24-61% relative to the baseline.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.10826v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01701v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2312.10826v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2401.01701v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -732,11 +763,58 @@
           </div>
         </td>
       </tr><tr>
-          <td></td>
-          <td>
-            <h2 class="text-2xl tracking-tight pt-4 font-bold">Robustness Tools in LLM Safety</h2>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
           </td>
-        </tr><tr>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Navigating Uncertainty: Optimizing API Dependency for Hallucination Reduction in Closed-Book Question Answering
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>While Large Language Models (LLM) are able to accumulate and restore knowledge, they are still prone to hallucination. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.65</span></span>Especially when faced with factual questions, LLM cannot only rely on knowledge stored in parameters to guarantee truthful and correct answers.Augmenting these models with the ability to search on external information sources, such as the web, is a promising approach to ground knowledge to retrieve information.However, searching in a large collection of documents introduces additional computational/time costs.An optimal behavior would be to query external resources only when the LLM is not confident about answers.In this paper, we propose a new LLM able to self-estimate if it is able to answer directly or needs to request an external tool.We investigate a supervised approach by introducing a hallucination masking mechanism in which labels are generated using a close book question-answering task.In addition, we propose to leverage parameter-efficient fine-tuning techniques to train our model on a small amount of data.Our model directly provides answers for $78.2\%$ of the known queries and opts to search for $77.2\%$ of the unknown ones.This results in the API being utilized only $62\%$ of the time.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01780v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01780v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Large Language Models Relearn Removed Concepts
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Advances in model editing through neuron pruning hold promise for removing undesirable concepts from large language models.However, it remains unclear whether models have the capacity to reacquire pruned concepts after editing.To investigate this, we evaluate concept relearning in models by tracking concept saliency and similarity in pruned neurons during retraining.Our findings reveal that models can quickly regain performance post-pruning by relocating advanced concepts to earlier layers and reallocating pruned concepts to primed neurons with similar semantics.This demonstrates that models exhibit polysemantic capacities and can blend old and new concepts in individual neurons.While neuron pruning provides interpretability into model concepts, our results highlight the challenges of permanent concept removal for improved model \textit{safety}.<span class='px-1 mx-1 bg-yellow-200'>Monitoring concept reemergence and developing techniques to mitigate relearning of unsafe concepts will be important directions for more robust model editing. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.607</span></span>Overall, our work strongly demonstrates the resilience and fluidity of concept representations in LLMs post concept removal.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01814v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01814v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
           </td>
@@ -1120,32 +1198,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2312.08250v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-06</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                MOCHa: Multi-Objective Reinforcement Mitigating Caption Hallucinations
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>While recent years have seen rapid progress in image-conditioned text generation, image captioning still suffers from the fundamental issue of hallucinations, the generation of spurious details that cannot be inferred from the given image. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.717</span></span><span class='px-1 mx-1 bg-yellow-200'>Dedicated methods for reducing hallucinations in image captioning largely focus on closed-vocabulary object tokens, ignoring most types of hallucinations that occur in practice. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.796</span></span><span class='px-1 mx-1 bg-yellow-200'>In this work, we propose MOCHa, an approach that harnesses advancements in reinforcement learning (RL) to address the sequence-level nature of hallucinations in an open-world setup. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.769</span></span>To optimize for caption fidelity to the input image, we leverage ground-truth reference captions as proxies to measure the logical consistency of generated captions.However, optimizing for caption fidelity alone fails to preserve the semantic adequacy of generations; therefore, we propose a multi-objective reward function that jointly targets these qualities, without requiring any strong supervision.We demonstrate that these goals can be simultaneously optimized with our framework, enhancing performance for various captioning models of different scales.Our qualitative and quantitative results demonstrate MOCHa's superior performance across various established metrics.We also demonstrate the benefit of our method in the open-vocabulary setting.<span class='px-1 mx-1 bg-yellow-200'>To this end, we contribute OpenCHAIR, a new benchmark for quantifying open-vocabulary hallucinations in image captioning models, constructed using generative foundation models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.681</span></span>We will release our code, benchmark, and trained models.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.03631v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.03631v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1892,6 +1944,136 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Exploring the Frontiers of LLMs in Psychological Applications: A Comprehensive Review
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This paper explores the frontiers of large language models (LLMs) in psychology applications.Psychology has undergone several theoretical changes, and the current use of Artificial Intelligence (AI) and Machine Learning, particularly LLMs, promises to open up new research directions.<span class='px-1 mx-1 bg-yellow-200'>We provide a detailed exploration of how LLMs like ChatGPT are transforming psychological research. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.823</span></span><span class='px-1 mx-1 bg-yellow-200'>It discusses the impact of LLMs across various branches of psychology, including cognitive and behavioral, clinical and counseling, educational and developmental, and social and cultural psychology, highlighting their potential to simulate aspects of human cognition and behavior. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.77</span></span>The paper delves into the capabilities of these models to emulate human-like text generation, offering innovative tools for literature review, hypothesis generation, experimental design, experimental subjects, data analysis, academic writing, and peer review in psychology.<span class='px-1 mx-1 bg-yellow-200'>While LLMs are essential in advancing research methodologies in psychology, the paper also cautions about their technical and ethical challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.72</span></span><span class='px-1 mx-1 bg-yellow-200'>There are issues like data privacy, the ethical implications of using LLMs in psychological research, and the need for a deeper understanding of these models' limitations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.702</span></span><span class='px-1 mx-1 bg-yellow-200'>Researchers should responsibly use LLMs in psychological studies, adhering to ethical standards and considering the potential consequences of deploying these technologies in sensitive areas. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.746</span></span><span class='px-1 mx-1 bg-yellow-200'>Overall, the article provides a comprehensive overview of the current state of LLMs in psychology, exploring potential benefits and challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.682</span></span>It serves as a call to action for researchers to leverage LLLs' advantages responsibly while addressing associated risks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01519v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01519v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                MedSumm: A Multimodal Approach to Summarizing Code-Mixed Hindi-English Clinical Queries
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>In the healthcare domain, summarizing medical questions posed by patients is critical for improving doctor-patient interactions and medical decision-making.<span class='px-1 mx-1 bg-yellow-200'>Although medical data has grown in complexity and quantity, the current body of research in this domain has primarily concentrated on text-based methods, overlooking the integration of visual cues. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.615</span></span>Also prior works in the area of medical question summarisation have been limited to the English language.This work introduces the task of multimodal medical question summarization for codemixed input in a low-resource setting.To address this gap, we introduce the Multimodal Medical Codemixed Question Summarization MMCQS dataset, which combines Hindi-English codemixed medical queries with visual aids.This integration enriches the representation of a patient's medical condition, providing a more comprehensive perspective.We also propose a framework named MedSumm that leverages the power of LLMs and VLMs for this task.By utilizing our MMCQS dataset, we demonstrate the value of integrating visual information from images to improve the creation of medically detailed summaries.This multimodal strategy not only improves healthcare decision-making but also promotes a deeper comprehension of patient queries, paving the way for future exploration in personalized and responsive medical care.Our dataset, code, and pre-trained models will be made publicly available.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01596v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01596v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Social Media Ready Caption Generation for Brands
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Social media advertisements are key for brand marketing, aiming to attract consumers with captivating captions and pictures or logos.<span class='px-1 mx-1 bg-yellow-200'>While previous research has focused on generating captions for general images, incorporating brand personalities into social media captioning remains unexplored. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.692</span></span><span class='px-1 mx-1 bg-yellow-200'>Brand personalities are shown to be affecting consumers' behaviours and social interactions and thus are proven to be a key aspect of marketing strategies. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.734</span></span>Current open-source multimodal LLMs are not directly suited for this task.Hence, we propose a pipeline solution to assist brands in creating engaging social media captions that align with the image and the brand personalities.Our architecture is based on two parts: a the first part contains an image captioning model that takes in an image that the brand wants to post online and gives a plain English caption; b the second part takes in the generated caption along with the target brand personality and outputs a catchy personality-aligned social media caption.Along with brand personality, our system also gives users the flexibility to provide hashtags, Instagram handles, URLs, and named entities they want the caption to contain, making the captions more semantically related to the social media handles.Comparative evaluations against various baselines demonstrate the effectiveness of our approach, both qualitatively and quantitatively.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01637v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01637v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Predicting challenge moments from students' discourse: A comparison of GPT-4 to two traditional natural language processing approaches
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Effective collaboration requires groups to strategically regulate themselves to overcome challenges.Research has shown that groups may fail to regulate due to differences in members' perceptions of challenges which may benefit from external support.In this study, we investigated the potential of leveraging three distinct natural language processing models: an expert knowledge rule-based model, a supervised machine learning (ML) model and a Large Language model (LLM), in challenge detection and challenge dimension identification (cognitive, metacognitive, emotional and technical/other challenges) from student discourse, was investigated.The results show that the supervised ML and the LLM approaches performed considerably well in both tasks, in contrast to the rule-based approach, whose efficacy heavily relies on the engineered features by experts.The paper provides an extensive discussion of the three approaches' performance for automated detection and support of students' challenge moments in collaborative learning activities.<span class='px-1 mx-1 bg-yellow-200'>It argues that, although LLMs provide many advantages, they are unlikely to be the panacea to issues of the detection and feedback provision of socially shared regulation of learning due to their lack of reliability, as well as issues of validity evaluation, privacy and confabulation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span>We conclude the paper with a discussion on additional considerations, including model transparency to explore feasible and meaningful analytical feedback for students and educators using LLMs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01692v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01692v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                WordArt Designer API: User-Driven Artistic Typography Synthesis with Large Language Models on ModelScope
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This paper introduces the WordArt Designer API, a novel framework for user-driven artistic typography synthesis utilizing Large Language Models (LLMs) on ModelScope.We address the challenge of simplifying artistic typography for non-professionals by offering a dynamic, adaptive, and computationally efficient alternative to traditional rigid templates.Our approach leverages the power of LLMs to understand and interpret user input, facilitating a more intuitive design process.<span class='px-1 mx-1 bg-yellow-200'>We demonstrate through various case studies how users can articulate their aesthetic preferences and functional requirements, which the system then translates into unique and creative typographic designs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span>Our evaluations indicate significant improvements in user satisfaction, design flexibility, and creative expression over existing systems.The WordArt Designer API not only democratizes the art of typography but also opens up new possibilities for personalized digital communication and design.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01699v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01699v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
           </td>
           <td>
@@ -2463,271 +2645,115 @@
           </div>
         </td>
       </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                How Far Are We from Believable AI Agents? A Framework for Evaluating the Believability of Human Behavior Simulation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Human behavior simulation of AI agents necessitates the agents to possess a quality of believability, which is crucial as it facilitates users in establishing trust toward the agents and streamlines the fulfillment of the agents' goal.While recent advancements in Large Language Model (LLM) based agents have improved human behavior simulation, challenges inherent to LLMs (e.g., long context modeling) can undermine their believability.Consequently, evaluating AI agent believability becomes imperative.Unfortunately, prior research often neglects the negative impacts of LLM deficiencies.To address these gaps, we introduce two metrics for assessing LLM-based agent believability: consistency, and robustness, together with a benchmark, SimulateBench, with which, we evaluate the consistency and robustness of agents implemented with popular LLMs.<span class='px-1 mx-1 bg-yellow-200'>We find that agents (i) struggle to accurately depict character information when presented with lengthy profile inputs; (ii) exhibit vulnerability to profile perturbations; and (iii) are significantly affected by certain key factors that impact their overall believability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.628</span></span>Code and SimulateBench are public at https://github.com/GAIR-NLP/GPTMan.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17115v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.17115v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Learning to Generate Text in Arbitrary Writing Styles
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Prior work in style-controlled text generation has focused on tasks such as emulating the style of prolific literary authors, producing formal or informal text, and the degree of toxicity of generated text. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>Plentiful demonstrations of these styles are available, and as a result modern language models are often able to emulate them, either via prompting or discriminative control.However, in applications such as writing assistants, it is desirable for language models to produce text in an author-specific style on the basis of a small writing sample.We find that instruction-tuned language models can struggle to reproduce author-specific style demonstrated in a prompt.Instead, we propose to guide a language model to generate text in a target style using contrastively-trained representations that capture stylometric features.A central challenge in doing so is that an author's writing is characterized by surprising token choices under a generic language model.To reconcile this tension, we combine generative re-scoring to achieve an author-specific model, with discriminative control to ensure style consistency at the sequence-level.The combination of these approaches is found to be particularly effective at adhering to an author-specific style in a variety of conditions, including unconditional generation and style transfer, and is applicable to any underlying language model without requiring fine-tuning.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17242v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.17242v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Ensemble Learning to Assess Dynamics of Affective Experience Ratings and Physiological Change
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>The congruence between affective experiences and physiological changes has been a debated topic for centuries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.677</span></span>Recent technological advances in measurement and data analysis provide hope to solve this epic challenge.Open science and open data practices, together with data analysis challenges open to the academic community, are also promising tools for solving this problem.In this entry to the Emotion Physiology and Experience Collaboration (EPiC) challenge, we propose a data analysis solution that combines theoretical assumptions with data-driven methodologies.We used feature engineering and ensemble selection.Each predictor was trained on subsets of the training data that would maximize the information available for training.Late fusion was used with an averaging step.We chose to average considering a ``wisdom of crowds'' strategy.This strategy yielded an overall RMSE of 1.19 in the test set.Future work should carefully explore if our assumptions are correct and the potential of weighted fusion.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.16036v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.16036v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Can ChatGPT Read Who You Are?
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The interplay between artificial intelligence (AI) and psychology, particularly in personality assessment, represents an important emerging area of research.Accurate personality trait estimation is crucial not only for enhancing personalization in human-computer interaction but also for a wide variety of applications ranging from mental health to education.This paper analyzes the capability of a generic chatbot, ChatGPT, to effectively infer personality traits from short texts.We report the results of a comprehensive user study featuring texts written in Czech by a representative population sample of 155 participants.Their self-assessments based on the Big Five Inventory (BFI) questionnaire serve as the ground truth.<span class='px-1 mx-1 bg-yellow-200'>We compare the personality trait estimations made by ChatGPT against those by human raters and report ChatGPT's competitive performance in inferring personality traits from text. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.658</span></span><span class='px-1 mx-1 bg-yellow-200'>We also uncover a 'positivity bias' in ChatGPT's assessments across all personality dimensions and explore the impact of prompt composition on accuracy. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.731</span></span>This work contributes to the understanding of AI capabilities in psychological assessment, highlighting both the potential and limitations of using large language models for personality inference.Our research underscores the importance of responsible AI development, considering ethical implications such as privacy, consent, autonomy, and bias in AI applications.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.16070v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.16070v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                LangSplat: 3D Language Gaussian Splatting
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Human lives in a 3D world and commonly uses natural language to interact with a 3D scene. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span>Modeling a 3D language field to support open-ended language queries in 3D has gained increasing attention recently.This paper introduces LangSplat, which constructs a 3D language field that enables precise and efficient open-vocabulary querying within 3D spaces.Unlike existing methods that ground CLIP language embeddings in a NeRF model, LangSplat advances the field by utilizing a collection of 3D Gaussians, each encoding language features distilled from CLIP, to represent the language field.By employing a tile-based splatting technique for rendering language features, we circumvent the costly rendering process inherent in NeRF.Instead of directly learning CLIP embeddings, LangSplat first trains a scene-wise language autoencoder and then learns language features on the scene-specific latent space, thereby alleviating substantial memory demands imposed by explicit modeling.Existing methods struggle with imprecise and vague 3D language fields, which fail to discern clear boundaries between objects.We delve into this issue and propose to learn hierarchical semantics using SAM, thereby eliminating the need for extensively querying the language field across various scales and the regularization of DINO features.Extensive experiments on open-vocabulary 3D object localization and semantic segmentation demonstrate that LangSplat significantly outperforms the previous state-of-the-art method LERF by a large margin.Notably, LangSplat is extremely efficient, achieving a {\speed} $\times$ speedup compared to LERF at the resolution of 1440 $\times$ 1080.We strongly recommend readers to check out our video results at https://langsplat.github.io</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.16084v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.16084v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                The Media Bias Taxonomy: A Systematic Literature Review on the Forms and Automated Detection of Media Bias
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>The way the media presents events can significantly affect public perception, which in turn can alter people's beliefs and views. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.745</span></span>Media bias describes a one-sided or polarizing perspective on a topic.This article summarizes the research on computational methods to detect media bias by systematically reviewing 3140 research papers published between 2019 and 2022.To structure our review and support a mutual understanding of bias across research domains, we introduce the Media Bias Taxonomy, which provides a coherent overview of the current state of research on media bias from different perspectives.We show that media bias detection is a highly active research field, in which transformer-based classification approaches have led to significant improvements in recent years.These improvements include higher classification accuracy and the ability to detect more fine-granular types of bias.However, we have identified a lack of interdisciplinarity in existing projects, and a need for more awareness of the various types of media bias to support methodologically thorough performance evaluations of media bias detection systems.Concluding from our analysis, we see the integration of recent machine learning advancements with reliable and diverse bias assessment strategies from other research areas as the most promising area for future research contributions in the field.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.16148v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.16148v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Age of Information in Gossip Networks: A Friendly Introduction and Literature Survey
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Gossiping is a communication mechanism, used for fast information dissemination in a network, where each node of the network randomly shares its information with the neighboring nodes.To characterize the notion of fastness in the context of gossip networks, age of information (AoI) is used as a timeliness metric.In this article, we summarize the recent works related to timely gossiping in a network.We start with the introduction of randomized gossip algorithms as an epidemic algorithm for database maintenance, and how the gossiping literature was later developed in the context of rumor spreading, message passing and distributed mean estimation.Then, we motivate the need for timely gossiping in applications such as source tracking and decentralized learning.We evaluate timeliness scaling of gossiping in various network topologies, such as, fully connected, ring, grid, generalized ring, hierarchical, and sparse asymmetric networks.<span class='px-1 mx-1 bg-yellow-200'>We discuss age-aware gossiping and the higher order moments of the age process. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span>We also consider different variations of gossiping in networks, such as, file slicing and network coding, reliable and unreliable sources, information mutation, different adversarial actions in gossiping, and energy harvesting sensors.Finally, we conclude this article with a few open problems and future directions in timely gossiping.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.16163v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.16163v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Social-Transmotion: Promptable Human Trajectory Prediction
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Accurate human trajectory prediction is crucial for applications such as autonomous vehicles, robotics, and surveillance systems.Yet, existing models often fail to fully leverage the non-verbal social cues human subconsciously communicate when navigating the space.<span class='px-1 mx-1 bg-yellow-200'>To address this, we introduce Social-Transmotion, a generic model that exploits the power of transformers to handle diverse and numerous visual cues, capturing the multi-modal nature of human behavior. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>We translate the idea of a prompt from Natural Language Processing (NLP) to the task of human trajectory prediction, where a prompt can be a sequence of x-y coordinates on the ground, bounding boxes or body poses.This, in turn, augments trajectory data, leading to enhanced human trajectory prediction.Our model exhibits flexibility and adaptability by capturing spatiotemporal interactions between pedestrians based on the available visual cues, whether they are poses, bounding boxes, or a combination thereof.By the masking technique, we ensure our model's effectiveness even when certain visual cues are unavailable, although performance is further boosted with the presence of comprehensive visual data.We delve into the merits of using 2d versus 3d poses, and a limited set of poses.Additionally, we investigate the spatial and temporal attention map to identify which keypoints and frames of poses are vital for optimizing human trajectory prediction.Our approach is validated on multiple datasets, including JTA, JRDB, Pedestrians and Cyclists in Road Traffic, and ETH-UCY.The code is publicly available: https://github.com/vita-epfl/social-transmotion</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.16168v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.16168v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-21</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Balancing Specialization and Adaptation in a Transforming Scientific Landscape
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>How scientists navigate between the need to capitalize on their prior knowledge by specializing, and the urge to adapt to evolving research opportunities?Drawing from diverse perspectives on adaptation, in particular from institutional change and cultural evolution, this paper proposes a Bayesian model of the evolution of scientists' research portfolios in response to transformations in their field.The model relies on scientific abstracts and authorship data to evaluate the influence of intellectual, social, and institutional resources on scientists' trajectories within a cohort of $2\,195$ high-energy physicists between 2000 and 2019.The reallocation of research efforts in response to the incentives to adapt is shown to be mainly structured by learning costs, thus maximizing the utility of the scientific capital disseminated among scientists.Two dimensions of social capital, namely ``diversity'' and ``power'', have opposite effects on the magnitude of change in scientists' research interests: while ``diversity'' disrupts and expands research interests, ``power'' stabilizes physicists' research agendas -- as does institutional stability.<span class='px-1 mx-1 bg-yellow-200'>Social capital plays a more crucial role in shifts between cognitively distant research areas. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.625</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.14040v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.14040v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-21</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Designing Artificial Intelligence Equipped Social Decentralized Autonomous Organizations for Tackling Sextortion Cases Version 0.7
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>With the rapid diffusion of social networks in combination with mobile phones, a new social threat of sextortion has emerged, in which vulnerable young women are essentially blackmailed with their explicit shared multimedia content. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.678</span></span>The phenomenon of sextortion is now widely studied by psychologists, sociologists, criminologists, etc.The findings have been translated into scattered help from NGOs, specialized law enforcement units, and therapists, who usually do not coordinate their efforts among each other.This paper addresses the gap of lacking coordination systems to effectively and efficiently use modern information technologies that align the efforts of scattered and non-aligned sextortion help organizations.Consequently, this paper not only investigates the goals, incentives, and disincentives for a system design and development that not only governs effectively and efficiently diverse cases of sextortion victims, but also leverages artificial intelligence in a targeted manner.It explores how AI and, in particular, autonomous cognitive entities can improve victim profiles analysis, streamline support mechanisms, and provide intelligent insight into sextortion cases.Furthermore, the paper conceptually studies the extent to which such efforts can be monetized in a sustainable way.Following a novel design methodology for the design of trusted blockchain decentralized applications, the paper presents a set of conceptual requirements and system models based on which it is possible to deduce a best-practice technology stack for rapid implementation deployment.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.14090v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.14090v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
           <td></td>
           <td>
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Large Language Models in Social Sciences</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Exploring the Frontiers of LLMs in Psychological Applications: A Comprehensive Review
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper explores the frontiers of large language models (LLMs) in psychology applications. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.634</span></span><span class='px-1 mx-1 bg-yellow-200'>Psychology has undergone several theoretical changes, and the current use of Artificial Intelligence (AI) and Machine Learning, particularly LLMs, promises to open up new research directions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.817</span></span><span class='px-1 mx-1 bg-yellow-200'>We provide a detailed exploration of how LLMs like ChatGPT are transforming psychological research. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.879</span></span><span class='px-1 mx-1 bg-yellow-200'>It discusses the impact of LLMs across various branches of psychology, including cognitive and behavioral, clinical and counseling, educational and developmental, and social and cultural psychology, highlighting their potential to simulate aspects of human cognition and behavior. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.884</span></span><span class='px-1 mx-1 bg-yellow-200'>The paper delves into the capabilities of these models to emulate human-like text generation, offering innovative tools for literature review, hypothesis generation, experimental design, experimental subjects, data analysis, academic writing, and peer review in psychology. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.775</span></span><span class='px-1 mx-1 bg-yellow-200'>While LLMs are essential in advancing research methodologies in psychology, the paper also cautions about their technical and ethical challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.827</span></span><span class='px-1 mx-1 bg-yellow-200'>There are issues like data privacy, the ethical implications of using LLMs in psychological research, and the need for a deeper understanding of these models' limitations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.701</span></span><span class='px-1 mx-1 bg-yellow-200'>Researchers should responsibly use LLMs in psychological studies, adhering to ethical standards and considering the potential consequences of deploying these technologies in sensitive areas. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.821</span></span><span class='px-1 mx-1 bg-yellow-200'>Overall, the article provides a comprehensive overview of the current state of LLMs in psychology, exploring potential benefits and challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.778</span></span>It serves as a call to action for researchers to leverage LLLs' advantages responsibly while addressing associated risks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01519v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01519v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                MedSumm: A Multimodal Approach to Summarizing Code-Mixed Hindi-English Clinical Queries
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>In the healthcare domain, summarizing medical questions posed by patients is critical for improving doctor-patient interactions and medical decision-making.<span class='px-1 mx-1 bg-yellow-200'>Although medical data has grown in complexity and quantity, the current body of research in this domain has primarily concentrated on text-based methods, overlooking the integration of visual cues. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.616</span></span>Also prior works in the area of medical question summarisation have been limited to the English language.This work introduces the task of multimodal medical question summarization for codemixed input in a low-resource setting.To address this gap, we introduce the Multimodal Medical Codemixed Question Summarization MMCQS dataset, which combines Hindi-English codemixed medical queries with visual aids.This integration enriches the representation of a patient's medical condition, providing a more comprehensive perspective.We also propose a framework named MedSumm that leverages the power of LLMs and VLMs for this task.By utilizing our MMCQS dataset, we demonstrate the value of integrating visual information from images to improve the creation of medically detailed summaries.This multimodal strategy not only improves healthcare decision-making but also promotes a deeper comprehension of patient queries, paving the way for future exploration in personalized and responsive medical care.Our dataset, code, and pre-trained models will be made publicly available.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01596v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01596v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Predicting challenge moments from students' discourse: A comparison of GPT-4 to two traditional natural language processing approaches
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Effective collaboration requires groups to strategically regulate themselves to overcome challenges.<span class='px-1 mx-1 bg-yellow-200'>Research has shown that groups may fail to regulate due to differences in members' perceptions of challenges which may benefit from external support. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.674</span></span>In this study, we investigated the potential of leveraging three distinct natural language processing models: an expert knowledge rule-based model, a supervised machine learning (ML) model and a Large Language model (LLM), in challenge detection and challenge dimension identification (cognitive, metacognitive, emotional and technical/other challenges) from student discourse, was investigated.The results show that the supervised ML and the LLM approaches performed considerably well in both tasks, in contrast to the rule-based approach, whose efficacy heavily relies on the engineered features by experts.The paper provides an extensive discussion of the three approaches' performance for automated detection and support of students' challenge moments in collaborative learning activities.It argues that, although LLMs provide many advantages, they are unlikely to be the panacea to issues of the detection and feedback provision of socially shared regulation of learning due to their lack of reliability, as well as issues of validity evaluation, privacy and confabulation.We conclude the paper with a discussion on additional considerations, including model transparency to explore feasible and meaningful analytical feedback for students and educators using LLMs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01692v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01692v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Physio: An LLM-Based Physiotherapy Advisor
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The capabilities of the most recent language models have increased the interest in integrating them into real-world applications.However, the fact that these models generate plausible, yet incorrect text poses a constraint when considering their use in several domains.<span class='px-1 mx-1 bg-yellow-200'>Healthcare is a prime example of a domain where text-generative trustworthiness is a hard requirement to safeguard patient well-being. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.693</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we present Physio, a chat-based application for physical rehabilitation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span>Physio is capable of making an initial diagnosis while citing reliable health sources to support the information provided.Furthermore, drawing upon external knowledge databases, Physio can recommend rehabilitation exercises and over-the-counter medication for symptom relief.By combining these features, Physio can leverage the power of generative models for language processing while also conditioning its response on dependable and verifiable sources.A live demo of Physio is available at https://physio.inesctec.pt.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01825v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01825v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
           </td>
@@ -3150,58 +3176,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                The Problem of Alignment
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models produce sequences learned as statistical patterns from large corpora.<span class='px-1 mx-1 bg-yellow-200'>In order not to reproduce corpus biases, after initial training models must be aligned with human values, preferencing certain continuations over others. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.698</span></span><span class='px-1 mx-1 bg-yellow-200'>Alignment, which can be viewed as the superimposition of normative structure onto a statistical model, reveals a conflicted and complex interrelationship between language and technology. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.662</span></span>This relationship shapes theories of language, linguistic practice and subjectivity, which are especially relevant to the current sophistication in artificially produced text.<span class='px-1 mx-1 bg-yellow-200'>We examine this practice of structuration as a two-way interaction between users and models by analysing how ChatGPT4 redacts perceived `anomalous' language in fragments of Joyce's Ulysses and the new linguistic practice of prompt engineering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span><span class='px-1 mx-1 bg-yellow-200'>We then situate this alignment problem historically, revisiting earlier postwar linguistic debates which counterposed two views of meaning: as discrete structures, and as continuous probability distributions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.719</span></span><span class='px-1 mx-1 bg-yellow-200'>We discuss the largely occluded work of the Moscow Linguistic School, which sought to reconcile this opposition. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.647</span></span><span class='px-1 mx-1 bg-yellow-200'>Our attention to the Moscow School and later related arguments by Searle and Kristeva casts the problem of alignment in a new light: as one involving attention to the social structuration of linguistic practice, including structuration of anomalies that, like the Joycean text, exist in defiance of expressive conventions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.713</span></span><span class='px-1 mx-1 bg-yellow-200'>These debates around the communicative orientation toward language can help explain some of the contemporary behaviours and interdependencies that take place between users and LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.785</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.00210v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.00210v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-30</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Uncertainty-Penalized Reinforcement Learning from Human Feedback with Diverse Reward LoRA Ensembles
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Reinforcement learning from human feedback (RLHF) emerges as a promising paradigm for aligning large language models (LLMs).However, a notable challenge in RLHF is overoptimization, where beyond a certain threshold, the pursuit of higher rewards leads to a decline in human preferences.In this paper, we observe the weakness of KL regularization which is commonly employed in existing RLHF methods to address overoptimization.To mitigate this limitation, we scrutinize the RLHF objective in the offline dataset and propose uncertainty-penalized RLHF (UP-RLHF), which incorporates uncertainty regularization during RL-finetuning.To enhance the uncertainty quantification abilities for reward models, we first propose a diverse low-rank adaptation (LoRA) ensemble by maximizing the nuclear norm of LoRA matrix concatenations.Then we optimize policy models utilizing penalized rewards, determined by both rewards and uncertainties provided by the diverse reward LoRA ensembles.<span class='px-1 mx-1 bg-yellow-200'>Our experimental results, based on two real human preference datasets, showcase the effectiveness of diverse reward LoRA ensembles in quantifying reward uncertainty. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.735</span></span>Additionally, uncertainty regularization in UP-RLHF proves to be pivotal in mitigating overoptimization, thereby contributing to the overall performance.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.00243v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.00243v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-30</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Evaluation is all you need. Prompting Generative Large Language Models for Annotation Tasks in the Social Sciences. A Primer using Open Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3222,115 +3196,89 @@
           </div>
         </td>
       </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-29</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Exploring the Sensitivity of LLMs' Decision-Making Capabilities: Insights from Prompt Variation and Hyperparameters
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The advancement of Large Language Models (LLMs) has led to their widespread use across a broad spectrum of tasks including decision making.<span class='px-1 mx-1 bg-yellow-200'>Prior studies have compared the decision making abilities of LLMs with those of humans from a psychological perspective. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.794</span></span>However, these studies have not always properly accounted for the sensitivity of LLMs' behavior to hyperparameters and variations in the prompt.In this study, we examine LLMs' performance on the Horizon decision making task studied by Binz and Schulz (2023) analyzing how LLMs respond to variations in prompts and hyperparameters.By experimenting on three OpenAI language models possessing different capabilities, we observe that the decision making abilities fluctuate based on the input prompts and temperature settings.<span class='px-1 mx-1 bg-yellow-200'>Contrary to previous findings language models display a human-like exploration exploitation tradeoff after simple adjustments to the prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.751</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17476v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.17476v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-29</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                K-PERM: Personalized Response Generation Using Dynamic Knowledge Retrieval and Persona-Adaptive Queries
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Personalizing conversational agents can enhance the quality of conversations and increase user engagement.However, they often lack external knowledge to appropriately tend to a user's persona.<span class='px-1 mx-1 bg-yellow-200'>This is particularly crucial for practical applications like mental health support, nutrition planning, culturally sensitive conversations, or reducing toxic behavior in conversational agents. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.809</span></span>To enhance the relevance and comprehensiveness of personalized responses, we propose using a two-step approach that involves (1) selectively integrating user personas and (2) contextualizing the response with supplementing information from a background knowledge source.We develop K-PERM (Knowledge-guided PErsonalization with Reward Modulation), a dynamic conversational agent that combines these elements.K-PERM achieves state-of-the-art performance on the popular FoCus dataset, containing real-world personalized conversations concerning global landmarks.We show that using responses from K-PERM can improve performance in state-of-the-art LLMs (GPT 3.5) by 10.5%, highlighting the impact of K-PERM for personalizing chatbots.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17748v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.17748v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents.While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of related fields, in this work, we explore how to teach them for visual rating aligned with human opinions.<span class='px-1 mx-1 bg-yellow-200'>Observing that human raters only learn and judge discrete text-defined levels in subjective studies, we propose to emulate this subjective process and teach LMMs with text-defined rating levels instead of scores. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.811</span></span>The proposed Q-Align achieves state-of-the-art performance on image quality assessment (IQA), image aesthetic assessment (IAA), as well as video quality assessment (VQA) tasks under the original LMM structure.With the syllabus, we further unify the three tasks into one model, termed the OneAlign.In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs.Our code and the pre-trained weights are released at https://github.com/Q-Future/Q-Align.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17090v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.17090v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Personalized Restoration via Dual-Pivot Tuning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Generative diffusion models can serve as a prior which ensures that solutions of image restoration systems adhere to the manifold of natural images.However, for restoring facial images, a personalized prior is necessary to accurately represent and reconstruct unique facial features of a given individual.In this paper, we propose a simple, yet effective, method for personalized restoration, called Dual-Pivot Tuning - a two-stage approach that personalize a blind restoration system while maintaining the integrity of the general prior and the distinct role of each component.Our key observation is that for optimal personalization, the generative model should be tuned around a fixed text pivot, while the guiding network should be tuned in a generic (non-personalized) manner, using the personalized generative model as a fixed ``pivot".This approach ensures that personalization does not interfere with the restoration process, resulting in a natural appearance with high fidelity to the person's identity and the attributes of the degraded image.<span class='px-1 mx-1 bg-yellow-200'>We evaluated our approach both qualitatively and quantitatively through extensive experiments with images of widely recognized individuals, comparing it against relevant baselines. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.643</span></span>Surprisingly, we found that our personalized prior not only achieves higher fidelity to identity with respect to the person's identity, but also outperforms state-of-the-art generic priors in terms of general image quality.Project webpage: https://personalized-restoration.github.io</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17234v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.17234v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
           <td></td>
           <td>
             <h2 class="text-2xl tracking-tight pt-4 font-bold">LLMs in Education Research</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Exploring the Frontiers of LLMs in Psychological Applications: A Comprehensive Review
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This paper explores the frontiers of large language models (LLMs) in psychology applications.Psychology has undergone several theoretical changes, and the current use of Artificial Intelligence (AI) and Machine Learning, particularly LLMs, promises to open up new research directions.We provide a detailed exploration of how LLMs like ChatGPT are transforming psychological research.<span class='px-1 mx-1 bg-yellow-200'>It discusses the impact of LLMs across various branches of psychology, including cognitive and behavioral, clinical and counseling, educational and developmental, and social and cultural psychology, highlighting their potential to simulate aspects of human cognition and behavior. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.647</span></span>The paper delves into the capabilities of these models to emulate human-like text generation, offering innovative tools for literature review, hypothesis generation, experimental design, experimental subjects, data analysis, academic writing, and peer review in psychology.While LLMs are essential in advancing research methodologies in psychology, the paper also cautions about their technical and ethical challenges.There are issues like data privacy, the ethical implications of using LLMs in psychological research, and the need for a deeper understanding of these models' limitations.Researchers should responsibly use LLMs in psychological studies, adhering to ethical standards and considering the potential consequences of deploying these technologies in sensitive areas.<span class='px-1 mx-1 bg-yellow-200'>Overall, the article provides a comprehensive overview of the current state of LLMs in psychology, exploring potential benefits and challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.615</span></span>It serves as a call to action for researchers to leverage LLLs' advantages responsibly while addressing associated risks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01519v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01519v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Predicting challenge moments from students' discourse: A comparison of GPT-4 to two traditional natural language processing approaches
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Effective collaboration requires groups to strategically regulate themselves to overcome challenges.Research has shown that groups may fail to regulate due to differences in members' perceptions of challenges which may benefit from external support.In this study, we investigated the potential of leveraging three distinct natural language processing models: an expert knowledge rule-based model, a supervised machine learning (ML) model and a Large Language model (LLM), in challenge detection and challenge dimension identification (cognitive, metacognitive, emotional and technical/other challenges) from student discourse, was investigated.The results show that the supervised ML and the LLM approaches performed considerably well in both tasks, in contrast to the rule-based approach, whose efficacy heavily relies on the engineered features by experts.<span class='px-1 mx-1 bg-yellow-200'>The paper provides an extensive discussion of the three approaches' performance for automated detection and support of students' challenge moments in collaborative learning activities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.661</span></span>It argues that, although LLMs provide many advantages, they are unlikely to be the panacea to issues of the detection and feedback provision of socially shared regulation of learning due to their lack of reliability, as well as issues of validity evaluation, privacy and confabulation.<span class='px-1 mx-1 bg-yellow-200'>We conclude the paper with a discussion on additional considerations, including model transparency to explore feasible and meaningful analytical feedback for students and educators using LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.775</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01692v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01692v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Economics Arena for Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) have been extensively used as the backbones for general-purpose agents, and some economics literature suggest that LLMs are capable of playing various types of economics games.Following these works, to overcome the limitation of evaluating LLMs using static benchmarks, we propose to explore competitive games as an evaluation for LLMs to incorporate multi-players and dynamicise the environment.By varying the game history revealed to LLMs-based players, we find that most of LLMs are rational in that they play strategies that can increase their payoffs, but not as rational as indicated by Nash Equilibria (NEs).Moreover, when game history are available, certain types of LLMs, such as GPT-4, can converge faster to the NE strategies, which suggests higher rationality level in comparison to other models.In the meantime, certain types of LLMs can win more often when game history are available, and we argue that the winning rate reflects the reasoning ability with respect to the strategies of other players.Throughout all our experiments, we observe that the ability to strictly follow the game rules described by natural languages also vary among the LLMs we tested.<span class='px-1 mx-1 bg-yellow-200'>In this work, we provide an economics arena for the LLMs research community as a dynamic simulation to test the above-mentioned abilities of LLMs, i.e. rationality, strategic reasoning ability, and instruction-following capability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.696</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01735v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01735v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
           </td>
@@ -3851,32 +3799,6 @@
           </div>
         </td>
       </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-11</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Integrating micro-learning content in traditional e-learning platforms
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Lifelong learning requires appropriate solutions, especially for corporate training.Workers usually have difficulty combining training and their normal work.In this context, micro-learning emerges as a suitable solution, since it is based on breaking down new concepts into small fragments or pills of content, which can be consumed in short periods of time.The purpose of this paper is twofold.First, we offer an updated overview of the research on this training paradigm, as well as the different technologies leading to potential commercial solutions.<span class='px-1 mx-1 bg-yellow-200'>Second, we introduce a proposal to add micro-learning content to more formal distance learning environments (traditional Learning Management Systems or LMS), with the aim of taking advantage of both learning philosophies. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.625</span></span>Our approach is based on a Service-Oriented Architecture (SOA) that is deployed in the cloud.In order to ensure the full integration of the micro-learning approach in traditional LMSs, we have used two well-known standards in the distance learning field: LTI (Learning Tools Interoperability) and LIS (Learning Information Service).The combination of these two technologies allows the exchange of data with the LMS to monitor the student's activity and results.<span class='px-1 mx-1 bg-yellow-200'>Finally, we have collected the opinion of lectures from different countries in order to know their thoughts about the potential of this new approach in higher education, obtaining positive feedback. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.685</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.06500v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.06500v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
           <td></td>
           <td>
             <h2 class="text-2xl tracking-tight pt-4 font-bold">LLMs as Recommender Systems</h2>
@@ -4069,6 +3991,58 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Programming applications of LLMs</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                De-Hallucinator: Iterative Grounding for LLM-Based Code Completion
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large languages models (LLMs) trained on datasets of publicly available source code have established a new state-of-the-art in code completion. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.722</span></span>However, these models are mostly unaware of the code that already exists within a specific project, preventing the models from making good use of existing APIs.Instead, LLMs often invent, or "hallucinate", non-existent APIs or produce variants of already existing code.Although the API information is available to IDEs, the input size limit of LLMs prevents code completion techniques from including all relevant context into the prompt.<span class='px-1 mx-1 bg-yellow-200'>This paper presents De-Hallucinator, an LLM-based code completion technique that grounds the predictions of a model through a novel combination of retrieving suitable API references and iteratively querying the model with increasingly suitable context information in the prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.663</span></span>The approach exploits the observation that LLMs often predict code that resembles the desired completion, but that fails to correctly refer to already existing APIs.De-Hallucinator automatically identifies project-specific API references related to the code prefix and to the model's initial predictions and adds these references into the prompt.Our evaluation applies the approach to the task of predicting API usages in open-source Python projects.We show that De-Hallucinator consistently improves the predicted code across four state-of-the-art LLMs compared to querying the model only with the code before the cursor.In particular, the approach improves the edit distance of the predicted code by 23-51% and the recall of correctly predicted API usages by 24-61% relative to the baseline.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01701v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01701v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Multilingual Instruction Tuning With Just a Pinch of Multilinguality
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>As instruction-tuned large language models (LLMs) gain global adoption, their ability to follow instructions in multiple languages becomes increasingly crucial. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.672</span></span>One promising approach is cross-lingual transfer, where a model acquires specific functionality on some language by finetuning on another language.In this work, we investigate how multilinguality during instruction tuning of a multilingual LLM affects instruction-following across languages.We first show that many languages transfer some instruction-following capabilities to other languages from even monolingual tuning.Furthermore, we find that only 40 multilingual examples in an English tuning set substantially improve multilingual instruction-following, both in seen and unseen languages during tuning.In general, we observe that models tuned on multilingual mixtures exhibit comparable or superior performance in several languages compared to monolingually tuned models, despite training on 10x fewer examples in those languages.Finally, we find that increasing the number of languages in the instruction tuning set from 1 to only 2, 3, or 4 increases cross-lingual generalization.<span class='px-1 mx-1 bg-yellow-200'>Our results suggest that building massively multilingual instruction-tuned models can be done with only a very small set of multilingual instruction-responses. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.645</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01854v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.01854v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
           </td>
