@@ -4,7 +4,7 @@
 {"text":"For decision tables from closed classes, we study lower bounds on the minimum cardinality of reducts, which are minimal sets of attributes that allow us to recognize, for a given row, the decision attached to it.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"recommender":0}}
 {"text":"We then propose a transformation from this 3-sort NFA into weighted-frequency and probabilistic NFA, and we apply the latter to a classification task.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"recommender":0}}
 {"text":"Theoretically, we prove that the global optimum to the training objective function of our method is achieved only when the LLM policy aligns with the target data distribution.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"education":0,"recommender":0,"programming":0}}
-{"text":"While this allows them to display impressive language fluency, it also means they are capable of extrapolating information from the biases in training data, misinterpreting ambiguous prompts, or modifying the information to align superficially with the input.","cats":{"prompt-engineering":1,"robustness":1,"security":0,"social-sciences":1,"recommender":0}}
+{"text":"While this allows them to display impressive language fluency, it also means they are capable of extrapolating information from the biases in training data, misinterpreting ambiguous prompts, or modifying the information to align superficially with the input.","cats":{"prompt-engineering":1,"robustness":1,"security":0,"hci":0,"social-sciences":1,"recommender":0}}
 {"text":"In this paper, we introduce a detailed framework designed to detect and assess the presence of content from potentially copyrighted books within the training datasets of LLMs.","cats":{"robustness":0,"recommender":0}}
 {"text":"Our analysis of GPT and Llama-variants reveals that these LLMs often resemble behaviors more commonly exhibited in low-quality therapy rather than high-quality therapy, such as offering a higher degree of problem-solving advice when clients share emotions, which is against typical recommendations.","cats":{"robustness":0,"hci":1,"recommender":0}}
 {"text":"Our analysis framework suggests that despite the ability of LLMs to generate anecdotal examples that appear similar to human therapists, LLM therapists are currently not fully consistent with high-quality care, and thus require additional research to ensure quality care.","cats":{"robustness":0,"recommender":0}}
@@ -14,19 +14,20 @@
 {"text":"Our findings demonstrate that PINN-based approaches in channel modeling exhibit promising attributes such as generalizability, interpretability, and robustness.","cats":{"security":0,"recommender":0}}
 {"text":"At last, we explore the relationships among updated parameters, cross-entropy loss, and task performance.","cats":{"security":0,"recommender":0}}
 {"text":"Large Language Models (LLMs) are powerful tools for natural language processing, enabling novel applications and user experiences.","cats":{"hci":0,"education":0,"recommender":0}}
-{"text":"Large language models (LLMs) have shown impressive success in various applications.","cats":{"hci":0,"education":0,"recommender":0}}
+{"text":"Large language models (LLMs) have shown impressive success in various applications.","cats":{"hci":0,"education":0,"recommender":0,"production":0}}
 {"text":"The advanced capabilities of Large Language Models (LLMs) have made them invaluable across various applications, from conversational agents and content creation to data analysis, research, and innovation.","cats":{"hci":0,"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Within this work, we propose a hybrid approach, Deep-ELA, which combines (the benefits of) deep learning and ELA features.","cats":{"hci":0,"recommender":0}}
+{"text":"We are making all code, data, and results available for future research endeavors.","cats":{"hci":0,"recommender":0}}
 {"text":"We find that higher-quality references lead to better metric correlations with humans at the segment-level.","cats":{"social-sciences":0,"recommender":0}}
 {"text":"As the Large Language Model (LLM) becomes increasingly important in various domains.","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have emerged as powerful and general solutions to many natural language tasks.","cats":{"social-sciences":0,"recommender":0}}
-{"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"social-sciences":0,"education":0,"recommender":0}}
+{"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"social-sciences":0,"education":0,"recommender":0,"production":0}}
 {"text":"Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications.","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Recent years have witnessed remarkable progress made in large language models (LLMs).","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large Language Models (LLMs), trained predominantly on extensive English data, often exhibit limitations when applied to other languages.","cats":{"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have been applied in various applications due to their astonishing capabilities.","cats":{"education":0,"recommender":0}}
 {"text":"Recent advancements in the capabilities of large language models (LLMs) have paved the way for a myriad of groundbreaking applications in various fields.","cats":{"education":0,"recommender":0}}
-{"text":"We share our approach to designing this new introductory socially responsible computing course and the students' reflections.","cats":{"education":0,"recommender":0}}
+{"text":"We share our approach to designing this new introductory socially responsible computing course and the students' reflections.","cats":{"education":0,"recommender":0,"architectures":0}}
 {"text":"Recently, large language models (LLMs) have shown great potential in recommender systems, either improving existing recommendation models or serving as the backbone.","cats":{"recommender":1}}
 {"text":"Large language models (LLMs) have demonstrated remarkable capabilities and have been extensively deployed across various domains, including recommender systems.","cats":{"recommender":1}}
 {"text":"Recent advancements in recommendation systems have shifted towards more comprehensive and personalized recommendations by utilizing large language models (LLM).","cats":{"recommender":1}}
@@ -41,7 +42,7 @@
 {"text":"Despite recent advances, evaluating how well large language models (LLMs) follow user instructions remains an open problem.","cats":{"recommender":0}}
 {"text":"In essence, LLMs capture language semantics while recommender systems imply collaborative semantics, making it difficult to sufficiently leverage the model capacity of LLMs for recommendation.","cats":{"recommender":1}}
 {"text":"Along this line of research, this work aims to investigate the capacity of LLMs that act as the ranking model for recommender systems.","cats":{"recommender":1}}
-{"text":"Recent development of large language models (LLMs) has opened a new opportunity to address this problem more effectively.","cats":{"recommender":0}}
+{"text":"Recent development of large language models (LLMs) has opened a new opportunity to address this problem more effectively.","cats":{"recommender":0,"production":0}}
 {"text":"Aligning large language models (LLMs) with human preferences is crucial for enhancing their utility in terms of helpfulness, truthfulness, safety, harmlessness, and interestingness.","cats":{"recommender":0}}
 {"text":"Large language models (LLMs), typically designed as a function of next-word prediction, have excelled across extensive NLP tasks.","cats":{"recommender":0}}
 {"text":"Its primary objective was to provide a comprehensive understanding of the performance of Large Language Models (LLMs) when applied to different datasets.","cats":{"recommender":0}}
@@ -50,11 +51,11 @@
 {"text":"Large language models (LLMs) are useful in many NLP tasks and become more capable with size, with the best open-source models having over 50 billion parameters.","cats":{"recommender":0}}
 {"text":"Large language models (LLMs) have achieved remarkable advancements in the field of natural language processing.","cats":{"recommender":0}}
 {"text":"Large language models (LLMs) have exploded in popularity in the past few years and have achieved undeniably impressive results on benchmarks as varied as question answering and text summarization.","cats":{"recommender":0}}
-{"text":"We thoroughly analyze the performance of several large language models (LLMs) and identify areas where further improvement is needed.","cats":{"recommender":0}}
+{"text":"We thoroughly analyze the performance of several large language models (LLMs) and identify areas where further improvement is needed.","cats":{"recommender":0,"production":0}}
 {"text":"Large Language Models (LLMs) have consistently showcased remarkable generalization capabilities when applied to various language tasks.","cats":{"recommender":0}}
-{"text":"Large Language Models (LLMs) have shown excellent generalization capabilities that have led to the development of numerous models.","cats":{"recommender":0}}
+{"text":"Large Language Models (LLMs) have shown excellent generalization capabilities that have led to the development of numerous models.","cats":{"recommender":0,"architectures":0}}
 {"text":"This challenge has recently reached another scale with the emergence of large language models (LLMs).","cats":{"recommender":0}}
-{"text":"Large language models (LLMs) with memory are computationally universal.","cats":{"recommender":0}}
+{"text":"Large language models (LLMs) with memory are computationally universal.","cats":{"recommender":0,"production":0}}
 {"text":"In this paper, our objective is to investigate the comprehensive ranking capacity of LLMs and propose a two-step grounding framework known as BIGRec (Bi-step Grounding Paradigm for Recommendation).","cats":{"recommender":0}}
 {"text":"It proposes a recommendation paradigm that integrates representation learning with LLMs to capture intricate semantic aspects of user behaviors and preferences.","cats":{"recommender":1}}
 {"text":"As large language models (LLMs) continue to advance, accurately and comprehensively evaluating their performance becomes increasingly challenging.","cats":{"recommender":0}}
@@ -68,9 +69,9 @@
 {"text":"As more IoT applications gradually move towards the cloud-edge collaborative mode, the containerized scheduling of workflows extends from the cloud to the edge.","cats":{"recommender":0}}
 {"text":"Through a customized IoT application workflow instance, experimental results show that KCES is superior to the baseline in total workflow duration, average workflow duration, and resource usage and has the capabilities of horizontal roaming and vertical offloading for workflow tasks.","cats":{"recommender":0,"programming":0}}
 {"text":"The improved algorithm model has good detection ability for solder joint defect detection, with mAP reaching 91.5%, 4.3% higher than the You Only Look Once version 5 algorithm and better than other comparative algorithms.","cats":{"recommender":0}}
-{"text":"We use a convolutional neural network to classify each frame of an ultrasound video recording.","cats":{"recommender":0}}
+{"text":"We use a convolutional neural network to classify each frame of an ultrasound video recording.","cats":{"recommender":0,"architectures":0}}
 {"text":"Experimental results indicate the best performance obtained by LightGBM with pre-processing using standard normal variate (SNV), feature extraction providing values of 0.839 for balanced accuracy, 0.851 for recall, 0.852 for precision, and 0.850 for F-score.","cats":{"recommender":0}}
-{"text":"To address the challenges, we propose leveraging deep learning-based methods for the design and operation of B5G/6G networks with BACN, deviating from conventional buffer-aided relay selection approaches.","cats":{"recommender":0}}
+{"text":"To address the challenges, we propose leveraging deep learning-based methods for the design and operation of B5G/6G networks with BACN, deviating from conventional buffer-aided relay selection approaches.","cats":{"recommender":0,"production":0}}
 {"text":"Furthermore, for a special case where the semantic state is a deterministic function of the observation, we design a cascade neural network to estimate the SRDF.","cats":{"recommender":0}}
 {"text":"Our experimental findings undeniably demonstrate the superior performance of TF-CNN in comparison to recently developed techniques.","cats":{"recommender":0}}
 {"text":"Extensive experiments performed on both simulated and real datasets demonstrate the effectiveness and robustness of our proposed method.","cats":{"recommender":0}}
@@ -83,7 +84,6 @@
 {"text":"In this paper, we describe preliminary work on a new Dafny plugin that leverages LLMs to assist developers by generating suggestions for relevant lemmas that Dafny is unable to discover and use.","cats":{"recommender":0}}
 {"text":"However, the advent of Multimodal Large Language Models (MLLMs) like GPT-4 with vision (GPT-4V), capable of processing multimodal data including text, sound, and visual inputs, opens a new era of enriched, personalized, and interactive learning landscapes in education.","cats":{"recommender":0}}
 {"text":"Possible applications for MLLMs could range from content creation to tailored support for learning, fostering competencies in scientific practices, and providing assessment and feedback.","cats":{"recommender":0}}
-{"text":"We are making all code, data, and results available for future research endeavors.","cats":{"recommender":0}}
 {"text":"These findings offer instructive insights aimed at advancing the field of tool learning.","cats":{"recommender":0}}
 {"text":"We propose a method to fine-tune the nucleotide sequence language model and the text language model based on various databases of antibiotic resistance genes.","cats":{"recommender":0}}
 {"text":"This paper takes ChatGPT as the modeling object, incorporates LLM technology into the typical book resource understanding and recommendation scenario for the first time, and puts it into practice.","cats":{"recommender":1}}

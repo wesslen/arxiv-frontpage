@@ -21,7 +21,7 @@
 {"text":"Large language models (LLMs) have shown the potential to be integrated into human daily lives.","cats":{"hci":0,"social-sciences":0,"education":0}}
 {"text":"Large language models (LLMs) have recently reached an impressive level of linguistic capability, prompting comparisons with human language skills.","cats":{"hci":0,"social-sciences":0,"education":0}}
 {"text":"Large Language Models (LLMs) are powerful tools for natural language processing, enabling novel applications and user experiences.","cats":{"hci":0,"education":0,"recommender":0}}
-{"text":"Large language models (LLMs) have shown impressive success in various applications.","cats":{"hci":0,"education":0,"recommender":0}}
+{"text":"Large language models (LLMs) have shown impressive success in various applications.","cats":{"hci":0,"education":0,"recommender":0,"production":0}}
 {"text":"The advanced capabilities of Large Language Models (LLMs) have made them invaluable across various applications, from conversational agents and content creation to data analysis, research, and innovation.","cats":{"hci":0,"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks.","cats":{"hci":0,"social-sciences":0,"education":0,"programming":0}}
 {"text":"Pretrained large language models (LLMs) are becoming increasingly powerful and ubiquitous in mainstream applications such as being a personal assistant, a dialogue model, etc.","cats":{"hci":0,"social-sciences":0,"education":0}}
@@ -35,11 +35,11 @@
 {"text":"Large language models (LLMs) have recently taken the world by storm.","cats":{"social-sciences":0,"education":0}}
 {"text":"As the Large Language Model (LLM) becomes increasingly important in various domains.","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large Language Models (LLMs) have demonstrated remarkable abilities across numerous disciplines, primarily assessed through tasks in language generation, knowledge utilization, and complex reasoning.","cats":{"social-sciences":0,"education":0}}
-{"text":"We are currently witnessing dramatic advances in the capabilities of Large Language Models (LLMs).","cats":{"social-sciences":0,"education":0}}
+{"text":"We are currently witnessing dramatic advances in the capabilities of Large Language Models (LLMs).","cats":{"social-sciences":0,"education":0,"production":0}}
 {"text":"In recent years, Large Language Models (LLMs) have gained immense attention due to their notable emergent capabilities, surpassing those seen in earlier language models.","cats":{"social-sciences":0,"education":0}}
 {"text":"The development of large language models (LLMs) has seen rapid progress in recent years.","cats":{"social-sciences":0,"education":0}}
 {"text":"Large Language Models (LLMs) have garnered significant attention for their powerful ability in natural language understanding and reasoning.","cats":{"social-sciences":0,"education":0}}
-{"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"social-sciences":0,"education":0,"recommender":0}}
+{"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"social-sciences":0,"education":0,"recommender":0,"production":0}}
 {"text":"Recently, the development and progress of Large Language Models (LLMs) have amazed the entire Artificial Intelligence community.","cats":{"social-sciences":0,"education":0}}
 {"text":"Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications.","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have revolutionized the field of artificial intelligence, endowing it with sophisticated language understanding and generation capabilities.","cats":{"social-sciences":0,"education":0}}
@@ -72,7 +72,7 @@
 {"text":"Large Language Models (LLMs) are popular for their impressive abilities, but the need for model-specific fine-tuning or task-specific prompt engineering can hinder their generalization.","cats":{"education":0}}
 {"text":"Large Language Models (LLM) are good at leveraging public data on standard problems but once you want to tackle more specific complex questions or problems you may need specific architecture, knowledge, skills, methods, sensitive data protection, explainability, human approval and versatile feedback...","cats":{"education":0}}
 {"text":"As the capabilities of large language models (LLMs) continue to advance, evaluating their performance becomes increasingly crucial and challenging.","cats":{"education":0}}
-{"text":"We share our approach to designing this new introductory socially responsible computing course and the students' reflections.","cats":{"education":0,"recommender":0}}
+{"text":"We share our approach to designing this new introductory socially responsible computing course and the students' reflections.","cats":{"education":0,"recommender":0,"architectures":0}}
 {"text":"In this study, we introduce an innovative framework that integrates Deep Reinforcement Learning (DRL) with Recurrent Neural Networks (RNNs).","cats":{"education":0}}
 {"text":"Our experiments also shed light on how different various simple configurations can affect the True Positive (TP) and False Positive (FP) rates.","cats":{"education":0}}
 {"text":"Technically, VideoDrafter leverages Large Language Models (LLM) to convert the input prompt into comprehensive multi-scene script that benefits from the logical knowledge learnt by LLM.","cats":{"education":0}}

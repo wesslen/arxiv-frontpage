@@ -85,15 +85,27 @@ sections:
   #     open-source models in terms of accessibility, collaboration, and innovation.
   #   label: open-source
   #   threshold: 0.6
-  # - name: Production workflows for LLMs
-  #   instructions: >
-  #     This label targets articles discussing the production workflows of Large 
-  #     Language Models. This encompasses the entire lifecycle, from model design 
-  #     and data preparation to training, deployment, and ongoing maintenance. 
-  #     Emphasis may be placed on scalability, efficiency, and best practices 
-  #     in operationalizing LLMs in various environments.
-  #   label: production
-  #   threshold: 0.6
+  - name: Production workflows for LLMs
+    instructions: >
+      This label targets articles discussing the production workflows of Large 
+      Language Models. This encompasses the entire lifecycle, from model design 
+      and data preparation to training, deployment, and ongoing maintenance. 
+      Emphasis may be placed on scalability, efficiency (quantization), data privacy,
+      and best practices in operationalizing LLMs in various environments.
+    label: production
+    threshold: 0.6
+  - name: LLM Model Architectures and Training Techniques
+    instructions: >
+      This label identifies articles that focus on the architectural designs and 
+      training techniques of Large Language Models (LLMs). It covers a wide range 
+      of topics including traditional and innovative LLM architectures like transformers, 
+      their scaling laws, and specifics of model parallelism. Training techniques 
+      such as Reinforcement Learning with Human Feedback (RLHF), instruction tuning, 
+      and fine-tuning. Also relevant are discussions on data efficiency (e.g., distillation)
+      in training, and approaches to improve computational efficiency and environmental 
+      sustainability of LLMs.
+    label: architectures
+    threshold: 0.6
   - name: Programming applications of LLMs
     instructions: >
       This label is designated for articles that delve into the utilization of Large 

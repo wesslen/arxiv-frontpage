@@ -4,30 +4,30 @@
 {"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"social-sciences":0}}
 {"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"social-sciences":0}}
 {"text":"The TREC Interactive Knowledge Assistance Track (iKAT) builds on the foundational work of the TREC Conversational Assistance Track (CAsT).","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"programming":0}}
-{"text":"The two levels are computed by the original model's self-attention, which means the proposed does not require any training.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"programming":0}}
+{"text":"The two levels are computed by the original model's self-attention, which means the proposed does not require any training.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"architectures":0,"programming":0}}
 {"text":"We conduct comprehensive experiments and the results show that the proposed method can effectively extend existing LLMs' context window's length.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0}}
 {"text":"The journey toward widespread adoption of LLMs in practical settings heavily relies on addressing and mitigating hallucinations.","cats":{"prompt-engineering":0,"robustness":1,"security":0,"hci":0,"social-sciences":0}}
-{"text":"This classification helps distinguish the diverse approaches specifically designed to tackle hallucination issues in LLMs.","cats":{"prompt-engineering":0,"robustness":1,"security":0,"social-sciences":0}}
+{"text":"This classification helps distinguish the diverse approaches specifically designed to tackle hallucination issues in LLMs.","cats":{"prompt-engineering":0,"robustness":1,"security":0,"hci":0,"social-sciences":0}}
 {"text":"Additionally, we analyze the challenges and limitations inherent in these techniques, providing a solid foundation for future research in addressing hallucinations and related phenomena within the realm of LLMs.","cats":{"prompt-engineering":0,"robustness":1,"security":0,"hci":0,"social-sciences":0,"education":0}}
 {"text":"Harnessing the power of human-annotated data through Supervised Fine-Tuning (SFT) is pivotal for advancing Large Language Models (LLMs).","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0}}
 {"text":"Our method progressively elevates the LLM from a nascent model to a formidable one, unlocking the full potential of human-annotated demonstration data for SFT.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0}}
 {"text":"This sheds light on the promise of self-play, enabling the achievement of human-level performance in LLMs without the need for expert opponents.","cats":{"prompt-engineering":0,"security":0,"social-sciences":0,"programming":0}}
 {"text":"Conversational Information Seeking stands as a pivotal research area with significant contributions from previous works.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"education":0,"programming":0}}
 {"text":"These tasks, prevalent in everyday information-seeking decisions -- be it related to travel, health, or shopping -- often revolve around a subset of high-level information operators where queries or questions about the information space include: finding options, comparing options, identifying the pros and cons of options, etc.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"programming":0}}
-{"text":"This work elicits LLMs' inherent ability to handle long contexts without fine-tuning.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"programming":0}}
-{"text":"The limited length of the training sequence during training may limit the application of Large Language Models (LLMs) on long input sequences for inference.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"programming":0}}
-{"text":"In this work, we argue that existing LLMs themselves have inherent capabilities for handling long contexts.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"programming":0}}
-{"text":"Based on this argument, we suggest extending LLMs' context window by themselves to fully utilize the inherent ability.","cats":{"prompt-engineering":0,"security":0,"social-sciences":0,"programming":0}}
-{"text":"We propose Self-Extend to stimulate LLMs' long context handling potential.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"programming":0}}
-{"text":"The basic idea is to construct bi-level attention information: the group level and the neighbor level.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"programming":0}}
-{"text":"With only four lines of code modification, the proposed method can effortlessly extend existing LLMs' context window without any fine-tuning.","cats":{"prompt-engineering":0,"security":0,"social-sciences":0,"programming":0}}
-{"text":"As Large Language Models (LLMs) continue to advance in their ability to write human-like text, a key challenge remains around their tendency to hallucinate generating content that appears factual but is ungrounded.","cats":{"prompt-engineering":0,"security":0,"social-sciences":0,"programming":0}}
-{"text":"While this allows them to display impressive language fluency, it also means they are capable of extrapolating information from the biases in training data, misinterpreting ambiguous prompts, or modifying the information to align superficially with the input.","cats":{"prompt-engineering":1,"robustness":1,"security":0,"social-sciences":1,"recommender":0}}
-{"text":"This becomes hugely alarming when we rely on language generation capabilities for sensitive applications, such as summarizing medical records, financial analysis reports, etc.","cats":{"prompt-engineering":0,"security":0,"social-sciences":0}}
+{"text":"This work elicits LLMs' inherent ability to handle long contexts without fine-tuning.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"architectures":0,"programming":0}}
+{"text":"The limited length of the training sequence during training may limit the application of Large Language Models (LLMs) on long input sequences for inference.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"architectures":0,"programming":0}}
+{"text":"In this work, we argue that existing LLMs themselves have inherent capabilities for handling long contexts.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"architectures":0,"programming":0}}
+{"text":"Based on this argument, we suggest extending LLMs' context window by themselves to fully utilize the inherent ability.","cats":{"prompt-engineering":0,"security":0,"social-sciences":0,"architectures":1,"programming":0}}
+{"text":"We propose Self-Extend to stimulate LLMs' long context handling potential.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"architectures":0,"programming":0}}
+{"text":"The basic idea is to construct bi-level attention information: the group level and the neighbor level.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"architectures":0,"programming":0}}
+{"text":"With only four lines of code modification, the proposed method can effortlessly extend existing LLMs' context window without any fine-tuning.","cats":{"prompt-engineering":0,"security":0,"social-sciences":0,"architectures":1,"programming":0}}
+{"text":"As Large Language Models (LLMs) continue to advance in their ability to write human-like text, a key challenge remains around their tendency to hallucinate generating content that appears factual but is ungrounded.","cats":{"prompt-engineering":0,"security":0,"hci":0,"social-sciences":0,"programming":0}}
+{"text":"While this allows them to display impressive language fluency, it also means they are capable of extrapolating information from the biases in training data, misinterpreting ambiguous prompts, or modifying the information to align superficially with the input.","cats":{"prompt-engineering":1,"robustness":1,"security":0,"hci":0,"social-sciences":1,"recommender":0}}
+{"text":"This becomes hugely alarming when we rely on language generation capabilities for sensitive applications, such as summarizing medical records, financial analysis reports, etc.","cats":{"prompt-engineering":0,"security":0,"hci":0,"social-sciences":0}}
 {"text":"We find that use of generative AI systems is already widespread: 45% of respondents were aware of generative AI usage within their area of work, while 22% actively use a generative AI system.","cats":{"prompt-engineering":0,"security":0,"hci":1,"social-sciences":0}}
 {"text":"Our survey also found a high amount of trust (61%) around generative AI outputs, and a low fear of replacement (16%).","cats":{"prompt-engineering":0,"security":0,"hci":0,"social-sciences":0}}
 {"text":"The study concludes by addressing the challenges faced and suggesting potential research directions in this field.","cats":{"prompt-engineering":0,"social-sciences":0}}
-{"text":"Large Language Models (LLMs) have shown extraordinary capabilities in understanding and generating text that closely mirrors human communication.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0}}
+{"text":"Large Language Models (LLMs) have shown extraordinary capabilities in understanding and generating text that closely mirrors human communication.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"architectures":0}}
 {"text":"However, it is important to recognize that an excessive reliance on this functionality raises the risk of manipulation by malicious actors who can exploit it with carefully crafted prompts.","cats":{"prompt-engineering":1,"social-sciences":0}}
 {"text":"The results indicate the need for careful validation and tailored prompt engineering.","cats":{"robustness":0,"social-sciences":0}}
 {"text":"Large language models (LLMs) have the potential to transform the practice of law, but this potential is threatened by the presence of legal hallucinations -- responses from these models that are not consistent with legal facts.","cats":{"robustness":1,"social-sciences":0}}
@@ -36,7 +36,7 @@
 {"text":"(4) We provide evidence that LLMs cannot always predict, or do not always know, when they are producing legal hallucinations.","cats":{"robustness":1,"hci":0,"social-sciences":0,"education":0}}
 {"text":"Among them, Role-Playing Conversational Agents (RPCAs) attract considerable attention due to their ability to emotionally engage users.","cats":{"robustness":0,"social-sciences":0}}
 {"text":"However, the absence of a comprehensive benchmark impedes progress in this field.","cats":{"robustness":0,"social-sciences":0}}
-{"text":"Comprehensive experiments on CharacterEval demonstrate that Chinese LLMs exhibit more promising capabilities than GPT-4 in Chinese role-playing conversation.","cats":{"robustness":0,"social-sciences":0}}
+{"text":"Comprehensive experiments on CharacterEval demonstrate that Chinese LLMs exhibit more promising capabilities than GPT-4 in Chinese role-playing conversation.","cats":{"robustness":0,"social-sciences":0,"architectures":0}}
 {"text":"The emergence of ChatGPT and other large language models (LLMs) has greatly increased interest in utilizing LLMs as therapists to support individuals struggling with mental health challenges.","cats":{"robustness":0,"hci":1,"social-sciences":1}}
 {"text":"In this paper, we propose BOLT, a novel computational framework to study the conversational behavior of LLMs when employed as therapists.","cats":{"robustness":0,"social-sciences":1}}
 {"text":"The prominent large language models (LLMs) of today differ from past language models not only in size, but also in the fact that they are trained on a combination of natural language and formal language (code).","cats":{"robustness":0,"social-sciences":0,"education":0,"programming":1}}
@@ -45,7 +45,7 @@
 {"text":"Through a difference-in-differences approach, we find that deplatforming reduces online attention toward influencers.","cats":{"security":0,"hci":0,"social-sciences":1}}
 {"text":"Our method achieves human-level performance in estimating fetal biometrics and estimates well-calibrated credible intervals in which the true biometric value is expected to lie.","cats":{"security":0,"social-sciences":0}}
 {"text":"Notably, when fine-tuned with just 1% of data, Adaptor outperforms several Transformer-based methods trained on full datasets in medical image segmentation.","cats":{"security":0,"social-sciences":0}}
-{"text":"Bearing faults are primary contributors to machine vibrations, and analyzing their signal morphology offers insights into their health status.","cats":{"security":0,"social-sciences":0}}
+{"text":"Bearing faults are primary contributors to machine vibrations, and analyzing their signal morphology offers insights into their health status.","cats":{"security":0,"social-sciences":0,"architectures":0}}
 {"text":"Taken together, these findings caution against the rapid and unsupervised integration of popular LLMs into legal tasks.","cats":{"security":0,"hci":0,"social-sciences":0}}
 {"text":"Furthermore, unlike other types of artificial intelligence, it is a technology that has quickly become widely available for bottom-up adoption: essentially anyone can decide to make use of it in their day to day work.","cats":{"security":0,"hci":0,"social-sciences":0,"education":0}}
 {"text":"But to what extent is generative AI already in use in the public sector?","cats":{"security":0,"hci":0,"social-sciences":0}}
@@ -58,12 +58,12 @@
 {"text":"The advanced capabilities of Large Language Models (LLMs) have made them invaluable across various applications, from conversational agents and content creation to data analysis, research, and innovation.","cats":{"hci":0,"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have demonstrated remarkable performance and tremendous potential across a wide range of tasks.","cats":{"hci":0,"social-sciences":0}}
 {"text":"Besides, ZOE achieves this by sacrificing only a small performance on biased samples, which is simple and effective.","cats":{"hci":0,"social-sciences":0}}
-{"text":"Misinformation poses a variety of risks, such as undermining public trust and distorting factual discourse.","cats":{"hci":1,"social-sciences":0}}
+{"text":"Misinformation poses a variety of risks, such as undermining public trust and distorting factual discourse.","cats":{"hci":0,"social-sciences":0}}
 {"text":"Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks.","cats":{"hci":0,"social-sciences":0,"education":0,"programming":0}}
 {"text":"Pretrained large language models (LLMs) are becoming increasingly powerful and ubiquitous in mainstream applications such as being a personal assistant, a dialogue model, etc.","cats":{"hci":0,"social-sciences":0,"education":0}}
 {"text":"The emergence of large language models (LLMs) introduces an innovative paradigm, offering a unified solution to address various authoring tasks within this scenario.","cats":{"hci":0,"social-sciences":0,"education":0}}
 {"text":"We hope that this work provides a better guide for researchers working on the prompting of large language models.","cats":{"hci":0,"social-sciences":0}}
-{"text":"Large language models have been demonstrated to be valuable in different fields.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Large language models have been demonstrated to be valuable in different fields.","cats":{"hci":0,"social-sciences":0,"production":0,"programming":0}}
 {"text":"Such models - commonly referred to as Large Language Models (LLMs) - have recently gained prominence with the general public, thanks to conversational fine-tuning, putting their behavior in line with public expectations regarding AI.","cats":{"hci":0,"social-sciences":0}}
 {"text":"The capabilities of large language models (LLMs) have sparked debate over whether such systems just learn an enormous collection of superficial statistics or a coherent model of the data generating process -- a world model.","cats":{"hci":0,"social-sciences":0}}
 {"text":"Large language models (LLMs) have taken the scientific world by storm, changing the landscape of natural language processing and human-computer interaction.","cats":{"hci":1,"social-sciences":1}}
@@ -83,17 +83,20 @@
 {"text":"The emergence of Large Language Models (LLMs) has brought both excitement and concerns to social computing research.","cats":{"hci":1,"social-sciences":1}}
 {"text":"On the other hand, concerns are emerging regarding the validity, privacy, and ethics of the research when LLMs are involved.","cats":{"hci":1,"social-sciences":0}}
 {"text":"This SIG aims at offering an open space for social computing researchers who are interested in understanding the impacts of LLMs to discuss their current practices, perspectives, challenges when engaging with LLMs in their everyday work and collectively shaping the emerging norms of using LLMs in social computing research.","cats":{"hci":1,"social-sciences":1}}
+{"text":"However, they struggle to assess ambiguous or context-deficient statements accurately.","cats":{"hci":0,"social-sciences":0}}
+{"text":"The former struggles to cope with the object state changes, while the latter neglects the correlation between spatial and temporal information.","cats":{"hci":0,"social-sciences":0}}
+{"text":"In order to develop effective hallucination prevention strategies under RAG, it is important to create benchmark datasets that can measure the extent of hallucination.","cats":{"hci":0,"social-sciences":0}}
 {"text":"We find that higher-quality references lead to better metric correlations with humans at the segment-level.","cats":{"social-sciences":0,"recommender":0}}
 {"text":"We have systematically devised six fairness criteria for NLP, which can be further refined into 18 sub-categories.","cats":{"social-sciences":0}}
 {"text":"Extensive experiments demonstrate that VideoDrafter outperforms the SOTA video generation models in terms of visual quality, content consistency, and user preference.","cats":{"social-sciences":0}}
 {"text":"Broadband infrastructure owners do not always know how their customers are connected in the local networks, which are structured as rooted trees.","cats":{"social-sciences":0}}
 {"text":"A recent study is able to infer the topology of a local network using discrete time series data from the leaves of the tree (customers).","cats":{"social-sciences":0}}
 {"text":"However, collecting such annotations is prohibitive in many real applications, and cannot benefit from datasets available for individual tasks.","cats":{"social-sciences":0}}
-{"text":"To address these two issues, we propose a KubeEdge-Cloud-Edge-Scheduling scheme named KCES, a workflow containerization scheduling scheme for the KubeEdge cloud-edge framework.","cats":{"social-sciences":0}}
-{"text":"Neural radiance fields (NeRF) have been proposed as an innovative 3D representation method.","cats":{"social-sciences":0}}
+{"text":"To address these two issues, we propose a KubeEdge-Cloud-Edge-Scheduling scheme named KCES, a workflow containerization scheduling scheme for the KubeEdge cloud-edge framework.","cats":{"social-sciences":0,"production":0}}
+{"text":"Neural radiance fields (NeRF) have been proposed as an innovative 3D representation method.","cats":{"social-sciences":0,"architectures":0}}
 {"text":"We devise a novel diffusion model that can undertake the task of simultaneously face swapping and reenactment.","cats":{"social-sciences":0}}
 {"text":"The current approach to fetal anomaly screening is based on biometric measurements derived from individually selected ultrasound images.","cats":{"social-sciences":0}}
-{"text":"We use a Bayesian method to estimate the true value of each biometric from a large number of measurements and probabilistically reject outliers.","cats":{"social-sciences":0}}
+{"text":"We use a Bayesian method to estimate the true value of each biometric from a large number of measurements and probabilistically reject outliers.","cats":{"social-sciences":0,"production":0}}
 {"text":"Our method holds significant potential for substantially improving forest management practices.","cats":{"social-sciences":0}}
 {"text":"We evaluate the resulting models using both frequentist and Bayesian data analysis.","cats":{"social-sciences":0}}
 {"text":"We consider a new setting in which the Searcher has some potentially erroneous information, or prediction on the Hider's position.","cats":{"social-sciences":0}}
@@ -105,7 +108,6 @@
 {"text":"In this study, we use not only a nucleotide sequence-based language model but also a text language model based on PubMed articles to reflect more biological background knowledge in the model.","cats":{"social-sciences":0}}
 {"text":"The pre-trained model is fine-tuned using a large-scale instruction dataset, covering four core document intelligence tasks.","cats":{"social-sciences":0}}
 {"text":"Large language model (LLM) scaling laws are empirical formulas that estimate changes in model quality as a result of increasing parameter count and training data.","cats":{"social-sciences":0}}
-{"text":"In order to develop effective hallucination prevention strategies under RAG, it is important to create benchmark datasets that can measure the extent of hallucination.","cats":{"social-sciences":0}}
 {"text":"Recognizing the expressiveness of the pre-trained large language models, especially the potential of being augmented with abilities to understand and execute intricate commands, we introduce Open-TI.","cats":{"social-sciences":0}}
 {"text":"Alignment, which can be viewed as the superimposition of normative structure onto a statistical model, reveals a conflicted and complex interrelationship between language and technology.","cats":{"social-sciences":0}}
 {"text":"Despite the proficiency of LLMs in a range of tasks, their potential for understanding causality requires further exploration.","cats":{"social-sciences":0}}
@@ -114,7 +116,7 @@
 {"text":"Large Language Models (LLMs) have proven powerful, but the risk of privacy leakage remains a significant concern.","cats":{"social-sciences":0}}
 {"text":"This work introduces an innovative architecture that combines the strengths of ChatGPT with a traditional information retrieval based chatbot framework to offer enhanced student support in higher education.","cats":{"social-sciences":0,"education":1}}
 {"text":"We first present an extensive overview by categorizing these works in terms of various IE subtasks and learning paradigms, then we empirically analyze the most advanced methods and discover the emerging trend of IE tasks with LLMs.","cats":{"social-sciences":0}}
-{"text":"Our new classifier improves zeroshot performance by 9.4%.","cats":{"social-sciences":0}}
+{"text":"Our new classifier improves zeroshot performance by 9.4%.","cats":{"social-sciences":0,"production":0}}
 {"text":"Hence, we present a framework to enhance the quantitative reasoning ability of language models based on dimension perception.","cats":{"social-sciences":0}}
 {"text":"Moreover, we introduce Random Peek, a systematic technique considering an extended range of positions within the sequence, reducing the gap between discerning and generating truth features in LLMs.","cats":{"social-sciences":0}}
 {"text":"Our strategy unfolds in three steps: (1) We invert the diffusion model for camera pose estimation instead of synthesizing novel views.","cats":{"social-sciences":0}}
@@ -128,7 +130,7 @@
 {"text":"Large language models (LLMs) have recently taken the world by storm.","cats":{"social-sciences":0,"education":0}}
 {"text":"As the Large Language Model (LLM) becomes increasingly important in various domains.","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large Language Models (LLMs) have demonstrated remarkable abilities across numerous disciplines, primarily assessed through tasks in language generation, knowledge utilization, and complex reasoning.","cats":{"social-sciences":0,"education":0}}
-{"text":"We are currently witnessing dramatic advances in the capabilities of Large Language Models (LLMs).","cats":{"social-sciences":0,"education":0}}
+{"text":"We are currently witnessing dramatic advances in the capabilities of Large Language Models (LLMs).","cats":{"social-sciences":0,"education":0,"production":0}}
 {"text":"Large language models (LLMs) have shown incredible capabilities and transcended the natural language processing (NLP) community, with adoption throughout many services like healthcare, therapy, education, and customer service.","cats":{"social-sciences":0}}
 {"text":"Large language models (LLMs) have emerged as powerful and general solutions to many natural language tasks.","cats":{"social-sciences":0,"recommender":0}}
 {"text":"Large Language Models (LLMs) exhibit exceptional abilities for causal analysis between concepts in numerous societally impactful domains, including medicine, science, and law.","cats":{"social-sciences":1}}
@@ -136,14 +138,14 @@
 {"text":"Large language models (LLMs) may not equitably represent diverse global perspectives on societal issues.","cats":{"social-sciences":1}}
 {"text":"In recent years, Large Language Models (LLMs) have gained immense attention due to their notable emergent capabilities, surpassing those seen in earlier language models.","cats":{"social-sciences":0,"education":0}}
 {"text":"There is growing interest in ensuring that large language models (LLMs) align with human values.","cats":{"social-sciences":1}}
-{"text":"Large-scale corpora play a vital role in the construction of large language models (LLMs).","cats":{"social-sciences":0}}
+{"text":"Large-scale corpora play a vital role in the construction of large language models (LLMs).","cats":{"social-sciences":0,"production":0}}
 {"text":"The development of large language models (LLMs) has seen rapid progress in recent years.","cats":{"social-sciences":0,"education":0}}
 {"text":"Large Language Models (LLMs) went from non-existent to ubiquitous in the machine learning discourse within a few years.","cats":{"social-sciences":0}}
 {"text":"Large language models (LLMs) have exerted a considerable impact on diverse language-related tasks in recent years.","cats":{"social-sciences":0}}
 {"text":"Recently, there has been a growing interest in utilizing large language models (LLMs) in mental health research, with studies showcasing their remarkable capabilities, such as disease detection.","cats":{"social-sciences":0}}
 {"text":"Large language models (LLMs) have revolutionized the field of artificial intelligence, enabling natural language processing tasks that were previously thought to be exclusive to humans.","cats":{"social-sciences":0}}
 {"text":"Large Language Models (LLMs) have garnered significant attention for their powerful ability in natural language understanding and reasoning.","cats":{"social-sciences":0,"education":0}}
-{"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"social-sciences":0,"education":0,"recommender":0}}
+{"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"social-sciences":0,"education":0,"recommender":0,"production":0}}
 {"text":"The scope of this research method is now poised to grow dramatically as it absorbs the new affordances provided by Large Language Models (LLM)s.","cats":{"social-sciences":0}}
 {"text":"Recently, the development and progress of Large Language Models (LLMs) have amazed the entire Artificial Intelligence community.","cats":{"social-sciences":0,"education":0}}
 {"text":"Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications.","cats":{"social-sciences":0,"education":0,"recommender":0}}
@@ -199,7 +201,7 @@
 {"text":"Current large language models, such as OpenAI's ChatGPT, have captured the public's attention because how remarkable they are in the use of language.","cats":{"social-sciences":0}}
 {"text":"Also, aligning students' personal goals and their ability to achieve them in their field of study is important for promoting motivation and a sense of belonging.","cats":{"social-sciences":0,"education":0}}
 {"text":"Keeping these considerations in mind, we piloted an introductory Java programming course in which activities engaging students in ethical and socially responsible considerations were integrated across modules.","cats":{"social-sciences":0,"education":0}}
-{"text":"While conventional guidelines offer valuable insights, their efficacy diminishes when confronted with extreme weather conditions, such as heatwaves and droughts.","cats":{"social-sciences":0}}
+{"text":"While conventional guidelines offer valuable insights, their efficacy diminishes when confronted with extreme weather conditions, such as heatwaves and droughts.","cats":{"social-sciences":0,"architectures":0}}
 {"text":"Natural Language Processing (NLP) plays an important role in our daily lives, particularly due to the enormous progress of Large Language Models (LLM).","cats":{"social-sciences":0}}
 {"text":"However, NLP has many fairness-critical use cases, e.g., as an expert system in recruitment or as an LLM-based tutor in education.","cats":{"social-sciences":1}}
 {"text":"Hence, it is important to develop a fairness certification for NLP approaches.","cats":{"social-sciences":1}}
@@ -212,19 +214,17 @@
 {"text":"From politicians to podcast hosts, online platforms have systematically banned (``deplatformed'') influential users for breaking platform guidelines.","cats":{"social-sciences":0}}
 {"text":"Then, we link these events to Google Trends and Wikipedia page views, platform-agnostic measures of online attention that capture the general public's interest in specific influencers.","cats":{"social-sciences":0}}
 {"text":"After 12 months, we estimate that online attention toward deplatformed influencers is reduced by -63% (95%","cats":{"social-sciences":0}}
-{"text":"The former struggles to cope with the object state changes, while the latter neglects the correlation between spatial and temporal information.","cats":{"social-sciences":0}}
 {"text":"In this paper, we introduce \"IdentiFace\" which is a multimodal facial biometric system that combines the core of facial recognition with some of the most important soft biometric traits such as gender, face shape, and emotion.","cats":{"social-sciences":0}}
 {"text":"We achieved 99.4% on our dataset and 95.15% on the public dataset[2] in the gender recognition problem.","cats":{"social-sciences":0}}
 {"text":"Our large-scale study of affective tasks for basic expression recognition and facial action unit detection illustrates that our approach is network agnostic and brings large performance improvements compared to the state-of-the-art in both tasks and across all studied databases.","cats":{"social-sciences":0}}
 {"text":"Extensive experiments are conducted on four widely used crowd counting datasets.","cats":{"social-sciences":0,"education":0}}
 {"text":"In human-centric content generation, the pre-trained text-to-image models struggle to produce user-wanted portrait images, which retain the identity of individuals while exhibiting diverse expressions.","cats":{"social-sciences":0}}
-{"text":"However, they struggle to assess ambiguous or context-deficient statements accurately.","cats":{"social-sciences":0}}
 {"text":"However, we still lack empirical evidence to support organizations in deciding whether their requirements are good enough or impede subsequent activities.","cats":{"social-sciences":0}}
 {"text":"This paper aims to bridge this gap by introducing CMMLU, a comprehensive Chinese benchmark that covers various subjects, including natural science, social sciences, engineering, and humanities.","cats":{"social-sciences":1}}
 {"text":"As the capabilities of large language models (LLMs) continue to advance, evaluating their performance becomes increasingly crucial and challenging.  ","cats":{"social-sciences":0}}
 {"text":"We conduct a thorough evaluation of 18 advanced multilingual- and Chinese-oriented LLMs, assessing their performance across different subjects and settings.","cats":{"social-sciences":0}}
 {"text":"The results reveal that most existing LLMs struggle to achieve an average accuracy of 50%, even when provided with in-context examples and chain-of-thought prompts, whereas the random baseline stands at 25%.","cats":{"social-sciences":0}}
-{"text":"This highlights significant room for improvement in LLMs.","cats":{"social-sciences":0}}
+{"text":"This highlights significant room for improvement in LLMs.","cats":{"social-sciences":0,"production":0}}
 {"text":"Additionally, we conduct extensive experiments to identify factors impacting the models' performance and propose directions for enhancing LLMs.","cats":{"social-sciences":0}}
 {"text":"CMMLU fills the gap in evaluating the knowledge and reasoning capabilities of large language models within the Chinese context.","cats":{"social-sciences":0}}
 {"text":"On the one hand, LLMs offer unprecedented capabilities in analyzing vast amounts of textual data and generating human-like responses, enabling researchers to delve into complex social phenomena.","cats":{"social-sciences":1}}
