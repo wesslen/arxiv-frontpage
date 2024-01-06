@@ -8,7 +8,7 @@
 {"text":"In this paper, we introduce a detailed framework designed to detect and assess the presence of content from potentially copyrighted books within the training datasets of LLMs.","cats":{"robustness":0,"recommender":0}}
 {"text":"Our analysis of GPT and Llama-variants reveals that these LLMs often resemble behaviors more commonly exhibited in low-quality therapy rather than high-quality therapy, such as offering a higher degree of problem-solving advice when clients share emotions, which is against typical recommendations.","cats":{"robustness":0,"hci":1,"recommender":0}}
 {"text":"Our analysis framework suggests that despite the ability of LLMs to generate anecdotal examples that appear similar to human therapists, LLM therapists are currently not fully consistent with high-quality care, and thus require additional research to ensure quality care.","cats":{"robustness":0,"recommender":0}}
-{"text":"In addition, we trace how these profound capabilities of LLMs, brought by code, have led to their emergence as intelligent agents (IAs) in situations where the ability to understand instructions, decompose goals, plan and execute actions, and refine from feedback are crucial to their success on downstream tasks.","cats":{"robustness":0,"recommender":0}}
+{"text":"In addition, we trace how these profound capabilities of LLMs, brought by code, have led to their emergence as intelligent agents (IAs) in situations where the ability to understand instructions, decompose goals, plan and execute actions, and refine from feedback are crucial to their success on downstream tasks.","cats":{"robustness":0,"hci":0,"recommender":0}}
 {"text":"Commuting extensions have also attracted the attention of the linear algebra community.","cats":{"security":0,"hci":0,"recommender":0}}
 {"text":"(iii) A genericity theorem showing that our algorithms and uniqueness theorems can be applied to a wide range of input matrices.","cats":{"security":0,"recommender":0}}
 {"text":"Our findings demonstrate that PINN-based approaches in channel modeling exhibit promising attributes such as generalizability, interpretability, and robustness.","cats":{"security":0,"recommender":0}}
@@ -18,6 +18,8 @@
 {"text":"The advanced capabilities of Large Language Models (LLMs) have made them invaluable across various applications, from conversational agents and content creation to data analysis, research, and innovation.","cats":{"hci":0,"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Within this work, we propose a hybrid approach, Deep-ELA, which combines (the benefits of) deep learning and ELA features.","cats":{"hci":0,"recommender":0}}
 {"text":"We are making all code, data, and results available for future research endeavors.","cats":{"hci":0,"recommender":0}}
+{"text":"Prompt injection attacks exploit vulnerabilities in large language models (LLMs) to manipulate the model into unintended actions or generate malicious content.","cats":{"hci":0,"recommender":0}}
+{"text":"These findings offer instructive insights aimed at advancing the field of tool learning.","cats":{"hci":0,"recommender":0}}
 {"text":"We find that higher-quality references lead to better metric correlations with humans at the segment-level.","cats":{"social-sciences":0,"recommender":0}}
 {"text":"As the Large Language Model (LLM) becomes increasingly important in various domains.","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have emerged as powerful and general solutions to many natural language tasks.","cats":{"social-sciences":0,"recommender":0}}
@@ -80,11 +82,9 @@
 {"text":"Several proposals for alternative designs have been put forward, with these efforts having now converged into the Compute Express Link (CXL) specification.","cats":{"recommender":0}}
 {"text":"CXL is an interconnect protocol on top of PCIe with a more modern and powerful interface.","cats":{"recommender":0}}
 {"text":"The latency is comparable to the ones observed in the state-of-the-art, with 780us/img.","cats":{"recommender":0}}
-{"text":"Prompt injection attacks exploit vulnerabilities in large language models (LLMs) to manipulate the model into unintended actions or generate malicious content.","cats":{"recommender":0}}
 {"text":"In this paper, we describe preliminary work on a new Dafny plugin that leverages LLMs to assist developers by generating suggestions for relevant lemmas that Dafny is unable to discover and use.","cats":{"recommender":0}}
 {"text":"However, the advent of Multimodal Large Language Models (MLLMs) like GPT-4 with vision (GPT-4V), capable of processing multimodal data including text, sound, and visual inputs, opens a new era of enriched, personalized, and interactive learning landscapes in education.","cats":{"recommender":0}}
 {"text":"Possible applications for MLLMs could range from content creation to tailored support for learning, fostering competencies in scientific practices, and providing assessment and feedback.","cats":{"recommender":0}}
-{"text":"These findings offer instructive insights aimed at advancing the field of tool learning.","cats":{"recommender":0}}
 {"text":"We propose a method to fine-tune the nucleotide sequence language model and the text language model based on various databases of antibiotic resistance genes.","cats":{"recommender":0}}
 {"text":"This paper takes ChatGPT as the modeling object, incorporates LLM technology into the typical book resource understanding and recommendation scenario for the first time, and puts it into practice.","cats":{"recommender":1}}
 {"text":"By building a ChatGPT-like book recommendation system (BookGPT) framework based on ChatGPT, this paper attempts to apply ChatGPT to recommendation modeling for three typical tasks, book rating recommendation, user rating recommendation, and book summary recommendation, and explores the feasibility of LLM technology in book recommendation scenarios.","cats":{"recommender":1}}
