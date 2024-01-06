@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Dict, List, Tuple
 import random
 import re
 import json
@@ -12,7 +12,7 @@ from lazylines import LazyLines
 from lunr import lunr
 from lunr.index import Index
 
-from .constants import DATA_LEVELS, INDICES_FOLDER, LABELS, CONFIG, THRESHOLDS, CLEAN_DOWNLOADS_FOLDER, DOWNLOADS_FOLDER, ANNOT_PATH, ACTIVE_LEARN_PATH, SECOND_OPINION_PATH, ANNOT_FOLDER
+from .constants import DATA_LEVELS, INDICES_FOLDER, LABELS, CONFIG, THRESHOLDS, CLEAN_DOWNLOADS_FOLDER, DOWNLOADS_FOLDER, ANNOT_PATH, ACTIVE_LEARN_PATH, SECOND_OPINION_PATH, ANNOT_FOLDER, EVAL_FOLDER, DATA_TYPE
 from .modelling import SentenceModel
 from .utils import console, dedup_stream, add_rownum, attach_docs, attach_spans, add_predictions, abstract_annot_to_sent
 import warnings
@@ -39,14 +39,17 @@ class DataStream:
         import spacy
         return spacy.load("en_core_web_sm", disable=["ner", "lemmatizer", "tagger"])
     
-    def get_dataset_name(self, label:str, level:str):
+    def get_dataset_name(self, label:str, level:str, datatype:str):
         """Source of truth as far as dataset name goes."""
-        return f"{label}-{level}"
-    
+        if datatype == "training":
+            return f"{label}-{level}"
+        elif datatype == "evaluation":
+            return f"{label}-{level}-{datatype}"
+
     def retreive_dataset_names(self):
         """Retreive the dataset names that actually have annotated data."""
-        product = it.product(LABELS, DATA_LEVELS)
-        possible = [self.get_dataset_name(lab, lev) for lab,lev in product]
+        product = it.product(LABELS, DATA_LEVELS, DATA_TYPE)
+        possible = [self.get_dataset_name(lab, lev, type) for lab,lev,type in product]
         return [n for n in possible if n in self.db.datasets]
     
     def get_raw_download_stream(self):
@@ -119,6 +122,8 @@ class DataStream:
         stream = []
         for dataset in self.retreive_dataset_names():
             datapoints = self.db.get_dataset_examples(dataset)
+            if "evaluation" in dataset:
+                continue
             if "sentence" in dataset:
                 new = list(self._sentence_data_to_train_format(datapoints))
                 console.log(f"Adding {len(new)} examples from {dataset}")
@@ -138,13 +143,69 @@ class DataStream:
             path = ANNOT_FOLDER / f"{label}.jsonl"
             srsly.write_jsonl(path, subset)
             console.log(f"Full annotations file saved at [bold]{path}[/bold]")
-    
-    def get_train_stream(self) -> List[Dict]:
-        examples = []
+
+    def save_eval_stream(self):
+        console.log("Generating evaluation annotation stream")
+        stream = []
+        for dataset in self.retreive_dataset_names():
+            datapoints = self.db.get_dataset_examples(dataset)
+            if "evaluation" in dataset:
+                if "sentence" in dataset:
+                    new = list(self._sentence_data_to_train_format(datapoints))
+                    console.log(f"Adding {len(new)} examples from {dataset}")
+                    stream.extend(new)
+                if "abstract" in dataset:
+                    label_name = dataset.replace("-abstract", "")
+                    new = list(abstract_annot_to_sent(datapoints, self.nlp, label_name))
+                    console.log(f"Adding {len(new)} examples from {dataset}")
+                    stream.extend(new)
+                
+        if not ANNOT_PATH.parent.exists():
+            ANNOT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        
+        full_stream = self._accumulate_train_stream(stream)
         for label in LABELS:
-            path = ANNOT_FOLDER / f"{label}.jsonl"
-            examples.extend(list(srsly.read_jsonl(path)))
-        return examples
+            subset = [ex for ex in full_stream if label in ex['cats']]
+            path = EVAL_FOLDER / f"{label}.jsonl"
+            srsly.write_jsonl(path, subset)
+            console.log(f"Full eval annotations file saved at [bold]{path}[/bold]")
+
+    def get_combined_stream() -> Tuple[List[Dict], List[Dict]]:
+
+        def dedup_two_stream(combined_stream, original_streams, key="text"):
+            uniq = {}
+            separated_streams = {stream: [] for stream in original_streams}
+
+            for ex in combined_stream:
+                hash_key = hash(ex[key])
+                if hash_key not in uniq:
+                    uniq[hash_key] = ex
+                    # Determine which stream the example came from and add it there
+                    for stream_name, stream_examples in original_streams.items():
+                        if ex in stream_examples:
+                            separated_streams[stream_name].append(ex)
+                            break
+
+            return separated_streams['train'], separated_streams['eval']
+
+        def get_stream(folder_path) -> List[Dict]:
+            examples = []
+            for label in LABELS:
+                path = folder_path / f"{label}.jsonl"
+                examples.extend(list(srsly.read_jsonl(path)))
+            return examples
+
+        train_examples = get_stream(ANNOT_FOLDER)
+        eval_examples = get_stream(EVAL_FOLDER)
+
+        # Combine for global deduplication
+        combined_examples = train_examples + eval_examples
+
+        # Perform deduplication and separate the streams
+        train_stream, eval_stream = dedup_two_stream(combined_examples, {'train': train_examples, 'eval': eval_examples})
+
+        return train_stream, eval_stream
+
 
     def get_lunr_stream(self, query: str, level: str):
         idx_path = self._index_path(kind="lunr", level=level)
@@ -277,15 +338,19 @@ class DataStream:
         for level in DATA_LEVELS:
             data = {}
             for label in LABELS:
-                dataset_name = f"{label}-{level}"
-                if dataset_name in self.db.datasets:
-                    examples = self.db.get_dataset_examples(dataset_name)
-                    data[dataset_name] = [
-                        dataset_name,
-                        sum(1 for ex in examples if ex['answer'] == 'accept'),
-                        sum(1 for ex in examples if ex['answer'] == 'ignore'),
-                        sum(1 for ex in examples if ex['answer'] == 'reject')
-                    ]
+                for type in DATA_TYPE:
+                    if type == "training":
+                        dataset_name = f"{label}-{level}"
+                    if type == "evaluation":
+                        dataset_name = f"{label}-{level}-{type}"
+                    if dataset_name in self.db.datasets:
+                        examples = self.db.get_dataset_examples(dataset_name)
+                        data[dataset_name] = [
+                            dataset_name,
+                            sum(1 for ex in examples if ex['answer'] == 'accept'),
+                            sum(1 for ex in examples if ex['answer'] == 'ignore'),
+                            sum(1 for ex in examples if ex['answer'] == 'reject')
+                        ]
             msg.table(data.values(), 
                     header=["label", "accept", "ignore", "reject"], 
                     divider=True, 

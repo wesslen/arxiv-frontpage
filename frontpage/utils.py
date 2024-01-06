@@ -1,3 +1,4 @@
+import re
 from rich.console import Console 
 import itertools as it
 
@@ -95,3 +96,14 @@ def abstract_annot_to_sent(examples, nlp, label):
     for ex in examples:
         for annot in _abstract_single_annot_to_sent(ex, nlp, label):
             yield annot
+
+
+def extract_before_second_hyphen(text):
+    pattern = r'^(.*?)-(.*?)-'
+    match = re.match(pattern, text)
+
+    if match:
+        # Extracts everything before the second hyphen
+        return match.group(0)[:-1]  # Remove the trailing hyphen
+    else:
+        raise ValueError("String does not contain two hyphens")

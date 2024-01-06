@@ -46,9 +46,15 @@ def annotate():
 
     def run_questions():
         import questionary
-        from .constants import LABELS, DATA_LEVELS
+        from .constants import LABELS, DATA_LEVELS, DATA_TYPE
 
         results = {}
+
+        results["datatype"] = questionary.select(
+            "What type of data do you want to annotate?",
+            choices=DATA_TYPE,
+        ).ask()        
+
         results["label"] = questionary.select(
             "Which label do you want to annotate?",
             choices=LABELS,
@@ -102,8 +108,8 @@ def train():
     from .datastream import DataStream
     from .modelling import SentenceModel
 
-    examples = DataStream().get_train_stream()
-    SentenceModel().train(examples=examples).to_disk()
+    train_examples, eval_examples = DataStream().get_combined_stream()
+    SentenceModel().train(examples=train_examples).to_disk()
 
 
 @cli.command("pretrain")
@@ -112,8 +118,8 @@ def pretrain():
     from .datastream import DataStream
     from .modelling import SentenceModel
 
-    examples = DataStream().get_train_stream()
-    SentenceModel().pretrain(examples=examples)
+    train_examples, eval_examples = DataStream().get_combined_stream()
+    SentenceModel().pretrain(examples=train_examples)
 
 
 @cli.command("stats")

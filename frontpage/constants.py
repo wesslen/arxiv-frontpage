@@ -7,6 +7,7 @@ from .types import Config
 # Paths and folders
 DATA_FOLDER = Path("data")
 ANNOT_FOLDER = DATA_FOLDER / "annot"
+EVAL_FOLDER = DATA_FOLDER / "eval"
 INDICES_FOLDER = Path("indices")
 CLEAN_DOWNLOADS_FOLDER = DATA_FOLDER / Path("cleaned")
 DOWNLOADS_FOLDER = DATA_FOLDER / "downloads"
@@ -24,6 +25,7 @@ EMBETTER_CACHE = Path("cache") / "embetter"
 # Possible values
 DATA_LEVELS = ["sentence", "abstract"]
 DATA_LEVELS_TYPE = Literal["sentence", "abstract"]
+DATA_TYPE = ["training", "evaluation"]
 CONFIG = Config(**srsly.read_yaml(CONFIG_FILE))
 LABELS = [s.label for s in CONFIG.sections]
 THRESHOLDS = {s.label: s.threshold for s in CONFIG.sections}

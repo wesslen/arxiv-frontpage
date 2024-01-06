@@ -3,7 +3,7 @@ import spacy
 import prodigy
 
 from .datastream import DataStream
-from .utils import console
+from .utils import console, extract_before_second_hyphen
 datastream = DataStream()
 
 
@@ -32,8 +32,13 @@ def arxiv_sentence(dataset, label, tactic, setting):
     else:
         raise ValueError("This should never happen.")
     
+    exclude = []
+    if "evaluation" in dataset:
+        exclude.append(extract_before_second_hyphen(dataset))
+    
     return {
         "dataset": dataset,
+        "exclude": exclude,
         "stream": (set_hashes({**ex, "label": label}) for ex in stream),
         "view_id": "classification",
         "config":{
@@ -68,11 +73,16 @@ def arxiv_abstract(dataset, label, tactic, setting):
     else:
         raise ValueError("This should never happen.")
     
+    exclude = []
+    if "evaluation" in dataset:
+        exclude.append(extract_before_second_hyphen(dataset))
+    
     nlp = spacy.blank("en")
     stream = ({**ex, "label": label} for ex in stream)
     stream = add_tokens(nlp, stream)
     return {
         "dataset": dataset,
+        "exclude": exclude,
         "stream": (set_hashes(ex) for ex in stream),
         "view_id": "blocks",
         "config": {
@@ -89,7 +99,7 @@ def annotate_prodigy(results):
     from prodigy.app import server 
     from prodigy.core import Controller
 
-    dataset_name = datastream.get_dataset_name(results['label'], results['level'])
+    dataset_name = datastream.get_dataset_name(results['label'], results['level'], results['datatype'])
     name = "textcat.arxiv.sentence" if results['level'] == 'sentence' else "textcat.arxiv.abstract"
     if results['level'] == 'sentence':
         ctrl_data = arxiv_sentence(dataset_name, results['label'], results['tactic'], results['setting'])
