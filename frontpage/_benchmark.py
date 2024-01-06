@@ -41,7 +41,7 @@ encoders = {
     "hash_lg": HashingVectorizer(),
     "hash_sm": HashingVectorizer(n_features=2**14),
     "openai": OpenAIEncoder(),
-    "cohere": CohereEncoder(),
+    # "cohere": CohereEncoder(),
 }
 
 encoders["multi"] = make_union(
