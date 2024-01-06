@@ -83,7 +83,7 @@
 {"text":"For example, those working in the NHS thought that time spent on bureaucracy could drop from 50% to 30% if generative AI was properly exploited, an equivalent of one day per week (an enormous potential impact).","cats":{"security":0,"hci":0,"social-sciences":1}}
 {"text":"This strategy extends directly to the case where the searcher has no knowledge of the terrain beforehand.","cats":{"security":0,"hci":0}}
 {"text":"Large language models (LLMs) have skyrocketed in popularity in recent years due to their ability to generate high-quality text in response to human prompting.","cats":{"security":0,"hci":0}}
-{"text":"However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones.","cats":{"security":1,"hci":0}}
+{"text":"However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones.","cats":{"security":1,"hci":0,"programming":0}}
 {"text":"Large Language Models (LLMs) have made remarkable advancements in the field of artificial intelligence, significantly reshaping the human-computer interaction.","cats":{"hci":1}}
 {"text":"Large language models (LLMs) have demonstrated their significant potential to be applied for addressing various application tasks.","cats":{"hci":0,"social-sciences":0,"education":0}}
 {"text":"Large Language Models (LLMs) are frequently used for multi-faceted language generation and evaluation tasks that involve satisfying intricate user constraints or taking into account multiple aspects and criteria.","cats":{"hci":0,"education":0}}
@@ -163,8 +163,8 @@
 {"text":"Notably, we find that both permanent and temporary deplatforming reduce online attention toward influencers; Overall, this work contributes to the ongoing effort to map the effectiveness of content moderation interventions, driving platform governance away from speculation.","cats":{"hci":0,"social-sciences":0}}
 {"text":"These digital companions often lack memory of past interactions, while relying heavily on the internet for speech processing, raising privacy concerns.","cats":{"hci":0}}
 {"text":"Despite this, they are prone to generating factual and commonsense errors, raising concerns in critical areas like healthcare, journalism, and education to mislead users.","cats":{"hci":0}}
-{"text":"A significant distinction of advanced LLMs, such as ChatGPT, is their demonstrated ability to \"reason.\"","cats":{"hci":0}}
-{"text":"The results provide insights into LLMs' reasoning abilities and reveal the logical rules the LLMs did not learn well.","cats":{"hci":0}}
+{"text":"A significant distinction of advanced LLMs, such as ChatGPT, is their demonstrated ability to \"reason.\"","cats":{"hci":0,"programming":0}}
+{"text":"The results provide insights into LLMs' reasoning abilities and reveal the logical rules the LLMs did not learn well.","cats":{"hci":0,"programming":0}}
 {"text":"The visual cues offered by their complex layouts play a crucial role in comprehending these documents effectively.","cats":{"hci":0,"social-sciences":0}}
 {"text":"This paper presents RAGTruth, a corpus tailored for analyzing word-level hallucinations in various domains and tasks within the standard RAG frameworks for LLM applications.","cats":{"hci":0}}
 {"text":"We examine this practice of structuration as a two-way interaction between users and models by analysing how ChatGPT4 redacts perceived `anomalous' language in fragments of Joyce's Ulysses and the new linguistic practice of prompt engineering.","cats":{"hci":1,"social-sciences":1}}
@@ -173,7 +173,7 @@
 {"text":"This is particularly crucial for practical applications like mental health support, nutrition planning, culturally sensitive conversations, or reducing toxic behavior in conversational agents.","cats":{"hci":0}}
 {"text":"Our findings reveal the potential of LLM agents in team collaboration, highlighting issues related to hallucinations in communication.","cats":{"hci":1}}
 {"text":"However, concerns regarding data privacy have emerged, especially when multiple stakeholders aim to collaboratively enhance LLMs using sensitive data.","cats":{"hci":0}}
-{"text":"In this study, various prompts are designed and compared across mainstream LLMs using two distinct datasets from human reviewers and automated checkers.","cats":{"hci":0}}
+{"text":"In this study, various prompts are designed and compared across mainstream LLMs using two distinct datasets from human reviewers and automated checkers.","cats":{"hci":0,"programming":0}}
 {"text":"Prior studies have compared the decision making abilities of LLMs with those of humans from a psychological perspective.","cats":{"hci":1}}
 {"text":"To this end, a hypothetical design project was conducted, where ChatGPT was utilized to generate personas, simulate interviews with fictional users, create new design ideas, simulate usage scenarios and conversations between an imaginary prototype and fictional users, and lastly evaluate user experience.","cats":{"hci":1}}
 {"text":"The recent advancements in Large Language Models (LLMs), particularly conversational LLMs like ChatGPT, have prompted changes in a range of fields, including design.","cats":{"hci":0}}
@@ -259,7 +259,7 @@
 {"text":"This paper highlights the importance of speaker diarization enriched with sensor data fusion for contextualized conversation preservation.","cats":{"hci":0}}
 {"text":"The use cases applied to the e-VITA project have shown that truly personalized dialogue is pivotal for individual voice assistants.","cats":{"hci":0}}
 {"text":"Secure local processing and sensor data fusion ensure virtual companions meet individual user needs without compromising privacy or data security.","cats":{"hci":0,"production":0}}
-{"text":"Large Language Models (LLMs) like ChatGPT are foundational in various applications due to their extensive knowledge from pre-training and fine-tuning.","cats":{"hci":0}}
+{"text":"Large Language Models (LLMs) like ChatGPT are foundational in various applications due to their extensive knowledge from pre-training and fine-tuning.","cats":{"hci":0,"programming":0}}
 {"text":"Current methods for evaluating LLMs' veracity are limited by test data leakage or the need for extensive human labor, hindering efficient and accurate error detection.","cats":{"hci":0}}
 {"text":"To tackle this problem, we introduce a novel, automatic testing framework, FactChecker, aimed at uncovering factual inaccuracies in LLMs.","cats":{"hci":0}}
 {"text":"This framework involves three main steps:","cats":{"hci":0}}

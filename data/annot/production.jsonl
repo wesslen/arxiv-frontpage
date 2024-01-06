@@ -116,14 +116,14 @@
 {"text":"We systematically evaluate LLMs' abilities to generate and recognize an assortment of visual concepts of increasing complexity and then demonstrate how a preliminary visual representation learning system can be trained using models of text.","cats":{"production":0}}
 {"text":"As language models lack the ability to consume or output visual information as pixels, we use code to represent images in our study.","cats":{"production":0}}
 {"text":"Although LLM-generated images do not look like natural images, results on image generation and the ability of models to correct these generated images indicate that precise modeling of strings can teach language models about numerous aspects of the visual world.","cats":{"production":0}}
-{"text":"As instruction-tuned large language models (LLMs) gain global adoption, their ability to follow instructions in multiple languages becomes increasingly crucial.","cats":{"production":0,"architectures":0}}
-{"text":"One promising approach is cross-lingual transfer, where a model acquires specific functionality on some language by finetuning on another language.","cats":{"production":0,"architectures":0}}
-{"text":"In this work, we investigate how multilinguality during instruction tuning of a multilingual LLM affects instruction-following across languages.","cats":{"production":0,"architectures":1}}
-{"text":"We first show that many languages transfer some instruction-following capabilities to other languages from even monolingual tuning.","cats":{"production":0,"architectures":1}}
-{"text":"Furthermore, we find that only 40 multilingual examples in an English tuning set substantially improve multilingual instruction-following, both in seen and unseen languages during tuning.","cats":{"production":0,"architectures":0}}
-{"text":"In general, we observe that models tuned on multilingual mixtures exhibit comparable or superior performance in several languages compared to monolingually tuned models, despite training on 10x fewer examples in those languages.","cats":{"production":0}}
-{"text":"Finally, we find that increasing the number of languages in the instruction tuning set from 1 to only 2, 3, or 4 increases cross-lingual generalization.","cats":{"production":0,"architectures":0}}
-{"text":"Our results suggest that building massively multilingual instruction-tuned models can be done with only a very small set of multilingual instruction-responses.","cats":{"production":0,"architectures":0}}
+{"text":"As instruction-tuned large language models (LLMs) gain global adoption, their ability to follow instructions in multiple languages becomes increasingly crucial.","cats":{"production":0,"architectures":0,"programming":0}}
+{"text":"One promising approach is cross-lingual transfer, where a model acquires specific functionality on some language by finetuning on another language.","cats":{"production":0,"architectures":0,"programming":0}}
+{"text":"In this work, we investigate how multilinguality during instruction tuning of a multilingual LLM affects instruction-following across languages.","cats":{"production":0,"architectures":1,"programming":0}}
+{"text":"We first show that many languages transfer some instruction-following capabilities to other languages from even monolingual tuning.","cats":{"production":0,"architectures":1,"programming":0}}
+{"text":"Furthermore, we find that only 40 multilingual examples in an English tuning set substantially improve multilingual instruction-following, both in seen and unseen languages during tuning.","cats":{"production":0,"architectures":0,"programming":0}}
+{"text":"In general, we observe that models tuned on multilingual mixtures exhibit comparable or superior performance in several languages compared to monolingually tuned models, despite training on 10x fewer examples in those languages.","cats":{"production":0,"programming":0}}
+{"text":"Finally, we find that increasing the number of languages in the instruction tuning set from 1 to only 2, 3, or 4 increases cross-lingual generalization.","cats":{"production":0,"architectures":0,"programming":0}}
+{"text":"Our results suggest that building massively multilingual instruction-tuned models can be done with only a very small set of multilingual instruction-responses.","cats":{"production":0,"architectures":0,"programming":0}}
 {"text":"The capabilities of the most recent language models have increased the interest in integrating them into real-world applications.","cats":{"production":0,"architectures":0}}
 {"text":"However, the fact that these models generate plausible, yet incorrect text poses a constraint when considering their use in several domains.","cats":{"production":0,"architectures":0}}
 {"text":"Healthcare is a prime example of a domain where text-generative trustworthiness is a hard requirement to safeguard patient well-being.","cats":{"production":0}}
@@ -132,6 +132,13 @@
 {"text":"Furthermore, drawing upon external knowledge databases, Physio can recommend rehabilitation exercises and over-the-counter medication for symptom relief.","cats":{"production":0}}
 {"text":"By combining these features, Physio can leverage the power of generative models for language processing while also conditioning its response on dependable and verifiable sources.","cats":{"production":0}}
 {"text":"A live demo of Physio is available at https://physio.inesctec.pt.","cats":{"production":0}}
+{"text":"We also conduct more experiments and analyses to offer insights for future work on effectively fine-tuning LLaMa for specific scenarios.","cats":{"production":1}}
+{"text":"The LLaMA models performed especially well with large datasets, demonstrating their ability to handle complex, multi-label tasks.","cats":{"production":0}}
+{"text":"Building upon UltraChat, we fine-tune a LLaMA model to create a powerful conversational model, UltraLLaMA.","cats":{"production":0}}
+{"text":"We fine-tune LLaMA on ToolBench and obtain ToolLLaMA.","cats":{"production":0}}
+{"text":"Falcon-180B significantly outperforms models such as PaLM or Chinchilla, and improves upon concurrently developed models such as LLaMA 2 or Inflection-1.","cats":{"production":0}}
+{"text":"We report detailed evaluations, as well as a deep dive into the methods and custom tooling employed to pretrain Falcon.","cats":{"production":0}}
+{"text":"Then we fine-tune the LLaMA-2 models on MetaMathQA.","cats":{"production":0}}
 {"text":"However, concerns regarding data privacy have emerged, especially when multiple stakeholders aim to collaboratively enhance LLMs using sensitive data. In this scenario, federated learning becomes a natural choice, allowing decentralized fine-tuning without exposing raw data to central servers.","cats":{"production":1}}
 {"text":"To address these challenges, this article introduces DP-LoRA, a novel federated learning algorithm tailored for LLMs. DP-LoRA preserves data privacy by employing a Gaussian mechanism that adds noise in weight updates, maintaining individual data privacy while facilitating collaborative model training.","cats":{"production":1}}
 {"text":"The surge in interest and application of large language models (LLMs) has sparked a drive to fine-tune these models to suit specific applications, such as finance and medical science.  ","cats":{"production":0}}

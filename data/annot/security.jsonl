@@ -65,7 +65,7 @@
 {"text":"As Large Language Models (LLMs) continue to advance in their ability to write human-like text, a key challenge remains around their tendency to hallucinate generating content that appears factual but is ungrounded.","cats":{"prompt-engineering":0,"security":0,"hci":0,"social-sciences":0,"programming":0}}
 {"text":"While this allows them to display impressive language fluency, it also means they are capable of extrapolating information from the biases in training data, misinterpreting ambiguous prompts, or modifying the information to align superficially with the input.","cats":{"prompt-engineering":1,"robustness":1,"security":0,"hci":0,"social-sciences":1,"recommender":0}}
 {"text":"This becomes hugely alarming when we rely on language generation capabilities for sensitive applications, such as summarizing medical records, financial analysis reports, etc.","cats":{"prompt-engineering":0,"security":0,"hci":0,"social-sciences":0}}
-{"text":"Large Language Models (LLMs) have revolutionized Natural Language Processing but exhibit limitations, particularly in autonomously addressing novel challenges such as reasoning and problem-solving.","cats":{"prompt-engineering":1,"robustness":0,"security":0}}
+{"text":"Large Language Models (LLMs) have revolutionized Natural Language Processing but exhibit limitations, particularly in autonomously addressing novel challenges such as reasoning and problem-solving.","cats":{"prompt-engineering":1,"robustness":0,"security":0,"programming":0}}
 {"text":"Traditional techniques like chain-of-thought prompting necessitate explicit human guidance.","cats":{"prompt-engineering":1,"security":0}}
 {"text":"This paper introduces a novel multi-agent communication framework, inspired by the CAMEL model, to enhance LLMs' autonomous problem-solving capabilities.","cats":{"prompt-engineering":0,"security":0}}
 {"text":"Generative AI has the potential to transform how public services are delivered by enhancing productivity and reducing time spent on bureaucracy.","cats":{"prompt-engineering":0,"security":0,"hci":0}}
@@ -242,14 +242,14 @@
 {"text":"LoRA usually offers the most favorable trade-off between cost and performance.  ","cats":{"security":0}}
 {"text":"At last, we explore the relationships among updated parameters, cross-entropy loss, and task performance.","cats":{"security":0,"recommender":0}}
 {"text":"We find that the tuning effectiveness observed in small models generalizes well to larger models, and the validation loss in instruction tuning can be a reliable indicator of overall downstream performance.","cats":{"security":0}}
-{"text":"However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones.","cats":{"security":1,"hci":0}}
-{"text":"In this work, we introduce Jatmo, a method for generating task-specific models resilient to prompt-injection attacks.","cats":{"security":0}}
-{"text":"Our experiments on six tasks show that Jatmo models provide the same quality of outputs on their specific task as standard LLMs, while being resilient to prompt injections.","cats":{"security":0}}
+{"text":"However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model's instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones.","cats":{"security":1,"hci":0,"programming":0}}
+{"text":"In this work, we introduce Jatmo, a method for generating task-specific models resilient to prompt-injection attacks.","cats":{"security":0,"programming":0}}
+{"text":"Our experiments on six tasks show that Jatmo models provide the same quality of outputs on their specific task as standard LLMs, while being resilient to prompt injections.","cats":{"security":0,"programming":0}}
 {"text":"Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks.  ","cats":{"security":0}}
 {"text":"Jatmo leverages the fact that LLMs can only follow instructions once they have under then used to fine-tune a base model (i.e., a non-instruction-tuned model).","cats":{"security":0}}
-{"text":"Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs.","cats":{"security":0}}
-{"text":"For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset.","cats":{"security":0}}
-{"text":"The best attacks succeeded in less than 0.5% of cases against our models, versus over 90% success rate against GPT-3.5-Turbo.","cats":{"security":0}}
+{"text":"Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs.","cats":{"security":0,"programming":0}}
+{"text":"For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset.","cats":{"security":0,"programming":0}}
+{"text":"The best attacks succeeded in less than 0.5% of cases against our models, versus over 90% success rate against GPT-3.5-Turbo.","cats":{"security":0,"programming":0}}
 {"text":"We release Jatmo at","cats":{"security":0}}
 {"text":"Deep learning-based natural language processing (NLP) models, particularly pre-trained language models (PLMs), have been revealed to be vulnerable to adversarial attacks.","cats":{"security":1}}
 {"text":"However, the adversarial examples generated by many mainstream word-level adversarial attack models are neither valid nor natural, leading to the loss of semantic maintenance, grammaticality, and human imperceptibility.","cats":{"security":1}}

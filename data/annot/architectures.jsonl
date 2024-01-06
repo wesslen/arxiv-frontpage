@@ -27,13 +27,13 @@
 {"text":"Finally, the paper summarizes significant findings from LLM research and consolidates essential architectural and training strategies for developing advanced LLMs.","cats":{"production":0,"architectures":0}}
 {"text":"Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.","cats":{"production":0,"architectures":0}}
 {"text":"Moreover, the paper also discusses the basic building blocks and concepts behind LLMs, followed by a complete overview of LLMs, including their important features and functions.","cats":{"production":0,"architectures":0}}
-{"text":"As instruction-tuned large language models (LLMs) gain global adoption, their ability to follow instructions in multiple languages becomes increasingly crucial.","cats":{"production":0,"architectures":0}}
-{"text":"One promising approach is cross-lingual transfer, where a model acquires specific functionality on some language by finetuning on another language.","cats":{"production":0,"architectures":0}}
-{"text":"In this work, we investigate how multilinguality during instruction tuning of a multilingual LLM affects instruction-following across languages.","cats":{"production":0,"architectures":1}}
-{"text":"We first show that many languages transfer some instruction-following capabilities to other languages from even monolingual tuning.","cats":{"production":0,"architectures":1}}
-{"text":"Furthermore, we find that only 40 multilingual examples in an English tuning set substantially improve multilingual instruction-following, both in seen and unseen languages during tuning.","cats":{"production":0,"architectures":0}}
-{"text":"Finally, we find that increasing the number of languages in the instruction tuning set from 1 to only 2, 3, or 4 increases cross-lingual generalization.","cats":{"production":0,"architectures":0}}
-{"text":"Our results suggest that building massively multilingual instruction-tuned models can be done with only a very small set of multilingual instruction-responses.","cats":{"production":0,"architectures":0}}
+{"text":"As instruction-tuned large language models (LLMs) gain global adoption, their ability to follow instructions in multiple languages becomes increasingly crucial.","cats":{"production":0,"architectures":0,"programming":0}}
+{"text":"One promising approach is cross-lingual transfer, where a model acquires specific functionality on some language by finetuning on another language.","cats":{"production":0,"architectures":0,"programming":0}}
+{"text":"In this work, we investigate how multilinguality during instruction tuning of a multilingual LLM affects instruction-following across languages.","cats":{"production":0,"architectures":1,"programming":0}}
+{"text":"We first show that many languages transfer some instruction-following capabilities to other languages from even monolingual tuning.","cats":{"production":0,"architectures":1,"programming":0}}
+{"text":"Furthermore, we find that only 40 multilingual examples in an English tuning set substantially improve multilingual instruction-following, both in seen and unseen languages during tuning.","cats":{"production":0,"architectures":0,"programming":0}}
+{"text":"Finally, we find that increasing the number of languages in the instruction tuning set from 1 to only 2, 3, or 4 increases cross-lingual generalization.","cats":{"production":0,"architectures":0,"programming":0}}
+{"text":"Our results suggest that building massively multilingual instruction-tuned models can be done with only a very small set of multilingual instruction-responses.","cats":{"production":0,"architectures":0,"programming":0}}
 {"text":"The capabilities of the most recent language models have increased the interest in integrating them into real-world applications.","cats":{"production":0,"architectures":0}}
 {"text":"However, the fact that these models generate plausible, yet incorrect text poses a constraint when considering their use in several domains.","cats":{"production":0,"architectures":0}}
 {"text":"However, state-of-the-art alignment techniques like RLHF rely on high-quality human feedback data, which is expensive to create and often remains proprietary.","cats":{"architectures":0}}
@@ -86,7 +86,7 @@
 {"text":"We argue that the SFT of multi-view diffusion models resembles the instruction finetuning stage of the LLM alignment pipeline and can benefit from RL finetuning (RLFT) methods.","cats":{"architectures":1}}
 {"text":"However, it remains unclear whether models have the capacity to reacquire pruned concepts after editing.","cats":{"architectures":0}}
 {"text":"The Cloud Migration LLM accepts input from the user specifying the parameters of their migration, and outputs a migration strategy with an architecture diagram.","cats":{"architectures":0}}
-{"text":"To support further research and development, we have made the model's checkpoints and source codes accessible to the scientific community.","cats":{"architectures":0}}
+{"text":"To support further research and development, we have made the model's checkpoints and source codes accessible to the scientific community.","cats":{"architectures":0,"programming":0}}
 {"text":"This work introduces the task of multimodal medical question summarization for codemixed input in a low-resource setting.","cats":{"architectures":0}}
 {"text":"Further, with its novel database-agnostic featurization method, GEqO can transfer the learning from one workload and database to another.","cats":{"architectures":0}}
 {"text":"Multi-Task Learning (MTL) is a framework, where multiple related tasks are learned jointly and benefit from a shared representation space, or parameter transfer.","cats":{"architectures":0}}
@@ -103,11 +103,11 @@
 {"text":"Extensive experiments results demonstrate the superiority of MPPT against the state-of-the-art baseline methods.","cats":{"architectures":0}}
 {"text":"By varying the game history revealed to LLMs-based players, we find that most of LLMs are rational in that they play strategies that can increase their payoffs, but not as rational as indicated by Nash Equilibria (NEs).","cats":{"architectures":0}}
 {"text":"In this work, we provide an economics arena for the LLMs research community as a dynamic simulation to test the above-mentioned abilities of LLMs, i.e. rationality, strategic reasoning ability, and instruction-following capability.","cats":{"architectures":0}}
-{"text":"Large languages models (LLMs) trained on datasets of publicly available source code have established a new state-of-the-art in code completion.","cats":{"architectures":0}}
+{"text":"Large languages models (LLMs) trained on datasets of publicly available source code have established a new state-of-the-art in code completion.","cats":{"architectures":0,"programming":1}}
 {"text":"However, these models are mostly unaware of the code that already exists within a specific project, preventing the models from making good use of existing APIs.","cats":{"architectures":0}}
-{"text":"Instead, LLMs often invent, or \"hallucinate\", non-existent APIs or produce variants of already existing code.","cats":{"architectures":0}}
+{"text":"Instead, LLMs often invent, or \"hallucinate\", non-existent APIs or produce variants of already existing code.","cats":{"architectures":0,"programming":1}}
 {"text":"Although the API information is available to IDEs, the input size limit of LLMs prevents code completion techniques from including all relevant context into the prompt.","cats":{"architectures":0}}
-{"text":"This paper presents De-Hallucinator, an LLM-based code completion technique that grounds the predictions of a model through a novel combination of retrieving suitable API references and iteratively querying the model with increasingly suitable context information in the prompt.","cats":{"architectures":0}}
+{"text":"This paper presents De-Hallucinator, an LLM-based code completion technique that grounds the predictions of a model through a novel combination of retrieving suitable API references and iteratively querying the model with increasingly suitable context information in the prompt.","cats":{"architectures":0,"programming":1}}
 {"text":"The approach exploits the observation that LLMs often predict code that resembles the desired completion, but that fails to correctly refer to already existing APIs.","cats":{"architectures":0}}
 {"text":"De-Hallucinator automatically identifies project-specific API references related to the code prefix and to the model's initial predictions and adds these references into the prompt.","cats":{"architectures":0}}
 {"text":"Our evaluation applies the approach to the task of predicting API usages in open-source Python projects.","cats":{"architectures":0}}

@@ -74,7 +74,7 @@
 {"text":"As the capabilities of large language models (LLMs) continue to advance, evaluating their performance becomes increasingly crucial and challenging.","cats":{"education":0}}
 {"text":"We share our approach to designing this new introductory socially responsible computing course and the students' reflections.","cats":{"education":0,"recommender":0,"architectures":0}}
 {"text":"In this study, we introduce an innovative framework that integrates Deep Reinforcement Learning (DRL) with Recurrent Neural Networks (RNNs).","cats":{"education":0}}
-{"text":"Our experiments also shed light on how different various simple configurations can affect the True Positive (TP) and False Positive (FP) rates.","cats":{"education":0}}
+{"text":"Our experiments also shed light on how different various simple configurations can affect the True Positive (TP) and False Positive (FP) rates.","cats":{"education":0,"programming":0}}
 {"text":"Technically, VideoDrafter leverages Large Language Models (LLM) to convert the input prompt into comprehensive multi-scene script that benefits from the logical knowledge learnt by LLM.","cats":{"education":0}}
 {"text":"As a result of the search, EfficientDet-Lite4, an efficient and lightweight model for object detection, was selected.","cats":{"education":0}}
 {"text":"On the network dynamics, instead of a fixed curvature space, will the representation spaces evolve when new interactions arrive continuously?","cats":{"education":0}}

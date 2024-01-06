@@ -1,8 +1,8 @@
 {"text":"However, instruction prompting involves designing crafted prompts for zero-shot learning or selecting appropriate samples for few-shot learning and requires users to have professional domain knowledge, while task-oriented fine-tuning requires high training costs.","cats":{"prompt-engineering":1,"social-sciences":0}}
 {"text":"In this paper, we propose a novel prompt learning framework for code summarization called PromptCS.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":1}}
-{"text":"trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization.","cats":{"prompt-engineering":1,"social-sciences":0}}
-{"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"social-sciences":0}}
-{"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"social-sciences":0}}
+{"text":"trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":1}}
+{"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"social-sciences":0,"programming":0}}
+{"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":0}}
 {"text":"The TREC Interactive Knowledge Assistance Track (iKAT) builds on the foundational work of the TREC Conversational Assistance Track (CAsT).","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"programming":0}}
 {"text":"The two levels are computed by the original model's self-attention, which means the proposed does not require any training.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"architectures":0,"programming":0}}
 {"text":"We conduct comprehensive experiments and the results show that the proposed method can effectively extend existing LLMs' context window's length.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0}}
@@ -98,7 +98,7 @@
 {"text":"The current approach to fetal anomaly screening is based on biometric measurements derived from individually selected ultrasound images.","cats":{"social-sciences":0}}
 {"text":"We use a Bayesian method to estimate the true value of each biometric from a large number of measurements and probabilistically reject outliers.","cats":{"social-sciences":0,"production":0}}
 {"text":"Our method holds significant potential for substantially improving forest management practices.","cats":{"social-sciences":0}}
-{"text":"We evaluate the resulting models using both frequentist and Bayesian data analysis.","cats":{"social-sciences":0}}
+{"text":"We evaluate the resulting models using both frequentist and Bayesian data analysis.","cats":{"social-sciences":0,"programming":0}}
 {"text":"We consider a new setting in which the Searcher has some potentially erroneous information, or prediction on the Hider's position.","cats":{"social-sciences":0}}
 {"text":"In this case, the accelerator requires 18,268 logic cells and 51 BRAM, with an overall power consumption of 430mW and a latency of 54 us for a complete inference on input data.","cats":{"social-sciences":0}}
 {"text":"To select the optimal camera, we design an optimal camera matching approach and implement a classifier for original prompts capable of automatically matching.","cats":{"social-sciences":0}}
@@ -141,7 +141,7 @@
 {"text":"Large-scale corpora play a vital role in the construction of large language models (LLMs).","cats":{"social-sciences":0,"production":0}}
 {"text":"The development of large language models (LLMs) has seen rapid progress in recent years.","cats":{"social-sciences":0,"education":0}}
 {"text":"Large Language Models (LLMs) went from non-existent to ubiquitous in the machine learning discourse within a few years.","cats":{"social-sciences":0}}
-{"text":"Large language models (LLMs) have exerted a considerable impact on diverse language-related tasks in recent years.","cats":{"social-sciences":0}}
+{"text":"Large language models (LLMs) have exerted a considerable impact on diverse language-related tasks in recent years.","cats":{"social-sciences":0,"programming":0}}
 {"text":"Recently, there has been a growing interest in utilizing large language models (LLMs) in mental health research, with studies showcasing their remarkable capabilities, such as disease detection.","cats":{"social-sciences":0}}
 {"text":"Large language models (LLMs) have revolutionized the field of artificial intelligence, enabling natural language processing tasks that were previously thought to be exclusive to humans.","cats":{"social-sciences":0}}
 {"text":"Large Language Models (LLMs) have garnered significant attention for their powerful ability in natural language understanding and reasoning.","cats":{"social-sciences":0,"education":0}}
@@ -219,7 +219,7 @@
 {"text":"Our large-scale study of affective tasks for basic expression recognition and facial action unit detection illustrates that our approach is network agnostic and brings large performance improvements compared to the state-of-the-art in both tasks and across all studied databases.","cats":{"social-sciences":0}}
 {"text":"Extensive experiments are conducted on four widely used crowd counting datasets.","cats":{"social-sciences":0,"education":0}}
 {"text":"In human-centric content generation, the pre-trained text-to-image models struggle to produce user-wanted portrait images, which retain the identity of individuals while exhibiting diverse expressions.","cats":{"social-sciences":0}}
-{"text":"However, we still lack empirical evidence to support organizations in deciding whether their requirements are good enough or impede subsequent activities.","cats":{"social-sciences":0}}
+{"text":"However, we still lack empirical evidence to support organizations in deciding whether their requirements are good enough or impede subsequent activities.","cats":{"social-sciences":0,"programming":0}}
 {"text":"This paper aims to bridge this gap by introducing CMMLU, a comprehensive Chinese benchmark that covers various subjects, including natural science, social sciences, engineering, and humanities.","cats":{"social-sciences":1}}
 {"text":"As the capabilities of large language models (LLMs) continue to advance, evaluating their performance becomes increasingly crucial and challenging.  ","cats":{"social-sciences":0}}
 {"text":"We conduct a thorough evaluation of 18 advanced multilingual- and Chinese-oriented LLMs, assessing their performance across different subjects and settings.","cats":{"social-sciences":0}}
@@ -321,14 +321,14 @@
 {"text":"Our approach is validated on multiple datasets, including JTA, JRDB, Pedestrians and Cyclists in Road Traffic, and ETH-UCY.","cats":{"social-sciences":0}}
 {"text":"The code is publicly available: https://github.com/vita-epfl/social-transmotion","cats":{"social-sciences":0}}
 {"text":"(Source) code summarization is the task of automatically generating natural language summaries for given code snippets.","cats":{"social-sciences":0,"programming":1}}
-{"text":"Such summaries play a key role in helping developers understand and maintain source code.","cats":{"social-sciences":0}}
+{"text":"Such summaries play a key role in helping developers understand and maintain source code.","cats":{"social-sciences":0,"programming":0}}
 {"text":"Recently, with the successful application of large language models (LLMs) in numerous fields, software engineering researchers have also attempted to adapt LLMs to solve code summarization tasks.","cats":{"social-sciences":0,"programming":1}}
 {"text":"The main adaptation schemes include instruction prompting and task-oriented fine-tuning.","cats":{"social-sciences":0}}
 {"text":"PromptCS","cats":{"social-sciences":0}}
 {"text":"Compared to the human-written discrete prompt, the continuous prompts are produced under the guidance of LLMs and are therefore easier to understand by LLMs.","cats":{"social-sciences":0}}
 {"text":"freezes the parameters of LLMs when training the prompt agent, which can greatly reduce the requirements for training resources.","cats":{"social-sciences":0}}
 {"text":"We evaluate PromptCS","cats":{"social-sciences":0}}
-{"text":"on the CodeSearchNet dataset involving multiple programming languages.","cats":{"social-sciences":0}}
+{"text":"on the CodeSearchNet dataset involving multiple programming languages.","cats":{"social-sciences":0,"programming":0}}
 {"text":"The results show that PromptCS","cats":{"social-sciences":0}}
 {"text":"significantly outperforms instruction prompting schemes on all four widely used metrics.","cats":{"social-sciences":0}}
 {"text":"In some base LLMs, e.g., CodeGen-Multi-2B and StarCoderBase-1B and -3B, PromptCS","cats":{"social-sciences":0}}
@@ -414,10 +414,10 @@
 {"text":"Consistently with both BERT and GPT-3.5, we found that mixed-trained models generated fewer MSG and non-disparate predictions compared to huma suggests that mixed-trained models generated more fairness outcomes compared with gender-specifically trained models.","cats":{"social-sciences":0}}
 {"text":"Task-Oriented Parsing (TOP) enables conversational assistants to interpret user commands expressed in natural language, transforming them into structured outputs that combine elements of both natural language and intent/slot tags.","cats":{"social-sciences":0}}
 {"text":"Recently, Large Language Models (LLMs) have achieved impressive performance in synthesizing computer programs based on a natural language prompt, mitigating the gap between natural language and structured programs.","cats":{"social-sciences":0,"programming":1}}
-{"text":"Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?","cats":{"social-sciences":0}}
-{"text":"and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts?","cats":{"social-sciences":0}}
-{"text":"Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.","cats":{"social-sciences":0}}
-{"text":"Notably, this enhancement is achieved without the need for additional data or specialized prompts.","cats":{"social-sciences":0}}
+{"text":"Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?","cats":{"social-sciences":0,"programming":0}}
+{"text":"and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts?","cats":{"social-sciences":0,"programming":0}}
+{"text":"Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.","cats":{"social-sciences":0,"programming":0}}
+{"text":"Notably, this enhancement is achieved without the need for additional data or specialized prompts.","cats":{"social-sciences":0,"programming":0}}
 {"text":"The growing popularity of neural machine translation (NMT) and LLMs represented by ChatGPT underscores the need for a deeper understanding of their distinct characteristics and relationships.","cats":{"social-sciences":0}}
 {"text":"Such understanding is crucial for language professionals and researchers to make informed decisions and tactful use of these cutting-edge translation technology, but remains underexplored.","cats":{"social-sciences":0}}
 {"text":"This study aims to fill this gap by investigating three key questions: (1) the distinguishability of ChatGPT-generated translations from NMT and human translation (HT), (2) the linguistic characteristics of each translation type, and (3) the degree of resemblance between ChatGPT-produced translations and HT or NMT.","cats":{"social-sciences":0}}
