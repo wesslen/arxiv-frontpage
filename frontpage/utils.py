@@ -1,6 +1,7 @@
 import re
 from rich.console import Console 
 import itertools as it
+import random
 
 from spacy.tokens import Span
 
@@ -107,3 +108,8 @@ def extract_before_second_hyphen(text):
         return match.group(0)[:-1]  # Remove the trailing hyphen
     else:
         raise ValueError("String does not contain two hyphens")
+    
+
+def str_to_probability(in_str):
+    """Return a reproducible uniformly random float in the interval [0, 1) for the given seed."""
+    return random.Random(in_str).random()

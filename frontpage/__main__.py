@@ -46,13 +46,13 @@ def annotate():
 
     def run_questions():
         import questionary
-        from .constants import LABELS, DATA_LEVELS, DATA_TYPE
+        from .constants import LABELS, DATA_LEVELS, DATA_TYPES
 
         results = {}
 
-        results["datatype"] = questionary.select(
+        results["data_type"] = questionary.select(
             "What type of data do you want to annotate?",
-            choices=DATA_TYPE,
+            choices=DATA_TYPES,
         ).ask()        
 
         results["label"] = questionary.select(
@@ -100,6 +100,7 @@ def annotprep():
     from .datastream import DataStream
 
     DataStream().save_train_stream()
+    DataStream().save_eval_stream()
 
 
 @cli.command("train")

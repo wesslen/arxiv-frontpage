@@ -23,9 +23,10 @@ PRETRAINED_FOLDER = TRAINED_FOLDER / "custom-sbert-emb"
 EMBETTER_CACHE = Path("cache") / "embetter"
 
 # Possible values
+DATA_PARTITION = 0.1
 DATA_LEVELS = ["sentence", "abstract"]
 DATA_LEVELS_TYPE = Literal["sentence", "abstract"]
-DATA_TYPE = ["training", "evaluation"]
+DATA_TYPES = ["training", "evaluation"]
 CONFIG = Config(**srsly.read_yaml(CONFIG_FILE))
 LABELS = [s.label for s in CONFIG.sections]
 THRESHOLDS = {s.label: s.threshold for s in CONFIG.sections}

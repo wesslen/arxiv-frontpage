@@ -37,5 +37,6 @@ def test_dedup_stream():
     # Perform deduplication and separate the streams
     train_stream, eval_stream = dedup_two_stream(combined_examples, {'train': train_examples, 'eval': eval_examples})
 
-    assert len(train_examples) == len(train_stream)
     assert len(eval_examples) == len(eval_stream)
+    assert len(train_examples) == len(train_stream)
+   
