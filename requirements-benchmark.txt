@@ -1,0 +1,3 @@
+polars==0.20.3
+openai==0.28
+embetter[openai]==0.5.0
