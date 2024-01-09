@@ -13,6 +13,7 @@ from .constants import THRESHOLDS
 from .utils import console
 
 import warnings
+
 # remove for polars table
 warnings.filterwarnings("ignore")
 
@@ -38,8 +39,10 @@ def evaluate(label, model, output_path):
     n_y_eval = len(y)
     console.log(f"Load {n_y_eval} Y records for {label} evaluation")
     if n_x_eval != n_y_eval:
-        console.log(f"Warning: {label} evaluation has missing labels.", style="bold red")
-    
+        console.log(
+            f"Warning: {label} evaluation has missing labels.", style="bold red"
+        )
+
     for p in [
         0,
         0.1,
@@ -75,8 +78,8 @@ def evaluate(label, model, output_path):
             filename = f"overall-stats-{current_date}.jsonl"
             filepath = os.path.join(stats_dir, filename)
 
-            with open(filepath, 'a') as f:
-                f.write(json.dumps(res) + '\n')
+            with open(filepath, "a") as f:
+                f.write(json.dumps(res) + "\n")
 
             # Print to console
             console.log(f"Write {filepath}")
