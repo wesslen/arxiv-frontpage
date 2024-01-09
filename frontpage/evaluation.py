@@ -11,10 +11,8 @@ from .constants import THRESHOLDS
 from .utils import console
 
 import warnings
-
+# remove for polars table
 warnings.filterwarnings("ignore")
-
-output_path = "evaluation"
 
 data_stream = DataStream()
 
@@ -26,9 +24,16 @@ def calc_stats(pred_valid, y_valid):
 def evaluate(label, model):
     res = {"label": label}
     train_examples, eval_examples = data_stream.get_combined_stream()
-    n_eval = len(eval_examples)
+
     X = [ex["text"] for ex in eval_examples if label in ex["cats"]]
+    n_x_eval = len(X)
+    console.log(f"Load {n_x_eval} X records for {label} evaluation")
     y = [ex["cats"][label] for ex in eval_examples if label in ex["cats"]]
+    n_y_eval = len(y)
+    console.log(f"Load {n_y_eval} Y records for {label} evaluation")
+    if n_x_eval != n_y_eval:
+        console.log(f"Warning: {label} evaluation has missing labels.", style="bold red")
+    
     for p in [
         0,
         0.1,
@@ -57,7 +62,7 @@ def evaluate(label, model):
         prob_pred = model.predict(X)
         prediction = [1 if probability[label] > p else 0 for probability in prob_pred]
         stats = calc_stats(prediction, y)
-        res = {**res, **stats, "p": p, "n_eval": n_eval}
+        res = {**res, **stats, "p": p, "n_eval": n_y_eval}
         if p == THRESHOLDS[label]:
             console.log(f"Current {label} threshold {p}:")
             console.log(res)
@@ -65,7 +70,7 @@ def evaluate(label, model):
         yield res
 
 
-def run_and_save_evaluation(label, model, output_path):
+def run_and_save_evaluation(label, model, output_path="evaluation"):
     # Create base output directory if it doesn't exist
     base_dir = Path(output_path)
     base_dir.mkdir(exist_ok=True)
@@ -77,6 +82,8 @@ def run_and_save_evaluation(label, model, output_path):
     file_path = label_dir / f"{label}-stats-{current_date}.jsonl"
     # Generate and save stats
 
+    label_dir = base_dir / label
+    label_dir.mkdir(exist_ok=True)
     stats = evaluate(label, model)
     srsly.write_jsonl(file_path, stats)
     console.log(f"Save {file_path}")
