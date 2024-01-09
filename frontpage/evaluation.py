@@ -1,3 +1,5 @@
+import json
+import os
 import polars as pl
 from pathlib import Path
 import srsly
@@ -21,9 +23,13 @@ def calc_stats(pred_valid, y_valid):
     return {**classification_report(pred_valid, y_valid, output_dict=True)["1"]}
 
 
-def evaluate(label, model):
+def evaluate(label, model, output_path):
     res = {"label": label}
     train_examples, eval_examples = data_stream.get_combined_stream()
+
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    stats_dir = Path(output_path, "stats")
+    stats_dir.mkdir(exist_ok=True)
 
     X = [ex["text"] for ex in eval_examples if label in ex["cats"]]
     n_x_eval = len(X)
@@ -66,6 +72,14 @@ def evaluate(label, model):
         if p == THRESHOLDS[label]:
             console.log(f"Current {label} threshold {p}:")
             console.log(res)
+            filename = f"overall-stats-{current_date}.jsonl"
+            filepath = os.path.join(stats_dir, filename)
+
+            with open(filepath, 'a') as f:
+                f.write(json.dumps(res) + '\n')
+
+            # Print to console
+            console.log(f"Write {filepath}")
 
         yield res
 
@@ -84,7 +98,7 @@ def run_and_save_evaluation(label, model, output_path="evaluation"):
 
     label_dir = base_dir / label
     label_dir.mkdir(exist_ok=True)
-    stats = evaluate(label, model)
+    stats = evaluate(label, model, output_path)
     srsly.write_jsonl(file_path, stats)
     console.log(f"Save {file_path}")
 
