@@ -1,0 +1,17 @@
+{"text":"For the projects we study, we are able to globally increase expertise during reviews, +3%, reduce workload concentration, -12%, and reduce the files at risk, -28%.","cats":{"security":0,"architectures":0}}
+{"text":"The code is available at https://zju3dv.github.io/street_gaussians/.","cats":{"architectures":0}}
+{"text":"Automatic machine translation metrics often use human translations to determine the quality system translations.","cats":{"architectures":0}}
+{"text":"We find that higher-quality references lead to better metric correlations with humans at the segment-level.","cats":{"architectures":0}}
+{"text":"However, most existing VL-SSL frameworks are trained end-to-end, which is computation-heavy and can lose vital prior information embedded in pre-trained encoders.","cats":{"architectures":1}}
+{"text":"In this paper, we propose FedQV, a novel aggregation algorithm built upon the quadratic voting scheme, recently proposed as a better alternative to 1p1v-based elections.","cats":{"architectures":0}}
+{"text":"Nonetheless, the scarcity of SAR data, combined with the intricate background interference and imaging mechanisms, limit the applications of existing learning-based approaches.","cats":{"architectures":0}}
+{"text":"Our simulations use seeded random replacement of reviewers to allow us to compare the reviewer recommenders without the confounding variation of different reviewers being replaced for each recommender.   ","cats":{"architectures":0}}
+{"text":"Combining recommenders, we develop the SofiaWL recommender that suggests experts with low active review workload when none of the files under review are known by only one developer.","cats":{"architectures":0}}
+{"text":"In contrast, when knowledge is concentrated on one developer, it sends the review to other reviewers to spread knowledge.","cats":{"architectures":0}}
+{"text":"We present Generalized LoRA (GLoRA), an advanced approach for universal parameter-efficient fine-tuning tasks.","cats":{"architectures":1}}
+{"text":"In this paper, we propose a two-stage fine-tuning method, PAC-tuning, to address this optimization challenge.","cats":{"architectures":1}}
+{"text":"This paper proposes a Parameter-efficient prompt Tuning approach with Adaptive Optimization, i.e., FedPepTAO, to enable efficient and effective FL of LLMs.","cats":{"architectures":1}}
+{"text":"These optimization strategies contribute to the outstanding empirical performance of the LLM-Embedder.","cats":{"architectures":1}}
+{"text":"Current LLM training frameworks, like Megatron-LM and Megatron-DeepSpeed, focus primarily on optimizing training within homogeneous cluster settings.","cats":{"architectures":1}}
+{"text":"This innovative approach empowers the previously static LLM to seamlessly integrate and process image information, marking a step forward in optimizing R2Gen performance.","cats":{"architectures":1}}
+{"text":"We demonstrate the advantage of our approach with respect to both optimization-based and end-to-end RL approaches.","cats":{"architectures":1}}

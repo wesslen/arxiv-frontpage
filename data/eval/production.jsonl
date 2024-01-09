@@ -1,0 +1,15 @@
+{"text":"We open-source our data curation tools and the checkpoints of GeoGalactica during the first 3/4 of pre-training.","cats":{"robustness":0,"production":0}}
+{"text":"Modern healthcare often utilises radiographic images alongside textual reports for diagnostics, encouraging the use of Vision-Language Self-Supervised Learning (VL-SSL) with large pre-trained models to learn versatile medical vision representations.","cats":{"recommender":0,"production":0}}
+{"text":"We find LLMs often exhibit overconfidence or high randomness when self-evaluate, offering stubborn or inconsistent feedback, which causes poor reflection.","cats":{"production":0}}
+{"text":"Experiments conducted on a series of reasoning and translation tasks with different LLMs serve to underscore the effectiveness and generality of our strategy.","cats":{"production":0}}
+{"text":"Extending to generate multi-scene videos nevertheless is not trivial and necessitates to nicely manage the logic in between while preserving the consistent visual appearance of key content across video scenes.","cats":{"production":0}}
+{"text":"The proposed method is evaluated on multiple challenging benchmarks, including KITTI and Waymo Open datasets.","cats":{"production":0}}
+{"text":"These findings can be used by evaluators of shared tasks when references need to be created under a certain budget.","cats":{"production":0}}
+{"text":"While large language models (LLMs) have exhibited impressive instruction-following capabilities, it is still unclear whether and to what extent they can respond to explicit constraints that might be entailed in various instructions.","cats":{"production":0}}
+{"text":"Finally, we automate the entire evaluation process to facilitate further developments.","cats":{"production":0}}
+{"text":"We believe this benchmark will facilitate research into improving the controllability of LLMs' responses to instructions.","cats":{"production":1}}
+{"text":"Our Mixed Distillation framework offers a promising approach to enhance the capabilities of smaller models, bridging the gap with LLMs, and demonstrating better performance across various tasks.","cats":{"production":1}}
+{"text":"Specifically, on the SVAMP dataset, employing a 7 billion parameter Llama2 and CodeLlama in a mixed distillation framework not only boosts distillation capabilities beyond single-path distillation methods but also outperforms the LLM (GPT-3.5-turbo) in terms of reasoning accuracy.","cats":{"production":1}}
+{"text":"In this work, we introduce the \\textbf{Mixed Distillation} framework, which capitalizes on the strengths of Program-of-Thought (PoT) and Chain-of-Thought (CoT) capabilities within LLMs and distills these capabilities to smaller models.","cats":{"production":1}}
+{"text":"To address this, data distillation has emerged as a technique to quickly train models with lower memory and time requirements.","cats":{"production":1}}
+{"text":"Recent research has concentrated on improving open-source smaller models through knowledge distillation from LLMs to reduce computational resource costs with promising outcomes.","cats":{"production":1}}
