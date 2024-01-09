@@ -1,0 +1,18 @@
+{"text":"The reflection capacity of Large Language Model (LLM) has garnered extensive attention.","cats":{"security":0}}
+{"text":"The recent innovations and breakthroughs in diffusion models have significantly expanded the possibilities of generating high-quality videos for the given prompts.","cats":{"security":0,"recommender":0}}
+{"text":"The resultant entity description is then fed into a text-to-image model to generate a reference image for each entity.","cats":{"security":0,"hci":0,"social-sciences":0}}
+{"text":"The minimization is solved by exploiting the Wolfe duality theorem, reducing the problem to the solution of a Non-Negative Least Square (NNLS) problem.","cats":{"security":0}}
+{"text":"Additionally, ToolEyes incorporates a tool library boasting approximately 600 tools, serving as an intermediary between LLMs and the physical world.","cats":{"security":0}}
+{"text":"These findings offer instructive insights aimed at advancing the field of tool learning.","cats":{"security":0,"social-sciences":0,"programming":0}}
+{"text":"We provide extensive evaluations of representative LLMs (e.g., ChatGPT, Vicuna) on CoDI-Eval, revealing their limitations in following instructions with specific constraints and there is still a significant gap between open-source and commercial closed-source LLMs.","cats":{"security":0}}
+{"text":"Large language models (LLMs) have achieved huge success for their general knowledge and ability to solve a wide spectrum of tasks in natural language processing (NLP).","cats":{"security":0}}
+{"text":"For the projects we study, we are able to globally increase expertise during reviews, +3%, reduce workload concentration, -12%, and reduce the files at risk, -28%.","cats":{"security":0,"architectures":0}}
+{"text":"We make our scripts and data available in our replication package.","cats":{"security":0}}
+{"text":"Our work provides a new way to red-team LLMs and to understand the mechanism of jailbreak attacks.","cats":{"security":1}}
+{"text":"These prompts are interpretable and diverse, exhibiting strategies commonly used in manual jailbreak attacks, and transfer better than their non-readable counterparts when using limited training data or a single proxy model.","cats":{"security":1}}
+{"text":"Recent work suggests that patching LLMs against these attacks is possible: manual jailbreak attacks are human-readable but often limited and public, making them easy to block; adversarial attacks generate gibberish prompts that can be detected using perplexity-based filters.","cats":{"security":1}}
+{"text":"Using our frameworks, we conduct a systematic evaluation on prompt injection attacks and their defenses with 10 LLMs and 7 tasks.","cats":{"security":1}}
+{"text":"Multiple recent works showed that LLM-Integrated Applications are vulnerable to prompt injection attacks, in which an attacker injects malicious instruction/data into the input of those applications such that they produce results as the attacker desires.","cats":{"security":1}}
+{"text":"We also customize \\texttt{AutoDAN}'s objective to leak system prompts, another jailbreak application not addressed in the adversarial attack literature.","cats":{"security":1}}
+{"text":"In particular, we propose a general framework to formalize prompt injection attacks.","cats":{"security":1}}
+{"text":"Experimental results indicate that applying DPL to RLHF for LLM chatbots identifies hidden context in the data and significantly reduces subsequent jailbreak vulnerability.","cats":{"security":1}}

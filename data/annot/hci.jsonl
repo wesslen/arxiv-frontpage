@@ -2,17 +2,6 @@
 {"text":"Our survey findings provide a basis for developing the concept of linear and non-linear contexts, which we define and use to enable an agent-centric projection of prompting techniques providing a lens through which prompting techniques can be viewed as multi-agent systems.","cats":{"prompt-engineering":1,"hci":1}}
 {"text":"The paper discusses the implications of this lens, for the cross-pollination of research between LLM prompting and LLM-based multi-agent systems; and also, for the generation of synthetic training data based on existing prompting techniques in research.","cats":{"prompt-engineering":1,"hci":0}}
 {"text":"Current prompting approach for language model inference mainly rely on Language Model's (LLM) autonomous exploration of reasoning paths, confronts an inevitable retracing operation when erroneous routes are encountered.","cats":{"prompt-engineering":1,"hci":0}}
-{"text":"This paper aims to tackle the problem of modeling dynamic urban street scenes from monocular videos.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"Recent methods extend NeRF by incorporating tracked vehicle poses to animate vehicles, enabling photo-realistic view synthesis of dynamic urban street scenes.","cats":{"prompt-engineering":0,"security":0,"hci":0,"programming":0}}
-{"text":"However, significant limitations are their slow training and rendering speed, coupled with the critical need for high precision in tracked vehicle poses.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"We introduce Street Gaussians, a new explicit scene representation that tackles all these limitations.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"Specifically, the dynamic urban street is represented as a set of point clouds equipped with semantic logits and 3D Gaussians, each associated with either a foreground vehicle or the background.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"To model the dynamics of foreground object vehicles, each object point cloud is optimized with optimizable tracked poses, along with a dynamic spherical harmonics model for the dynamic appearance.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"The explicit representation allows easy composition of object vehicles and background, which in turn allows for scene editing operations and rendering at 133 FPS (1066$\\times$1600 resolution) within half an hour of training.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"The proposed method is evaluated on multiple challenging benchmarks, including KITTI and Waymo Open datasets.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"Experiments show that the proposed method consistently outperforms state-of-the-art methods across all datasets.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"Furthermore, the proposed representation delivers performance on par with that achieved using precise ground-truth poses, despite relying only on poses from an off-the-shelf tracker.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"The code is available at https://zju3dv.github.io/street_gaussians/.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
 {"text":"In this paper, we delve into the prospect of growing a strong LLM out of a weak one without the need for acquiring additional human-annotated data.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
 {"text":"We propose a new fine-tuning method called Self-Play fIne-tuNing (SPIN), which starts from a supervised fine-tuned model.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"education":0,"programming":0}}
 {"text":"Empirically, we evaluate our method on several benchmark datasets including the HuggingFace Open LLM Leaderboard, MT-Bench, and datasets from Big-Bench.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
@@ -111,7 +100,6 @@
 {"text":"Significant improvements are shown when RAG is used for decoder-only LLMs, particularly when directly relevant context is found.","cats":{"robustness":0,"hci":0}}
 {"text":"This study further sheds insights on the limitations and capabilities of using RAG for LLMs in interpreting TTPs.","cats":{"robustness":0,"hci":0}}
 {"text":"Through a difference-in-differences approach, we find that deplatforming reduces online attention toward influencers.","cats":{"security":0,"hci":0,"social-sciences":1}}
-{"text":"In this paper, we propose a more general, theoretically sound, targeted attack that resorts to the minimization of a Jacobian-induced MAhalanobis distance (JMA) term, taking into account the effort (in the input space) required to move the latent space representation of the input sample in a given direction.","cats":{"security":0,"hci":0}}
 {"text":"Extensive experimentation demonstrates the framework's superior performance and adaptability, providing valuable insights into the collaborative potential of multiple agents in overcoming the limitations of individual models.","cats":{"security":0,"hci":0,"architectures":0}}
 {"text":"Importantly, the IMU data remains uncompromised throughout the spoofing attack.","cats":{"security":0,"hci":0}}
 {"text":"Commuting extensions have also attracted the attention of the linear algebra community.","cats":{"security":0,"hci":0,"recommender":0}}
@@ -125,7 +113,6 @@
 {"text":"Large Language Models (LLMs) have made remarkable advancements in the field of artificial intelligence, significantly reshaping the human-computer interaction.","cats":{"hci":1}}
 {"text":"Large language models (LLMs) have demonstrated their significant potential to be applied for addressing various application tasks.","cats":{"hci":0,"social-sciences":0,"education":0}}
 {"text":"Large Language Models (LLMs) are frequently used for multi-faceted language generation and evaluation tasks that involve satisfying intricate user constraints or taking into account multiple aspects and criteria.","cats":{"hci":0,"education":0}}
-{"text":"By conditioning on natural language instructions, large language models (LLMs) have displayed impressive capabilities as general-purpose computers.","cats":{"hci":0}}
 {"text":"Large Language Models (LLMs) have demonstrated remarkable generalization across diverse tasks, leading individuals to increasingly use them as personal assistants and universal computing engines.","cats":{"hci":0}}
 {"text":"Recently, large language models (LLMs) have demonstrated impressive capabilities across a wide range of tasks.","cats":{"hci":0}}
 {"text":"Large language models (LLMs) have shown the potential to be integrated into human daily lives.","cats":{"hci":0,"social-sciences":0,"education":0}}
@@ -134,7 +121,6 @@
 {"text":"Large Language Models (LLMs) are powerful tools for natural language processing, enabling novel applications and user experiences.","cats":{"hci":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have shown impressive success in various applications.","cats":{"hci":0,"education":0,"recommender":0,"production":0}}
 {"text":"Recently, prompting Large Language Models (LLMs) to generate actions iteratively has become a prevalent paradigm due to its superior performance and user-friendliness.","cats":{"hci":0}}
-{"text":"Large Language Models~(LLMs) have demonstrated incredible capabilities in understanding, generating, and manipulating languages.","cats":{"hci":0,"programming":0}}
 {"text":"Aligning large language models (LLMs) with human preferences has proven to drastically improve usability and has driven rapid adoption as demonstrated by ChatGPT.","cats":{"hci":0}}
 {"text":"The advanced capabilities of Large Language Models (LLMs) have made them invaluable across various applications, from conversational agents and content creation to data analysis, research, and innovation.","cats":{"hci":0,"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have demonstrated remarkable performance and tremendous potential across a wide range of tasks.","cats":{"hci":0,"social-sciences":0}}
@@ -145,7 +131,6 @@
 {"text":"The hybrid attention mechanism comprises a proposed enhanced multi-head self-attention and coordinate attention mechanisms increase the ability of attention networks to perceive contextual information and enhances the utilization range of network features.","cats":{"hci":0}}
 {"text":"To address these issues, we propose an end-to-end model called Fine-Grained Extraction Network (FGENet).","cats":{"hci":0}}
 {"text":"The fused features are then passed to both regression and classification heads, where the former provides predicted point coordinates for a given image, and the latter determines the confidence level for each predicted point being an individual.","cats":{"hci":0}}
-{"text":"Additionally, we delve into the crucial technical challenges in BACN, including stringent delay constraints, high reliability, imperfect channel state information (CSI), transmission security, and integrated network architecture.","cats":{"hci":0}}
 {"text":"Misinformation poses a variety of risks, such as undermining public trust and distorting factual discourse.","cats":{"hci":0,"social-sciences":0}}
 {"text":"Within this work, we propose a hybrid approach, Deep-ELA, which combines (the benefits of) deep learning and ELA features.","cats":{"hci":0,"recommender":0}}
 {"text":"To effectively exploit the structural information of the input graph, we propose a structure-enhanced pre-training method for D2T generation by designing a structure-enhanced Transformer.","cats":{"hci":0}}
@@ -155,7 +140,6 @@
 {"text":"Recent advances on large language models (LLMs) enable researchers and developers to build autonomous language agents that can automatically solve various tasks and interact with environments, humans, and other agents using natural language interfaces.","cats":{"hci":0}}
 {"text":"With the recent introduction of large language models (LLMs), which can generate text in response to a natural language prompt, there are new opportunities to consider how to integrate LLMs into UIs.","cats":{"hci":1}}
 {"text":"Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks.","cats":{"hci":0,"social-sciences":0,"education":0,"programming":0}}
-{"text":"Large Language Models (LLMs) are increasingly deployed as the backend for a variety of real-world applications called LLM-Integrated Applications.","cats":{"hci":0}}
 {"text":"Large Language Models (LLMs) have impressive capabilities on a wide range of tasks, such as question answering and the generation of coherent text and code.","cats":{"hci":0}}
 {"text":"Large language models (LLMs) have exhibited impressive capabilities in comprehending complex instructions.","cats":{"hci":0}}
 {"text":"Large language models (LLMs) are used to generate content for a wide range of tasks, and are set to reach a growing audience in coming years due to integration in product interfaces like ChatGPT or search engines like Bing.","cats":{"hci":0}}
@@ -165,7 +149,6 @@
 {"text":"Considering large language models (LLMs) have exhibited exceptional ability in language understanding, generation, interaction, and reasoning, we advocate that LLMs could act as a controller to manage existing AI models to solve complicated AI tasks and language could be a generic interface to empower this.","cats":{"hci":0}}
 {"text":"Large language models (LLMs) power a new generation of interactive AI applications exemplified by ChatGPT.","cats":{"hci":0}}
 {"text":"We hope that this work provides a better guide for researchers working on the prompting of large language models.","cats":{"hci":0,"social-sciences":0}}
-{"text":"Large language models have been demonstrated to be valuable in different fields.","cats":{"hci":0,"social-sciences":0,"production":0,"programming":0}}
 {"text":"We identify several challenges associated with prompting large language models, categorized into data- and model-specific, linguistic, and socio-linguistic challenges.","cats":{"hci":1}}
 {"text":"Recent advancements in large language models (LLMs), such as ChatGPT, and persuasive technologies, have opened new avenues for enhancing the effectiveness of those systems.","cats":{"hci":0}}
 {"text":"We leverage large language models (LLMs) to enable the automatic and dynamic generation of effective persuasion content.","cats":{"hci":0}}
@@ -357,16 +340,6 @@
 {"text":"The results show that test cases from LogicAsker can find logical reasoning failures in different LLMs with a rate of 25\\% - 94\\%.","cats":{"hci":0,"programming":0}}
 {"text":"In addition, the test cases of LogicAsker can be further used to design demonstration examples for in-context learning, which effectively improves the logical reasoning ability of LLMs, e.g., 10\\% for GPT-4.","cats":{"hci":0,"programming":0}}
 {"text":"All the code, data, and results will be released for reproduction and future research.","cats":{"hci":0,"programming":0}}
-{"text":"Existing evaluations of tool learning primarily focus on validating the alignment of selected tools for large language models (LLMs) with expected outcomes.","cats":{"hci":0}}
-{"text":"However, these approaches rely on a limited set of scenarios where answers can be pre-determined, diverging from genuine needs.","cats":{"hci":0}}
-{"text":"Furthermore, a sole emphasis on outcomes disregards the intricate capabilities essential for LLMs to effectively utilize tools.","cats":{"hci":0}}
-{"text":"To tackle this issue, we propose ToolEyes, a fine-grained system tailored for the evaluation of the LLMs' tool learning capabilities in authentic scenarios.","cats":{"hci":0}}
-{"text":"The system meticulously examines seven real-world scenarios, analyzing five dimensions crucial to LLMs in tool learning: format alignment, intent comprehension, behavior planning, tool selection, and answer organization.","cats":{"hci":0}}
-{"text":"Additionally, ToolEyes incorporates a tool library boasting approximately 600 tools, serving as an intermediary between LLMs and the physical world.","cats":{"hci":0}}
-{"text":"Evaluations involving ten LLMs across three categories reveal a preference for specific scenarios and limited cognitive abilities in tool learning.","cats":{"hci":0}}
-{"text":"Intriguingly, expanding the model size even exacerbates the hindrance to tool learning.","cats":{"hci":0}}
-{"text":"These findings offer instructive insights aimed at advancing the field of tool learning.","cats":{"hci":0,"recommender":0}}
-{"text":"The data is available att https://github.com/Junjie-Ye/ToolEyes.git.","cats":{"hci":0}}
 {"text":"In this paper, we present a novel framework to assist LLMs, such as ChatGPT, to retrieve question-related structured information on the knowledge graph, and demonstrate that Knowledge-based question answering (Keqing) could be a nature Chain-of-Thought (CoT) mentor to guide the LLM to sequentially find the answer entities of a complex question through interpretable logical chains.","cats":{"hci":1}}
 {"text":"Large language models (LLMs) have exhibited remarkable performance on various natural language processing (NLP) tasks, especially for question answering.","cats":{"hci":0}}
 {"text":"However, in the face of problems beyond the scope of knowledge, these LLMs tend to talk nonsense with a straight face, where the potential solution could be incorporating an Information Retrieval (IR) module and generating response based on these retrieved knowledge.  ","cats":{"hci":0}}

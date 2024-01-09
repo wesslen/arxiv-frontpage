@@ -1,0 +1,16 @@
+{"text":"More specifically, GeoGalactica is from further pre-training of Galactica.","cats":{"hci":0,"education":0}}
+{"text":"We impose this constraint by finetuning the generative model with a set of anchor images that capture the characteristics of the input image.","cats":{"social-sciences":0,"education":0,"programming":0}}
+{"text":"In this paper, we present InsActor, a principled generative framework that leverages recent advancements in diffusion-based human motion models to produce instruction-driven animations of physics-based characters.","cats":{"social-sciences":0,"education":0}}
+{"text":"The proposed algorithm provides an optimal solution to a linearized version of the adversarial example problem originally introduced by Szegedy et al. \\cite{szegedy2013intriguing}.","cats":{"education":0}}
+{"text":"We also demonstrate an important and practical application on personalized restoration, where we use a personal album as the anchor images to constrain the generative space.","cats":{"education":0}}
+{"text":"Video question-answering (QA) in natural language provides the opportunity for bridging this gap.","cats":{"education":0}}
+{"text":"BanSpEmo can be considered as a useful resource to promote emotion and speech recognition research and related applications in the Bangla language.","cats":{"education":0}}
+{"text":"We achieve a 3.3\\% and 1.6\\% improvement on the detection and tracking of occluded objects on TAO-Amodal.","cats":{"education":0}}
+{"text":"To address that, we propose the Mixture of Cluster-conditional LoRA Experts (MoCLE), a novel Mixture of Experts (MoE) architecture designed to activate the task-customized model parameters based on the instruction clusters.","cats":{"education":0}}
+{"text":"As computational systems supported by artificial intelligence (AI) techniques continue to play an increasingly pivotal role in making high-stakes recommendations and decisions across various domains, the demand for explainable AI (XAI) has grown significantly, extending its impact into cognitive learning research.","cats":{"education":0}}
+{"text":"We investigate whether large language models (LLMs) can serve as a medium to improve health literacy in children and other populations.   ","cats":{"education":1}}
+{"text":"Through a mixed-methods analysis of student and model responses, we observe significant improvement in logic error identification between the previous and current generation of LLMs, and find that both LLM generations significantly outperform students.","cats":{"education":1}}
+{"text":"We compare LLM performance with a large cohort of introductory computing students $(n=964)$ solving the same error detection task.","cats":{"education":1}}
+{"text":"LLM-based recommenders are now routinely used by students as well as professional software programmers for code generation and testing.","cats":{"education":1,"recommender":1}}
+{"text":"As such, there is a need for tools and technologies which may assist teachers and other evaluators in identifying whether any portion of a source code is LLM generated.   ","cats":{"education":1,"programming":1}}
+{"text":"In this paper, we propose a neural network-based tool that instructors can use to determine the original effort (and LLM's contribution) put by students in writing source codes.","cats":{"education":1}}

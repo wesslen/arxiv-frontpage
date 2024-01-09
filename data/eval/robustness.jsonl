@@ -1,0 +1,17 @@
+{"text":"Our method endows LLM with diverse perspectives to alleviate stubborn biases.","cats":{"robustness":0}}
+{"text":"Most existing works tackle the single-scene scenario with only one video event occurring in a single background.","cats":{"robustness":0,"recommender":0}}
+{"text":"In this paper, we consider a number of models for inferring a non-deterministic finite automaton (NFA) with 3 sorts of states, that must accept some words, and reject some other words from a given sample.","cats":{"robustness":0}}
+{"text":"In this paper, we take a major step towards filling this gap by proposing GEqO, a portable and lightweight machine-learning-based framework for efficiently identifying semantically equivalent computations at scale.","cats":{"robustness":0}}
+{"text":"To address both issues, we introduce the backbone-agnostic Adaptor framework, which preserves medical knowledge in pre-trained image and text encoders by keeping them frozen, and employs a lightweight Adaptor module for cross-modal learning.","cats":{"robustness":0}}
+{"text":"When utilized in the cross-domain area, the proposed method greatly mitigates inconsistency between simulated and real domains, outperforming reference methods significantly.","cats":{"robustness":0}}
+{"text":"In the meantime, utilizing NLP techniques in geoscience research and practice is wide and convoluted, contributing from knowledge extraction and document classification to question answering and knowledge discovery.","cats":{"robustness":0}}
+{"text":"We open-source our data curation tools and the checkpoints of GeoGalactica during the first 3/4 of pre-training.","cats":{"robustness":0,"production":0}}
+{"text":"We provide three constructions for showing that every graphon arises from an equational theory.","cats":{"robustness":0}}
+{"text":"The second is in terms of traditional measure theoretic probability, which covers 'black-and-white' graphons.","cats":{"robustness":0,"social-sciences":0}}
+{"text":"Despite their impressive capabilities, large language models (LLMs) are prone to hallucinations, i.e., generating content that deviates from facts seen during pretraining.","cats":{"robustness":1}}
+{"text":"We propose a simple decoding strategy for reducing hallucinations with pretrained LLMs that does not require conditioning on retrieved external knowledge nor additional fine-tuning.","cats":{"robustness":1}}
+{"text":"As a significant aspect of LLM alignment, it is thus important to formulate such a specialized set of instructions as well as investigate the resulting behavior of LLMs.","cats":{"robustness":1}}
+{"text":"Tool Correction significantly contributes to mitigating hallucinations, thereby improving the overall accuracy of the proof.","cats":{"robustness":1}}
+{"text":"We believe Tool Correction (post-process for hallucination mitigation) and Conjecture Correction (subgoal adjustment from interaction with environment) could provide a promising avenue for future research in this field.","cats":{"robustness":1}}
+{"text":"Nevertheless, their full potential, particularly concerning the mitigation of hallucinations and refinement through prover error messages, remains an area that has yet to be thoroughly investigated.","cats":{"robustness":1}}
+{"text":"Overall, our analysis documents the profound ways in which LLM research both shapes and is shaped by society, attesting to the necessity of sociotechnical lenses.","cats":{"robustness":0,"social-sciences":1}}

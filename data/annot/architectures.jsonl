@@ -29,11 +29,8 @@
 {"text":"Neural radiance fields (NeRF) have been proposed as an innovative 3D representation method.","cats":{"social-sciences":0,"architectures":0}}
 {"text":"While conventional guidelines offer valuable insights, their efficacy diminishes when confronted with extreme weather conditions, such as heatwaves and droughts.","cats":{"social-sciences":0,"architectures":0}}
 {"text":"We share our approach to designing this new introductory socially responsible computing course and the students' reflections.","cats":{"education":0,"recommender":0,"architectures":0}}
-{"text":"Large Language Models (LLMs) have shown excellent generalization capabilities that have led to the development of numerous models.","cats":{"recommender":0,"architectures":0}}
 {"text":"We use a convolutional neural network to classify each frame of an ultrasound video recording.","cats":{"recommender":0,"architectures":0}}
-{"text":"Finally, the paper summarizes significant findings from LLM research and consolidates essential architectural and training strategies for developing advanced LLMs.","cats":{"production":0,"architectures":0}}
 {"text":"Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.","cats":{"production":0,"architectures":0}}
-{"text":"Moreover, the paper also discusses the basic building blocks and concepts behind LLMs, followed by a complete overview of LLMs, including their important features and functions.","cats":{"production":0,"architectures":0}}
 {"text":"The capabilities of the most recent language models have increased the interest in integrating them into real-world applications.","cats":{"production":0,"architectures":0}}
 {"text":"However, the fact that these models generate plausible, yet incorrect text poses a constraint when considering their use in several domains.","cats":{"production":0,"architectures":0}}
 {"text":"However, state-of-the-art alignment techniques like RLHF rely on high-quality human feedback data, which is expensive to create and often remains proprietary.","cats":{"architectures":0}}
@@ -42,8 +39,6 @@
 {"text":"Despite the effectiveness of RLHF, it is intricate to implement and train, thus recent studies explore how to develop alternative alignment approaches based on supervised fine-tuning (SFT).","cats":{"architectures":1}}
 {"text":"Finally, alignment scores for different assertions are combined aposteriori to give the final text-to-image alignment score.","cats":{"architectures":0}}
 {"text":"To address this issue, we propose an improved alignment approach named FIGA.","cats":{"architectures":1}}
-{"text":"Reinforcement learning with human feedback (RLHF) has emerged as the key framework for AI alignment.","cats":{"architectures":0}}
-{"text":"RLHF uses feedback from human reinforcers to fine-tune outputs; all widely deployed large language models (LLMs) use RLHF to align their outputs to human values.","cats":{"architectures":0}}
 {"text":"We hereby leverage a loop closure based re-initialization process to achieve full alignment.","cats":{"architectures":0}}
 {"text":"Alignment with humans assumes paramount significance, and reinforcement learning with human feedback (RLHF) emerges as the pivotal technological paradigm underpinning this pursuit.","cats":{"architectures":0}}
 {"text":"Our experimental results show SuperHF exceeds PPO-based RLHF on the training objective, easily and favorably trades off high reward with low reward hacking, improves downstream calibration, and performs the same on our GPT-4 based qualitative evaluation scheme all the while being significantly simpler to implement, highlighting SuperHF's potential as a competitive language model alignment technique.","cats":{"architectures":1}}
@@ -57,7 +52,6 @@
 {"text":"Relational Hoare logics (RHL) provide compositional rules that embody various alignments of executions.","cats":{"architectures":0}}
 {"text":"Based on such observations, we develop a new algorithm tailored for RLHF, called ReMax.","cats":{"architectures":1}}
 {"text":"Then, we formulate the aligned Ref and LR center as value-key pairs, and the corner region of the LR is formulated as queries.","cats":{"architectures":0}}
-{"text":"These strategies alleviate the matching confusion problem that arises when multiple interactions occur simultaneously, thereby improving the effectiveness of the alignment process.","cats":{"architectures":0}}
 {"text":"Nevertheless, RLHF is susceptible to instability during fine-tuning and presents challenges in implementation.","cats":{"architectures":1}}
 {"text":"To systematically combat confirmation bias for pseudo-labeling-based entity alignment, we propose a Unified Pseudo-Labeling framework for Entity Alignment (UPL-EA) that explicitly eliminates pseudo-labeling errors to boost the accuracy of entity alignment.","cats":{"architectures":1}}
 {"text":"We identify three important properties in RLHF tasks: fast simulation, deterministic transitions, and trajectory-level rewards, which are not leveraged in PPO.","cats":{"architectures":1}}
@@ -72,7 +66,6 @@
 {"text":"In the case where more than two images are provided, we further propose a simple yet effective global alignment strategy that expresses all pairwise pointmaps in a common reference frame.","cats":{"architectures":0}}
 {"text":"The notion of alignment completeness was previously proposed as a more satisfactory measure, and some rules were shown to be alignment complete with respect to a few ad hoc forms of alignment automata.","cats":{"architectures":0}}
 {"text":"2k aligned sentence pairs).","cats":{"architectures":0}}
-{"text":"Further, we show that aligning AI agents with the values of all individuals will always violate certain private ethical preferences of an individual user i.e., universal AI alignment using RLHF is impossible.","cats":{"architectures":1}}
 {"text":"The alignment or 'fit' between a candidate and an organization is inferred in online photos through dress style and presentations of self.","cats":{"architectures":0}}
 {"text":"This paper proves alignment completeness with respect to a general class of $\\forall\\forall$ alignment automata, for a RHL comprised of standard rules together with a rule of semantics-preserving rewrites based on Kleene algebra with tests.","cats":{"architectures":0}}
 {"text":"RL4F produces critiques that help GPT-3 revise its outputs.","cats":{"architectures":0}}
@@ -81,18 +74,14 @@
 {"text":"By rethinking these keys of VI-ReID, we propose a simple and effective method, the Multi-level Cross-modality Joint Alignment (MCJA), bridging both modality and objective-level gap.","cats":{"architectures":0}}
 {"text":"Although text-based applications of RLHF have received much attention, it is crucial to consider when evaluating its social implications the diverse range of areas to which it may be deployed.","cats":{"architectures":0}}
 {"text":"Additionally, uncertainty regularization in UP-RLHF proves to be pivotal in mitigating overoptimization, thereby contributing to the overall performance.","cats":{"architectures":0}}
-{"text":"To bridge this gap effectively, we propose R2GenGPT, which is a novel solution that aligns visual features with the word embedding space of LLMs using an efficient visual alignment module.","cats":{"architectures":1}}
 {"text":"The stable training of RLHF has still been a puzzle.","cats":{"architectures":0}}
 {"text":"We argue that the SFT of multi-view diffusion models resembles the instruction finetuning stage of the LLM alignment pipeline and can benefit from RL finetuning (RLFT) methods.","cats":{"architectures":1}}
-{"text":"However, it remains unclear whether models have the capacity to reacquire pruned concepts after editing.","cats":{"architectures":0}}
 {"text":"The Cloud Migration LLM accepts input from the user specifying the parameters of their migration, and outputs a migration strategy with an architecture diagram.","cats":{"architectures":0}}
 {"text":"To support further research and development, we have made the model's checkpoints and source codes accessible to the scientific community.","cats":{"architectures":0,"programming":0}}
 {"text":"This work introduces the task of multimodal medical question summarization for codemixed input in a low-resource setting.","cats":{"architectures":0}}
-{"text":"Further, with its novel database-agnostic featurization method, GEqO can transfer the learning from one workload and database to another.","cats":{"architectures":0}}
 {"text":"Multi-Task Learning (MTL) is a framework, where multiple related tasks are learned jointly and benefit from a shared representation space, or parameter transfer.","cats":{"architectures":0}}
 {"text":"[2023] introduced a constructive approach for exploring computational hardness, proving that SAT requires exhaustive search.","cats":{"architectures":0}}
 {"text":"Our source codes are available at https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/unid2t.","cats":{"architectures":0}}
-{"text":"Monitoring concept reemergence and developing techniques to mitigate relearning of unsafe concepts will be important directions for more robust model editing.","cats":{"architectures":0}}
 {"text":"Especially when faced with factual questions, LLM cannot only rely on knowledge stored in parameters to guarantee truthful and correct answers.","cats":{"architectures":0}}
 {"text":"An optimal behavior would be to query external resources only when the LLM is not confident about answers.","cats":{"architectures":0}}
 {"text":"In addition, we propose to leverage parameter-efficient fine-tuning techniques to train our model on a small amount of data.","cats":{"architectures":1}}
@@ -126,10 +115,6 @@
 {"text":"We also review the potential pitfalls of IT along with criticism against it, along with efforts pointing out current deficiencies of existing strategies and suggest some avenues for fruitful research.","cats":{"architectures":1}}
 {"text":" Instruction tuning refers to the process of further training LLMs on a dataset consisting of \\textsc{(instruction, output)} pairs in a supervised fashion, which bridges the gap between the nextmodalities, domains and applications, along with an analysis on aspects that influence the outcome of IT (e.g., generation of instruction outputs, size of the instruction dataset, etc).","cats":{"architectures":0}}
 {"text":"We also review the potential pitfalls of IT along with criticism against it, along with efforts pointing out cur","cats":{"architectures":0}}
-{"text":"This survey paper comprehensively analyses the LLMs architectures and their categorization, training strategies, training datasets, and performance evaluations and discusses future research directions.","cats":{"architectures":1}}
-{"text":"These models propose various new architectures, tweaking existing architectures with refined training strategies, increasing context length, using high-quality training data, and increasing training time to outperform baselines.","cats":{"architectures":0}}
-{"text":"Analyzing new developments is crucial for identifying changes that enhance training stability and improve generalization in LLMs.  ","cats":{"architectures":0}}
-{"text":"Given the continuous advancements in","cats":{"architectures":0}}
 {"text":"Due to resource and cost limitations, several researchers have employed parameter-efficient tuning techniques, such as LoRA, for instruction tuning, and have obtained encouraging results","cats":{"architectures":1}}
 {"text":"In this study, we undertook experimental comparisons between full-parameter fine-tuning and LoRA-based tuning methods, utilizing LLaMA as the base model.","cats":{"architectures":0}}
 {"text":"Recently, the instruction-tuning of large language models is a crucial area of research in the field of natural language processing.  ","cats":{"architectures":0}}

@@ -30,11 +30,9 @@
 {"text":"The data from the class suggests that the students found the inclusion of the social context in the technical assignments to be more motivating and expressed greater agency in realizing social change.","cats":{"hci":0,"education":0}}
 {"text":"This work introduces an innovative architecture that combines the strengths of ChatGPT with a traditional information retrieval based chatbot framework to offer enhanced student support in higher education.","cats":{"social-sciences":0,"education":1}}
 {"text":"Large language models (LLMs) have brought about significant transformations in human society.","cats":{"social-sciences":0,"education":0}}
-{"text":"Large language models (LLMs) have brought significant and transformative changes in human society.","cats":{"social-sciences":0,"education":0}}
 {"text":"The emergence of Large language models (LLMs) is expected to have a major impact on education.","cats":{"social-sciences":0,"education":1}}
 {"text":"Large language models (LLMs) have recently taken the world by storm.","cats":{"social-sciences":0,"education":0}}
 {"text":"As the Large Language Model (LLM) becomes increasingly important in various domains.","cats":{"social-sciences":0,"education":0,"recommender":0}}
-{"text":"Large Language Models (LLMs) have demonstrated remarkable abilities across numerous disciplines, primarily assessed through tasks in language generation, knowledge utilization, and complex reasoning.","cats":{"social-sciences":0,"education":0}}
 {"text":"We are currently witnessing dramatic advances in the capabilities of Large Language Models (LLMs).","cats":{"social-sciences":0,"education":0,"production":0}}
 {"text":"In recent years, Large Language Models (LLMs) have gained immense attention due to their notable emergent capabilities, surpassing those seen in earlier language models.","cats":{"social-sciences":0,"education":0}}
 {"text":"The development of large language models (LLMs) has seen rapid progress in recent years.","cats":{"social-sciences":0,"education":0}}
@@ -46,7 +44,6 @@
 {"text":"Large language models (LLMs) have made tremendous progress in natural language understanding and they have also been successfully adopted in other domains such as computer vision, robotics, reinforcement learning, etc.","cats":{"social-sciences":0,"education":0}}
 {"text":"Recent years have witnessed remarkable progress made in large language models (LLMs).","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have pushed the limits of natural language understanding and exhibited excellent problem-solving ability.","cats":{"social-sciences":0,"education":0}}
-{"text":"As Large Language Models (LLMs) rise in popularity, it is necessary to assess their capability in this domain.","cats":{"social-sciences":0,"education":0}}
 {"text":"Large language models (LLMs) have been widely used as agents to complete different tasks, such as personal assistance or event planning.","cats":{"social-sciences":0,"education":0}}
 {"text":"Also, aligning students' personal goals and their ability to achieve them in their field of study is important for promoting motivation and a sense of belonging.","cats":{"social-sciences":0,"education":0}}
 {"text":"Keeping these considerations in mind, we piloted an introductory Java programming course in which activities engaging students in ethical and socially responsible considerations were integrated across modules.","cats":{"social-sciences":0,"education":0}}
@@ -55,17 +52,13 @@
 {"text":"This study delves into the pervasive issue of gender issues in artificial intelligence (AI), specifically within automatic scoring systems for student-written responses.","cats":{"social-sciences":1,"education":0}}
 {"text":"Utilizing a fine-tuned version of BERT and GPT-3.5, this research analyzes more than 1000 human-graded student responses from male and female participants across six assessment items.","cats":{"social-sciences":1,"education":0}}
 {"text":"Large Language Models (LLMs) are increasingly utilized in educational tasks such as providing writing suggestions to students.","cats":{"education":1}}
-{"text":"[Abridged abstract] Large Language Models (LLMs) can solve some undergraduate-level to graduate-level physics textbook problems and are proficient at coding.","cats":{"education":1}}
 {"text":"Large language models have shown success as a tutor in education in various fields.","cats":{"education":1}}
 {"text":"Large Language Models (LLMs) have demonstrated remarkable proficiency in generating fluent text.","cats":{"education":0}}
 {"text":"The integration of Artificial Intelligence (AI), particularly Large Language Model (LLM)-based systems, in education has shown promise in enhancing teaching and learning experiences.","cats":{"education":1}}
 {"text":"Large Language Models (LLMs), trained predominantly on extensive English data, often exhibit limitations when applied to other languages.","cats":{"education":0,"recommender":0}}
 {"text":"Large Language Models (LLMs) have shown remarkable abilities recently, including passing advanced professional exams and demanding benchmark tests.","cats":{"education":0}}
 {"text":"Large language models (LLMs) have been applied in various applications due to their astonishing capabilities.","cats":{"education":0,"recommender":0}}
-{"text":"Evaluation of Large Language Models (LLMs) is challenging because aligning to human values requires the composition of multiple skills and the required set of skills varies depending on the instruction.","cats":{"education":0}}
 {"text":"In this era of large language models (LLMs), the traditional training of models has become increasingly unimaginable for regular users and institutions.","cats":{"education":0}}
-{"text":"Large language models (LLMs) face significant challenges stemming from the inherent limitations in knowledge, memory, alignment, and action.","cats":{"education":0}}
-{"text":"Instruction finetuning is a popular paradigm to align large language models (LLM) with human intent.","cats":{"education":0}}
 {"text":"Recent advancements in the capabilities of large language models (LLMs) have paved the way for a myriad of groundbreaking applications in various fields.","cats":{"education":0,"recommender":0}}
 {"text":"Instruction-tuned Large Language Models (LLMs) have exhibited impressive language understanding and the capacity to generate responses that follow specific instructions.","cats":{"education":0}}
 {"text":"The past year has seen rapid acceleration in the development of large language models (LLMs).","cats":{"education":0}}
@@ -75,7 +68,6 @@
 {"text":"We share our approach to designing this new introductory socially responsible computing course and the students' reflections.","cats":{"education":0,"recommender":0,"architectures":0}}
 {"text":"In this study, we introduce an innovative framework that integrates Deep Reinforcement Learning (DRL) with Recurrent Neural Networks (RNNs).","cats":{"education":0}}
 {"text":"Our experiments also shed light on how different various simple configurations can affect the True Positive (TP) and False Positive (FP) rates.","cats":{"education":0,"programming":0}}
-{"text":"Technically, VideoDrafter leverages Large Language Models (LLM) to convert the input prompt into comprehensive multi-scene script that benefits from the logical knowledge learnt by LLM.","cats":{"education":0}}
 {"text":"As a result of the search, EfficientDet-Lite4, an efficient and lightweight model for object detection, was selected.","cats":{"education":0}}
 {"text":"On the network dynamics, instead of a fixed curvature space, will the representation spaces evolve when new interactions arrive continuously?","cats":{"education":0}}
 {"text":"Graphs are typical non-Euclidean data of complex structures.","cats":{"education":0}}
@@ -83,7 +75,6 @@
 {"text":"Experimental result shows that LLMs are prone to exhibit position bias, i.e., leveraging information positioned at the beginning or end, or specific positional cues within the input.","cats":{"education":0}}
 {"text":"However, mainstream counting methods ignore precise individual localization and suffer from annotation noise because of counting from estimating density maps.","cats":{"education":0}}
 {"text":"Different from methods estimating density maps, FGENet directly learns the original coordinate points that represent the precise localization of individuals.","cats":{"education":0}}
-{"text":"In particular, we present two case studies to demonstrate the efficacy of centralized deep reinforcement learning (DRL) and decentralized DRL in buffer-aided non-terrestrial networks.","cats":{"education":0}}
 {"text":"Additionally, we introduce a keyframe selection strategy for dynamic scenes, which enhances camera tracking robustness against large-scale objects and improves the efficiency of mapping.","cats":{"education":0}}
 {"text":"Given the potential for technology to inflict harm and injustice on society, it is imperative that we cultivate a sense of social responsibility among our students as they progress through the Computer Science (CS) curriculum.","cats":{"education":0}}
 {"text":"Our students need to be able to examine the social complexities in which technology development and use are situated.","cats":{"education":0}}

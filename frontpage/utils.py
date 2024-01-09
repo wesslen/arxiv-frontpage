@@ -1,5 +1,7 @@
-from rich.console import Console 
+import re
+from rich.console import Console
 import itertools as it
+import random
 
 from spacy.tokens import Span
 
@@ -10,7 +12,7 @@ console = Console()
 def batched(iterable, n=56):
     "Batch data into tuples of length n. The last batch may be shorter."
     if n < 1:
-        raise ValueError('n must be at least one')
+        raise ValueError("n must be at least one")
     iters = iter(iterable)
     while batch := tuple(it.islice(iters, n)):
         yield batch
@@ -30,9 +32,9 @@ def add_rownum(stream):
 
 
 def attach_docs(lines, nlp, label):
-    tuples = ((eg['text'], eg) for eg in lines)
+    tuples = ((eg["text"], eg) for eg in lines)
     for doc, eg in nlp.pipe(tuples, as_tuples=True):
-        eg['doc'] = sentence_classifier(doc, eg['preds'], label)
+        eg["doc"] = sentence_classifier(doc, eg["preds"], label)
         yield eg
 
 
@@ -50,7 +52,7 @@ def sentence_classifier(doc, preds, label):
 def attach_spans(stream, label, min_spans=1, max_spans=1):
     for ex in stream:
         spans = []
-        for spansvals in ex['doc'].spans.values():
+        for spansvals in ex["doc"].spans.values():
             for span in spansvals:
                 spans.append(
                     {
@@ -71,20 +73,20 @@ def attach_spans(stream, label, min_spans=1, max_spans=1):
 
 def add_predictions(stream, model):
     for ex in stream:
-        preds = model.predict(ex['sentences'])
-        ex['preds'] = preds
-        ex['created'] = ex['created'][:10]
+        preds = model.predict(ex["sentences"])
+        ex["preds"] = preds
+        ex["created"] = ex["created"][:10]
         yield ex
 
 
 def _abstract_single_annot_to_sent(example, nlp, label):
     """Takens an annotation from abstract level and turns it into a training example"""
-    text = example['text']
-    if example['answer'] == "accept" and "spans" in example:
-        for span in example['spans']:
-            yield {"text": text[span['start']: span['end']], label: 1}
-        for span in example['spans']:
-            text = text.replace(text[span['start']: span['end']], "")
+    text = example["text"]
+    if example["answer"] == "accept" and "spans" in example:
+        for span in example["spans"]:
+            yield {"text": text[span["start"] : span["end"]], label: 1}
+        for span in example["spans"]:
+            text = text.replace(text[span["start"] : span["end"]], "")
         for sent in nlp(text).sents:
             if len(sent.text) > 5:
                 yield {"text": sent.text, label: 0}
@@ -95,3 +97,19 @@ def abstract_annot_to_sent(examples, nlp, label):
     for ex in examples:
         for annot in _abstract_single_annot_to_sent(ex, nlp, label):
             yield annot
+
+
+def extract_before_second_hyphen(text):
+    pattern = r"^(.*?)-(.*?)-"
+    match = re.match(pattern, text)
+
+    if match:
+        # Extracts everything before the second hyphen
+        return match.group(0)[:-1]  # Remove the trailing hyphen
+    else:
+        raise ValueError("String does not contain two hyphens")
+
+
+def str_to_probability(in_str):
+    """Return a reproducible uniformly random float in the interval [0, 1) for the given seed."""
+    return random.Random(in_str).random()

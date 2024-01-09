@@ -3,17 +3,6 @@
 {"text":"trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":1}}
 {"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"social-sciences":0,"programming":0}}
 {"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":0}}
-{"text":"This paper aims to tackle the problem of modeling dynamic urban street scenes from monocular videos.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"Recent methods extend NeRF by incorporating tracked vehicle poses to animate vehicles, enabling photo-realistic view synthesis of dynamic urban street scenes.","cats":{"prompt-engineering":0,"security":0,"hci":0,"programming":0}}
-{"text":"However, significant limitations are their slow training and rendering speed, coupled with the critical need for high precision in tracked vehicle poses.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"We introduce Street Gaussians, a new explicit scene representation that tackles all these limitations.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"Specifically, the dynamic urban street is represented as a set of point clouds equipped with semantic logits and 3D Gaussians, each associated with either a foreground vehicle or the background.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"To model the dynamics of foreground object vehicles, each object point cloud is optimized with optimizable tracked poses, along with a dynamic spherical harmonics model for the dynamic appearance.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"The explicit representation allows easy composition of object vehicles and background, which in turn allows for scene editing operations and rendering at 133 FPS (1066$\\times$1600 resolution) within half an hour of training.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"The proposed method is evaluated on multiple challenging benchmarks, including KITTI and Waymo Open datasets.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"Experiments show that the proposed method consistently outperforms state-of-the-art methods across all datasets.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"Furthermore, the proposed representation delivers performance on par with that achieved using precise ground-truth poses, despite relying only on poses from an off-the-shelf tracker.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
-{"text":"The code is available at https://zju3dv.github.io/street_gaussians/.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
 {"text":"In this paper, we delve into the prospect of growing a strong LLM out of a weak one without the need for acquiring additional human-annotated data.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
 {"text":"We propose a new fine-tuning method called Self-Play fIne-tuNing (SPIN), which starts from a supervised fine-tuned model.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"education":0,"programming":0}}
 {"text":"At the heart of SPIN lies a self-play mechanism, where the LLM refines its capability by playing against instances of itself.","cats":{"prompt-engineering":0,"security":0,"recommender":0,"programming":0}}
@@ -70,9 +59,7 @@
 {"text":"Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs.","cats":{"security":0,"programming":0}}
 {"text":"For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset.","cats":{"security":0,"programming":0}}
 {"text":"The best attacks succeeded in less than 0.5% of cases against our models, versus over 90% success rate against GPT-3.5-Turbo.","cats":{"security":0,"programming":0}}
-{"text":"Large Language Models~(LLMs) have demonstrated incredible capabilities in understanding, generating, and manipulating languages.","cats":{"hci":0,"programming":0}}
 {"text":"Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks.","cats":{"hci":0,"social-sciences":0,"education":0,"programming":0}}
-{"text":"Large language models have been demonstrated to be valuable in different fields.","cats":{"hci":0,"social-sciences":0,"production":0,"programming":0}}
 {"text":"A significant distinction of advanced LLMs, such as ChatGPT, is their demonstrated ability to \"reason.\"","cats":{"hci":0,"programming":0}}
 {"text":"The results provide insights into LLMs' reasoning abilities and reveal the logical rules the LLMs did not learn well.","cats":{"hci":0,"programming":0}}
 {"text":"In this study, various prompts are designed and compared across mainstream LLMs using two distinct datasets from human reviewers and automated checkers.","cats":{"hci":0,"programming":0}}
@@ -119,16 +106,12 @@
 {"text":"Instead, LLMs often invent, or \"hallucinate\", non-existent APIs or produce variants of already existing code.","cats":{"architectures":0,"programming":1}}
 {"text":"This paper presents De-Hallucinator, an LLM-based code completion technique that grounds the predictions of a model through a novel combination of retrieving suitable API references and iteratively querying the model with increasingly suitable context information in the prompt.","cats":{"architectures":0,"programming":1}}
 {"text":"Large Language Models for Code (Code LLM) are flourishing.","cats":{"programming":1}}
-{"text":"Recently, large language models for code generation have achieved breakthroughs in several programming language tasks.","cats":{"programming":1}}
 {"text":"The recent development on large language models makes automatically constructing small programs possible.","cats":{"programming":1}}
 {"text":"Using large language models (LLMs) for source code has recently gained attention.","cats":{"programming":1}}
-{"text":"Large language models trained on source code can support a variety of software development tasks, such as code recommendation and program repair.","cats":{"programming":1}}
 {"text":"In this report, we focus on exploring whether programming languages can boost each other during the instruction fine-tuning phase of code large language models.","cats":{"programming":1}}
 {"text":"In this paper, we explore the potential of large language models in supporting the evolution of software models in software engineering.","cats":{"programming":1}}
-{"text":"We introduce Magicoder, a series of fully open-source (code, weights, and data) Large Language Models (LLMs) for code that significantly closes the gap with top code models while having no more than 7B parameters.","cats":{"programming":1}}
 {"text":"Large language models (LLMs) have achieved impressive performance on code generation.","cats":{"programming":1}}
 {"text":"Large Language Models (LLMs) (e.g., ChatGPT) have shown impressive performance in code generation.","cats":{"programming":1}}
-{"text":"Large language models (LLMs) have recently demonstrated surprising performance for a range of computing tasks, including generating and explaining code.","cats":{"programming":1}}
 {"text":"Large Language Models (LLM) are a new class of computation engines, \"programmed\" via prompt engineering.","cats":{"programming":1}}
 {"text":"Large language models (LLMs) have already revolutionized code generation, after being pretrained on publicly available code data.","cats":{"programming":1}}
 {"text":"Emerging Large Language Models (LLMs) can answer questions, write high-quality programming code, and predict protein folding, showcasing their versatility in solving various tasks beyond language-based problems.","cats":{"programming":1}}
@@ -137,29 +120,23 @@
 {"text":"Recently, approaches based on large language models (LLMs) have shown remarkable code generation abilities on simple tasks.","cats":{"programming":1}}
 {"text":"Recent development of large language models (LLMs) for code like CodeX and CodeT5+ demonstrates tremendous promise in achieving code intelligence.","cats":{"programming":1}}
 {"text":"Large language models with instruction-following capabilities open the door to a wider group of users.","cats":{"programming":1}}
-{"text":"Meanwhile, large language models (LLMs) possess diverse code-related knowledge, making them versatile for various software engineering challenges.","cats":{"programming":1}}
 {"text":"We release Code Llama, a family of large language models for code based on Llama 2 providing state-of-the-art performance among open models, infilling capabilities, support for large input contexts, and zero-shot instruction following ability for programming tasks.","cats":{"programming":1}}
 {"text":"Meanwhile, large language models, represented by ChatGPT, have gained great attentions, showcasing great capabilities in code analysis tasks.","cats":{"programming":1}}
 {"text":"In this paper, we target a novel task: translating code changes from one programming language to another using large language models (LLMs).","cats":{"programming":1}}
 {"text":"Furthermore, we have developed coding-specialized models, Code-Qwen and Code-Qwen-Chat, as well as mathematics-focused models, Math-Qwen-Chat, which are built upon base language models.","cats":{"programming":1}}
 {"text":"This paper presents Safurai-001, a new Large Language Model (LLM) with significant potential in the domain of coding assistance.","cats":{"programming":1}}
-{"text":"Recent studies found that large language models can be finetuned to perform well even with a small amount of high-quality instruction-following data.","cats":{"programming":0}}
 {"text":"This has been a particular concern in the era of large language models (LLMs)- based code generation, where LLMs, deemed a complex and powerful black-box model, is instructed by a high-level natural language specification, namely a prompt, to generate code.","cats":{"programming":1}}
 {"text":"This challenge has become even more pressing with the rise of large language model (LLM) based code generation tools.","cats":{"programming":1}}
 {"text":"Recent advancements in Large Language Models (LLMs) have enhanced their ability to comprehend natural and programming languages, enabling them to generate patches based on review comments.","cats":{"programming":1}}
 {"text":"We have found that large language models are indeed a promising technology for supporting software model evolution, and that it is worth investigating further in the area of software model evolution.","cats":{"programming":1}}
 {"text":"The ubiquitous adoption of Large Language Generation Models (LLMs) in programming has underscored the importance of differentiating between human-written code and code generated by intelligent models.","cats":{"programming":1}}
-{"text":"In this paper, we take a major step towards filling this gap by proposing GEqO, a portable and lightweight machine-learning-based framework for efficiently identifying semantically equivalent computations at scale.","cats":{"programming":0}}
 {"text":"To address this, we propose a multilevel generative semantic communication system with a two-stage training framework.","cats":{"programming":0}}
 {"text":"Despite the continued research and progress in building secure systems, Android applications continue to be ridden with vulnerabilities, necessitating effective detection methods.","cats":{"programming":0}}
 {"text":"We propose a class of objective functions based on the variational representation of the $f$-divergence, from which we extract a list of five posterior probability estimators leveraging well-known $f$-divergences.","cats":{"programming":0}}
 {"text":"Then, we numerically test the set of proposed objective functions in three application scenarios: toy examples, image data sets, and signal detection/decoding problems.","cats":{"programming":0}}
-{"text":"Finally, VideoDrafter outputs a multi-scene video by generating each scene video via a diffusion process that takes the reference images, the descriptive prompt of the event and camera movement into account.","cats":{"programming":0}}
 {"text":"Empirical results show the superiority of MofitRGC.","cats":{"programming":0}}
 {"text":"We were also able to achieve a testing accuracy of 88.03% in the face-shape problem using the celebrity face-shape dataset[3].","cats":{"programming":0}}
 {"text":"We explore task-relatedness for co-annotation and co-training, and propose a novel approach, where knowledge exchange is enabled between the tasks via distribution matching.","cats":{"programming":0}}
-{"text":"The proposed algorithm provides an optimal solution to a linearized version of the adversarial example problem originally introduced by Szegedy et al. \\cite{szegedy2013intriguing}.","cats":{"programming":0}}
-{"text":"As a further advantage, the JMA attack usually requires very few iterations, thus resulting more efficient than existing methods.","cats":{"programming":0}}
 {"text":"This research idea paper proposes leveraging Large Language Models (LLMs) to enhance the productivity of Dafny developers.","cats":{"programming":1}}
 {"text":"Often the cost of using such languages is too high, due to the level of expertise required from the developers and challenges that they often face when trying to prove a program correct.","cats":{"programming":0}}
 {"text":"The recent breakthroughs in large language models (LLMs) are positioned to transition many areas of software.","cats":{"programming":0}}
@@ -244,12 +221,6 @@
 {"text":"Meanwhile, the evaluation and optimization of LLMs in software engis the first to comprehensively investigate and collate the research and products combining LLMs with software engineering, aiming to answer two questions: (1) What are the current integrations of LLMs with software engineering?","cats":{"programming":0}}
 {"text":"as possible from seven mainstream databases, and selected 123 papers for analysis.","cats":{"programming":0}}
 {"text":"We have categorized these papers in detail and reverformance and effectiveness of LLMs in various software engineering tasks, providing guidance for researchers and developers to optimize.","cats":{"programming":0}}
-{"text":"The ease of using a Large Language Model (LLM) to answer a wide variety of queries and their high availability has resulted in LLMs getting integrated into various applications. LLM-based recommenders are now routinely used by students as well as professional software programmers for code generation and testing.","cats":{"programming":1}}
-{"text":"As such, there is a need for tools and technologies which may assist teachers and other evaluators in identifying whether any portion of a source code is LLM generated.","cats":{"programming":1}}
-{"text":"In this paper, we propose a neural network-based tool that instructors can use to determine the original effort (and LLM's contribution) put by students in writing source codes.","cats":{"programming":1}}
-{"text":" Though LLM-based technology has proven useful, its unethical and unattributed use by students and professionals is a growing cause of concern.","cats":{"programming":0}}
-{"text":"As such, there is a need for tools and technologies which may assist teachers and other evaluators in identifying whether any portion of a source code is LLM generated.   ","cats":{"programming":0}}
-{"text":"In this paper, we propose a neural network-based tool that instructors can use to determine the original effort (and LLM's contribution) put b (up to 500 lines of code) have shown promising results that we report in this paper.","cats":{"programming":0}}
 {"text":"Large Language Models (LLMs) have exhibited remarkable capabilities in understanding and interacting with natural language across various sectors.","cats":{"programming":0}}
 {"text":"However, their effectiveness is limited in specialized areas requiring high accuracy, such as plant science, due to a lack of specific expertise in these fields.","cats":{"programming":0}}
 {"text":"It's enhanced with a comprehensive database, comprising more than 1.5 million scholarly articles in plant science.","cats":{"programming":0}}
@@ -272,16 +243,6 @@
 {"text":"Most notably, ambiguous pronouns lead to incorrect associations in domain models.","cats":{"programming":0}}
 {"text":"Conclusion: Despite being equally advised against by literature and frequentist methods, the Bayesian data analysis shows that the two investigated quality defects have vastly different impacts on software engineering activities and, hence, deserve different levels of attention.","cats":{"programming":0}}
 {"text":"Our employed method can be further utilized by researchers to improve reliable, detailed empirical evidence on requirements quality.","cats":{"programming":0}}
-{"text":"While large language models (LLMs) have exhibited impressive instruction-following capabilities, it is still unclear whether and to what extent they can respond to explicit constraints that might be entailed in various instructions.","cats":{"programming":0}}
-{"text":"As a significant aspect of LLM alignment, it is thus important to formulate such a specialized set of instructions as well as investigate the resulting behavior of LLMs.","cats":{"programming":0}}
-{"text":"To address this vacancy, we propose a new benchmark CoDI-Eval to systematically and comprehensively evaluate LLMs' responses to instructions with various constraints.","cats":{"programming":0}}
-{"text":"We construct a large collection of constraints-attributed instructions as a test suite focused on both generalization and coverage.","cats":{"programming":0}}
-{"text":"Specifically, we advocate an instruction diversification process to synthesize diverse forms of constraint expression and also deliberate the candidate task taxonomy with even finer-grained sub-categories.","cats":{"programming":0}}
-{"text":"Finally, we automate the entire evaluation process to facilitate further developments.","cats":{"programming":0}}
-{"text":"Different from existing studies on controllable text generation, CoDI-Eval extends the scope to the prevalent instruction-following paradigm for the first time.","cats":{"programming":0}}
-{"text":"We provide extensive evaluations of representative LLMs (e.g., ChatGPT, Vicuna) on CoDI-Eval, revealing their limitations in following instructions with specific constraints and there is still a significant gap between open-source and commercial closed-source LLMs.","cats":{"programming":0}}
-{"text":"We believe this benchmark will facilitate research into improving the controllability of LLMs' responses to instructions.","cats":{"programming":0}}
-{"text":"Our data and code are available at https://github.com/Xt-cyh/CoDI-Eval.","cats":{"programming":0}}
 {"text":"Bugs in operating system kernels can affect billions of devices and users all over the world.","cats":{"programming":0}}
 {"text":"As a result, a large body of research has been focused on kernel fuzzing, i.e., automatically generating syscall (system call) sequences to detect potential kernel bugs or vulnerabilities.","cats":{"programming":0}}
 {"text":"Syzkaller, one of the most widely studied kernel fuzzers, aims to generate valid syscall sequences based on predefined specifications written in syzlang, a domain-specific language for defining syscalls, their arguments, and the relationships between them.","cats":{"programming":0}}

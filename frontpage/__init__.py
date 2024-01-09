@@ -1,7 +1,7 @@
 # from tqdm.rich import tqdm
-# import jinja2 
-# import datetime as dt 
-# import json 
+# import jinja2
+# import datetime as dt
+# import json
 # import itertools as it
 # from pathlib import Path
 # from functools import cached_property
@@ -56,7 +56,7 @@
 
 #     def _dataset_name(self, label:str, view:str) -> str:
 #         return f"{view}-{label}"
-    
+
 #     @property
 #     def _annotation_views(self):
 #         return ["sentence", "abstract"]
@@ -67,9 +67,9 @@
 #         # Make lazy generator for all the items
 #         stream = it.chain(*list(srsly.read_jsonl(file) for file in glob))
 #         # Generate two streams lazily
-#         abstract_stream = ({"text": ex["abstract"], "meta": {"url": ex["url"], "title": ex["title"], "created": ex["created"][:10]}} 
+#         abstract_stream = ({"text": ex["abstract"], "meta": {"url": ex["url"], "title": ex["title"], "created": ex["created"][:10]}}
 #                            for ex in stream)
-#         sentences_stream = ({"text": sent, "meta": {"url": ex["url"]}} 
+#         sentences_stream = ({"text": sent, "meta": {"url": ex["url"]}}
 #                             for ex in stream for sent in ex['sentences'])
 #         return dedup_stream(abstract_stream) if view == "abstract" else dedup_stream(sentences_stream)
 
@@ -105,10 +105,10 @@
 #             - search-engine
 #             - random
 #         """
-        
+
 
 #         from .recipe import arxiv_sentence, arxiv_abstract
-#         from prodigy.app import server 
+#         from prodigy.app import server
 #         from prodigy.core import Controller
 
 #         dataset_name = f"{results['label']}-{results['view']}"
@@ -118,12 +118,12 @@
 #         else:
 #             ctrl_data = arxiv_abstract(dataset_name, results['label'], results['tactic'], results['setting'])
 #         controller = Controller.from_components(name, ctrl_data)
-#         server(controller, controller.config)   
+#         server(controller, controller.config)
 
 #     @cached_property
 #     def db(self):
 #         from prodigy.components.db import connect
-        
+
 #         db = connect()
 #         return db
 
@@ -146,8 +146,8 @@
 #                             train_data[h][tag] = int(ex["answer"] == "accept")
 
 #         return train_data.values(), found_tags
-        
-    
+
+
 #     def train(self):
 #         from ._model import SentenceModel
 
@@ -156,12 +156,12 @@
 #         model = SentenceModel(encoder=self.encoder, tasks=found_tags)
 #         model.update(annotated_data)
 #         model.to_disk(TRAINED_FOLDER_FOLDER)
-    
+
 #     def fetch_tag_candidate_stream(self, tag:str):
 #         from frontpage._model import SentenceModel
 
-#         # TODO: 
-#         # so yeah, this can be made way faster. we're looping over the same 
+#         # TODO:
+#         # so yeah, this can be made way faster. we're looping over the same
 #         # thing again and again here, which is wasteful. we should also introcuce
 #         # a max lookup to the
 
@@ -190,11 +190,11 @@
 #             section["content"] = self.fetch_tag_candidate_stream(tag=section['tag']).head(20).collect()
 #         import pprint
 #         pprint.pprint(section["content"])
-        
+
 #         template = jinja2.Template(Path(TEMPLATE_PATH).read_text())
 #         Path("site.html").write_text(template.render(sections=config['sections'], today=dt.date.today()))
 
-    
+
 #     def evaluate(self):
 #         from ._benchmark import benchmark
 #         annotated, found_tags = self.fetch_annotated_data()

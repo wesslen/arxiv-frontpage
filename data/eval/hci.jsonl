@@ -1,0 +1,16 @@
+{"text":"In this work, we take the initial step to leverage LLM for science, through a rather straightforward approach.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"The resultant entity description is then fed into a text-to-image model to generate a reference image for each entity.","cats":{"security":0,"hci":0,"social-sciences":0}}
+{"text":"Moreover, their discrepancies indicate potential errors or inherent uncertainties that LLM often overlooks.","cats":{"hci":0}}
+{"text":"This demonstrates that models exhibit polysemantic capacities and can blend old and new concepts in individual neurons.","cats":{"hci":0}}
+{"text":"Unfortunately, existing solutions fall short of satisfying these requirements.   ","cats":{"hci":0}}
+{"text":"A crucial step of FL, that of aggregating local models to produce the global one, shares many similarities with public decision-making, and elections in particular.","cats":{"hci":0,"recommender":0}}
+{"text":"This study aims to reverse radar view angles in synthetic aperture radar (SAR) images given a target model.","cats":{"hci":0}}
+{"text":"Different from existing studies on controllable text generation, CoDI-Eval extends the scope to the prevalent instruction-following paradigm for the first time.","cats":{"hci":0}}
+{"text":"More specifically, GeoGalactica is from further pre-training of Galactica.","cats":{"hci":0,"education":0}}
+{"text":"Our framework empowers InsActor to capture complex relationships between high-level human instructions and character motions by employing diffusion policies for flexibly conditioned motion planning.","cats":{"hci":0}}
+{"text":"This paper introduces a novel human-LLM interaction framework, Low-code LLM.","cats":{"hci":1}}
+{"text":"We highlight three advantages of the low-code LLM: controllable generation results, user-friendly human-LLM interaction, and broadly applicable scenarios.","cats":{"hci":1,"programming":1}}
+{"text":"Through human-model interactions, LLMs can automatically understand human-issued instructions and output the expected contents, which can significantly increase working efficiency.","cats":{"hci":1}}
+{"text":"The LLM is thus able to compose the visual entities and relationships through the communication tokens.","cats":{"hci":1}}
+{"text":"Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.","cats":{"hci":1}}
+{"text":"To explore whether the capabilities of LLMs can be further enhanced for specific scenarios, we choose the writing-assistance scenario as the testbed, including seven writing tasks.","cats":{"hci":1}}

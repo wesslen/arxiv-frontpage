@@ -1,0 +1,17 @@
+{"text":"However, detecting equivalence on large-scale analytics engines requires efficient and scalable solutions that are fully automated.","cats":{"prompt-engineering":0}}
+{"text":"GEqO introduces two machine-learning-based filters that quickly prune out nonequivalent subexpressions and employs a semi-supervised learning feedback loop to iteratively improve its model with an intelligent sampling mechanism.","cats":{"prompt-engineering":0}}
+{"text":"Finally, we show that FedQV can be easily combined with Byzantine-robust privacy-preserving mechanisms to enhance its robustness against both poisoning and privacy attacks.","cats":{"prompt-engineering":0}}
+{"text":"In this work, we take the initial step to leverage LLM for science, through a rather straightforward approach.","cats":{"prompt-engineering":0,"hci":0}}
+{"text":"Project page: http://sites.research.google/videopoet/","cats":{"prompt-engineering":0}}
+{"text":"We further combine this representation with a multi-resolution grid backbone that is trained in a coarse-to-fine manner, enabling faster reconstructions than prior methods.","cats":{"prompt-engineering":0}}
+{"text":"Please see our project page at https://fangjinhuawang.github.io/UniSDF.","cats":{"prompt-engineering":0}}
+{"text":"By transforming sabotage games into reachability problems, our approach allows applying existing computational solutions to model realistic restrictions on attackers and defenders within the game.","cats":{"prompt-engineering":0}}
+{"text":"Therefore, it is desirable to generate multiple conformations in advance and extract molecular representations using a 4D-QSAR model that incorporates multiple conformations.","cats":{"prompt-engineering":0}}
+{"text":"To address the scarcity of amodal data, we introduce the TAO-Amodal benchmark, featuring 880 diverse categories in thousands of video sequences.","cats":{"prompt-engineering":0}}
+{"text":"Our studies offer a deeper understanding of prompt engineering thereby opening up avenues for research on the future of prompt engineering.","cats":{"prompt-engineering":1}}
+{"text":"Our results suggest that prompt engineering is a learned skill that requires expertise and practice.","cats":{"prompt-engineering":1}}
+{"text":"Researchers have been actively exploring different prompt engineering strategies, such as Chain of Thought (CoT), Zero-CoT, and In-context learning.","cats":{"prompt-engineering":1}}
+{"text":"We conclude by speculating on four possible futures of prompt engineering.","cats":{"prompt-engineering":1}}
+{"text":"Inspired by classical program synthesis and the human approach to prompt engineering, we propose Automatic Prompt Engineer (APE) for automatic instruction generation and selection.","cats":{"prompt-engineering":1}}
+{"text":"In this paper, we investigate prompt engineering as a novel creative skill for creating prompt-based art.","cats":{"prompt-engineering":1}}
+{"text":"To address this issue in prompt engineering, we propose a new and effective approach called Prompt Space.","cats":{"prompt-engineering":1}}

@@ -1,5 +1,5 @@
 from pathlib import Path
-import itertools as it 
+import itertools as it
 
 import tqdm
 import srsly
@@ -25,11 +25,14 @@ from frontpage.datastream import DataStream
 
 load_dotenv()
 
+
 def grid(**kwargs):
-    res = [{k: v for k, v in zip(kwargs.keys(), prod)} 
-            for prod in it.product(*[v for v in kwargs.values()])]
+    res = [
+        {k: v for k, v in zip(kwargs.keys(), prod)}
+        for prod in it.product(*[v for v in kwargs.values()])
+    ]
     return tqdm.tqdm(res)
-        
+
 
 datastream = DataStream()
 
@@ -45,17 +48,17 @@ encoders = {
 }
 
 encoders["multi"] = make_union(
-    encoders["sbert"], 
+    encoders["sbert"],
     make_pipeline(
-        HashingVectorizer(n_features=10_000), 
+        HashingVectorizer(n_features=10_000),
         TruncatedSVD(),
-    )
+    ),
 )
 
 tuners = {
-    "forward": lambda: ForwardFinetuner(hidden_dim=300), 
+    "forward": lambda: ForwardFinetuner(hidden_dim=300),
     "contrast": lambda: ContrastiveFinetuner(hidden_dim=300),
-    "none": lambda: FunctionTransformer()
+    "none": lambda: FunctionTransformer(),
 }
 
 for name, enc in encoders.items():
@@ -63,20 +66,30 @@ for name, enc in encoders.items():
         encoders[name] = cached(f"cache/{str(type(enc))}", enc)
 
 models = {
-    "logistic": LogisticRegression(class_weight="balanced", max_iter=1000), 
-    "svm": SVC(class_weight="balanced")
+    "logistic": LogisticRegression(class_weight="balanced", max_iter=1000),
+    "svm": SVC(class_weight="balanced"),
 }
 
+
 def calc_stats(pred_valid, y_valid):
-    return {**classification_report(pred_valid, y_valid, output_dict=True)['1'],  "accuracy": float(np.mean(pred_valid == y_valid))}
+    return {
+        **classification_report(pred_valid, y_valid, output_dict=True)["1"],
+        "accuracy": float(np.mean(pred_valid == y_valid)),
+    }
 
 
 def run_benchmark_k_fold(label, model, encoder, tuner):
-    res = {"label": label, "model": model, "encoder": encoder, "tuner": tuner, "method": "k_fold"}
+    res = {
+        "label": label,
+        "model": model,
+        "encoder": encoder,
+        "tuner": tuner,
+        "method": "k_fold",
+    }
     pipe = make_pipeline(encoders[encoder], tuners[tuner](), models[model])
     examples = datastream.get_train_stream()
-    X = [ex['text'] for ex in examples if label in ex['cats']]
-    y = [ex['cats'][label] for ex in examples if label in ex['cats']]
+    X = [ex["text"] for ex in examples if label in ex["cats"]]
+    y = [ex["cats"][label] for ex in examples if label in ex["cats"]]
     folds = k_folder.split(X, y)
     for i, (train_idx, valid_idx) in enumerate(folds):
         X_train = [str(x) for x in np.array(X)[train_idx]]
@@ -91,11 +104,17 @@ def run_benchmark_k_fold(label, model, encoder, tuner):
 
 
 def run_benchmark_train_size(label, model, encoder, tuner):
-    res = {"label": label, "model": model, "encoder": encoder, "tuner": tuner, "method": "train_size"}
+    res = {
+        "label": label,
+        "model": model,
+        "encoder": encoder,
+        "tuner": tuner,
+        "method": "train_size",
+    }
     pipe = make_pipeline(encoders[encoder], tuners[tuner](), models[model])
     examples = datastream.get_train_stream()
-    X = [ex['text'] for ex in examples if label in ex['cats']]
-    y = [ex['cats'][label] for ex in examples if label in ex['cats']]
+    X = [ex["text"] for ex in examples if label in ex["cats"]]
+    y = [ex["cats"][label] for ex in examples if label in ex["cats"]]
     X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=0.2)
     for p in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
         idx = int(len(X_train) * p)
@@ -110,10 +129,10 @@ def run_benchmark_train_size(label, model, encoder, tuner):
 
 if __name__ == "__main__":
     settings = grid(
-        label=["new-dataset"], 
-        encoder=["sbert", "openai", "cohere", "multi"], 
+        label=["new-dataset"],
+        encoder=["sbert", "openai", "cohere", "multi"],
         model=["logistic", "svm"],
-        tuner=["contrast", "forward", "none"]
+        tuner=["contrast", "forward", "none"],
     )
 
     stats = (ex for setting in settings for ex in run_benchmark_k_fold(**setting))
@@ -135,10 +154,9 @@ if __name__ == "__main__":
     #     pl.read_ndjson("benchmark.jsonl")
     #     .groupby("label","model","encoder","tuner")
     #     .agg(
-    #         pl.mean("recall"), 
-    #         pl.mean("precision"), 
+    #         pl.mean("recall"),
+    #         pl.mean("precision"),
     #         pl.mean("f1-score"),
     #         pl.mean("accuracy"),
     #     ).sort("f1-score")
     # )
-

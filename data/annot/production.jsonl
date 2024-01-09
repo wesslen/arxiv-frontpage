@@ -1,10 +1,8 @@
-{"text":"This paper provides the following contributions to research on prompt engineering that apply LLMs to automate software development tasks.","cats":{"prompt-engineering":1,"production":0}}
 {"text":"This paper provides two contributions to research on using LLMs for software engineering.","cats":{"prompt-engineering":0,"production":0}}
 {"text":"The developed approach minimizes computational and economic expenses while optimizing data privacy and accuracy.","cats":{"robustness":0,"production":0}}
 {"text":"With the rapid development of machine learning and growing concerns about data privacy, federated learning has become an increasingly prominent focus.","cats":{"security":0,"production":0}}
 {"text":"A case-study of our recent work on precise indoor channel prediction with semantic segmentation and deep learning is presented.","cats":{"security":0,"production":0}}
 {"text":"Large language models (LLMs) have shown impressive success in various applications.","cats":{"hci":0,"education":0,"recommender":0,"production":0}}
-{"text":"Large language models have been demonstrated to be valuable in different fields.","cats":{"hci":0,"social-sciences":0,"production":0,"programming":0}}
 {"text":"In this work, we revisit this topic in the context of large language models.","cats":{"hci":0,"production":0}}
 {"text":"Extensive experiments on three popular RGBT tracking benchmarks show that our method achieves state-of-the-art performance, while running at real-time speed.","cats":{"hci":0,"production":0}}
 {"text":"Secure local processing and sensor data fusion ensure virtual companions meet individual user needs without compromising privacy or data security.","cats":{"hci":0,"production":0}}
@@ -20,22 +18,18 @@
 {"text":"We use a Bayesian method to estimate the true value of each biometric from a large number of measurements and probabilistically reject outliers.","cats":{"social-sciences":0,"production":0}}
 {"text":"Our new classifier improves zeroshot performance by 9.4%.","cats":{"social-sciences":0,"production":0}}
 {"text":"We are currently witnessing dramatic advances in the capabilities of Large Language Models (LLMs).","cats":{"social-sciences":0,"education":0,"production":0}}
-{"text":"Large-scale corpora play a vital role in the construction of large language models (LLMs).","cats":{"social-sciences":0,"production":0}}
 {"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"social-sciences":0,"education":0,"recommender":0,"production":0}}
 {"text":"This highlights significant room for improvement in LLMs.","cats":{"social-sciences":0,"production":0}}
 {"text":"Recent development of large language models (LLMs) has opened a new opportunity to address this problem more effectively.","cats":{"recommender":0,"production":0}}
 {"text":"We thoroughly analyze the performance of several large language models (LLMs) and identify areas where further improvement is needed.","cats":{"recommender":0,"production":0}}
 {"text":"Large language models (LLMs) with memory are computationally universal.","cats":{"recommender":0,"production":0}}
-{"text":"To address the challenges, we propose leveraging deep learning-based methods for the design and operation of B5G/6G networks with BACN, deviating from conventional buffer-aided relay selection approaches.","cats":{"recommender":0,"production":0}}
 {"text":"In this paper, we propose an effective approach that can make the deployment of LLMs more efficiently.","cats":{"production":1}}
 {"text":"Moreover, the high run-time cost of LLMs may hinder their deployments in production.","cats":{"production":0}}
 {"text":"This work shall be treated as the initial effort to systematic evaluation of LLMs in NetOps, and a more rigorous study is required for production use.","cats":{"production":1}}
 {"text":"Additionally, the large-scale architecture of LLMs inevitably present efficiency challenges during deployment.","cats":{"production":0}}
 {"text":"Meanwhile, we have also organized and presented papers with evaluation content to reveal the performance and effectiveness of LLMs in various software engineering tasks, providing guidance for researchers and developers to optimize.","cats":{"production":0,"programming":1}}
-{"text":"This overview sheds light on existing and missing research lines in the emerging field of LLMs, benefiting both public users and developers.","cats":{"production":0}}
 {"text":"We have categorized these papers in detail and reviewed the current research status of LLMs from the perspective of seven major software engineering tasks, hoping this will help researchers better grasp the research trends and address the issues when applying LLMs.","cats":{"production":0,"programming":1}}
 {"text":"We call for cautious promotion and application of model editing as part of the LLM deployment process, and for responsibly limiting the use cases of LLMs to those not relying on editing as a critical component.","cats":{"production":1}}
-{"text":"Finally, the paper summarizes significant findings from LLM research and consolidates essential architectural and training strategies for developing advanced LLMs.","cats":{"production":0,"architectures":0}}
 {"text":"Yet, how to evaluate and analyze the tool-utilization capability of LLMs is still under-explored.","cats":{"production":0}}
 {"text":"We show that, without extensive configuration or prompt engineering, LLMs perform comparably to or better than existing solutions and discuss implications for future BPM research as well as practical usage.","cats":{"production":0}}
 {"text":"It implies the creation of a great variety of LLMs with different capabilities.","cats":{"production":0}}
@@ -49,7 +43,6 @@
 {"text":"Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.","cats":{"production":0,"architectures":0}}
 {"text":"The results of our investigation emphasize the immense potential of FP quantization for LLMs, paving the way for high-efficiency deployment in resource-limited settings.","cats":{"production":1}}
 {"text":"We are still learning how to best \"program\" these LLMs to help developers.","cats":{"production":0}}
-{"text":"Effectively utilizing LLMs for complex tasks is challenging, often involving a time-consuming and uncontrollable prompt engineering process.","cats":{"production":0}}
 {"text":"Meanwhile, the evaluation and optimization of LLMs in software engineering tasks, such as code generation, have become a research focus.","cats":{"production":0}}
 {"text":"Recently, there has been escalating interest in deploying LLMs for robotics, aiming to harness the power of foundation models in real-world settings.","cats":{"production":0}}
 {"text":"As a result, the LLMs have proliferated.","cats":{"production":0}}
@@ -58,7 +51,6 @@
 {"text":"We perform comparisons and analyses of different settings and conduct 10 conclusions that can provide some insights for evaluating LLM in the future.","cats":{"production":0}}
 {"text":"The LLM landscape can be divided into two primary categories: proprietary and open-source.","cats":{"production":0}}
 {"text":"Our findings include that (1) the best performing LLM outperforms existing approaches by 9.1--13.7% with a few similar examples, (2) the two dominant root causes combined (ineffective prompts and missing domain knowledge) result in 57--60% of LLM failures, and (3) most of the 11 LLMs achieve better or comparable performance compared to traditional techniques.","cats":{"production":0}}
-{"text":"Moreover, the paper also discusses the basic building blocks and concepts behind LLMs, followed by a complete overview of LLMs, including their important features and functions.","cats":{"production":0,"architectures":0}}
 {"text":"By doing so, we aim to bridge the gap between the general-purpose LLM and the requirements of the media domain, and to pave the way for more effective and efficient use of LLM in this field.","cats":{"production":0}}
 {"text":"This work studies post-training parameter quantization in large language models (LLMs).","cats":{"production":1}}
 {"text":"We confirm that the W4A8 quantization is achievable for the deployment of large language models, fostering their wide-spreading real-world applications.","cats":{"production":1}}
@@ -66,9 +58,7 @@
 {"text":"We investigate the effects of post-training quantization and quantization-aware training on the generalization of Transformer language models.","cats":{"production":1}}
 {"text":"The usage of Large Language Models (LLMs) has increased recently, not only due to the significant improvements in their accuracy but also because of the use of the quantization that allows running these models without intense hardware requirements.","cats":{"production":1}}
 {"text":"This study represents a significant step forward in the evolution of efficient, scalable, and high-performing large language models, setting a precedent for future exploration and optimization in this domain.","cats":{"production":0}}
-{"text":"Large Language Models (LLMs) struggle to perform such reasoning consistently.","cats":{"production":0}}
 {"text":"Large Language Models have many methods for solving the same problem.","cats":{"production":0}}
-{"text":"Quantization of transformer language models faces significant challenges due to the existence of detrimental outliers in activations.","cats":{"production":1}}
 {"text":"Large language models have demonstrated impressive capabilities in enabling this shift.","cats":{"production":0}}
 {"text":"We also covered some recent advancements in calibrating large models, particularly large language models (LLMs).","cats":{"production":0}}
 {"text":"Large Language Models (LLMs) have demonstrated remarkable performance on various quantitative reasoning and knowledge benchmarks.","cats":{"production":0}}
@@ -95,11 +85,8 @@
 {"text":"Therefore, we propose a Privacy Protected Blockchain-based Federated Learning Model (PPBFL) to enhance the security of federated learning and promote the active participation of nodes in model training.","cats":{"production":0}}
 {"text":"A novel adaptive differential privacy addition algorithm is simultaneously applied to local and global models, preserving the privacy of local models and preventing a decrease in the security of the global model due to the presence of numerous local models in federated learning.","cats":{"production":0}}
 {"text":"Additionally, we introduce a new mix transactions mechanism to better protect the identity privacy of local training clients.","cats":{"production":0}}
-{"text":"This article explores various typical application scenarios of buffer-aided relaying in B5G/6G networks to emphasize the importance of incorporating BACN.","cats":{"production":0}}
 {"text":"Based on this, we design a time-frequency convolutional neural network (TF-CNN) to diagnose various faults in rolling-element bearings.","cats":{"production":0}}
 {"text":"Altogether, the TF-CNN achieves substantial accuracy improvements up to 15%, in severe noise conditions.","cats":{"production":0}}
-{"text":"Furthermore, our empirical analysis using multiple real-world datasets validates the superior performance of FedQV against poisoning attacks.","cats":{"production":0}}
-{"text":"Finally, we show that FedQV can be easily combined with Byzantine-robust privacy-preserving mechanisms to enhance its robustness against both poisoning and privacy attacks.","cats":{"production":0}}
 {"text":"Video compression has long been regarded as the primary means of efficiently managing the substantial multimedia traffic generated by video-capturing devices.","cats":{"production":0}}
 {"text":"This complexity presents a formidable challenge when implementing efficient video coding standards in resource-constrained embedded systems, such as IoT edge node cameras.","cats":{"production":0}}
 {"text":"To tackle this challenge, this paper introduces NU-Class Net, an innovative deep-learning model designed to mitigate compression artifacts stemming from lossy compression codecs.","cats":{"production":0}}
@@ -132,7 +119,6 @@
 {"text":"Furthermore, drawing upon external knowledge databases, Physio can recommend rehabilitation exercises and over-the-counter medication for symptom relief.","cats":{"production":0}}
 {"text":"By combining these features, Physio can leverage the power of generative models for language processing while also conditioning its response on dependable and verifiable sources.","cats":{"production":0}}
 {"text":"A live demo of Physio is available at https://physio.inesctec.pt.","cats":{"production":0}}
-{"text":"We also conduct more experiments and analyses to offer insights for future work on effectively fine-tuning LLaMa for specific scenarios.","cats":{"production":1}}
 {"text":"The LLaMA models performed especially well with large datasets, demonstrating their ability to handle complex, multi-label tasks.","cats":{"production":0}}
 {"text":"Building upon UltraChat, we fine-tune a LLaMA model to create a powerful conversational model, UltraLLaMA.","cats":{"production":0}}
 {"text":"We fine-tune LLaMA on ToolBench and obtain ToolLLaMA.","cats":{"production":0}}

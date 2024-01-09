@@ -46,9 +46,15 @@ def annotate():
 
     def run_questions():
         import questionary
-        from .constants import LABELS, DATA_LEVELS
+        from .constants import LABELS, DATA_LEVELS, DATA_TYPES
 
         results = {}
+
+        results["data_type"] = questionary.select(
+            "What type of data do you want to annotate?",
+            choices=DATA_TYPES,
+        ).ask()
+
         results["label"] = questionary.select(
             "Which label do you want to annotate?",
             choices=LABELS,
@@ -94,6 +100,7 @@ def annotprep():
     from .datastream import DataStream
 
     DataStream().save_train_stream()
+    DataStream().save_eval_stream()
 
 
 @cli.command("train")
@@ -102,8 +109,8 @@ def train():
     from .datastream import DataStream
     from .modelling import SentenceModel
 
-    examples = DataStream().get_train_stream()
-    SentenceModel().train(examples=examples).to_disk()
+    train_examples = DataStream().get_train_stream()
+    SentenceModel().train(examples=train_examples).to_disk()
 
 
 @cli.command("pretrain")
@@ -112,8 +119,8 @@ def pretrain():
     from .datastream import DataStream
     from .modelling import SentenceModel
 
-    examples = DataStream().get_train_stream()
-    SentenceModel().pretrain(examples=examples)
+    train_examples = DataStream().get_train_stream()
+    SentenceModel().pretrain(examples=train_examples)
 
 
 @cli.command("stats")
@@ -176,6 +183,20 @@ def artifact(action: str):
             artifact.download(PRETRAINED_FOLDER)
         else:
             console.log(f"{PRETRAINED_FOLDER} already exists. Skip wandb download.")
+
+
+@cli.command("evaluate")
+def evaluate(output_path: str = "evaluation"):
+    """Annotate new examples."""
+    from .evaluation import run_and_save_evaluation
+    from .modelling import SentenceModel
+    from .constants import LABELS
+
+    model = SentenceModel.from_disk()
+    print(model.labels)
+    # Loop over each label
+    for label in LABELS:
+        run_and_save_evaluation(label, model, output_path=output_path)
 
 
 @cli.command("search")

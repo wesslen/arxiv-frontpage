@@ -31,12 +31,14 @@ jobs:
       run: |
         python -m frontpage artifact download 
         python -m frontpage build --retrain --preprocess
+        python -m frontpage evaluate
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
         git add index.html
         git add data/input.jsonl
+        git add evaluation/
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
