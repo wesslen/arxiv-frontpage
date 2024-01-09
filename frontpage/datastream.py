@@ -97,7 +97,7 @@ class DataStream:
     def _filter_datatype(self, stream, data_type):
         """Filter data by data_type (training or evaluation)"""
         for ex in stream:
-            if ex.get("meta", {}).get("data_type") == data_type:
+            if ex["meta"]["data_type"] == data_type:
                 yield ex
 
     def _sentence_data_to_train_format(self, stream):
@@ -115,13 +115,12 @@ class DataStream:
                     ex["label"]: outcome
                 }
     
-    def _accumulate_stream(self, stream, data_type) -> List[Dict]:
+    def _accumulate_stream(self, stream) -> List[Dict]:
         """
         This function ensures that we have each `text` appear only
         once and that the categories are nested in the `cats` key.
         """
         return (LazyLines(stream)
-                .keep(lambda d: d.get("meta", {}).get("data_type") == data_type)
                 .nest_by("text")
                 .mutate(cats = lambda d: {k: v for ex in d['subset'] for k, v in ex.items()})
                 .drop("subset")
@@ -147,7 +146,7 @@ class DataStream:
         if not ANNOT_PATH.parent.exists():
             ANNOT_PATH.parent.mkdir(parents=True, exist_ok=True)
         
-        full_stream = self._accumulate_stream(stream, "training")
+        full_stream = self._accumulate_stream(stream)
         for label in LABELS:
             subset = [ex for ex in full_stream if label in ex['cats']]
             path = ANNOT_FOLDER / f"{label}.jsonl"
@@ -174,14 +173,21 @@ class DataStream:
         if not ANNOT_PATH.parent.exists():
             ANNOT_PATH.parent.mkdir(parents=True, exist_ok=True)
         
-        full_stream = self._accumulate_stream(stream, "evaluation")
+        full_stream = self._accumulate_stream(stream)
         for label in LABELS:
             subset = [ex for ex in full_stream if label in ex['cats']]
             path = EVAL_FOLDER / f"{label}.jsonl"
             srsly.write_jsonl(path, subset)
             console.log(f"Full eval annotations file saved at [bold]{path}[/bold]")
 
-    def get_combined_stream() -> Tuple[List[Dict], List[Dict]]:
+    def get_train_stream(self) -> List[Dict]:
+        examples = []
+        for label in LABELS:
+            path = ANNOT_FOLDER / f"{label}.jsonl"
+            examples.extend(list(srsly.read_jsonl(path)))
+        return examples
+
+    def get_combined_stream(self) -> Tuple[List[Dict], List[Dict]]:
 
         def dedup_two_stream(combined_stream, original_streams, key="text"):
             uniq = {}
