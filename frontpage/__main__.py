@@ -109,8 +109,8 @@ def train():
     from .datastream import DataStream
     from .modelling import SentenceModel
 
-    train_examples, eval_examples = DataStream().get_combined_stream()
-    SentenceModel().train(examples=train_examples).to_disk()
+    train_examples = DataStream().get_train_stream()
+    SentenceModel().train(examples=train_examples)
 
 
 @cli.command("pretrain")
@@ -119,7 +119,7 @@ def pretrain():
     from .datastream import DataStream
     from .modelling import SentenceModel
 
-    train_examples, eval_examples = DataStream().get_combined_stream()
+    train_examples = DataStream().get_train_stream()
     SentenceModel().pretrain(examples=train_examples)
 
 
@@ -184,6 +184,19 @@ def artifact(action: str):
         else:
             console.log(f"{PRETRAINED_FOLDER} already exists. Skip wandb download.")
 
+
+@cli.command("evaluate")
+def evaluate(output_path: str):
+    """Annotate new examples."""
+    from .evaluation import run_and_save_evaluation
+    from .modelling import SentenceModel
+    from .constants import LABELS
+
+    model = SentenceModel.from_disk()
+
+    # Loop over each label
+    for label in LABELS:
+        run_and_save_evaluation(label, model, output_path="evaluation")
 
 @cli.command("search")
 def search():
