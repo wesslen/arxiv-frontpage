@@ -5,7 +5,6 @@ import srsly
 
 
 def test_for_dedup_stream():
-
     def dedup_two_stream(combined_stream, original_streams, key="text"):
         uniq = {}
         separated_streams = {stream: [] for stream in original_streams}
@@ -20,7 +19,7 @@ def test_for_dedup_stream():
                         separated_streams[stream_name].append(ex)
                         break
 
-        return separated_streams['train'], separated_streams['eval']
+        return separated_streams["train"], separated_streams["eval"]
 
     def get_stream(folder_path) -> List[Dict]:
         examples = []
@@ -39,8 +38,9 @@ def test_for_dedup_stream():
     combined_examples = list(train_examples) + list(eval_examples)
 
     # Perform deduplication and separate the streams
-    train_stream, eval_stream = dedup_two_stream(combined_examples, {'train': train_examples, 'eval': eval_examples})
+    train_stream, eval_stream = dedup_two_stream(
+        combined_examples, {"train": train_examples, "eval": eval_examples}
+    )
 
     assert len(list(eval_examples)) == len(list(eval_stream))
     assert len(list(train_examples)) == len(list(train_stream))
-   

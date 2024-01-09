@@ -53,7 +53,7 @@ def annotate():
         results["data_type"] = questionary.select(
             "What type of data do you want to annotate?",
             choices=DATA_TYPES,
-        ).ask()        
+        ).ask()
 
         results["label"] = questionary.select(
             "Which label do you want to annotate?",
@@ -197,6 +197,7 @@ def evaluate(output_path: str):
     # Loop over each label
     for label in LABELS:
         run_and_save_evaluation(label, model, output_path="evaluation")
+
 
 @cli.command("search")
 def search():

@@ -1,6 +1,6 @@
 import srsly
-from pathlib import Path 
-from typing import Literal 
+from pathlib import Path
+from typing import Literal
 
 from .types import Config
 
