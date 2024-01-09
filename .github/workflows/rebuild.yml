@@ -31,7 +31,7 @@ jobs:
       run: |
         python -m frontpage artifact download 
         python -m frontpage build --retrain --preprocess
-        python -m frontpage evaluate evaluation
+        python -m frontpage evaluate
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"

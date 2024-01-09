@@ -186,7 +186,7 @@ def artifact(action: str):
 
 
 @cli.command("evaluate")
-def evaluate(output_path: str):
+def evaluate(output_path: str = "evaluation"):
     """Annotate new examples."""
     from .evaluation import run_and_save_evaluation
     from .modelling import SentenceModel
@@ -196,7 +196,7 @@ def evaluate(output_path: str):
 
     # Loop over each label
     for label in LABELS:
-        run_and_save_evaluation(label, model, output_path="evaluation")
+        run_and_save_evaluation(label, model, output_path=output_path)
 
 
 @cli.command("search")
