@@ -110,7 +110,7 @@ def train():
     from .modelling import SentenceModel
 
     train_examples = DataStream().get_train_stream()
-    SentenceModel().train(examples=train_examples)
+    SentenceModel().train(examples=train_examples).to_disk()
 
 
 @cli.command("pretrain")
@@ -193,7 +193,7 @@ def evaluate(output_path: str = "evaluation"):
     from .constants import LABELS
 
     model = SentenceModel.from_disk()
-
+    print(model.labels)
     # Loop over each label
     for label in LABELS:
         run_and_save_evaluation(label, model, output_path=output_path)
