@@ -1,9 +1,10 @@
 from typing import Dict, List
 from frontpage.constants import LABELS, ANNOT_FOLDER, EVAL_FOLDER
+from frontpage.utils import dedup_stream
 import srsly
 
 
-def test_dedup_stream():
+def test_for_dedup_stream():
 
     def dedup_two_stream(combined_stream, original_streams, key="text"):
         uniq = {}
@@ -31,12 +32,15 @@ def test_dedup_stream():
     train_examples = get_stream(ANNOT_FOLDER)
     eval_examples = get_stream(EVAL_FOLDER)
 
+    # Dedup individual streams
+    train_examples = dedup_stream(train_examples)
+    eval_examples = dedup_stream(eval_examples)
     # Combine for global deduplication
-    combined_examples = train_examples + eval_examples
+    combined_examples = list(train_examples) + list(eval_examples)
 
     # Perform deduplication and separate the streams
     train_stream, eval_stream = dedup_two_stream(combined_examples, {'train': train_examples, 'eval': eval_examples})
 
-    assert len(eval_examples) == len(eval_stream)
-    assert len(train_examples) == len(train_stream)
+    assert len(list(eval_examples)) == len(list(eval_stream))
+    assert len(list(train_examples)) == len(list(train_stream))
    
