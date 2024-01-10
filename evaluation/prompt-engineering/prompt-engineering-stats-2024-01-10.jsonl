@@ -17,7 +17,7 @@
 {"label":"prompt-engineering","precision":1.0,"recall":1.0,"f1-score":1.0,"support":7.0,"p":0.72,"n_eval":16}
 {"label":"prompt-engineering","precision":1.0,"recall":1.0,"f1-score":1.0,"support":7.0,"p":0.74,"n_eval":16}
 {"label":"prompt-engineering","precision":1.0,"recall":1.0,"f1-score":1.0,"support":7.0,"p":0.76,"n_eval":16}
-{"label":"prompt-engineering","precision":1.0,"recall":1.0,"f1-score":1.0,"support":7.0,"p":0.78,"n_eval":16}
+{"label":"prompt-engineering","precision":0.8571428571,"recall":1.0,"f1-score":0.9230769231,"support":6.0,"p":0.78,"n_eval":16}
 {"label":"prompt-engineering","precision":0.8571428571,"recall":1.0,"f1-score":0.9230769231,"support":6.0,"p":0.8,"n_eval":16}
 {"label":"prompt-engineering","precision":0.2857142857,"recall":1.0,"f1-score":0.4444444444,"support":2.0,"p":0.9,"n_eval":16}
 {"label":"prompt-engineering","precision":0.0,"recall":0.0,"f1-score":0.0,"support":0.0,"p":1,"n_eval":16}

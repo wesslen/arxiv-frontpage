@@ -9,10 +9,10 @@
 {"label":"social-sciences","precision":1.0,"recall":1.0,"f1-score":1.0,"support":7.0,"p":0.56,"n_eval":14}
 {"label":"social-sciences","precision":1.0,"recall":1.0,"f1-score":1.0,"support":7.0,"p":0.58,"n_eval":14}
 {"label":"social-sciences","precision":1.0,"recall":1.0,"f1-score":1.0,"support":7.0,"p":0.6,"n_eval":14}
-{"label":"social-sciences","precision":1.0,"recall":1.0,"f1-score":1.0,"support":7.0,"p":0.62,"n_eval":14}
-{"label":"social-sciences","precision":0.5714285714,"recall":1.0,"f1-score":0.7272727273,"support":4.0,"p":0.64,"n_eval":14}
+{"label":"social-sciences","precision":0.8571428571,"recall":1.0,"f1-score":0.9230769231,"support":6.0,"p":0.62,"n_eval":14}
+{"label":"social-sciences","precision":0.7142857143,"recall":1.0,"f1-score":0.8333333333,"support":5.0,"p":0.64,"n_eval":14}
 {"label":"social-sciences","precision":0.5714285714,"recall":1.0,"f1-score":0.7272727273,"support":4.0,"p":0.66,"n_eval":14}
-{"label":"social-sciences","precision":0.4285714286,"recall":1.0,"f1-score":0.6,"support":3.0,"p":0.68,"n_eval":14}
+{"label":"social-sciences","precision":0.5714285714,"recall":1.0,"f1-score":0.7272727273,"support":4.0,"p":0.68,"n_eval":14}
 {"label":"social-sciences","precision":0.4285714286,"recall":1.0,"f1-score":0.6,"support":3.0,"p":0.7,"n_eval":14}
 {"label":"social-sciences","precision":0.4285714286,"recall":1.0,"f1-score":0.6,"support":3.0,"p":0.72,"n_eval":14}
 {"label":"social-sciences","precision":0.4285714286,"recall":1.0,"f1-score":0.6,"support":3.0,"p":0.74,"n_eval":14}
