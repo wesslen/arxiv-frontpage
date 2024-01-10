@@ -324,8 +324,7 @@ class DataStream:
     def get_active_learn_stream(self, label, preference, data_type: str):
         from prodigy import set_hashes
 
-        if not ACTIVE_LEARN_PATH.exists():
-            self.build_active_learn_stream(data_type=data_type)
+        self.build_active_learn_stream(data_type=data_type)
 
         stream = srsly.read_jsonl(ACTIVE_LEARN_PATH)
 
@@ -368,8 +367,7 @@ class DataStream:
     ):
         from prodigy.components.preprocess import add_tokens
 
-        if not SECOND_OPINION_PATH.exists():
-            self.build_second_opinion_stream(data_type)
+        self.build_second_opinion_stream(data_type)
 
         stream = srsly.read_jsonl(SECOND_OPINION_PATH)
         console.log("Local disk state loaded")
