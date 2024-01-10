@@ -1,8 +1,8 @@
 {"text":"As far as we know, our work is the first to create prompts based on testing results to improve LLMs' formal reasoning ability effectively.","cats":{"prompt-engineering":1,"hci":0,"programming":0}}
-{"text":"In this paper, we propose a novel prompt learning framework for code summarization called PromptCS.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":1}}
-{"text":"trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":1}}
-{"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"social-sciences":0,"programming":0}}
-{"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":0}}
+{"text":"In this paper, we propose a novel prompt learning framework for code summarization called PromptCS.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":1}}
+{"text":"trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":1}}
+{"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":0}}
+{"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":0}}
 {"text":"In this paper, we delve into the prospect of growing a strong LLM out of a weak one without the need for acquiring additional human-annotated data.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
 {"text":"We propose a new fine-tuning method called Self-Play fIne-tuNing (SPIN), which starts from a supervised fine-tuned model.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"education":0,"programming":0}}
 {"text":"At the heart of SPIN lies a self-play mechanism, where the LLM refines its capability by playing against instances of itself.","cats":{"prompt-engineering":0,"security":0,"recommender":0,"programming":0}}
@@ -81,26 +81,43 @@
 {"text":"The results show that test cases from LogicAsker can find logical reasoning failures in different LLMs with a rate of 25\\% - 94\\%.","cats":{"hci":0,"programming":0}}
 {"text":"In addition, the test cases of LogicAsker can be further used to design demonstration examples for in-context learning, which effectively improves the logical reasoning ability of LLMs, e.g., 10\\% for GPT-4.","cats":{"hci":0,"programming":0}}
 {"text":"All the code, data, and results will be released for reproduction and future research.","cats":{"hci":0,"programming":0}}
+{"text":"While recent advancements in Large Language Model (LLM) based agents have improved human behavior simulation, challenges inherent to LLMs (e.g., long context modeling) can undermine their believability.","cats":{"hci":1,"programming":0}}
+{"text":"Consequently, evaluating AI agent believability becomes imperative.","cats":{"hci":0,"programming":0}}
+{"text":"Unfortunately, prior research often neglects the negative impacts of LLM deficiencies.","cats":{"hci":0,"programming":0}}
+{"text":"To address these gaps, we introduce two metrics for assessing LLM-based agent believability: consistency, and robustness, together with a benchmark, SimulateBench, with which, we evaluate the consistency and robustness of agents implemented with popular LLMs.","cats":{"hci":0,"programming":0}}
+{"text":"We find that agents (i) struggle to accurately depict character information when presented with lengthy profile inputs; (ii) exhibit vulnerability to profile perturbations; and (iii) are significantly affected by certain key factors that impact their overall believability.","cats":{"hci":0,"programming":0}}
+{"text":"Code and SimulateBench are public at https://github.com/GAIR-NLP/GPTMan.","cats":{"hci":0,"programming":0}}
+{"text":"While Large Language Models (LLMs) like ChatGPT and GPT-4 have demonstrated exceptional proficiency in natural language processing, their efficacy in addressing complex, multifaceted tasks remains limited.","cats":{"hci":0,"programming":0}}
+{"text":"A growing area of research focuses on LLM-based agents equipped with external tools capable of performing diverse tasks.","cats":{"hci":0,"programming":0}}
+{"text":"However, existing LLM-based agents only support a limited set of tools which is unable to cover a diverse range of user queries, especially for those involving expertise domains.","cats":{"hci":0,"programming":0}}
+{"text":"As GitHub has hosted a multitude of repositories which can be seen as a good resource for tools, a promising solution is that LLM-based agents can autonomously integrate the repositories in GitHub according to the user queries to extend their tool set.","cats":{"hci":0,"programming":1}}
+{"text":"In this paper, we introduce GitAgent, an agent capable of achieving the autonomous tool extension from GitHub.","cats":{"hci":0,"programming":0}}
+{"text":"GitAgent follows a four-phase procedure to incorporate repositories and it can learn human experience by resorting to GitHub Issues/PRs to solve problems encountered during the procedure.","cats":{"hci":0,"programming":0}}
+{"text":"Experimental evaluation involving 30 user queries demonstrates GitAgent's effectiveness, achieving a 69.4% success rate on average.","cats":{"hci":0,"programming":0}}
+{"text":"(Source) code summarization is the task of automatically generating natural language summaries for given code snippets.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"Such summaries play a key role in helping developers understand and maintain source code.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Recently, with the successful application of large language models (LLMs) in numerous fields, software engineering researchers have also attempted to adapt LLMs to solve code summarization tasks.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"on the CodeSearchNet dataset involving multiple programming languages.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"In this study, we utilized ChatGPT to develop a web-based code generation platform consisting of key components: User Interface, Prompt Builder and Backend Service.","cats":{"hci":1,"programming":1}}
+{"text":"Code generation stands as a powerful technique in modern software development, improving development efficiency, reducing errors, and fostering standardization and consistency.","cats":{"hci":0,"programming":1}}
+{"text":"Recently, ChatGPT has exhibited immense potential in automatic code generation.","cats":{"hci":0,"programming":1}}
+{"text":"Recently, Large Language Models (LLMs) have achieved impressive performance in synthesizing computer programs based on a natural language prompt, mitigating the gap between natural language and structured programs.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts?","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Notably, this enhancement is achieved without the need for additional data or specialized prompts.","cats":{"hci":0,"social-sciences":0,"programming":0}}
 {"text":"We evaluate the resulting models using both frequentist and Bayesian data analysis.","cats":{"social-sciences":0,"programming":0}}
 {"text":"Large language models (LLMs) have exerted a considerable impact on diverse language-related tasks in recent years.","cats":{"social-sciences":0,"programming":0}}
 {"text":"In particular, we have reviewed a large body of literature on algorithmic fairness, and we have conducted semi-structured expert interviews with a wide range of experts from that area.","cats":{"social-sciences":0,"programming":0}}
 {"text":"However, we still lack empirical evidence to support organizations in deciding whether their requirements are good enough or impede subsequent activities.","cats":{"social-sciences":0,"programming":0}}
 {"text":"This paper documents a year-long experiment to \"profile\" the process of learning a programming language: gathering data to understand what makes a language hard to learn, and using that data to improve the learning process.","cats":{"social-sciences":0,"programming":0}}
 {"text":"Fourth, we show that our technique can likely generalize to languages with smaller user bases by simulating our statistical inferences on small N.","cats":{"social-sciences":0,"programming":0}}
-{"text":"(Source) code summarization is the task of automatically generating natural language summaries for given code snippets.","cats":{"social-sciences":0,"programming":1}}
-{"text":"Such summaries play a key role in helping developers understand and maintain source code.","cats":{"social-sciences":0,"programming":0}}
-{"text":"Recently, with the successful application of large language models (LLMs) in numerous fields, software engineering researchers have also attempted to adapt LLMs to solve code summarization tasks.","cats":{"social-sciences":0,"programming":1}}
-{"text":"on the CodeSearchNet dataset involving multiple programming languages.","cats":{"social-sciences":0,"programming":0}}
-{"text":"Recently, Large Language Models (LLMs) have achieved impressive performance in synthesizing computer programs based on a natural language prompt, mitigating the gap between natural language and structured programs.","cats":{"social-sciences":0,"programming":1}}
-{"text":"Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?","cats":{"social-sciences":0,"programming":0}}
-{"text":"and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts?","cats":{"social-sciences":0,"programming":0}}
-{"text":"Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.","cats":{"social-sciences":0,"programming":0}}
-{"text":"Notably, this enhancement is achieved without the need for additional data or specialized prompts.","cats":{"social-sciences":0,"programming":0}}
 {"text":"Our experiments also shed light on how different various simple configurations can affect the True Positive (TP) and False Positive (FP) rates.","cats":{"education":0,"programming":0}}
-{"text":"Through a customized IoT application workflow instance, experimental results show that KCES is superior to the baseline in total workflow duration, average workflow duration, and resource usage and has the capabilities of horizontal roaming and vertical offloading for workflow tasks.","cats":{"recommender":0,"programming":0}}
+{"text":"Through a customized IoT application workflow instance, experimental results show that KCES is superior to the baseline in total workflow duration, average workflow duration, and resource usage and has the capabilities of horizontal roaming and vertical offloading for workflow tasks.","cats":{"recommender":0,"production":0,"programming":0}}
 {"text":"Meanwhile, we have also organized and presented papers with evaluation content to reveal the performance and effectiveness of LLMs in various software engineering tasks, providing guidance for researchers and developers to optimize.","cats":{"production":0,"programming":1}}
 {"text":"We have categorized these papers in detail and reviewed the current research status of LLMs from the perspective of seven major software engineering tasks, hoping this will help researchers better grasp the research trends and address the issues when applying LLMs.","cats":{"production":0,"programming":1}}
 {"text":"Large language models display remarkable capabilities in logical and mathematical reasoning, allowing them to solve complex tasks.","cats":{"production":0,"programming":1}}
+{"text":"To address this, we propose a multilevel generative semantic communication system with a two-stage training framework.","cats":{"production":0,"programming":0}}
 {"text":"To support further research and development, we have made the model's checkpoints and source codes accessible to the scientific community.","cats":{"architectures":0,"programming":0}}
 {"text":"Large languages models (LLMs) trained on datasets of publicly available source code have established a new state-of-the-art in code completion.","cats":{"architectures":0,"programming":1}}
 {"text":"Instead, LLMs often invent, or \"hallucinate\", non-existent APIs or produce variants of already existing code.","cats":{"architectures":0,"programming":1}}
@@ -130,7 +147,6 @@
 {"text":"Recent advancements in Large Language Models (LLMs) have enhanced their ability to comprehend natural and programming languages, enabling them to generate patches based on review comments.","cats":{"programming":1}}
 {"text":"We have found that large language models are indeed a promising technology for supporting software model evolution, and that it is worth investigating further in the area of software model evolution.","cats":{"programming":1}}
 {"text":"The ubiquitous adoption of Large Language Generation Models (LLMs) in programming has underscored the importance of differentiating between human-written code and code generated by intelligent models.","cats":{"programming":1}}
-{"text":"To address this, we propose a multilevel generative semantic communication system with a two-stage training framework.","cats":{"programming":0}}
 {"text":"Despite the continued research and progress in building secure systems, Android applications continue to be ridden with vulnerabilities, necessitating effective detection methods.","cats":{"programming":0}}
 {"text":"We propose a class of objective functions based on the variational representation of the $f$-divergence, from which we extract a list of five posterior probability estimators leveraging well-known $f$-divergences.","cats":{"programming":0}}
 {"text":"Then, we numerically test the set of proposed objective functions in three application scenarios: toy examples, image data sets, and signal detection/decoding problems.","cats":{"programming":0}}
@@ -144,10 +160,7 @@
 {"text":"This paper presents a detailed investigation into the use of Large Language Models (LLMs) specifically, GPT 3.5 and GPT 4 to generate and evaluate GitHub Action workflows for DevOps tasks.","cats":{"programming":1}}
 {"text":"In this paper, we present an extensive study on the code switching task specifically for the machine translation task comparing multiple LLMs.","cats":{"programming":0}}
 {"text":"We posit that the efficacy of multilingual large language models in contextual code switching is constrained by their training methodologies.","cats":{"programming":0}}
-{"text":"Code generation stands as a powerful technique in modern software development, improving development efficiency, reducing errors, and fostering standardization and consistency.","cats":{"programming":1}}
-{"text":"Recently, ChatGPT has exhibited immense potential in automatic code generation.","cats":{"programming":1}}
 {"text":"However, existing researches on code generation lack guidance for practical software development process.","cats":{"programming":1}}
-{"text":"In this study, we utilized ChatGPT to develop a web-based code generation platform consisting of key components: User Interface, Prompt Builder and Backend Service.","cats":{"programming":1}}
 {"text":"We propose an approach that utilizes large language models for model completion and discovering editing patterns in model histories of software systems.","cats":{"programming":1}}
 {"text":"While instructions fine-tuning of large language models (LLMs) has been proven to enhance performance across various applications, the influence of the instruction dataset mixture on LLMs has not been thoroughly explored.","cats":{"programming":0}}
 {"text":"In this paper, we experiment on the corpus of code and math, yielding LLaMA Pro-8.3B, a versatile foundation model initialized from LLaMA2-7B, excelling in general tasks, programming, and mathematics.","cats":{"programming":1}}
@@ -166,7 +179,6 @@
 {"text":"We plan to open-source different versions of \\mathpile with the scripts used for processing, to facilitate future developments in this field.","cats":{"programming":0}}
 {"text":"Additionally, we refine an existing randomized algorithm to output the codewords on the list, enhancing its success probability and reducing its running time.","cats":{"programming":0}}
 {"text":"Using the inherent directory structure of code data as a source of training examples, we demonstrate improvements in perplexity, even for tasks unrelated to coding.","cats":{"programming":1}}
-{"text":"As GitHub has hosted a multitude of repositories which can be seen as a good resource for tools, a promising solution is that LLM-based agents can autonomously integrate the repositories in GitHub according to the user queries to extend their tool set.","cats":{"programming":1}}
 {"text":"Specifically, a Large Language Model (LLM) transforms text into expressive representation.","cats":{"programming":0}}
 {"text":"The research scrutinizes the proficiency of GPT 3.5 and GPT 4 in generating GitHub workflows, while assessing the influence of various prompt elements in constructing the most efficient pipeline.","cats":{"programming":0}}
 {"text":"The research introduces a GitHub App built on Probot, empowering users to automate workflow generation within GitHub ecosystem.","cats":{"programming":0}}
@@ -305,12 +317,6 @@
 {"text":"SparseOcc demonstrates its efficacy on the Occ3D-nus dataset by achieving a mean Intersection over Union (mIoU) of 26.0, while maintaining a real-time inference speed of 25.4 FPS.","cats":{"programming":0}}
 {"text":"By incorporating temporal modeling from the preceding 8 frames, SparseOcc further improves its performance, achieving 30.9 mIoU without whistles and bells.","cats":{"programming":0}}
 {"text":"Human behavior simulation of AI agents necessitates the agents to possess a quality of believability, which is crucial as it facilitates users in establishing trust toward the agents and streamlines the fulfillment of the agents' goal.","cats":{"programming":0}}
-{"text":"While recent advancements in Large Language Model (LLM) based agents have improved human behavior simulation, challenges inherent to LLMs (e.g., long context modeling) can undermine their believability.","cats":{"programming":0}}
-{"text":"Consequently, evaluating AI agent believability becomes imperative.","cats":{"programming":0}}
-{"text":"Unfortunately, prior research often neglects the negative impacts of LLM deficiencies.","cats":{"programming":0}}
-{"text":"To address these gaps, we introduce two metrics for assessing LLM-based agent believability: consistency, and robustness, together with a benchmark, SimulateBench, with which, we evaluate the consistency and robustness of agents implemented with popular LLMs.","cats":{"programming":0}}
-{"text":"We find that agents (i) struggle to accurately depict character information when presented with lengthy profile inputs; (ii) exhibit vulnerability to profile perturbations; and (iii) are significantly affected by certain key factors that impact their overall believability.","cats":{"programming":0}}
-{"text":"Code and SimulateBench are public at https://github.com/GAIR-NLP/GPTMan.","cats":{"programming":0}}
 {"text":"This paper introduces Auto-modeling of Formal Verification with Real-world Prompting for 5G and NextG protocols (AVRE), a novel system designed for the formal verification of Next Generation (NextG) communication protocols, addressing the increasing complexity and scalability challenges in network protocol design and verification.","cats":{"programming":0}}
 {"text":"Utilizing Large Language Models (LLMs), AVRE transforms protocol descriptions into dependency graphs and formal models, efficiently resolving ambiguities and capturing design intent.","cats":{"programming":0}}
 {"text":"The system integrates a transformer model with LLMs to autonomously establish quantifiable dependency relationships through cross- and self-attention mechanisms.","cats":{"programming":0}}
@@ -335,13 +341,7 @@
 {"text":"SPLiCe is an innovative method for creating training examples by using a retrieval method to collate the most mutually relevant documents into a single training context.","cats":{"programming":0}}
 {"text":"Our results indicate that \\method{} enhances model performance and can be used to train large models to utilize long contexts better.","cats":{"programming":0}}
 {"text":"We validate our results by training a large $3$B model, showing both perplexity improvements and better long-context performance on downstream tasks.","cats":{"programming":0}}
-{"text":"While Large Language Models (LLMs) like ChatGPT and GPT-4 have demonstrated exceptional proficiency in natural language processing, their efficacy in addressing complex, multifaceted tasks remains limited.","cats":{"programming":0}}
-{"text":"A growing area of research focuses on LLM-based agents equipped with external tools capable of performing diverse tasks.","cats":{"programming":0}}
-{"text":"However, existing LLM-based agents only support a limited set of tools which is unable to cover a diverse range of user queries, especially for those involving expertise domains.","cats":{"programming":0}}
 {"text":"It remains a challenge for LLM-based agents to extend their tools autonomously when confronted with various user queries.  ","cats":{"programming":0}}
-{"text":"In this paper, we introduce GitAgent, an agent capable of achieving the autonomous tool extension from GitHub.","cats":{"programming":0}}
-{"text":"GitAgent follows a four-phase procedure to incorporate repositories and it can learn human experience by resorting to GitHub Issues/PRs to solve problems encountered during the procedure.","cats":{"programming":0}}
-{"text":"Experimental evaluation involving 30 user queries demonstrates GitAgent's effectiveness, achieving a 69.4% success rate on average.","cats":{"programming":0}}
 {"text":"Tanner codes are graph-based linear codes whose parity-check matrices can be characterized by a bipartite graph $G$ together with an inner code $C_0$. Expander codes are Tanner codes whose defining bipartite graph $G$ has good expansion property.","cats":{"programming":0}}
 {"text":"The landmark work of Sipser and Spielman showed that every bipartite expander $G$ with expansion ratio $\\delta>3/4$ together with a parity-check code defines an expander code which corrects $\\Omega(n)$ errors in $O(n)$ time, where $n$ is the code length.","cats":{"programming":0}}
 {"text":"Viderman showed that $\\delta>2/3-\\Omega(1)$ is already sufficient.","cats":{"programming":0}}

@@ -60,16 +60,16 @@
 {"text":"While respondents were optimistic overall, areas of concern included feeling like the UK is missing out on opportunities to use AI to improve public services (76%), and only a minority of respondents (32%) felt like there was clear guidance on generative AI usage in their workplaces.","cats":{"prompt-engineering":0,"security":0,"hci":0}}
 {"text":"In other words, it is clear that generative AI is already transforming the public sector, but uptake is happening in a disorganised fashion without clear guidelines.","cats":{"prompt-engineering":0,"security":0,"hci":0}}
 {"text":"The UK's public sector urgently needs to develop more systematic methods for taking advantage of the technology.","cats":{"prompt-engineering":0,"security":0}}
-{"text":"Recent trends have seen a growing reliance on data-driven techniques to facilitate the modeling process and yield accurate channel predictions.","cats":{"prompt-engineering":0,"security":0}}
-{"text":"We offer a comprehensive architecture for PINN methodology, designed to inform and inspire future model development.","cats":{"prompt-engineering":0,"security":0}}
+{"text":"Recent trends have seen a growing reliance on data-driven techniques to facilitate the modeling process and yield accurate channel predictions.","cats":{"prompt-engineering":0,"security":0,"production":0}}
+{"text":"We offer a comprehensive architecture for PINN methodology, designed to inform and inspire future model development.","cats":{"prompt-engineering":0,"security":0,"production":0}}
 {"text":"Large Language Models (LLMs) have shown extraordinary capabilities in understanding and generating text that closely mirrors human communication.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"architectures":0}}
 {"text":"We investigate the extent of these hallucinations using an original suite of legal queries, comparing LLMs' responses to structured legal metadata and examining their consistency.","cats":{"robustness":0,"security":0,"hci":0,"programming":0}}
 {"text":"Our work makes four key contributions: (1) We develop a typology of legal hallucinations, providing a conceptual framework for future research in this area.","cats":{"robustness":0,"security":0,"hci":0,"social-sciences":0}}
 {"text":"(2) We find that legal hallucinations are alarmingly prevalent, occurring between 69% of the time with ChatGPT 3.5 and 88% with Llama 2, when these models are asked specific, verifiable questions about random federal court cases.","cats":{"robustness":1,"security":0,"hci":0,"social-sciences":0}}
 {"text":"The $a$-number is an invariant of the isomorphism class of the $p$-torsion group scheme.","cats":{"security":0}}
-{"text":"For this purpose, data from low-cost in-vehicle inertial sensors such as the accelerometer and gyroscope sensor are fused and fed into a long short-term memory (LSTM) neural network.","cats":{"security":0}}
+{"text":"For this purpose, data from low-cost in-vehicle inertial sensors such as the accelerometer and gyroscope sensor are fused and fed into a long short-term memory (LSTM) neural network.","cats":{"security":0,"production":0}}
 {"text":"A tuple (Z_1,...,Z_p) of matrices of size r is said to be a commuting extension of a tuple (A_1,...,A_p) of matrices of size n <r if the Z_i pairwise commute and each A_i sits in the upper left corner of a block decomposition of Z_i.","cats":{"security":0,"social-sciences":0}}
-{"text":"Channel modeling is fundamental in advancing wireless systems and has thus attracted considerable research focus.","cats":{"security":0}}
+{"text":"Channel modeling is fundamental in advancing wireless systems and has thus attracted considerable research focus.","cats":{"security":0,"production":0}}
 {"text":"The analyzed tasks demonstrate the effectiveness of the proposed estimators and that the SL divergence achieves the highest classification accuracy in almost all the scenarios.","cats":{"security":0}}
 {"text":"Deep learning models trained under this paradigm heavily rely on the assumption that neural networks can learn to predict the presence or absence of a given concept independently of other concepts.","cats":{"security":0,"programming":0}}
 {"text":"Through a difference-in-differences approach, we find that deplatforming reduces online attention toward influencers.","cats":{"security":0,"hci":0,"social-sciences":1}}
@@ -79,7 +79,7 @@
 {"text":"In all case studies, we show that co-training via task-relatedness is advantageous and prevents negative transfer (which occurs when MT model's performance is worse than that of at least one single-task model).","cats":{"security":0}}
 {"text":"Fine-tuning has been demonstrated to be an effective method to improve the domain performance of large language models (LLMs).","cats":{"security":0}}
 {"text":"With the rapid development of machine learning and growing concerns about data privacy, federated learning has become an increasingly prominent focus.","cats":{"security":0,"production":0}}
-{"text":"Our method achieves human-level performance in estimating fetal biometrics and estimates well-calibrated credible intervals in which the true biometric value is expected to lie.","cats":{"security":0,"social-sciences":0}}
+{"text":"Our method achieves human-level performance in estimating fetal biometrics and estimates well-calibrated credible intervals in which the true biometric value is expected to lie.","cats":{"security":0,"social-sciences":0,"production":0}}
 {"text":"In the last few years, there is a growing interest in computer aided diagnostic (CAD) using most image and clinical data of the lesion.","cats":{"security":0}}
 {"text":"Interestingly, this result does not require assumptions on the prior distribution.","cats":{"security":0}}
 {"text":"In this paper, we unify different types of structured data (i.e., table, key-value data, knowledge graph) into the graph format and cast different data-to-text generation tasks as graph-to-text generation.","cats":{"security":0}}
@@ -111,11 +111,11 @@
 {"text":"We employ several adversarial attacks to evaluate its robustness.","cats":{"security":1}}
 {"text":"Extensive experimentation demonstrates the framework's superior performance and adaptability, providing valuable insights into the collaborative potential of multiple agents in overcoming the limitations of individual models.","cats":{"security":0,"hci":0,"architectures":0}}
 {"text":"We use the Cartier operator on $H^0(\\mathcal{A}_2,\\Omega^1)$ to find a closed formula for the $a$-number of the form $\\mathcal{A}_2 = v(Y^{\\sqrt{q}}+Y-x^{\\frac{\\sqrt{q}+1}{2}})$ where $q=p^s$ over the finite field $\\mathbb{F}_{q^2}$. The application of the computed $a$-number in coding theory is illustrated by the relationship between the algebraic properties of the curve and the parameters of codes that are supported by it.","cats":{"security":0,"architectures":0}}
-{"text":"To collect data, a vehicle equipped with a GNSS receiver, along with Inertial Measurement Unit (IMU) is used.","cats":{"security":0}}
-{"text":"The detection framework incorporates two strategies: The first strategy involves comparing the predicted location shift, which is the distance traveled between two consecutive timestamps, with the inertial sensor-based location shift.","cats":{"security":0}}
-{"text":"The second strategy employs a Random-Forest supervised machine learning model to detect and classify turns, distinguishing between left and right turns using the output from the steering angle sensor.","cats":{"security":0}}
-{"text":"Importantly, the IMU data remains uncompromised throughout the spoofing attack.","cats":{"security":0,"hci":0}}
-{"text":"To test the effectiveness of the detection framework, experiments are conducted in Tuscaloosa, AL, mimicking urban road structures.","cats":{"security":0}}
+{"text":"To collect data, a vehicle equipped with a GNSS receiver, along with Inertial Measurement Unit (IMU) is used.","cats":{"security":0,"production":0}}
+{"text":"The detection framework incorporates two strategies: The first strategy involves comparing the predicted location shift, which is the distance traveled between two consecutive timestamps, with the inertial sensor-based location shift.","cats":{"security":0,"production":0}}
+{"text":"The second strategy employs a Random-Forest supervised machine learning model to detect and classify turns, distinguishing between left and right turns using the output from the steering angle sensor.","cats":{"security":0,"production":0}}
+{"text":"Importantly, the IMU data remains uncompromised throughout the spoofing attack.","cats":{"security":0,"hci":0,"production":0}}
+{"text":"To test the effectiveness of the detection framework, experiments are conducted in Tuscaloosa, AL, mimicking urban road structures.","cats":{"security":0,"production":0}}
 {"text":"This notion was discovered and rediscovered in several contexts including algebraic complexity theory (in Strassen's work on tensor rank), in numerical analysis for the construction of cubature formulas and in quantum mechanics for the study of computational methods and the study of the so-called \"quantum Zeno dynamics.\"","cats":{"security":0}}
 {"text":"Commuting extensions have also attracted the attention of the linear algebra community.","cats":{"security":0,"hci":0,"recommender":0}}
 {"text":"In this paper we present 3 types of results:   (i) Theorems on the uniqueness of commuting extensions for three matrices or more.   ","cats":{"security":0,"programming":0}}
@@ -136,9 +136,9 @@
 {"text":"This strategy extends directly to the case where the searcher has no knowledge of the terrain beforehand.","cats":{"security":0,"hci":0}}
 {"text":"For $2.5$D terrains we show that the optimal competitive ratio depends on the maximum slope $\\lambda$ of the terrain, and is hence unbounded in general.","cats":{"security":0}}
 {"text":"Specifically, we provide a lower bound on the competitive ratio of $\\Omega(\\sqrt{\\lambda})$. Finally, we complement the lower bound with a searching strategy based on the maximum slope of the known terrain, which achieves a competitive ratio of $O(\\sqrt{\\lambda})$.","cats":{"security":0}}
-{"text":"In this work, we first provide a concise overview of data-driven channel modeling methods, highlighting their limitations.","cats":{"security":0}}
-{"text":"Subsequently, we introduce the concept and advantages of physics-informed neural network (PINN)-based modeling and a summary of recent contributions in this area.","cats":{"security":0}}
-{"text":"Our findings demonstrate that PINN-based approaches in channel modeling exhibit promising attributes such as generalizability, interpretability, and robustness.","cats":{"security":0,"recommender":0}}
+{"text":"In this work, we first provide a concise overview of data-driven channel modeling methods, highlighting their limitations.","cats":{"security":0,"production":0}}
+{"text":"Subsequently, we introduce the concept and advantages of physics-informed neural network (PINN)-based modeling and a summary of recent contributions in this area.","cats":{"security":0,"production":0}}
+{"text":"Our findings demonstrate that PINN-based approaches in channel modeling exhibit promising attributes such as generalizability, interpretability, and robustness.","cats":{"security":0,"recommender":0,"production":0}}
 {"text":"A case-study of our recent work on precise indoor channel prediction with semantic segmentation and deep learning is presented.","cats":{"security":0,"production":0}}
 {"text":"Adversarial attacks can have serious consequences, particularly in applications such as autonomous vehicles, medical diagnosis, and security systems.","cats":{"security":1}}
 {"text":"In this work, we analyze the impact of model interpretability due to adversarial attacks on text classification problems.","cats":{"security":0}}

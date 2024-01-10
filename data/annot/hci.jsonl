@@ -2,6 +2,13 @@
 {"text":"Our survey findings provide a basis for developing the concept of linear and non-linear contexts, which we define and use to enable an agent-centric projection of prompting techniques providing a lens through which prompting techniques can be viewed as multi-agent systems.","cats":{"prompt-engineering":1,"hci":1}}
 {"text":"The paper discusses the implications of this lens, for the cross-pollination of research between LLM prompting and LLM-based multi-agent systems; and also, for the generation of synthetic training data based on existing prompting techniques in research.","cats":{"prompt-engineering":1,"hci":0}}
 {"text":"Current prompting approach for language model inference mainly rely on Language Model's (LLM) autonomous exploration of reasoning paths, confronts an inevitable retracing operation when erroneous routes are encountered.","cats":{"prompt-engineering":1,"hci":0}}
+{"text":"However, instruction prompting involves designing crafted prompts for zero-shot learning or selecting appropriate samples for few-shot learning and requires users to have professional domain knowledge, while task-oriented fine-tuning requires high training costs.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0}}
+{"text":"In this paper, we propose a novel prompt learning framework for code summarization called PromptCS.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":1}}
+{"text":"trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":1}}
+{"text":"To enhance the prompt, we introduce position shifting strategy to mitigate position bias and augment the prompt with auxiliary information from conventional recommendation models, thereby enriching the contextual understanding of the LLM.","cats":{"prompt-engineering":1,"hci":0}}
+{"text":"Specifically, Prompt Builder dynamically generated comprehensive prompts to enhance model generation performance.","cats":{"prompt-engineering":1,"hci":0}}
+{"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":0}}
+{"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":0}}
 {"text":"In this paper, we delve into the prospect of growing a strong LLM out of a weak one without the need for acquiring additional human-annotated data.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
 {"text":"We propose a new fine-tuning method called Self-Play fIne-tuNing (SPIN), which starts from a supervised fine-tuned model.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"education":0,"programming":0}}
 {"text":"Empirically, we evaluate our method on several benchmark datasets including the HuggingFace Open LLM Leaderboard, MT-Bench, and datasets from Big-Bench.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"programming":0}}
@@ -101,7 +108,7 @@
 {"text":"This study further sheds insights on the limitations and capabilities of using RAG for LLMs in interpreting TTPs.","cats":{"robustness":0,"hci":0}}
 {"text":"Through a difference-in-differences approach, we find that deplatforming reduces online attention toward influencers.","cats":{"security":0,"hci":0,"social-sciences":1}}
 {"text":"Extensive experimentation demonstrates the framework's superior performance and adaptability, providing valuable insights into the collaborative potential of multiple agents in overcoming the limitations of individual models.","cats":{"security":0,"hci":0,"architectures":0}}
-{"text":"Importantly, the IMU data remains uncompromised throughout the spoofing attack.","cats":{"security":0,"hci":0}}
+{"text":"Importantly, the IMU data remains uncompromised throughout the spoofing attack.","cats":{"security":0,"hci":0,"production":0}}
 {"text":"Commuting extensions have also attracted the attention of the linear algebra community.","cats":{"security":0,"hci":0,"recommender":0}}
 {"text":"Taken together, these findings caution against the rapid and unsupervised integration of popular LLMs into legal tasks.","cats":{"security":0,"hci":0,"social-sciences":0}}
 {"text":"Furthermore, unlike other types of artificial intelligence, it is a technology that has quickly become widely available for bottom-up adoption: essentially anyone can decide to make use of it in their day to day work.","cats":{"security":0,"hci":0,"social-sciences":0,"education":0}}
@@ -125,9 +132,9 @@
 {"text":"The advanced capabilities of Large Language Models (LLMs) have made them invaluable across various applications, from conversational agents and content creation to data analysis, research, and innovation.","cats":{"hci":0,"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have demonstrated remarkable performance and tremendous potential across a wide range of tasks.","cats":{"hci":0,"social-sciences":0}}
 {"text":"Through a series of simulation experiments conducted on corn crops in Iowa, we compare Partially Observable Markov Decision Process (POMDP) models with Markov Decision Process (MDP) models.","cats":{"hci":0}}
-{"text":"In the second stage, a noise reduction block (NRB) based on Swin Transformer is introduced, coupled with the multilevel codebook from the first stage, serving as a high-quality semantic knowledge base (SKB) for generative feature restoration.","cats":{"hci":0}}
+{"text":"In the second stage, a noise reduction block (NRB) based on Swin Transformer is introduced, coupled with the multilevel codebook from the first stage, serving as a high-quality semantic knowledge base (SKB) for generative feature restoration.","cats":{"hci":0,"production":0}}
 {"text":"Besides, ZOE achieves this by sacrificing only a small performance on biased samples, which is simple and effective.","cats":{"hci":0,"social-sciences":0}}
-{"text":"The KCES includes a cloud-edge workflow scheduling engine for KubeEdge and workflow scheduling strategies for task horizontal roaming and vertical offloading.","cats":{"hci":0}}
+{"text":"The KCES includes a cloud-edge workflow scheduling engine for KubeEdge and workflow scheduling strategies for task horizontal roaming and vertical offloading.","cats":{"hci":0,"production":0}}
 {"text":"The hybrid attention mechanism comprises a proposed enhanced multi-head self-attention and coordinate attention mechanisms increase the ability of attention networks to perceive contextual information and enhances the utilization range of network features.","cats":{"hci":0}}
 {"text":"To address these issues, we propose an end-to-end model called Fine-Grained Extraction Network (FGENet).","cats":{"hci":0}}
 {"text":"The fused features are then passed to both regression and classification heads, where the former provides predicted point coordinates for a given image, and the latter determines the confidence level for each predicted point being an individual.","cats":{"hci":0}}
@@ -165,7 +172,7 @@
 {"text":"Conversation agents fueled by Large Language Models (LLMs) are providing a new way to interact with visual data.","cats":{"hci":1}}
 {"text":"With recent advances in multi-modal foundation models, the previously text-only large language models (LLM) have evolved to incorporate visual input, opening up unprecedented opportunities for various applications in visualization.","cats":{"hci":1}}
 {"text":"Our work explores the capabilities of LLMs for creating and refining visualizations via conversational interfaces.","cats":{"hci":1}}
-{"text":"They endow Large Language Models (LLMs) with powerful capabilities in visual understanding, enabling them to tackle diverse multi-modal tasks.","cats":{"hci":1}}
+{"text":"They endow Large Language Models (LLMs) with powerful capabilities in visual understanding, enabling them to tackle diverse multi-modal tasks.","cats":{"hci":0}}
 {"text":"Multi-modal large language models (LLM) have achieved powerful capabilities for visual semantic understanding in recent years.","cats":{"hci":0}}
 {"text":"Chat2VIS shows that LLMs together with the proposed prompts offer a reliable approach to rendering visualisations from natural language queries, even when queries are highly misspecified and underspecified.","cats":{"hci":1}}
 {"text":"This paper studies Large Language Models (LLMs) for structured data--particularly graphs--a crucial data modality that remains underexplored in the LLM literature.","cats":{"hci":1}}
@@ -182,7 +189,7 @@
 {"text":"Previous inquiries on the effectiveness of this intervention are inconclusive because 1) they consider only few deplatforming events; 2) they consider only overt engagement traces (e.g., likes and posts) but not passive engagement (e.g., views); 3) they do not consider all the potential places users impacted by the deplatforming event might migrate to.","cats":{"hci":0,"social-sciences":1}}
 {"text":"Further, as we study over a hundred deplatforming events, we can analyze in which cases deplatforming is more or less impactful, revealing nuances about the intervention.","cats":{"hci":0,"architectures":0}}
 {"text":"Notably, we find that both permanent and temporary deplatforming reduce online attention toward influencers; Overall, this work contributes to the ongoing effort to map the effectiveness of content moderation interventions, driving platform governance away from speculation.","cats":{"hci":0,"social-sciences":0}}
-{"text":"These digital companions often lack memory of past interactions, while relying heavily on the internet for speech processing, raising privacy concerns.","cats":{"hci":0}}
+{"text":"These digital companions often lack memory of past interactions, while relying heavily on the internet for speech processing, raising privacy concerns.","cats":{"hci":0,"production":0}}
 {"text":"Despite this, they are prone to generating factual and commonsense errors, raising concerns in critical areas like healthcare, journalism, and education to mislead users.","cats":{"hci":0}}
 {"text":"A significant distinction of advanced LLMs, such as ChatGPT, is their demonstrated ability to \"reason.\"","cats":{"hci":0,"programming":0}}
 {"text":"The results provide insights into LLMs' reasoning abilities and reveal the logical rules the LLMs did not learn well.","cats":{"hci":0,"programming":0}}
@@ -264,21 +271,21 @@
 {"text":"We then leverage this framework to generate effective user queries for missing context.","cats":{"hci":0}}
 {"text":"Compared to baselines, our method improves the rate at which generated questions are answerable by the user by 38 percentage points and classification performance by over 10 percentage points macro F1.","cats":{"hci":0}}
 {"text":"Thus, this approach may provide a valuable component for future misinformation mitigation pipelines.","cats":{"hci":0,"programming":0}}
-{"text":"RGBT tracking has been widely used in various fields such as robotics, surveillance processing, and autonomous driving.","cats":{"hci":0}}
-{"text":"Existing RGBT trackers fully explore the spatial information between the template and the search region and locate the target based on the appearance matching results.","cats":{"hci":0}}
-{"text":"However, these RGBT trackers have very limited exploitation of temporal information, either ignoring temporal information or exploiting it through online sampling and training.","cats":{"hci":0}}
-{"text":"The former struggles to cope with the object state changes, while the latter neglects the correlation between spatial and temporal information.","cats":{"hci":0,"social-sciences":0}}
-{"text":"To alleviate these limitations, we propose a novel Temporal Adaptive RGBT Tracking framework, named as TATrack.","cats":{"hci":0}}
-{"text":"TATrack has a spatio-temporal two-stream structure and captures temporal information by an online updated template, where the two-stream structure refers to the multi-modal feature extraction and cross-modal interaction for the initial template and the online update template respectively.","cats":{"hci":0}}
-{"text":"TATrack contributes to comprehensively exploit spatio-temporal information and multi-modal information for target localization.","cats":{"hci":0}}
-{"text":"In addition, we design a spatio-temporal interaction (STI) mechanism that bridges two branches and enables cross-modal interaction to span longer time scales.","cats":{"hci":0}}
+{"text":"RGBT tracking has been widely used in various fields such as robotics, surveillance processing, and autonomous driving.","cats":{"hci":0,"production":0}}
+{"text":"Existing RGBT trackers fully explore the spatial information between the template and the search region and locate the target based on the appearance matching results.","cats":{"hci":0,"production":0}}
+{"text":"However, these RGBT trackers have very limited exploitation of temporal information, either ignoring temporal information or exploiting it through online sampling and training.","cats":{"hci":0,"production":0}}
+{"text":"The former struggles to cope with the object state changes, while the latter neglects the correlation between spatial and temporal information.","cats":{"hci":0,"social-sciences":0,"production":0}}
+{"text":"To alleviate these limitations, we propose a novel Temporal Adaptive RGBT Tracking framework, named as TATrack.","cats":{"hci":0,"production":0}}
+{"text":"TATrack has a spatio-temporal two-stream structure and captures temporal information by an online updated template, where the two-stream structure refers to the multi-modal feature extraction and cross-modal interaction for the initial template and the online update template respectively.","cats":{"hci":0,"production":0}}
+{"text":"TATrack contributes to comprehensively exploit spatio-temporal information and multi-modal information for target localization.","cats":{"hci":0,"production":0}}
+{"text":"In addition, we design a spatio-temporal interaction (STI) mechanism that bridges two branches and enables cross-modal interaction to span longer time scales.","cats":{"hci":0,"production":0}}
 {"text":"Extensive experiments on three popular RGBT tracking benchmarks show that our method achieves state-of-the-art performance, while running at real-time speed.","cats":{"hci":0,"production":0}}
-{"text":"In the age of personal voice assistants, the question of privacy arises.","cats":{"hci":0}}
-{"text":"Modern smartphones now enable on-device speech processing, making cloud-based solutions unnecessary.","cats":{"hci":0}}
-{"text":"Personal assistants for the elderly should excel at memory recall, especially in medical examinations.","cats":{"hci":0}}
-{"text":"The e-ViTA project developed a versatile conversational application with local processing and speaker recognition.","cats":{"hci":0}}
-{"text":"This paper highlights the importance of speaker diarization enriched with sensor data fusion for contextualized conversation preservation.","cats":{"hci":0}}
-{"text":"The use cases applied to the e-VITA project have shown that truly personalized dialogue is pivotal for individual voice assistants.","cats":{"hci":0}}
+{"text":"In the age of personal voice assistants, the question of privacy arises.","cats":{"hci":0,"production":0}}
+{"text":"Modern smartphones now enable on-device speech processing, making cloud-based solutions unnecessary.","cats":{"hci":0,"production":0}}
+{"text":"Personal assistants for the elderly should excel at memory recall, especially in medical examinations.","cats":{"hci":0,"production":0}}
+{"text":"The e-ViTA project developed a versatile conversational application with local processing and speaker recognition.","cats":{"hci":0,"production":0}}
+{"text":"This paper highlights the importance of speaker diarization enriched with sensor data fusion for contextualized conversation preservation.","cats":{"hci":0,"production":0}}
+{"text":"The use cases applied to the e-VITA project have shown that truly personalized dialogue is pivotal for individual voice assistants.","cats":{"hci":0,"production":0}}
 {"text":"Secure local processing and sensor data fusion ensure virtual companions meet individual user needs without compromising privacy or data security.","cats":{"hci":0,"production":0}}
 {"text":"Large Language Models (LLMs) like ChatGPT are foundational in various applications due to their extensive knowledge from pre-training and fine-tuning.","cats":{"hci":0,"programming":0}}
 {"text":"Current methods for evaluating LLMs' veracity are limited by test data leakage or the need for extensive human labor, hindering efficient and accurate error detection.","cats":{"hci":0}}
@@ -369,3 +376,163 @@
 {"text":"The paper notes the lack of focus on computational and energy efficiency in evaluating research in these areas.  ","cats":{"hci":0}}
 {"text":"In all, the scoping","cats":{"hci":0}}
 {"text":"However, humans are adept at abstracting optimal solutions from problems, thereby facilitating swift and precise reasoning for similar problems resolution.  ","cats":{"hci":0}}
+{"text":"Evaluations involving ten LLMs across three categories reveal a preference for specific scenarios and limited cognitive abilities in tool learning.","cats":{"hci":1}}
+{"text":"Existing evaluations of tool learning primarily focus on validating the alignment of selected tools for large language models (LLMs) with expected outcomes.","cats":{"hci":0}}
+{"text":"However, these approaches rely on a limited set of scenarios where answers can be pre-determined, diverging from genuine needs.","cats":{"hci":0}}
+{"text":"Furthermore, a sole emphasis on outcomes disregards the intricate capabilities essential for LLMs to effectively utilize tools.","cats":{"hci":0}}
+{"text":"To tackle this issue, we propose ToolEyes, a fine-grained system tailored for the evaluation of the LLMs' tool learning capabilities in authentic scenarios.","cats":{"hci":0}}
+{"text":"The system meticulously examines seven real-world scenarios, analyzing five dimensions crucial to LLMs in tool learning: format alignment, intent comprehension, behavior planning, tool selection, and answer organization.","cats":{"hci":0}}
+{"text":"Additionally, ToolEyes incorporates a tool library boasting approximately 600 tools, serving as an intermediary between LLMs and the physical world.  ","cats":{"hci":0}}
+{"text":"Intriguingly, expanding the model size even exacerbates the hindrance to tool learning.","cats":{"hci":0}}
+{"text":"These findings offer instructive insights aimed at advancing the field of tool learning.","cats":{"hci":0}}
+{"text":"The data is available att https://github.com/Junjie-Ye/ToolEyes.git.","cats":{"hci":0}}
+{"text":"While recent advancements in Large Language Model (LLM) based agents have improved human behavior simulation, challenges inherent to LLMs (e.g., long context modeling) can undermine their believability.","cats":{"hci":1,"programming":0}}
+{"text":"Human behavior simulation of AI agents necessitates the agents to possess a quality of believability, which is crucial as it facilitates users in establishing trust toward the agents and streamlines the fulfillment of the agents' goal.  ","cats":{"hci":0}}
+{"text":"Consequently, evaluating AI agent believability becomes imperative.","cats":{"hci":0,"programming":0}}
+{"text":"Unfortunately, prior research often neglects the negative impacts of LLM deficiencies.","cats":{"hci":0,"programming":0}}
+{"text":"To address these gaps, we introduce two metrics for assessing LLM-based agent believability: consistency, and robustness, together with a benchmark, SimulateBench, with which, we evaluate the consistency and robustness of agents implemented with popular LLMs.","cats":{"hci":0,"programming":0}}
+{"text":"We find that agents (i) struggle to accurately depict character information when presented with lengthy profile inputs; (ii) exhibit vulnerability to profile perturbations; and (iii) are significantly affected by certain key factors that impact their overall believability.","cats":{"hci":0,"programming":0}}
+{"text":"Code and SimulateBench are public at https://github.com/GAIR-NLP/GPTMan.","cats":{"hci":0,"programming":0}}
+{"text":"While Large Language Models (LLMs) like ChatGPT and GPT-4 have demonstrated exceptional proficiency in natural language processing, their efficacy in addressing complex, multifaceted tasks remains limited.","cats":{"hci":0,"programming":0}}
+{"text":"A growing area of research focuses on LLM-based agents equipped with external tools capable of performing diverse tasks.","cats":{"hci":0,"programming":0}}
+{"text":"However, existing LLM-based agents only support a limited set of tools which is unable to cover a diverse range of user queries, especially for those involving expertise domains.","cats":{"hci":0,"programming":0}}
+{"text":"It remains a challenge for LLM-based agents to extend their tools autonomously when confronted with various user queries.","cats":{"hci":0}}
+{"text":"As GitHub has hosted a multitude of repositories which can be seen as a good resource for tools, a promising solution is that LLM-based agents can autonomously integrate the repositories in GitHub according to the user queries to extend their tool set.","cats":{"hci":0,"programming":1}}
+{"text":"In this paper, we introduce GitAgent, an agent capable of achieving the autonomous tool extension from GitHub.","cats":{"hci":0,"programming":0}}
+{"text":"GitAgent follows a four-phase procedure to incorporate repositories and it can learn human experience by resorting to GitHub Issues/PRs to solve problems encountered during the procedure.","cats":{"hci":0,"programming":0}}
+{"text":"Experimental evaluation involving 30 user queries demonstrates GitAgent's effectiveness, achieving a 69.4% success rate on average.","cats":{"hci":0,"programming":0}}
+{"text":"The exponential growth of digital content has generated massive textual datasets, necessitating advanced analytical approaches.","cats":{"hci":0}}
+{"text":"Large Language Models (LLMs) have emerged as tools capable of processing and extracting insights from massive unstructured textual datasets.","cats":{"hci":0}}
+{"text":"However, how to leverage LLMs for text-based Information Systems (IS) research is currently unclear.","cats":{"hci":0}}
+{"text":"To assist IS research in understanding how to operationalize LLMs, we propose a Text Analytics for Information Systems Research (TAISR) framework.","cats":{"hci":0}}
+{"text":"Our proposed framework provides detailed recommendations grounded in IS and LLM literature on how to conduct meaningful text-based IS research.","cats":{"hci":0}}
+{"text":"We conducted three case studies in business intelligence using our TAISR framework to demonstrate its application across several IS research contexts.","cats":{"hci":0}}
+{"text":"We also outline potential challenges and limitations in adopting LLMs for IS.","cats":{"hci":0}}
+{"text":"By offering a systematic approach and evidence of its utility, our TAISR framework contributes to future IS research streams looking to incorporate powerful LLMs for text analytics.","cats":{"hci":0}}
+{"text":"To address this, we introduce Social-Transmotion, a generic model that exploits the power of transformers to handle diverse and numerous visual cues, capturing the multi-modal nature of human behavior.","cats":{"hci":1,"social-sciences":1}}
+{"text":"Accurate human trajectory prediction is crucial for applications such as autonomous vehicles, robotics, and surveillance systems.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Yet, existing models often fail to fully leverage the non-verbal social cues human subconsciously communicate when navigating the space.  ","cats":{"hci":0,"social-sciences":0}}
+{"text":"We translate the idea of a prompt from Natural Language Processing (NLP) to the task of human trajectory prediction, where a prompt can be a sequence of x-y coordinates on the ground, bounding boxes or body poses.","cats":{"hci":0,"social-sciences":1}}
+{"text":"This, in turn, augments trajectory data, leading to enhanced human trajectory prediction.","cats":{"hci":0}}
+{"text":"Our model exhibits flexibility and adaptability by capturing spatiotemporal interactions between pedestrians based on the available visual cues, whether they are poses, bounding boxes, or a combination thereof.","cats":{"hci":0}}
+{"text":"By the masking technique, we ensure our model's effectiveness even when certain visual cues are unavailable, although performance is further boosted with the presence of comprehensive visual data.","cats":{"hci":0,"social-sciences":0}}
+{"text":"We delve into the merits of using 2d versus 3d poses, and a limited set of poses.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Additionally, we investigate the spatial and temporal attention map to identify which keypoints and frames of poses are vital for optimizing human trajectory prediction.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Our approach is validated on multiple datasets, including JTA, JRDB, Pedestrians and Cyclists in Road Traffic, and ETH-UCY.","cats":{"hci":0,"social-sciences":0}}
+{"text":"The code is publicly available: https://github.com/vita-epfl/social-transmotion","cats":{"hci":0,"social-sciences":0}}
+{"text":"(Source) code summarization is the task of automatically generating natural language summaries for given code snippets.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"Such summaries play a key role in helping developers understand and maintain source code.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Recently, with the successful application of large language models (LLMs) in numerous fields, software engineering researchers have also attempted to adapt LLMs to solve code summarization tasks.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"The main adaptation schemes include instruction prompting and task-oriented fine-tuning.","cats":{"hci":0,"social-sciences":0}}
+{"text":"PromptCS","cats":{"hci":0,"social-sciences":0}}
+{"text":"Compared to the human-written discrete prompt, the continuous prompts are produced under the guidance of LLMs and are therefore easier to understand by LLMs.","cats":{"hci":0,"social-sciences":0}}
+{"text":"freezes the parameters of LLMs when training the prompt agent, which can greatly reduce the requirements for training resources.","cats":{"hci":0,"social-sciences":0}}
+{"text":"We evaluate PromptCS","cats":{"hci":0,"social-sciences":0}}
+{"text":"on the CodeSearchNet dataset involving multiple programming languages.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"The results show that PromptCS","cats":{"hci":0,"social-sciences":0}}
+{"text":"significantly outperforms instruction prompting schemes on all four widely used metrics.","cats":{"hci":0,"social-sciences":0}}
+{"text":"In some base LLMs, e.g., CodeGen-Multi-2B and StarCoderBase-1B and -3B, PromptCS","cats":{"hci":0,"social-sciences":0}}
+{"text":"even outperforms the task-oriented fine-tuning scheme.","cats":{"hci":0,"social-sciences":0}}
+{"text":"More importantly, the training efficiency of PromptCS is faster than the task-oriented fine-tuning scheme, with a more pronounced advantage on larger LLMs.","cats":{"hci":0,"social-sciences":0}}
+{"text":"The results of the human evaluation demonstrate that PromptCS can generate more good summaries compared to baselines.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Large language models (LLMs) have demonstrated remarkable capabilities and have been extensively deployed across various domains, including recommender systems.","cats":{"hci":0,"recommender":1}}
+{"text":"Numerous studies have employed specialized \\textit{prompts} to harness the in-context learning capabilities intrinsic to LLMs.","cats":{"hci":0}}
+{"text":"For example, LLMs are prompted to act as zero-shot rankers for listwise ranking, evaluating candidate items generated by a retrieval model for recommendation.","cats":{"hci":0}}
+{"text":"Recent research further uses instruction tuning techniques to align LLM with human preference for more promising recommendations.","cats":{"hci":0}}
+{"text":"Despite its potential, current research overlooks the integration of multiple ranking tasks to enhance model performance.","cats":{"hci":0}}
+{"text":"Moreover, the signal from the conventional recommendation model is not integrated into the LLM, limiting the current system performance.   ","cats":{"hci":0}}
+{"text":"In this paper, we introduce RecRanker, tailored for instruction tuning LLM to serve as the \\textbf{Ranker} for top-\\textit{k} \\textbf{Rec}ommendations.","cats":{"hci":0}}
+{"text":"Specifically, we introduce importance-aware sampling, clustering-based sampling, and penalty for repetitive sampling for sampling high-quality, representative, and diverse training data.","cats":{"hci":0}}
+{"text":"Subsequently, we utilize the sampled data to assemble an instruction-tuning dataset with the augmented prompt comprising three distinct ranking tasks: pointwise, pairwise, and listwise rankings.","cats":{"hci":0}}
+{"text":"We further propose a hybrid ranking method to enhance the model performance by ensembling these ranking tasks.","cats":{"hci":0}}
+{"text":"Our empirical evaluations demonstrate the effectiveness of our proposed RecRanker in both direct and sequential recommendation scenarios.","cats":{"hci":0}}
+{"text":"Drawing inspiration from the emerging field of representation engineering (RepE), this study aims to identify relevant representations for high-level human preferences embedded in patterns of activity within an LLM, and achieve precise control of model behavior by transforming its representations.","cats":{"hci":1}}
+{"text":"Extensive experiments demonstrate the efficacy of RAHF in not only capturing but also manipulating representations to align with a broad spectrum of human preferences or values, rather than being confined to a singular concept or function (e.g. honesty or bias).","cats":{"hci":0}}
+{"text":"Aligning large language models (LLMs) with human preferences is crucial for enhancing their utility in terms of helpfulness, truthfulness, safety, harmlessness, and interestingness.","cats":{"hci":0,"recommender":0}}
+{"text":"Existing methods for achieving this alignment often involves employing reinforcement learning from human feedback (RLHF) to fine-tune LLMs based on human labels assessing the relative quality of model responses.","cats":{"hci":0,"architectures":0}}
+{"text":"Nevertheless, RLHF is susceptible to instability during fine-tuning and presents challenges in implementation.","cats":{"hci":0,"architectures":1}}
+{"text":"This novel approach, denoted as Representation Alignment from Human Feedback (RAHF), proves to be effective, computationally efficient, and easy to implement.","cats":{"hci":0}}
+{"text":"RAHF's versatility in accommodating","cats":{"hci":0}}
+{"text":"Individuals, despite having varied life experiences and learning processes, can communicate effectively through languages.","cats":{"hci":0}}
+{"text":"This study aims to explore the efficiency of language as a communication medium.","cats":{"hci":0}}
+{"text":"We put forth two specific hypotheses:","cats":{"hci":0}}
+{"text":"First, discrete messages are more effective than continuous ones when agents have diverse personal experiences.","cats":{"hci":0}}
+{"text":"Second, communications using multiple discrete tokens are more advantageous than those using a single token.","cats":{"hci":0}}
+{"text":"To valdate these hypotheses, we designed multi-agent machine learning experiments to assess communication efficiency using various information transmission methods between speakers and listeners.","cats":{"hci":0}}
+{"text":"Our empirical findings indicate that, in scenarios where agents are exposed to different data, communicating through sentences composed of discrete tokens offers the best inter-agent communication efficiency.","cats":{"hci":0}}
+{"text":"The limitations of our finding include lack of systematic advantages over other more sophisticated encoder-decoder model such as variational autoencoder and lack of evluation on non-image dataset, which we will leave for future studies.","cats":{"hci":0}}
+{"text":"How scientists navigate between the need to capitalize on their prior knowledge by specializing, and the urge to adapt to evolving research opportunities?","cats":{"hci":0}}
+{"text":"Drawing from diverse perspectives on adaptation, in particular from institutional change and cultural evolution, this paper proposes a Bayesian model of the evolution of scientists' research portfolios in response to transformations in their field.","cats":{"hci":0}}
+{"text":"The model relies on scientific abstracts and authorship data to evaluate the influence of intellectual, social, and institutional resources on scientists' trajectories within a cohort of $2\\,195$ high-energy physicists between 2000 and 2019.","cats":{"hci":0}}
+{"text":"The reallocation of research efforts in response to the incentives to adapt is shown to be mainly structured by learning costs, thus maximizing the utility of the scientific capital disseminated among scientists.","cats":{"hci":0}}
+{"text":"Two dimensions of social capital, namely ``diversity'' and ``power'', have opposite effects on the magnitude of change in scientists' research interests: while ``diversity'' disrupts and expands research interests, ``power'' stabilizes physicists' research agendas -- as does institutional stability.","cats":{"hci":0}}
+{"text":"Social capital plays a more crucial role in shifts between cognitively distant research areas.","cats":{"hci":0}}
+{"text":"We further analyzed that human comments consistently showed higher lexical diversity than GPT-generated comments.","cats":{"hci":1}}
+{"text":"This indicates that although generative LLMs can generate fluent text, their capability to create human-like opinionated comments is still limited.","cats":{"hci":1}}
+{"text":"ChatGPT, GPT-3.5, and other large language models (LLMs) have drawn significant attention since their release, and the abilities of these models have been investigated for a wide variety of tasks.","cats":{"hci":0}}
+{"text":"In this research we investigate to what extent GPT-3.5 can generate human-like comments on Dutch news articles.","cats":{"hci":0}}
+{"text":"We define human likeness as `not distinguishable from human comments', approximated by the difficulty of automatic classification between human and GPT comments.","cats":{"hci":0}}
+{"text":"We analyze human likeness across multiple prompting techniques.","cats":{"hci":0}}
+{"text":"In particular, we utilize zero-shot, few-shot and context prompts, for two generated personas.","cats":{"hci":0}}
+{"text":"We found that our fine-tuned BERT models can easily distinguish human-written comments from GPT-3.5 generated comments, with none of the used prompting methods performing noticeably better.  ","cats":{"hci":0}}
+{"text":"This indicates that although generative LLMs can generate fluent text, their capability to create human-like opin","cats":{"hci":0}}
+{"text":"However, the research attempts to replicate and study human behaviors with proxies, such as by integrating virtual mediums and interviews, have been inconsistent.","cats":{"hci":1}}
+{"text":"Evaluating the surroundings to gain understanding, frame perspectives, and anticipate behavioral reactions is an inherent human trait.","cats":{"hci":0}}
+{"text":"However, these continuous encounters are diverse and complex, posing challenges to their study and experimentation.","cats":{"hci":0}}
+{"text":"Researchers have been able to isolate environmental features and study their effect on human perception and behavior.  ","cats":{"hci":0}}
+{"text":"Large language models (LLMs) have recently been unveiled as capable of contextual understanding and semantic reasoning.","cats":{"hci":0}}
+{"text":"These models have been trained on large amounts of text and have evolved to mimic believable human behavior.","cats":{"hci":0}}
+{"text":"This study explores the current advancements in Generative agents powered by LLMs with the help of perceptual experiments.","cats":{"hci":0}}
+{"text":"The experiment employs Generative agents to interact with the urban environments using street view images to plan their journey toward specific goals.","cats":{"hci":0}}
+{"text":"The agents are given virtual personalities, which make them distinguishable.","cats":{"hci":0}}
+{"text":"They are also provided a memory database to store their thoughts and essential visual information and retrieve it when needed to plan their movement.","cats":{"hci":0}}
+{"text":"Since LLMs do not possess embodiment, nor have access to the visual realm, and lack a sense of motion or direction, we designed movement and visual modules that help agents gain an overall understanding of surroundings.","cats":{"hci":0}}
+{"text":"The agents are further employed to rate the surroundings they encounter based on their perceived sense of safety and liveliness.","cats":{"hci":0}}
+{"text":"As these agents store details in their memory, we query the findings to get details regarding their thought processes.","cats":{"hci":0}}
+{"text":"Overall, this study experiments with current AI developments and their potential in simulated human behavior in urban environments.","cats":{"hci":0}}
+{"text":"In this study, we utilized ChatGPT to develop a web-based code generation platform consisting of key components: User Interface, Prompt Builder and Backend Service.","cats":{"hci":1,"programming":1}}
+{"text":"Code generation stands as a powerful technique in modern software development, improving development efficiency, reducing errors, and fostering standardization and consistency.","cats":{"hci":0,"programming":1}}
+{"text":"Recently, ChatGPT has exhibited immense potential in automatic code generation.","cats":{"hci":0,"programming":1}}
+{"text":"However, existing researches on code generation lack guidance for practical software development process.  ","cats":{"hci":0}}
+{"text":"We conducted experiments on 2 datasets, evaluating the generated code through 8 widely used metrics.","cats":{"hci":0}}
+{"text":"The results demonstrate that (1) Our Prompt Builder is effective, resulting in a 65.06% improvement in EM, a 38.45% improvement in BLEU, a 15.70% improvement in CodeBLEU, and a 50.64% improvement in Pass@1.","cats":{"hci":0}}
+{"text":"(2) In real development scenarios, 98.5% of test cases can be validated through manual validation, highlighting the genuine assistance provided by the ChatGPT-based code generation approach.","cats":{"hci":0}}
+{"text":"Moreover, we propose an advanced Actor-Critic Embodied Agent framework, which incorporates a sophisticated GUI parser driven by an LLM-agent and an enhanced reasoning mechanism adept at handling lengthy procedural tasks.","cats":{"hci":1}}
+{"text":"Graphical User Interface (GUI) automation holds significant promise for assisting users with complex tasks, thereby boosting human productivity.","cats":{"hci":0}}
+{"text":"Existing works leveraging Large Language Model (LLM) or LLM-based AI agents have shown capabilities in automating tasks on Android and Web platforms.","cats":{"hci":0}}
+{"text":"However, these tasks are primarily aimed at simple device usage and entertainment operations.","cats":{"hci":0}}
+{"text":"This paper presents a novel benchmark, AssistGUI, to evaluate whether models are capable of manipulating the mouse and keyboard on the Windows platform in response to user-requested tasks.","cats":{"hci":0}}
+{"text":"We carefully collected a set of 100 tasks from nine widely-used software applications, such as, After Effects and MS Word, each accompanied by the necessary project files for better evaluation.  ","cats":{"hci":0}}
+{"text":"Our experimental results reveal that our GUI Parser and Reasoning mechanism outshine existing methods in performance.","cats":{"hci":0}}
+{"text":"Nevertheless, the potential remains substantial, with the best model attaining only a 46% success rate on our benchmark.","cats":{"hci":0}}
+{"text":"We conclude with a thorough analysis of the current methods' limitations, setting the stage for future breakthroughs in this domain.","cats":{"hci":0}}
+{"text":"The qualitative samples indicate that, while GPT-4V and Gemini showcase different answering styles and preferences, they can exhibit comparable visual reasoning capabilities, and Sphinx still trails behind them concerning domain generalizability.","cats":{"hci":1}}
+{"text":"The surge of interest towards Multi-modal Large Language Models (MLLMs), e.g., GPT-4V(ision) from OpenAI, has marked a significant trend in both academia and industry.","cats":{"hci":0}}
+{"text":"Very recently, Google released Gemini, its newest and most capable MLLM built from the ground up for multi-modality.","cats":{"hci":0}}
+{"text":"In light of the superior reasoning capabilities, can Gemini challenge GPT-4V's leading position in multi-modal learning?","cats":{"hci":0}}
+{"text":"In this paper, we present a preliminary exploration of Gemini Pro's visual understanding proficiency, which comprehensively covers four domains: fundamental perception, advanced cognition, challenging vision tasks, and various expert capacities.","cats":{"hci":0}}
+{"text":"We compare Gemini Pro with the state-of-the-art GPT-4V to evaluate its upper limits, along with the latest open-sourced MLLM, Sphinx, which reveals the gap between manual efforts and black-box systems.  ","cats":{"hci":0}}
+{"text":"Specifically, GPT-4V tends to elaborate detailed explanations and intermediate steps, and Gemini prefers to output a direct and concise answer.","cats":{"hci":0}}
+{"text":"The quantitative evaluation on the popular MME benchmark also demonstrates the potential of Gemini to be a strong challenger to GPT-4V. Our early investigation of Gemini also observes some common issues of MLLMs, indicating that there still remains a considerable distance towards artificial general intelligence.","cats":{"hci":0}}
+{"text":"Our project for tracking the progress of MLLM is released at https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models.","cats":{"hci":0}}
+{"text":"This study explores a VR-based intervention for Visuospatial neglect (VSN), a post-stroke condition.","cats":{"hci":0}}
+{"text":"It aims to develop a VR task utilizing interactive visual-audio cues to improve sensory-motor training and assess its impact on VSN patients' engagement and performance.","cats":{"hci":0}}
+{"text":"Collaboratively designed with physiotherapists, the VR task uses directional and auditory stimuli to alert and direct patients, tested over 12 sessions with two individuals.","cats":{"hci":0}}
+{"text":"Results show a consistent decrease in task completion variability and positive patient feedback, highlighting the VR task's potential for enhancing engagement and suggesting its feasibility in rehabilitation.","cats":{"hci":0}}
+{"text":"The study underlines the significance of collaborative design in healthcare technology and advocates for further research with a larger sample size to confirm the benefits of VR in VSN treatment, as well as its applicability to other multimodal disorders.","cats":{"hci":0}}
+{"text":"Learning analytics research increasingly studies classroom learning with AI-based systems through rich contextual data from outside these systems, especially student-teacher interactions.","cats":{"hci":0,"education":1}}
+{"text":"One key challenge in leveraging such data is generating meaningful insights into effective teacher practices.","cats":{"hci":0,"education":0}}
+{"text":"Quantitative ethnography bears the potential to close this gap by combining multimodal data streams into networks of co-occurring behavior that drive insight into favorable learning conditions.","cats":{"hci":0}}
+{"text":"The present study uses transmodal ordered network analysis to understand effective teacher practices in relationship to traditional metrics of in-system learning in a mathematics classroom working with AI tutors.","cats":{"hci":0,"education":1}}
+{"text":"Incorporating teacher practices captured by position tracking and human observation codes into modeling significantly improved the inference of how efficiently students improved in the AI tutor beyond a model with tutor log data features only.","cats":{"hci":0}}
+{"text":"Comparing teacher practices by student learning rates, we find that students with low learning rates exhibited more hint use after monitoring.","cats":{"hci":0,"education":0}}
+{"text":"However, after an extended visit, students with low learning rates showed learning behavior similar to their high learning rate peers, achieving repeated correct attempts in the tutor.","cats":{"hci":0,"education":0}}
+{"text":"Observation notes suggest conceptual and procedural support differences can help explain visit effectiveness.","cats":{"hci":0}}
+{"text":"Taken together, offering early conceptual support to students with low learning rates could make classroom practice with AI tutors more effective.","cats":{"hci":0,"education":1}}
+{"text":"This study advances the scientific understanding of effective teacher practice in classrooms learning with AI tutors and methodologies to make such practices visible.","cats":{"hci":0,"education":1}}
+{"text":"Task-Oriented Parsing (TOP) enables conversational assistants to interpret user commands expressed in natural language, transforming them into structured outputs that combine elements of both natural language and intent/slot tags.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Recently, Large Language Models (LLMs) have achieved impressive performance in synthesizing computer programs based on a natural language prompt, mitigating the gap between natural language and structured programs.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts?","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Notably, this enhancement is achieved without the need for additional data or specialized prompts.","cats":{"hci":0,"social-sciences":0,"programming":0}}

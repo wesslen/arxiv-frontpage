@@ -14,3 +14,25 @@
 {"text":"The LLM is thus able to compose the visual entities and relationships through the communication tokens.","cats":{"hci":1}}
 {"text":"Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.","cats":{"hci":1}}
 {"text":"To explore whether the capabilities of LLMs can be further enhanced for specific scenarios, we choose the writing-assistance scenario as the testbed, including seven writing tasks.","cats":{"hci":1}}
+{"text":"Our approach leverages the power of LLMs to understand and interpret user input, facilitating a more intuitive design process.","cats":{"hci":1}}
+{"text":"This paper explores the frontiers of large language models (LLMs) in psychology applications.","cats":{"hci":1}}
+{"text":"We provide a detailed exploration of how LLMs like ChatGPT are transforming psychological research.","cats":{"hci":1}}
+{"text":"It discusses the impact of LLMs across various branches of psychology, including cognitive and behavioral, clinical and counseling, educational and developmental, and social and cultural psychology, highlighting their potential to simulate aspects of human cognition and behavior.","cats":{"hci":1}}
+{"text":"The paper delves into the capabilities of these models to emulate human-like text generation, offering innovative tools for literature review, hypothesis generation, experimental design, experimental subjects, data analysis, academic writing, and peer review in psychology.","cats":{"hci":1}}
+{"text":"While LLMs are essential in advancing research methodologies in psychology, the paper also cautions about their technical and ethical challenges.","cats":{"hci":1}}
+{"text":"Researchers should responsibly use LLMs in psychological studies, adhering to ethical standards and considering the potential consequences of deploying these technologies in sensitive areas.","cats":{"hci":1}}
+{"text":"Overall, the article provides a comprehensive overview of the current state of LLMs in psychology, exploring potential benefits and challenges.","cats":{"hci":1}}
+{"text":"We find that use of generative AI systems is already widespread: 45% of respondents were aware of generative AI usage within their area of work, while 22% actively use a generative AI system.","cats":{"hci":1}}
+{"text":"However, due to the lack of systematic studies, our understanding of how LLM therapists behave, i.e., ways in which they respond to clients, is significantly limited.","cats":{"hci":1}}
+{"text":"In this paper, we propose BOLT, a novel computational framework to study the conversational behavior of LLMs when employed as therapists.","cats":{"hci":1}}
+{"text":"We develop an in-context learning method to quantitatively measure the behavior of LLMs based on 13 different psychotherapy techniques including reflections, questions, solutions, normalizing, and psychoeducation.","cats":{"hci":1}}
+{"text":"Subsequently, we compare the behavior of LLM therapists against that of high- and low-quality human therapy, and study how their behavior can be modulated to better reflect behaviors observed in high-quality therapy.","cats":{"hci":1}}
+{"text":"Foundational vision-language models such as CLIP are becoming a new paradigm in vision, due to their excellent generalization abilities.","cats":{"hci":0}}
+{"text":"However, adapting these models for downstream tasks while maintaining their generalization remains a challenge.","cats":{"hci":0}}
+{"text":"To this end, we propose a new post-pretraining method for LLMs with an expansion of Transformer blocks.","cats":{"hci":0}}
+{"text":"We tune the expanded blocks using only new corpus, efficiently and effectively improving the model's knowledge without catastrophic forgetting.","cats":{"hci":0}}
+{"text":"In this paper, we experiment on the corpus of code and math, yielding LLaMA Pro-8.3B, a versatile foundation model initialized from LLaMA2-7B, excelling in general tasks, programming, and mathematics.","cats":{"hci":0}}
+{"text":"In this work, we study the problem of efficient and practical composition of existing foundation models with more specific models to enable newer capabilities.","cats":{"hci":0}}
+{"text":"In literature, one branch of methods adapts CLIP by learning prompts using visual information.","cats":{"hci":0}}
+{"text":"LLaMA Pro and its instruction-following counterpart (LLaMA Pro-Instruct) achieve advanced performance among various benchmarks, demonstrating superiority over existing open models in the LLaMA family and the immense potential of reasoning and addressing diverse tasks as an intelligent agent.","cats":{"hci":0}}
+{"text":"To this end, we propose CALM -- Composition to Augment Language Models -- which introduces cross-attention between models to compose their representations and enable new capabilities.","cats":{"hci":0}}

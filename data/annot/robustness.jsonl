@@ -203,18 +203,18 @@
 {"text":"After observing changes in performance with the addition of the model, we measured the carbon footage per epoch of training.","cats":{"robustness":0}}
 {"text":"The carbon footprint associated with large language models (LLMs) is a significant concern, and should be taken into consideration when selecting algorithms for a variety of use cases.","cats":{"robustness":0}}
 {"text":"Overall, our research compared the accuracy different, leading embedding algorithms and their carbon footage, allowing for a holistic review of each embedding algorithm.","cats":{"robustness":0}}
-{"text":"The research addresses concerns related to hallucinations and false research articles by introducing a custom workflow developed with a detection algorithm to filter out inaccuracies.","cats":{"robustness":1}}
-{"text":"This research explores the integration of large language models (LLMs) into scientific data assimilation, focusing on combustion science as a case study.","cats":{"robustness":0}}
-{"text":"Leveraging foundational models integrated with Retrieval-Augmented Generation (RAG) framework, the study introduces an approach to process diverse combustion research data, spanning experimental studies, simulations, and literature.","cats":{"robustness":0}}
+{"text":"The research addresses concerns related to hallucinations and false research articles by introducing a custom workflow developed with a detection algorithm to filter out inaccuracies.","cats":{"robustness":1,"production":0}}
+{"text":"This research explores the integration of large language models (LLMs) into scientific data assimilation, focusing on combustion science as a case study.","cats":{"robustness":0,"production":0}}
+{"text":"Leveraging foundational models integrated with Retrieval-Augmented Generation (RAG) framework, the study introduces an approach to process diverse combustion research data, spanning experimental studies, simulations, and literature.","cats":{"robustness":0,"production":0}}
 {"text":"The multifaceted nature of combustion research emphasizes the critical role of knowledge processing in navigating and extracting valuable information from a vast and diverse pool of sources.","cats":{"robustness":0}}
-{"text":"The developed approach minimizes computational and economic expenses while optimizing data privacy and accuracy.","cats":{"robustness":0,"production":0}}
-{"text":"It incorporates prompt engineering and offline open-source LLMs, offering user autonomy in selecting base models.","cats":{"robustness":0,"social-sciences":0}}
+{"text":"The developed approach minimizes computational and economic expenses while optimizing data privacy and accuracy.","cats":{"robustness":0,"production":1}}
+{"text":"It incorporates prompt engineering and offline open-source LLMs, offering user autonomy in selecting base models.","cats":{"robustness":0,"social-sciences":0,"production":1}}
 {"text":"The study provides a thorough examination of text segmentation strategies, conducts comparative studies between LLMs, and explores various optimized prompts to demonstrate the effectiveness of the framework.","cats":{"robustness":0}}
-{"text":"By incorporating an external database, the framework outperforms a conventional LLM in generating accurate responses and constructing robust arguments.","cats":{"robustness":0}}
+{"text":"By incorporating an external database, the framework outperforms a conventional LLM in generating accurate responses and constructing robust arguments.","cats":{"robustness":0,"production":0}}
 {"text":"Additionally, the study delves into the investigation of optimized prompt templates for the purpose of efficient extraction of scientific literature.  ","cats":{"robustness":0}}
-{"text":"Despite identified areas for improvement, the framework consistently delivers accurate domain-specific responses with minimal human oversight.","cats":{"robustness":0}}
-{"text":"The prompt-agnostic approach introduced holds promise for future deliberations.","cats":{"robustness":0}}
-{"text":"The study underscores the significance of integrating LLMs and knowledge processing techniques in scientific research, providing a foundation for advancements in data assimilation and utilization.","cats":{"robustness":0}}
+{"text":"Despite identified areas for improvement, the framework consistently delivers accurate domain-specific responses with minimal human oversight.","cats":{"robustness":0,"production":0}}
+{"text":"The prompt-agnostic approach introduced holds promise for future deliberations.","cats":{"robustness":0,"production":0}}
+{"text":"The study underscores the significance of integrating LLMs and knowledge processing techniques in scientific research, providing a foundation for advancements in data assimilation and utilization.","cats":{"robustness":0,"production":0}}
 {"text":"This study focuses on emotion-sensitive spoken dialogue in human-machine speech interaction.","cats":{"robustness":0,"hci":1}}
 {"text":"With the advancement of Large Language Models (LLMs), dialogue systems can handle multimodal data, including audio.","cats":{"robustness":0}}
 {"text":"Recent models have enhanced the understanding of complex audio signals through the integration of various audio events.","cats":{"robustness":0,"hci":0}}

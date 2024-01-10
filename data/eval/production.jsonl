@@ -1,4 +1,5 @@
 {"text":"We open-source our data curation tools and the checkpoints of GeoGalactica during the first 3/4 of pre-training.","cats":{"robustness":0,"production":0}}
+{"text":"We provide extensive evaluations of representative LLMs (e.g., ChatGPT, Vicuna) on CoDI-Eval, revealing their limitations in following instructions with specific constraints and there is still a significant gap between open-source and commercial closed-source LLMs.","cats":{"security":0,"production":1}}
 {"text":"Modern healthcare often utilises radiographic images alongside textual reports for diagnostics, encouraging the use of Vision-Language Self-Supervised Learning (VL-SSL) with large pre-trained models to learn versatile medical vision representations.","cats":{"recommender":0,"production":0}}
 {"text":"We find LLMs often exhibit overconfidence or high randomness when self-evaluate, offering stubborn or inconsistent feedback, which causes poor reflection.","cats":{"production":0}}
 {"text":"Experiments conducted on a series of reasoning and translation tasks with different LLMs serve to underscore the effectiveness and generality of our strategy.","cats":{"production":0}}
@@ -13,3 +14,4 @@
 {"text":"In this work, we introduce the \\textbf{Mixed Distillation} framework, which capitalizes on the strengths of Program-of-Thought (PoT) and Chain-of-Thought (CoT) capabilities within LLMs and distills these capabilities to smaller models.","cats":{"production":1}}
 {"text":"To address this, data distillation has emerged as a technique to quickly train models with lower memory and time requirements.","cats":{"production":1}}
 {"text":"Recent research has concentrated on improving open-source smaller models through knowledge distillation from LLMs to reduce computational resource costs with promising outcomes.","cats":{"production":1}}
+{"text":"The experimental results across medical, financial, and general datasets using various LLMs demonstrate that DP-LoRA effectively ensures strict privacy constraints while minimizing communication overhead.","cats":{"production":1}}

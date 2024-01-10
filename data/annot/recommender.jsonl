@@ -10,7 +10,7 @@
 {"text":"In addition, we trace how these profound capabilities of LLMs, brought by code, have led to their emergence as intelligent agents (IAs) in situations where the ability to understand instructions, decompose goals, plan and execute actions, and refine from feedback are crucial to their success on downstream tasks.","cats":{"robustness":0,"hci":0,"recommender":0}}
 {"text":"Commuting extensions have also attracted the attention of the linear algebra community.","cats":{"security":0,"hci":0,"recommender":0}}
 {"text":"(iii) A genericity theorem showing that our algorithms and uniqueness theorems can be applied to a wide range of input matrices.","cats":{"security":0,"recommender":0}}
-{"text":"Our findings demonstrate that PINN-based approaches in channel modeling exhibit promising attributes such as generalizability, interpretability, and robustness.","cats":{"security":0,"recommender":0}}
+{"text":"Our findings demonstrate that PINN-based approaches in channel modeling exhibit promising attributes such as generalizability, interpretability, and robustness.","cats":{"security":0,"recommender":0,"production":0}}
 {"text":"At last, we explore the relationships among updated parameters, cross-entropy loss, and task performance.","cats":{"security":0,"recommender":0}}
 {"text":"Large Language Models (LLMs) are powerful tools for natural language processing, enabling novel applications and user experiences.","cats":{"hci":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have shown impressive success in various applications.","cats":{"hci":0,"education":0,"recommender":0,"production":0}}
@@ -18,6 +18,8 @@
 {"text":"Within this work, we propose a hybrid approach, Deep-ELA, which combines (the benefits of) deep learning and ELA features.","cats":{"hci":0,"recommender":0}}
 {"text":"We are making all code, data, and results available for future research endeavors.","cats":{"hci":0,"recommender":0}}
 {"text":"Prompt injection attacks exploit vulnerabilities in large language models (LLMs) to manipulate the model into unintended actions or generate malicious content.","cats":{"hci":0,"recommender":0}}
+{"text":"Large language models (LLMs) have demonstrated remarkable capabilities and have been extensively deployed across various domains, including recommender systems.","cats":{"hci":0,"recommender":1}}
+{"text":"Aligning large language models (LLMs) with human preferences is crucial for enhancing their utility in terms of helpfulness, truthfulness, safety, harmlessness, and interestingness.","cats":{"hci":0,"recommender":0}}
 {"text":"As the Large Language Model (LLM) becomes increasingly important in various domains.","cats":{"social-sciences":0,"education":0,"recommender":0}}
 {"text":"Large language models (LLMs) have emerged as powerful and general solutions to many natural language tasks.","cats":{"social-sciences":0,"recommender":0}}
 {"text":"Large Language Models (LLMs) are smart but forgetful.","cats":{"social-sciences":0,"education":0,"recommender":0,"production":0}}
@@ -28,7 +30,6 @@
 {"text":"Recent advancements in the capabilities of large language models (LLMs) have paved the way for a myriad of groundbreaking applications in various fields.","cats":{"education":0,"recommender":0}}
 {"text":"We share our approach to designing this new introductory socially responsible computing course and the students' reflections.","cats":{"education":0,"recommender":0,"architectures":0}}
 {"text":"Recently, large language models (LLMs) have shown great potential in recommender systems, either improving existing recommendation models or serving as the backbone.","cats":{"recommender":1}}
-{"text":"Large language models (LLMs) have demonstrated remarkable capabilities and have been extensively deployed across various domains, including recommender systems.","cats":{"recommender":1}}
 {"text":"Recent advancements in recommendation systems have shifted towards more comprehensive and personalized recommendations by utilizing large language models (LLM).","cats":{"recommender":1}}
 {"text":"As the focus on Large Language Models (LLMs) in the field of recommendation intensifies, the optimization of LLMs for recommendation purposes (referred to as LLM4Rec) assumes a crucial role in augmenting their effectiveness in providing recommendations.","cats":{"recommender":1}}
 {"text":"Inspired by the recent progress on large language models (LLMs), we take a different approach to developing the recommendation models, considering recommendation as instruction following by LLMs.","cats":{"recommender":0}}
@@ -41,7 +42,6 @@
 {"text":"In essence, LLMs capture language semantics while recommender systems imply collaborative semantics, making it difficult to sufficiently leverage the model capacity of LLMs for recommendation.","cats":{"recommender":1}}
 {"text":"Along this line of research, this work aims to investigate the capacity of LLMs that act as the ranking model for recommender systems.","cats":{"recommender":1}}
 {"text":"Recent development of large language models (LLMs) has opened a new opportunity to address this problem more effectively.","cats":{"recommender":0,"production":0}}
-{"text":"Aligning large language models (LLMs) with human preferences is crucial for enhancing their utility in terms of helpfulness, truthfulness, safety, harmlessness, and interestingness.","cats":{"recommender":0}}
 {"text":"Large language models (LLMs), typically designed as a function of next-word prediction, have excelled across extensive NLP tasks.","cats":{"recommender":0}}
 {"text":"Its primary objective was to provide a comprehensive understanding of the performance of Large Language Models (LLMs) when applied to different datasets.","cats":{"recommender":0}}
 {"text":"To bridge this gap, we propose LLMRec, a LLM-based recommender system designed for benchmarking LLMs on various recommendation tasks.","cats":{"recommender":1}}
@@ -60,10 +60,10 @@
 {"text":"The early identification of diseases in cocoa pods is an important task to guarantee the production of high-quality cocoa.","cats":{"recommender":0}}
 {"text":"To the best of our knowledge, we are the first to introduce a couple of co-evolving representation spaces, rather than a single or static space, and propose a co-contrastive learning for the sequential interaction network.","cats":{"recommender":0}}
 {"text":"Consequently, it can substantially boost the system capacity, as verified by Monte-Carlo simulations.","cats":{"recommender":0}}
-{"text":"As more IoT applications gradually move towards the cloud-edge collaborative mode, the containerized scheduling of workflows extends from the cloud to the edge.","cats":{"recommender":0}}
-{"text":"Through a customized IoT application workflow instance, experimental results show that KCES is superior to the baseline in total workflow duration, average workflow duration, and resource usage and has the capabilities of horizontal roaming and vertical offloading for workflow tasks.","cats":{"recommender":0,"programming":0}}
+{"text":"As more IoT applications gradually move towards the cloud-edge collaborative mode, the containerized scheduling of workflows extends from the cloud to the edge.","cats":{"recommender":0,"production":0}}
+{"text":"Through a customized IoT application workflow instance, experimental results show that KCES is superior to the baseline in total workflow duration, average workflow duration, and resource usage and has the capabilities of horizontal roaming and vertical offloading for workflow tasks.","cats":{"recommender":0,"production":0,"programming":0}}
 {"text":"The improved algorithm model has good detection ability for solder joint defect detection, with mAP reaching 91.5%, 4.3% higher than the You Only Look Once version 5 algorithm and better than other comparative algorithms.","cats":{"recommender":0}}
-{"text":"We use a convolutional neural network to classify each frame of an ultrasound video recording.","cats":{"recommender":0,"architectures":0}}
+{"text":"We use a convolutional neural network to classify each frame of an ultrasound video recording.","cats":{"recommender":0,"production":0,"architectures":0}}
 {"text":"Experimental results indicate the best performance obtained by LightGBM with pre-processing using standard normal variate (SNV), feature extraction providing values of 0.839 for balanced accuracy, 0.851 for recall, 0.852 for precision, and 0.850 for F-score.","cats":{"recommender":0}}
 {"text":"Furthermore, for a special case where the semantic state is a deterministic function of the observation, we design a cascade neural network to estimate the SRDF.","cats":{"recommender":0}}
 {"text":"Our experimental findings undeniably demonstrate the superior performance of TF-CNN in comparison to recently developed techniques.","cats":{"recommender":0}}
@@ -71,7 +71,7 @@
 {"text":"In this paper, we propose a model enabling the creation of a social graph corresponding to real society.","cats":{"recommender":0}}
 {"text":"Several proposals for alternative designs have been put forward, with these efforts having now converged into the Compute Express Link (CXL) specification.","cats":{"recommender":0}}
 {"text":"CXL is an interconnect protocol on top of PCIe with a more modern and powerful interface.","cats":{"recommender":0}}
-{"text":"The latency is comparable to the ones observed in the state-of-the-art, with 780us/img.","cats":{"recommender":0}}
+{"text":"The latency is comparable to the ones observed in the state-of-the-art, with 780us/img.","cats":{"recommender":0,"production":0}}
 {"text":"In this paper, we describe preliminary work on a new Dafny plugin that leverages LLMs to assist developers by generating suggestions for relevant lemmas that Dafny is unable to discover and use.","cats":{"recommender":0}}
 {"text":"However, the advent of Multimodal Large Language Models (MLLMs) like GPT-4 with vision (GPT-4V), capable of processing multimodal data including text, sound, and visual inputs, opens a new era of enriched, personalized, and interactive learning landscapes in education.","cats":{"recommender":0}}
 {"text":"Possible applications for MLLMs could range from content creation to tailored support for learning, fostering competencies in scientific practices, and providing assessment and feedback.","cats":{"recommender":0}}

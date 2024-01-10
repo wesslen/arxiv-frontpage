@@ -28,6 +28,13 @@
 {"text":"The rapid development of Large Language Models (LLMs) has led to great strides in model capabilities like reasoning and long-context understanding.","cats":{"hci":0,"education":0}}
 {"text":"The emergence of large language models (LLMs) introduces an innovative paradigm, offering a unified solution to address various authoring tasks within this scenario.","cats":{"hci":0,"social-sciences":0,"education":0}}
 {"text":"The data from the class suggests that the students found the inclusion of the social context in the technical assignments to be more motivating and expressed greater agency in realizing social change.","cats":{"hci":0,"education":0}}
+{"text":"Learning analytics research increasingly studies classroom learning with AI-based systems through rich contextual data from outside these systems, especially student-teacher interactions.","cats":{"hci":0,"education":1}}
+{"text":"One key challenge in leveraging such data is generating meaningful insights into effective teacher practices.","cats":{"hci":0,"education":0}}
+{"text":"The present study uses transmodal ordered network analysis to understand effective teacher practices in relationship to traditional metrics of in-system learning in a mathematics classroom working with AI tutors.","cats":{"hci":0,"education":1}}
+{"text":"Comparing teacher practices by student learning rates, we find that students with low learning rates exhibited more hint use after monitoring.","cats":{"hci":0,"education":0}}
+{"text":"However, after an extended visit, students with low learning rates showed learning behavior similar to their high learning rate peers, achieving repeated correct attempts in the tutor.","cats":{"hci":0,"education":0}}
+{"text":"Taken together, offering early conceptual support to students with low learning rates could make classroom practice with AI tutors more effective.","cats":{"hci":0,"education":1}}
+{"text":"This study advances the scientific understanding of effective teacher practice in classrooms learning with AI tutors and methodologies to make such practices visible.","cats":{"hci":0,"education":1}}
 {"text":"This work introduces an innovative architecture that combines the strengths of ChatGPT with a traditional information retrieval based chatbot framework to offer enhanced student support in higher education.","cats":{"social-sciences":0,"education":1}}
 {"text":"Large language models (LLMs) have brought about significant transformations in human society.","cats":{"social-sciences":0,"education":0}}
 {"text":"The emergence of Large language models (LLMs) is expected to have a major impact on education.","cats":{"social-sciences":0,"education":1}}
@@ -84,7 +91,7 @@
 {"text":"However, LLMs trained with SFT sometimes make simple mistakes and result in hallucinations on reasoning tasks such as question-answering.","cats":{"education":0}}
 {"text":"However, the possibility of generating incorrect, biased, or unhelpful answers are a key challenge to resolve when deploying LLMs in an education context.","cats":{"education":1}}
 {"text":"Through a comprehensive evaluation of the entire dataset using LLM assessment and a rigorous manual evaluation of 64 instances, we showcase the potential of LLMs in patient education.","cats":{"education":1}}
-{"text":"We share results from user studies conducted on graduate students from <removed for double blind review>.","cats":{"education":0}}
+{"text":"We share results from user studies conducted on graduate students from <removed for double blind review>.","cats":{"education":0,"production":0}}
 {"text":"The student does not \"own\" their credentials, as the only way their accomplishments are directly linked to their person and considered valuable is by verification through a stamp of an expensive, prestigious institution.","cats":{"education":0}}
 {"text":"However, going to a university is no longer the only way to acquire an education; open-source learning material is widely available and accessible through the internet.","cats":{"education":0}}
 {"text":"However, our society does not deem these methods of education as verifiable if they do not include a degree or certificate.","cats":{"education":0}}
@@ -92,13 +99,6 @@
 {"text":"The centralized nature of education inadvertently places students in underprivileged communities at a disadvantage in comparison to students in economically advantaged communities, thus a decentralized approach to education would eliminate the vast majority of such discrepancies.","cats":{"education":0}}
 {"text":"While several powerful distillation methods were recently proposed, the overall quality of student samples is typically lower compared to the teacher ones, which hinders their practical usage.","cats":{"education":0}}
 {"text":"As our main empirical finding, we discover that a noticeable portion of student samples exhibit superior fidelity compared to the teacher ones, despite the ``approximate'' nature of the student.","cats":{"education":0}}
-{"text":"Learning analytics research increasingly studies classroom learning with AI-based systems through rich contextual data from outside these systems, especially student-teacher interactions.","cats":{"education":1}}
-{"text":"One key challenge in leveraging such data is generating meaningful insights into effective teacher practices.","cats":{"education":0}}
-{"text":"The present study uses transmodal ordered network analysis to understand effective teacher practices in relationship to traditional metrics of in-system learning in a mathematics classroom working with AI tutors.","cats":{"education":1}}
-{"text":"Comparing teacher practices by student learning rates, we find that students with low learning rates exhibited more hint use after monitoring.","cats":{"education":0}}
-{"text":"However, after an extended visit, students with low learning rates showed learning behavior similar to their high learning rate peers, achieving repeated correct attempts in the tutor.","cats":{"education":0}}
-{"text":"Taken together, offering early conceptual support to students with low learning rates could make classroom practice with AI tutors more effective.","cats":{"education":1}}
-{"text":"This study advances the scientific understanding of effective teacher practice in classrooms learning with AI tutors and methodologies to make such practices visible.","cats":{"education":1}}
 {"text":"We compare how teaching in AR differs from teaching through videoconferencing-based communication.","cats":{"education":0}}
 {"text":"Therefore, in this study, we delve into LLMs' susceptibility to persuasive conversations, particularly on factual questions that they can answer correctly.","cats":{"education":0}}
 {"text":"However, a major challenge in online learning is whether students are as engaged as they are in face-to-face classes.","cats":{"education":0}}

@@ -1,8 +1,8 @@
-{"text":"However, instruction prompting involves designing crafted prompts for zero-shot learning or selecting appropriate samples for few-shot learning and requires users to have professional domain knowledge, while task-oriented fine-tuning requires high training costs.","cats":{"prompt-engineering":1,"social-sciences":0}}
-{"text":"In this paper, we propose a novel prompt learning framework for code summarization called PromptCS.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":1}}
-{"text":"trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":1}}
-{"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"social-sciences":0,"programming":0}}
-{"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"social-sciences":0,"programming":0}}
+{"text":"However, instruction prompting involves designing crafted prompts for zero-shot learning or selecting appropriate samples for few-shot learning and requires users to have professional domain knowledge, while task-oriented fine-tuning requires high training costs.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0}}
+{"text":"In this paper, we propose a novel prompt learning framework for code summarization called PromptCS.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":1}}
+{"text":"trains a prompt agent that can generate continuous prompts to unleash the potential for LLMs in code summarization.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":1}}
+{"text":"2) What defines an effective prompt?","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":0}}
+{"text":"We introduce k Nearest Neighbor In-Context Learning(kNN-ICL), which simplifies prompt engineering by allowing it to be built on top of any design strategy while providing access to all demo examples.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0,"programming":0}}
 {"text":"The TREC Interactive Knowledge Assistance Track (iKAT) builds on the foundational work of the TREC Conversational Assistance Track (CAsT).","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0,"programming":0}}
 {"text":"The two levels are computed by the original model's self-attention, which means the proposed does not require any training.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"architectures":0,"programming":0}}
 {"text":"We conduct comprehensive experiments and the results show that the proposed method can effectively extend existing LLMs' context window's length.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"social-sciences":0}}
@@ -26,7 +26,7 @@
 {"text":"This becomes hugely alarming when we rely on language generation capabilities for sensitive applications, such as summarizing medical records, financial analysis reports, etc.","cats":{"prompt-engineering":0,"security":0,"hci":0,"social-sciences":0}}
 {"text":"We find that use of generative AI systems is already widespread: 45% of respondents were aware of generative AI usage within their area of work, while 22% actively use a generative AI system.","cats":{"prompt-engineering":0,"security":0,"hci":1,"social-sciences":0}}
 {"text":"Our survey also found a high amount of trust (61%) around generative AI outputs, and a low fear of replacement (16%).","cats":{"prompt-engineering":0,"security":0,"hci":0,"social-sciences":0}}
-{"text":"The study concludes by addressing the challenges faced and suggesting potential research directions in this field.","cats":{"prompt-engineering":0,"social-sciences":0}}
+{"text":"The study concludes by addressing the challenges faced and suggesting potential research directions in this field.","cats":{"prompt-engineering":0,"social-sciences":0,"production":0}}
 {"text":"Large Language Models (LLMs) have shown extraordinary capabilities in understanding and generating text that closely mirrors human communication.","cats":{"prompt-engineering":0,"robustness":0,"security":0,"hci":0,"social-sciences":0,"architectures":0}}
 {"text":"However, it is important to recognize that an excessive reliance on this functionality raises the risk of manipulation by malicious actors who can exploit it with carefully crafted prompts.","cats":{"prompt-engineering":1,"hci":0,"social-sciences":0}}
 {"text":"The results indicate the need for careful validation and tailored prompt engineering.","cats":{"robustness":0,"hci":0,"social-sciences":0}}
@@ -40,10 +40,10 @@
 {"text":"The emergence of ChatGPT and other large language models (LLMs) has greatly increased interest in utilizing LLMs as therapists to support individuals struggling with mental health challenges.","cats":{"robustness":0,"hci":1,"social-sciences":1}}
 {"text":"In this paper, we propose BOLT, a novel computational framework to study the conversational behavior of LLMs when employed as therapists.","cats":{"robustness":0,"social-sciences":1}}
 {"text":"The prominent large language models (LLMs) of today differ from past language models not only in size, but also in the fact that they are trained on a combination of natural language and formal language (code).","cats":{"robustness":0,"hci":0,"social-sciences":0,"education":0,"programming":1}}
-{"text":"It incorporates prompt engineering and offline open-source LLMs, offering user autonomy in selecting base models.","cats":{"robustness":0,"social-sciences":0}}
+{"text":"It incorporates prompt engineering and offline open-source LLMs, offering user autonomy in selecting base models.","cats":{"robustness":0,"social-sciences":0,"production":1}}
 {"text":"A tuple (Z_1,...,Z_p) of matrices of size r is said to be a commuting extension of a tuple (A_1,...,A_p) of matrices of size n <r if the Z_i pairwise commute and each A_i sits in the upper left corner of a block decomposition of Z_i.","cats":{"security":0,"social-sciences":0}}
 {"text":"Through a difference-in-differences approach, we find that deplatforming reduces online attention toward influencers.","cats":{"security":0,"hci":0,"social-sciences":1}}
-{"text":"Our method achieves human-level performance in estimating fetal biometrics and estimates well-calibrated credible intervals in which the true biometric value is expected to lie.","cats":{"security":0,"social-sciences":0}}
+{"text":"Our method achieves human-level performance in estimating fetal biometrics and estimates well-calibrated credible intervals in which the true biometric value is expected to lie.","cats":{"security":0,"social-sciences":0,"production":0}}
 {"text":"Bearing faults are primary contributors to machine vibrations, and analyzing their signal morphology offers insights into their health status.","cats":{"security":0,"social-sciences":0,"architectures":0}}
 {"text":"Taken together, these findings caution against the rapid and unsupervised integration of popular LLMs into legal tasks.","cats":{"security":0,"hci":0,"social-sciences":0}}
 {"text":"Furthermore, unlike other types of artificial intelligence, it is a technology that has quickly become widely available for bottom-up adoption: essentially anyone can decide to make use of it in their day to day work.","cats":{"security":0,"hci":0,"social-sciences":0,"education":0}}
@@ -82,7 +82,7 @@
 {"text":"On the other hand, concerns are emerging regarding the validity, privacy, and ethics of the research when LLMs are involved.","cats":{"hci":1,"social-sciences":0}}
 {"text":"This SIG aims at offering an open space for social computing researchers who are interested in understanding the impacts of LLMs to discuss their current practices, perspectives, challenges when engaging with LLMs in their everyday work and collectively shaping the emerging norms of using LLMs in social computing research.","cats":{"hci":1,"social-sciences":1}}
 {"text":"However, they struggle to assess ambiguous or context-deficient statements accurately.","cats":{"hci":0,"social-sciences":0}}
-{"text":"The former struggles to cope with the object state changes, while the latter neglects the correlation between spatial and temporal information.","cats":{"hci":0,"social-sciences":0}}
+{"text":"The former struggles to cope with the object state changes, while the latter neglects the correlation between spatial and temporal information.","cats":{"hci":0,"social-sciences":0,"production":0}}
 {"text":"In order to develop effective hallucination prevention strategies under RAG, it is important to create benchmark datasets that can measure the extent of hallucination.","cats":{"hci":0,"social-sciences":0}}
 {"text":"In human-centric content generation, the pre-trained text-to-image models struggle to produce user-wanted portrait images, which retain the identity of individuals while exhibiting diverse expressions.","cats":{"hci":0,"social-sciences":0}}
 {"text":"We devise a novel diffusion model that can undertake the task of simultaneously face swapping and reenactment.","cats":{"hci":0,"social-sciences":0}}
@@ -92,18 +92,48 @@
 {"text":"Two examples of annotation tasks, sentiment analysis in tweets and identification of leisure activities in childhood aspirational essays are provided.","cats":{"hci":0,"social-sciences":1}}
 {"text":"The study highlights the advantages of open models for data privacy and reproducibility.","cats":{"hci":0,"social-sciences":0}}
 {"text":"Despite the proficiency of LLMs in a range of tasks, their potential for understanding causality requires further exploration.","cats":{"hci":0,"social-sciences":0}}
+{"text":"To address this, we introduce Social-Transmotion, a generic model that exploits the power of transformers to handle diverse and numerous visual cues, capturing the multi-modal nature of human behavior.","cats":{"hci":1,"social-sciences":1}}
+{"text":"Accurate human trajectory prediction is crucial for applications such as autonomous vehicles, robotics, and surveillance systems.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Yet, existing models often fail to fully leverage the non-verbal social cues human subconsciously communicate when navigating the space.  ","cats":{"hci":0,"social-sciences":0}}
+{"text":"We translate the idea of a prompt from Natural Language Processing (NLP) to the task of human trajectory prediction, where a prompt can be a sequence of x-y coordinates on the ground, bounding boxes or body poses.","cats":{"hci":0,"social-sciences":1}}
+{"text":"By the masking technique, we ensure our model's effectiveness even when certain visual cues are unavailable, although performance is further boosted with the presence of comprehensive visual data.","cats":{"hci":0,"social-sciences":0}}
+{"text":"We delve into the merits of using 2d versus 3d poses, and a limited set of poses.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Additionally, we investigate the spatial and temporal attention map to identify which keypoints and frames of poses are vital for optimizing human trajectory prediction.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Our approach is validated on multiple datasets, including JTA, JRDB, Pedestrians and Cyclists in Road Traffic, and ETH-UCY.","cats":{"hci":0,"social-sciences":0}}
+{"text":"The code is publicly available: https://github.com/vita-epfl/social-transmotion","cats":{"hci":0,"social-sciences":0}}
+{"text":"(Source) code summarization is the task of automatically generating natural language summaries for given code snippets.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"Such summaries play a key role in helping developers understand and maintain source code.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Recently, with the successful application of large language models (LLMs) in numerous fields, software engineering researchers have also attempted to adapt LLMs to solve code summarization tasks.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"The main adaptation schemes include instruction prompting and task-oriented fine-tuning.","cats":{"hci":0,"social-sciences":0}}
+{"text":"PromptCS","cats":{"hci":0,"social-sciences":0}}
+{"text":"Compared to the human-written discrete prompt, the continuous prompts are produced under the guidance of LLMs and are therefore easier to understand by LLMs.","cats":{"hci":0,"social-sciences":0}}
+{"text":"freezes the parameters of LLMs when training the prompt agent, which can greatly reduce the requirements for training resources.","cats":{"hci":0,"social-sciences":0}}
+{"text":"We evaluate PromptCS","cats":{"hci":0,"social-sciences":0}}
+{"text":"on the CodeSearchNet dataset involving multiple programming languages.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"The results show that PromptCS","cats":{"hci":0,"social-sciences":0}}
+{"text":"significantly outperforms instruction prompting schemes on all four widely used metrics.","cats":{"hci":0,"social-sciences":0}}
+{"text":"In some base LLMs, e.g., CodeGen-Multi-2B and StarCoderBase-1B and -3B, PromptCS","cats":{"hci":0,"social-sciences":0}}
+{"text":"even outperforms the task-oriented fine-tuning scheme.","cats":{"hci":0,"social-sciences":0}}
+{"text":"More importantly, the training efficiency of PromptCS is faster than the task-oriented fine-tuning scheme, with a more pronounced advantage on larger LLMs.","cats":{"hci":0,"social-sciences":0}}
+{"text":"The results of the human evaluation demonstrate that PromptCS can generate more good summaries compared to baselines.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Task-Oriented Parsing (TOP) enables conversational assistants to interpret user commands expressed in natural language, transforming them into structured outputs that combine elements of both natural language and intent/slot tags.","cats":{"hci":0,"social-sciences":0}}
+{"text":"Recently, Large Language Models (LLMs) have achieved impressive performance in synthesizing computer programs based on a natural language prompt, mitigating the gap between natural language and structured programs.","cats":{"hci":0,"social-sciences":0,"programming":1}}
+{"text":"Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts?","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.","cats":{"hci":0,"social-sciences":0,"programming":0}}
+{"text":"Notably, this enhancement is achieved without the need for additional data or specialized prompts.","cats":{"hci":0,"social-sciences":0,"programming":0}}
 {"text":"We have systematically devised six fairness criteria for NLP, which can be further refined into 18 sub-categories.","cats":{"social-sciences":0}}
 {"text":"Broadband infrastructure owners do not always know how their customers are connected in the local networks, which are structured as rooted trees.","cats":{"social-sciences":0}}
 {"text":"A recent study is able to infer the topology of a local network using discrete time series data from the leaves of the tree (customers).","cats":{"social-sciences":0}}
 {"text":"However, collecting such annotations is prohibitive in many real applications, and cannot benefit from datasets available for individual tasks.","cats":{"social-sciences":0}}
 {"text":"To address these two issues, we propose a KubeEdge-Cloud-Edge-Scheduling scheme named KCES, a workflow containerization scheduling scheme for the KubeEdge cloud-edge framework.","cats":{"social-sciences":0,"production":0}}
 {"text":"Neural radiance fields (NeRF) have been proposed as an innovative 3D representation method.","cats":{"social-sciences":0,"architectures":0}}
-{"text":"The current approach to fetal anomaly screening is based on biometric measurements derived from individually selected ultrasound images.","cats":{"social-sciences":0}}
+{"text":"The current approach to fetal anomaly screening is based on biometric measurements derived from individually selected ultrasound images.","cats":{"social-sciences":0,"production":0}}
 {"text":"We use a Bayesian method to estimate the true value of each biometric from a large number of measurements and probabilistically reject outliers.","cats":{"social-sciences":0,"production":0}}
 {"text":"Our method holds significant potential for substantially improving forest management practices.","cats":{"social-sciences":0}}
 {"text":"We evaluate the resulting models using both frequentist and Bayesian data analysis.","cats":{"social-sciences":0,"programming":0}}
 {"text":"We consider a new setting in which the Searcher has some potentially erroneous information, or prediction on the Hider's position.","cats":{"social-sciences":0}}
-{"text":"In this case, the accelerator requires 18,268 logic cells and 51 BRAM, with an overall power consumption of 430mW and a latency of 54 us for a complete inference on input data.","cats":{"social-sciences":0}}
+{"text":"In this case, the accelerator requires 18,268 logic cells and 51 BRAM, with an overall power consumption of 430mW and a latency of 54 us for a complete inference on input data.","cats":{"social-sciences":0,"production":0}}
 {"text":"To select the optimal camera, we design an optimal camera matching approach and implement a classifier for original prompts capable of automatically matching.","cats":{"social-sciences":0}}
 {"text":"We analyze the impact of key factors such as vocabulary extension, further pretraining, and instruction tuning on transfer.","cats":{"social-sciences":0}}
 {"text":"LoRA usually offers the most favorable trade-off between cost and performance.","cats":{"social-sciences":0}}
@@ -114,7 +144,7 @@
 {"text":"Alignment, which can be viewed as the superimposition of normative structure onto a statistical model, reveals a conflicted and complex interrelationship between language and technology.","cats":{"social-sciences":0}}
 {"text":"Although planning is a crucial component of the autonomous driving stack, researchers have yet to develop robust planning algorithms that are capable of safely handling the diverse range of possible driving scenarios.","cats":{"social-sciences":0}}
 {"text":"To address these limitations, we investigate the possibility of leveraging the common-sense reasoning capabilities of Large Language Models (LLMs) such as GPT4 and Llama2 to generate plans for self-driving vehicles.","cats":{"social-sciences":0}}
-{"text":"Large Language Models (LLMs) have proven powerful, but the risk of privacy leakage remains a significant concern.","cats":{"social-sciences":0}}
+{"text":"Large Language Models (LLMs) have proven powerful, but the risk of privacy leakage remains a significant concern.","cats":{"social-sciences":0,"production":0}}
 {"text":"This work introduces an innovative architecture that combines the strengths of ChatGPT with a traditional information retrieval based chatbot framework to offer enhanced student support in higher education.","cats":{"social-sciences":0,"education":1}}
 {"text":"We first present an extensive overview by categorizing these works in terms of various IE subtasks and learning paradigms, then we empirically analyze the most advanced methods and discover the emerging trend of IE tasks with LLMs.","cats":{"social-sciences":0}}
 {"text":"Our new classifier improves zeroshot performance by 9.4%.","cats":{"social-sciences":0,"production":0}}
@@ -288,31 +318,7 @@
 {"text":"In detail, we first transform the TSG task and its multimodal inputs including speech and visual, into compressed task textualization.","cats":{"social-sciences":0}}
 {"text":"Furthermore, to enhance temporal reasoning under complicated contexts, a Boundary-Perceptive Prompting strategy is proposed, which contains three folds: i) we design a novel Multiscale Denoising Chain-of-Thought (CoT) to combine global and local semantics with noise filtering step by step, ii) we set up validity principles capable of constraining LLM to generate reasonable predictions following specific formats, and iii) we introduce one-shot In-Context-Learning (ICL) to boost reasoning through imitation, enhancing LLM in TSG task understanding.","cats":{"social-sciences":0}}
 {"text":"Experiments demonstrate the state-of-the-art performance of our Grounding-Prompter method, revealing the benefits of prompting LLM with multimodal information for TSG in long videos.","cats":{"social-sciences":0}}
-{"text":"To address this, we introduce Social-Transmotion, a generic model that exploits the power of transformers to handle diverse and numerous visual cues, capturing the multi-modal nature of human behavior.","cats":{"social-sciences":1}}
-{"text":"We translate the idea of a prompt from Natural Language Processing (NLP) to the task of human trajectory prediction, where a prompt can be a sequence of x-y coordinates on the ground, bounding boxes or body poses.","cats":{"social-sciences":1}}
-{"text":"Accurate human trajectory prediction is crucial for applications such as autonomous vehicles, robotics, and surveillance systems.","cats":{"social-sciences":0}}
-{"text":"Yet, existing models often fail to fully leverage the non-verbal social cues human subconsciously communicate when navigating the space.  ","cats":{"social-sciences":0}}
 {"text":"We translate the idea of a prompt from Natural Language Processing (NLP) to the task of human trajectory prediction, where a prompt can be a sequence of x-y coordinates on the ground, bounding boxes orased on the available visual cues, whether they are poses, bounding boxes, or a combination thereof.","cats":{"social-sciences":0}}
-{"text":"By the masking technique, we ensure our model's effectiveness even when certain visual cues are unavailable, although performance is further boosted with the presence of comprehensive visual data.","cats":{"social-sciences":0}}
-{"text":"We delve into the merits of using 2d versus 3d poses, and a limited set of poses.","cats":{"social-sciences":0}}
-{"text":"Additionally, we investigate the spatial and temporal attention map to identify which keypoints and frames of poses are vital for optimizing human trajectory prediction.","cats":{"social-sciences":0}}
-{"text":"Our approach is validated on multiple datasets, including JTA, JRDB, Pedestrians and Cyclists in Road Traffic, and ETH-UCY.","cats":{"social-sciences":0}}
-{"text":"The code is publicly available: https://github.com/vita-epfl/social-transmotion","cats":{"social-sciences":0}}
-{"text":"(Source) code summarization is the task of automatically generating natural language summaries for given code snippets.","cats":{"social-sciences":0,"programming":1}}
-{"text":"Such summaries play a key role in helping developers understand and maintain source code.","cats":{"social-sciences":0,"programming":0}}
-{"text":"Recently, with the successful application of large language models (LLMs) in numerous fields, software engineering researchers have also attempted to adapt LLMs to solve code summarization tasks.","cats":{"social-sciences":0,"programming":1}}
-{"text":"The main adaptation schemes include instruction prompting and task-oriented fine-tuning.","cats":{"social-sciences":0}}
-{"text":"PromptCS","cats":{"social-sciences":0}}
-{"text":"Compared to the human-written discrete prompt, the continuous prompts are produced under the guidance of LLMs and are therefore easier to understand by LLMs.","cats":{"social-sciences":0}}
-{"text":"freezes the parameters of LLMs when training the prompt agent, which can greatly reduce the requirements for training resources.","cats":{"social-sciences":0}}
-{"text":"We evaluate PromptCS","cats":{"social-sciences":0}}
-{"text":"on the CodeSearchNet dataset involving multiple programming languages.","cats":{"social-sciences":0,"programming":0}}
-{"text":"The results show that PromptCS","cats":{"social-sciences":0}}
-{"text":"significantly outperforms instruction prompting schemes on all four widely used metrics.","cats":{"social-sciences":0}}
-{"text":"In some base LLMs, e.g., CodeGen-Multi-2B and StarCoderBase-1B and -3B, PromptCS","cats":{"social-sciences":0}}
-{"text":"even outperforms the task-oriented fine-tuning scheme.","cats":{"social-sciences":0}}
-{"text":"More importantly, the training efficiency of PromptCS is faster than the task-oriented fine-tuning scheme, with a more pronounced advantage on larger LLMs.","cats":{"social-sciences":0}}
-{"text":"The results of the human evaluation demonstrate that PromptCS can generate more good summaries compared to baselines.","cats":{"social-sciences":0}}
 {"text":"Existing human-human interaction datasets typically suffer from inaccurate body motions, lack of hand gestures and fine-grained textual descriptions.","cats":{"social-sciences":1}}
 {"text":"To better perceive and generate human-human interactions, we propose Inter-X, a currently largest human-human interaction dataset with accurate body movements and diverse interaction patterns, together with detailed hand gestures.","cats":{"social-sciences":1}}
 {"text":"We also equip Inter-X with versatile annotations of more than 34K fine-grained human part-level textual descriptions, semantic interaction categories, interaction order, and the relationship and personality of the subjects.","cats":{"social-sciences":1}}
@@ -344,15 +350,15 @@
 {"text":"As a result, our proposed simple model demonstrates superior performance on both narration alignment and procedural step grounding tasks, surpassing existing state-of-the-art methods by a significant margin on three public benchmarks, namely, 9.3% on HT-Step, 3.4% on HTM-Align and 4.7% on CrossTask.","cats":{"social-sciences":0}}
 {"text":"We believe the proposed model and dataset with descriptive steps can be treated as a strong baseline for future research in temporal video-text alignment.","cats":{"social-sciences":0}}
 {"text":"All codes, models, and the resulting dataset will be publicly released to the research community.","cats":{"social-sciences":0}}
-{"text":"Furthermore, we explore the ability of chatbots to evaluate statements according to political communication concepts of disinformation, misinformation, and conspiracy theory, using definition-oriented prompts.","cats":{"social-sciences":1}}
-{"text":"We also systematically test how such evaluations are influenced by source bias which we model by attributing specific claims to various political and social actors.","cats":{"social-sciences":0}}
-{"text":"These findings highlight the potential of LLM-based chatbots in tackling different forms of false information in online environments, but also points to the substantial variation in terms of how such potential is realized due to specific factors, such as language of the prompt or the topic.","cats":{"social-sciences":0}}
-{"text":"This article presents a comparative analysis of the ability of two large language model (LLM)-based chatbots, ChatGPT and Bing Chat, recently rebranded to Microsoft Copilot, to detect veracity of political information.","cats":{"social-sciences":0}}
-{"text":"We use AI auditing methodology to investigate how chatbots evaluate true, false, and borderline statements on five topics: COVID-19, Russian aggression against Ukraine, the Holocaust, climate change, and LGBTQ+ related debates.","cats":{"social-sciences":0}}
+{"text":"Furthermore, we explore the ability of chatbots to evaluate statements according to political communication concepts of disinformation, misinformation, and conspiracy theory, using definition-oriented prompts.","cats":{"social-sciences":1,"production":0}}
+{"text":"We also systematically test how such evaluations are influenced by source bias which we model by attributing specific claims to various political and social actors.","cats":{"social-sciences":0,"production":0}}
+{"text":"These findings highlight the potential of LLM-based chatbots in tackling different forms of false information in online environments, but also points to the substantial variation in terms of how such potential is realized due to specific factors, such as language of the prompt or the topic.","cats":{"social-sciences":0,"production":0}}
+{"text":"This article presents a comparative analysis of the ability of two large language model (LLM)-based chatbots, ChatGPT and Bing Chat, recently rebranded to Microsoft Copilot, to detect veracity of political information.","cats":{"social-sciences":0,"production":0}}
+{"text":"We use AI auditing methodology to investigate how chatbots evaluate true, false, and borderline statements on five topics: COVID-19, Russian aggression against Ukraine, the Holocaust, climate change, and LGBTQ+ related debates.","cats":{"social-sciences":0,"production":0}}
 {"text":"We compare how the chatbots perform in high- and low-resource languages by using prompts in English, Russian, and Ukrainian.  ","cats":{"social-sciences":0}}
 {"text":"The results show high performance of ChatGPTorse with a 67 percent accuracy.","cats":{"social-sciences":0}}
-{"text":"We observe significant disparities in how chatbots evaluate prompts in high- and low-resource languages and how they adapt their evaluations to political communication concepts with ChatGPT providing more nuanced outputs than Bing Chat.","cats":{"social-sciences":0}}
-{"text":"Finally, we find that for some veracity detection-related tasks, the performance of chatbots varied depending on the topic of the statement or the source to which it is attributed.","cats":{"social-sciences":0}}
+{"text":"We observe significant disparities in how chatbots evaluate prompts in high- and low-resource languages and how they adapt their evaluations to political communication concepts with ChatGPT providing more nuanced outputs than Bing Chat.","cats":{"social-sciences":0,"production":0}}
+{"text":"Finally, we find that for some veracity detection-related tasks, the performance of chatbots varied depending on the topic of the statement or the source to which it is attributed.","cats":{"social-sciences":0,"production":0}}
 {"text":"However, maintaining human-like discourse structure in the generated text remains a challenging research question.","cats":{"social-sciences":1}}
 {"text":"Instruction-tuned large language models have shown remarkable performance in aligning generated text with user intentions across various tasks.  ","cats":{"social-sciences":0}}
 {"text":"In this paper, we propose Instruct-SCTG, a flexible and effective sequential framework that harnesses instruction-tuned language models to generate structurally coherent text in both fine-tuned and zero-shot setups.","cats":{"social-sciences":0}}
@@ -370,12 +376,6 @@
 {"text":" The primary objective is to investigate the presence of gender biases, disparities, and fairness in generally targeted training samples with mixed-gender datasets in AI sessment items.","cats":{"social-sciences":0}}
 {"text":"The study employs three distinct techniques for bias analysis: Scoring accuracy difference to evaluate bias, mean score gaps by gender (MSG) to evaluate disparity, and Equ, suggesting no significant scoring bias.","cats":{"social-sciences":0}}
 {"text":"Consistently with both BERT and GPT-3.5, we found that mixed-trained models generated fewer MSG and non-disparate predictions compared to huma suggests that mixed-trained models generated more fairness outcomes compared with gender-specifically trained models.","cats":{"social-sciences":0}}
-{"text":"Task-Oriented Parsing (TOP) enables conversational assistants to interpret user commands expressed in natural language, transforming them into structured outputs that combine elements of both natural language and intent/slot tags.","cats":{"social-sciences":0}}
-{"text":"Recently, Large Language Models (LLMs) have achieved impressive performance in synthesizing computer programs based on a natural language prompt, mitigating the gap between natural language and structured programs.","cats":{"social-sciences":0,"programming":1}}
-{"text":"Our paper focuses on harnessing the capabilities of LLMs for semantic parsing tasks, addressing the following three key research questions: 1) How can LLMs be effectively utilized for semantic parsing tasks?","cats":{"social-sciences":0,"programming":0}}
-{"text":"and 3) How can LLM overcome the length constraint and streamline prompt design by including all examples as prompts?","cats":{"social-sciences":0,"programming":0}}
-{"text":"Extensive experiments show that: 1)Simple ICL without kNN search can achieve a comparable performance with strong supervised models on the TOP tasks, and 2) kNN-ICL significantly improves the comprehension of complex requests by seamlessly integrating ICL with a nearest-neighbor approach.","cats":{"social-sciences":0,"programming":0}}
-{"text":"Notably, this enhancement is achieved without the need for additional data or specialized prompts.","cats":{"social-sciences":0,"programming":0}}
 {"text":"The growing popularity of neural machine translation (NMT) and LLMs represented by ChatGPT underscores the need for a deeper understanding of their distinct characteristics and relationships.","cats":{"social-sciences":0}}
 {"text":"Such understanding is crucial for language professionals and researchers to make informed decisions and tactful use of these cutting-edge translation technology, but remains underexplored.","cats":{"social-sciences":0}}
 {"text":"This study aims to fill this gap by investigating three key questions: (1) the distinguishability of ChatGPT-generated translations from NMT and human translation (HT), (2) the linguistic characteristics of each translation type, and (3) the degree of resemblance between ChatGPT-produced translations and HT or NMT.","cats":{"social-sciences":0}}
