@@ -23,7 +23,7 @@ sections:
       stealing, and strategies to mitigate these risks. The emphasis is on
       identifying and addressing security vulnerabilities in LLM systems.
     label: security
-    threshold: 0.58
+    threshold: 0.6
   # - name: Legal Frameworks for LLM Accountability
   #   instructions: >
   #     This label is used for articles examining legal and regulatory aspects of
@@ -93,7 +93,7 @@ sections:
       Emphasis may be placed on scalability, efficiency (quantization), data privacy,
       and best practices in operationalizing LLMs in various environments.
     label: production
-    threshold: 0.6
+    threshold: 0.3
   - name: LLM Model Architectures and Training Techniques
     instructions: >
       This label identifies articles that focus on the architectural designs and 
@@ -105,7 +105,7 @@ sections:
       in training, and approaches to improve computational efficiency and environmental 
       sustainability of LLMs.
     label: architectures
-    threshold: 0.6
+    threshold: 0.4
   - name: Programming applications of LLMs
     instructions: >
       This label is designated for articles that delve into the utilization of Large 
