@@ -4,8 +4,8 @@
 {"text":"The minimization is solved by exploiting the Wolfe duality theorem, reducing the problem to the solution of a Non-Negative Least Square (NNLS) problem.","cats":{"security":0}}
 {"text":"Additionally, ToolEyes incorporates a tool library boasting approximately 600 tools, serving as an intermediary between LLMs and the physical world.","cats":{"security":0}}
 {"text":"These findings offer instructive insights aimed at advancing the field of tool learning.","cats":{"security":0,"social-sciences":0,"programming":0}}
-{"text":"We provide extensive evaluations of representative LLMs (e.g., ChatGPT, Vicuna) on CoDI-Eval, revealing their limitations in following instructions with specific constraints and there is still a significant gap between open-source and commercial closed-source LLMs.","cats":{"security":0,"production":1}}
-{"text":"Large language models (LLMs) have achieved huge success for their general knowledge and ability to solve a wide spectrum of tasks in natural language processing (NLP).","cats":{"security":0}}
+{"text":"We provide extensive evaluations of representative LLMs (e.g., ChatGPT, Vicuna) on CoDI-Eval, revealing their limitations in following instructions with specific constraints and there is still a significant gap between open-source and commercial closed-source LLMs.","cats":{"security":0,"production":1,"programming":0}}
+{"text":"Large language models (LLMs) have achieved huge success for their general knowledge and ability to solve a wide spectrum of tasks in natural language processing (NLP).","cats":{"security":0,"programming":0}}
 {"text":"For the projects we study, we are able to globally increase expertise during reviews, +3%, reduce workload concentration, -12%, and reduce the files at risk, -28%.","cats":{"security":0,"architectures":0}}
 {"text":"We make our scripts and data available in our replication package.","cats":{"security":0}}
 {"text":"Our work provides a new way to red-team LLMs and to understand the mechanism of jailbreak attacks.","cats":{"security":1}}

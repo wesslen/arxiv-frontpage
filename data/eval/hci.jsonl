@@ -5,7 +5,7 @@
 {"text":"Unfortunately, existing solutions fall short of satisfying these requirements.   ","cats":{"hci":0}}
 {"text":"A crucial step of FL, that of aggregating local models to produce the global one, shares many similarities with public decision-making, and elections in particular.","cats":{"hci":0,"recommender":0}}
 {"text":"This study aims to reverse radar view angles in synthetic aperture radar (SAR) images given a target model.","cats":{"hci":0}}
-{"text":"Different from existing studies on controllable text generation, CoDI-Eval extends the scope to the prevalent instruction-following paradigm for the first time.","cats":{"hci":0}}
+{"text":"Different from existing studies on controllable text generation, CoDI-Eval extends the scope to the prevalent instruction-following paradigm for the first time.","cats":{"hci":0,"programming":0}}
 {"text":"More specifically, GeoGalactica is from further pre-training of Galactica.","cats":{"hci":0,"education":0}}
 {"text":"Our framework empowers InsActor to capture complex relationships between high-level human instructions and character motions by employing diffusion policies for flexibly conditioned motion planning.","cats":{"hci":0}}
 {"text":"This paper introduces a novel human-LLM interaction framework, Low-code LLM.","cats":{"hci":1}}

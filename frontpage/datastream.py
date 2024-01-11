@@ -443,8 +443,8 @@ class DataStream:
         """Show the annotation statistics."""
         for level in DATA_LEVELS:
             data = {}
-            for label in LABELS:
-                for data_type in DATA_TYPES:
+            for data_type in DATA_TYPES:          
+                for label in LABELS:
                     if data_type == "training":
                         dataset_name = f"{label}-{level}"
                     if data_type == "evaluation":
