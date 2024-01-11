@@ -1,7 +1,7 @@
 {"text":"We open-source our data curation tools and the checkpoints of GeoGalactica during the first 3/4 of pre-training.","cats":{"robustness":0,"production":0}}
+{"text":"We find LLMs often exhibit overconfidence or high randomness when self-evaluate, offering stubborn or inconsistent feedback, which causes poor reflection.","cats":{"robustness":1,"production":0}}
 {"text":"We provide extensive evaluations of representative LLMs (e.g., ChatGPT, Vicuna) on CoDI-Eval, revealing their limitations in following instructions with specific constraints and there is still a significant gap between open-source and commercial closed-source LLMs.","cats":{"security":0,"production":1,"programming":0}}
 {"text":"Modern healthcare often utilises radiographic images alongside textual reports for diagnostics, encouraging the use of Vision-Language Self-Supervised Learning (VL-SSL) with large pre-trained models to learn versatile medical vision representations.","cats":{"recommender":0,"production":0}}
-{"text":"We find LLMs often exhibit overconfidence or high randomness when self-evaluate, offering stubborn or inconsistent feedback, which causes poor reflection.","cats":{"production":0}}
 {"text":"Experiments conducted on a series of reasoning and translation tasks with different LLMs serve to underscore the effectiveness and generality of our strategy.","cats":{"production":0}}
 {"text":"Extending to generate multi-scene videos nevertheless is not trivial and necessitates to nicely manage the logic in between while preserving the consistent visual appearance of key content across video scenes.","cats":{"production":0}}
 {"text":"The proposed method is evaluated on multiple challenging benchmarks, including KITTI and Waymo Open datasets.","cats":{"production":0}}

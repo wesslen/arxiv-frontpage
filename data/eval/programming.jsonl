@@ -1,3 +1,4 @@
+{"text":"However, there are no cost-benefit analyses that could be used to guide practitioners who plan to collect references for machine translation evaluation.","cats":{"robustness":0,"programming":0}}
 {"text":"These findings offer instructive insights aimed at advancing the field of tool learning.","cats":{"security":0,"social-sciences":0,"programming":0}}
 {"text":"We provide extensive evaluations of representative LLMs (e.g., ChatGPT, Vicuna) on CoDI-Eval, revealing their limitations in following instructions with specific constraints and there is still a significant gap between open-source and commercial closed-source LLMs.","cats":{"security":0,"production":1,"programming":0}}
 {"text":"Large language models (LLMs) have achieved huge success for their general knowledge and ability to solve a wide spectrum of tasks in natural language processing (NLP).","cats":{"security":0,"programming":0}}
@@ -6,7 +7,6 @@
 {"text":"We impose this constraint by finetuning the generative model with a set of anchor images that capture the characteristics of the input image.","cats":{"social-sciences":0,"education":0,"programming":0}}
 {"text":"As such, there is a need for tools and technologies which may assist teachers and other evaluators in identifying whether any portion of a source code is LLM generated.   ","cats":{"education":1,"programming":1}}
 {"text":"However, it remains unclear whether models have the capacity to reacquire pruned concepts after editing.","cats":{"programming":0}}
-{"text":"However, there are no cost-benefit analyses that could be used to guide practitioners who plan to collect references for machine translation evaluation.","cats":{"programming":0}}
 {"text":"Specifically, DSR generates SAR images at arbitrary view angles in real-time.","cats":{"programming":0}}
 {"text":"In this technical report, we will illustrate in detail all aspects of GeoGalactica, including data collection, data cleaning, base model selection, pre-training, SFT, and evaluation.","cats":{"programming":0}}
 {"text":"Mitigation strategies to deal with turnover tend to disrupt and increase workloads for developers.","cats":{"programming":0}}

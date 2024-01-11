@@ -1,4 +1,4 @@
-{"text":"The reflection capacity of Large Language Model (LLM) has garnered extensive attention.","cats":{"security":0}}
+{"text":"The reflection capacity of Large Language Model (LLM) has garnered extensive attention.","cats":{"robustness":0,"security":0}}
 {"text":"The recent innovations and breakthroughs in diffusion models have significantly expanded the possibilities of generating high-quality videos for the given prompts.","cats":{"security":0,"recommender":0}}
 {"text":"The resultant entity description is then fed into a text-to-image model to generate a reference image for each entity.","cats":{"security":0,"hci":0,"social-sciences":0}}
 {"text":"The minimization is solved by exploiting the Wolfe duality theorem, reducing the problem to the solution of a Non-Negative Least Square (NNLS) problem.","cats":{"security":0}}

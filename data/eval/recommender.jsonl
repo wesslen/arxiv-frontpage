@@ -1,8 +1,8 @@
 {"text":"Most existing works tackle the single-scene scenario with only one video event occurring in a single background.","cats":{"robustness":0,"recommender":0}}
+{"text":"Monitoring concept reemergence and developing techniques to mitigate relearning of unsafe concepts will be important directions for more robust model editing.","cats":{"robustness":1,"recommender":0}}
 {"text":"The recent innovations and breakthroughs in diffusion models have significantly expanded the possibilities of generating high-quality videos for the given prompts.","cats":{"security":0,"recommender":0}}
 {"text":"A crucial step of FL, that of aggregating local models to produce the global one, shares many similarities with public decision-making, and elections in particular.","cats":{"hci":0,"recommender":0}}
 {"text":"LLM-based recommenders are now routinely used by students as well as professional software programmers for code generation and testing.","cats":{"education":1,"recommender":1}}
-{"text":"Monitoring concept reemergence and developing techniques to mitigate relearning of unsafe concepts will be important directions for more robust model editing.","cats":{"recommender":0}}
 {"text":"Extensive experiments demonstrate that VideoDrafter outperforms the SOTA video generation models in terms of visual quality, content consistency, and user preference.","cats":{"recommender":0}}
 {"text":"This paper aims to tackle the problem of modeling dynamic urban street scenes from monocular videos.","cats":{"recommender":0}}
 {"text":"Our extensive empirical evaluation shows that, on TPC-DS-like queries, GEqO yields significant performance gains-up to 200x faster than automated verifiers-and finds up to 2x more equivalences than optimizer and signature-based equivalence detection approaches.","cats":{"recommender":0}}
