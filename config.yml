@@ -58,7 +58,7 @@ sections:
       Articles may also cover the ethical implications, effectiveness, and challenges 
       of integrating LLMs in education.
     label: education
-    threshold: 0.6
+    threshold: 0.5
   - name: LLMs as Recommender Systems
     instructions: >
       This category encompasses articles that investigate the use of LLMs in 
