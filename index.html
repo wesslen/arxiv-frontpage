@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-01-12.</p><br/>
+            <p>Generated on 2024-01-13.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -3410,6 +3410,656 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Probing Structured Semantics Understanding and Generation of Language Models via Question Answering
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Recent advancement in the capabilities of large language models (LLMs) has triggered a new surge in LLMs' evaluation.Most recent evaluation works tends to evaluate the comprehensive ability of LLMs over series of tasks.However, the deep structure understanding of natural language is rarely explored.In this work, we examine the ability of LLMs to deal with structured semantics on the tasks of question answering with the help of the human-constructed formal language.<span class='px-1 mx-1 bg-yellow-200'>Specifically, we implement the inter-conversion of natural and formal language through in-context learning of LLMs to verify their ability to understand and generate the structured logical forms. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.501</span></span>Extensive experiments with models of different sizes and in different formal languages show that today's state-of-the-art LLMs' understanding of the logical forms can approach human level overall, but there still are plenty of room in generating correct logical forms, which suggest that it is more effective to use LLMs to generate more natural language training data to reinforce a small model than directly answering questions with LLMs.Moreover, our results also indicate that models exhibit considerable sensitivity to different formal languages.In general, the formal language with the lower the formalization level, i.e. the more similar it is to natural language, is more LLMs-friendly.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05777v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05777v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Evidence to Generate (E2G): A Single-agent Two-step Prompting for Context Grounded and Retrieval Augmented Reasoning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>While chain-of-thought (CoT) prompting has revolutionized how LLMs perform reasoning tasks, its current methods and variations (e.g, Self-consistency, ReACT, Reflexion, Tree-of-Thoughts (ToT), Cumulative Reasoning (CR)) suffer from limitations like slowness, limited context grounding, hallucination and inconsistent outputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.503</span></span>To overcome these challenges, we introduce Evidence to Generate (E2G), a novel single-agent, two-step prompting framework.Instead of unverified reasoning claims, this innovative approach leverages the power of "evidence for decision making" by first focusing exclusively on the thought sequences (the series of intermediate steps) explicitly mentioned in the context which then serve as extracted evidence, guiding the LLM's output generation process with greater precision and efficiency.This simple yet powerful approach unlocks the true potential of chain-of-thought like prompting, paving the way for faster, more reliable, and more contextually aware reasoning in LLMs.\tool achieves remarkable results robustly across a wide range of knowledge-intensive reasoning and generation tasks, surpassing baseline approaches with state-of-the-art LLMs.For example, (i) on LogiQA benchmark using GPT-4 as backbone model, \tool achieves a new state-of-the Accuracy of 53.8% exceeding CoT by 18%, ToT by 11%, CR by 9% (ii) a variant of E2G with PaLM2 outperforms the variable-shot performance of Gemini Ultra by 0.9 F1 points, reaching an F1 score of 83.3 on a subset of DROP.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05787v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05787v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                How to write a CHI paper (asking for a friend)
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Writing and genre conventions are extant to any scientific community, and CHI is no different.In this paper, we present the early phases of an AI tool we created called KITSUNE, which supports authors in placing their work into the format of a CHI paper, taking into account many conventions that are ever-present in CHI papers.We describe the development of the tool with the intent to promote discussion around how writing conventions are upheld and unquestioned by the CHI community, and how this translates to the work produced.<span class='px-1 mx-1 bg-yellow-200'>In addition, we bring up questions surrounding how the introduction of LLMs into academic writing fundamentally change how conventions will be upheld now and in the future <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.552</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05818v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05818v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Patchscope: A Unifying Framework for Inspecting Hidden Representations of Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Inspecting the information encoded in hidden representations of large language models (LLMs) can explain models' behavior and verify their alignment with human values.Given the capabilities of LLMs in generating human-understandable text, we propose leveraging the model itself to explain its internal representations in natural language.<span class='px-1 mx-1 bg-yellow-200'>We introduce a framework called Patchscopes and show how it can be used to answer a wide range of research questions about an LLM's computation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.508</span></span>We show that prior interpretability methods based on projecting representations into the vocabulary space and intervening on the LLM computation, can be viewed as special instances of this framework.Moreover, several of their shortcomings such as failure in inspecting early layers or lack of expressivity can be mitigated by a Patchscope.Beyond unifying prior inspection techniques, Patchscopes also opens up new possibilities such as using a more capable model to explain the representations of a smaller model, and unlocks new applications such as self-correction in multi-hop reasoning.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.06102v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.06102v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                ANGO: A Next-Level Evaluation Benchmark For Generation-Oriented Language Models In Chinese Domain
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Recently, various Large Language Models (LLMs) evaluation datasets have emerged, but most of them have issues with distorted rankings and difficulty in model capabilities analysis.<span class='px-1 mx-1 bg-yellow-200'>Addressing these concerns, this paper introduces ANGO, a Chinese multi-choice question evaluation benchmark. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.5</span></span>ANGO proposes \textit{Keypoint} categorization standard for the first time, each question in ANGO can correspond to multiple keypoints, effectively enhancing interpretability of evaluation results.Base on performance of real humans, we build a quantifiable question difficulty standard and divide ANGO questions into 9 difficulty levels, which provide more precise guidance for model training.To minimize data leakage impact and fully leverage ANGO's innovative features, we have engineered exclusive sampling strategies and a new evaluation framework that support swift testset iteration.Our experiments demonstrate that ANGO poses a stronger challenge to models and reveals more details in evaluation result compared to existing benchmarks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.04898v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.04898v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                The Impact of Reasoning Step Length on Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Chain of Thought (CoT) is significant in improving the reasoning abilities of large language models (LLMs).However, the correlation between the effectiveness of CoT and the length of reasoning steps in prompts remains largely unknown.To shed light on this, we have conducted several empirical experiments to explore the relations.Specifically, we design experiments that expand and compress the rationale reasoning steps within CoT demonstrations, while keeping all other factors constant.We have the following key findings.First, the results indicate that lengthening the reasoning steps in prompts, even without adding new information into the prompt, considerably enhances LLMs' reasoning abilities across multiple datasets.Alternatively, shortening the reasoning steps, even while preserving the key information, significantly diminishes the reasoning abilities of models.<span class='px-1 mx-1 bg-yellow-200'>This finding highlights the importance of the number of steps in CoT prompts and provides practical guidance to make better use of LLMs' potential in complex problem-solving scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.532</span></span>Second, we also investigated the relationship between the performance of CoT and the rationales used in demonstrations.Surprisingly, the result shows that even incorrect rationales can yield favorable outcomes if they maintain the requisite length of inference.Third, we observed that the advantages of increasing reasoning steps are task-dependent: simpler tasks require fewer steps, whereas complex tasks gain significantly from longer inference sequences.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.04925v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.04925v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Bootstrapping LLM-based Task-Oriented Dialogue Agents via Self-Talk
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) are powerful dialogue agents, but specializing them towards fulfilling a specific function can be challenging.Instructing tuning, i.e. tuning models on instruction and sample responses generated by humans (Ouyang et al., 2022), has proven as an effective method to do so, yet requires a number of data samples that a) might not be available or b) costly to generate.Furthermore, this cost increases when the goal is to make the LLM follow a specific workflow within a dialogue instead of single instructions.<span class='px-1 mx-1 bg-yellow-200'>Inspired by the self-play technique in reinforcement learning and the use of LLMs to simulate human agents, we propose a more effective method for data collection through LLMs engaging in a conversation in various roles. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.555</span></span>This approach generates a training data via "self-talk" of LLMs that can be refined and utilized for supervised fine-tuning.We introduce an automated way to measure the (partial) success of a dialogue.This metric is used to filter the generated conversational data that is fed back in LLM for training.Based on our automated and human evaluations of conversation quality, we demonstrate that such self-talk data improves results.In addition, we examine the various characteristics that showcase the quality of generated dialogues and how they can be connected to their potential utility as training data.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05033v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05033v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Can ChatGPT Rival Neural Machine Translation? A Comparative Study
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Inspired by the increasing interest in leveraging large language models for translation, this paper evaluates the capabilities of large language models (LLMs) represented by ChatGPT in comparison to the mainstream neural machine translation (NMT) engines in translating Chinese diplomatic texts into English.Specifically, we examine the translation quality of ChatGPT and NMT engines as measured by four automated metrics and human evaluation based on an error-typology and six analytic rubrics.Our findings show that automated metrics yield similar results for ChatGPT under different prompts and NMT systems, while human annotators tend to assign noticeably higher scores to ChatGPT when it is provided an example or contextual information about the translation task.Pairwise correlation between automated metrics and dimensions of human evaluation produces weak and non-significant results, suggesting the divergence between the two methods of translation quality assessment.<span class='px-1 mx-1 bg-yellow-200'>These findings provide valuable insights into the potential of ChatGPT as a capable machine translator, and the influence of prompt engineering on its performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.557</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05176v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05176v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                CASA: Causality-driven Argument Sufficiency Assessment
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The argument sufficiency assessment task aims to determine if the premises of a given argument support its conclusion.To tackle this task, existing works often train a classifier on data annotated by humans.However, annotating data is laborious, and annotations are often inconsistent due to subjective criteria.Motivated by the probability of sufficiency (PS) definition in the causal literature, we propose CASA, a zero-shot causality-driven argument sufficiency assessment framework.PS measures how likely introducing the premise event would lead to the conclusion, when both the premise and conclusion events are absent.To estimate this probability, we propose to use large language models (LLMs) to generate contexts that are inconsistent with the premise and conclusion, and revise them by injecting the premise event.Experiments on two logical fallacy detection datasets demonstrate that CASA accurately identifies insufficient arguments.<span class='px-1 mx-1 bg-yellow-200'>We further deploy CASA in a writing assistance application, and find that suggestions generated by CASA enhance the sufficiency of student-written arguments. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.569</span></span>Code and data are available at https://github.com/xxxiaol/CASA.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05249v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05249v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Theory of Mind abilities of Large Language Models in Human-Robot Interaction : An Illusion?
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models have shown exceptional generative abilities in various natural language and generation tasks.However, possible anthropomorphization and leniency towards failure cases have propelled discussions on emergent abilities of Large Language Models especially on Theory of Mind (ToM) abilities in Large Language Models.While several false-belief tests exists to verify the ability to infer and maintain mental models of another entity, we study a special application of ToM abilities that has higher stakes and possibly irreversible consequences : Human Robot Interaction.In this work, we explore the task of Perceived Behavior Recognition, where a robot employs a Large Language Model (LLM) to assess the robot's generated behavior in a manner similar to human observer.We focus on four behavior types, namely - explicable, legible, predictable, and obfuscatory behavior which have been extensively used to synthesize interpretable robot behaviors.<span class='px-1 mx-1 bg-yellow-200'>The LLMs goal is, therefore to be a human proxy to the agent, and to answer how a certain agent behavior would be perceived by the human in the loop, for example "Given a robot's behavior X, would the human observer find it explicable?". <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.532</span></span><span class='px-1 mx-1 bg-yellow-200'>We conduct a human subject study to verify that the users are able to correctly answer such a question in the curated situations (robot setting and plan) across five domains. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.51</span></span>A first analysis of the belief test yields extremely positive results inflating ones expectations of LLMs possessing ToM abilities.We then propose and perform a suite of perturbation tests which breaks this illusion, i.e. Inconsistent Belief, Uninformative Context and Conviction Test.We conclude that, the high score of LLMs on vanilla prompts showcases its potential use in HRI settings, however to possess ToM demands invariance to trivial or irrelevant perturbations in the context which LLMs lack.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05302v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05302v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Leveraging Print Debugging to Improve Code Generation in Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) have made significant progress in code generation tasks, but their performance in tackling programming problems with complex data structures and algorithms remains suboptimal.<span class='px-1 mx-1 bg-yellow-200'>To address this issue, we propose an in-context learning approach that guides LLMs to debug by using a "print debugging" method, which involves inserting print statements to trace and analysing logs for fixing the bug. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.531</span></span>We collect a Leetcode problem dataset and evaluate our method using the Leetcode online judging system.<span class='px-1 mx-1 bg-yellow-200'>Experiments with GPT-4 demonstrate the effectiveness of our approach, outperforming rubber duck debugging in easy and medium-level Leetcode problems by 1.5% and 17.9%. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.594</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05319v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05319v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Machine Teaching for Building Modular AI Agents based on Zero-shot Learners
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The recent advances in large language models (LLMs) have led to the creation of many modular AI agents.<span class='px-1 mx-1 bg-yellow-200'>These agents employ LLMs as zero-shot learners to perform sub-tasks in order to solve complex tasks set forth by human users. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.529</span></span><span class='px-1 mx-1 bg-yellow-200'>We propose an approach to enhance the robustness and performance of modular AI agents that utilize LLMs as zero-shot learners. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.5</span></span>Our iterative machine teaching method offers an efficient way to teach AI agents over time with limited human feedback, addressing the limit posed by the quality of zero-shot learning.We advocate leveraging the data traces from initial deployments and outputs or annotations from the zero-shot learners to train smaller and task-specific substitute models which can reduce both the monetary costs and environmental impact.<span class='px-1 mx-1 bg-yellow-200'>Our machine teaching process avails human expertise to correct examples with a high likelihood of misannotations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.572</span></span>Results on three tasks, common to conversational AI agents, show that close-to-oracle performance can be achieved with supervision on 20-70% of the dataset depending upon the complexity of the task and performance of zero-shot learners.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.05467v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.05467v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Know Your Needs Better: Towards Structured Understanding of Marketer Demands with Analogical Reasoning Augmented LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>In this paper, we explore a new way for user targeting, where non-expert marketers could select their target users solely given demands in natural language form.The key to this issue is how to transform natural languages into practical structured logical languages, i.e., the structured understanding of marketer demands.Considering the impressive natural language processing ability of large language models (LLMs), we try to leverage LLMs to solve this issue.<span class='px-1 mx-1 bg-yellow-200'>Past research indicates that the reasoning ability of LLMs can be effectively enhanced through chain-of-thought (CoT) prompting. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.546</span></span><span class='px-1 mx-1 bg-yellow-200'>But existing methods still have some limitations: (1) Previous methods either use simple "Let's think step by step" spells or provide fixed examples in demonstrations without considering compatibility between prompts and questions, making LLMs ineffective in some complex reasoning tasks such as structured language transformation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.505</span></span>(2) Previous methods are often implemented in closed-source models or excessively large models, which is not suitable in industrial practical scenarios.Based on these, we propose ARALLM (i.e., Analogical Reasoning Augmented Large Language Models) consisting of two modules: Analogical Reasoning based Prompting and Reasoning-Augmented Multi-Task Model Distillation.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.04319v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.04319v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Large Language Models for Robotics: Opportunities, Challenges, and Perspectives
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) have undergone significant expansion and have been increasingly integrated across various domains.Notably, in the realm of robot task planning, LLMs harness their advanced reasoning and language comprehension capabilities to formulate precise and efficient action plans based on natural language instructions.However, for embodied tasks, where robots interact with complex environments, text-only LLMs often face challenges due to a lack of compatibility with robotic visual perception.<span class='px-1 mx-1 bg-yellow-200'>This study provides a comprehensive overview of the emerging integration of LLMs and multimodal LLMs into various robotic tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.523</span></span>Additionally, we propose a framework that utilizes multimodal GPT-4V to enhance embodied task planning through the combination of natural language instructions and robot visual perceptions.Our results, based on diverse datasets, indicate that GPT-4V effectively enhances robot performance in embodied tasks.This extensive survey and evaluation of LLMs and multimodal LLMs across a variety of robotic tasks enriches the understanding of LLM-centric embodied intelligence and provides forward-looking insights toward bridging the gap in Human-Robot-Environment interaction.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.04334v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.04334v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                MERA: A Comprehensive LLM Evaluation in Russian
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Over the past few years, one of the most notable advancements in AI research has been in foundation models (FMs), headlined by the rise of language models (LMs).As the models' size increases, LMs demonstrate enhancements in measurable aspects and the development of new qualitative features.However, despite researchers' attention and the rapid growth in LM application, the capabilities, limitations, and associated risks still need to be better understood.To address these issues, we introduce an open Multimodal Evaluation of Russian-language Architectures (MERA), a new instruction benchmark for evaluating foundation models oriented towards the Russian language.The benchmark encompasses 21 evaluation tasks for generative models in 11 skill domains and is designed as a black-box test to ensure the exclusion of data leakage.<span class='px-1 mx-1 bg-yellow-200'>The paper introduces a methodology to evaluate FMs and LMs in zero- and few-shot fixed instruction settings that can be extended to other modalities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.529</span></span>We propose an evaluation methodology, an open-source code base for the MERA assessment, and a leaderboard with a submission system.We evaluate open LMs as baselines and find that they are still far behind the human level.We publicly release MERA to guide forthcoming research, anticipate groundbreaking model features, standardize the evaluation procedure, and address potential societal drawbacks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.04531v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.04531v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                DebugBench: Evaluating Debugging Capability of Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have demonstrated exceptional coding capability.<span class='px-1 mx-1 bg-yellow-200'>However, as another critical component of programming proficiency, the debugging capability of LLMs remains relatively unexplored. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.569</span></span>Previous evaluations of LLMs' debugging ability are significantly limited by the risk of data leakage, the scale of the dataset, and the variety of tested bugs.To overcome these deficiencies, we introduce `DebugBench', an LLM debugging benchmark consisting of 4,253 instances.It covers four major bug categories and 18 minor types in C++, Java, and Python.To construct DebugBench, we collect code snippets from the LeetCode community, implant bugs into source data with GPT-4, and assure rigorous quality checks.We evaluate two commercial and three open-source models in a zero-shot scenario.We find that (1) while closed-source models like GPT-4 exhibit inferior debugging performance compared to humans, open-source models such as Code Llama fail to attain any pass rate scores; (2) the complexity of debugging notably fluctuates depending on the bug category; (3) incorporating runtime feedback has a clear impact on debugging performance which is not always helpful.As an extension, we also compare LLM debugging and code generation, revealing a strong correlation between them for closed-source models.<span class='px-1 mx-1 bg-yellow-200'>These findings will benefit the development of LLMs in debugging. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.546</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.04621v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.04621v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-08</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Assessing AI Detectors in Identifying AI-Generated Code: Implications for Education
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Educators are increasingly concerned about the usage of Large Language Models (LLMs) such as ChatGPT in programming education, particularly regarding the potential exploitation of imperfections in Artificial Intelligence Generated Content (AIGC) Detectors for academic misconduct. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.556</span></span>In this paper, we present an empirical study where the LLM is examined for its attempts to bypass detection by AIGC Detectors.This is achieved by generating code in response to a given question using different variants.We collected a dataset comprising 5,069 samples, with each sample consisting of a textual description of a coding problem and its corresponding human-written Python solution codes.These samples were obtained from various sources, including 80 from Quescol, 3,264 from Kaggle, and 1,725 from LeetCode.From the dataset, we created 13 sets of code problem variant prompts, which were used to instruct ChatGPT to generate the outputs.Subsequently, we assessed the performance of five AIGC detectors.Our results demonstrate that existing AIGC Detectors perform poorly in distinguishing between human-written code and AI-generated code.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03676v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03676v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-08</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                The Butterfly Effect of Altering Prompts: How Small Changes and Jailbreaks Affect Large Language Model Performance
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) are regularly being used to label data across many domains and for myriad tasks.<span class='px-1 mx-1 bg-yellow-200'>By simply asking the LLM for an answer, or ``prompting,'' practitioners are able to use LLMs to quickly get a response for an arbitrary task. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.541</span></span>This prompting is done through a series of decisions by the practitioner, from simple wording of the prompt, to requesting the output in a certain data format, to jailbreaking in the case of prompts that address more sensitive topics.In this work, we ask: do variations in the way a prompt is constructed change the ultimate decision of the LLM?We answer this using a series of prompt variations across a variety of text classification tasks.We find that even the smallest of perturbations, such as adding a space at the end of a prompt, can cause the LLM to change its answer.Further, we find that requesting responses in XML and commonly used jailbreaks can have cataclysmic effects on the data labeled by LLMs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03729v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03729v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-08</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                TeleChat Technical Report
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>In this technical report, we present TeleChat, a collection of large language models (LLMs) with parameters of 3 billion, 7 billion and 12 billion.It includes pretrained language models as well as fine-tuned chat models that is aligned with human preferences.TeleChat is initially pretrained on an extensive corpus containing a diverse collection of texts from both English and Chinese languages, including trillions of tokens.Subsequently, the model undergoes fine-tuning to align with human preferences, following a detailed methodology that we describe.<span class='px-1 mx-1 bg-yellow-200'>We evaluate the performance of TeleChat on various tasks, including language understanding, mathematics, reasoning, code generation, and knowledge-based question answering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.521</span></span>Our findings indicate that TeleChat achieves comparable performance to other open-source models of similar size across a wide range of public benchmarks.To support future research and applications utilizing LLMs, we release the fine-tuned model checkpoints of TeleChat's 7B and 12B variant, along with code and a portion of our pretraining data, to the public community.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03804v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03804v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-08</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                SpeechAgents: Human-Communication Simulation with Multi-Modal Multi-Agent Systems
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Human communication is a complex and diverse process that not only involves multiple factors such as language, commonsense, and cultural backgrounds but also requires the participation of multimodal information, such as speech.Large Language Model (LLM)-based multi-agent systems have demonstrated promising performance in simulating human society.<span class='px-1 mx-1 bg-yellow-200'>Can we leverage LLM-based multi-agent systems to simulate human communication? <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.52</span></span>However, current LLM-based multi-agent systems mainly rely on text as the primary medium.In this paper, we propose SpeechAgents, a multi-modal LLM based multi-agent system designed for simulating human communication.SpeechAgents utilizes multi-modal LLM as the control center for individual agent and employes multi-modal signals as the medium for exchanged messages among agents.Additionally, we propose Multi-Agent Tuning to enhance the multi-agent capabilities of LLM without compromising general abilities.To strengthen and evaluate the effectiveness of human communication simulation, we build the Human-Communication Simulation Benchmark.Experimental results demonstrate that SpeechAgents can simulate human communication dialogues with consistent content, authentic rhythm, and rich emotions and demonstrate excellent scalability even with up to 25 agents, which can apply to tasks such as drama creation and audio novels generation.Code and models will be open-sourced at https://github. com/0nutation/SpeechAgents</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03945v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03945v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-07</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLM-Powered Code Vulnerability Repair with Reinforcement Learning and Semantic Reward
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>In software development, the predominant emphasis on functionality often supersedes security concerns, a trend gaining momentum with AI-driven automation tools like GitHub Copilot.These tools significantly improve developers' efficiency in functional code development.Nevertheless, it remains a notable concern that such tools are also responsible for creating insecure code, predominantly because of pre-training on publicly available repositories with vulnerable code.Moreover, developers are called the "weakest link in the chain" since they have very minimal knowledge of code security.Although existing solutions provide a reasonable solution to vulnerable code, they must adequately describe and educate the developers on code security to ensure that the security issues are not repeated.Therefore we introduce a multipurpose code vulnerability analysis system \texttt{SecRepair}, powered by a large language model, CodeGen2 assisting the developer in identifying and generating fixed code along with a complete description of the vulnerability with a code comment.Our innovative methodology uses a reinforcement learning paradigm to generate code comments augmented by a semantic reward mechanism.<span class='px-1 mx-1 bg-yellow-200'>Inspired by how humans fix code issues, we propose an instruction-based dataset suitable for vulnerability analysis with LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.51</span></span>We further identify zero-day and N-day vulnerabilities in 6 Open Source IoT Operating Systems on GitHub.Our findings underscore that incorporating reinforcement learning coupled with semantic reward augments our model's performance, thereby fortifying its capacity to address code vulnerabilities with improved efficacy.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03374v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03374v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-07</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLMs for Robotic Object Disambiguation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The advantages of pre-trained large language models (LLMs) are apparent in a variety of language processing tasks.But can a language model's knowledge be further harnessed to effectively disambiguate objects and navigate decision-making challenges within the realm of robotics?Our study reveals the LLM's aptitude for solving complex decision making challenges that are often previously modeled by Partially Observable Markov Decision Processes (POMDPs).A pivotal focus of our research is the object disambiguation capability of LLMs.We detail the integration of an LLM into a tabletop environment disambiguation task, a decision making problem where the robot's task is to discern and retrieve a user's desired object from an arbitrarily large and complex cluster of objects.Despite multiple query attempts with zero-shot prompt engineering (details can be found in the Appendix), the LLM struggled to inquire about features not explicitly provided in the scene description.<span class='px-1 mx-1 bg-yellow-200'>In response, we have developed a few-shot prompt engineering system to improve the LLM's ability to pose disambiguating queries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.506</span></span>The result is a model capable of both using given features when they are available and inferring new relevant features when necessary, to successfully generate and navigate down a precise decision tree to the correct object--even when faced with identical options.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03388v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03388v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-07</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Intelligent agents stand out as a potential path toward artificial general intelligence (AGI).Thus, researchers have dedicated significant effort to diverse implementations for them.Benefiting from recent progress in large language models (LLMs), LLM-based agents that use universal natural language as an interface exhibit robust generalization capabilities across various applications -- from serving as autonomous general-purpose task assistants to applications in coding, social, and economic domains, LLM-based agents offer extensive exploration opportunities.<span class='px-1 mx-1 bg-yellow-200'>This paper surveys current research to provide an in-depth overview of LLM-based intelligent agents within single-agent and multi-agent systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.516</span></span>It covers their definitions, research frameworks, and foundational components such as their composition, cognitive and planning methods, tool utilization, and responses to environmental feedback.We also delve into the mechanisms of deploying LLM-based agents in multi-agent systems, including multi-role collaboration, message passing, and strategies to alleviate communication issues between agents.The discussions also shed light on popular datasets and application scenarios.We conclude by envisioning prospects for LLM-based agents, considering the evolving landscape of AI and natural language processing.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03428v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03428v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-07</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                A Large Language Model Supported Synthesis of Contemporary Academic Integrity Research Trends
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper reports on qualitative content analysis undertaken using ChatGPT, a Large Language Model (LLM), to identify primary research themes in current academic integrity research as well as the methodologies used to explore these areas. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.526</span></span><span class='px-1 mx-1 bg-yellow-200'>The analysis by the LLM identified 7 research themes and 13 key areas for exploration. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.517</span></span>The outcomes from the analysis suggest that much contemporary research in the academic integrity field is guided by technology.Technology is often explored as potential way of preventing academic misconduct, but this could also be a limiting factor when aiming to promote a culture of academic integrity.The findings underscore that LLM led research may be option in the academic integrity field, but that there is also a need for continued traditional research.The findings also indicate that researchers and educational providers should continue to develop policy and operational frameworks for academic integrity.<span class='px-1 mx-1 bg-yellow-200'>This will help to ensure that academic standards are maintained across the wide range of settings that are present in modern education. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.523</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03481v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03481v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-07</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Overview of Dialogue Robot Competition 2023
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>We have held dialogue robot competitions in 2020 and 2022 to compare the performances of interactive robots using an android that closely resembles a human.In 2023, the third competition DRC2023 was held.The task of DRC2023 was designed to be more challenging than the previous travel agent dialogue tasks.<span class='px-1 mx-1 bg-yellow-200'>Since anyone can now develop a dialogue system using LLMs, the participating teams are required to develop a system that effectively uses information about the situation on the spot (real-time information), which is not handled by ChatGPT and other systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.511</span></span>DRC2023 has two rounds, a preliminary round and the final round as well as the previous competitions.The preliminary round has held on Oct.27 -- Nov.20, 2023 at real travel agency stores.The final round will be held on December 23, 2023.This paper provides an overview of the task settings and evaluation method of DRC2023 and the preliminary round results.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.03547v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.03547v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-07</p>
           </td>
           <td>
@@ -3446,7 +4096,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The introduction of ChatGPT has led to a significant increase in the utilization of Large Language Models (LLMs) for addressing downstream tasks.There's an increasing focus on cost-efficient training and deployment within this context.<span class='px-1 mx-1 bg-yellow-200'>Low-cost training and deployment of LLMs represent the future development trend. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.622</span></span>This paper reviews the evolution of large language model training techniques and inference deployment technologies aligned with this emerging trend.The discussion on training includes various aspects, including data preprocessing, training architecture, pre-training tasks, parallel training, and relevant content related to model fine-tuning.On the inference side, the paper covers topics such as model compression, parallel computation, memory scheduling, and structural optimization.It also explores LLMs' utilization and provides insights into their future development.</p>
+                  <p>The introduction of ChatGPT has led to a significant increase in the utilization of Large Language Models (LLMs) for addressing downstream tasks.There's an increasing focus on cost-efficient training and deployment within this context.<span class='px-1 mx-1 bg-yellow-200'>Low-cost training and deployment of LLMs represent the future development trend. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.622</span></span>This paper reviews the evolution of large language model training techniques and inference deployment technologies aligned with this emerging trend.The discussion on training includes various aspects, including data preprocessing, training architecture, pre-training tasks, parallel training, and relevant content related to model fine-tuning.On the inference side, the paper covers topics such as model compression, parallel computation, memory scheduling, and structural optimization.<span class='px-1 mx-1 bg-yellow-200'>It also explores LLMs' utilization and provides insights into their future development. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.514</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.02038v1' target="_blank">
@@ -3467,12 +4117,38 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Exploring Boundary of GPT-4V on Marine Analysis: A Preliminary Case Study
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) have demonstrated a powerful ability to answer various queries as a general-purpose assistant.The continuous multi-modal large language models (MLLM) empower LLMs with the ability to perceive visual signals.The launch of GPT-4 (Generative Pre-trained Transformers) has generated significant interest in the research communities.GPT-4V(ison) has demonstrated significant power in both academia and industry fields, as a focal point in a new artificial intelligence generation.<span class='px-1 mx-1 bg-yellow-200'>Though significant success was achieved by GPT-4V, exploring MLLMs in domain-specific analysis (e.g., marine analysis) that required domain-specific knowledge and expertise has gained less attention. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.521</span></span>In this study, we carry out the preliminary and comprehensive case study of utilizing GPT-4V for marine analysis.This report conducts a systematic evaluation of existing GPT-4V, assessing the performance of GPT-4V on marine research and also setting a new standard for future developments in MLLMs.The experimental results of GPT-4V show that the responses generated by GPT-4V are still far away from satisfying the domain-specific requirements of the marine professions.All images and prompts used in this study will be available at https://github.com/hkust-vgd/Marine_GPT-4V_Eval</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.02147v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.02147v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 The Effects of Generative AI on Computing Students' Help-Seeking Preferences
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Help-seeking is a critical way for students to learn new concepts, acquire new skills, and get unstuck when problem-solving in their computing courses.<span class='px-1 mx-1 bg-yellow-200'>The recent proliferation of generative AI tools, such as ChatGPT, offers students a new source of help that is always available on-demand. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span>However, it is unclear how this new resource compares to existing help-seeking resources along dimensions of perceived quality, latency, and trustworthiness.<span class='px-1 mx-1 bg-yellow-200'>In this paper, we investigate the help-seeking preferences and experiences of computing students now that generative AI tools are available to them. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span><span class='px-1 mx-1 bg-yellow-200'>We collected survey data (n=47) and conducted interviews (n=8) with computing students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.711</span></span>Our results suggest that although these models are being rapidly adopted, they have not yet fully eclipsed traditional help resources.<span class='px-1 mx-1 bg-yellow-200'>The help-seeking resources that students rely on continue to vary depending on the task and other factors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span>Finally, we observed preliminary evidence about how help-seeking with generative AI is a skill that needs to be developed, with disproportionate benefits for those who are better able to harness the capabilities of LLMs.<span class='px-1 mx-1 bg-yellow-200'>We discuss potential implications for integrating generative AI into computing classrooms and the future of help-seeking in the era of generative AI. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.673</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Help-seeking is a critical way for students to learn new concepts, acquire new skills, and get unstuck when problem-solving in their computing courses. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.543</span></span><span class='px-1 mx-1 bg-yellow-200'>The recent proliferation of generative AI tools, such as ChatGPT, offers students a new source of help that is always available on-demand. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span>However, it is unclear how this new resource compares to existing help-seeking resources along dimensions of perceived quality, latency, and trustworthiness.<span class='px-1 mx-1 bg-yellow-200'>In this paper, we investigate the help-seeking preferences and experiences of computing students now that generative AI tools are available to them. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span><span class='px-1 mx-1 bg-yellow-200'>We collected survey data (n=47) and conducted interviews (n=8) with computing students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.711</span></span>Our results suggest that although these models are being rapidly adopted, they have not yet fully eclipsed traditional help resources.<span class='px-1 mx-1 bg-yellow-200'>The help-seeking resources that students rely on continue to vary depending on the task and other factors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span>Finally, we observed preliminary evidence about how help-seeking with generative AI is a skill that needs to be developed, with disproportionate benefits for those who are better able to harness the capabilities of LLMs.<span class='px-1 mx-1 bg-yellow-200'>We discuss potential implications for integrating generative AI into computing classrooms and the future of help-seeking in the era of generative AI. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.673</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.02262v1' target="_blank">
@@ -3498,7 +4174,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Generative AI including large language models (LLMs) have recently gained significant interest in the geo-science community through its versatile task-solving capabilities including coding, spatial computations, generation of sample data, time-series forecasting, toponym recognition, or image classification.So far, the assessment of LLMs for spatial tasks has primarily focused on ChatGPT, arguably the most prominent AI chatbot, whereas other chatbots received less attention.To narrow this research gap, this study evaluates the correctness of responses for a set of 54 spatial tasks assigned to four prominent chatbots, i.e., ChatGPT-4, Bard, Claude-2, and Copilot.<span class='px-1 mx-1 bg-yellow-200'>Overall, the chatbots performed well on spatial literacy, GIS theory, and interpretation of programming code and given functions, but revealed weaknesses in mapping, code generation, and code translation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>ChatGPT-4 outperformed other chatbots across most task categories.</p>
+                  <p>Generative AI including large language models (LLMs) have recently gained significant interest in the geo-science community through its versatile task-solving capabilities including coding, spatial computations, generation of sample data, time-series forecasting, toponym recognition, or image classification.<span class='px-1 mx-1 bg-yellow-200'>So far, the assessment of LLMs for spatial tasks has primarily focused on ChatGPT, arguably the most prominent AI chatbot, whereas other chatbots received less attention. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.558</span></span>To narrow this research gap, this study evaluates the correctness of responses for a set of 54 spatial tasks assigned to four prominent chatbots, i.e., ChatGPT-4, Bard, Claude-2, and Copilot.<span class='px-1 mx-1 bg-yellow-200'>Overall, the chatbots performed well on spatial literacy, GIS theory, and interpretation of programming code and given functions, but revealed weaknesses in mapping, code generation, and code translation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>ChatGPT-4 outperformed other chatbots across most task categories.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.02404v1' target="_blank">
@@ -3514,284 +4190,76 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLaMA Pro: Progressive LLaMA with Block Expansion
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Humans generally acquire new skills without compromising the old; however, the opposite holds for Large Language Models (LLMs), e.g., from LLaMA to CodeLLaMA.To this end, we propose a new post-pretraining method for LLMs with an expansion of Transformer blocks.We tune the expanded blocks using only new corpus, efficiently and effectively improving the model's knowledge without catastrophic forgetting.In this paper, we experiment on the corpus of code and math, yielding LLaMA Pro-8.3B, a versatile foundation model initialized from LLaMA2-7B, excelling in general tasks, programming, and mathematics.<span class='px-1 mx-1 bg-yellow-200'>LLaMA Pro and its instruction-following counterpart (LLaMA Pro-Instruct) achieve advanced performance among various benchmarks, demonstrating superiority over existing open models in the LLaMA family and the immense potential of reasoning and addressing diverse tasks as an intelligent agent. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.534</span></span>Our findings provide valuable insights into integrating natural and programming languages, laying a solid foundation for developing advanced language agents that operate effectively in various environments.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.02415v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.02415v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Learning to Prompt with Text Only Supervision for Vision-Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Foundational vision-language models such as CLIP are becoming a new paradigm in vision, due to their excellent generalization abilities.However, adapting these models for downstream tasks while maintaining their generalization remains a challenge.In literature, one branch of methods adapts CLIP by learning prompts using visual information.While effective, most of these works require labeled data which is not practical, and often struggle to generalize towards new datasets due to over-fitting on the source data.An alternative approach resorts to training-free methods by generating class descriptions from large language models (LLMs) and perform prompt ensembling.However, these methods often generate class specific prompts that cannot be transferred to other classes, which incur higher costs by generating LLM descriptions for each class separately.<span class='px-1 mx-1 bg-yellow-200'>In this work, we propose to combine the strengths of these both streams of methods by learning prompts using only text data derived from LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.518</span></span>As supervised training of prompts is not trivial due to absence of images, we develop a training approach that allows prompts to extract rich contextual knowledge from LLM data.<span class='px-1 mx-1 bg-yellow-200'>Moreover, with LLM contextual data mapped within the learned prompts, it enables zero-shot transfer of prompts to new classes and datasets potentially cutting the LLM prompt engineering cost. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.506</span></span>To the best of our knowledge, this is the first work that learns generalized prompts using text only data.We perform extensive evaluations on 4 benchmarks where our method improves over prior ensembling works while being competitive to those utilizing labeled images.Our code and pre-trained models are available at https://github.com/muzairkhattak/ProText.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.02418v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.02418v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-03</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Predicting challenge moments from students' discourse: A comparison of GPT-4 to two traditional natural language processing approaches
+                Physio: An LLM-Based Physiotherapy Advisor
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Effective collaboration requires groups to strategically regulate themselves to overcome challenges.Research has shown that groups may fail to regulate due to differences in members' perceptions of challenges which may benefit from external support.In this study, we investigated the potential of leveraging three distinct natural language processing models: an expert knowledge rule-based model, a supervised machine learning (ML) model and a Large Language model (LLM), in challenge detection and challenge dimension identification (cognitive, metacognitive, emotional and technical/other challenges) from student discourse, was investigated.The results show that the supervised ML and the LLM approaches performed considerably well in both tasks, in contrast to the rule-based approach, whose efficacy heavily relies on the engineered features by experts.The paper provides an extensive discussion of the three approaches' performance for automated detection and support of students' challenge moments in collaborative learning activities.It argues that, although LLMs provide many advantages, they are unlikely to be the panacea to issues of the detection and feedback provision of socially shared regulation of learning due to their lack of reliability, as well as issues of validity evaluation, privacy and confabulation.<span class='px-1 mx-1 bg-yellow-200'>We conclude the paper with a discussion on additional considerations, including model transparency to explore feasible and meaningful analytical feedback for students and educators using LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.643</span></span></p>
+                  <p>The capabilities of the most recent language models have increased the interest in integrating them into real-world applications.However, the fact that these models generate plausible, yet incorrect text poses a constraint when considering their use in several domains.Healthcare is a prime example of a domain where text-generative trustworthiness is a hard requirement to safeguard patient well-being.In this paper, we present Physio, a chat-based application for physical rehabilitation.Physio is capable of making an initial diagnosis while citing reliable health sources to support the information provided.Furthermore, drawing upon external knowledge databases, Physio can recommend rehabilitation exercises and over-the-counter medication for symptom relief.By combining these features, Physio can leverage the power of generative models for language processing while also conditioning its response on dependable and verifiable sources.<span class='px-1 mx-1 bg-yellow-200'>A live demo of Physio is available at https://physio.inesctec.pt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.505</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01692v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01825v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2401.01692v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Socially Responsible Computing in an Introductory Course
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Given the potential for technology to inflict harm and injustice on society, it is imperative that we cultivate a sense of social responsibility among our students as they progress through the Computer Science (CS) curriculum.Our students need to be able to examine the social complexities in which technology development and use are situated.Also, aligning students' personal goals and their ability to achieve them in their field of study is important for promoting motivation and a sense of belonging.Promoting communal goals while learning computing can help broaden participation, particularly among groups who have been historically marginalized in computing.<span class='px-1 mx-1 bg-yellow-200'>Keeping these considerations in mind, we piloted an introductory Java programming course in which activities engaging students in ethical and socially responsible considerations were integrated across modules. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.652</span></span>Rather than adding social on top of the technical content, our curricular approach seeks to weave them together.The data from the class suggests that the students found the inclusion of the social context in the technical assignments to be more motivating and expressed greater agency in realizing social change.We share our approach to designing this new introductory socially responsible computing course and the students' reflections.We also highlight seven considerations for educators seeking to incorporate socially responsible computing.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.01285v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.01285v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-01</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                A & B == B & A: Triggering Logical Reasoning Failures in Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Recent advancements in large language models (LLMs) have propelled Artificial Intelligence (AI) to new heights, enabling breakthroughs in various tasks such as writing assistance, code generation, and machine translation.A significant distinction of advanced LLMs, such as ChatGPT, is their demonstrated ability to "reason."However, evaluating the reasoning ability of LLMs remains a challenge as most existing evaluations focus on their accuracy on the downstream tasks rather than directly assessing their reasoning processes.Efforts have been made to develop benchmarks and metrics to assess reasoning in LLMs, but they suffer from data leakage or limited scope.In this paper, we introduce LogicAsker, an automatic approach that comprehensively evaluates and improves the logical reasoning abilities of LLMs under a set of atomic reasoning skills based on propositional and predicate logic.The results provide insights into LLMs' reasoning abilities and reveal the logical rules the LLMs did not learn well.We evaluate LogicAsker on six widely deployed LLMs, including GPT-3, ChatGPT, GPT-4, Bard, Vicuna, and Guanaco.The results show that test cases from LogicAsker can find logical reasoning failures in different LLMs with a rate of 25\% - 94\%.<span class='px-1 mx-1 bg-yellow-200'>In addition, the test cases of LogicAsker can be further used to design demonstration examples for in-context learning, which effectively improves the logical reasoning ability of LLMs, e.g., 10\% for GPT-4. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.61</span></span>As far as we know, our work is the first to create prompts based on testing results to improve LLMs' formal reasoning ability effectively.All the code, data, and results will be released for reproduction and future research.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.00757v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.00757v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-01</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Taking the Next Step with Generative Artificial Intelligence: The Transformative Role of Multimodal Large Language Models in Science Education
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>The integration of Artificial Intelligence (AI), particularly Large Language Model (LLM)-based systems, in education has shown promise in enhancing teaching and learning experiences. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.719</span></span>However, the advent of Multimodal Large Language Models (MLLMs) like GPT-4 with vision (GPT-4V), capable of processing multimodal data including text, sound, and visual inputs, opens a new era of enriched, personalized, and interactive learning landscapes in education.<span class='px-1 mx-1 bg-yellow-200'>Grounded in theory of multimedia learning, this paper explores the transformative role of MLLMs in central aspects of science education by presenting exemplary innovative learning scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.77</span></span>Possible applications for MLLMs could range from content creation to tailored support for learning, fostering competencies in scientific practices, and providing assessment and feedback.These scenarios are not limited to text-based and uni-modal formats but can be multimodal, increasing thus personalization, accessibility, and potential learning effectiveness.Besides many opportunities, challenges such as data protection and ethical considerations become more salient, calling for robust frameworks to ensure responsible integration.<span class='px-1 mx-1 bg-yellow-200'>This paper underscores the necessity for a balanced approach in implementing MLLMs, where the technology complements rather than supplants the educator's role, ensuring thus an effective and ethical use of AI in science education. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.755</span></span><span class='px-1 mx-1 bg-yellow-200'>It calls for further research to explore the nuanced implications of MLLMs on the evolving role of educators and to extend the discourse beyond science education to other disciplines. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.783</span></span><span class='px-1 mx-1 bg-yellow-200'>Through the exploration of potentials, challenges, and future implications, we aim to contribute to a preliminary understanding of the transformative trajectory of MLLMs in science education and beyond. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.677</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.00832v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.00832v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-29</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                EHR Interaction Between Patients and AI: NoteAid EHR Interaction
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>With the rapid advancement of Large Language Models (LLMs) and their outstanding performance in semantic and contextual comprehension, the potential of LLMs in specialized domains warrants exploration.This paper introduces the NoteAid EHR Interaction Pipeline, an innovative approach developed using generative LLMs to assist in patient education, a task stemming from the need to aid patients in understanding Electronic Health Records (EHRs).Building upon the NoteAid work, we designed two novel tasks from the patient's perspective: providing explanations for EHR content that patients may not understand and answering questions posed by patients after reading their EHRs.We extracted datasets containing 10,000 instances from MIMIC Discharge Summaries and 876 instances from the MADE medical notes collection, respectively, executing the two tasks through the NoteAid EHR Interaction Pipeline with these data.Performance data of LLMs on these tasks were collected and constructed as the corresponding NoteAid EHR Interaction Dataset.<span class='px-1 mx-1 bg-yellow-200'>Through a comprehensive evaluation of the entire dataset using LLM assessment and a rigorous manual evaluation of 64 instances, we showcase the potential of LLMs in patient education. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.683</span></span>Besides, the results provide valuable data support for future exploration and applications in this domain while also supplying high-quality synthetic datasets for in-house system training.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.17475v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.17475v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-29</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                ChatEd: A Chatbot Leveraging ChatGPT for an Enhanced Learning Experience in Higher Education
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>With the rapid evolution of Natural Language Processing (NLP), Large Language Models (LLMs) like ChatGPT have emerged as powerful tools capable of transforming various sectors.Their vast knowledge base and dynamic interaction capabilities represent significant potential in improving education by operating as a personalized assistant.<span class='px-1 mx-1 bg-yellow-200'>However, the possibility of generating incorrect, biased, or unhelpful answers are a key challenge to resolve when deploying LLMs in an education context. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.629</span></span><span class='px-1 mx-1 bg-yellow-200'>This work introduces an innovative architecture that combines the strengths of ChatGPT with a traditional information retrieval based chatbot framework to offer enhanced student support in higher education. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.728</span></span>Our empirical evaluations underscore the high promise of this approach.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.00052v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.00052v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Language-conditioned Learning for Robotic Manipulation: A Survey
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Language-conditioned robotic manipulation represents a cutting-edge area of research, enabling seamless communication and cooperation between humans and robotic agents.<span class='px-1 mx-1 bg-yellow-200'>This field focuses on teaching robotic systems to comprehend and execute instructions conveyed in natural language. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.625</span></span>To achieve this, the development of robust language understanding models capable of extracting actionable insights from textual input is essential.In this comprehensive survey, we systematically explore recent advancements in language-conditioned approaches within the context of robotic manipulation.We analyze these approaches based on their learning paradigms, which encompass reinforcement learning, imitation learning, and the integration of foundational models, such as large language models and vision-language models.Furthermore, we conduct an in-depth comparative analysis, considering aspects like semantic information extraction, environment & evaluation, auxiliary tasks, and task representation.Finally, we outline potential future research directions in the realm of language-conditioned learning for robotic manipulation, with the topic of generalization capabilities and safety issues.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.10807v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.10807v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Revealing Networks: Understanding Effective Teacher Practices in AI-Supported Classrooms using Transmodal Ordered Network Analysis
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Learning analytics research increasingly studies classroom learning with AI-based systems through rich contextual data from outside these systems, especially student-teacher interactions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.8</span></span>One key challenge in leveraging such data is generating meaningful insights into effective teacher practices.Quantitative ethnography bears the potential to close this gap by combining multimodal data streams into networks of co-occurring behavior that drive insight into favorable learning conditions.<span class='px-1 mx-1 bg-yellow-200'>The present study uses transmodal ordered network analysis to understand effective teacher practices in relationship to traditional metrics of in-system learning in a mathematics classroom working with AI tutors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.779</span></span><span class='px-1 mx-1 bg-yellow-200'>Incorporating teacher practices captured by position tracking and human observation codes into modeling significantly improved the inference of how efficiently students improved in the AI tutor beyond a model with tutor log data features only. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.672</span></span>Comparing teacher practices by student learning rates, we find that students with low learning rates exhibited more hint use after monitoring.However, after an extended visit, students with low learning rates showed learning behavior similar to their high learning rate peers, achieving repeated correct attempts in the tutor.Observation notes suggest conceptual and procedural support differences can help explain visit effectiveness.<span class='px-1 mx-1 bg-yellow-200'>Taken together, offering early conceptual support to students with low learning rates could make classroom practice with AI tutors more effective. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.751</span></span><span class='px-1 mx-1 bg-yellow-200'>This study advances the scientific understanding of effective teacher practice in classrooms learning with AI tutors and methodologies to make such practices visible. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.831</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.10826v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.10826v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-14</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Evaluating Augmented Reality Communication: How Can We Teach Procedural Skill in AR?
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Augmented reality (AR) has great potential for use in healthcare applications, especially remote medical training and supervision.<span class='px-1 mx-1 bg-yellow-200'>In this paper, we analyze the usage of an AR communication system to teach a medical procedure, the placement of a central venous catheter (CVC) under ultrasound guidance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.692</span></span>We examine various AR communication and collaboration components, including gestural communication, volumetric information, annotations, augmented objects, and augmented screens.<span class='px-1 mx-1 bg-yellow-200'>We compare how teaching in AR differs from teaching through videoconferencing-based communication. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.774</span></span>Our results include a detailed medical training steps analysis in which we compare how verbal and visual communication differs between video and AR training.We identify procedural steps in which medical experts give visual instructions utilizing AR components.We examine the change in AR usage and interaction over time and recognize patterns between users.Moreover, AR design recommendations are given based on post-training interviews.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.09152v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.09152v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-14</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                TinyGSM: achieving >80% on GSM8k with small language models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Small-scale models offer various computational advantages, and yet to which extent size is critical for problem-solving abilities remains an open question.Specifically for solving grade school math, the smallest model size so far required to break the 80\% barrier on the GSM8K benchmark remains to be 34B. Our work studies how high-quality datasets may be the key for small language models to acquire mathematical reasoning.<span class='px-1 mx-1 bg-yellow-200'>We introduce \texttt{TinyGSM}, a synthetic dataset of 12.3M grade school math problems paired with Python solutions, generated fully by GPT-3.5. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.646</span></span>After finetuning on \texttt{TinyGSM}, we find that a duo of a 1.3B generation model and a 1.3B verifier model can achieve 81.5\% accuracy, outperforming existing models that are orders of magnitude larger.This also rivals the performance of the GPT-3.5 ``teacher'' model (77.4\%), from which our model's training data is generated.Our approach is simple and has two key components: 1) the high-quality dataset \texttt{TinyGSM}, 2) the use of a verifier, which selects the final outputs from multiple candidate generations.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.09241v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.09241v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2023-12-12</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Can ChatGPT Play the Role of a Teaching Assistant in an Introductory Programming Course?
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The emergence of Large language models (LLMs) is expected to have a major impact on education.<span class='px-1 mx-1 bg-yellow-200'>This paper explores the potential of using ChatGPT, an LLM, as a virtual Teaching Assistant (TA) in an Introductory Programming Course. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.877</span></span>We evaluate ChatGPT's capabilities by comparing its performance with that of human TAs in some TA functions.<span class='px-1 mx-1 bg-yellow-200'>The TA functions which we focus on include (1) solving programming assignments, (2) grading student code submissions, and (3) providing feedback to undergraduate students in an introductory programming course. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.618</span></span><span class='px-1 mx-1 bg-yellow-200'>Firstly, we investigate how closely ChatGPT's solutions align with those submitted by students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.654</span></span>This analysis goes beyond code correctness and also considers code quality.Secondly, we assess ChatGPT's proficiency in grading student code submissions using a given grading rubric and compare its performance with the grades assigned by human TAs.Thirdly, we analyze the quality and relevance of the feedback provided by ChatGPT.<span class='px-1 mx-1 bg-yellow-200'>This evaluation considers how well ChatGPT addresses mistakes and offers suggestions for improvement in student solutions from both code correctness and code quality perspectives. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.672</span></span><span class='px-1 mx-1 bg-yellow-200'>We conclude with a discussion on the implications of integrating ChatGPT into computing education for automated grading, personalized learning experiences, and instructional support. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.762</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2312.07343v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2312.07343v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2401.01825v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
