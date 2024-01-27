@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-01-26.</p><br/>
+            <p>Generated on 2024-01-27.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -192,84 +192,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Supporting Sensemaking of Large Language Model Outputs at Scale
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large language models (LLMs) are capable of generating multiple responses to a single prompt, yet little effort has been expended to help end-users or system designers make use of this capability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.762</span></span>In this paper, we explore how to present many LLM responses at once.We design five features, which include both pre-existing and novel methods for computing similarities and differences across textual documents, as well as how to render their outputs.We report on a controlled user study (n=24) and eight case studies evaluating these features and how they support users in different tasks.We find that the features support a wide variety of sensemaking tasks and even make tasks previously considered to be too difficult by our participants now tractable.Finally, we present design guidelines to inform future explorations of new LLM interfaces.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13726v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13726v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Investigating the Efficacy of Large Language Models for Code Clone Detection
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) have demonstrated remarkable success in various natural language processing and software engineering tasks, such as code generation.The LLMs are mainly utilized in the prompt-based zero/few-shot paradigm to guide the model in accomplishing the task.%\textbf{Goal:} GPT-based models are one of the popular ones studied for tasks such as code comment generation or test generation.These tasks are `generative' tasks.<span class='px-1 mx-1 bg-yellow-200'>However, there is limited research on the usage of LLMs for `non-generative' tasks such as classification using the prompt-based paradigm. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>In this preliminary exploratory study, we investigated the applicability of LLMs for Code Clone Detection (CCD), a non-generative task.%\textbf{Method:}<span class='px-1 mx-1 bg-yellow-200'>By building a mono-lingual and cross-lingual CCD dataset derived from CodeNet, we first investigated two different prompts using ChatGPT to detect \textcolor{black}{Type-4} code clones in Java-Java and Java-Ruby pairs in a zero-shot setting. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.719</span></span>We \textcolor{black}{then} conducted an analysis to understand the strengths and weaknesses of ChatGPT in CCD.%\textbf{Results:} ChatGPT surpasses the baselines in cross-language CCD \textcolor{black}{attaining an F1-score of 0.877 } and achieves comparable performance to fully fine-tuned models for mono-lingual CCD, \textcolor{black}{with an F1-score of 0.878}.Also, the \textcolor{black}{prompt and the} difficulty level of the problems has an impact on the performance of ChatGPT. \textcolor{black}{Finally,} we provide insights and future directions based on our initial analysis</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13802v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13802v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                TPD: Enhancing Student Language Model Reasoning via Principle Discovery and Guidance
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) have recently showcased remarkable reasoning abilities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.645</span></span>However, larger models often surpass their smaller counterparts in reasoning tasks, posing the challenge of effectively transferring these capabilities from larger models.Existing approaches heavily rely on extensive fine-tuning data or continuous interactions with a superior teacher LLM during inference.We introduce a principle-based teacher-student framework called ``Teaching via Principle Discovery'' (TPD) to address these limitations.Inspired by human learning mechanisms, TPD mimics the interaction between a teacher and a student using a principle-based approach.<span class='px-1 mx-1 bg-yellow-200'>The teacher LLM generates problem-solving instructions and corrective principles based on the student LLM's errors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span>These principles guide the refinement of instructions and the selection of instructive examples from a validation set.<span class='px-1 mx-1 bg-yellow-200'>This enables the student model to learn from both the teacher's guidance and its own mistakes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.628</span></span>Once the student model begins making inferences, TPD requires no further intervention from the teacher LLM or humans.<span class='px-1 mx-1 bg-yellow-200'>Through extensive experiments across eight reasoning tasks, we demonstrate the effectiveness of TPD. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.627</span></span><span class='px-1 mx-1 bg-yellow-200'>Compared to standard chain-of-thought prompting, TPD significantly improves the student model's performance, achieving $6.2\%$ improvement on average. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.891</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13849v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13849v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 TAT-LLM: A Specialized Language Model for Discrete Reasoning over Tabular and Textual Data
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -387,6 +309,84 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2401.13588v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Supporting Sensemaking of Large Language Model Outputs at Scale
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large language models (LLMs) are capable of generating multiple responses to a single prompt, yet little effort has been expended to help end-users or system designers make use of this capability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.762</span></span>In this paper, we explore how to present many LLM responses at once.We design five features, which include both pre-existing and novel methods for computing similarities and differences across textual documents, as well as how to render their outputs.We report on a controlled user study (n=24) and eight case studies evaluating these features and how they support users in different tasks.We find that the features support a wide variety of sensemaking tasks and even make tasks previously considered to be too difficult by our participants now tractable.Finally, we present design guidelines to inform future explorations of new LLM interfaces.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13726v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13726v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Investigating the Efficacy of Large Language Models for Code Clone Detection
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have demonstrated remarkable success in various natural language processing and software engineering tasks, such as code generation.The LLMs are mainly utilized in the prompt-based zero/few-shot paradigm to guide the model in accomplishing the task.%\textbf{Goal:} GPT-based models are one of the popular ones studied for tasks such as code comment generation or test generation.These tasks are `generative' tasks.<span class='px-1 mx-1 bg-yellow-200'>However, there is limited research on the usage of LLMs for `non-generative' tasks such as classification using the prompt-based paradigm. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>In this preliminary exploratory study, we investigated the applicability of LLMs for Code Clone Detection (CCD), a non-generative task.%\textbf{Method:}<span class='px-1 mx-1 bg-yellow-200'>By building a mono-lingual and cross-lingual CCD dataset derived from CodeNet, we first investigated two different prompts using ChatGPT to detect \textcolor{black}{Type-4} code clones in Java-Java and Java-Ruby pairs in a zero-shot setting. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.719</span></span>We \textcolor{black}{then} conducted an analysis to understand the strengths and weaknesses of ChatGPT in CCD.%\textbf{Results:} ChatGPT surpasses the baselines in cross-language CCD \textcolor{black}{attaining an F1-score of 0.877 } and achieves comparable performance to fully fine-tuned models for mono-lingual CCD, \textcolor{black}{with an F1-score of 0.878}.Also, the \textcolor{black}{prompt and the} difficulty level of the problems has an impact on the performance of ChatGPT. \textcolor{black}{Finally,} we provide insights and future directions based on our initial analysis</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13802v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13802v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                TPD: Enhancing Student Language Model Reasoning via Principle Discovery and Guidance
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) have recently showcased remarkable reasoning abilities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.645</span></span>However, larger models often surpass their smaller counterparts in reasoning tasks, posing the challenge of effectively transferring these capabilities from larger models.Existing approaches heavily rely on extensive fine-tuning data or continuous interactions with a superior teacher LLM during inference.We introduce a principle-based teacher-student framework called ``Teaching via Principle Discovery'' (TPD) to address these limitations.Inspired by human learning mechanisms, TPD mimics the interaction between a teacher and a student using a principle-based approach.<span class='px-1 mx-1 bg-yellow-200'>The teacher LLM generates problem-solving instructions and corrective principles based on the student LLM's errors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span>These principles guide the refinement of instructions and the selection of instructive examples from a validation set.<span class='px-1 mx-1 bg-yellow-200'>This enables the student model to learn from both the teacher's guidance and its own mistakes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.628</span></span>Once the student model begins making inferences, TPD requires no further intervention from the teacher LLM or humans.<span class='px-1 mx-1 bg-yellow-200'>Through extensive experiments across eight reasoning tasks, we demonstrate the effectiveness of TPD. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.627</span></span><span class='px-1 mx-1 bg-yellow-200'>Compared to standard chain-of-thought prompting, TPD significantly improves the student model's performance, achieving $6.2\%$ improvement on average. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.891</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13849v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13849v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -743,32 +743,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Investigating the Efficacy of Large Language Models for Code Clone Detection
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) have demonstrated remarkable success in various natural language processing and software engineering tasks, such as code generation.The LLMs are mainly utilized in the prompt-based zero/few-shot paradigm to guide the model in accomplishing the task.%\textbf{Goal:} GPT-based models are one of the popular ones studied for tasks such as code comment generation or test generation.These tasks are `generative' tasks.However, there is limited research on the usage of LLMs for `non-generative' tasks such as classification using the prompt-based paradigm.<span class='px-1 mx-1 bg-yellow-200'>In this preliminary exploratory study, we investigated the applicability of LLMs for Code Clone Detection (CCD), a non-generative task. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.628</span></span>%\textbf{Method:}By building a mono-lingual and cross-lingual CCD dataset derived from CodeNet, we first investigated two different prompts using ChatGPT to detect \textcolor{black}{Type-4} code clones in Java-Java and Java-Ruby pairs in a zero-shot setting.We \textcolor{black}{then} conducted an analysis to understand the strengths and weaknesses of ChatGPT in CCD.%\textbf{Results:} ChatGPT surpasses the baselines in cross-language CCD \textcolor{black}{attaining an F1-score of 0.877 } and achieves comparable performance to fully fine-tuned models for mono-lingual CCD, \textcolor{black}{with an F1-score of 0.878}.Also, the \textcolor{black}{prompt and the} difficulty level of the problems has an impact on the performance of ChatGPT. \textcolor{black}{Finally,} we provide insights and future directions based on our initial analysis</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13802v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13802v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 SpecLLM: Exploring Generation and Review of VLSI Design Specification with Large Language Model
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -860,6 +834,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2401.13504v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Investigating the Efficacy of Large Language Models for Code Clone Detection
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have demonstrated remarkable success in various natural language processing and software engineering tasks, such as code generation.The LLMs are mainly utilized in the prompt-based zero/few-shot paradigm to guide the model in accomplishing the task.%\textbf{Goal:} GPT-based models are one of the popular ones studied for tasks such as code comment generation or test generation.These tasks are `generative' tasks.However, there is limited research on the usage of LLMs for `non-generative' tasks such as classification using the prompt-based paradigm.<span class='px-1 mx-1 bg-yellow-200'>In this preliminary exploratory study, we investigated the applicability of LLMs for Code Clone Detection (CCD), a non-generative task. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.628</span></span>%\textbf{Method:}By building a mono-lingual and cross-lingual CCD dataset derived from CodeNet, we first investigated two different prompts using ChatGPT to detect \textcolor{black}{Type-4} code clones in Java-Java and Java-Ruby pairs in a zero-shot setting.We \textcolor{black}{then} conducted an analysis to understand the strengths and weaknesses of ChatGPT in CCD.%\textbf{Results:} ChatGPT surpasses the baselines in cross-language CCD \textcolor{black}{attaining an F1-score of 0.877 } and achieves comparable performance to fully fine-tuned models for mono-lingual CCD, \textcolor{black}{with an F1-score of 0.878}.Also, the \textcolor{black}{prompt and the} difficulty level of the problems has an impact on the performance of ChatGPT. \textcolor{black}{Finally,} we provide insights and future directions based on our initial analysis</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13802v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13802v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2001,58 +2001,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Investigating the Efficacy of Large Language Models for Code Clone Detection
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) have demonstrated remarkable success in various natural language processing and software engineering tasks, such as code generation.The LLMs are mainly utilized in the prompt-based zero/few-shot paradigm to guide the model in accomplishing the task.%\textbf{Goal:} GPT-based models are one of the popular ones studied for tasks such as code comment generation or test generation.These tasks are `generative' tasks.However, there is limited research on the usage of LLMs for `non-generative' tasks such as classification using the prompt-based paradigm.In this preliminary exploratory study, we investigated the applicability of LLMs for Code Clone Detection (CCD), a non-generative task.%\textbf{Method:}By building a mono-lingual and cross-lingual CCD dataset derived from CodeNet, we first investigated two different prompts using ChatGPT to detect \textcolor{black}{Type-4} code clones in Java-Java and Java-Ruby pairs in a zero-shot setting.We \textcolor{black}{then} conducted an analysis to understand the strengths and weaknesses of ChatGPT in CCD.%\textbf{Results:} ChatGPT surpasses the baselines in cross-language CCD \textcolor{black}{attaining an F1-score of 0.877 } and achieves comparable performance to fully fine-tuned models for mono-lingual CCD, \textcolor{black}{with an F1-score of 0.878}.<span class='px-1 mx-1 bg-yellow-200'>Also, the \textcolor{black}{prompt and the} difficulty level of the problems has an impact on the performance of ChatGPT. \textcolor{black}{Finally,} we provide insights and future directions based on our initial analysis <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13802v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13802v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                The Calibration Gap between Model and Human Confidence in Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>For large language models (LLMs) to be trusted by humans they need to be well-calibrated in the sense that they can accurately assess and communicate how likely it is that their predictions are correct.Recent work has focused on the quality of internal LLM confidence assessments, but the question remains of how well LLMs can communicate this internal model confidence to human users.<span class='px-1 mx-1 bg-yellow-200'>This paper explores the disparity between external human confidence in an LLM's responses and the internal confidence of the model. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.649</span></span><span class='px-1 mx-1 bg-yellow-200'>Through experiments involving multiple-choice questions, we systematically examine human users' ability to discern the reliability of LLM outputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.778</span></span>Our study focuses on two key areas: (1) assessing users' perception of true LLM confidence and (2) investigating the impact of tailored explanations on this perception.The research highlights that default explanations from LLMs often lead to user overestimation of both the model's confidence and its' accuracy.By modifying the explanations to more accurately reflect the LLM's internal confidence, we observe a significant shift in user perception, aligning it more closely with the model's actual confidence levels.This adjustment in explanatory approach demonstrates potential for enhancing user trust and accuracy in assessing LLM outputs.The findings underscore the importance of transparent communication of confidence levels in LLMs, particularly in high-stakes applications where understanding the reliability of AI-generated information is essential.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13835v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13835v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 GraphiMind: LLM-centric Interface for Information Graphics Design
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2144,6 +2092,58 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2401.13641v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Investigating the Efficacy of Large Language Models for Code Clone Detection
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have demonstrated remarkable success in various natural language processing and software engineering tasks, such as code generation.The LLMs are mainly utilized in the prompt-based zero/few-shot paradigm to guide the model in accomplishing the task.%\textbf{Goal:} GPT-based models are one of the popular ones studied for tasks such as code comment generation or test generation.These tasks are `generative' tasks.However, there is limited research on the usage of LLMs for `non-generative' tasks such as classification using the prompt-based paradigm.In this preliminary exploratory study, we investigated the applicability of LLMs for Code Clone Detection (CCD), a non-generative task.%\textbf{Method:}By building a mono-lingual and cross-lingual CCD dataset derived from CodeNet, we first investigated two different prompts using ChatGPT to detect \textcolor{black}{Type-4} code clones in Java-Java and Java-Ruby pairs in a zero-shot setting.We \textcolor{black}{then} conducted an analysis to understand the strengths and weaknesses of ChatGPT in CCD.%\textbf{Results:} ChatGPT surpasses the baselines in cross-language CCD \textcolor{black}{attaining an F1-score of 0.877 } and achieves comparable performance to fully fine-tuned models for mono-lingual CCD, \textcolor{black}{with an F1-score of 0.878}.<span class='px-1 mx-1 bg-yellow-200'>Also, the \textcolor{black}{prompt and the} difficulty level of the problems has an impact on the performance of ChatGPT. \textcolor{black}{Finally,} we provide insights and future directions based on our initial analysis <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13802v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13802v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                The Calibration Gap between Model and Human Confidence in Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>For large language models (LLMs) to be trusted by humans they need to be well-calibrated in the sense that they can accurately assess and communicate how likely it is that their predictions are correct.Recent work has focused on the quality of internal LLM confidence assessments, but the question remains of how well LLMs can communicate this internal model confidence to human users.<span class='px-1 mx-1 bg-yellow-200'>This paper explores the disparity between external human confidence in an LLM's responses and the internal confidence of the model. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.649</span></span><span class='px-1 mx-1 bg-yellow-200'>Through experiments involving multiple-choice questions, we systematically examine human users' ability to discern the reliability of LLM outputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.778</span></span>Our study focuses on two key areas: (1) assessing users' perception of true LLM confidence and (2) investigating the impact of tailored explanations on this perception.The research highlights that default explanations from LLMs often lead to user overestimation of both the model's confidence and its' accuracy.By modifying the explanations to more accurately reflect the LLM's internal confidence, we observe a significant shift in user perception, aligning it more closely with the model's actual confidence levels.This adjustment in explanatory approach demonstrates potential for enhancing user trust and accuracy in assessing LLM outputs.The findings underscore the importance of transparent communication of confidence levels in LLMs, particularly in high-stakes applications where understanding the reliability of AI-generated information is essential.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13835v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13835v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2578,6 +2578,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                MLLMReID: Multimodal Large Language Model-based Person Re-identification
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Multimodal large language models (MLLM) have achieved satisfactory results in many tasks.However, their performance in the task of person re-identification (ReID) has not been explored to date.This paper will investigate how to adapt them for the task of ReID.An intuitive idea is to fine-tune MLLM with ReID image-text datasets, and then use their visual encoder as a backbone for ReID.However, there still exist two apparent issues: (1) Designing instructions for ReID, MLLMs may overfit specific instructions, and designing a variety of instructions will lead to higher costs.(2) Latent image feature vectors from LLMs are not involved in loss computation.<span class='px-1 mx-1 bg-yellow-200'>Instructional learning, aligning image-text features, results in indirect optimization and a learning objective that inadequately utilizes features, limiting effectiveness in person feature learning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.642</span></span>To address these problems, this paper proposes MLLMReID: Multimodal Large Language Model-based ReID.Firstly, we proposed Common Instruction, a simple approach that leverages the essence ability of LLMs to continue writing, avoiding complex and diverse instruction design.Secondly, we proposed DirectReID, which effectively employs the latent image feature vectors of images outputted by LLMs in ReID tasks.The experimental results demonstrate the superiority of our method.We will open-source the code on GitHub.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13201v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13201v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                How AI Ideas Affect the Creativity, Diversity, and Evolution of Human Ideas: Evidence From a Large, Dynamic Experiment
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Exposure to large language model output is rapidly increasing.<span class='px-1 mx-1 bg-yellow-200'>How will seeing AI-generated ideas affect human ideas? <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span><span class='px-1 mx-1 bg-yellow-200'>We conducted an experiment (800+ participants, 40+ countries) where participants viewed creative ideas that were from ChatGPT or prior experimental participants and then brainstormed their own idea. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span>We varied the number of AI-generated examples (none, low, or high exposure) and if the examples were labeled as 'AI' (disclosure).<span class='px-1 mx-1 bg-yellow-200'>Our dynamic experiment design -- ideas from prior participants in an experimental condition are used as stimuli for future participants in the same experimental condition -- mimics the interdependent process of cultural creation: creative ideas are built upon prior ideas. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.733</span></span>Hence, we capture the compounding effects of having LLMs 'in the culture loop'.<span class='px-1 mx-1 bg-yellow-200'>We find that high AI exposure (but not low AI exposure) did not affect the creativity of individual ideas but did increase the average amount and rate of change of collective idea diversity. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.68</span></span>AI made ideas different, not better.There were no main effects of disclosure.<span class='px-1 mx-1 bg-yellow-200'>We also found that self-reported creative people were less influenced by knowing an idea was from AI, and that participants were more likely to knowingly adopt AI ideas when the task was difficult. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.694</span></span><span class='px-1 mx-1 bg-yellow-200'>Our findings suggest that introducing AI ideas into society may increase collective diversity but not individual creativity. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.613</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13481v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13481v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Investigating the Efficacy of Large Language Models for Code Clone Detection
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2643,58 +2695,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2401.13849v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                MLLMReID: Multimodal Large Language Model-based Person Re-identification
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Multimodal large language models (MLLM) have achieved satisfactory results in many tasks.However, their performance in the task of person re-identification (ReID) has not been explored to date.This paper will investigate how to adapt them for the task of ReID.An intuitive idea is to fine-tune MLLM with ReID image-text datasets, and then use their visual encoder as a backbone for ReID.However, there still exist two apparent issues: (1) Designing instructions for ReID, MLLMs may overfit specific instructions, and designing a variety of instructions will lead to higher costs.(2) Latent image feature vectors from LLMs are not involved in loss computation.<span class='px-1 mx-1 bg-yellow-200'>Instructional learning, aligning image-text features, results in indirect optimization and a learning objective that inadequately utilizes features, limiting effectiveness in person feature learning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.642</span></span>To address these problems, this paper proposes MLLMReID: Multimodal Large Language Model-based ReID.Firstly, we proposed Common Instruction, a simple approach that leverages the essence ability of LLMs to continue writing, avoiding complex and diverse instruction design.Secondly, we proposed DirectReID, which effectively employs the latent image feature vectors of images outputted by LLMs in ReID tasks.The experimental results demonstrate the superiority of our method.We will open-source the code on GitHub.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13201v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13201v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                How AI Ideas Affect the Creativity, Diversity, and Evolution of Human Ideas: Evidence From a Large, Dynamic Experiment
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Exposure to large language model output is rapidly increasing.<span class='px-1 mx-1 bg-yellow-200'>How will seeing AI-generated ideas affect human ideas? <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span><span class='px-1 mx-1 bg-yellow-200'>We conducted an experiment (800+ participants, 40+ countries) where participants viewed creative ideas that were from ChatGPT or prior experimental participants and then brainstormed their own idea. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span>We varied the number of AI-generated examples (none, low, or high exposure) and if the examples were labeled as 'AI' (disclosure).<span class='px-1 mx-1 bg-yellow-200'>Our dynamic experiment design -- ideas from prior participants in an experimental condition are used as stimuli for future participants in the same experimental condition -- mimics the interdependent process of cultural creation: creative ideas are built upon prior ideas. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.733</span></span>Hence, we capture the compounding effects of having LLMs 'in the culture loop'.<span class='px-1 mx-1 bg-yellow-200'>We find that high AI exposure (but not low AI exposure) did not affect the creativity of individual ideas but did increase the average amount and rate of change of collective idea diversity. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.68</span></span>AI made ideas different, not better.There were no main effects of disclosure.<span class='px-1 mx-1 bg-yellow-200'>We also found that self-reported creative people were less influenced by knowing an idea was from AI, and that participants were more likely to knowingly adopt AI ideas when the task was difficult. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.694</span></span><span class='px-1 mx-1 bg-yellow-200'>Our findings suggest that introducing AI ideas into society may increase collective diversity but not individual creativity. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.613</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13481v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13481v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3207,84 +3207,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Supporting Sensemaking of Large Language Model Outputs at Scale
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large language models (LLMs) are capable of generating multiple responses to a single prompt, yet little effort has been expended to help end-users or system designers make use of this capability.In this paper, we explore how to present many LLM responses at once.We design five features, which include both pre-existing and novel methods for computing similarities and differences across textual documents, as well as how to render their outputs.We report on a controlled user study (n=24) and eight case studies evaluating these features and how they support users in different tasks.We find that the features support a wide variety of sensemaking tasks and even make tasks previously considered to be too difficult by our participants now tractable.<span class='px-1 mx-1 bg-yellow-200'>Finally, we present design guidelines to inform future explorations of new LLM interfaces. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.585</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13726v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13726v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Synergizing Human Expertise and AI Efficiency with Language Model for Microscopy Operation and Automated Experiment Design
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>With the advent of large language models (LLMs), in both the open source and proprietary domains, attention is turning to how to exploit such artificial intelligence (AI) systems in assisting complex scientific tasks, such as material synthesis, characterization, analysis and discovery.<span class='px-1 mx-1 bg-yellow-200'>Here, we explore the utility of LLM, particularly ChatGPT4, in combination with application program interfaces (APIs) in tasks of experimental design, programming workflows, and data analysis in scanning probe microscopy, using both in-house developed API and API given by a commercial vendor for instrument control. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.588</span></span>We find that the LLM can be especially useful in converting ideations of experimental workflows to executable code on microscope APIs.Beyond code generation, we find that the GPT4 is capable of analyzing microscopy images in a generic sense.<span class='px-1 mx-1 bg-yellow-200'>At the same time, we find that GPT4 suffers from inability to extend beyond basic analyses or more in-depth technical experimental design. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.5</span></span>We argue that a LLM specifically fine-tuned for individual scientific domains can potentially be a better language interface for converting scientific ideations from human experts to executable workflows, such a synergy between human expertise and LLM efficiency in experimentation can open new door for accelerating scientific research, enabling effective experimental protocols archive and sharing in scientific community.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13803v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13803v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                TPD: Enhancing Student Language Model Reasoning via Principle Discovery and Guidance
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) have recently showcased remarkable reasoning abilities.However, larger models often surpass their smaller counterparts in reasoning tasks, posing the challenge of effectively transferring these capabilities from larger models.<span class='px-1 mx-1 bg-yellow-200'>Existing approaches heavily rely on extensive fine-tuning data or continuous interactions with a superior teacher LLM during inference. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.583</span></span><span class='px-1 mx-1 bg-yellow-200'>We introduce a principle-based teacher-student framework called ``Teaching via Principle Discovery'' (TPD) to address these limitations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.547</span></span><span class='px-1 mx-1 bg-yellow-200'>Inspired by human learning mechanisms, TPD mimics the interaction between a teacher and a student using a principle-based approach. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.507</span></span><span class='px-1 mx-1 bg-yellow-200'>The teacher LLM generates problem-solving instructions and corrective principles based on the student LLM's errors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.703</span></span>These principles guide the refinement of instructions and the selection of instructive examples from a validation set.<span class='px-1 mx-1 bg-yellow-200'>This enables the student model to learn from both the teacher's guidance and its own mistakes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.594</span></span><span class='px-1 mx-1 bg-yellow-200'>Once the student model begins making inferences, TPD requires no further intervention from the teacher LLM or humans. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.572</span></span>Through extensive experiments across eight reasoning tasks, we demonstrate the effectiveness of TPD.<span class='px-1 mx-1 bg-yellow-200'>Compared to standard chain-of-thought prompting, TPD significantly improves the student model's performance, achieving $6.2\%$ improvement on average. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.611</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13849v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13849v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 MLLMReID: Multimodal Large Language Model-based Person Re-identification
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3532,6 +3454,84 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2401.13641v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Supporting Sensemaking of Large Language Model Outputs at Scale
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) are capable of generating multiple responses to a single prompt, yet little effort has been expended to help end-users or system designers make use of this capability.In this paper, we explore how to present many LLM responses at once.We design five features, which include both pre-existing and novel methods for computing similarities and differences across textual documents, as well as how to render their outputs.We report on a controlled user study (n=24) and eight case studies evaluating these features and how they support users in different tasks.We find that the features support a wide variety of sensemaking tasks and even make tasks previously considered to be too difficult by our participants now tractable.<span class='px-1 mx-1 bg-yellow-200'>Finally, we present design guidelines to inform future explorations of new LLM interfaces. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.585</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13726v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13726v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Synergizing Human Expertise and AI Efficiency with Language Model for Microscopy Operation and Automated Experiment Design
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>With the advent of large language models (LLMs), in both the open source and proprietary domains, attention is turning to how to exploit such artificial intelligence (AI) systems in assisting complex scientific tasks, such as material synthesis, characterization, analysis and discovery.<span class='px-1 mx-1 bg-yellow-200'>Here, we explore the utility of LLM, particularly ChatGPT4, in combination with application program interfaces (APIs) in tasks of experimental design, programming workflows, and data analysis in scanning probe microscopy, using both in-house developed API and API given by a commercial vendor for instrument control. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.588</span></span>We find that the LLM can be especially useful in converting ideations of experimental workflows to executable code on microscope APIs.Beyond code generation, we find that the GPT4 is capable of analyzing microscopy images in a generic sense.<span class='px-1 mx-1 bg-yellow-200'>At the same time, we find that GPT4 suffers from inability to extend beyond basic analyses or more in-depth technical experimental design. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.5</span></span>We argue that a LLM specifically fine-tuned for individual scientific domains can potentially be a better language interface for converting scientific ideations from human experts to executable workflows, such a synergy between human expertise and LLM efficiency in experimentation can open new door for accelerating scientific research, enabling effective experimental protocols archive and sharing in scientific community.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13803v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13803v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                TPD: Enhancing Student Language Model Reasoning via Principle Discovery and Guidance
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have recently showcased remarkable reasoning abilities.However, larger models often surpass their smaller counterparts in reasoning tasks, posing the challenge of effectively transferring these capabilities from larger models.<span class='px-1 mx-1 bg-yellow-200'>Existing approaches heavily rely on extensive fine-tuning data or continuous interactions with a superior teacher LLM during inference. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.583</span></span><span class='px-1 mx-1 bg-yellow-200'>We introduce a principle-based teacher-student framework called ``Teaching via Principle Discovery'' (TPD) to address these limitations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.547</span></span><span class='px-1 mx-1 bg-yellow-200'>Inspired by human learning mechanisms, TPD mimics the interaction between a teacher and a student using a principle-based approach. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.507</span></span><span class='px-1 mx-1 bg-yellow-200'>The teacher LLM generates problem-solving instructions and corrective principles based on the student LLM's errors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.703</span></span>These principles guide the refinement of instructions and the selection of instructive examples from a validation set.<span class='px-1 mx-1 bg-yellow-200'>This enables the student model to learn from both the teacher's guidance and its own mistakes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.594</span></span><span class='px-1 mx-1 bg-yellow-200'>Once the student model begins making inferences, TPD requires no further intervention from the teacher LLM or humans. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.572</span></span>Through extensive experiments across eight reasoning tasks, we demonstrate the effectiveness of TPD.<span class='px-1 mx-1 bg-yellow-200'>Compared to standard chain-of-thought prompting, TPD significantly improves the student model's performance, achieving $6.2\%$ improvement on average. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.611</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13849v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13849v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5042,19 +5042,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Evaluation of General Large Language Models in Contextually Assessing Semantic Concepts Extracted from Adult Critical Care Electronic Health Record Notes
+                Synergizing Human Expertise and AI Efficiency with Language Model for Microscopy Operation and Automated Experiment Design
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The field of healthcare has increasingly turned its focus towards Large Language Models (LLMs) due to their remarkable performance.However, their performance in actual clinical applications has been underexplored.Traditional evaluations based on question-answering tasks don't fully capture the nuanced contexts.This gap highlights the need for more in-depth and practical assessments of LLMs in real-world healthcare settings.Objective: We sought to evaluate the performance of LLMs in the complex clinical context of adult critical care medicine using systematic and comprehensible analytic methods, including clinician annotation and adjudication.Methods: We investigated the performance of three general LLMs in understanding and processing real-world clinical notes.Concepts from 150 clinical notes were identified by MetaMap and then labeled by 9 clinicians.Each LLM's proficiency was evaluated by identifying the temporality and negation of these concepts using different prompts for an in-depth analysis.Results:<span class='px-1 mx-1 bg-yellow-200'>GPT-4 showed overall superior performance compared to other LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.534</span></span>In contrast, both GPT-3.5 and text-davinci-003 exhibit enhanced performance when the appropriate prompting strategies are employed.The GPT family models have demonstrated considerable efficiency, evidenced by their cost-effectiveness and time-saving capabilities.<span class='px-1 mx-1 bg-yellow-200'>Conclusion: A comprehensive qualitative performance evaluation framework for LLMs is developed and operationalized. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.426</span></span><span class='px-1 mx-1 bg-yellow-200'>This framework goes beyond singular performance aspects. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.555</span></span>With expert annotations, this methodology not only validates LLMs' capabilities in processing complex medical data but also establishes a benchmark for future LLM evaluations across specialized domains.</p>
+                  <p>With the advent of large language models (LLMs), in both the open source and proprietary domains, attention is turning to how to exploit such artificial intelligence (AI) systems in assisting complex scientific tasks, such as material synthesis, characterization, analysis and discovery.<span class='px-1 mx-1 bg-yellow-200'>Here, we explore the utility of LLM, particularly ChatGPT4, in combination with application program interfaces (APIs) in tasks of experimental design, programming workflows, and data analysis in scanning probe microscopy, using both in-house developed API and API given by a commercial vendor for instrument control. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.424</span></span>We find that the LLM can be especially useful in converting ideations of experimental workflows to executable code on microscope APIs.Beyond code generation, we find that the GPT4 is capable of analyzing microscopy images in a generic sense.<span class='px-1 mx-1 bg-yellow-200'>At the same time, we find that GPT4 suffers from inability to extend beyond basic analyses or more in-depth technical experimental design. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.434</span></span>We argue that a LLM specifically fine-tuned for individual scientific domains can potentially be a better language interface for converting scientific ideations from human experts to executable workflows, such a synergy between human expertise and LLM efficiency in experimentation can open new door for accelerating scientific research, enabling effective experimental protocols archive and sharing in scientific community.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13588v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13803v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2401.13588v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2401.13803v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5068,45 +5068,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                MM-LLMs: Recent Advances in MultiModal Large Language Models
+                Automated Root Causing of Cloud Incidents using In-Context Learning with GPT-4
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>In the past year, MultiModal Large Language Models (MM-LLMs) have undergone substantial advancements, augmenting off-the-shelf LLMs to support MM inputs or outputs via cost-effective training strategies.The resulting models not only preserve the inherent reasoning and decision-making capabilities of LLMs but also empower a diverse range of MM tasks.<span class='px-1 mx-1 bg-yellow-200'>In this paper, we provide a comprehensive survey aimed at facilitating further research of MM-LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.406</span></span>Specifically, we first outline general design formulations for model architecture and training pipeline.Subsequently, we provide brief introductions of $26$ existing MM-LLMs, each characterized by its specific formulations.Additionally, we review the performance of MM-LLMs on mainstream benchmarks and summarize key training recipes to enhance the potency of MM-LLMs.<span class='px-1 mx-1 bg-yellow-200'>Lastly, we explore promising directions for MM-LLMs while concurrently maintaining a real-time tracking website for the latest developments in the field. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.507</span></span>We hope that this survey contributes to the ongoing advancement of the MM-LLMs domain.</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Root Cause Analysis (RCA) plays a pivotal role in the incident diagnosis process for cloud services, requiring on-call engineers to identify the primary issues and implement corrective actions to prevent future recurrences. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.409</span></span><span class='px-1 mx-1 bg-yellow-200'>Improving the incident RCA process is vital for minimizing service downtime, customer impact and manual toil. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.513</span></span>Recent advances in artificial intelligence have introduced state-of-the-art Large Language Models (LLMs) like GPT-4, which have proven effective in tackling various AIOps problems, ranging from code authoring to incident management.<span class='px-1 mx-1 bg-yellow-200'>Nonetheless, the GPT-4 model's immense size presents challenges when trying to fine-tune it on user data because of the significant GPU resource demand and the necessity for continuous model fine-tuning with the emergence of new data. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.532</span></span><span class='px-1 mx-1 bg-yellow-200'>To address the high cost of fine-tuning LLM, we propose an in-context learning approach for automated root causing, which eliminates the need for fine-tuning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.586</span></span>We conduct extensive study over 100,000 production incidents, comparing several large language models using multiple metrics.<span class='px-1 mx-1 bg-yellow-200'>The results reveal that our in-context learning approach outperforms the previous fine-tuned large language models such as GPT-3 by an average of 24.8\% across all metrics, with an impressive 49.7\% improvement over the zero-shot model. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.407</span></span>Moreover, human evaluation involving actual incident owners demonstrates its superiority over the fine-tuned model, achieving a 43.5\% improvement in correctness and an 8.7\% enhancement in readability.<span class='px-1 mx-1 bg-yellow-200'>The impressive results demonstrate the viability of utilizing a vanilla GPT model for the RCA task, thereby avoiding the high computational and maintenance costs associated with a fine-tuned model. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.505</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13601v2' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13810v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2401.13601v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                How Good is ChatGPT at Face Biometrics? A First Look into Recognition, Soft Biometrics, and Explainability
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) such as GPT developed by OpenAI, have already shown astonishing results, introducing quick changes in our society.<span class='px-1 mx-1 bg-yellow-200'>This has been intensified by the release of ChatGPT which allows anyone to interact in a simple conversational way with LLMs, without any experience in the field needed. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.486</span></span>As a result, ChatGPT has been rapidly applied to many different tasks such as code- and song-writer, education, virtual assistants, etc., showing impressive results for tasks for which it was not trained (zero-shot learning).   The present study aims to explore the ability of ChatGPT, based on the recent GPT-4 multimodal LLM, for the task of face biometrics.In particular, we analyze the ability of ChatGPT to perform tasks such as face verification, soft-biometrics estimation, and explainability of the results.ChatGPT could be very valuable to further increase the explainability and transparency of the automatic decisions in human scenarios.<span class='px-1 mx-1 bg-yellow-200'>Experiments are carried out in order to evaluate the performance and robustness of ChatGPT, using popular public benchmarks and comparing the results with state-of-the-art methods in the field. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.465</span></span>The results achieved in this study show the potential of LLMs such as ChatGPT for face biometrics, especially to enhance explainability.<span class='px-1 mx-1 bg-yellow-200'>For reproducibility reasons, we release all the code in GitHub. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.402</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13641v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13641v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2401.13810v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5203,6 +5177,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                How Good is ChatGPT at Face Biometrics? A First Look into Recognition, Soft Biometrics, and Explainability
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) such as GPT developed by OpenAI, have already shown astonishing results, introducing quick changes in our society. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.648</span></span>This has been intensified by the release of ChatGPT which allows anyone to interact in a simple conversational way with LLMs, without any experience in the field needed.As a result, ChatGPT has been rapidly applied to many different tasks such as code- and song-writer, education, virtual assistants, etc., showing impressive results for tasks for which it was not trained (zero-shot learning).   The present study aims to explore the ability of ChatGPT, based on the recent GPT-4 multimodal LLM, for the task of face biometrics.In particular, we analyze the ability of ChatGPT to perform tasks such as face verification, soft-biometrics estimation, and explainability of the results.ChatGPT could be very valuable to further increase the explainability and transparency of the automatic decisions in human scenarios.Experiments are carried out in order to evaluate the performance and robustness of ChatGPT, using popular public benchmarks and comparing the results with state-of-the-art methods in the field.The results achieved in this study show the potential of LLMs such as ChatGPT for face biometrics, especially to enhance explainability.For reproducibility reasons, we release all the code in GitHub.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13641v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2401.13641v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Investigating the Efficacy of Large Language Models for Code Clone Detection
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -5242,32 +5242,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2401.13810v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-01-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                How Good is ChatGPT at Face Biometrics? A First Look into Recognition, Soft Biometrics, and Explainability
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) such as GPT developed by OpenAI, have already shown astonishing results, introducing quick changes in our society. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.648</span></span>This has been intensified by the release of ChatGPT which allows anyone to interact in a simple conversational way with LLMs, without any experience in the field needed.As a result, ChatGPT has been rapidly applied to many different tasks such as code- and song-writer, education, virtual assistants, etc., showing impressive results for tasks for which it was not trained (zero-shot learning).   The present study aims to explore the ability of ChatGPT, based on the recent GPT-4 multimodal LLM, for the task of face biometrics.In particular, we analyze the ability of ChatGPT to perform tasks such as face verification, soft-biometrics estimation, and explainability of the results.ChatGPT could be very valuable to further increase the explainability and transparency of the automatic decisions in human scenarios.Experiments are carried out in order to evaluate the performance and robustness of ChatGPT, using popular public benchmarks and comparing the results with state-of-the-art methods in the field.The results achieved in this study show the potential of LLMs such as ChatGPT for face biometrics, especially to enhance explainability.For reproducibility reasons, we release all the code in GitHub.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2401.13641v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2401.13641v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
