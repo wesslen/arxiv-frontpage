@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-02-23.</p><br/>
+            <p>Generated on 2024-02-24.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -257,32 +257,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2402.14808v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-21</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                DeiSAM: Segment Anything with Deictic Prompting
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large-scale, pre-trained neural networks have demonstrated strong capabilities in various tasks, including zero-shot image segmentation.To identify concrete objects in complex scenes, humans instinctively rely on deictic descriptions in natural language, i.e., referring to something depending on the context such as "The object that is on the desk and behind the cup.".However, deep learning approaches cannot reliably interpret such deictic representations due to their lack of reasoning capabilities in complex scenarios.<span class='px-1 mx-1 bg-yellow-200'>To remedy this issue, we propose DeiSAM -- a combination of large pre-trained neural networks with differentiable logic reasoners -- for deictic promptable segmentation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.659</span></span>Given a complex, textual segmentation description, DeiSAM leverages Large Language Models (LLMs) to generate first-order logic rules and performs differentiable forward reasoning on generated scene graphs.Subsequently, DeiSAM segments objects by matching them to the logically inferred image regions.As part of our evaluation, we propose the Deictic Visual Genome (DeiVG) dataset, containing paired visual input and complex, deictic textual prompts.Our empirical results demonstrate that DeiSAM is a substantial improvement over purely data-driven baselines for deictic promptable segmentation.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.14123v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2402.14123v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -621,6 +595,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2402.13950v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-21</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                DeiSAM: Segment Anything with Deictic Prompting
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large-scale, pre-trained neural networks have demonstrated strong capabilities in various tasks, including zero-shot image segmentation.To identify concrete objects in complex scenes, humans instinctively rely on deictic descriptions in natural language, i.e., referring to something depending on the context such as "The object that is on the desk and behind the cup.".However, deep learning approaches cannot reliably interpret such deictic representations due to their lack of reasoning capabilities in complex scenarios.<span class='px-1 mx-1 bg-yellow-200'>To remedy this issue, we propose DeiSAM -- a combination of large pre-trained neural networks with differentiable logic reasoners -- for deictic promptable segmentation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.659</span></span>Given a complex, textual segmentation description, DeiSAM leverages Large Language Models (LLMs) to generate first-order logic rules and performs differentiable forward reasoning on generated scene graphs.Subsequently, DeiSAM segments objects by matching them to the logically inferred image regions.As part of our evaluation, we propose the Deictic Visual Genome (DeiVG) dataset, containing paired visual input and complex, deictic textual prompts.Our empirical results demonstrate that DeiSAM is a substantial improvement over purely data-driven baselines for deictic promptable segmentation.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.14123v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2402.14123v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2339,6 +2339,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                KorNAT: LLM Alignment Benchmark for Korean Social Values and Common Knowledge
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>For Large Language Models (LLMs) to be effectively deployed in a specific country, they must possess an understanding of the nation's culture and basic knowledge.To this end, we introduce National Alignment, which measures an alignment between an LLM and a targeted country from two aspects: social value alignment and common knowledge alignment.Social value alignment evaluates how well the model understands nation-specific social values, while common knowledge alignment examines how well the model captures basic knowledge related to the nation.We constructed KorNAT, the first benchmark that measures national alignment with South Korea.<span class='px-1 mx-1 bg-yellow-200'>For the social value dataset, we obtained ground truth labels from a large-scale survey involving 6,174 unique Korean participants. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span>For the common knowledge dataset, we constructed samples based on Korean textbooks and GED reference materials.KorNAT contains 4K and 6K multiple-choice questions for social value and common knowledge, respectively.Our dataset creation process is meticulously designed and based on statistical sampling theory and was refined through multiple rounds of human review.The experiment results of seven LLMs reveal that only a few models met our reference score, indicating a potential for further enhancement.KorNAT has received government approval after passing an assessment conducted by a government-affiliated organization dedicated to evaluating dataset quality.Samples and detailed evaluation protocols of our dataset can be found in https://selectstar.ai/ko/papers-national-alignment</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.13605v2' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2402.13605v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-21</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 LLM Jailbreak Attack versus Defense Techniques -- A Comprehensive Study
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2534,32 +2560,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2402.13717v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-20</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Large Language Model-based Human-Agent Collaboration for Complex Task Solving
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>In recent developments within the research community, the integration of Large Language Models (LLMs) in creating fully autonomous agents has garnered significant interest.Despite this, LLM-based agents frequently demonstrate notable shortcomings in adjusting to dynamic environments and fully grasping human needs.<span class='px-1 mx-1 bg-yellow-200'>In this work, we introduce the problem of LLM-based human-agent collaboration for complex task-solving, exploring their synergistic potential. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.637</span></span>In addition, we propose a Reinforcement Learning-based Human-Agent Collaboration method, ReHAC.This approach includes a policy model designed to determine the most opportune stages for human intervention within the task-solving process.We construct a human-agent collaboration dataset to train this policy model in an offline reinforcement learning environment.Our validation tests confirm the model's effectiveness.The results demonstrate that the synergistic efforts of humans and LLM-based agents significantly improve performance in complex tasks, primarily through well-planned, limited human intervention.Datasets and code are available at: https://github.com/XueyangFeng/ReHAC.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.12914v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2402.12914v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3046,32 +3046,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Potential and Challenges of Model Editing for Social Debiasing
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large language models (LLMs) trained on vast corpora suffer from inevitable stereotype biases. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.644</span></span>Mitigating these biases with fine-tuning could be both costly and data-hungry.Model editing methods, which focus on modifying LLMs in a post-hoc manner, are of great potential to address debiasing.However, it lacks a comprehensive study that facilitates both internal and external model editing methods, supports various bias types, as well as understands the pros and cons of applying editing methods to stereotypical debiasing.<span class='px-1 mx-1 bg-yellow-200'>To mitigate this gap, we carefully formulate social debiasing into an editing problem and benchmark seven existing model editing algorithms on stereotypical debiasing, i.e., debias editing. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.765</span></span>Our findings in three scenarios reveal both the potential and challenges of debias editing: (1) Existing model editing methods can effectively preserve knowledge and mitigate biases, while the generalization of debias effect from edited sentences to semantically equivalent sentences is limited.(2)Sequential editing highlights the robustness of SERAC (Mitchell et al. 2022b), while internal editing methods degenerate with the number of edits.(3) Model editing algorithms achieve generalization towards unseen biases both within the same type and from different types.In light of these findings, we further propose two simple but effective methods to improve debias editing, and experimentally show the effectiveness of the proposed methods.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.13462v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2402.13462v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-21</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Are LLMs Effective Negotiators? Systematic Evaluation of the Multifaceted Capabilities of LLMs in Negotiation Dialogues
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3267,6 +3241,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2402.13963v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-21</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Bangla AI: A Framework for Machine Translation Utilizing Large Language Models for Ethnic Media
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Ethnic media, which caters to diaspora communities in host nations, serves as a vital platform for these communities to both produce content and access information.Rather than utilizing the language of the host nation, ethnic media delivers news in the language of the immigrant community.<span class='px-1 mx-1 bg-yellow-200'>For instance, in the USA, Bangla ethnic media presents news in Bangla rather than English. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.663</span></span>This research delves into the prospective integration of large language models (LLM) and multi-lingual machine translations (MMT) within the ethnic media industry.It centers on the transformative potential of using LLM in MMT in various facets of news translation, searching, and categorization.The paper outlines a theoretical framework elucidating the integration of LLM and MMT into the news searching and translation processes for ethnic media.Additionally, it briefly addresses the potential ethical challenges associated with the incorporation of LLM and MMT in news translation procedures.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.14179v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2402.14179v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3579,11 +3579,11 @@
                   <p>To use Large Language Models (LLMs) in a targeted way for NLP problems in RE, we require both (1) basic knowledge about the inner workings of LLMs and (2) a guideline on how to select and systematically utilize or repurpose LLMs for NLP4RE tasks.This chapter establishes the required knowledge and introduces the fundamentals of LLMs in the first part.<span class='px-1 mx-1 bg-yellow-200'>In the second part, we present a detailed guideline for students, researchers, and practitioners on using LLMs for their purposes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.636</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.13823v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.13823v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2402.13823v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2402.13823v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
