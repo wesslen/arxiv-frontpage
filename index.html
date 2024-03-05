@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-03-04.</p><br/>
+            <p>Generated on 2024-03-05.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -30,6 +30,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Prompt Engineering in Large Language Models</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Improving the Validity of Automatically Generated Feedback via Reinforcement Learning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Automatically generating feedback via large language models (LLMs) in intelligent tutoring systems and online learning platforms has the potential to improve the learning outcomes of many students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.736</span></span>However, both feedback generation and evaluation are challenging: feedback content has to be valid especially in subjects like math, which requires models to understand the problem, the solution, and where the student's error lies.<span class='px-1 mx-1 bg-yellow-200'>Feedback also has to be pedagogically valid to reflect effective tutoring strategies, such as explaining possible misconceptions and encouraging the student, among other desirable features. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.806</span></span>In this work, we address both problems of automatically generating and evaluating feedback while considering both correctness and alignment.First, we propose a rubric for evaluating math feedback and show that GPT-4 is able to effectively use it to annotate human-written and LLM-generated feedback.Second, we propose a framework for feedback generation that optimizes both correctness and alignment using reinforcement learning (RL).Specifically, we use GPT-4's annotations to create preferences over feedback pairs in an augmented dataset for training via direct preference optimization (DPO).We show that our methods significantly increase the correctness and alignment of generated feedback with Llama 2, an open-source LLM, qualitatively analyze our generation and evaluation systems using case studies, and outline several areas for future work.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.01304v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2403.01304v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-29</p>
           </td>
@@ -647,32 +673,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2402.18700v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-27</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                AmbigNLG: Addressing Task Ambiguity in Instruction for NLG
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>In this study, we introduce AmbigNLG, a new task designed to tackle the challenge of task ambiguity in instructions for Natural Language Generation (NLG) tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span>Despite the impressive capabilities of Large Language Models (LLMs) in understanding and executing a wide range of tasks through natural language interaction, their performance is significantly hindered by the ambiguity present in real-world instructions.To address this, AmbigNLG seeks to identify and mitigate such ambiguities, aiming to refine instructions to match user expectations better.<span class='px-1 mx-1 bg-yellow-200'>We introduce a dataset, AmbigSNI-NLG, consisting of 2,500 instances, and develop an ambiguity taxonomy for categorizing and annotating instruction ambiguities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.611</span></span>Our approach demonstrates substantial improvements in text generation quality, highlighting the critical role of clear and specific instructions in enhancing LLM performance in NLG tasks.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.17717v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2402.17717v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2677,6 +2677,32 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LM4OPT: Unveiling the Potential of Large Language Models in Formulating Mathematical Optimization Problems
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>In the rapidly evolving field of natural language processing, the translation of linguistic descriptions into mathematical formulation of optimization problems presents a formidable challenge, demanding intricate understanding and processing capabilities from Large Language Models (LLMs).This study compares prominent LLMs, including GPT-3.5, GPT-4, and Llama-2-7b, in zero-shot and one-shot settings for this task.Our findings show GPT-4's superior performance, particularly in the one-shot scenario.A central part of this research is the introduction of `LM4OPT,' a progressive fine-tuning framework for Llama-2-7b that utilizes noisy embeddings and specialized datasets.However, this research highlights a notable gap in the contextual understanding capabilities of smaller models such as Llama-2-7b compared to larger counterparts, especially in processing lengthy and complex input contexts.<span class='px-1 mx-1 bg-yellow-200'>Our empirical investigation, utilizing the NL4Opt dataset, unveils that GPT-4 surpasses the baseline performance established by previous research, achieving an F1-score of 0.63, solely based on the problem description in natural language, and without relying on any additional named entity information. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.611</span></span>GPT-3.5 follows closely, both outperforming the fine-tuned Llama-2-7b.These findings not only benchmark the current capabilities of LLMs in a novel application area but also lay the groundwork for future improvements in mathematical formulation of optimization problems from natural language input.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.01342v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2403.01342v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-29</p>
           </td>
           <td>
@@ -3488,6 +3514,32 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Improving the Validity of Automatically Generated Feedback via Reinforcement Learning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Automatically generating feedback via large language models (LLMs) in intelligent tutoring systems and online learning platforms has the potential to improve the learning outcomes of many students.However, both feedback generation and evaluation are challenging: feedback content has to be valid especially in subjects like math, which requires models to understand the problem, the solution, and where the student's error lies.<span class='px-1 mx-1 bg-yellow-200'>Feedback also has to be pedagogically valid to reflect effective tutoring strategies, such as explaining possible misconceptions and encouraging the student, among other desirable features. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.538</span></span>In this work, we address both problems of automatically generating and evaluating feedback while considering both correctness and alignment.<span class='px-1 mx-1 bg-yellow-200'>First, we propose a rubric for evaluating math feedback and show that GPT-4 is able to effectively use it to annotate human-written and LLM-generated feedback. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.513</span></span>Second, we propose a framework for feedback generation that optimizes both correctness and alignment using reinforcement learning (RL).Specifically, we use GPT-4's annotations to create preferences over feedback pairs in an augmented dataset for training via direct preference optimization (DPO).We show that our methods significantly increase the correctness and alignment of generated feedback with Llama 2, an open-source LLM, qualitatively analyze our generation and evaluation systems using case studies, and outline several areas for future work.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.01304v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2403.01304v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-29</p>
           </td>
           <td>
@@ -3870,32 +3922,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2402.18649v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-27</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Sinkhorn Distance Minimization for Knowledge Distillation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Knowledge distillation (KD) has been widely adopted to compress large language models (LLMs).Existing KD methods investigate various divergence measures including the Kullback-Leibler (KL), reverse Kullback-Leibler (RKL), and Jensen-Shannon (JS) divergences.However, due to limitations inherent in their assumptions and definitions, these measures fail to deliver effective supervision when few distribution overlap exists between the teacher and the student.In this paper, we show that the aforementioned KL, RKL, and JS divergences respectively suffer from issues of mode-averaging, mode-collapsing, and mode-underestimation, which deteriorates logits-based KD for diverse NLP tasks.<span class='px-1 mx-1 bg-yellow-200'>We propose the Sinkhorn Knowledge Distillation (SinKD) that exploits the Sinkhorn distance to ensure a nuanced and precise assessment of the disparity between teacher and student distributions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.637</span></span><span class='px-1 mx-1 bg-yellow-200'>Besides, profit by properties of the Sinkhorn metric, we can get rid of sample-wise KD that restricts the perception of divergence in each teacher-student sample pair. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.526</span></span>Instead, we propose a batch-wise reformulation to capture geometric intricacies of distributions across samples in the high-dimensional space.Comprehensive evaluation on GLUE and SuperGLUE, in terms of comparability, validity, and generalizability, highlights our superiority over state-of-the-art methods on all kinds of LLMs with encoder-only, encoder-decoder, and decoder-only architectures.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.17110v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2402.17110v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4850,24 +4876,24 @@
           </td>
         </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-29</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-02</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                StarCoder 2 and The Stack v2: The Next Generation
+                Improving the Validity of Automatically Generated Feedback via Reinforcement Learning
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The BigCode project, an open-scientific collaboration focused on the responsible development of Large Language Models for Code (Code LLMs), introduces StarCoder2.<span class='px-1 mx-1 bg-yellow-200'>In partnership with Software Heritage (SWH), we build The Stack v2 on top of the digital commons of their source code archive. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.318</span></span><span class='px-1 mx-1 bg-yellow-200'>Alongside the SWH repositories spanning 619 programming languages, we carefully select other high-quality data sources, such as GitHub pull requests, Kaggle notebooks, and code documentation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.36</span></span>This results in a training set that is 4x larger than the first StarCoder dataset.<span class='px-1 mx-1 bg-yellow-200'>We train StarCoder2 models with 3B, 7B, and 15B parameters on 3.3 to 4.3 trillion tokens and thoroughly evaluate them on a comprehensive set of Code LLM benchmarks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.482</span></span><span class='px-1 mx-1 bg-yellow-200'>We find that our small model, StarCoder2-3B, outperforms other Code LLMs of similar size on most benchmarks, and also outperforms StarCoderBase-15B. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.37</span></span>Our large model, StarCoder2- 15B, significantly outperforms other models of comparable size.In addition, it matches or outperforms CodeLlama-34B, a model more than twice its size.Although DeepSeekCoder- 33B is the best-performing model at code completion for high-resource languages, we find that StarCoder2-15B outperforms it on math and code reasoning benchmarks, as well as several low-resource languages.<span class='px-1 mx-1 bg-yellow-200'>We make the model weights available under an OpenRAIL license and ensure full transparency regarding the training data by releasing the SoftWare Heritage persistent IDentifiers (SWHIDs) of the source code data. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.699</span></span></p>
+                  <p>Automatically generating feedback via large language models (LLMs) in intelligent tutoring systems and online learning platforms has the potential to improve the learning outcomes of many students.However, both feedback generation and evaluation are challenging: feedback content has to be valid especially in subjects like math, which requires models to understand the problem, the solution, and where the student's error lies.Feedback also has to be pedagogically valid to reflect effective tutoring strategies, such as explaining possible misconceptions and encouraging the student, among other desirable features.In this work, we address both problems of automatically generating and evaluating feedback while considering both correctness and alignment.First, we propose a rubric for evaluating math feedback and show that GPT-4 is able to effectively use it to annotate human-written and LLM-generated feedback.Second, we propose a framework for feedback generation that optimizes both correctness and alignment using reinforcement learning (RL).<span class='px-1 mx-1 bg-yellow-200'>Specifically, we use GPT-4's annotations to create preferences over feedback pairs in an augmented dataset for training via direct preference optimization (DPO). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.332</span></span>We show that our methods significantly increase the correctness and alignment of generated feedback with Llama 2, an open-source LLM, qualitatively analyze our generation and evaluation systems using case studies, and outline several areas for future work.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.19173v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.01304v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2402.19173v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2403.01304v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4876,24 +4902,50 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-29</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-02</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                PRSA: Prompt Reverse Stealing Attacks against Large Language Models
+                VBART: The Turkish LLM
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Prompt, recognized as crucial intellectual property, enables large language models (LLMs) to perform specific tasks without the need of fine-tuning, underscoring their escalating importance.<span class='px-1 mx-1 bg-yellow-200'>With the rise of prompt-based services, such as prompt marketplaces and LLM applications, providers often display prompts' capabilities through input-output examples to attract users. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.304</span></span>However, this paradigm raises a pivotal security concern: does the exposure of input-output pairs pose the risk of potential prompt leakage, infringing on the intellectual property rights of the developers?To our knowledge, this problem still has not been comprehensively explored yet.<span class='px-1 mx-1 bg-yellow-200'>To remedy this gap, in this paper, we perform the first in depth exploration and propose a novel attack framework for reverse-stealing prompts against commercial LLMs, namely PRSA. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.406</span></span>The main idea of PRSA is that by analyzing the critical features of the input-output pairs, we mimic and gradually infer (steal) the target prompts.In detail, PRSA mainly consists of two key phases: prompt mutation and prompt pruning.In the mutation phase, we propose a prompt attention algorithm based on differential feedback to capture these critical features for effectively inferring the target prompts.<span class='px-1 mx-1 bg-yellow-200'>In the prompt pruning phase, we identify and mask the words dependent on specific inputs, enabling the prompts to accommodate diverse inputs for generalization. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.402</span></span>Through extensive evaluation, we verify that PRSA poses a severe threat in real world scenarios.We have reported these findings to prompt service providers and actively collaborate with them to take protective measures for prompt copyright.</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>We present VBART, the first Turkish sequence-to-sequence Large Language Models (LLMs) pre-trained on a large corpus from scratch. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.441</span></span><span class='px-1 mx-1 bg-yellow-200'>VBART are compact LLMs based on good ideas leveraged from BART and mBART models and come in two sizes, Large and XLarge. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.307</span></span>Fine-tuned VBART models surpass the prior state-of-the-art results in abstractive text summarization, title generation, text paraphrasing, question answering and question generation tasks.They allow fine-tuning for future text generation tasks and datasets, carving a new path for Turkish Natural Language Processing (NLP) research.Our work shows that having a pre-trained LLM for Turkish outperforms up to 3x multilingual models, improving existing results and providing efficient models for training and inference.<span class='px-1 mx-1 bg-yellow-200'>Moreover, we show that our monolingual tokenizer is 7x more efficient than OpenAI's multilingual tokenizer. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.491</span></span><span class='px-1 mx-1 bg-yellow-200'>Last but not least, we introduce a method to enlarge an existing pre-trained LLM and question the relevancy of Chinchilla Scaling Law to sequence-to-sequence masked language models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.37</span></span><span class='px-1 mx-1 bg-yellow-200'>Our fine-tuned models, tokenizer and cleaned web corpus of 135 GB are publicly available at huggingface.co/vngrs-ai. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.805</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.19200v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.01308v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2402.19200v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2403.01308v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LM4OPT: Unveiling the Potential of Large Language Models in Formulating Mathematical Optimization Problems
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>In the rapidly evolving field of natural language processing, the translation of linguistic descriptions into mathematical formulation of optimization problems presents a formidable challenge, demanding intricate understanding and processing capabilities from Large Language Models (LLMs).This study compares prominent LLMs, including GPT-3.5, GPT-4, and Llama-2-7b, in zero-shot and one-shot settings for this task.Our findings show GPT-4's superior performance, particularly in the one-shot scenario.<span class='px-1 mx-1 bg-yellow-200'>A central part of this research is the introduction of `LM4OPT,' a progressive fine-tuning framework for Llama-2-7b that utilizes noisy embeddings and specialized datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.416</span></span>However, this research highlights a notable gap in the contextual understanding capabilities of smaller models such as Llama-2-7b compared to larger counterparts, especially in processing lengthy and complex input contexts.Our empirical investigation, utilizing the NL4Opt dataset, unveils that GPT-4 surpasses the baseline performance established by previous research, achieving an F1-score of 0.63, solely based on the problem description in natural language, and without relying on any additional named entity information.GPT-3.5 follows closely, both outperforming the fine-tuned Llama-2-7b.These findings not only benchmark the current capabilities of LLMs in a novel application area but also lay the groundwork for future improvements in mathematical formulation of optimization problems from natural language input.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.01342v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2403.01342v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5219,24 +5271,24 @@
           </td>
         </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-29</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-02</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Analyzing and Reducing Catastrophic Forgetting in Parameter Efficient Tuning
+                Improving the Validity of Automatically Generated Feedback via Reinforcement Learning
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Existing research has shown that large language models (LLMs) exhibit remarkable performance in language understanding and generation.<span class='px-1 mx-1 bg-yellow-200'>However, when LLMs are continuously fine-tuned on complex and diverse domain-specific downstream tasks, the inference performance on historical tasks decreases dramatically, which is known as a catastrophic forgetting problem. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.43</span></span><span class='px-1 mx-1 bg-yellow-200'>A trade-off needs to be kept between learning plasticity and memory stability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.498</span></span><span class='px-1 mx-1 bg-yellow-200'>Plenty of existing works have explored strategies like memory replay, regularization and parameter isolation, but little is known about the geometric connection of various adjacent minima in the continual LLMs fine-tuning scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.549</span></span>In this work, we investigate the geometric connections of different minima through the lens of mode connectivity, which means different minima can be connected by a low-loss valley.<span class='px-1 mx-1 bg-yellow-200'>Through extensive experiments, we uncover the mode connectivity phenomenon in the LLMs continual learning scenario and find that it can strike a balance between plasticity and stability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.488</span></span><span class='px-1 mx-1 bg-yellow-200'>Building upon these findings, we propose a simple yet effective method called Interpolation-based LoRA (I-LoRA), which constructs a dual-memory experience replay framework based on LoRA parameter interpolations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.478</span></span>Extensive experiments and analysis on eight domain-specific CL benchmarks demonstrate that I-LoRA consistently show significant improvement over the previous state-of-the-art approaches with up to $11\%$ performance gains, providing a strong baseline and insights for future research on the large language model continual learning problem.Our code is available at \url{https://github.com/which47/LLMCL}.</p>
+                  <p>Automatically generating feedback via large language models (LLMs) in intelligent tutoring systems and online learning platforms has the potential to improve the learning outcomes of many students.However, both feedback generation and evaluation are challenging: feedback content has to be valid especially in subjects like math, which requires models to understand the problem, the solution, and where the student's error lies.Feedback also has to be pedagogically valid to reflect effective tutoring strategies, such as explaining possible misconceptions and encouraging the student, among other desirable features.<span class='px-1 mx-1 bg-yellow-200'>In this work, we address both problems of automatically generating and evaluating feedback while considering both correctness and alignment. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.491</span></span>First, we propose a rubric for evaluating math feedback and show that GPT-4 is able to effectively use it to annotate human-written and LLM-generated feedback.<span class='px-1 mx-1 bg-yellow-200'>Second, we propose a framework for feedback generation that optimizes both correctness and alignment using reinforcement learning (RL). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.406</span></span>Specifically, we use GPT-4's annotations to create preferences over feedback pairs in an augmented dataset for training via direct preference optimization (DPO).We show that our methods significantly increase the correctness and alignment of generated feedback with Llama 2, an open-source LLM, qualitatively analyze our generation and evaluation systems using case studies, and outline several areas for future work.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.18865v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.01304v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2402.18865v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2403.01304v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5245,24 +5297,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-02-29</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-02</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Aligning Language Models for Versatile Text-based Item Retrieval
+                LM4OPT: Unveiling the Potential of Large Language Models in Formulating Mathematical Optimization Problems
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>This paper addresses the gap between general-purpose text embeddings and the specific demands of item retrieval tasks.We demonstrate the shortcomings of existing models in capturing the nuances necessary for zero-shot performance on item retrieval tasks.To overcome these limitations, we propose generate in-domain dataset from ten tasks tailored to unlocking models' representation ability for item retrieval.Our empirical studies demonstrate that fine-tuning embedding models on the dataset leads to remarkable improvements in a variety of retrieval tasks.We also illustrate the practical application of our refined model in a conversational setting, where it enhances the capabilities of LLM-based Recommender Agents like Chat-Rec.<span class='px-1 mx-1 bg-yellow-200'>Our code is available at https://github.com/microsoft/RecAI. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.466</span></span></p>
+                  <p>In the rapidly evolving field of natural language processing, the translation of linguistic descriptions into mathematical formulation of optimization problems presents a formidable challenge, demanding intricate understanding and processing capabilities from Large Language Models (LLMs).This study compares prominent LLMs, including GPT-3.5, GPT-4, and Llama-2-7b, in zero-shot and one-shot settings for this task.Our findings show GPT-4's superior performance, particularly in the one-shot scenario.A central part of this research is the introduction of `LM4OPT,' a progressive fine-tuning framework for Llama-2-7b that utilizes noisy embeddings and specialized datasets.However, this research highlights a notable gap in the contextual understanding capabilities of smaller models such as Llama-2-7b compared to larger counterparts, especially in processing lengthy and complex input contexts.Our empirical investigation, utilizing the NL4Opt dataset, unveils that GPT-4 surpasses the baseline performance established by previous research, achieving an F1-score of 0.63, solely based on the problem description in natural language, and without relying on any additional named entity information.<span class='px-1 mx-1 bg-yellow-200'>GPT-3.5 follows closely, both outperforming the fine-tuned Llama-2-7b. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.451</span></span>These findings not only benchmark the current capabilities of LLMs in a novel application area but also lay the groundwork for future improvements in mathematical formulation of optimization problems from natural language input.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2402.18899v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.01342v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2402.18899v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2403.01342v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
