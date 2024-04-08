@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-04-07.</p><br/>
+            <p>Generated on 2024-04-08.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -205,58 +205,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.03622v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                NL2KQL: From Natural Language to Kusto Query
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Data is growing rapidly in volume and complexity.<span class='px-1 mx-1 bg-yellow-200'>Proficiency in database query languages is pivotal for crafting effective queries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.617</span></span>As coding assistants become more prevalent, there is significant opportunity to enhance database query languages.The Kusto Query Language (KQL) is a widely used query language for large semi-structured data such as logs, telemetries, and time-series for big data analytics platforms.This paper introduces NL2KQL an innovative framework that uses large language models (LLMs) to convert natural language queries (NLQs) to KQL queries.The proposed NL2KQL framework includes several key components: Schema Refiner which narrows down the schema to its most pertinent elements; the Few-shot Selector which dynamically selects relevant examples from a few-shot dataset; and the Query Refiner which repairs syntactic and semantic errors in KQL queries.Additionally, this study outlines a method for generating large datasets of synthetic NLQ-KQL pairs which are valid within a specific database contexts.To validate NL2KQL's performance, we utilize an array of online (based on query execution) and offline (based on query parsing) metrics.Through ablation studies, the significance of each framework component is examined, and the datasets used for benchmarking are made publicly available.This work is the first of its kind and is compared with available baselines to demonstrate its effectiveness.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02933v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02933v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Testing the Effect of Code Documentation on Large Language Model Code Understanding
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) have demonstrated impressive abilities in recent years with regards to code generation and understanding.However, little work has investigated how documentation and other code properties affect an LLM's ability to understand and generate code or documentation.We present an empirical analysis of how underlying properties of code or documentation can affect an LLM's capabilities.<span class='px-1 mx-1 bg-yellow-200'>We show that providing an LLM with "incorrect" documentation can greatly hinder code understanding, while incomplete or missing documentation does not seem to significantly affect an LLM's ability to understand code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.644</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03114v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.03114v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -473,24 +421,50 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Exploring How Multiple Levels of GPT-Generated Programming Hints Support or Disappoint Novices
+                NL2KQL: From Natural Language to Kusto Query
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent studies have integrated large language models (LLMs) into diverse educational contexts, including providing adaptive programming hints, a type of feedback focuses on helping students move forward during problem-solving. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.837</span></span>However, most existing LLM-based hint systems are limited to one single hint type.<span class='px-1 mx-1 bg-yellow-200'>To investigate whether and how different levels of hints can support students' problem-solving and learning, we conducted a think-aloud study with 12 novices using the LLM Hint Factory, a system providing four levels of hints from general natural language guidance to concrete code assistance, varying in format and granularity. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.836</span></span><span class='px-1 mx-1 bg-yellow-200'>We discovered that high-level natural language hints alone can be helpless or even misleading, especially when addressing next-step or syntax-related help requests. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.781</span></span><span class='px-1 mx-1 bg-yellow-200'>Adding lower-level hints, like code examples with in-line comments, can better support students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.824</span></span><span class='px-1 mx-1 bg-yellow-200'>The findings open up future work on customizing help responses from content, format, and granularity levels to accurately identify and meet students' learning needs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.692</span></span></p>
+                  <p>Data is growing rapidly in volume and complexity.<span class='px-1 mx-1 bg-yellow-200'>Proficiency in database query languages is pivotal for crafting effective queries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.617</span></span>As coding assistants become more prevalent, there is significant opportunity to enhance database query languages.The Kusto Query Language (KQL) is a widely used query language for large semi-structured data such as logs, telemetries, and time-series for big data analytics platforms.This paper introduces NL2KQL an innovative framework that uses large language models (LLMs) to convert natural language queries (NLQs) to KQL queries.The proposed NL2KQL framework includes several key components: Schema Refiner which narrows down the schema to its most pertinent elements; the Few-shot Selector which dynamically selects relevant examples from a few-shot dataset; and the Query Refiner which repairs syntactic and semantic errors in KQL queries.Additionally, this study outlines a method for generating large datasets of synthetic NLQ-KQL pairs which are valid within a specific database contexts.To validate NL2KQL's performance, we utilize an array of online (based on query execution) and offline (based on query parsing) metrics.Through ablation studies, the significance of each framework component is examined, and the datasets used for benchmarking are made publicly available.This work is the first of its kind and is compared with available baselines to demonstrate its effectiveness.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02213v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02933v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.02213v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.02933v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Testing the Effect of Code Documentation on Large Language Model Code Understanding
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have demonstrated impressive abilities in recent years with regards to code generation and understanding.However, little work has investigated how documentation and other code properties affect an LLM's ability to understand and generate code or documentation.We present an empirical analysis of how underlying properties of code or documentation can affect an LLM's capabilities.<span class='px-1 mx-1 bg-yellow-200'>We show that providing an LLM with "incorrect" documentation can greatly hinder code understanding, while incomplete or missing documentation does not seem to significantly affect an LLM's ability to understand code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.644</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03114v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.03114v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -504,19 +478,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                $\texttt{LM}^\texttt{2}$: A Simple Society of Language Models Solves Complex Reasoning
+                Deconstructing In-Context Learning: Understanding Prompts via Corruption
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Despite demonstrating emergent reasoning abilities, Large Language Models (LLMS) often lose track of complex, multi-step reasoning.<span class='px-1 mx-1 bg-yellow-200'>Existing studies show that providing guidance via decomposing the original question into multiple subproblems elicits more robustness in LLM reasoning -- a decomposer generates the subproblems, and a solver solves each of these subproblems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.627</span></span>However, these techniques fail to accommodate coordination between the decomposer and the solver modules (either in a single model or different specialized ones) -- the decomposer does not keep track of the ability of the solver to follow the decomposed reasoning.In this paper, we propose LM2 to address these challenges.LM2 modularizes the decomposition, solution, and verification into three different language models.The decomposer module identifies the key concepts necessary to solve the problem and generates step-by-step subquestions according to the reasoning requirement.The solver model generates the solution to the subproblems that are then checked by the verifier module; depending upon the feedback from the verifier, the reasoning context is constructed using the subproblems and the solutions.These models are trained to coordinate using policy learning.Exhaustive experimentation suggests the superiority of LM2 over existing methods on in- and out-domain reasoning problems, outperforming the best baselines by $8.1\%$ on MATH, $7.71\%$ on JEEBench, and $9.7\%$ on MedQA problems (code available at https://github.com/LCS2-IIITD/Language_Model_Multiplex).</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>The ability of large language models (LLMs) to "learn in context" based on the provided prompt has led to an explosive growth in their use, culminating in the proliferation of AI assistants such as ChatGPT, Claude, and Bard. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span><span class='px-1 mx-1 bg-yellow-200'>These AI assistants are known to be robust to minor prompt modifications, mostly due to alignment techniques that use human feedback. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span>In contrast, the underlying pre-trained LLMs they use as a backbone are known to be brittle in this respect.Building high-quality backbone models remains a core challenge, and a common approach to assessing their quality is to conduct few-shot evaluation.<span class='px-1 mx-1 bg-yellow-200'>Such evaluation is notorious for being highly sensitive to minor prompt modifications, as well as the choice of specific in-context examples. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.628</span></span><span class='px-1 mx-1 bg-yellow-200'>Prior work has examined how modifying different elements of the prompt can affect model performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.66</span></span><span class='px-1 mx-1 bg-yellow-200'>However, these earlier studies tended to concentrate on a limited number of specific prompt attributes and often produced contradictory results. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.686</span></span>Additionally, previous research either focused on models with fewer than 15 billion parameters or exclusively examined black-box models like GPT-3 or PaLM, making replication challenging.<span class='px-1 mx-1 bg-yellow-200'>In the present study, we decompose the entire prompt into four components: task description, demonstration inputs, labels, and inline instructions provided for each demonstration. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.713</span></span>We investigate the effects of structural and semantic corruptions of these elements on model performance.We study models ranging from 1.5B to 70B in size, using ten datasets covering classification and generation tasks.<span class='px-1 mx-1 bg-yellow-200'>We find that repeating text within the prompt boosts model performance, and bigger models ($\geq$30B) are more sensitive to the semantics of the prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.8</span></span>Finally, we observe that adding task and inline instructions to the demonstrations enhances model performance even when the instructions are semantically corrupted.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02255v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02054v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.02255v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.02054v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -530,19 +504,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Prompts As Programs: A Structure-Aware Approach to Efficient Compile-Time Prompt Optimization
+                Advancing LLM Reasoning Generalists with Preference Trees
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large language models (LLMs) can now handle longer and more complex inputs, which facilitate the use of more elaborate prompts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.876</span></span><span class='px-1 mx-1 bg-yellow-200'>However, prompts often require some tuning to improve performance for deployment. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.835</span></span><span class='px-1 mx-1 bg-yellow-200'>Recent work has proposed automatic prompt optimization methods, but as prompt complexity and LLM strength increase, many prompt optimization techniques are no longer sufficient and a new approach is needed to optimize {\em meta prompt programs}. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.845</span></span><span class='px-1 mx-1 bg-yellow-200'>To address this, we introduce SAMMO, a framework for {\em compile-time} optimizations of metaprompt programs, which represent prompts as structured objects that allows for a rich set of transformations that can be searched over during optimization. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.658</span></span><span class='px-1 mx-1 bg-yellow-200'>We show that SAMMO generalizes previous methods and improves the performance of complex prompts on (1) instruction tuning, (2) RAG pipeline tuning, and (3) prompt compression, across several different LLMs.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.712</span></span>We make all code available open-source at https://github.com/microsoft/sammo .</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce Eurus, a suite of large language models (LLMs) optimized for reasoning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.626</span></span>Finetuned from Mistral-7B and CodeLlama-70B, Eurus models achieve state-of-the-art results among open-source models on a diverse set of benchmarks covering mathematics, code generation, and logical reasoning problems.Notably, Eurus-70B beats GPT-3.5Turbo in reasoning through a comprehensive benchmarking across 12 tests covering five tasks, and achieves a 33.3% pass@1 accuracy on LeetCode and 32.6% on TheoremQA, two challenging benchmarks, substantially outperforming existing open-source models by margins more than 13.3%.The strong performance of Eurus can be primarily attributed to UltraInteract, our newly-curated large-scale, high-quality alignment dataset specifically designed for complex reasoning tasks.UltraInteract can be used in both supervised fine-tuning and preference learning.<span class='px-1 mx-1 bg-yellow-200'>For each instruction, it includes a preference tree consisting of (1) reasoning chains with diverse planning strategies in a unified format, (2) multi-turn interaction trajectories with the environment and the critique, and (3) pairwise data to facilitate preference learning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.601</span></span>UltraInteract allows us to conduct an in-depth exploration of preference learning for reasoning tasks.<span class='px-1 mx-1 bg-yellow-200'>Our investigation reveals that some well-established preference learning algorithms may be less suitable for reasoning tasks compared to their effectiveness in general conversations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span>Inspired by this, we derive a novel reward modeling objective which, together with UltraInteract, leads to a strong reward model.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02319v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02078v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.02319v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.02078v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -556,19 +530,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Comparative Study of Domain Driven Terms Extraction Using Large Language Models
+                Exploring Automated Distractor Generation for Math Multiple-choice Questions via Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Keywords play a crucial role in bridging the gap between human understanding and machine processing of textual data.They are essential to data enrichment because they form the basis for detailed annotations that provide a more insightful and in-depth view of the underlying data.Keyword/domain driven term extraction is a pivotal task in natural language processing, facilitating information retrieval, document summarization, and content categorization.This review focuses on keyword extraction methods, emphasizing the use of three major Large Language Models(LLMs): Llama2-7B, GPT-3.5, and Falcon-7B. We employed a custom Python package to interface with these LLMs, simplifying keyword extraction.Our study, utilizing the Inspec and PubMed datasets, evaluates the performance of these models.<span class='px-1 mx-1 bg-yellow-200'>The Jaccard similarity index was used for assessment, yielding scores of 0.64 (Inspec) and 0.21 (PubMed) for GPT-3.5, 0.40 and 0.17 for Llama2-7B, and 0.23 and 0.12 for Falcon-7B. This paper underlines the role of prompt engineering in LLMs for better keyword extraction and discusses the impact of hallucination in LLMs on result evaluation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span>It also sheds light on the challenges in using LLMs for keyword extraction, including model complexity, resource demands, and optimization techniques.</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Multiple-choice questions (MCQs) are ubiquitous in almost all levels of education since they are easy to administer, grade, and are a reliable format in assessments and practices. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.699</span></span>One of the most important aspects of MCQs is the distractors, i.e., incorrect options that are designed to target common errors or misconceptions among real students.To date, the task of crafting high-quality distractors largely remains a labor and time-intensive process for teachers and learning content designers, which has limited scalability.In this work, we study the task of automated distractor generation in the domain of math MCQs and explore a wide variety of large language model (LLM)-based approaches, from in-context learning to fine-tuning.<span class='px-1 mx-1 bg-yellow-200'>We conduct extensive experiments using a real-world math MCQ dataset and find that although LLMs can generate some mathematically valid distractors, they are less adept at anticipating common errors or misconceptions among real students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.618</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02330v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02124v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.02330v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.02124v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -626,58 +600,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.03602v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                KnowHalu: Hallucination Detection via Multi-Form Knowledge Based Factual Checking
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper introduces KnowHalu, a novel approach for detecting hallucinations in text generated by large language models (LLMs), utilizing step-wise reasoning, multi-formulation query, multi-form knowledge for factual checking, and fusion-based detection mechanism. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.846</span></span><span class='px-1 mx-1 bg-yellow-200'>As LLMs are increasingly applied across various domains, ensuring that their outputs are not hallucinated is critical. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.794</span></span><span class='px-1 mx-1 bg-yellow-200'>Recognizing the limitations of existing approaches that either rely on the self-consistency check of LLMs or perform post-hoc fact-checking without considering the complexity of queries or the form of knowledge, KnowHalu proposes a two-phase process for hallucination detection. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.848</span></span>In the first phase, it identifies non-fabrication hallucinations--responses that, while factually correct, are irrelevant or non-specific to the query.The second phase, multi-form based factual checking, contains five key steps: reasoning and query decomposition, knowledge retrieval, knowledge optimization, judgment generation, and judgment aggregation.<span class='px-1 mx-1 bg-yellow-200'>Our extensive evaluations demonstrate that KnowHalu significantly outperforms SOTA baselines in detecting hallucinations across diverse tasks, e.g., improving by 15.65% in QA tasks and 5.50% in summarization tasks, highlighting its effectiveness and versatility in detecting hallucinations in LLM-generated content. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.867</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02935v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02935v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Testing the Effect of Code Documentation on Large Language Model Code Understanding
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) have demonstrated impressive abilities in recent years with regards to code generation and understanding.However, little work has investigated how documentation and other code properties affect an LLM's ability to understand and generate code or documentation.We present an empirical analysis of how underlying properties of code or documentation can affect an LLM's capabilities.<span class='px-1 mx-1 bg-yellow-200'>We show that providing an LLM with "incorrect" documentation can greatly hinder code understanding, while incomplete or missing documentation does not seem to significantly affect an LLM's ability to understand code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.655</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03114v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.03114v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -808,6 +730,136 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.02904v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                KnowHalu: Hallucination Detection via Multi-Form Knowledge Based Factual Checking
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper introduces KnowHalu, a novel approach for detecting hallucinations in text generated by large language models (LLMs), utilizing step-wise reasoning, multi-formulation query, multi-form knowledge for factual checking, and fusion-based detection mechanism. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.846</span></span><span class='px-1 mx-1 bg-yellow-200'>As LLMs are increasingly applied across various domains, ensuring that their outputs are not hallucinated is critical. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.794</span></span><span class='px-1 mx-1 bg-yellow-200'>Recognizing the limitations of existing approaches that either rely on the self-consistency check of LLMs or perform post-hoc fact-checking without considering the complexity of queries or the form of knowledge, KnowHalu proposes a two-phase process for hallucination detection. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.848</span></span>In the first phase, it identifies non-fabrication hallucinations--responses that, while factually correct, are irrelevant or non-specific to the query.The second phase, multi-form based factual checking, contains five key steps: reasoning and query decomposition, knowledge retrieval, knowledge optimization, judgment generation, and judgment aggregation.<span class='px-1 mx-1 bg-yellow-200'>Our extensive evaluations demonstrate that KnowHalu significantly outperforms SOTA baselines in detecting hallucinations across diverse tasks, e.g., improving by 15.65% in QA tasks and 5.50% in summarization tasks, highlighting its effectiveness and versatility in detecting hallucinations in LLM-generated content. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.867</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02935v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02935v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Testing the Effect of Code Documentation on Large Language Model Code Understanding
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have demonstrated impressive abilities in recent years with regards to code generation and understanding.However, little work has investigated how documentation and other code properties affect an LLM's ability to understand and generate code or documentation.We present an empirical analysis of how underlying properties of code or documentation can affect an LLM's capabilities.<span class='px-1 mx-1 bg-yellow-200'>We show that providing an LLM with "incorrect" documentation can greatly hinder code understanding, while incomplete or missing documentation does not seem to significantly affect an LLM's ability to understand code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.655</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03114v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.03114v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Prompts As Programs: A Structure-Aware Approach to Efficient Compile-Time Prompt Optimization
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) can now handle longer and more complex inputs, which facilitate the use of more elaborate prompts.<span class='px-1 mx-1 bg-yellow-200'>However, prompts often require some tuning to improve performance for deployment. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>Recent work has proposed automatic prompt optimization methods, but as prompt complexity and LLM strength increase, many prompt optimization techniques are no longer sufficient and a new approach is needed to optimize {\em meta prompt programs}.To address this, we introduce SAMMO, a framework for {\em compile-time} optimizations of metaprompt programs, which represent prompts as structured objects that allows for a rich set of transformations that can be searched over during optimization.We show that SAMMO generalizes previous methods and improves the performance of complex prompts on (1) instruction tuning, (2) RAG pipeline tuning, and (3) prompt compression, across several different LLMs.   We make all code available open-source at https://github.com/microsoft/sammo .</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02319v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02319v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Comparative Study of Domain Driven Terms Extraction Using Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Keywords play a crucial role in bridging the gap between human understanding and machine processing of textual data.They are essential to data enrichment because they form the basis for detailed annotations that provide a more insightful and in-depth view of the underlying data.Keyword/domain driven term extraction is a pivotal task in natural language processing, facilitating information retrieval, document summarization, and content categorization.This review focuses on keyword extraction methods, emphasizing the use of three major Large Language Models(LLMs): Llama2-7B, GPT-3.5, and Falcon-7B. We employed a custom Python package to interface with these LLMs, simplifying keyword extraction.Our study, utilizing the Inspec and PubMed datasets, evaluates the performance of these models.<span class='px-1 mx-1 bg-yellow-200'>The Jaccard similarity index was used for assessment, yielding scores of 0.64 (Inspec) and 0.21 (PubMed) for GPT-3.5, 0.40 and 0.17 for Llama2-7B, and 0.23 and 0.12 for Falcon-7B. This paper underlines the role of prompt engineering in LLMs for better keyword extraction and discusses the impact of hallucination in LLMs on result evaluation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span>It also sheds light on the challenges in using LLMs for keyword extraction, including model complexity, resource demands, and optimization techniques.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02330v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02330v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Two Heads are Better than One: Nested PoE for Robust Defense Against Multi-Backdoors
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Data poisoning backdoor attacks can cause undesirable behaviors in large language models (LLMs), and defending against them is of increasing importance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.616</span></span>Existing defense mechanisms often assume that only one type of trigger is adopted by the attacker, while defending against multiple simultaneous and independent trigger types necessitates general defense frameworks and is relatively unexplored.In this paper, we propose Nested Product of Experts(NPoE) defense framework, which involves a mixture of experts (MoE) as a trigger-only ensemble within the PoE defense framework to simultaneously defend against multiple trigger types.During NPoE training, the main model is trained in an ensemble with a mixture of smaller expert models that learn the features of backdoor triggers.At inference time, only the main model is used.Experimental results on sentiment analysis, hate speech detection, and question classification tasks demonstrate that NPoE effectively defends against a variety of triggers both separately and in trigger mixtures.Due to the versatility of the MoE structure in NPoE, this framework can be further expanded to defend against other attack settings</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02356v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02356v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1016,84 +1068,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.02151v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Prompts As Programs: A Structure-Aware Approach to Efficient Compile-Time Prompt Optimization
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large language models (LLMs) can now handle longer and more complex inputs, which facilitate the use of more elaborate prompts.<span class='px-1 mx-1 bg-yellow-200'>However, prompts often require some tuning to improve performance for deployment. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>Recent work has proposed automatic prompt optimization methods, but as prompt complexity and LLM strength increase, many prompt optimization techniques are no longer sufficient and a new approach is needed to optimize {\em meta prompt programs}.To address this, we introduce SAMMO, a framework for {\em compile-time} optimizations of metaprompt programs, which represent prompts as structured objects that allows for a rich set of transformations that can be searched over during optimization.We show that SAMMO generalizes previous methods and improves the performance of complex prompts on (1) instruction tuning, (2) RAG pipeline tuning, and (3) prompt compression, across several different LLMs.   We make all code available open-source at https://github.com/microsoft/sammo .</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02319v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02319v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Comparative Study of Domain Driven Terms Extraction Using Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Keywords play a crucial role in bridging the gap between human understanding and machine processing of textual data.They are essential to data enrichment because they form the basis for detailed annotations that provide a more insightful and in-depth view of the underlying data.Keyword/domain driven term extraction is a pivotal task in natural language processing, facilitating information retrieval, document summarization, and content categorization.This review focuses on keyword extraction methods, emphasizing the use of three major Large Language Models(LLMs): Llama2-7B, GPT-3.5, and Falcon-7B. We employed a custom Python package to interface with these LLMs, simplifying keyword extraction.Our study, utilizing the Inspec and PubMed datasets, evaluates the performance of these models.<span class='px-1 mx-1 bg-yellow-200'>The Jaccard similarity index was used for assessment, yielding scores of 0.64 (Inspec) and 0.21 (PubMed) for GPT-3.5, 0.40 and 0.17 for Llama2-7B, and 0.23 and 0.12 for Falcon-7B. This paper underlines the role of prompt engineering in LLMs for better keyword extraction and discusses the impact of hallucination in LLMs on result evaluation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span>It also sheds light on the challenges in using LLMs for keyword extraction, including model complexity, resource demands, and optimization techniques.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02330v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02330v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Two Heads are Better than One: Nested PoE for Robust Defense Against Multi-Backdoors
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Data poisoning backdoor attacks can cause undesirable behaviors in large language models (LLMs), and defending against them is of increasing importance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.616</span></span>Existing defense mechanisms often assume that only one type of trigger is adopted by the attacker, while defending against multiple simultaneous and independent trigger types necessitates general defense frameworks and is relatively unexplored.In this paper, we propose Nested Product of Experts(NPoE) defense framework, which involves a mixture of experts (MoE) as a trigger-only ensemble within the PoE defense framework to simultaneously defend against multiple trigger types.During NPoE training, the main model is trained in an ensemble with a mixture of smaller expert models that learn the features of backdoor triggers.At inference time, only the main model is used.Experimental results on sentiment analysis, hate speech detection, and question classification tasks demonstrate that NPoE effectively defends against a variety of triggers both separately and in trigger mixtures.Due to the versatility of the MoE structure in NPoE, this framework can be further expanded to defend against other attack settings</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02356v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02356v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1320,32 +1294,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                JailBreakV-28K: A Benchmark for Assessing the Robustness of MultiModal Large Language Models against Jailbreak Attacks
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>With the rapid advancements in Multimodal Large Language Models (MLLMs), securing these models against malicious inputs while aligning them with human values has emerged as a critical challenge. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.78</span></span>In this paper, we investigate an important and unexplored question of whether techniques that successfully jailbreak Large Language Models (LLMs) can be equally effective in jailbreaking MLLMs.<span class='px-1 mx-1 bg-yellow-200'>To explore this issue, we introduce JailBreakV-28K, a pioneering benchmark designed to assess the transferability of LLM jailbreak techniques to MLLMs, thereby evaluating the robustness of MLLMs against diverse jailbreak attacks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.832</span></span><span class='px-1 mx-1 bg-yellow-200'>Utilizing a dataset of 2, 000 malicious queries that is also proposed in this paper, we generate 20, 000 text-based jailbreak prompts using advanced jailbreak attacks on LLMs, alongside 8, 000 image-based jailbreak inputs from recent MLLMs jailbreak attacks, our comprehensive dataset includes 28, 000 test cases across a spectrum of adversarial scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.879</span></span><span class='px-1 mx-1 bg-yellow-200'>Our evaluation of 10 open-source MLLMs reveals a notably high Attack Success Rate (ASR) for attacks transferred from LLMs, highlighting a critical vulnerability in MLLMs that stems from their text-processing capabilities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.752</span></span>Our findings underscore the urgent need for future research to address alignment vulnerabilities in MLLMs from both textual and visual inputs.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03027v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.03027v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Exploring Backdoor Vulnerabilities of Chat Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1471,6 +1419,58 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                JailBreakV-28K: A Benchmark for Assessing the Robustness of MultiModal Large Language Models against Jailbreak Attacks
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>With the rapid advancements in Multimodal Large Language Models (MLLMs), securing these models against malicious inputs while aligning them with human values has emerged as a critical challenge. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.78</span></span>In this paper, we investigate an important and unexplored question of whether techniques that successfully jailbreak Large Language Models (LLMs) can be equally effective in jailbreaking MLLMs.<span class='px-1 mx-1 bg-yellow-200'>To explore this issue, we introduce JailBreakV-28K, a pioneering benchmark designed to assess the transferability of LLM jailbreak techniques to MLLMs, thereby evaluating the robustness of MLLMs against diverse jailbreak attacks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.832</span></span><span class='px-1 mx-1 bg-yellow-200'>Utilizing a dataset of 2, 000 malicious queries that is also proposed in this paper, we generate 20, 000 text-based jailbreak prompts using advanced jailbreak attacks on LLMs, alongside 8, 000 image-based jailbreak inputs from recent MLLMs jailbreak attacks, our comprehensive dataset includes 28, 000 test cases across a spectrum of adversarial scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.879</span></span><span class='px-1 mx-1 bg-yellow-200'>Our evaluation of 10 open-source MLLMs reveals a notably high Attack Success Rate (ASR) for attacks transferred from LLMs, highlighting a critical vulnerability in MLLMs that stems from their text-processing capabilities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.752</span></span>Our findings underscore the urgent need for future research to address alignment vulnerabilities in MLLMs from both textual and visual inputs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03027v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.03027v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have risen significantly in popularity and are increasingly being adopted across multiple applications.These LLMs are heavily aligned to resist engaging in illegal or unethical topics as a means to avoid contributing to responsible AI harms.<span class='px-1 mx-1 bg-yellow-200'>However, a recent line of attacks, known as "jailbreaks", seek to overcome this alignment. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.769</span></span><span class='px-1 mx-1 bg-yellow-200'>Intuitively, jailbreak attacks aim to narrow the gap between what the model can do and what it is willing to do. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.812</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we introduce a novel jailbreak attack called Crescendo. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.64</span></span>Unlike existing jailbreak methods, Crescendo is a multi-turn jailbreak that interacts with the model in a seemingly benign manner.It begins with a general prompt or question about the task at hand and then gradually escalates the dialogue by referencing the model's replies, progressively leading to a successful jailbreak.We evaluate Crescendo on various public systems, including ChatGPT, Gemini Pro, Gemini-Ultra, LlaMA-2 70b Chat, and Anthropic Chat.<span class='px-1 mx-1 bg-yellow-200'>Our results demonstrate the strong efficacy of Crescendo, with it achieving high attack success rates across all evaluated models and tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.636</span></span><span class='px-1 mx-1 bg-yellow-200'>Furthermore, we introduce Crescendomation, a tool that automates the Crescendo attack, and our evaluation showcases its effectiveness against state-of-the-art models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.701</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.01833v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.01833v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
           </td>
           <td>
@@ -1567,32 +1567,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.02151v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Two Heads are Better than One: Nested PoE for Robust Defense Against Multi-Backdoors
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Data poisoning backdoor attacks can cause undesirable behaviors in large language models (LLMs), and defending against them is of increasing importance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.796</span></span><span class='px-1 mx-1 bg-yellow-200'>Existing defense mechanisms often assume that only one type of trigger is adopted by the attacker, while defending against multiple simultaneous and independent trigger types necessitates general defense frameworks and is relatively unexplored. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.746</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose Nested Product of Experts(NPoE) defense framework, which involves a mixture of experts (MoE) as a trigger-only ensemble within the PoE defense framework to simultaneously defend against multiple trigger types. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span>During NPoE training, the main model is trained in an ensemble with a mixture of smaller expert models that learn the features of backdoor triggers.At inference time, only the main model is used.Experimental results on sentiment analysis, hate speech detection, and question classification tasks demonstrate that NPoE effectively defends against a variety of triggers both separately and in trigger mixtures.<span class='px-1 mx-1 bg-yellow-200'>Due to the versatility of the MoE structure in NPoE, this framework can be further expanded to defend against other attack settings <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.718</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02356v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02356v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1819,32 +1793,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                AQuA -- Combining Experts' and Non-Experts' Views To Assess Deliberation Quality in Online Discussions Using LLMs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Measuring the quality of contributions in political online discussions is crucial in deliberation research and computer science.Research has identified various indicators to assess online discussion quality, and with deep learning advancements, automating these measures has become feasible.While some studies focus on analyzing specific quality indicators, a comprehensive quality score incorporating various deliberative aspects is often preferred.In this work, we introduce AQuA, an additive score that calculates a unified deliberative quality score from multiple indices for each discussion post.Unlike other singular scores, AQuA preserves information on the deliberative aspects present in comments, enhancing model transparency.<span class='px-1 mx-1 bg-yellow-200'>We develop adapter models for 20 deliberative indices, and calculate correlation coefficients between experts' annotations and the perceived deliberativeness by non-experts to weigh the individual indices into a single deliberative score. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.617</span></span>We demonstrate that the AQuA score can be computed easily from pre-trained adapters and aligns well with annotations on other datasets that have not be seen during training.The analysis of experts' vs. non-experts' annotations confirms theoretical findings in the social science literature.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02761v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02761v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 I-Design: Personalized LLM Interior Designer
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1858,6 +1806,58 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.02838v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                AQuA -- Combining Experts' and Non-Experts' Views To Assess Deliberation Quality in Online Discussions Using LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Measuring the quality of contributions in political online discussions is crucial in deliberation research and computer science.Research has identified various indicators to assess online discussion quality, and with deep learning advancements, automating these measures has become feasible.While some studies focus on analyzing specific quality indicators, a comprehensive quality score incorporating various deliberative aspects is often preferred.In this work, we introduce AQuA, an additive score that calculates a unified deliberative quality score from multiple indices for each discussion post.Unlike other singular scores, AQuA preserves information on the deliberative aspects present in comments, enhancing model transparency.<span class='px-1 mx-1 bg-yellow-200'>We develop adapter models for 20 deliberative indices, and calculate correlation coefficients between experts' annotations and the perceived deliberativeness by non-experts to weigh the individual indices into a single deliberative score. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.617</span></span>We demonstrate that the AQuA score can be computed easily from pre-trained adapters and aligns well with annotations on other datasets that have not be seen during training.The analysis of experts' vs. non-experts' annotations confirms theoretical findings in the social science literature.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02761v2' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02761v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Toward Informal Language Processing: Knowledge of Slang in Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancement in large language models (LLMs) has offered a strong potential for natural language systems to process informal language. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span><span class='px-1 mx-1 bg-yellow-200'>A representative form of informal language is slang, used commonly in daily conversations and online social media. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.632</span></span>To date, slang has not been comprehensively evaluated in LLMs due partly to the absence of a carefully designed and publicly accessible benchmark.Using movie subtitles, we construct a dataset that supports evaluation on a diverse set of tasks pertaining to automatic processing of slang.For both evaluation and finetuning, we show the effectiveness of our dataset on two core applications: 1) slang detection, and 2) identification of regional and historical sources of slang from natural sentences.We also show how our dataset can be used to probe the output distributions of LLMs for interpretive insights.We find that while LLMs such as GPT-4 achieve good performance in a zero-shot setting, smaller BERT-like models finetuned on our dataset achieve comparable performance.Furthermore, we show that our dataset enables finetuning of LLMs such as GPT-3.5 that achieve substantially better performance than strong zero-shot baselines.Our work offers a comprehensive evaluation and a high-quality benchmark on English slang based on the OpenSubtitles corpus, serving both as a publicly accessible resource and a platform for applying tools for informal language processing.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02323v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02323v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2014,32 +2014,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.02124v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Toward Informal Language Processing: Knowledge of Slang in Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancement in large language models (LLMs) has offered a strong potential for natural language systems to process informal language. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span><span class='px-1 mx-1 bg-yellow-200'>A representative form of informal language is slang, used commonly in daily conversations and online social media. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.632</span></span>To date, slang has not been comprehensively evaluated in LLMs due partly to the absence of a carefully designed and publicly accessible benchmark.Using movie subtitles, we construct a dataset that supports evaluation on a diverse set of tasks pertaining to automatic processing of slang.For both evaluation and finetuning, we show the effectiveness of our dataset on two core applications: 1) slang detection, and 2) identification of regional and historical sources of slang from natural sentences.We also show how our dataset can be used to probe the output distributions of LLMs for interpretive insights.We find that while LLMs such as GPT-4 achieve good performance in a zero-shot setting, smaller BERT-like models finetuned on our dataset achieve comparable performance.Furthermore, we show that our dataset enables finetuning of LLMs such as GPT-3.5 that achieve substantially better performance than strong zero-shot baselines.Our work offers a comprehensive evaluation and a high-quality benchmark on English slang based on the OpenSubtitles corpus, serving both as a publicly accessible resource and a platform for applying tools for informal language processing.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02323v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02323v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2500,32 +2474,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Auditing the Use of Language Models to Guide Hiring Decisions
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Regulatory efforts to protect against algorithmic bias have taken on increased urgency with rapid advances in large language models (LLMs), which are machine learning models that can achieve performance rivaling human experts on a wide array of tasks.A key theme of these initiatives is algorithmic "auditing," but current regulations -- as well as the scientific literature -- provide little guidance on how to conduct these assessments.Here we propose and investigate one approach for auditing algorithms: correspondence experiments, a widely applied tool for detecting bias in human judgements.<span class='px-1 mx-1 bg-yellow-200'>In the employment context, correspondence experiments aim to measure the extent to which race and gender impact decisions by experimentally manipulating elements of submitted application materials that suggest an applicant's demographic traits, such as their listed name. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>We apply this method to audit candidate assessments produced by several state-of-the-art LLMs, using a novel corpus of applications to K-12 teaching positions in a large public school district.We find evidence of moderate race and gender disparities, a pattern largely robust to varying the types of application material input to the models, as well as the framing of the task to the LLMs.We conclude by discussing some important limitations of correspondence experiments for auditing algorithms.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03086v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.03086v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 PhonologyBench: Evaluating Phonological Skills of Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2690,11 +2638,89 @@
                   <p>Measuring the quality of contributions in political online discussions is crucial in deliberation research and computer science.Research has identified various indicators to assess online discussion quality, and with deep learning advancements, automating these measures has become feasible.While some studies focus on analyzing specific quality indicators, a comprehensive quality score incorporating various deliberative aspects is often preferred.In this work, we introduce AQuA, an additive score that calculates a unified deliberative quality score from multiple indices for each discussion post.Unlike other singular scores, AQuA preserves information on the deliberative aspects present in comments, enhancing model transparency.<span class='px-1 mx-1 bg-yellow-200'>We develop adapter models for 20 deliberative indices, and calculate correlation coefficients between experts' annotations and the perceived deliberativeness by non-experts to weigh the individual indices into a single deliberative score. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.725</span></span>We demonstrate that the AQuA score can be computed easily from pre-trained adapters and aligns well with annotations on other datasets that have not be seen during training.<span class='px-1 mx-1 bg-yellow-200'>The analysis of experts' vs. non-experts' annotations confirms theoretical findings in the social science literature. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.786</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02761v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02761v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.02761v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.02761v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Auditing the Use of Language Models to Guide Hiring Decisions
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Regulatory efforts to protect against algorithmic bias have taken on increased urgency with rapid advances in large language models (LLMs), which are machine learning models that can achieve performance rivaling human experts on a wide array of tasks.A key theme of these initiatives is algorithmic "auditing," but current regulations -- as well as the scientific literature -- provide little guidance on how to conduct these assessments.Here we propose and investigate one approach for auditing algorithms: correspondence experiments, a widely applied tool for detecting bias in human judgements.<span class='px-1 mx-1 bg-yellow-200'>In the employment context, correspondence experiments aim to measure the extent to which race and gender impact decisions by experimentally manipulating elements of submitted application materials that suggest an applicant's demographic traits, such as their listed name. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>We apply this method to audit candidate assessments produced by several state-of-the-art LLMs, using a novel corpus of applications to K-12 teaching positions in a large public school district.We find evidence of moderate race and gender disparities, a pattern largely robust to varying the types of application material input to the models, as well as the framing of the task to the LLMs.We conclude by discussing some important limitations of correspondence experiments for auditing algorithms.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03086v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.03086v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLMs in the Loop: Leveraging Large Language Model Annotations for Active Learning in Low-Resource Languages
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Low-resource languages face significant barriers in AI development due to limited linguistic resources and expertise for data labeling, rendering them rare and costly.<span class='px-1 mx-1 bg-yellow-200'>The scarcity of data and the absence of preexisting tools exacerbate these challenges, especially since these languages may not be adequately represented in various NLP datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>To address this gap, we propose leveraging the potential of LLMs in the active learning loop for data annotation.Initially, we conduct evaluations to assess inter-annotator agreement and consistency, facilitating the selection of a suitable LLM annotator.The chosen annotator is then integrated into a training loop for a classifier using an active learning paradigm, minimizing the amount of queried data required.Empirical evaluations, notably employing GPT-4-Turbo, demonstrate near-state-of-the-art performance with significantly reduced data requirements, as indicated by estimated potential cost savings of at least 42.45 times compared to human annotation.Our proposed solution shows promising potential to substantially reduce both the monetary and computational costs associated with automation in low-resource settings.By bridging the gap between low-resource languages and AI, this approach fosters broader inclusion and shows the potential to enable automation across diverse linguistic landscapes.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02261v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02261v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Toward Informal Language Processing: Knowledge of Slang in Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Recent advancement in large language models (LLMs) has offered a strong potential for natural language systems to process informal language.<span class='px-1 mx-1 bg-yellow-200'>A representative form of informal language is slang, used commonly in daily conversations and online social media. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.73</span></span><span class='px-1 mx-1 bg-yellow-200'>To date, slang has not been comprehensively evaluated in LLMs due partly to the absence of a carefully designed and publicly accessible benchmark. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.688</span></span>Using movie subtitles, we construct a dataset that supports evaluation on a diverse set of tasks pertaining to automatic processing of slang.For both evaluation and finetuning, we show the effectiveness of our dataset on two core applications: 1) slang detection, and 2) identification of regional and historical sources of slang from natural sentences.We also show how our dataset can be used to probe the output distributions of LLMs for interpretive insights.We find that while LLMs such as GPT-4 achieve good performance in a zero-shot setting, smaller BERT-like models finetuned on our dataset achieve comparable performance.Furthermore, we show that our dataset enables finetuning of LLMs such as GPT-3.5 that achieve substantially better performance than strong zero-shot baselines.Our work offers a comprehensive evaluation and a high-quality benchmark on English slang based on the OpenSubtitles corpus, serving both as a publicly accessible resource and a platform for applying tools for informal language processing.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02323v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02323v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2903,58 +2929,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.02127v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                LLMs in the Loop: Leveraging Large Language Model Annotations for Active Learning in Low-Resource Languages
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Low-resource languages face significant barriers in AI development due to limited linguistic resources and expertise for data labeling, rendering them rare and costly.<span class='px-1 mx-1 bg-yellow-200'>The scarcity of data and the absence of preexisting tools exacerbate these challenges, especially since these languages may not be adequately represented in various NLP datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>To address this gap, we propose leveraging the potential of LLMs in the active learning loop for data annotation.Initially, we conduct evaluations to assess inter-annotator agreement and consistency, facilitating the selection of a suitable LLM annotator.The chosen annotator is then integrated into a training loop for a classifier using an active learning paradigm, minimizing the amount of queried data required.Empirical evaluations, notably employing GPT-4-Turbo, demonstrate near-state-of-the-art performance with significantly reduced data requirements, as indicated by estimated potential cost savings of at least 42.45 times compared to human annotation.Our proposed solution shows promising potential to substantially reduce both the monetary and computational costs associated with automation in low-resource settings.By bridging the gap between low-resource languages and AI, this approach fosters broader inclusion and shows the potential to enable automation across diverse linguistic landscapes.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02261v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02261v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Toward Informal Language Processing: Knowledge of Slang in Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Recent advancement in large language models (LLMs) has offered a strong potential for natural language systems to process informal language.<span class='px-1 mx-1 bg-yellow-200'>A representative form of informal language is slang, used commonly in daily conversations and online social media. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.73</span></span><span class='px-1 mx-1 bg-yellow-200'>To date, slang has not been comprehensively evaluated in LLMs due partly to the absence of a carefully designed and publicly accessible benchmark. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.688</span></span>Using movie subtitles, we construct a dataset that supports evaluation on a diverse set of tasks pertaining to automatic processing of slang.For both evaluation and finetuning, we show the effectiveness of our dataset on two core applications: 1) slang detection, and 2) identification of regional and historical sources of slang from natural sentences.We also show how our dataset can be used to probe the output distributions of LLMs for interpretive insights.We find that while LLMs such as GPT-4 achieve good performance in a zero-shot setting, smaller BERT-like models finetuned on our dataset achieve comparable performance.Furthermore, we show that our dataset enables finetuning of LLMs such as GPT-3.5 that achieve substantially better performance than strong zero-shot baselines.Our work offers a comprehensive evaluation and a high-quality benchmark on English slang based on the OpenSubtitles corpus, serving both as a publicly accessible resource and a platform for applying tools for informal language processing.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02323v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02323v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3259,84 +3233,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence (AI) concepts, methodologies, and their interrelations.Developed via manual curation, with the additional assistance of large language models (LLMs), AIO aims to address the rapidly evolving landscape of AI by providing a comprehensive framework that encompasses both technical and ethical aspects of AI technologies.<span class='px-1 mx-1 bg-yellow-200'>The primary audience for AIO includes AI researchers, developers, and educators seeking standardized terminology and concepts within the AI domain. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.526</span></span>The ontology is structured around six top-level branches: Networks, Layers, Functions, LLMs, Preprocessing, and Bias, each designed to support the modular composition of AI methods and facilitate a deeper understanding of deep learning architectures and ethical considerations in AI.   AIO's development utilized the Ontology Development Kit (ODK) for its creation and maintenance, with its content being dynamically updated through AI-driven curation support.This approach not only ensures the ontology's relevance amidst the fast-paced advancements in AI but also significantly enhances its utility for researchers, developers, and educators by simplifying the integration of new AI concepts and methodologies.   The ontology's utility is demonstrated through the annotation of AI methods data in a catalog of AI research publications and the integration into the BioPortal ontology resource, highlighting its potential for cross-disciplinary research.The AIO ontology is open source and is available on GitHub (https://github.com/berkeleybop/artificial-intelligence-ontology) and BioPortal (https://bioportal.bioontology.org/ontologies/AIO).</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03044v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.03044v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Auditing the Use of Language Models to Guide Hiring Decisions
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Regulatory efforts to protect against algorithmic bias have taken on increased urgency with rapid advances in large language models (LLMs), which are machine learning models that can achieve performance rivaling human experts on a wide array of tasks.A key theme of these initiatives is algorithmic "auditing," but current regulations -- as well as the scientific literature -- provide little guidance on how to conduct these assessments.Here we propose and investigate one approach for auditing algorithms: correspondence experiments, a widely applied tool for detecting bias in human judgements.In the employment context, correspondence experiments aim to measure the extent to which race and gender impact decisions by experimentally manipulating elements of submitted application materials that suggest an applicant's demographic traits, such as their listed name.<span class='px-1 mx-1 bg-yellow-200'>We apply this method to audit candidate assessments produced by several state-of-the-art LLMs, using a novel corpus of applications to K-12 teaching positions in a large public school district. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.502</span></span>We find evidence of moderate race and gender disparities, a pattern largely robust to varying the types of application material input to the models, as well as the framing of the task to the LLMs.We conclude by discussing some important limitations of correspondence experiments for auditing algorithms.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03086v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.03086v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Testing the Effect of Code Documentation on Large Language Model Code Understanding
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) have demonstrated impressive abilities in recent years with regards to code generation and understanding.However, little work has investigated how documentation and other code properties affect an LLM's ability to understand and generate code or documentation.We present an empirical analysis of how underlying properties of code or documentation can affect an LLM's capabilities.<span class='px-1 mx-1 bg-yellow-200'>We show that providing an LLM with "incorrect" documentation can greatly hinder code understanding, while incomplete or missing documentation does not seem to significantly affect an LLM's ability to understand code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.569</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03114v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.03114v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 PhonologyBench: Evaluating Phonological Skills of Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3540,6 +3436,188 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence (AI) concepts, methodologies, and their interrelations.Developed via manual curation, with the additional assistance of large language models (LLMs), AIO aims to address the rapidly evolving landscape of AI by providing a comprehensive framework that encompasses both technical and ethical aspects of AI technologies.<span class='px-1 mx-1 bg-yellow-200'>The primary audience for AIO includes AI researchers, developers, and educators seeking standardized terminology and concepts within the AI domain. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.526</span></span>The ontology is structured around six top-level branches: Networks, Layers, Functions, LLMs, Preprocessing, and Bias, each designed to support the modular composition of AI methods and facilitate a deeper understanding of deep learning architectures and ethical considerations in AI.   AIO's development utilized the Ontology Development Kit (ODK) for its creation and maintenance, with its content being dynamically updated through AI-driven curation support.This approach not only ensures the ontology's relevance amidst the fast-paced advancements in AI but also significantly enhances its utility for researchers, developers, and educators by simplifying the integration of new AI concepts and methodologies.   The ontology's utility is demonstrated through the annotation of AI methods data in a catalog of AI research publications and the integration into the BioPortal ontology resource, highlighting its potential for cross-disciplinary research.The AIO ontology is open source and is available on GitHub (https://github.com/berkeleybop/artificial-intelligence-ontology) and BioPortal (https://bioportal.bioontology.org/ontologies/AIO).</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03044v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.03044v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Auditing the Use of Language Models to Guide Hiring Decisions
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Regulatory efforts to protect against algorithmic bias have taken on increased urgency with rapid advances in large language models (LLMs), which are machine learning models that can achieve performance rivaling human experts on a wide array of tasks.A key theme of these initiatives is algorithmic "auditing," but current regulations -- as well as the scientific literature -- provide little guidance on how to conduct these assessments.Here we propose and investigate one approach for auditing algorithms: correspondence experiments, a widely applied tool for detecting bias in human judgements.In the employment context, correspondence experiments aim to measure the extent to which race and gender impact decisions by experimentally manipulating elements of submitted application materials that suggest an applicant's demographic traits, such as their listed name.<span class='px-1 mx-1 bg-yellow-200'>We apply this method to audit candidate assessments produced by several state-of-the-art LLMs, using a novel corpus of applications to K-12 teaching positions in a large public school district. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.502</span></span>We find evidence of moderate race and gender disparities, a pattern largely robust to varying the types of application material input to the models, as well as the framing of the task to the LLMs.We conclude by discussing some important limitations of correspondence experiments for auditing algorithms.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03086v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.03086v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Testing the Effect of Code Documentation on Large Language Model Code Understanding
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have demonstrated impressive abilities in recent years with regards to code generation and understanding.However, little work has investigated how documentation and other code properties affect an LLM's ability to understand and generate code or documentation.We present an empirical analysis of how underlying properties of code or documentation can affect an LLM's capabilities.<span class='px-1 mx-1 bg-yellow-200'>We show that providing an LLM with "incorrect" documentation can greatly hinder code understanding, while incomplete or missing documentation does not seem to significantly affect an LLM's ability to understand code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.569</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03114v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.03114v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have risen significantly in popularity and are increasingly being adopted across multiple applications.<span class='px-1 mx-1 bg-yellow-200'>These LLMs are heavily aligned to resist engaging in illegal or unethical topics as a means to avoid contributing to responsible AI harms. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.549</span></span>However, a recent line of attacks, known as "jailbreaks", seek to overcome this alignment.Intuitively, jailbreak attacks aim to narrow the gap between what the model can do and what it is willing to do.In this paper, we introduce a novel jailbreak attack called Crescendo.Unlike existing jailbreak methods, Crescendo is a multi-turn jailbreak that interacts with the model in a seemingly benign manner.It begins with a general prompt or question about the task at hand and then gradually escalates the dialogue by referencing the model's replies, progressively leading to a successful jailbreak.We evaluate Crescendo on various public systems, including ChatGPT, Gemini Pro, Gemini-Ultra, LlaMA-2 70b Chat, and Anthropic Chat.Our results demonstrate the strong efficacy of Crescendo, with it achieving high attack success rates across all evaluated models and tasks.Furthermore, we introduce Crescendomation, a tool that automates the Crescendo attack, and our evaluation showcases its effectiveness against state-of-the-art models.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.01833v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.01833v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Multitask-based Evaluation of Open-Source LLM on Software Vulnerability
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper proposes a pipeline for quantitatively evaluating interactive LLMs using publicly available datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.534</span></span>We carry out an extensive technical evaluation of LLMs using Big-Vul covering four different common software vulnerability tasks.We evaluate the multitask and multilingual aspects of LLMs based on this dataset.We find that the existing state-of-the-art methods are generally superior to LLMs in software vulnerability detection.Although LLMs improve accuracy when providing context information, they still have limitations in accurately predicting severity ratings for certain CWE types.In addition, LLMs demonstrate some ability to locate vulnerabilities for certain CWE types, but their performance varies among different CWE types.Finally, LLMs show uneven performance in generating CVE descriptions for various CWE types, with limited accuracy in a few-shot setting.Overall, though LLMs perform well in some aspects, they still need improvement in understanding the subtle differences in code vulnerabilities and the ability to describe vulnerabilities to fully realize their potential.Our evaluation pipeline provides valuable insights for further enhancing LLMs' software vulnerability handling capabilities.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02056v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02056v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Long-context LLMs Struggle with Long In-context Learning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have made significant strides in handling long sequences exceeding 32K tokens.However, their performance evaluation has largely been confined to metrics like perplexity and synthetic tasks, which may not fully capture their abilities in more nuanced, real-world scenarios.This study introduces a specialized benchmark (LIConBench) focusing on long in-context learning within the realm of extreme-label classification.We meticulously selected six datasets with a label range spanning 28 to 174 classes covering different input (few-shot demonstration) length from 2K to 50K. Our benchmark requires LLMs to comprehend the entire input to recognize the massive label spaces to make correct prediction.We evaluate 13 long-context LLMs on our benchmarks.We find that the long-context LLMs perform relatively well under the token length of 20K and the performance benefits from utilizing the long context window.However, after the context window exceeds 20K, most LLMs except GPT-4 will dip dramatically.This suggests a notable gap in current LLM capabilities for processing and understanding long, context-rich sequences.Further analysis revealed a tendency among models to favor predictions for labels presented towards the end at the sequence.Their ability to reason over multiple pieces in the long sequence is yet to be improved.<span class='px-1 mx-1 bg-yellow-200'>Our study reveals that long context understanding and reasoning is still a challenging task for the existing LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.528</span></span>We believe LIConBench could serve as a more realistic evaluation for the future long context LLMs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02060v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02060v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Digital Forgetting in Large Language Models: A Survey of Unlearning Methods
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The objective of digital forgetting is, given a model with undesirable knowledge or behavior, obtain a new model where the detected issues are no longer present.The motivations for forgetting include privacy protection, copyright protection, elimination of biases and discrimination, and prevention of harmful content generation.Effective digital forgetting has to be effective (meaning how well the new model has forgotten the undesired knowledge/behavior), retain the performance of the original model on the desirable tasks, and be scalable (in particular forgetting has to be more efficient than retraining from scratch on just the tasks/data to be retained).This survey focuses on forgetting in large language models (LLMs).We first provide background on LLMs, including their components, the types of LLMs, and their usual training pipeline.Second, we describe the motivations, types, and desired properties of digital forgetting.Third, we introduce the approaches to digital forgetting in LLMs, among which unlearning methodologies stand out as the state of the art.Fourth, we provide a detailed taxonomy of machine unlearning methods for LLMs, and we survey and compare current approaches.Fifth, we detail datasets, models and metrics used for the evaluation of forgetting, retaining and runtime.<span class='px-1 mx-1 bg-yellow-200'>Sixth, we discuss challenges in the area. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.626</span></span>Finally, we provide some concluding remarks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02062v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02062v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
           </td>
           <td>
@@ -3558,58 +3636,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.02124v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Exploring How Multiple Levels of GPT-Generated Programming Hints Support or Disappoint Novices
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent studies have integrated large language models (LLMs) into diverse educational contexts, including providing adaptive programming hints, a type of feedback focuses on helping students move forward during problem-solving. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span>However, most existing LLM-based hint systems are limited to one single hint type.<span class='px-1 mx-1 bg-yellow-200'>To investigate whether and how different levels of hints can support students' problem-solving and learning, we conducted a think-aloud study with 12 novices using the LLM Hint Factory, a system providing four levels of hints from general natural language guidance to concrete code assistance, varying in format and granularity. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.732</span></span>We discovered that high-level natural language hints alone can be helpless or even misleading, especially when addressing next-step or syntax-related help requests.<span class='px-1 mx-1 bg-yellow-200'>Adding lower-level hints, like code examples with in-line comments, can better support students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.692</span></span><span class='px-1 mx-1 bg-yellow-200'>The findings open up future work on customizing help responses from content, format, and granularity levels to accurately identify and meet students' learning needs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.689</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02213v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02213v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Prompts As Programs: A Structure-Aware Approach to Efficient Compile-Time Prompt Optimization
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large language models (LLMs) can now handle longer and more complex inputs, which facilitate the use of more elaborate prompts.However, prompts often require some tuning to improve performance for deployment.Recent work has proposed automatic prompt optimization methods, but as prompt complexity and LLM strength increase, many prompt optimization techniques are no longer sufficient and a new approach is needed to optimize {\em meta prompt programs}.To address this, we introduce SAMMO, a framework for {\em compile-time} optimizations of metaprompt programs, which represent prompts as structured objects that allows for a rich set of transformations that can be searched over during optimization.<span class='px-1 mx-1 bg-yellow-200'>We show that SAMMO generalizes previous methods and improves the performance of complex prompts on (1) instruction tuning, (2) RAG pipeline tuning, and (3) prompt compression, across several different LLMs.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.502</span></span>We make all code available open-source at https://github.com/microsoft/sammo .</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02319v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02319v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3789,7 +3815,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in Large Language Models (LLMs) have attracted considerable interest among researchers to leverage these models to enhance Recommender Systems (RSs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.772</span></span>Existing work predominantly utilizes LLMs to generate knowledge-rich texts or utilizes LLM-derived embeddings as features to improve RSs.Although the extensive world knowledge embedded in LLMs generally benefits RSs, the application can only take limited number of users and items as inputs, without adequately exploiting collaborative filtering information.<span class='px-1 mx-1 bg-yellow-200'>Considering its crucial role in RSs, one key challenge in enhancing RSs with LLMs lies in providing better collaborative filtering information through LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.704</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, drawing inspiration from the in-context learning and chain of thought reasoning in LLMs, we propose the Large Language Models enhanced Collaborative Filtering (LLM-CF) framework, which distils the world knowledge and reasoning capabilities of LLMs into collaborative filtering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.761</span></span><span class='px-1 mx-1 bg-yellow-200'>We also explored a concise and efficient instruction-tuning method, which improves the recommendation capabilities of LLMs while preserving their general functionalities (e.g., not decreasing on the LLM benchmark). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.731</span></span><span class='px-1 mx-1 bg-yellow-200'>Comprehensive experiments on three real-world datasets demonstrate that LLM-CF significantly enhances several backbone recommendation models and consistently outperforms competitive baselines, showcasing its effectiveness in distilling the world knowledge and reasoning capabilities of LLM into collaborative filtering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.873</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in Large Language Models (LLMs) have attracted considerable interest among researchers to leverage these models to enhance Recommender Systems (RSs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.772</span></span>Existing work predominantly utilizes LLMs to generate knowledge-rich texts or utilizes LLM-derived embeddings as features to improve RSs.Al- though the extensive world knowledge embedded in LLMs generally benefits RSs, the application can only take limited number of users and items as inputs, without adequately exploiting collaborative filtering information.<span class='px-1 mx-1 bg-yellow-200'>Considering its crucial role in RSs, one key challenge in enhancing RSs with LLMs lies in providing better collaborative filtering information through LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.704</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, drawing inspiration from the in-context learning and chain of thought reasoning in LLMs, we propose the Large Language Models enhanced Collaborative Filtering (LLM-CF) framework, which distils the world knowledge and reasoning capabilities of LLMs into collaborative filtering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.761</span></span><span class='px-1 mx-1 bg-yellow-200'>We also explored a concise and efficient instruction-tuning method, which improves the recommendation capabilities of LLMs while preserving their general functionalities (e.g., not decreasing on the LLM benchmark). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.731</span></span><span class='px-1 mx-1 bg-yellow-200'>Comprehensive experiments on three real-world datasets demonstrate that LLM-CF significantly enhances several backbone recommendation models and consistently outperforms competitive baselines, showcasing its effectiveness in distilling the world knowledge and reasoning capabilities of LLM into collaborative filtering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.873</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.17688v1' target="_blank">
@@ -3815,7 +3841,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in Large Language Models (LLMs) have attracted considerable interest among researchers to leverage these models to enhance Recommender Systems (RSs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.772</span></span>Existing work predominantly utilizes LLMs to generate knowledge-rich texts or utilizes LLM-derived embeddings as features to improve RSs.Al- though the extensive world knowledge embedded in LLMs generally benefits RSs, the application can only take limited number of users and items as inputs, without adequately exploiting collaborative filtering information.<span class='px-1 mx-1 bg-yellow-200'>Considering its crucial role in RSs, one key challenge in enhancing RSs with LLMs lies in providing better collaborative filtering information through LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.704</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, drawing inspiration from the in-context learning and chain of thought reasoning in LLMs, we propose the Large Language Models enhanced Collaborative Filtering (LLM-CF) framework, which distils the world knowledge and reasoning capabilities of LLMs into collaborative filtering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.761</span></span><span class='px-1 mx-1 bg-yellow-200'>We also explored a concise and efficient instruction-tuning method, which improves the recommendation capabilities of LLMs while preserving their general functionalities (e.g., not decreasing on the LLM benchmark). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.731</span></span><span class='px-1 mx-1 bg-yellow-200'>Comprehensive experiments on three real-world datasets demonstrate that LLM-CF significantly enhances several backbone recommendation models and consistently outperforms competitive baselines, showcasing its effectiveness in distilling the world knowledge and reasoning capabilities of LLM into collaborative filtering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.873</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in Large Language Models (LLMs) have attracted considerable interest among researchers to leverage these models to enhance Recommender Systems (RSs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.772</span></span>Existing work predominantly utilizes LLMs to generate knowledge-rich texts or utilizes LLM-derived embeddings as features to improve RSs.Although the extensive world knowledge embedded in LLMs generally benefits RSs, the application can only take limited number of users and items as inputs, without adequately exploiting collaborative filtering information.<span class='px-1 mx-1 bg-yellow-200'>Considering its crucial role in RSs, one key challenge in enhancing RSs with LLMs lies in providing better collaborative filtering information through LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.704</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, drawing inspiration from the in-context learning and chain of thought reasoning in LLMs, we propose the Large Language Models enhanced Collaborative Filtering (LLM-CF) framework, which distils the world knowledge and reasoning capabilities of LLMs into collaborative filtering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.761</span></span><span class='px-1 mx-1 bg-yellow-200'>We also explored a concise and efficient instruction-tuning method, which improves the recommendation capabilities of LLMs while preserving their general functionalities (e.g., not decreasing on the LLM benchmark). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.731</span></span><span class='px-1 mx-1 bg-yellow-200'>Comprehensive experiments on three real-world datasets demonstrate that LLM-CF significantly enhances several backbone recommendation models and consistently outperforms competitive baselines, showcasing its effectiveness in distilling the world knowledge and reasoning capabilities of LLM into collaborative filtering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.873</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.17688v1' target="_blank">
@@ -3849,32 +3875,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2403.16948v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-03-25</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Re2LLM: Reflective Reinforcement Large Language Model for Session-based Recommendation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) are emerging as promising approaches to enhance session-based recommendation (SBR), where both prompt-based and fine-tuning-based methods have been widely investigated to align LLMs with SBR. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.828</span></span>However, the former methods struggle with optimal prompts to elicit the correct reasoning of LLMs due to the lack of task-specific feedback, leading to unsatisfactory recommendations.Although the latter methods attempt to fine-tune LLMs with domain-specific knowledge, they face limitations such as high computational costs and reliance on open-source backbones.To address such issues, we propose a \underline{Re}flective \underline{Re}inforcement \underline{L}arge \underline{L}anguage \underline{M}odel (Re2LLM) for SBR, guiding LLMs to focus on specialized knowledge essential for more accurate recommendations effectively and efficiently.In particular, we first design the Reflective Exploration Module to effectively extract knowledge that is readily understandable and digestible by LLMs.<span class='px-1 mx-1 bg-yellow-200'>To be specific, we direct LLMs to examine recommendation errors through self-reflection and construct a knowledge base (KB) comprising hints capable of rectifying these errors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.661</span></span>To efficiently elicit the correct reasoning of LLMs, we further devise the Reinforcement Utilization Module to train a lightweight retrieval agent.It learns to select hints from the constructed KB based on the task-specific feedback, where the hints can serve as guidance to help correct LLMs reasoning for better recommendations.Extensive experiments on multiple real-world datasets demonstrate that our method consistently outperforms state-of-the-art methods.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2403.16427v2' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2403.16427v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5073,32 +5073,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Testing the Effect of Code Documentation on Large Language Model Code Understanding
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) have demonstrated impressive abilities in recent years with regards to code generation and understanding. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.935</span></span>However, little work has investigated how documentation and other code properties affect an LLM's ability to understand and generate code or documentation.We present an empirical analysis of how underlying properties of code or documentation can affect an LLM's capabilities.We show that providing an LLM with "incorrect" documentation can greatly hinder code understanding, while incomplete or missing documentation does not seem to significantly affect an LLM's ability to understand code.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03114v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.03114v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Prompting for Numerical Sequences: A Case Study on Market Comment Generation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -5250,6 +5224,110 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-03</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Testing the Effect of Code Documentation on Large Language Model Code Understanding
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) have demonstrated impressive abilities in recent years with regards to code generation and understanding. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.935</span></span>However, little work has investigated how documentation and other code properties affect an LLM's ability to understand and generate code or documentation.We present an empirical analysis of how underlying properties of code or documentation can affect an LLM's capabilities.We show that providing an LLM with "incorrect" documentation can greatly hinder code understanding, while incomplete or missing documentation does not seem to significantly affect an LLM's ability to understand code.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.03114v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.03114v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Self-Organized Agents: A LLM Multi-Agent Framework toward Ultra Large-Scale Code Generation and Optimization
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in automatic code generation using large language model (LLM) agent have brought us closer to the future of automated software development. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.948</span></span>However, existing single-agent approaches face limitations in generating and improving large-scale, complex codebases due to constraints in context length.To tackle this challenge, we propose Self-Organized multi-Agent framework (SoA), a novel multi-agent framework that enables the scalable and efficient generation and optimization of large-scale code.In SoA, self-organized agents operate independently to generate and modify code components while seamlessly collaborating to construct the overall codebase.A key feature of our framework is the automatic multiplication of agents based on problem complexity, allowing for dynamic scalability.This enables the overall code volume to be increased indefinitely according to the number of agents, while the amount of code managed by each agent remains constant.We evaluate SoA on the HumanEval benchmark and demonstrate that, compared to a single-agent system, each agent in SoA handles significantly less code, yet the overall generated code is substantially greater.Moreover, SoA surpasses the powerful single-agent baseline by 5% in terms of Pass@1 accuracy.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02183v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02183v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Exploring How Multiple Levels of GPT-Generated Programming Hints Support or Disappoint Novices
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent studies have integrated large language models (LLMs) into diverse educational contexts, including providing adaptive programming hints, a type of feedback focuses on helping students move forward during problem-solving. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.836</span></span>However, most existing LLM-based hint systems are limited to one single hint type.To investigate whether and how different levels of hints can support students' problem-solving and learning, we conducted a think-aloud study with 12 novices using the LLM Hint Factory, a system providing four levels of hints from general natural language guidance to concrete code assistance, varying in format and granularity.We discovered that high-level natural language hints alone can be helpless or even misleading, especially when addressing next-step or syntax-related help requests.<span class='px-1 mx-1 bg-yellow-200'>Adding lower-level hints, like code examples with in-line comments, can better support students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.704</span></span>The findings open up future work on customizing help responses from content, format, and granularity levels to accurately identify and meet students' learning needs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02213v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02213v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Comparative Study of Domain Driven Terms Extraction Using Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Keywords play a crucial role in bridging the gap between human understanding and machine processing of textual data.They are essential to data enrichment because they form the basis for detailed annotations that provide a more insightful and in-depth view of the underlying data.Keyword/domain driven term extraction is a pivotal task in natural language processing, facilitating information retrieval, document summarization, and content categorization.<span class='px-1 mx-1 bg-yellow-200'>This review focuses on keyword extraction methods, emphasizing the use of three major Large Language Models(LLMs): Llama2-7B, GPT-3.5, and Falcon-7B. We employed a custom Python package to interface with these LLMs, simplifying keyword extraction. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.725</span></span>Our study, utilizing the Inspec and PubMed datasets, evaluates the performance of these models.The Jaccard similarity index was used for assessment, yielding scores of 0.64 (Inspec) and 0.21 (PubMed) for GPT-3.5, 0.40 and 0.17 for Llama2-7B, and 0.23 and 0.12 for Falcon-7B. This paper underlines the role of prompt engineering in LLMs for better keyword extraction and discusses the impact of hallucination in LLMs on result evaluation.It also sheds light on the challenges in using LLMs for keyword extraction, including model complexity, resource demands, and optimization techniques.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02330v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.02330v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
           </td>
           <td>
@@ -5372,84 +5450,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.01903v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Self-Organized Agents: A LLM Multi-Agent Framework toward Ultra Large-Scale Code Generation and Optimization
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in automatic code generation using large language model (LLM) agent have brought us closer to the future of automated software development. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.948</span></span>However, existing single-agent approaches face limitations in generating and improving large-scale, complex codebases due to constraints in context length.To tackle this challenge, we propose Self-Organized multi-Agent framework (SoA), a novel multi-agent framework that enables the scalable and efficient generation and optimization of large-scale code.In SoA, self-organized agents operate independently to generate and modify code components while seamlessly collaborating to construct the overall codebase.A key feature of our framework is the automatic multiplication of agents based on problem complexity, allowing for dynamic scalability.This enables the overall code volume to be increased indefinitely according to the number of agents, while the amount of code managed by each agent remains constant.We evaluate SoA on the HumanEval benchmark and demonstrate that, compared to a single-agent system, each agent in SoA handles significantly less code, yet the overall generated code is substantially greater.Moreover, SoA surpasses the powerful single-agent baseline by 5% in terms of Pass@1 accuracy.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02183v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02183v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Exploring How Multiple Levels of GPT-Generated Programming Hints Support or Disappoint Novices
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent studies have integrated large language models (LLMs) into diverse educational contexts, including providing adaptive programming hints, a type of feedback focuses on helping students move forward during problem-solving. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.836</span></span>However, most existing LLM-based hint systems are limited to one single hint type.To investigate whether and how different levels of hints can support students' problem-solving and learning, we conducted a think-aloud study with 12 novices using the LLM Hint Factory, a system providing four levels of hints from general natural language guidance to concrete code assistance, varying in format and granularity.We discovered that high-level natural language hints alone can be helpless or even misleading, especially when addressing next-step or syntax-related help requests.<span class='px-1 mx-1 bg-yellow-200'>Adding lower-level hints, like code examples with in-line comments, can better support students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.704</span></span>The findings open up future work on customizing help responses from content, format, and granularity levels to accurately identify and meet students' learning needs.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02213v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02213v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-02</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Comparative Study of Domain Driven Terms Extraction Using Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Keywords play a crucial role in bridging the gap between human understanding and machine processing of textual data.They are essential to data enrichment because they form the basis for detailed annotations that provide a more insightful and in-depth view of the underlying data.Keyword/domain driven term extraction is a pivotal task in natural language processing, facilitating information retrieval, document summarization, and content categorization.<span class='px-1 mx-1 bg-yellow-200'>This review focuses on keyword extraction methods, emphasizing the use of three major Large Language Models(LLMs): Llama2-7B, GPT-3.5, and Falcon-7B. We employed a custom Python package to interface with these LLMs, simplifying keyword extraction. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.725</span></span>Our study, utilizing the Inspec and PubMed datasets, evaluates the performance of these models.The Jaccard similarity index was used for assessment, yielding scores of 0.64 (Inspec) and 0.21 (PubMed) for GPT-3.5, 0.40 and 0.17 for Llama2-7B, and 0.23 and 0.12 for Falcon-7B. This paper underlines the role of prompt engineering in LLMs for better keyword extraction and discusses the impact of hallucination in LLMs on result evaluation.It also sheds light on the challenges in using LLMs for keyword extraction, including model complexity, resource demands, and optimization techniques.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.02330v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.02330v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
