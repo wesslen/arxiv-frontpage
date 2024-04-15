@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-04-14.</p><br/>
+            <p>Generated on 2024-04-15.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -30,6 +30,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Prompt Engineering in Large Language Models</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-12</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Enhancing Visual Question Answering through Question-Driven Image Captions as Prompts
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Visual question answering (VQA) is known as an AI-complete task as it requires understanding, reasoning, and inferring about the vision and the language content.Over the past few years, numerous neural architectures have been suggested for the VQA problem.However, achieving success in zero-shot VQA remains a challenge due to its requirement for advanced generalization and reasoning skills.This study explores the impact of incorporating image captioning as an intermediary process within the VQA pipeline.Specifically, we explore the efficacy of utilizing image captions instead of images and leveraging large language models (LLMs) to establish a zero-shot setting.Since image captioning is the most crucial step in this process, we compare the impact of state-of-the-art image captioning models on VQA performance across various question types in terms of structure and semantics.We propose a straightforward and efficient question-driven image captioning approach within this pipeline to transfer contextual information into the question-answering (QA) model.<span class='px-1 mx-1 bg-yellow-200'>This method involves extracting keywords from the question, generating a caption for each image-question pair using the keywords, and incorporating the question-driven caption into the LLM prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.668</span></span>We evaluate the efficacy of using general-purpose and question-driven image captions in the VQA pipeline.Our study highlights the potential of employing image captions and harnessing the capabilities of LLMs to achieve competitive performance on GQA under the zero-shot setting.Our code is available at \url{https://github.com/ovguyo/captions-in-VQA}.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.08589v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.08589v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
           </td>
@@ -3228,6 +3254,32 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-12</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Enhancing Visual Question Answering through Question-Driven Image Captions as Prompts
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Visual question answering (VQA) is known as an AI-complete task as it requires understanding, reasoning, and inferring about the vision and the language content. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.547</span></span>Over the past few years, numerous neural architectures have been suggested for the VQA problem.However, achieving success in zero-shot VQA remains a challenge due to its requirement for advanced generalization and reasoning skills.This study explores the impact of incorporating image captioning as an intermediary process within the VQA pipeline.Specifically, we explore the efficacy of utilizing image captions instead of images and leveraging large language models (LLMs) to establish a zero-shot setting.Since image captioning is the most crucial step in this process, we compare the impact of state-of-the-art image captioning models on VQA performance across various question types in terms of structure and semantics.We propose a straightforward and efficient question-driven image captioning approach within this pipeline to transfer contextual information into the question-answering (QA) model.<span class='px-1 mx-1 bg-yellow-200'>This method involves extracting keywords from the question, generating a caption for each image-question pair using the keywords, and incorporating the question-driven caption into the LLM prompt. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.525</span></span>We evaluate the efficacy of using general-purpose and question-driven image captions in the VQA pipeline.Our study highlights the potential of employing image captions and harnessing the capabilities of LLMs to achieve competitive performance on GQA under the zero-shot setting.Our code is available at \url{https://github.com/ovguyo/captions-in-VQA}.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.08589v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.08589v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
           </td>
           <td>
@@ -3753,32 +3805,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Progressive Alignment with VLM-LLM Feature to Augment Defect Classification for the ASE Dataset
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Traditional defect classification approaches are facing with two barriers.(1) Insufficient training data and unstable data quality.Collecting sufficient defective sample is expensive and time-costing, consequently leading to dataset variance.It introduces the difficulty on recognition and learning.(2) Over-dependence on visual modality.When the image pattern and texture is monotonic for all defect classes in a given dataset, the performance of conventional AOI system cannot be guaranteed.In scenarios where image quality is compromised due to mechanical failures or when defect information is inherently difficult to discern, the performance of deep models cannot be guaranteed.<span class='px-1 mx-1 bg-yellow-200'>A main question is, "how to solve those two problems when they occur at the same time?" <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.531</span></span>The feasible strategy is to explore another feature within dataset and combine an eminent vision-language model (VLM) and Large-Language model (LLM) with their astonishing zero-shot capability.In this work, we propose the special ASE dataset, including rich data description recorded on image, for defect classification, but the defect feature is uneasy to learn directly.Secondly, We present the prompting for VLM-LLM against defect classification with the proposed ASE dataset to activate extra-modality feature from images to enhance performance.Then, We design the novel progressive feature alignment (PFA) block to refine image-text feature to alleviate the difficulty of alignment under few-shot scenario.Finally, the proposed Cross-modality attention fusion (CMAF) module can effectively fuse different modality feature.Experiment results have demonstrated our method's effectiveness over several defect classification methods for the ASE dataset.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.05183v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.05183v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-08</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3922,32 +3948,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2404.05880v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-07</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                AI2Apps: A Visual IDE for Building LLM-based AI Agent Applications
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce AI2Apps, a Visual Integrated Development Environment (Visual IDE) with full-cycle capabilities that accelerates developers to build deployable LLM-based AI agent Applications. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.557</span></span>This Visual IDE prioritizes both the Integrity of its development tools and the Visuality of its components, ensuring a smooth and efficient building experience.On one hand, AI2Apps integrates a comprehensive development toolkit ranging from a prototyping canvas and AI-assisted code editor to agent debugger, management system, and deployment tools all within a web-based graphical user interface.On the other hand, AI2Apps visualizes reusable front-end and back-end code as intuitive drag-and-drop components.Furthermore, a plugin system named AI2Apps Extension (AAE) is designed for Extensibility, showcasing how a new plugin with 20 components enables web agent to mimic human-like browsing behavior.Our case study demonstrates substantial efficiency improvements, with AI2Apps reducing token consumption and API calls when debugging a specific sophisticated multimodal agent by approximately 90% and 80%, respectively.The AI2Apps, including an online demo, open-source code, and a screencast video, is now publicly accessible.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.04902v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.04902v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4330,24 +4330,24 @@
           </td>
         </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-12</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Reflectance Estimation for Proximity Sensing by Vision-Language Models: Utilizing Distributional Semantics for Low-Level Cognition in Robotics
+                RLHF Deciphered: A Critical Analysis of Reinforcement Learning from Human Feedback for LLMs
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Large language models (LLMs) and vision-language models (VLMs) have been increasingly used in robotics for high-level cognition, but their use for low-level cognition, such as interpreting sensor information, remains underexplored.In robotic grasping, estimating the reflectance of objects is crucial for successful grasping, as it significantly impacts the distance measured by proximity sensors.We investigate whether LLMs can estimate reflectance from object names alone, leveraging the embedded human knowledge in distributional semantics, and if the latent structure of language in VLMs positively affects image-based reflectance estimation.In this paper, we verify that 1) LLMs such as GPT-3.5 and GPT-4 can estimate an object's reflectance using only text as input; and 2) VLMs such as CLIP can increase their generalization capabilities in reflectance estimation from images.Our experiments show that GPT-4 can estimate an object's reflectance using only text input with a mean error of 14.7%, lower than the image-only ResNet.Moreover, CLIP achieved the lowest mean error of 11.8%, while GPT-3.5 obtained a competitive 19.9% compared to ResNet's 17.8%.<span class='px-1 mx-1 bg-yellow-200'>These results suggest that the distributional semantics in LLMs and VLMs increases their generalization capabilities, and the knowledge acquired by VLMs benefits from the latent structure of language. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.326</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>State-of-the-art large language models (LLMs) have become indispensable tools for various tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.436</span></span><span class='px-1 mx-1 bg-yellow-200'>However, training LLMs to serve as effective assistants for humans requires careful consideration. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.343</span></span>A promising approach is reinforcement learning from human feedback (RLHF), which leverages human feedback to update the model in accordance with human preferences and mitigate issues like toxicity and hallucinations.Yet, an understanding of RLHF for LLMs is largely entangled with initial design choices that popularized the method and current research focuses on augmenting those choices rather than fundamentally improving the framework.In this paper, we analyze RLHF through the lens of reinforcement learning principles to develop an understanding of its fundamentals, dedicating substantial focus to the core component of RLHF -- the reward model.<span class='px-1 mx-1 bg-yellow-200'>Our study investigates modeling choices, caveats of function approximation, and their implications on RLHF training algorithms, highlighting the underlying assumptions made about the expressivity of reward. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.449</span></span>Our analysis improves the understanding of the role of reward models and methods for their training, concurrently revealing limitations of the current methodology.We characterize these limitations, including incorrect generalization, model misspecification, and the sparsity of feedback, along with their impact on the performance of a language model.The discussion and analysis are substantiated by a categorical review of current literature, serving as a reference for researchers and practitioners to understand the challenges of RLHF and build upon existing efforts.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.07717v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.08555v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.07717v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.08555v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4356,24 +4356,50 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-12</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Automatic Generation and Evaluation of Reading Comprehension Test Items with Large Language Models
+                Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Reading comprehension tests are used in a variety of applications, reaching from education to assessing the comprehensibility of simplified texts.However, creating such tests manually and ensuring their quality is difficult and time-consuming.In this paper, we explore how large language models (LLMs) can be used to generate and evaluate multiple-choice reading comprehension items.<span class='px-1 mx-1 bg-yellow-200'>To this end, we compiled a dataset of German reading comprehension items and developed a new protocol for human and automatic evaluation, including a metric we call text informativity, which is based on guessability and answerability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.362</span></span>We then used this protocol and the dataset to evaluate the quality of items generated by Llama 2 and GPT-4.Our results suggest that both models are capable of generating items of acceptable quality in a zero-shot setting, but GPT-4 clearly outperforms Llama 2.<span class='px-1 mx-1 bg-yellow-200'>We also show that LLMs can be used for automatic evaluation by eliciting item reponses from them. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.311</span></span>In this scenario, evaluation results with GPT-4 were the most similar to human annotators.Overall, zero-shot generation with LLMs is a promising approach for generating and evaluating reading comprehension test items, in particular for languages without large amounts of available data.</p>
+                  <p>This paper introduces CRITICAL, a novel closed-loop framework for autonomous vehicle (AV) training and testing.CRITICAL stands out for its ability to generate diverse scenarios, focusing on critical driving situations that target specific learning and performance gaps identified in the Reinforcement Learning (RL) agent.<span class='px-1 mx-1 bg-yellow-200'>The framework achieves this by integrating real-world traffic dynamics, driving behavior analysis, surrogate safety measures, and an optional Large Language Model (LLM) component. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.308</span></span>It is proven that the establishment of a closed feedback loop between the data generation pipeline and the training process can enhance the learning rate during training, elevate overall system performance, and augment safety resilience.Our evaluations, conducted using the Proximal Policy Optimization (PPO) and the HighwayEnv simulation environment, demonstrate noticeable performance improvements with the integration of critical case generation and LLM analysis, indicating CRITICAL's potential to improve the robustness of AV systems and streamline the generation of critical scenarios.This ultimately serves to hasten the development of AV agents, expand the general scope of RL training, and ameliorate validation efforts for AV safety.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.07720v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.08570v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.07720v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.08570v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-12</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Small Models Are (Still) Effective Cross-Domain Argument Extractors
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Effective ontology transfer has been a major goal of recent work on event argument extraction (EAE).Two methods in particular -- question answering (QA) and template infilling (TI) -- have emerged as promising approaches to this problem.However, detailed explorations of these techniques' ability to actually enable this transfer are lacking.<span class='px-1 mx-1 bg-yellow-200'>In this work, we provide such a study, exploring zero-shot transfer using both techniques on six major EAE datasets at both the sentence and document levels. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.307</span></span><span class='px-1 mx-1 bg-yellow-200'>Further, we challenge the growing reliance on LLMs for zero-shot extraction, showing that vastly smaller models trained on an appropriate source ontology can yield zero-shot performance superior to that of GPT-3.5 or GPT-4. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.436</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.08579v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2404.08579v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4699,24 +4725,24 @@
           </td>
         </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-12</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                RiskLabs: Predicting Financial Risk Using Large Language Model Based on Multi-Sources Data
+                RLHF Deciphered: A Critical Analysis of Reinforcement Learning from Human Feedback for LLMs
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The integration of Artificial Intelligence (AI) techniques, particularly large language models (LLMs), in finance has garnered increasing academic attention.Despite progress, existing studies predominantly focus on tasks like financial text summarization, question-answering (Q$\&$A), and stock movement prediction (binary classification), with a notable gap in the application of LLMs for financial risk prediction.<span class='px-1 mx-1 bg-yellow-200'>Addressing this gap, in this paper, we introduce \textbf{RiskLabs}, a novel framework that leverages LLMs to analyze and predict financial risks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.447</span></span>RiskLabs uniquely combines different types of financial data, including textual and vocal information from Earnings Conference Calls (ECCs), market-related time series data, and contextual news data surrounding ECC release dates.Our approach involves a multi-stage process: initially extracting and analyzing ECC data using LLMs, followed by gathering and processing time-series data before the ECC dates to model and understand risk over different timeframes.Using multimodal fusion techniques, RiskLabs amalgamates these varied data features for comprehensive multi-task financial risk prediction.Empirical experiment results demonstrate RiskLab's effectiveness in forecasting both volatility and variance in financial markets.<span class='px-1 mx-1 bg-yellow-200'>Through comparative experiments, we demonstrate how different data sources contribute to financial risk assessment and discuss the critical role of LLMs in this context. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.425</span></span>Our findings not only contribute to the AI in finance application but also open new avenues for applying LLMs in financial risk assessment.</p>
+                  <p>State-of-the-art large language models (LLMs) have become indispensable tools for various tasks.<span class='px-1 mx-1 bg-yellow-200'>However, training LLMs to serve as effective assistants for humans requires careful consideration. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.434</span></span>A promising approach is reinforcement learning from human feedback (RLHF), which leverages human feedback to update the model in accordance with human preferences and mitigate issues like toxicity and hallucinations.<span class='px-1 mx-1 bg-yellow-200'>Yet, an understanding of RLHF for LLMs is largely entangled with initial design choices that popularized the method and current research focuses on augmenting those choices rather than fundamentally improving the framework. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.57</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we analyze RLHF through the lens of reinforcement learning principles to develop an understanding of its fundamentals, dedicating substantial focus to the core component of RLHF -- the reward model. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.414</span></span>Our study investigates modeling choices, caveats of function approximation, and their implications on RLHF training algorithms, highlighting the underlying assumptions made about the expressivity of reward.Our analysis improves the understanding of the role of reward models and methods for their training, concurrently revealing limitations of the current methodology.We characterize these limitations, including incorrect generalization, model misspecification, and the sparsity of feedback, along with their impact on the performance of a language model.<span class='px-1 mx-1 bg-yellow-200'>The discussion and analysis are substantiated by a categorical review of current literature, serving as a reference for researchers and practitioners to understand the challenges of RLHF and build upon existing efforts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.436</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.07452v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.08555v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.07452v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.08555v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4725,24 +4751,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-12</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Neural Fault Injection: Generating Software Faults from Natural Language
+                Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Traditional software fault injection methods, while foundational, face limitations in adequately representing real-world faults, offering customization, and requiring significant manual effort and expertise. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.523</span></span>This paper introduces a novel methodology that harnesses the capabilities of Large Language Models (LLMs) augmented with Reinforcement Learning from Human Feedback (RLHF) to overcome these challenges.<span class='px-1 mx-1 bg-yellow-200'>The usage of RLHF emphasizes an iterative refinement process, allowing testers to provide feedback on generated faults, which is then used to enhance the LLM's fault generation capabilities, ensuring the generation of fault scenarios that closely mirror actual operational risks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span><span class='px-1 mx-1 bg-yellow-200'>This innovative methodology aims to significantly reduce the manual effort involved in crafting fault scenarios as it allows testers to focus on higher-level testing strategies, hence paving the way to new possibilities for enhancing the dependability of software systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.558</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper introduces CRITICAL, a novel closed-loop framework for autonomous vehicle (AV) training and testing. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.48</span></span><span class='px-1 mx-1 bg-yellow-200'>CRITICAL stands out for its ability to generate diverse scenarios, focusing on critical driving situations that target specific learning and performance gaps identified in the Reinforcement Learning (RL) agent. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.466</span></span>The framework achieves this by integrating real-world traffic dynamics, driving behavior analysis, surrogate safety measures, and an optional Large Language Model (LLM) component.<span class='px-1 mx-1 bg-yellow-200'>It is proven that the establishment of a closed feedback loop between the data generation pipeline and the training process can enhance the learning rate during training, elevate overall system performance, and augment safety resilience. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.514</span></span><span class='px-1 mx-1 bg-yellow-200'>Our evaluations, conducted using the Proximal Policy Optimization (PPO) and the HighwayEnv simulation environment, demonstrate noticeable performance improvements with the integration of critical case generation and LLM analysis, indicating CRITICAL's potential to improve the robustness of AV systems and streamline the generation of critical scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.554</span></span><span class='px-1 mx-1 bg-yellow-200'>This ultimately serves to hasten the development of AV agents, expand the general scope of RL training, and ameliorate validation efforts for AV safety. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.419</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.07491v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.08570v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.07491v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.08570v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4751,102 +4777,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-12</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Can Large Language Models Assess Serendipity in Recommender Systems?
+                Enhancing Visual Question Answering through Question-Driven Image Captions as Prompts
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Serendipity-oriented recommender systems aim to counteract over-specialization in user preferences. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.402</span></span>However, evaluating a user's serendipitous response towards a recommended item can be challenging because of its emotional nature.In this study, we address this issue by leveraging the rich knowledge of large language models (LLMs), which can perform a variety of tasks.First, this study explored the alignment between serendipitous evaluations made by LLMs and those made by humans.In this investigation, a binary classification task was given to the LLMs to predict whether a user would find the recommended item serendipitously.The predictive performances of three LLMs on a benchmark dataset in which humans assigned the ground truth of serendipitous items were measured.The experimental findings reveal that LLM-based assessment methods did not have a very high agreement rate with human assessments.However, they performed as well as or better than the baseline methods.Further validation results indicate that the number of user rating histories provided to LLM prompts should be carefully chosen to avoid both insufficient and excessive inputs and that the output of LLMs that show high classification performance is difficult to interpret.</p>
+                  <p>Visual question answering (VQA) is known as an AI-complete task as it requires understanding, reasoning, and inferring about the vision and the language content.Over the past few years, numerous neural architectures have been suggested for the VQA problem.However, achieving success in zero-shot VQA remains a challenge due to its requirement for advanced generalization and reasoning skills.This study explores the impact of incorporating image captioning as an intermediary process within the VQA pipeline.Specifically, we explore the efficacy of utilizing image captions instead of images and leveraging large language models (LLMs) to establish a zero-shot setting.Since image captioning is the most crucial step in this process, we compare the impact of state-of-the-art image captioning models on VQA performance across various question types in terms of structure and semantics.We propose a straightforward and efficient question-driven image captioning approach within this pipeline to transfer contextual information into the question-answering (QA) model.This method involves extracting keywords from the question, generating a caption for each image-question pair using the keywords, and incorporating the question-driven caption into the LLM prompt.We evaluate the efficacy of using general-purpose and question-driven image captions in the VQA pipeline.<span class='px-1 mx-1 bg-yellow-200'>Our study highlights the potential of employing image captions and harnessing the capabilities of LLMs to achieve competitive performance on GQA under the zero-shot setting. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.413</span></span>Our code is available at \url{https://github.com/ovguyo/captions-in-VQA}.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.07499v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.08589v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2404.07499v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Interactive Prompt Debugging with Sequence Salience
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>We present Sequence Salience, a visual tool for interactive prompt debugging with input salience methods. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.431</span></span>Sequence Salience builds on widely used salience methods for text classification and single-token prediction, and extends this to a system tailored for debugging complex LLM prompts.Our system is well-suited for long texts, and expands on previous work by 1) providing controllable aggregation of token-level salience to the word, sentence, or paragraph level, making salience over long inputs tractable; and 2) supporting rapid iteration where practitioners can act on salience results, refine prompts, and run salience on the new output.We include case studies showing how Sequence Salience can help practitioners work with several complex prompting strategies, including few-shot, chain-of-thought, and constitutional principles.Sequence Salience is built on the Learning Interpretability Tool, an open-source platform for ML model visualizations, and code, notebooks, and tutorials are available at http://goo.gle/sequence-salience.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.07498v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.07498v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Decomposing Label Space, Format and Discrimination: Rethinking How LLMs Respond and Solve Tasks via In-Context Learning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>In-context Learning (ICL) has emerged as a powerful capability alongside the development of scaled-up large language models (LLMs).By instructing LLMs using few-shot demonstrative examples, ICL enables them to perform a wide range of tasks without updating millions of parameters.However, the precise contributions of demonstrations towards improving end-task performance have not been thoroughly investigated in recent analytical studies.In this paper, we empirically decompose the overall performance of ICL into three dimensions, label space, format, and discrimination, and we evaluate four general-purpose LLMs across a diverse range of tasks.Counter-intuitively, we find that the demonstrations have a marginal impact on provoking discriminative knowledge of language models.However, ICL exhibits significant efficacy in regulating the label space and format which helps LLMs to respond in desired label words.<span class='px-1 mx-1 bg-yellow-200'>We then demonstrate this ability functions similar to detailed instructions for LLMs to follow. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.411</span></span>We additionally provide an in-depth analysis of the mechanism of retrieval helping with ICL and find that retrieving the most semantically similar examples notably boosts model's discriminative capability.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.07546v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.07546v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-04-11</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Comments as Natural Logic Pivots: Improve Code Generation via Comment Perspective
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Code generation aims to understand the problem description and generate corresponding code snippets, where existing works generally decompose such complex tasks into intermediate steps by prompting strategies, such as Chain-of-Thought and its variants.While these studies have achieved some success, their effectiveness is highly dependent on the capabilities of advanced Large Language Models (LLMs) such as GPT-4, particularly in terms of API calls, which significantly limits their practical applicability.<span class='px-1 mx-1 bg-yellow-200'>Consequently, how to enhance the code generation capabilities of small and medium-scale code LLMs without significantly increasing training costs is an appealing challenge. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.483</span></span>In this paper, we suggest that code comments are the natural logic pivot between natural language and code language and propose using comments to boost the code generation ability of code LLMs.Concretely, we propose MANGO (comMents As Natural loGic pivOts), including a comment contrastive training strategy and a corresponding logical comment decoding strategy.Experiments are performed on HumanEval and MBPP, utilizing StarCoder and WizardCoder as backbone models, and encompassing model parameter sizes between 3B and 7B.<span class='px-1 mx-1 bg-yellow-200'>The results indicate that MANGO significantly improves the code pass rate based on the strong baselines. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.512</span></span>Meanwhile, the robustness of the logical comment decoding strategy is notably higher than the Chain-of-thoughts prompting.The code is publicly available at \url{https://github.com/pppa2019/Mango}.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2404.07549v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2404.07549v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2404.08589v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
