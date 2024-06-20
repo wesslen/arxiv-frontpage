@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-06-19.</p><br/>
+            <p>Generated on 2024-06-20.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -3701,6 +3701,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                REPOEXEC: Evaluate Code Generation with a Repository-Level Executable Benchmark
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The ability of CodeLLMs to generate executable and functionally correct code at the \textit{repository-level scale }remains largely unexplored.We introduce \methodnamews, a novel benchmark for evaluating code generation at the repository-level scale, emphasizing executability and correctness.\methodnamews provides an automated system that verifies requirements and incorporates a mechanism for dynamically generating high-coverage test cases to assess the functionality of generated code.Our work explores a controlled scenario where developers specify necessary code dependencies, challenging the model to integrate these accurately.<span class='px-1 mx-1 bg-yellow-200'>Experiments show that while pretrained LLMs outperform instruction-tuning models in correctness, the latter excel in utilizing provided dependencies and demonstrating debugging capabilities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.536</span></span>\methodnamews aims to provide a comprehensive evaluation of code functionality and alignment with developer intent, paving the way for more reliable and applicable CodeLLMs in real-world scenarios.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11927v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2406.11927v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 RePrompt: Planning by Automatic Prompt Engineering for Large Language Models Agents
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3735,11 +3761,11 @@
                   <p>Large language model (LLM) agents have demonstrated impressive capability in utilizing external tools and knowledge to boost accuracy and reduce hallucinations.<span class='px-1 mx-1 bg-yellow-200'>However, developing the prompting techniques that make LLM agents able to effectively use external tools and knowledge is a heuristic and laborious task. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.503</span></span>Here, we introduce AvaTaR, a novel and automatic framework that optimizes an LLM agent to effectively use the provided tools and improve its performance on a given task/domain.During optimization, we design a comparator module to iteratively provide insightful and holistic prompts to the LLM agent via reasoning between positive and negative examples sampled from training data.We demonstrate AvaTaR on four complex multimodal retrieval datasets featuring textual, visual, and relational information.We find AvaTaR consistently outperforms state-of-the-art approaches across all four challenging tasks and exhibits strong generalization ability when applied to novel cases, achieving an average relative improvement of 14% on the Hit@1 metric.Code and dataset are available at https://github.com/zou-group/avatar.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11200v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11200v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2406.11200v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2406.11200v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3844,32 +3870,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2406.11341v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                REPOEXEC: Evaluate Code Generation with a Repository-Level Executable Benchmark
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The ability of CodeLLMs to generate executable and functionally correct code at the \textit{repository-level scale }remains largely unexplored.We introduce \methodnamews, a novel benchmark for evaluating code generation at the repository-level scale, emphasizing executability and correctness.\methodnamews provides an automated system that verifies requirements and incorporates a mechanism for dynamically generating high-coverage test cases to assess the functionality of generated code.Our work explores a controlled scenario where developers specify necessary code dependencies, challenging the model to integrate these accurately.<span class='px-1 mx-1 bg-yellow-200'>Experiments show that while pretrained LLMs outperform instruction-tuning models in correctness, the latter excel in utilizing provided dependencies and demonstrating debugging capabilities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.536</span></span>\methodnamews aims to provide a comprehensive evaluation of code functionality and alignment with developer intent, paving the way for more reliable and applicable CodeLLMs in real-world scenarios.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11927v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2406.11927v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4231,32 +4231,6 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Sequential recommendation (SR) tasks enhance recommendation accuracy by capturing the connection between users' past interactions and their changing preferences. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.813</span></span>Conventional models often focus solely on capturing sequential patterns within the training data, neglecting the broader context and semantic information embedded in item titles from external sources.This limits their predictive power and adaptability.Recently, large language models (LLMs) have shown promise in SR tasks due to their advanced understanding capabilities and strong generalization abilities.<span class='px-1 mx-1 bg-yellow-200'>Researchers have attempted to enhance LLMs' recommendation performance by incorporating information from SR models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.816</span></span>However, previous approaches have encountered problems such as 1) only influencing LLMs at the result level;2) increased complexity of LLMs recommendation methods leading to reduced interpretability; 3) incomplete understanding and utilization of SR models information by LLMs.<span class='px-1 mx-1 bg-yellow-200'>To address these problems, we proposes a novel framework, DELRec, which aims to extract knowledge from SR models and enable LLMs to easily comprehend and utilize this supplementary information for more effective sequential recommendations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.722</span></span>DELRec consists of two main stages: 1) SR Models Pattern Distilling, focusing on extracting behavioral patterns exhibited by SR models using soft prompts through two well-designed strategies; 2) LLMs-based Sequential Recommendation, aiming to fine-tune LLMs to effectively use the distilled auxiliary information to perform SR tasks.Extensive experimental results conducted on three real datasets validate the effectiveness of the DELRec framework.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11156v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2406.11156v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                DELRec: Distilling Sequential Pattern to Enhance LLM-based Recommendation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
                   <p><span class='px-1 mx-1 bg-yellow-200'>Sequential recommendation (SR) tasks enhance recommendation accuracy by capturing the connection between users' past interactions and their changing preferences. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.813</span></span>Conventional models often focus solely on capturing sequential patterns within the training data, neglecting the broader context and semantic information embedded in item titles from external sources.This limits their predictive power and adaptability.Recently, large language models (LLMs) have shown promise in SR tasks due to their advanced understanding capabilities and strong generalization abilities.<span class='px-1 mx-1 bg-yellow-200'>Researchers have attempted to enhance LLMs' recommendation performance by incorporating information from SR models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.816</span></span>However, previous approaches have encountered problems such as 1) only influencing LLMs at the result level; 2) increased complexity of LLMs recommendation methods leading to reduced interpretability; 3) incomplete understanding and utilization of SR models information by LLMs.   <span class='px-1 mx-1 bg-yellow-200'>To address these problems, we proposes a novel framework, DELRec, which aims to extract knowledge from SR models and enable LLMs to easily comprehend and utilize this supplementary information for more effective sequential recommendations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.722</span></span>DELRec consists of two main stages: 1) SR Models Pattern Distilling, focusing on extracting behavioral patterns exhibited by SR models using soft prompts through two well-designed strategies; 2) LLMs-based Sequential Recommendation, aiming to fine-tune LLMs to effectively use the distilled auxiliary information to perform SR tasks.Extensive experimental results conducted on three real datasets validate the effectiveness of the DELRec framework.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
@@ -4278,6 +4252,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                DELRec: Distilling Sequential Pattern to Enhance LLM-based Recommendation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Sequential recommendation (SR) tasks enhance recommendation accuracy by capturing the connection between users' past interactions and their changing preferences. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.813</span></span>Conventional models often focus solely on capturing sequential patterns within the training data, neglecting the broader context and semantic information embedded in item titles from external sources.This limits their predictive power and adaptability.Recently, large language models (LLMs) have shown promise in SR tasks due to their advanced understanding capabilities and strong generalization abilities.<span class='px-1 mx-1 bg-yellow-200'>Researchers have attempted to enhance LLMs' recommendation performance by incorporating information from SR models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.816</span></span>However, previous approaches have encountered problems such as 1) only influencing LLMs at the result level;2) increased complexity of LLMs recommendation methods leading to reduced interpretability; 3) incomplete understanding and utilization of SR models information by LLMs.<span class='px-1 mx-1 bg-yellow-200'>To address these problems, we proposes a novel framework, DELRec, which aims to extract knowledge from SR models and enable LLMs to easily comprehend and utilize this supplementary information for more effective sequential recommendations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.722</span></span>DELRec consists of two main stages: 1) SR Models Pattern Distilling, focusing on extracting behavioral patterns exhibited by SR models using soft prompts through two well-designed strategies; 2) LLMs-based Sequential Recommendation, aiming to fine-tune LLMs to effectively use the distilled auxiliary information to perform SR tasks.Extensive experimental results conducted on three real datasets validate the effectiveness of the DELRec framework.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11156v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2406.11156v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 A Survey on Human Preference Learning for Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -4286,11 +4286,11 @@
                   <p>The recent surge of versatile large language models (LLMs) largely depends on aligning increasingly capable foundation models with human intentions by preference learning, enhancing LLMs with excellent applicability and effectiveness in a wide range of contexts.Despite the numerous related studies conducted, a perspective on how human preferences are introduced into LLMs remains limited, which may prevent a deeper comprehension of the relationships between human preferences and LLMs as well as the realization of their limitations.<span class='px-1 mx-1 bg-yellow-200'>In this survey, we review the progress in exploring human preference learning for LLMs from a preference-centered perspective, covering the sources and formats of preference feedback, the modeling and usage of preference signals, as well as the evaluation of the aligned LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.648</span></span>We first categorize the human feedback according to data sources and formats.We then summarize techniques for human preferences modeling and compare the advantages and disadvantages of different schools of models.Moreover, we present various preference usage methods sorted by the objectives to utilize human preference signals.Finally, we summarize some prevailing approaches to evaluate LLMs in terms of alignment with human intentions and discuss our outlooks on the human intention alignment for LLMs.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11191v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11191v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2406.11191v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2406.11191v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5775,58 +5775,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                RePrompt: Planning by Automatic Prompt Engineering for Large Language Models Agents
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>In this past year, large language models (LLMs) have had remarkable success in domains outside the traditional natural language processing, and people are starting to explore the usage of LLMs in more general and close to application domains like code generation, travel planning, and robot controls. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.698</span></span>Connecting these LLMs with great capacity and external tools, people are building the so-called LLM agents, which are supposed to help people do all kinds of work in everyday life.In all these domains, the prompt to the LLMs has been shown to make a big difference in what the LLM would generate and thus affect the performance of the LLM agents.Therefore, automatic prompt engineering has become an important question for many researchers and users of LLMs.In this paper, we propose a novel method, \textsc{RePrompt}, which does "gradient descent" to optimize the step-by-step instructions in the prompt of the LLM agents based on the chat history obtained from interactions with LLM agents.By optimizing the prompt, the LLM will learn how to plan in specific domains.We have used experiments in PDDL generation and travel planning to show that our method could generally improve the performance for different reasoning tasks when using the updated prompt as the initial prompt.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11132v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2406.11132v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Self and Cross-Model Distillation for LLMs: Effective Methods for Refusal Pattern Alignment
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) like OpenAI's GPT series, Anthropic's Claude, and Meta's LLaMa have shown remarkable capabilities in text generation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.753</span></span>However, their susceptibility to toxic prompts presents significant security challenges.This paper investigates alignment techniques, including Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF), to mitigate these risks.We conduct an empirical study on refusal patterns across nine LLMs, revealing that models with uniform refusal patterns, such as Claude3, exhibit higher security.Based on these findings, we propose self-distilling and cross-model distilling methods to enhance LLM security.Our results show that these methods significantly improve refusal rates and reduce unsafe content, with cross-model distilling achieving refusal rates close to Claude3's 94.51%.These findings underscore the potential of distillation-based alignment in securing LLMs against toxic prompts.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11285v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2406.11285v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 DocCGen: Document-based Controlled Code Generation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -5840,58 +5788,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2406.11925v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Unveiling Assumptions: Exploring the Decisions of AI Chatbots and Human Testers
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>The integration of Large Language Models (LLMs) and chatbots introduces new challenges and opportunities for decision-making in software testing. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.711</span></span>Decision-making relies on a variety of information, including code, requirements specifications, and other software artifacts that are often unclear or exist solely in the developer's mind.To fill in the gaps left by unclear information, we often rely on assumptions, intuition, or previous experiences to make decisions.This paper explores the potential of LLM-based chatbots like Bard, Copilot, and ChatGPT, to support software testers in test decisions such as prioritizing test cases effectively.We investigate whether LLM-based chatbots and human testers share similar "assumptions" or intuition in prohibitive testing scenarios where exhaustive execution of test cases is often impractical.Preliminary results from a survey of 127 testers indicate a preference for diverse test scenarios, with a significant majority (96%) favoring dissimilar test sets.Interestingly, two out of four chatbots mirrored this preference, aligning with human intuition, while the others opted for similar test scenarios, chosen by only 3.9% of testers.Our initial insights suggest a promising avenue within the context of enhancing the collaborative dynamics between testers and chatbots.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11339v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2406.11339v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                WaDec: Decompile WebAssembly Using Large Language Model
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>WebAssembly (abbreviated Wasm) has emerged as a cornerstone of web development, offering a compact binary format that allows high-performance applications to run at near-native speeds in web browsers.Despite its advantages, Wasm's binary nature presents significant challenges for developers and researchers, particularly regarding readability when debugging or analyzing web applications.Therefore, effective decompilation becomes crucial.Unfortunately, traditional decompilers often struggle with producing readable outputs.While some large language model (LLM)-based decompilers have shown good compatibility with general binary files, they still face specific challenges when dealing with Wasm.   <span class='px-1 mx-1 bg-yellow-200'>In this paper, we introduce a novel approach, WaDec, which is the first use of a fine-tuned LLM to interpret and decompile Wasm binary code into a higher-level, more comprehensible source code representation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>The LLM was meticulously fine-tuned using a specialized dataset of wat-c code snippets, employing self-supervised learning techniques.This enables WaDec to effectively decompile not only complete wat functions but also finer-grained wat code snippets.Our experiments demonstrate that WaDec markedly outperforms current state-of-the-art tools, offering substantial improvements across several metrics.It achieves a code inflation rate of only 3.34%, a dramatic 97% reduction compared to the state-of-the-art's 116.94%.Unlike baselines' output that cannot be directly compiled or executed, WaDec maintains a recompilability rate of 52.11%, a re-execution rate of 43.55%, and an output consistency of 27.15%.Additionally, it significantly exceeds state-of-the-art performance in AST edit distance by 185%, cyclomatic complexity by 8%, and cosine similarity by 41%, achieving an average code similarity above 50%.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11346v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2406.11346v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5944,6 +5840,110 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2406.11930v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                RePrompt: Planning by Automatic Prompt Engineering for Large Language Models Agents
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>In this past year, large language models (LLMs) have had remarkable success in domains outside the traditional natural language processing, and people are starting to explore the usage of LLMs in more general and close to application domains like code generation, travel planning, and robot controls. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.698</span></span>Connecting these LLMs with great capacity and external tools, people are building the so-called LLM agents, which are supposed to help people do all kinds of work in everyday life.In all these domains, the prompt to the LLMs has been shown to make a big difference in what the LLM would generate and thus affect the performance of the LLM agents.Therefore, automatic prompt engineering has become an important question for many researchers and users of LLMs.In this paper, we propose a novel method, \textsc{RePrompt}, which does "gradient descent" to optimize the step-by-step instructions in the prompt of the LLM agents based on the chat history obtained from interactions with LLM agents.By optimizing the prompt, the LLM will learn how to plan in specific domains.We have used experiments in PDDL generation and travel planning to show that our method could generally improve the performance for different reasoning tasks when using the updated prompt as the initial prompt.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11132v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2406.11132v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Self and Cross-Model Distillation for LLMs: Effective Methods for Refusal Pattern Alignment
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) like OpenAI's GPT series, Anthropic's Claude, and Meta's LLaMa have shown remarkable capabilities in text generation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.753</span></span>However, their susceptibility to toxic prompts presents significant security challenges.This paper investigates alignment techniques, including Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF), to mitigate these risks.We conduct an empirical study on refusal patterns across nine LLMs, revealing that models with uniform refusal patterns, such as Claude3, exhibit higher security.Based on these findings, we propose self-distilling and cross-model distilling methods to enhance LLM security.Our results show that these methods significantly improve refusal rates and reduce unsafe content, with cross-model distilling achieving refusal rates close to Claude3's 94.51%.These findings underscore the potential of distillation-based alignment in securing LLMs against toxic prompts.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11285v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2406.11285v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Unveiling Assumptions: Exploring the Decisions of AI Chatbots and Human Testers
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>The integration of Large Language Models (LLMs) and chatbots introduces new challenges and opportunities for decision-making in software testing. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.711</span></span>Decision-making relies on a variety of information, including code, requirements specifications, and other software artifacts that are often unclear or exist solely in the developer's mind.To fill in the gaps left by unclear information, we often rely on assumptions, intuition, or previous experiences to make decisions.This paper explores the potential of LLM-based chatbots like Bard, Copilot, and ChatGPT, to support software testers in test decisions such as prioritizing test cases effectively.We investigate whether LLM-based chatbots and human testers share similar "assumptions" or intuition in prohibitive testing scenarios where exhaustive execution of test cases is often impractical.Preliminary results from a survey of 127 testers indicate a preference for diverse test scenarios, with a significant majority (96%) favoring dissimilar test sets.Interestingly, two out of four chatbots mirrored this preference, aligning with human intuition, while the others opted for similar test scenarios, chosen by only 3.9% of testers.Our initial insights suggest a promising avenue within the context of enhancing the collaborative dynamics between testers and chatbots.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11339v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2406.11339v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-06-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                WaDec: Decompile WebAssembly Using Large Language Model
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>WebAssembly (abbreviated Wasm) has emerged as a cornerstone of web development, offering a compact binary format that allows high-performance applications to run at near-native speeds in web browsers.Despite its advantages, Wasm's binary nature presents significant challenges for developers and researchers, particularly regarding readability when debugging or analyzing web applications.Therefore, effective decompilation becomes crucial.Unfortunately, traditional decompilers often struggle with producing readable outputs.While some large language model (LLM)-based decompilers have shown good compatibility with general binary files, they still face specific challenges when dealing with Wasm.   <span class='px-1 mx-1 bg-yellow-200'>In this paper, we introduce a novel approach, WaDec, which is the first use of a fine-tuned LLM to interpret and decompile Wasm binary code into a higher-level, more comprehensible source code representation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>The LLM was meticulously fine-tuned using a specialized dataset of wat-c code snippets, employing self-supervised learning techniques.This enables WaDec to effectively decompile not only complete wat functions but also finer-grained wat code snippets.Our experiments demonstrate that WaDec markedly outperforms current state-of-the-art tools, offering substantial improvements across several metrics.It achieves a code inflation rate of only 3.34%, a dramatic 97% reduction compared to the state-of-the-art's 116.94%.Unlike baselines' output that cannot be directly compiled or executed, WaDec maintains a recompilability rate of 52.11%, a re-execution rate of 43.55%, and an output consistency of 27.15%.Additionally, it significantly exceeds state-of-the-art performance in AST edit distance by 185%, cyclomatic complexity by 8%, and cosine similarity by 41%, achieving an average code similarity above 50%.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.11346v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2406.11346v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -6251,11 +6251,11 @@
                   <p>Programming-by-Examples (PBE) aims to generate an algorithm from input-output examples.Such systems are practically and theoretically important: from an end-user perspective, they are deployed to millions of people, and from an AI perspective, PBE corresponds to a very general form of few-shot inductive inference.<span class='px-1 mx-1 bg-yellow-200'>Given the success of Large Language Models (LLMs) in code-generation tasks, we investigate here the extent to which LLMs can be said to have `solved' PBE. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.739</span></span>We experiment on classic domains such as lists and strings, and an uncommon graphics programming domain not well represented in typical pretraining data.We find that pretrained models are not effective at PBE, but that they can be fine-tuned for much higher performance, provided the test problems are in-distribution.We analyze empirically what causes these models to succeed and fail, and take steps toward understanding how to achieve better out-of-distribution generalization.Collectively these results suggest that LLMs make strong progress toward solving the typical suite of PBE tasks, potentially increasing the flexibility and applicability of PBE systems, while also identifying ways in which LLMs still fall short.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.08316v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2406.08316v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2406.08316v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2406.08316v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
