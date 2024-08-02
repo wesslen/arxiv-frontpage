@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-08-01.</p><br/>
+            <p>Generated on 2024-08-02.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -30,6 +30,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Prompt Engineering in Large Language Models</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-07-31</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Responsive ML inference in multi-tenanted environments using AQUA
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Modern model serving engines infer prompts on large language models in batches. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.735</span></span><span class='px-1 mx-1 bg-yellow-200'>While batch processing prompts leads to high inference throughput, it delays responding to requests that do not fit in a batch, potentially starving them. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.748</span></span>We propose that fair scheduling prompts for inference by time-sharing GPUs cycles, instead of batch processing them, is key to preventing prompt starvation and achieving responsive inference.However, time-shared prompt scheduling incurs the overhead of frequently paging dynamic context needed to infer a prompt back into GPU memory.Today, serving engines support paging inference context between GPU memory and the host DRAM.The overhead of transferring context from DRAM to GPU memory is high since it is lower-bounded by the limited PCIe bandwidth.We overcome this challenge by offloading inference context from a GPU to the memory of another GPU on the same server, connected via inter-GPU interconnects that support magnitudes higher bandwidth than PCIe.We achieve this by developing AQUA, a transparent and elastic GPU memory management framework for responsive LLM inference.We evaluate AQUA by hosting eight state-of-the-art large generative ML models of different modalities (e.g., text, audio, vision) on a server with 8 cutting-edge Nvidia A100 80G GPUs.Using representative inference workloads, we show that AQUA improves the responsiveness of LLM inference by 4X compared to the state-of-the-art and it improves LLM inference throughput over a single long prompt by 6X.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21255v2' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2407.21255v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-07-31</p>
           </td>
@@ -582,32 +608,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Evaluating Large Language Models for automatic analysis of teacher simulations
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Digital Simulations (DS) provide safe environments where users interact with an agent through conversational prompts, providing engaging learning experiences that can be used to train teacher candidates in realistic classroom scenarios.<span class='px-1 mx-1 bg-yellow-200'>These simulations usually include open-ended questions, allowing teacher candidates to express their thoughts but complicating an automatic response analysis. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span>To address this issue, we have evaluated Large Language Models (LLMs) to identify characteristics (user behaviors) in the responses of DS for teacher education.We evaluated the performance of DeBERTaV3 and Llama 3, combined with zero-shot, few-shot, and fine-tuning.Our experiments discovered a significant variation in the LLMs' performance depending on the characteristic to identify.Additionally, we noted that DeBERTaV3 significantly reduced its performance when it had to identify new characteristics.In contrast, Llama 3 performed better than DeBERTaV3 in detecting new characteristics and showing more stable performance.Therefore, in DS where teacher educators need to introduce new characteristics because they change depending on the simulation or the educational objectives, it is more recommended to use Llama 3.These results can guide other researchers in introducing LLMs to provide the highly demanded automatic evaluations in DS.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.20360v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2407.20360v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-07-29</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 What if Red Can Talk? Dynamic Dialogue Generation Using Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -732,32 +732,6 @@
           </div>
         </td>
       </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-07-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Enabling Uniform Computer Interaction Experience for Blind Users through Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Blind individuals, who by necessity depend on screen readers to interact with computers, face considerable challenges in navigating the diverse and complex graphical user interfaces of different computer applications.The heterogeneity of various application interfaces often requires blind users to remember different keyboard combinations and navigation methods to use each application effectively.To alleviate this significant interaction burden imposed by heterogeneous application interfaces, we present Savant, a novel assistive technology powered by large language models (LLMs) that allows blind screen reader users to interact uniformly with any application interface through natural language.<span class='px-1 mx-1 bg-yellow-200'>Novelly, Savant can automate a series of tedious screen reader actions on the control elements of the application when prompted by a natural language command from the user. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span>These commands can be flexible in the sense that the user is not strictly required to specify the exact names of the control elements in the command.A user study evaluation of Savant with 11 blind participants demonstrated significant improvements in interaction efficiency and usability compared to current practices.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.19537v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2407.19537v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
           <td></td>
           <td>
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Robustness Tools in LLM Safety</h2>
@@ -855,11 +829,11 @@
                   <p>Vision Language Models (VLMs) extend the capacity of LLMs to comprehensively understand vision information, achieving remarkable performance in many vision-centric tasks.<span class='px-1 mx-1 bg-yellow-200'>Despite that, recent studies have shown that these models are susceptible to jailbreak attacks, which refer to an exploitative technique where malicious users can break the safety alignment of the target model and generate misleading and harmful answers. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.629</span></span><span class='px-1 mx-1 bg-yellow-200'>This potential threat is caused by both the inherent vulnerabilities of LLM and the larger attack scope introduced by vision input. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.681</span></span>To enhance the security of VLMs against jailbreak attacks, researchers have developed various defense techniques.However, these methods either require modifications to the model's internal structure or demand significant computational resources during the inference phase.Multimodal information is a double-edged sword.While it increases the risk of attacks, it also provides additional data that can enhance safeguards.Inspired by this, we propose $\underline{\textbf{C}}$ross-modality $\underline{\textbf{I}}$nformation $\underline{\textbf{DE}}$tecto$\underline{\textbf{R}}$ ($\textit{CIDER})$, a plug-and-play jailbreaking detector designed to identify maliciously perturbed image inputs, utilizing the cross-modal similarity between harmful queries and adversarial images.This simple yet effective cross-modality information detector, $\textit{CIDER}$, is independent of the target VLMs and requires less computation cost.Extensive experimental results demonstrate the effectiveness and efficiency of $\textit{CIDER}$, as well as its transferability to both white-box and black-box VLMs.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21659v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21659v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2407.21659v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2407.21659v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1458,11 +1432,11 @@
                   <p>Vision Language Models (VLMs) extend the capacity of LLMs to comprehensively understand vision information, achieving remarkable performance in many vision-centric tasks.<span class='px-1 mx-1 bg-yellow-200'>Despite that, recent studies have shown that these models are susceptible to jailbreak attacks, which refer to an exploitative technique where malicious users can break the safety alignment of the target model and generate misleading and harmful answers. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.911</span></span><span class='px-1 mx-1 bg-yellow-200'>This potential threat is caused by both the inherent vulnerabilities of LLM and the larger attack scope introduced by vision input. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.706</span></span><span class='px-1 mx-1 bg-yellow-200'>To enhance the security of VLMs against jailbreak attacks, researchers have developed various defense techniques. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.892</span></span>However, these methods either require modifications to the model's internal structure or demand significant computational resources during the inference phase.Multimodal information is a double-edged sword.<span class='px-1 mx-1 bg-yellow-200'>While it increases the risk of attacks, it also provides additional data that can enhance safeguards. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.637</span></span><span class='px-1 mx-1 bg-yellow-200'>Inspired by this, we propose $\underline{\textbf{C}}$ross-modality $\underline{\textbf{I}}$nformation $\underline{\textbf{DE}}$tecto$\underline{\textbf{R}}$ ($\textit{CIDER})$, a plug-and-play jailbreaking detector designed to identify maliciously perturbed image inputs, utilizing the cross-modal similarity between harmful queries and adversarial images. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.859</span></span>This simple yet effective cross-modality information detector, $\textit{CIDER}$, is independent of the target VLMs and requires less computation cost.Extensive experimental results demonstrate the effectiveness and efficiency of $\textit{CIDER}$, as well as its transferability to both white-box and black-box VLMs.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21659v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21659v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2407.21659v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2407.21659v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1827,11 +1801,11 @@
                   <p><span class='px-1 mx-1 bg-yellow-200'>This paper introduces a novel approach to emotion detection in speech using Large Language Models (LLMs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.686</span></span>We address the limitation of LLMs in processing audio inputs by translating speech characteristics into natural language descriptions.<span class='px-1 mx-1 bg-yellow-200'>Our method integrates these descriptions into text prompts, enabling LLMs to perform multimodal emotion analysis without architectural modifications. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.69</span></span>We evaluate our approach on two datasets: IEMOCAP and MELD, demonstrating significant improvements in emotion recognition accuracy, particularly for high-quality audio data.Our experiments show that incorporating speech descriptions yields a 2 percentage point increase in weighted F1 score on IEMOCAP (from 70.111\% to 72.596\%).We also compare various LLM architectures and explore the effectiveness of different feature representations.Our findings highlight the potential of this approach in enhancing emotion detection capabilities of LLMs and underscore the importance of audio quality in speech-based emotion recognition tasks.We'll release the source code on Github.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21315v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21315v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2407.21315v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2407.21315v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4811,11 +4785,11 @@
                   <p>Vision Language Models (VLMs) extend the capacity of LLMs to comprehensively understand vision information, achieving remarkable performance in many vision-centric tasks.Despite that, recent studies have shown that these models are susceptible to jailbreak attacks, which refer to an exploitative technique where malicious users can break the safety alignment of the target model and generate misleading and harmful answers.This potential threat is caused by both the inherent vulnerabilities of LLM and the larger attack scope introduced by vision input.To enhance the security of VLMs against jailbreak attacks, researchers have developed various defense techniques.However, these methods either require modifications to the model's internal structure or demand significant computational resources during the inference phase.Multimodal information is a double-edged sword.While it increases the risk of attacks, it also provides additional data that can enhance safeguards.Inspired by this, we propose $\underline{\textbf{C}}$ross-modality $\underline{\textbf{I}}$nformation $\underline{\textbf{DE}}$tecto$\underline{\textbf{R}}$ ($\textit{CIDER})$, a plug-and-play jailbreaking detector designed to identify maliciously perturbed image inputs, utilizing the cross-modal similarity between harmful queries and adversarial images.This simple yet effective cross-modality information detector, $\textit{CIDER}$, is independent of the target VLMs and requires less computation cost.<span class='px-1 mx-1 bg-yellow-200'>Extensive experimental results demonstrate the effectiveness and efficiency of $\textit{CIDER}$, as well as its transferability to both white-box and black-box VLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.319</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21659v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21659v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2407.21659v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2407.21659v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4946,11 +4920,11 @@
                   <p>This paper introduces a novel approach to emotion detection in speech using Large Language Models (LLMs).We address the limitation of LLMs in processing audio inputs by translating speech characteristics into natural language descriptions.Our method integrates these descriptions into text prompts, enabling LLMs to perform multimodal emotion analysis without architectural modifications.We evaluate our approach on two datasets: IEMOCAP and MELD, demonstrating significant improvements in emotion recognition accuracy, particularly for high-quality audio data.Our experiments show that incorporating speech descriptions yields a 2 percentage point increase in weighted F1 score on IEMOCAP (from 70.111\% to 72.596\%).We also compare various LLM architectures and explore the effectiveness of different feature representations.Our findings highlight the potential of this approach in enhancing emotion detection capabilities of LLMs and underscore the importance of audio quality in speech-based emotion recognition tasks.<span class='px-1 mx-1 bg-yellow-200'>We'll release the source code on Github. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.401</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21315v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21315v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2407.21315v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2407.21315v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5284,11 +5258,11 @@
                   <p>Vision Language Models (VLMs) extend the capacity of LLMs to comprehensively understand vision information, achieving remarkable performance in many vision-centric tasks.<span class='px-1 mx-1 bg-yellow-200'>Despite that, recent studies have shown that these models are susceptible to jailbreak attacks, which refer to an exploitative technique where malicious users can break the safety alignment of the target model and generate misleading and harmful answers. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.441</span></span><span class='px-1 mx-1 bg-yellow-200'>This potential threat is caused by both the inherent vulnerabilities of LLM and the larger attack scope introduced by vision input. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.499</span></span>To enhance the security of VLMs against jailbreak attacks, researchers have developed various defense techniques.However, these methods either require modifications to the model's internal structure or demand significant computational resources during the inference phase.Multimodal information is a double-edged sword.While it increases the risk of attacks, it also provides additional data that can enhance safeguards.Inspired by this, we propose $\underline{\textbf{C}}$ross-modality $\underline{\textbf{I}}$nformation $\underline{\textbf{DE}}$tecto$\underline{\textbf{R}}$ ($\textit{CIDER})$, a plug-and-play jailbreaking detector designed to identify maliciously perturbed image inputs, utilizing the cross-modal similarity between harmful queries and adversarial images.This simple yet effective cross-modality information detector, $\textit{CIDER}$, is independent of the target VLMs and requires less computation cost.Extensive experimental results demonstrate the effectiveness and efficiency of $\textit{CIDER}$, as well as its transferability to both white-box and black-box VLMs.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21659v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2407.21659v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2407.21659v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2407.21659v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
