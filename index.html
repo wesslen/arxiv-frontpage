@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-08-11.</p><br/>
+            <p>Generated on 2024-08-12.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -685,6 +685,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Robustness Tools in LLM Safety</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Preserving Privacy in Large Language Models: A Survey on Current Threats and Solutions
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) represent a significant advancement in artificial intelligence, finding applications across various domains.However, their reliance on massive internet-sourced datasets for training brings notable privacy issues, which are exacerbated in critical domains (e.g., healthcare).Moreover, certain application-specific scenarios may require fine-tuning these models on private data.<span class='px-1 mx-1 bg-yellow-200'>This survey critically examines the privacy threats associated with LLMs, emphasizing the potential for these models to memorize and inadvertently reveal sensitive information. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.644</span></span>We explore current threats by reviewing privacy attacks on LLMs and propose comprehensive solutions for integrating privacy mechanisms throughout the entire learning pipeline.These solutions range from anonymizing training datasets to implementing differential privacy during training or inference and machine unlearning after training.Our comprehensive review of existing literature highlights ongoing challenges, available tools, and future directions for preserving privacy in LLMs.This work aims to guide the development of more secure and trustworthy AI systems by providing a thorough understanding of privacy preservation methods and their effectiveness in mitigating risks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.05212v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.05212v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-08</p>
           </td>
@@ -1367,6 +1393,32 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Preserving Privacy in Large Language Models: A Survey on Current Threats and Solutions
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) represent a significant advancement in artificial intelligence, finding applications across various domains.However, their reliance on massive internet-sourced datasets for training brings notable privacy issues, which are exacerbated in critical domains (e.g., healthcare).Moreover, certain application-specific scenarios may require fine-tuning these models on private data.<span class='px-1 mx-1 bg-yellow-200'>This survey critically examines the privacy threats associated with LLMs, emphasizing the potential for these models to memorize and inadvertently reveal sensitive information. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.681</span></span><span class='px-1 mx-1 bg-yellow-200'>We explore current threats by reviewing privacy attacks on LLMs and propose comprehensive solutions for integrating privacy mechanisms throughout the entire learning pipeline. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.699</span></span>These solutions range from anonymizing training datasets to implementing differential privacy during training or inference and machine unlearning after training.Our comprehensive review of existing literature highlights ongoing challenges, available tools, and future directions for preserving privacy in LLMs.This work aims to guide the development of more secure and trustworthy AI systems by providing a thorough understanding of privacy preservation methods and their effectiveness in mitigating risks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.05212v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.05212v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-08</p>
           </td>
           <td>
@@ -1671,32 +1723,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2408.04125v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-06</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Compromising Embodied Agents with Contextual Backdoor Attacks
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large language models (LLMs) have transformed the development of embodied intelligence.By providing a few contextual demonstrations, developers can utilize the extensive internal knowledge of LLMs to effortlessly translate complex tasks described in abstract language into sequences of code snippets, which will serve as the execution logic for embodied agents.<span class='px-1 mx-1 bg-yellow-200'>However, this paper uncovers a significant backdoor security threat within this process and introduces a novel method called \method{}. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.809</span></span><span class='px-1 mx-1 bg-yellow-200'>By poisoning just a few contextual demonstrations, attackers can covertly compromise the contextual environment of a black-box LLM, prompting it to generate programs with context-dependent defects. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.829</span></span>These programs appear logically sound but contain defects that can activate and induce unintended behaviors when the operational agent encounters specific triggers in its interactive environment.<span class='px-1 mx-1 bg-yellow-200'>To compromise the LLM's contextual environment, we employ adversarial in-context generation to optimize poisoned demonstrations, where an LLM judge evaluates these poisoned prompts, reporting to an additional LLM that iteratively optimizes the demonstration in a two-player adversarial game using chain-of-thought reasoning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span>To enable context-dependent behaviors in downstream agents, we implement a dual-modality activation strategy that controls both the generation and execution of program defects through textual and visual triggers.<span class='px-1 mx-1 bg-yellow-200'>We expand the scope of our attack by developing five program defect modes that compromise key aspects of confidentiality, integrity, and availability in embodied agents. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.679</span></span>To validate the effectiveness of our approach, we conducted extensive experiments across various tasks, including robot planning, robot manipulation, and compositional visual reasoning.<span class='px-1 mx-1 bg-yellow-200'>Additionally, we demonstrate the potential impact of our approach by successfully attacking real-world autonomous driving systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.605</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.02882v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.02882v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4304,24 +4330,24 @@
           </td>
         </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-10</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Towards SLO-Optimized LLM Serving via Automatic Inference Engine Tuning
+                Preserving Privacy in Large Language Models: A Survey on Current Threats and Solutions
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>A service-level objective (SLO) is a target performance metric of service that cloud vendors aim to ensure. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.452</span></span><span class='px-1 mx-1 bg-yellow-200'>Delivering optimized SLOs can enhance user satisfaction and improve the competitiveness of cloud vendors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.522</span></span><span class='px-1 mx-1 bg-yellow-200'>As large language models (LLMs) are gaining increasing popularity across various fields, it is of great significance to optimize SLOs for LLM inference services. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.437</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we observe that adjusting the parameters of LLM inference engines can improve service performance, and the optimal parameter configurations of different services are different. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.645</span></span><span class='px-1 mx-1 bg-yellow-200'>Therefore, we propose SCOOT, an automatic performance tuning system to optimize SLOs for each LLM inference service by tuning the parameters of the inference engine. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.702</span></span><span class='px-1 mx-1 bg-yellow-200'>We first propose a generalized formulation of the tuning problem to handle various objectives and constraints between parameters, and SCOOT exploits the Bayesian optimization (BO) technique to resolve the problem via exploration and exploitation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.417</span></span>Moreover, SCOOT adopts a random forest to learn hidden constraints during the tuning process to mitigate invalid exploration.To improve the tuning efficiency, SCOOT utilizes the parallel suggestion to accelerate the tuning process.<span class='px-1 mx-1 bg-yellow-200'>Extensive experiments demonstrate that SCOOT can significantly outperform existing tuning techniques in SLO optimization while greatly improving the tuning efficiency. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.525</span></span></p>
+                  <p>Large Language Models (LLMs) represent a significant advancement in artificial intelligence, finding applications across various domains.<span class='px-1 mx-1 bg-yellow-200'>However, their reliance on massive internet-sourced datasets for training brings notable privacy issues, which are exacerbated in critical domains (e.g., healthcare). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.67</span></span><span class='px-1 mx-1 bg-yellow-200'>Moreover, certain application-specific scenarios may require fine-tuning these models on private data. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.727</span></span><span class='px-1 mx-1 bg-yellow-200'>This survey critically examines the privacy threats associated with LLMs, emphasizing the potential for these models to memorize and inadvertently reveal sensitive information. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.484</span></span><span class='px-1 mx-1 bg-yellow-200'>We explore current threats by reviewing privacy attacks on LLMs and propose comprehensive solutions for integrating privacy mechanisms throughout the entire learning pipeline. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.588</span></span><span class='px-1 mx-1 bg-yellow-200'>These solutions range from anonymizing training datasets to implementing differential privacy during training or inference and machine unlearning after training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.675</span></span><span class='px-1 mx-1 bg-yellow-200'>Our comprehensive review of existing literature highlights ongoing challenges, available tools, and future directions for preserving privacy in LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.665</span></span><span class='px-1 mx-1 bg-yellow-200'>This work aims to guide the development of more secure and trustworthy AI systems by providing a thorough understanding of privacy preservation methods and their effectiveness in mitigating risks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.487</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.04323v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.05212v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2408.04323v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2408.05212v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4750,6 +4776,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">LLM Model Architectures and Training Techniques</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Preserving Privacy in Large Language Models: A Survey on Current Threats and Solutions
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) represent a significant advancement in artificial intelligence, finding applications across various domains.However, their reliance on massive internet-sourced datasets for training brings notable privacy issues, which are exacerbated in critical domains (e.g., healthcare).<span class='px-1 mx-1 bg-yellow-200'>Moreover, certain application-specific scenarios may require fine-tuning these models on private data. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.449</span></span>This survey critically examines the privacy threats associated with LLMs, emphasizing the potential for these models to memorize and inadvertently reveal sensitive information.<span class='px-1 mx-1 bg-yellow-200'>We explore current threats by reviewing privacy attacks on LLMs and propose comprehensive solutions for integrating privacy mechanisms throughout the entire learning pipeline. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.455</span></span>These solutions range from anonymizing training datasets to implementing differential privacy during training or inference and machine unlearning after training.Our comprehensive review of existing literature highlights ongoing challenges, available tools, and future directions for preserving privacy in LLMs.This work aims to guide the development of more secure and trustworthy AI systems by providing a thorough understanding of privacy preservation methods and their effectiveness in mitigating risks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.05212v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.05212v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-08</p>
           </td>
