@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-08-30.</p><br/>
+            <p>Generated on 2024-08-31.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -166,6 +166,110 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Data Formulator 2: Iteratively Creating Rich Visualizations with AI
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>To create rich visualizations, data analysts often need to iterate back and forth among data processing and chart specification to achieve their goals.To achieve this, analysts need not only proficiency in data transformation and visualization tools but also efforts to manage the branching history consisting of many different versions of data and charts.Recent LLM-powered AI systems have greatly improved visualization authoring experiences, for example by mitigating manual data transformation barriers via LLMs' code generation ability.<span class='px-1 mx-1 bg-yellow-200'>However, these systems do not work well for iterative visualization authoring, because they often require analysts to provide, in a single turn, a text-only prompt that fully describes the complex visualization task to be performed, which is unrealistic to both users and models in many cases. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.669</span></span>In this paper, we present Data Formulator 2, an LLM-powered visualization system to address these challenges.With Data Formulator 2, users describe their visualization intent with blended UI and natural language inputs, and data transformation are delegated to AI.To support iteration, Data Formulator 2 lets users navigate their iteration history and reuse previous designs towards new ones so that they don't need to start from scratch every time.In a user study with eight participants, we observed that Data Formulator 2 allows participants to develop their own iteration strategies to complete challenging data exploration sessions.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16119v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16119v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Automatic Library Migration Using Large Language Models: First Results
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Despite being introduced only a few years ago, Large Language Models (LLMs) are already widely used by developers for code generation.However, their application in automating other Software Engineering activities remains largely unexplored.Thus, in this paper, we report the first results of a study in which we are exploring the use of ChatGPT to support API migration tasks, an important problem that demands manual effort and attention from developers.Specifically, in the paper, we share our initial results involving the use of ChatGPT to migrate a client application to use a newer version of SQLAlchemy, an ORM (Object Relational Mapping) library widely used in Python.<span class='px-1 mx-1 bg-yellow-200'>We evaluate the use of three types of prompts (Zero-Shot, One-Shot, and Chain Of Thoughts) and show that the best results are achieved by the One-Shot prompt, followed by the Chain Of Thoughts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.83</span></span>Particularly, with the One-Shot prompt we were able to successfully migrate all columns of our target application and upgrade its code to use new functionalities enabled by SQLAlchemy's latest version, such as Python's \texttt{asyncio} and \texttt{typing} modules, while preserving the original code behavior.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16151v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16151v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This paper introduces FRACTURED-SORRY-Bench, a framework for evaluating the safety of Large Language Models (LLMs) against multi-turn conversational attacks.<span class='px-1 mx-1 bg-yellow-200'>Building upon the SORRY-Bench dataset, we propose a simple yet effective method for generating adversarial prompts by breaking down harmful queries into seemingly innocuous sub-questions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.677</span></span>Our approach achieves a maximum increase of +46.22\% in Attack Success Rates (ASRs) across GPT-4, GPT-4o, GPT-4o-mini, and GPT-3.5-Turbo models compared to baseline methods.We demonstrate that this technique poses a challenge to current LLM safety measures and highlights the need for more robust defenses against subtle, multi-turn attacks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16163v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16163v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLM-assisted Labeling Function Generation for Semantic Type Detection
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Detecting semantic types of columns in data lake tables is an important application.A key bottleneck in semantic type detection is the availability of human annotation due to the inherent complexity of data lakes.In this paper, we propose using programmatic weak supervision to assist in annotating the training data for semantic type detection by leveraging labeling functions.One challenge in this process is the difficulty of manually writing labeling functions due to the large volume and low quality of the data lake table datasets.<span class='px-1 mx-1 bg-yellow-200'>To address this issue, we explore employing Large Language Models (LLMs) for labeling function generation and introduce several prompt engineering strategies for this purpose. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.809</span></span>We conduct experiments on real-world web table datasets.Based on the initial results, we perform extensive analysis and provide empirical insights and future directions for researchers in this field.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16173v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16173v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 SIaM: Self-Improving Code-Assisted Mathematical Reasoning of Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -283,110 +387,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2408.15879v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Data Formulator 2: Iteratively Creating Rich Visualizations with AI
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>To create rich visualizations, data analysts often need to iterate back and forth among data processing and chart specification to achieve their goals.To achieve this, analysts need not only proficiency in data transformation and visualization tools but also efforts to manage the branching history consisting of many different versions of data and charts.Recent LLM-powered AI systems have greatly improved visualization authoring experiences, for example by mitigating manual data transformation barriers via LLMs' code generation ability.<span class='px-1 mx-1 bg-yellow-200'>However, these systems do not work well for iterative visualization authoring, because they often require analysts to provide, in a single turn, a text-only prompt that fully describes the complex visualization task to be performed, which is unrealistic to both users and models in many cases. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.669</span></span>In this paper, we present Data Formulator 2, an LLM-powered visualization system to address these challenges.With Data Formulator 2, users describe their visualization intent with blended UI and natural language inputs, and data transformation are delegated to AI.To support iteration, Data Formulator 2 lets users navigate their iteration history and reuse previous designs towards new ones so that they don't need to start from scratch every time.In a user study with eight participants, we observed that Data Formulator 2 allows participants to develop their own iteration strategies to complete challenging data exploration sessions.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16119v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16119v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Automatic Library Migration Using Large Language Models: First Results
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Despite being introduced only a few years ago, Large Language Models (LLMs) are already widely used by developers for code generation.However, their application in automating other Software Engineering activities remains largely unexplored.Thus, in this paper, we report the first results of a study in which we are exploring the use of ChatGPT to support API migration tasks, an important problem that demands manual effort and attention from developers.Specifically, in the paper, we share our initial results involving the use of ChatGPT to migrate a client application to use a newer version of SQLAlchemy, an ORM (Object Relational Mapping) library widely used in Python.<span class='px-1 mx-1 bg-yellow-200'>We evaluate the use of three types of prompts (Zero-Shot, One-Shot, and Chain Of Thoughts) and show that the best results are achieved by the One-Shot prompt, followed by the Chain Of Thoughts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.83</span></span>Particularly, with the One-Shot prompt we were able to successfully migrate all columns of our target application and upgrade its code to use new functionalities enabled by SQLAlchemy's latest version, such as Python's \texttt{asyncio} and \texttt{typing} modules, while preserving the original code behavior.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16151v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16151v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>This paper introduces FRACTURED-SORRY-Bench, a framework for evaluating the safety of Large Language Models (LLMs) against multi-turn conversational attacks.<span class='px-1 mx-1 bg-yellow-200'>Building upon the SORRY-Bench dataset, we propose a simple yet effective method for generating adversarial prompts by breaking down harmful queries into seemingly innocuous sub-questions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.677</span></span>Our approach achieves a maximum increase of +46.22\% in Attack Success Rates (ASRs) across GPT-4, GPT-4o, GPT-4o-mini, and GPT-3.5-Turbo models compared to baseline methods.We demonstrate that this technique poses a challenge to current LLM safety measures and highlights the need for more robust defenses against subtle, multi-turn attacks.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16163v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16163v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                LLM-assisted Labeling Function Generation for Semantic Type Detection
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Detecting semantic types of columns in data lake tables is an important application.A key bottleneck in semantic type detection is the availability of human annotation due to the inherent complexity of data lakes.In this paper, we propose using programmatic weak supervision to assist in annotating the training data for semantic type detection by leveraging labeling functions.One challenge in this process is the difficulty of manually writing labeling functions due to the large volume and low quality of the data lake table datasets.<span class='px-1 mx-1 bg-yellow-200'>To address this issue, we explore employing Large Language Models (LLMs) for labeling function generation and introduce several prompt engineering strategies for this purpose. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.809</span></span>We conduct experiments on real-world web table datasets.Based on the initial results, we perform extensive analysis and provide empirical insights and future directions for researchers in this field.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16173v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16173v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1003,6 +1003,84 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                ANVIL: Anomaly-based Vulnerability Identification without Labelled Training Data
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Supervised learning-based software vulnerability detectors often fall short due to the inadequate availability of labelled training data.<span class='px-1 mx-1 bg-yellow-200'>In contrast, Large Language Models (LLMs) such as GPT-4, are not trained on labelled data, but when prompted to detect vulnerabilities, LLM prediction accuracy is only marginally better than random guessing. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>In this paper, we explore a different approach by reframing vulnerability detection as one of anomaly detection.<span class='px-1 mx-1 bg-yellow-200'>Since the vast majority of code does not contain vulnerabilities and LLMs are trained on massive amounts of such code, vulnerable code can be viewed as an anomaly from the LLM's predicted code distribution, freeing the model from the need for labelled data to provide a learnable representation of vulnerable code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.681</span></span><span class='px-1 mx-1 bg-yellow-200'>Leveraging this perspective, we demonstrate that LLMs trained for code generation exhibit a significant gap in prediction accuracy when prompted to reconstruct vulnerable versus non-vulnerable code.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.662</span></span>Using this insight, we implement ANVIL, a detector that identifies software vulnerabilities at line-level granularity.Our experiments explore the discriminating power of different anomaly scoring methods, as well as the sensitivity of ANVIL to context size.<span class='px-1 mx-1 bg-yellow-200'>We also study the effectiveness of ANVIL on various LLM families, and conduct leakage experiments on vulnerabilities that were discovered after the knowledge cutoff of our evaluated LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.738</span></span>On a collection of vulnerabilities from the Magma benchmark, ANVIL outperforms state-of-the-art line-level vulnerability detectors, LineVul and LineVD, which have been trained with labelled data, despite ANVIL having never been trained with labelled vulnerabilities.Specifically, our approach achieves $1.62\times$ to $2.18\times$ better Top-5 accuracies and $1.02\times$ to $1.29\times$ times better ROC scores on line-level vulnerability detection tasks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16028v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16028v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Logic-Enhanced Language Model Agents for Trustworthy Social Simulations
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>We introduce the Logic-Enhanced Language Model Agents (LELMA) framework, a novel approach to enhance the trustworthiness of social simulations that utilize large language models (LLMs).<span class='px-1 mx-1 bg-yellow-200'>While LLMs have gained attention as agents for simulating human behaviour, their applicability in this role is limited by issues such as inherent hallucinations and logical inconsistencies. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>LELMA addresses these challenges by integrating LLMs with symbolic AI, enabling logical verification of the reasoning generated by LLMs.This verification process provides corrective feedback, refining the reasoning output.The framework consists of three main components: an LLM-Reasoner for producing strategic reasoning, an LLM-Translator for mapping natural language reasoning to logic queries, and a Solver for evaluating these queries.This study focuses on decision-making in game-theoretic scenarios as a model of human interaction.Experiments involving the Hawk-Dove game, Prisoner's Dilemma, and Stag Hunt highlight the limitations of state-of-the-art LLMs, GPT-4 Omni and Gemini 1.0 Pro, in producing correct reasoning in these contexts.LELMA demonstrates high accuracy in error detection and improves the reasoning correctness of LLMs via self-refinement, particularly in GPT-4 Omni.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16081v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16081v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This paper introduces FRACTURED-SORRY-Bench, a framework for evaluating the safety of Large Language Models (LLMs) against multi-turn conversational attacks.Building upon the SORRY-Bench dataset, we propose a simple yet effective method for generating adversarial prompts by breaking down harmful queries into seemingly innocuous sub-questions.Our approach achieves a maximum increase of +46.22\% in Attack Success Rates (ASRs) across GPT-4, GPT-4o, GPT-4o-mini, and GPT-3.5-Turbo models compared to baseline methods.<span class='px-1 mx-1 bg-yellow-200'>We demonstrate that this technique poses a challenge to current LLM safety measures and highlights the need for more robust defenses against subtle, multi-turn attacks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.725</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16163v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16163v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 LRP4RAG: Detecting Hallucinations in Retrieval-Augmented Generation via Layer-wise Relevance Propagation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1120,84 +1198,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2408.15998v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                ANVIL: Anomaly-based Vulnerability Identification without Labelled Training Data
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Supervised learning-based software vulnerability detectors often fall short due to the inadequate availability of labelled training data.<span class='px-1 mx-1 bg-yellow-200'>In contrast, Large Language Models (LLMs) such as GPT-4, are not trained on labelled data, but when prompted to detect vulnerabilities, LLM prediction accuracy is only marginally better than random guessing. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>In this paper, we explore a different approach by reframing vulnerability detection as one of anomaly detection.<span class='px-1 mx-1 bg-yellow-200'>Since the vast majority of code does not contain vulnerabilities and LLMs are trained on massive amounts of such code, vulnerable code can be viewed as an anomaly from the LLM's predicted code distribution, freeing the model from the need for labelled data to provide a learnable representation of vulnerable code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.681</span></span><span class='px-1 mx-1 bg-yellow-200'>Leveraging this perspective, we demonstrate that LLMs trained for code generation exhibit a significant gap in prediction accuracy when prompted to reconstruct vulnerable versus non-vulnerable code.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.662</span></span>Using this insight, we implement ANVIL, a detector that identifies software vulnerabilities at line-level granularity.Our experiments explore the discriminating power of different anomaly scoring methods, as well as the sensitivity of ANVIL to context size.<span class='px-1 mx-1 bg-yellow-200'>We also study the effectiveness of ANVIL on various LLM families, and conduct leakage experiments on vulnerabilities that were discovered after the knowledge cutoff of our evaluated LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.738</span></span>On a collection of vulnerabilities from the Magma benchmark, ANVIL outperforms state-of-the-art line-level vulnerability detectors, LineVul and LineVD, which have been trained with labelled data, despite ANVIL having never been trained with labelled vulnerabilities.Specifically, our approach achieves $1.62\times$ to $2.18\times$ better Top-5 accuracies and $1.02\times$ to $1.29\times$ times better ROC scores on line-level vulnerability detection tasks.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16028v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16028v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Logic-Enhanced Language Model Agents for Trustworthy Social Simulations
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>We introduce the Logic-Enhanced Language Model Agents (LELMA) framework, a novel approach to enhance the trustworthiness of social simulations that utilize large language models (LLMs).<span class='px-1 mx-1 bg-yellow-200'>While LLMs have gained attention as agents for simulating human behaviour, their applicability in this role is limited by issues such as inherent hallucinations and logical inconsistencies. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.641</span></span>LELMA addresses these challenges by integrating LLMs with symbolic AI, enabling logical verification of the reasoning generated by LLMs.This verification process provides corrective feedback, refining the reasoning output.The framework consists of three main components: an LLM-Reasoner for producing strategic reasoning, an LLM-Translator for mapping natural language reasoning to logic queries, and a Solver for evaluating these queries.This study focuses on decision-making in game-theoretic scenarios as a model of human interaction.Experiments involving the Hawk-Dove game, Prisoner's Dilemma, and Stag Hunt highlight the limitations of state-of-the-art LLMs, GPT-4 Omni and Gemini 1.0 Pro, in producing correct reasoning in these contexts.LELMA demonstrates high accuracy in error detection and improves the reasoning correctness of LLMs via self-refinement, particularly in GPT-4 Omni.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16081v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16081v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>This paper introduces FRACTURED-SORRY-Bench, a framework for evaluating the safety of Large Language Models (LLMs) against multi-turn conversational attacks.Building upon the SORRY-Bench dataset, we propose a simple yet effective method for generating adversarial prompts by breaking down harmful queries into seemingly innocuous sub-questions.Our approach achieves a maximum increase of +46.22\% in Attack Success Rates (ASRs) across GPT-4, GPT-4o, GPT-4o-mini, and GPT-3.5-Turbo models compared to baseline methods.<span class='px-1 mx-1 bg-yellow-200'>We demonstrate that this technique poses a challenge to current LLM safety measures and highlights the need for more robust defenses against subtle, multi-turn attacks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.725</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16163v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16163v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1814,32 +1814,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                StyleRemix: Interpretable Authorship Obfuscation via Distillation and Perturbation of Style Elements
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Authorship obfuscation, rewriting a text to intentionally obscure the identity of the author, is an important but challenging task.Current methods using large language models (LLMs) lack interpretability and controllability, often ignoring author-specific stylistic features, resulting in less robust performance overall.   <span class='px-1 mx-1 bg-yellow-200'>To address this, we develop StyleRemix, an adaptive and interpretable obfuscation method that perturbs specific, fine-grained style elements of the original input text. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.667</span></span>StyleRemix uses pre-trained Low Rank Adaptation (LoRA) modules to rewrite an input specifically along various stylistic axes (e.g., formality and length) while maintaining low computational cost.StyleRemix outperforms state-of-the-art baselines and much larger LLMs in a variety of domains as assessed by both automatic and human evaluation.   Additionally, we release AuthorMix, a large set of 30K high-quality, long-form texts from a diverse set of 14 authors and 4 domains, and DiSC, a parallel corpus of 1,500 texts spanning seven style axes in 16 unique directions</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.15666v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.15666v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 ANVIL: Anomaly-based Vulnerability Identification without Labelled Training Data
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1905,6 +1879,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2408.16163v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                StyleRemix: Interpretable Authorship Obfuscation via Distillation and Perturbation of Style Elements
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Authorship obfuscation, rewriting a text to intentionally obscure the identity of the author, is an important but challenging task.Current methods using large language models (LLMs) lack interpretability and controllability, often ignoring author-specific stylistic features, resulting in less robust performance overall.   <span class='px-1 mx-1 bg-yellow-200'>To address this, we develop StyleRemix, an adaptive and interpretable obfuscation method that perturbs specific, fine-grained style elements of the original input text. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.667</span></span>StyleRemix uses pre-trained Low Rank Adaptation (LoRA) modules to rewrite an input specifically along various stylistic axes (e.g., formality and length) while maintaining low computational cost.StyleRemix outperforms state-of-the-art baselines and much larger LLMs in a variety of domains as assessed by both automatic and human evaluation.   Additionally, we release AuthorMix, a large set of 30K high-quality, long-form texts from a diverse set of 14 authors and 4 domains, and DiSC, a parallel corpus of 1,500 texts spanning seven style axes in 16 unique directions</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.15666v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.15666v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2261,6 +2261,84 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                An Extremely Data-efficient and Generative LLM-based Reinforcement Learning Agent for Recommenders
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Recent advancements in large language models (LLMs) have enabled understanding webpage contexts, product details, and human instructions.Utilizing LLMs as the foundational architecture for either reward models or policies in reinforcement learning has gained popularity -- a notable achievement is the success of InstructGPT.RL algorithms have been instrumental in maximizing long-term customer satisfaction and avoiding short-term, myopic goals in industrial recommender systems, which often rely on deep learning models to predict immediate clicks or purchases.   In this project, several RL methods are implemented and evaluated using the WebShop benchmark environment, data, simulator, and pre-trained model checkpoints.The goal is to train an RL agent to maximize the purchase reward given a detailed human instruction describing a desired product.The RL agents are developed by fine-tuning a pre-trained BERT model with various objectives, learning from preferences without a reward model, and employing contemporary training techniques such as Proximal Policy Optimization (PPO) as used in InstructGPT, and Direct Preference Optimization (DPO).This report also evaluates the RL agents trained using generative trajectories.<span class='px-1 mx-1 bg-yellow-200'>Evaluations were conducted using Thompson sampling in the WebShop simulator environment.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span>The simulated online experiments demonstrate that agents trained on generated trajectories exhibited comparable task performance to those trained using human trajectories.This has demonstrated an example of an extremely low-cost data-efficient way of training reinforcement learning agents.Also, with limited training time (<2hours), without utilizing any images, a DPO agent achieved a 19% success rate after approximately 3000 steps or 30 minutes of training on T4 GPUs, compared to a PPO agent, which reached a 15% success rate.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16032v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16032v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Using Large Language Models to Create AI Personas for Replication and Prediction of Media Effects: An Empirical Test of 133 Published Experimental Research Findings
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This report analyzes the potential for large language models (LLMs) to expedite accurate replication of published message effects studies.<span class='px-1 mx-1 bg-yellow-200'>We tested LLM-powered participants (personas) by replicating 133 experimental findings from 14 papers containing 45 recent studies in the Journal of Marketing (January 2023-May 2024). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.682</span></span>We used a new software tool, Viewpoints AI (https://viewpoints.ai/), that takes study designs, stimuli, and measures as input, automatically generates prompts for LLMs to act as a specified sample of unique personas, and collects their responses to produce a final output in the form of a complete dataset and statistical analysis.The underlying LLM used was Anthropic's Claude Sonnet 3.5.We generated 19,447 AI personas to replicate these studies with the exact same sample attributes, study designs, stimuli, and measures reported in the original human research.Our LLM replications successfully reproduced 76% of the original main effects (84 out of 111), demonstrating strong potential for AI-assisted replication of studies in which people respond to media stimuli.When including interaction effects, the overall replication rate was 68% (90 out of 133).The use of LLMs to replicate and accelerate marketing research on media effects is discussed with respect to the replication crisis in social science, potential solutions to generalizability problems in sampling subjects and experimental conditions, and the ability to rapidly test consumer responses to various media stimuli.We also address the limitations of this approach, particularly in replicating complex interaction effects in media response studies, and suggest areas for future research and improvement in AI-assisted experimental replication of media effects.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16073v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16073v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Logic-Enhanced Language Model Agents for Trustworthy Social Simulations
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce the Logic-Enhanced Language Model Agents (LELMA) framework, a novel approach to enhance the trustworthiness of social simulations that utilize large language models (LLMs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.715</span></span>While LLMs have gained attention as agents for simulating human behaviour, their applicability in this role is limited by issues such as inherent hallucinations and logical inconsistencies.LELMA addresses these challenges by integrating LLMs with symbolic AI, enabling logical verification of the reasoning generated by LLMs.This verification process provides corrective feedback, refining the reasoning output.The framework consists of three main components: an LLM-Reasoner for producing strategic reasoning, an LLM-Translator for mapping natural language reasoning to logic queries, and a Solver for evaluating these queries.<span class='px-1 mx-1 bg-yellow-200'>This study focuses on decision-making in game-theoretic scenarios as a model of human interaction. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.84</span></span>Experiments involving the Hawk-Dove game, Prisoner's Dilemma, and Stag Hunt highlight the limitations of state-of-the-art LLMs, GPT-4 Omni and Gemini 1.0 Pro, in producing correct reasoning in these contexts.LELMA demonstrates high accuracy in error detection and improves the reasoning correctness of LLMs via self-refinement, particularly in GPT-4 Omni.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16081v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16081v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 WildFeedback: Aligning LLMs With In-situ User Interactions And Feedback
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2352,84 +2430,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2408.15978v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                An Extremely Data-efficient and Generative LLM-based Reinforcement Learning Agent for Recommenders
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Recent advancements in large language models (LLMs) have enabled understanding webpage contexts, product details, and human instructions.Utilizing LLMs as the foundational architecture for either reward models or policies in reinforcement learning has gained popularity -- a notable achievement is the success of InstructGPT.RL algorithms have been instrumental in maximizing long-term customer satisfaction and avoiding short-term, myopic goals in industrial recommender systems, which often rely on deep learning models to predict immediate clicks or purchases.   In this project, several RL methods are implemented and evaluated using the WebShop benchmark environment, data, simulator, and pre-trained model checkpoints.The goal is to train an RL agent to maximize the purchase reward given a detailed human instruction describing a desired product.The RL agents are developed by fine-tuning a pre-trained BERT model with various objectives, learning from preferences without a reward model, and employing contemporary training techniques such as Proximal Policy Optimization (PPO) as used in InstructGPT, and Direct Preference Optimization (DPO).This report also evaluates the RL agents trained using generative trajectories.<span class='px-1 mx-1 bg-yellow-200'>Evaluations were conducted using Thompson sampling in the WebShop simulator environment.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span>The simulated online experiments demonstrate that agents trained on generated trajectories exhibited comparable task performance to those trained using human trajectories.This has demonstrated an example of an extremely low-cost data-efficient way of training reinforcement learning agents.Also, with limited training time (<2hours), without utilizing any images, a DPO agent achieved a 19% success rate after approximately 3000 steps or 30 minutes of training on T4 GPUs, compared to a PPO agent, which reached a 15% success rate.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16032v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16032v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Using Large Language Models to Create AI Personas for Replication and Prediction of Media Effects: An Empirical Test of 133 Published Experimental Research Findings
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>This report analyzes the potential for large language models (LLMs) to expedite accurate replication of published message effects studies.<span class='px-1 mx-1 bg-yellow-200'>We tested LLM-powered participants (personas) by replicating 133 experimental findings from 14 papers containing 45 recent studies in the Journal of Marketing (January 2023-May 2024). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.682</span></span>We used a new software tool, Viewpoints AI (https://viewpoints.ai/), that takes study designs, stimuli, and measures as input, automatically generates prompts for LLMs to act as a specified sample of unique personas, and collects their responses to produce a final output in the form of a complete dataset and statistical analysis.The underlying LLM used was Anthropic's Claude Sonnet 3.5.We generated 19,447 AI personas to replicate these studies with the exact same sample attributes, study designs, stimuli, and measures reported in the original human research.Our LLM replications successfully reproduced 76% of the original main effects (84 out of 111), demonstrating strong potential for AI-assisted replication of studies in which people respond to media stimuli.When including interaction effects, the overall replication rate was 68% (90 out of 133).The use of LLMs to replicate and accelerate marketing research on media effects is discussed with respect to the replication crisis in social science, potential solutions to generalizability problems in sampling subjects and experimental conditions, and the ability to rapidly test consumer responses to various media stimuli.We also address the limitations of this approach, particularly in replicating complex interaction effects in media response studies, and suggest areas for future research and improvement in AI-assisted experimental replication of media effects.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16073v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16073v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Logic-Enhanced Language Model Agents for Trustworthy Social Simulations
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce the Logic-Enhanced Language Model Agents (LELMA) framework, a novel approach to enhance the trustworthiness of social simulations that utilize large language models (LLMs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.715</span></span>While LLMs have gained attention as agents for simulating human behaviour, their applicability in this role is limited by issues such as inherent hallucinations and logical inconsistencies.LELMA addresses these challenges by integrating LLMs with symbolic AI, enabling logical verification of the reasoning generated by LLMs.This verification process provides corrective feedback, refining the reasoning output.The framework consists of three main components: an LLM-Reasoner for producing strategic reasoning, an LLM-Translator for mapping natural language reasoning to logic queries, and a Solver for evaluating these queries.<span class='px-1 mx-1 bg-yellow-200'>This study focuses on decision-making in game-theoretic scenarios as a model of human interaction. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.84</span></span>Experiments involving the Hawk-Dove game, Prisoner's Dilemma, and Stag Hunt highlight the limitations of state-of-the-art LLMs, GPT-4 Omni and Gemini 1.0 Pro, in producing correct reasoning in these contexts.LELMA demonstrates high accuracy in error detection and improves the reasoning correctness of LLMs via self-refinement, particularly in GPT-4 Omni.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16081v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16081v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3020,6 +3020,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Using Large Language Models to Create AI Personas for Replication and Prediction of Media Effects: An Empirical Test of 133 Published Experimental Research Findings
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This report analyzes the potential for large language models (LLMs) to expedite accurate replication of published message effects studies. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.707</span></span>We tested LLM-powered participants (personas) by replicating 133 experimental findings from 14 papers containing 45 recent studies in the Journal of Marketing (January 2023-May 2024).We used a new software tool, Viewpoints AI (https://viewpoints.ai/), that takes study designs, stimuli, and measures as input, automatically generates prompts for LLMs to act as a specified sample of unique personas, and collects their responses to produce a final output in the form of a complete dataset and statistical analysis.The underlying LLM used was Anthropic's Claude Sonnet 3.5.<span class='px-1 mx-1 bg-yellow-200'>We generated 19,447 AI personas to replicate these studies with the exact same sample attributes, study designs, stimuli, and measures reported in the original human research. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span>Our LLM replications successfully reproduced 76% of the original main effects (84 out of 111), demonstrating strong potential for AI-assisted replication of studies in which people respond to media stimuli.When including interaction effects, the overall replication rate was 68% (90 out of 133).The use of LLMs to replicate and accelerate marketing research on media effects is discussed with respect to the replication crisis in social science, potential solutions to generalizability problems in sampling subjects and experimental conditions, and the ability to rapidly test consumer responses to various media stimuli.We also address the limitations of this approach, particularly in replicating complex interaction effects in media response studies, and suggest areas for future research and improvement in AI-assisted experimental replication of media effects.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16073v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16073v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Logic-Enhanced Language Model Agents for Trustworthy Social Simulations
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce the Logic-Enhanced Language Model Agents (LELMA) framework, a novel approach to enhance the trustworthiness of social simulations that utilize large language models (LLMs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.623</span></span>While LLMs have gained attention as agents for simulating human behaviour, their applicability in this role is limited by issues such as inherent hallucinations and logical inconsistencies.LELMA addresses these challenges by integrating LLMs with symbolic AI, enabling logical verification of the reasoning generated by LLMs.This verification process provides corrective feedback, refining the reasoning output.The framework consists of three main components: an LLM-Reasoner for producing strategic reasoning, an LLM-Translator for mapping natural language reasoning to logic queries, and a Solver for evaluating these queries.<span class='px-1 mx-1 bg-yellow-200'>This study focuses on decision-making in game-theoretic scenarios as a model of human interaction. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.675</span></span>Experiments involving the Hawk-Dove game, Prisoner's Dilemma, and Stag Hunt highlight the limitations of state-of-the-art LLMs, GPT-4 Omni and Gemini 1.0 Pro, in producing correct reasoning in these contexts.LELMA demonstrates high accuracy in error detection and improves the reasoning correctness of LLMs via self-refinement, particularly in GPT-4 Omni.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16081v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16081v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3215,58 +3267,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2408.15978v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Using Large Language Models to Create AI Personas for Replication and Prediction of Media Effects: An Empirical Test of 133 Published Experimental Research Findings
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>This report analyzes the potential for large language models (LLMs) to expedite accurate replication of published message effects studies. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.707</span></span>We tested LLM-powered participants (personas) by replicating 133 experimental findings from 14 papers containing 45 recent studies in the Journal of Marketing (January 2023-May 2024).We used a new software tool, Viewpoints AI (https://viewpoints.ai/), that takes study designs, stimuli, and measures as input, automatically generates prompts for LLMs to act as a specified sample of unique personas, and collects their responses to produce a final output in the form of a complete dataset and statistical analysis.The underlying LLM used was Anthropic's Claude Sonnet 3.5.<span class='px-1 mx-1 bg-yellow-200'>We generated 19,447 AI personas to replicate these studies with the exact same sample attributes, study designs, stimuli, and measures reported in the original human research. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.602</span></span>Our LLM replications successfully reproduced 76% of the original main effects (84 out of 111), demonstrating strong potential for AI-assisted replication of studies in which people respond to media stimuli.When including interaction effects, the overall replication rate was 68% (90 out of 133).The use of LLMs to replicate and accelerate marketing research on media effects is discussed with respect to the replication crisis in social science, potential solutions to generalizability problems in sampling subjects and experimental conditions, and the ability to rapidly test consumer responses to various media stimuli.We also address the limitations of this approach, particularly in replicating complex interaction effects in media response studies, and suggest areas for future research and improvement in AI-assisted experimental replication of media effects.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16073v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16073v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Logic-Enhanced Language Model Agents for Trustworthy Social Simulations
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce the Logic-Enhanced Language Model Agents (LELMA) framework, a novel approach to enhance the trustworthiness of social simulations that utilize large language models (LLMs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.623</span></span>While LLMs have gained attention as agents for simulating human behaviour, their applicability in this role is limited by issues such as inherent hallucinations and logical inconsistencies.LELMA addresses these challenges by integrating LLMs with symbolic AI, enabling logical verification of the reasoning generated by LLMs.This verification process provides corrective feedback, refining the reasoning output.The framework consists of three main components: an LLM-Reasoner for producing strategic reasoning, an LLM-Translator for mapping natural language reasoning to logic queries, and a Solver for evaluating these queries.<span class='px-1 mx-1 bg-yellow-200'>This study focuses on decision-making in game-theoretic scenarios as a model of human interaction. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.675</span></span>Experiments involving the Hawk-Dove game, Prisoner's Dilemma, and Stag Hunt highlight the limitations of state-of-the-art LLMs, GPT-4 Omni and Gemini 1.0 Pro, in producing correct reasoning in these contexts.LELMA demonstrates high accuracy in error detection and improves the reasoning correctness of LLMs via self-refinement, particularly in GPT-4 Omni.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16081v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16081v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3727,6 +3727,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Logic-Enhanced Language Model Agents for Trustworthy Social Simulations
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>We introduce the Logic-Enhanced Language Model Agents (LELMA) framework, a novel approach to enhance the trustworthiness of social simulations that utilize large language models (LLMs).While LLMs have gained attention as agents for simulating human behaviour, their applicability in this role is limited by issues such as inherent hallucinations and logical inconsistencies.<span class='px-1 mx-1 bg-yellow-200'>LELMA addresses these challenges by integrating LLMs with symbolic AI, enabling logical verification of the reasoning generated by LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.539</span></span>This verification process provides corrective feedback, refining the reasoning output.The framework consists of three main components: an LLM-Reasoner for producing strategic reasoning, an LLM-Translator for mapping natural language reasoning to logic queries, and a Solver for evaluating these queries.This study focuses on decision-making in game-theoretic scenarios as a model of human interaction.Experiments involving the Hawk-Dove game, Prisoner's Dilemma, and Stag Hunt highlight the limitations of state-of-the-art LLMs, GPT-4 Omni and Gemini 1.0 Pro, in producing correct reasoning in these contexts.LELMA demonstrates high accuracy in error detection and improves the reasoning correctness of LLMs via self-refinement, particularly in GPT-4 Omni.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16081v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16081v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Data Formulator 2: Iteratively Creating Rich Visualizations with AI
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>To create rich visualizations, data analysts often need to iterate back and forth among data processing and chart specification to achieve their goals.To achieve this, analysts need not only proficiency in data transformation and visualization tools but also efforts to manage the branching history consisting of many different versions of data and charts.<span class='px-1 mx-1 bg-yellow-200'>Recent LLM-powered AI systems have greatly improved visualization authoring experiences, for example by mitigating manual data transformation barriers via LLMs' code generation ability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.55</span></span>However, these systems do not work well for iterative visualization authoring, because they often require analysts to provide, in a single turn, a text-only prompt that fully describes the complex visualization task to be performed, which is unrealistic to both users and models in many cases.In this paper, we present Data Formulator 2, an LLM-powered visualization system to address these challenges.With Data Formulator 2, users describe their visualization intent with blended UI and natural language inputs, and data transformation are delegated to AI.To support iteration, Data Formulator 2 lets users navigate their iteration history and reuse previous designs towards new ones so that they don't need to start from scratch every time.<span class='px-1 mx-1 bg-yellow-200'>In a user study with eight participants, we observed that Data Formulator 2 allows participants to develop their own iteration strategies to complete challenging data exploration sessions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.504</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16119v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16119v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 SIaM: Self-Improving Code-Assisted Mathematical Reasoning of Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3844,58 +3896,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2408.15950v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Logic-Enhanced Language Model Agents for Trustworthy Social Simulations
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>We introduce the Logic-Enhanced Language Model Agents (LELMA) framework, a novel approach to enhance the trustworthiness of social simulations that utilize large language models (LLMs).While LLMs have gained attention as agents for simulating human behaviour, their applicability in this role is limited by issues such as inherent hallucinations and logical inconsistencies.<span class='px-1 mx-1 bg-yellow-200'>LELMA addresses these challenges by integrating LLMs with symbolic AI, enabling logical verification of the reasoning generated by LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.539</span></span>This verification process provides corrective feedback, refining the reasoning output.The framework consists of three main components: an LLM-Reasoner for producing strategic reasoning, an LLM-Translator for mapping natural language reasoning to logic queries, and a Solver for evaluating these queries.This study focuses on decision-making in game-theoretic scenarios as a model of human interaction.Experiments involving the Hawk-Dove game, Prisoner's Dilemma, and Stag Hunt highlight the limitations of state-of-the-art LLMs, GPT-4 Omni and Gemini 1.0 Pro, in producing correct reasoning in these contexts.LELMA demonstrates high accuracy in error detection and improves the reasoning correctness of LLMs via self-refinement, particularly in GPT-4 Omni.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16081v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16081v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Data Formulator 2: Iteratively Creating Rich Visualizations with AI
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>To create rich visualizations, data analysts often need to iterate back and forth among data processing and chart specification to achieve their goals.To achieve this, analysts need not only proficiency in data transformation and visualization tools but also efforts to manage the branching history consisting of many different versions of data and charts.<span class='px-1 mx-1 bg-yellow-200'>Recent LLM-powered AI systems have greatly improved visualization authoring experiences, for example by mitigating manual data transformation barriers via LLMs' code generation ability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.55</span></span>However, these systems do not work well for iterative visualization authoring, because they often require analysts to provide, in a single turn, a text-only prompt that fully describes the complex visualization task to be performed, which is unrealistic to both users and models in many cases.In this paper, we present Data Formulator 2, an LLM-powered visualization system to address these challenges.With Data Formulator 2, users describe their visualization intent with blended UI and natural language inputs, and data transformation are delegated to AI.To support iteration, Data Formulator 2 lets users navigate their iteration history and reuse previous designs towards new ones so that they don't need to start from scratch every time.<span class='px-1 mx-1 bg-yellow-200'>In a user study with eight participants, we observed that Data Formulator 2 allows participants to develop their own iteration strategies to complete challenging data exploration sessions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.504</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16119v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16119v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5588,19 +5588,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                FRACTURED-SORRY-Bench: Framework for Revealing Attacks in Conversational Turns Undermining Refusal Efficacy and Defenses over SORRY-Bench
+                WebPilot: A Versatile and Autonomous Multi-Agent System for Web Task Execution with Strategic Exploration
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper introduces FRACTURED-SORRY-Bench, a framework for evaluating the safety of Large Language Models (LLMs) against multi-turn conversational attacks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.414</span></span>Building upon the SORRY-Bench dataset, we propose a simple yet effective method for generating adversarial prompts by breaking down harmful queries into seemingly innocuous sub-questions.<span class='px-1 mx-1 bg-yellow-200'>Our approach achieves a maximum increase of +46.22\% in Attack Success Rates (ASRs) across GPT-4, GPT-4o, GPT-4o-mini, and GPT-3.5-Turbo models compared to baseline methods. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.476</span></span><span class='px-1 mx-1 bg-yellow-200'>We demonstrate that this technique poses a challenge to current LLM safety measures and highlights the need for more robust defenses against subtle, multi-turn attacks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.501</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>LLM-based autonomous agents often fail to execute complex web tasks that require dynamic interaction due to the inherent uncertainty and complexity of these environments. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.408</span></span>Existing LLM-based web agents typically rely on rigid, expert-designed policies specific to certain states and actions, which lack the flexibility and generalizability needed to adapt to unseen tasks.In contrast, humans excel by exploring unknowns, continuously adapting strategies, and resolving ambiguities through exploration.To emulate human-like adaptability, web agents need strategic exploration and complex decision-making.Monte Carlo Tree Search (MCTS) is well-suited for this, but classical MCTS struggles with vast action spaces, unpredictable state transitions, and incomplete information in web tasks.In light of this, we develop WebPilot, a multi-agent system with a dual optimization strategy that improves MCTS to better handle complex web environments.Specifically, the Global Optimization phase involves generating a high-level plan by breaking down tasks into manageable subtasks and continuously refining this plan, thereby focusing the search process and mitigating the challenges posed by vast action spaces in classical MCTS.<span class='px-1 mx-1 bg-yellow-200'>Subsequently, the Local Optimization phase executes each subtask using a tailored MCTS designed for complex environments, effectively addressing uncertainties and managing incomplete information. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.464</span></span>Experimental results on WebArena and MiniWoB++ demonstrate the effectiveness of WebPilot.Notably, on WebArena, WebPilot achieves SOTA performance with GPT-4, achieving a 93% relative increase in success rate over the concurrent tree search-based method.WebPilot marks a significant advancement in general autonomous agent capabilities, paving the way for more advanced and reliable decision-making in practical environments.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16163v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.15978v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2408.16163v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2408.15978v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5614,19 +5614,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                LLM-assisted Labeling Function Generation for Semantic Type Detection
+                Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Detecting semantic types of columns in data lake tables is an important application.A key bottleneck in semantic type detection is the availability of human annotation due to the inherent complexity of data lakes.In this paper, we propose using programmatic weak supervision to assist in annotating the training data for semantic type detection by leveraging labeling functions.<span class='px-1 mx-1 bg-yellow-200'>One challenge in this process is the difficulty of manually writing labeling functions due to the large volume and low quality of the data lake table datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.408</span></span>To address this issue, we explore employing Large Language Models (LLMs) for labeling function generation and introduce several prompt engineering strategies for this purpose.We conduct experiments on real-world web table datasets.Based on the initial results, we perform extensive analysis and provide empirical insights and future directions for researchers in this field.</p>
+                  <p>The ability to accurately interpret complex visual information is a crucial topic of multimodal large language models (MLLMs).Recent work indicates that enhanced visual perception significantly reduces hallucinations and improves performance on resolution-sensitive tasks, such as optical character recognition and document analysis.A number of recent MLLMs achieve this goal using a mixture of vision encoders.Despite their success, there is a lack of systematic comparisons and detailed ablation studies addressing critical aspects, such as expert selection and the integration of multiple vision experts.This study provides an extensive exploration of the design space for MLLMs using a mixture of vision encoders and resolutions.<span class='px-1 mx-1 bg-yellow-200'>Our findings reveal several underlying principles common to various existing strategies, leading to a streamlined yet effective design approach. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.435</span></span>We discover that simply concatenating visual tokens from a set of complementary vision encoders is as effective as more complex mixing architectures or strategies.We additionally introduce Pre-Alignment to bridge the gap between vision-focused encoders and language tokens, enhancing model coherence.The resulting family of MLLMs, Eagle, surpasses other leading open-source models on major MLLM benchmarks.Models and code: https://github.com/NVlabs/Eagle</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16173v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.15998v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2408.16173v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2408.15998v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5723,6 +5723,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                ANVIL: Anomaly-based Vulnerability Identification without Labelled Training Data
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Supervised learning-based software vulnerability detectors often fall short due to the inadequate availability of labelled training data.In contrast, Large Language Models (LLMs) such as GPT-4, are not trained on labelled data, but when prompted to detect vulnerabilities, LLM prediction accuracy is only marginally better than random guessing.In this paper, we explore a different approach by reframing vulnerability detection as one of anomaly detection.Since the vast majority of code does not contain vulnerabilities and LLMs are trained on massive amounts of such code, vulnerable code can be viewed as an anomaly from the LLM's predicted code distribution, freeing the model from the need for labelled data to provide a learnable representation of vulnerable code.<span class='px-1 mx-1 bg-yellow-200'>Leveraging this perspective, we demonstrate that LLMs trained for code generation exhibit a significant gap in prediction accuracy when prompted to reconstruct vulnerable versus non-vulnerable code.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.691</span></span>Using this insight, we implement ANVIL, a detector that identifies software vulnerabilities at line-level granularity.Our experiments explore the discriminating power of different anomaly scoring methods, as well as the sensitivity of ANVIL to context size.We also study the effectiveness of ANVIL on various LLM families, and conduct leakage experiments on vulnerabilities that were discovered after the knowledge cutoff of our evaluated LLMs.On a collection of vulnerabilities from the Magma benchmark, ANVIL outperforms state-of-the-art line-level vulnerability detectors, LineVul and LineVD, which have been trained with labelled data, despite ANVIL having never been trained with labelled vulnerabilities.Specifically, our approach achieves $1.62\times$ to $2.18\times$ better Top-5 accuracies and $1.02\times$ to $1.29\times$ times better ROC scores on line-level vulnerability detection tasks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16028v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16028v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Automatic Library Migration Using Large Language Models: First Results
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Despite being introduced only a few years ago, Large Language Models (LLMs) are already widely used by developers for code generation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.953</span></span>However, their application in automating other Software Engineering activities remains largely unexplored.Thus, in this paper, we report the first results of a study in which we are exploring the use of ChatGPT to support API migration tasks, an important problem that demands manual effort and attention from developers.Specifically, in the paper, we share our initial results involving the use of ChatGPT to migrate a client application to use a newer version of SQLAlchemy, an ORM (Object Relational Mapping) library widely used in Python.We evaluate the use of three types of prompts (Zero-Shot, One-Shot, and Chain Of Thoughts) and show that the best results are achieved by the One-Shot prompt, followed by the Chain Of Thoughts.Particularly, with the One-Shot prompt we were able to successfully migrate all columns of our target application and upgrade its code to use new functionalities enabled by SQLAlchemy's latest version, such as Python's \texttt{asyncio} and \texttt{typing} modules, while preserving the original code behavior.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16151v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2408.16151v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 SIaM: Self-Improving Code-Assisted Mathematical Reasoning of Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -5788,58 +5840,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2408.15658v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                ANVIL: Anomaly-based Vulnerability Identification without Labelled Training Data
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Supervised learning-based software vulnerability detectors often fall short due to the inadequate availability of labelled training data.In contrast, Large Language Models (LLMs) such as GPT-4, are not trained on labelled data, but when prompted to detect vulnerabilities, LLM prediction accuracy is only marginally better than random guessing.In this paper, we explore a different approach by reframing vulnerability detection as one of anomaly detection.Since the vast majority of code does not contain vulnerabilities and LLMs are trained on massive amounts of such code, vulnerable code can be viewed as an anomaly from the LLM's predicted code distribution, freeing the model from the need for labelled data to provide a learnable representation of vulnerable code.<span class='px-1 mx-1 bg-yellow-200'>Leveraging this perspective, we demonstrate that LLMs trained for code generation exhibit a significant gap in prediction accuracy when prompted to reconstruct vulnerable versus non-vulnerable code.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.691</span></span>Using this insight, we implement ANVIL, a detector that identifies software vulnerabilities at line-level granularity.Our experiments explore the discriminating power of different anomaly scoring methods, as well as the sensitivity of ANVIL to context size.We also study the effectiveness of ANVIL on various LLM families, and conduct leakage experiments on vulnerabilities that were discovered after the knowledge cutoff of our evaluated LLMs.On a collection of vulnerabilities from the Magma benchmark, ANVIL outperforms state-of-the-art line-level vulnerability detectors, LineVul and LineVD, which have been trained with labelled data, despite ANVIL having never been trained with labelled vulnerabilities.Specifically, our approach achieves $1.62\times$ to $2.18\times$ better Top-5 accuracies and $1.02\times$ to $1.29\times$ times better ROC scores on line-level vulnerability detection tasks.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16028v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16028v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-08-28</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Automatic Library Migration Using Large Language Models: First Results
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Despite being introduced only a few years ago, Large Language Models (LLMs) are already widely used by developers for code generation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.953</span></span>However, their application in automating other Software Engineering activities remains largely unexplored.Thus, in this paper, we report the first results of a study in which we are exploring the use of ChatGPT to support API migration tasks, an important problem that demands manual effort and attention from developers.Specifically, in the paper, we share our initial results involving the use of ChatGPT to migrate a client application to use a newer version of SQLAlchemy, an ORM (Object Relational Mapping) library widely used in Python.We evaluate the use of three types of prompts (Zero-Shot, One-Shot, and Chain Of Thoughts) and show that the best results are achieved by the One-Shot prompt, followed by the Chain Of Thoughts.Particularly, with the One-Shot prompt we were able to successfully migrate all columns of our target application and upgrade its code to use new functionalities enabled by SQLAlchemy's latest version, such as Python's \texttt{asyncio} and \texttt{typing} modules, while preserving the original code behavior.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2408.16151v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2408.16151v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
