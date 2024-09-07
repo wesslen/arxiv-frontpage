@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-09-06.</p><br/>
+            <p>Generated on 2024-09-07.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -231,32 +231,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.03735v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Well, that escalated quickly: The Single-Turn Crescendo Attack (STCA)
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>This paper explores a novel approach to adversarial attacks on large language models (LLM): the Single-Turn Crescendo Attack (STCA).The STCA builds upon the multi-turn crescendo attack established by Mark Russinovich, Ahmed Salem, Ronen Eldan.Traditional multi-turn adversarial strategies gradually escalate the context to elicit harmful or controversial responses from LLMs.However, this paper introduces a more efficient method where the escalation is condensed into a single interaction.<span class='px-1 mx-1 bg-yellow-200'>By carefully crafting the prompt to simulate an extended dialogue, the attack bypasses typical content moderation systems, leading to the generation of responses that would normally be filtered out. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.652</span></span>I demonstrate this technique through a few case studies.The results highlight vulnerabilities in current LLMs and underscore the need for more robust safeguards.This work contributes to the broader discourse on responsible AI (RAI) safety and adversarial testing, providing insights and practical examples for researchers and developers.This method is unexplored in the literature, making it a novel contribution to the field.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.03131v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.03131v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -491,6 +465,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.02834v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Well, that escalated quickly: The Single-Turn Crescendo Attack (STCA)
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>This paper explores a novel approach to adversarial attacks on large language models (LLM): the Single-Turn Crescendo Attack (STCA).The STCA builds upon the multi-turn crescendo attack established by Mark Russinovich, Ahmed Salem, Ronen Eldan.Traditional multi-turn adversarial strategies gradually escalate the context to elicit harmful or controversial responses from LLMs.However, this paper introduces a more efficient method where the escalation is condensed into a single interaction.<span class='px-1 mx-1 bg-yellow-200'>By carefully crafting the prompt to simulate an extended dialogue, the attack bypasses typical content moderation systems, leading to the generation of responses that would normally be filtered out. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.652</span></span>I demonstrate this technique through a few case studies.The results highlight vulnerabilities in current LLMs and underscore the need for more robust safeguards.This work contributes to the broader discourse on responsible AI (RAI) safety and adversarial testing, providing insights and practical examples for researchers and developers.This method is unexplored in the literature, making it a novel contribution to the field.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.03131v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.03131v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1029,6 +1029,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                More is More: Addition Bias in Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>In this paper, we investigate the presence of additive bias in Large Language Models (LLMs), drawing a parallel to the cognitive bias observed in humans where individuals tend to favor additive over subtractive changes.Using a series of controlled experiments, we tested various LLMs, including GPT-3.5 Turbo, Claude 3.5 Sonnet, Mistral, Math$\Sigma$tral, and Llama 3.1, on tasks designed to measure their propensity for additive versus subtractive modifications.Our findings demonstrate a significant preference for additive changes across all tested models.For example, in a palindrome creation task, Llama 3.1 favored adding letters 97.85% of the time over removing them.Similarly, in a Lego tower balancing task, GPT-3.5<span class='px-1 mx-1 bg-yellow-200'>Turbo chose to add a brick 76.38% of the time rather than remove one. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.63</span></span>In a text summarization task, Mistral 7B produced longer summaries in 59.40% to 75.10% of cases when asked to improve its own or others' writing.These results indicate that, similar to humans, LLMs exhibit a marked additive bias, which might have implications when LLMs are used on a large scale.Addittive bias might increase resource use and environmental impact, leading to higher economic costs due to overconsumption and waste.This bias should be considered in the development and application of LLMs to ensure balanced and efficient problem-solving approaches.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02569v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.02569v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Alignment-Aware Model Extraction Attacks on Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Model extraction attacks (MEAs) on large language models (LLMs) have received increasing research attention lately.Existing attack methods on LLMs inherit the extraction strategies from those designed for deep neural networks (DNNs) yet neglect the inconsistency of training tasks between MEA and LLMs' alignments.<span class='px-1 mx-1 bg-yellow-200'>As such, they result in poor attack performances. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.6</span></span>To tackle this issue, we present Locality Reinforced Distillation (LoRD), a novel model extraction attack algorithm specifically for LLMs.In particular, we design a policy-gradient-style training task, which utilizes victim models' responses as a signal to guide the crafting of preference for the local model.Theoretical analysis has shown that i) LoRD's convergence procedure in MEAs is consistent with the alignments of LLMs, and ii) LoRD can reduce query complexity while mitigating watermark protection through exploration-based stealing.Extensive experiments on domain-specific extractions demonstrate the superiority of our method by examining the extraction of various state-of-the-art commercial LLMs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02718v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.02718v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Hallucination Detection in LLMs: Fast and Memory-Efficient Finetuned Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1146,58 +1198,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.03131v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                More is More: Addition Bias in Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>In this paper, we investigate the presence of additive bias in Large Language Models (LLMs), drawing a parallel to the cognitive bias observed in humans where individuals tend to favor additive over subtractive changes.Using a series of controlled experiments, we tested various LLMs, including GPT-3.5 Turbo, Claude 3.5 Sonnet, Mistral, Math$\Sigma$tral, and Llama 3.1, on tasks designed to measure their propensity for additive versus subtractive modifications.Our findings demonstrate a significant preference for additive changes across all tested models.For example, in a palindrome creation task, Llama 3.1 favored adding letters 97.85% of the time over removing them.Similarly, in a Lego tower balancing task, GPT-3.5<span class='px-1 mx-1 bg-yellow-200'>Turbo chose to add a brick 76.38% of the time rather than remove one. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.63</span></span>In a text summarization task, Mistral 7B produced longer summaries in 59.40% to 75.10% of cases when asked to improve its own or others' writing.These results indicate that, similar to humans, LLMs exhibit a marked additive bias, which might have implications when LLMs are used on a large scale.Addittive bias might increase resource use and environmental impact, leading to higher economic costs due to overconsumption and waste.This bias should be considered in the development and application of LLMs to ensure balanced and efficient problem-solving approaches.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02569v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.02569v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Alignment-Aware Model Extraction Attacks on Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Model extraction attacks (MEAs) on large language models (LLMs) have received increasing research attention lately.Existing attack methods on LLMs inherit the extraction strategies from those designed for deep neural networks (DNNs) yet neglect the inconsistency of training tasks between MEA and LLMs' alignments.<span class='px-1 mx-1 bg-yellow-200'>As such, they result in poor attack performances. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.6</span></span>To tackle this issue, we present Locality Reinforced Distillation (LoRD), a novel model extraction attack algorithm specifically for LLMs.In particular, we design a policy-gradient-style training task, which utilizes victim models' responses as a signal to guide the crafting of preference for the local model.Theoretical analysis has shown that i) LoRD's convergence procedure in MEAs is consistent with the alignments of LLMs, and ii) LoRD can reduce query complexity while mitigating watermark protection through exploration-based stealing.Extensive experiments on domain-specific extractions demonstrate the superiority of our method by examining the extraction of various state-of-the-art commercial LLMs.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02718v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.02718v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1840,32 +1840,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Well, that escalated quickly: The Single-Turn Crescendo Attack (STCA)
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper explores a novel approach to adversarial attacks on large language models (LLM): the Single-Turn Crescendo Attack (STCA). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.882</span></span>The STCA builds upon the multi-turn crescendo attack established by Mark Russinovich, Ahmed Salem, Ronen Eldan.<span class='px-1 mx-1 bg-yellow-200'>Traditional multi-turn adversarial strategies gradually escalate the context to elicit harmful or controversial responses from LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.756</span></span>However, this paper introduces a more efficient method where the escalation is condensed into a single interaction.<span class='px-1 mx-1 bg-yellow-200'>By carefully crafting the prompt to simulate an extended dialogue, the attack bypasses typical content moderation systems, leading to the generation of responses that would normally be filtered out. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.766</span></span>I demonstrate this technique through a few case studies.<span class='px-1 mx-1 bg-yellow-200'>The results highlight vulnerabilities in current LLMs and underscore the need for more robust safeguards. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.854</span></span><span class='px-1 mx-1 bg-yellow-200'>This work contributes to the broader discourse on responsible AI (RAI) safety and adversarial testing, providing insights and practical examples for researchers and developers. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.72</span></span>This method is unexplored in the literature, making it a novel contribution to the field.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.03131v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.03131v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Alignment-Aware Model Extraction Attacks on Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1879,6 +1853,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.02718v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Well, that escalated quickly: The Single-Turn Crescendo Attack (STCA)
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper explores a novel approach to adversarial attacks on large language models (LLM): the Single-Turn Crescendo Attack (STCA). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.882</span></span>The STCA builds upon the multi-turn crescendo attack established by Mark Russinovich, Ahmed Salem, Ronen Eldan.<span class='px-1 mx-1 bg-yellow-200'>Traditional multi-turn adversarial strategies gradually escalate the context to elicit harmful or controversial responses from LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.756</span></span>However, this paper introduces a more efficient method where the escalation is condensed into a single interaction.<span class='px-1 mx-1 bg-yellow-200'>By carefully crafting the prompt to simulate an extended dialogue, the attack bypasses typical content moderation systems, leading to the generation of responses that would normally be filtered out. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.766</span></span>I demonstrate this technique through a few case studies.<span class='px-1 mx-1 bg-yellow-200'>The results highlight vulnerabilities in current LLMs and underscore the need for more robust safeguards. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.854</span></span><span class='px-1 mx-1 bg-yellow-200'>This work contributes to the broader discourse on responsible AI (RAI) safety and adversarial testing, providing insights and practical examples for researchers and developers. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.72</span></span>This method is unexplored in the literature, making it a novel contribution to the field.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.03131v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.03131v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2365,32 +2365,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Large Language Model-Based Agents for Software Engineering: A Survey
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The recent advance in Large Language Models (LLMs) has shaped a new paradigm of AI agents, i.e., LLM-based agents.Compared to standalone LLMs, LLM-based agents substantially extend the versatility and expertise of LLMs by enhancing LLMs with the capabilities of perceiving and utilizing external resources and tools.To date, LLM-based agents have been applied and shown remarkable effectiveness in Software Engineering (SE).<span class='px-1 mx-1 bg-yellow-200'>The synergy between multiple agents and human interaction brings further promise in tackling complex real-world SE problems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.683</span></span>In this work, we present a comprehensive and systematic survey on LLM-based agents for SE.We collect 106 papers and categorize them from two perspectives, i.e., the SE and agent perspectives.In addition, we discuss open challenges and future directions in this critical domain.The repository of this survey is at https://github.com/FudanSELab/Agent4SE-Paper-List.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02977v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.02977v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Do Large Language Models Possess Sensitive to Sentiment?
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2599,6 +2573,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Pooling And Attention: What Are Effective Designs For LLm-Based Embedding Models?
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>The significant advancements of Large Language Models (LLMs) in generative tasks have led to a growing body of work exploring LLM-based embedding models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.619</span></span>While these models, employing different pooling and attention strategies, have achieved state-of-the-art performance on public embedding benchmarks, questions still arise about what constitutes an effective design for LLM-based embedding models.However, these models are often trained on different datasets, using different LLM base models or training settings.Moreover, evaluations on public embedding benchmarks often fail to report statistical significance, making it difficult to determine which designs truly contribute to final performance.This complicates the process for practitioners seeking optimal training recipes for LLM-based embedding models.In this study, we conduct a large-scale experiment by training a series of LLM-based embedding models using the same training data and base model but differing in their pooling and attention strategies.The results show that there is no one-size-fits-all solution: while bidirectional attention and an additional trainable pooling layer outperform in text similarity and information retrieval tasks, they do not significantly surpass simpler designs like EOS-last token pooling and default causal attention in clustering and classification tasks.Furthermore, we propose a new pooling strategy, Multi-Layers Trainable Pooling, which transforms the outputs of all hidden layers, rather than just the last layer, using a cross-attention network.This method proves to be statistically superior in text similarity and retrieval tasks compared to existing pooling methods.Overall, this paper sheds light on effective training strategies for LLM-based embedding models.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02727v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.02727v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Language Understanding as a Constraint on Consensus Size in LLM Societies
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2651,19 +2651,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Pooling And Attention: What Are Effective Designs For LLm-Based Embedding Models?
+                Large Language Model-Based Agents for Software Engineering: A Survey
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>The significant advancements of Large Language Models (LLMs) in generative tasks have led to a growing body of work exploring LLM-based embedding models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.619</span></span>While these models, employing different pooling and attention strategies, have achieved state-of-the-art performance on public embedding benchmarks, questions still arise about what constitutes an effective design for LLM-based embedding models.However, these models are often trained on different datasets, using different LLM base models or training settings.Moreover, evaluations on public embedding benchmarks often fail to report statistical significance, making it difficult to determine which designs truly contribute to final performance.This complicates the process for practitioners seeking optimal training recipes for LLM-based embedding models.In this study, we conduct a large-scale experiment by training a series of LLM-based embedding models using the same training data and base model but differing in their pooling and attention strategies.The results show that there is no one-size-fits-all solution: while bidirectional attention and an additional trainable pooling layer outperform in text similarity and information retrieval tasks, they do not significantly surpass simpler designs like EOS-last token pooling and default causal attention in clustering and classification tasks.Furthermore, we propose a new pooling strategy, Multi-Layers Trainable Pooling, which transforms the outputs of all hidden layers, rather than just the last layer, using a cross-attention network.This method proves to be statistically superior in text similarity and retrieval tasks compared to existing pooling methods.Overall, this paper sheds light on effective training strategies for LLM-based embedding models.</p>
+                  <p>The recent advance in Large Language Models (LLMs) has shaped a new paradigm of AI agents, i.e., LLM-based agents.Compared to standalone LLMs, LLM-based agents substantially extend the versatility and expertise of LLMs by enhancing LLMs with the capabilities of perceiving and utilizing external resources and tools.To date, LLM-based agents have been applied and shown remarkable effectiveness in Software Engineering (SE).<span class='px-1 mx-1 bg-yellow-200'>The synergy between multiple agents and human interaction brings further promise in tackling complex real-world SE problems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.683</span></span>In this work, we present a comprehensive and systematic survey on LLM-based agents for SE.We collect 106 papers and categorize them from two perspectives, i.e., the SE and agent perspectives.In addition, we discuss open challenges and future directions in this critical domain.The repository of this survey is at https://github.com/FudanSELab/Agent4SE-Paper-List.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02727v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02977v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2409.02727v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2409.02977v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3467,58 +3467,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Large Language Model-Based Agents for Software Engineering: A Survey
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The recent advance in Large Language Models (LLMs) has shaped a new paradigm of AI agents, i.e., LLM-based agents.Compared to standalone LLMs, LLM-based agents substantially extend the versatility and expertise of LLMs by enhancing LLMs with the capabilities of perceiving and utilizing external resources and tools.<span class='px-1 mx-1 bg-yellow-200'>To date, LLM-based agents have been applied and shown remarkable effectiveness in Software Engineering (SE). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.508</span></span>The synergy between multiple agents and human interaction brings further promise in tackling complex real-world SE problems.In this work, we present a comprehensive and systematic survey on LLM-based agents for SE.We collect 106 papers and categorize them from two perspectives, i.e., the SE and agent perspectives.In addition, we discuss open challenges and future directions in this critical domain.The repository of this survey is at https://github.com/FudanSELab/Agent4SE-Paper-List.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02977v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.02977v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Multi-language Unit Test Generation using LLMs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Implementing automated unit tests is an important but time consuming activity in software development.Developers dedicate substantial time to writing tests for validating an application and preventing regressions.To support developers in this task, software engineering research over the past few decades has developed many techniques for automating unit test generation.However, despite this effort, usable tools exist for very few programming languages -- mainly Java, C, and C# and, more recently, for Python.Moreover, studies have found that automatically generated tests suffer poor readability and often do not resemble developer-written tests.In this work, we present a rigorous investigation of how large language models (LLMs) can help bridge the gap.<span class='px-1 mx-1 bg-yellow-200'>We describe a generic pipeline that incorporates static analysis to guide LLMs in generating compilable and high-coverage test cases. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.512</span></span>We illustrate how the pipeline can be applied to different programming languages, specifically Java and Python, and to complex software requiring environment mocking.We conducted a through empirical study to assess the quality of the generated tests in terms of coverage, mutation score, and test naturalness -- evaluating them on standard as well as enterprise Java applications and a large Python benchmark.<span class='px-1 mx-1 bg-yellow-200'>Our results demonstrate that LLM-based test generation, when guided by static analysis, can be competitive with, and even outperform, state-of-the-art test-generation techniques in coverage achieved while also producing considerably more natural test cases that developers find easy to read and understand. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.511</span></span>We also present the results of a user study, conducted with 161 professional developers, that highlights the naturalness characteristics of the tests generated by our approach.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.03093v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.03093v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Large Language Models and Cognitive Science: A Comprehensive Review of Similarities, Differences, and Challenges
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3675,6 +3623,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Large Language Model-Based Agents for Software Engineering: A Survey
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The recent advance in Large Language Models (LLMs) has shaped a new paradigm of AI agents, i.e., LLM-based agents.Compared to standalone LLMs, LLM-based agents substantially extend the versatility and expertise of LLMs by enhancing LLMs with the capabilities of perceiving and utilizing external resources and tools.<span class='px-1 mx-1 bg-yellow-200'>To date, LLM-based agents have been applied and shown remarkable effectiveness in Software Engineering (SE). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.508</span></span>The synergy between multiple agents and human interaction brings further promise in tackling complex real-world SE problems.In this work, we present a comprehensive and systematic survey on LLM-based agents for SE.We collect 106 papers and categorize them from two perspectives, i.e., the SE and agent perspectives.In addition, we discuss open challenges and future directions in this critical domain.The repository of this survey is at https://github.com/FudanSELab/Agent4SE-Paper-List.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02977v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.02977v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 CMM-Math: A Chinese Multimodal Math Dataset To Evaluate and Enhance the Mathematics Reasoning of Large Multimodal Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3688,6 +3662,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.02834v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Multi-language Unit Test Generation using LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Implementing automated unit tests is an important but time consuming activity in software development.Developers dedicate substantial time to writing tests for validating an application and preventing regressions.To support developers in this task, software engineering research over the past few decades has developed many techniques for automating unit test generation.However, despite this effort, usable tools exist for very few programming languages -- mainly Java, C, and C# and, more recently, for Python.Moreover, studies have found that automatically generated tests suffer poor readability and often do not resemble developer-written tests.In this work, we present a rigorous investigation of how large language models (LLMs) can help bridge the gap.<span class='px-1 mx-1 bg-yellow-200'>We describe a generic pipeline that incorporates static analysis to guide LLMs in generating compilable and high-coverage test cases. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.512</span></span>We illustrate how the pipeline can be applied to different programming languages, specifically Java and Python, and to complex software requiring environment mocking.We conducted a through empirical study to assess the quality of the generated tests in terms of coverage, mutation score, and test naturalness -- evaluating them on standard as well as enterprise Java applications and a large Python benchmark.<span class='px-1 mx-1 bg-yellow-200'>Our results demonstrate that LLM-based test generation, when guided by static analysis, can be competitive with, and even outperform, state-of-the-art test-generation techniques in coverage achieved while also producing considerably more natural test cases that developers find easy to read and understand. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.511</span></span>We also present the results of a user study, conducted with 161 professional developers, that highlights the naturalness characteristics of the tests generated by our approach.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.03093v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.03093v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5385,6 +5385,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Building Math Agents with Multi-Turn Iterative Preference Learning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent studies have shown that large language models' (LLMs) mathematical problem-solving capabilities can be enhanced by integrating external tools, such as code interpreters, and employing multi-turn Chain-of-Thought (CoT) reasoning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.701</span></span>While current methods focus on synthetic data generation and Supervised Fine-Tuning (SFT), this paper studies the complementary direct preference learning approach to further improve model performance.However, existing direct preference learning algorithms are originally designed for the single-turn chat task, and do not fully address the complexities of multi-turn reasoning and external tool integration required for tool-integrated mathematical reasoning tasks.To fill in this gap, we introduce a multi-turn direct preference learning framework, tailored for this context, that leverages feedback from code interpreters and optimizes trajectory-level preferences.This framework includes multi-turn DPO and multi-turn KTO as specific implementations.The effectiveness of our framework is validated through training of various language models using an augmented prompt set from the GSM8K and MATH datasets.Our results demonstrate substantial improvements: a supervised fine-tuned Gemma-1.1-it-7B model's performance increased from 77.5% to 83.9% on GSM8K and from 46.1% to 51.2% on MATH.Similarly, a Gemma-2-it-9B model improved from 84.1% to 86.3% on GSM8K and from 51.0% to 54.5% on MATH.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02392v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.02392v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 CLUE: Concept-Level Uncertainty Estimation for Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -5450,32 +5476,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.03093v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Building Math Agents with Multi-Turn Iterative Preference Learning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent studies have shown that large language models' (LLMs) mathematical problem-solving capabilities can be enhanced by integrating external tools, such as code interpreters, and employing multi-turn Chain-of-Thought (CoT) reasoning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.701</span></span>While current methods focus on synthetic data generation and Supervised Fine-Tuning (SFT), this paper studies the complementary direct preference learning approach to further improve model performance.However, existing direct preference learning algorithms are originally designed for the single-turn chat task, and do not fully address the complexities of multi-turn reasoning and external tool integration required for tool-integrated mathematical reasoning tasks.To fill in this gap, we introduce a multi-turn direct preference learning framework, tailored for this context, that leverages feedback from code interpreters and optimizes trajectory-level preferences.This framework includes multi-turn DPO and multi-turn KTO as specific implementations.The effectiveness of our framework is validated through training of various language models using an augmented prompt set from the GSM8K and MATH datasets.Our results demonstrate substantial improvements: a supervised fine-tuned Gemma-1.1-it-7B model's performance increased from 77.5% to 83.9% on GSM8K and from 46.1% to 51.2% on MATH.Similarly, a Gemma-2-it-9B model improved from 84.1% to 86.3% on GSM8K and from 51.0% to 54.5% on MATH.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.02392v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.02392v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
