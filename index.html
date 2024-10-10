@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2024-10-09.</p><br/>
+            <p>Generated on 2024-10-10.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -3862,32 +3862,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                STORE: Streamlining Semantic Tokenization and Generative Recommendation with A Single LLM
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Traditional recommendation models often rely on unique item identifiers (IDs) to distinguish between items, which can hinder their ability to effectively leverage item content information and generalize to long-tail or cold-start items. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.744</span></span>Recently, semantic tokenization has been proposed as a promising solution that aims to tokenize each item's semantic representation into a sequence of discrete tokens.In this way, it preserves the item's semantics within these tokens and ensures that semantically similar items are represented by similar tokens.<span class='px-1 mx-1 bg-yellow-200'>These semantic tokens have become fundamental in training generative recommendation models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.672</span></span><span class='px-1 mx-1 bg-yellow-200'>However, existing generative recommendation methods typically involve multiple sub-models for embedding, quantization, and recommendation, leading to an overly complex system. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose to streamline the semantic tokenization and generative recommendation process with a unified framework, dubbed STORE, which leverages a single large language model (LLM) for both tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.77</span></span><span class='px-1 mx-1 bg-yellow-200'>Specifically, we formulate semantic tokenization as a text-to-token task and generative recommendation as a token-to-token task, supplemented by a token-to-text reconstruction task and a text-to-token auxiliary task. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.615</span></span>All these tasks are framed in a generative manner and trained using a single LLM backbone.<span class='px-1 mx-1 bg-yellow-200'>Extensive experiments have been conducted to validate the effectiveness of our STORE framework across various recommendation tasks and datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.661</span></span>We will release the source code and configurations for reproducible research.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.07276v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.07276v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-11</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Multilingual Prompts in LLM-Based Recommenders: Performance Across Languages
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3901,6 +3875,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.07604v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                STORE: Streamlining Semantic Tokenization and Generative Recommendation with A Single LLM
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Traditional recommendation models often rely on unique item identifiers (IDs) to distinguish between items, which can hinder their ability to effectively leverage item content information and generalize to long-tail or cold-start items. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.744</span></span>Recently, semantic tokenization has been proposed as a promising solution that aims to tokenize each item's semantic representation into a sequence of discrete tokens.In this way, it preserves the item's semantics within these tokens and ensures that semantically similar items are represented by similar tokens.<span class='px-1 mx-1 bg-yellow-200'>These semantic tokens have become fundamental in training generative recommendation models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.672</span></span><span class='px-1 mx-1 bg-yellow-200'>However, existing generative recommendation methods typically involve multiple sub-models for embedding, quantization, and recommendation, leading to an overly complex system. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose to streamline the semantic tokenization and generative recommendation process with a unified framework, dubbed STORE, which leverages a single large language model (LLM) for both tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.77</span></span><span class='px-1 mx-1 bg-yellow-200'>Specifically, we formulate semantic tokenization as a text-to-token task and generative recommendation as a token-to-token task, supplemented by a token-to-text reconstruction task and a text-to-token auxiliary task. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.615</span></span>All these tasks are framed in a generative manner and trained using a single LLM backbone.<span class='px-1 mx-1 bg-yellow-200'>Extensive experiments have been conducted to validate the effectiveness of our STORE framework across various recommendation tasks and datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.661</span></span>We will release the source code and configurations for reproducible research.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.07276v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.07276v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5489,58 +5489,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                AutoSafeCoder: A Multi-Agent Framework for Securing LLM Code Generation through Static Analysis and Fuzz Testing
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in automatic code generation using large language models (LLMs) have brought us closer to fully automated secure software development. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.869</span></span>However, existing approaches often rely on a single agent for code generation, which struggles to produce secure, vulnerability-free code.Traditional program synthesis with LLMs has primarily focused on functional correctness, often neglecting critical dynamic security implications that happen during runtime.To address these challenges, we propose AutoSafeCoder, a multi-agent framework that leverages LLM-driven agents for code generation, vulnerability analysis, and security enhancement through continuous collaboration.The framework consists of three agents: a Coding Agent responsible for code generation, a Static Analyzer Agent identifying vulnerabilities, and a Fuzzing Agent performing dynamic testing using a mutation-based fuzzing approach to detect runtime errors.Our contribution focuses on ensuring the safety of multi-agent code generation by integrating dynamic and static testing in an iterative process during code generation by LLM that improves security.Experiments using the SecurityEval dataset demonstrate a 13% reduction in code vulnerabilities compared to baseline LLMs, with no compromise in functionality.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.10737v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.10737v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-16</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                VulnLLMEval: A Framework for Evaluating Large Language Models in Software Vulnerability Detection and Patching
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) have shown promise in tasks like code translation, prompting interest in their potential for automating software vulnerability detection (SVD) and patching (SVP). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.703</span></span>To further research in this area, establishing a benchmark is essential for evaluating the strengths and limitations of LLMs in these tasks.Despite their capabilities, questions remain regarding whether LLMs can accurately analyze complex vulnerabilities and generate appropriate patches.This paper introduces VulnLLMEval, a framework designed to assess the performance of LLMs in identifying and patching vulnerabilities in C code.Our study includes 307 real-world vulnerabilities extracted from the Linux kernel, creating a well-curated dataset that includes both vulnerable and patched code.This dataset, based on real-world code, provides a diverse and representative testbed for evaluating LLM performance in SVD and SVP tasks, offering a robust foundation for rigorous assessment.Our results reveal that LLMs often struggle with distinguishing between vulnerable and patched code.Furthermore, in SVP tasks, these models tend to oversimplify the code, producing solutions that may not be directly usable without further refinement.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.10756v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.10756v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-16</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Messy Code Makes Managing ML Pipelines Difficult? Just Let LLMs Rewrite the Code!
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -5640,6 +5588,58 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-16</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                AutoSafeCoder: A Multi-Agent Framework for Securing LLM Code Generation through Static Analysis and Fuzz Testing
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in automatic code generation using large language models (LLMs) have brought us closer to fully automated secure software development. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.869</span></span>However, existing approaches often rely on a single agent for code generation, which struggles to produce secure, vulnerability-free code.Traditional program synthesis with LLMs has primarily focused on functional correctness, often neglecting critical dynamic security implications that happen during runtime.To address these challenges, we propose AutoSafeCoder, a multi-agent framework that leverages LLM-driven agents for code generation, vulnerability analysis, and security enhancement through continuous collaboration.The framework consists of three agents: a Coding Agent responsible for code generation, a Static Analyzer Agent identifying vulnerabilities, and a Fuzzing Agent performing dynamic testing using a mutation-based fuzzing approach to detect runtime errors.Our contribution focuses on ensuring the safety of multi-agent code generation by integrating dynamic and static testing in an iterative process during code generation by LLM that improves security.Experiments using the SecurityEval dataset demonstrate a 13% reduction in code vulnerabilities compared to baseline LLMs, with no compromise in functionality.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.10737v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.10737v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-16</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                VulnLLMEval: A Framework for Evaluating Large Language Models in Software Vulnerability Detection and Patching
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) have shown promise in tasks like code translation, prompting interest in their potential for automating software vulnerability detection (SVD) and patching (SVP). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.703</span></span>To further research in this area, establishing a benchmark is essential for evaluating the strengths and limitations of LLMs in these tasks.Despite their capabilities, questions remain regarding whether LLMs can accurately analyze complex vulnerabilities and generate appropriate patches.This paper introduces VulnLLMEval, a framework designed to assess the performance of LLMs in identifying and patching vulnerabilities in C code.Our study includes 307 real-world vulnerabilities extracted from the Linux kernel, creating a well-curated dataset that includes both vulnerable and patched code.This dataset, based on real-world code, provides a diverse and representative testbed for evaluating LLM performance in SVD and SVP tasks, offering a robust foundation for rigorous assessment.Our results reveal that LLMs often struggle with distinguishing between vulnerable and patched code.Furthermore, in SVP tasks, these models tend to oversimplify the code, producing solutions that may not be directly usable without further refinement.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.10756v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.10756v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-15</p>
           </td>
           <td>
@@ -5658,6 +5658,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.09584v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Demo: SGCode: A Flexible Prompt-Optimizing System for Secure Generation of Code
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper introduces SGCode, a flexible prompt-optimizing system to generate secure code with large language models (LLMs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.755</span></span>SGCode integrates recent prompt-optimization approaches with LLMs in a unified system accessible through front-end and back-end APIs, enabling users to 1) generate secure code, which is free of vulnerabilities, 2) review and share security analysis, and 3) easily switch from one prompt optimization approach to another, while providing insights on model and system performance.We populated SGCode on an AWS server with PromSec, an approach that optimizes prompts by combining an LLM and security tools with a lightweight generative adversarial graph neural network to detect and fix security vulnerabilities in the generated code.Extensive experiments show that SGCode is practical as a public tool to gain insights into the trade-offs between model utility, secure code generation, and system cost.SGCode has only a marginal cost compared with prompting LLMs.SGCode is available at: http://3.131.141.63:8501/.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.07368v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2409.07368v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5710,32 +5736,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2409.07440v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2024-09-11</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Exploring LLMs for Malware Detection: Review, Framework Design, and Countermeasure Approaches
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>The rising use of Large Language Models (LLMs) to create and disseminate malware poses a significant cybersecurity challenge due to their ability to generate and distribute attacks with ease. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.675</span></span>A single prompt can initiate a wide array of malicious activities.This paper addresses this critical issue through a multifaceted approach.First, we provide a comprehensive overview of LLMs and their role in malware detection from diverse sources.We examine five specific applications of LLMs: Malware honeypots, identification of text-based threats, code analysis for detecting malicious intent, trend analysis of malware, and detection of non-standard disguised malware.Our review includes a detailed analysis of the existing literature and establishes guiding principles for the secure use of LLMs.We also introduce a classification scheme to categorize the relevant literature.Second, we propose performance metrics to assess the effectiveness of LLMs in these contexts.Third, we present a risk mitigation framework designed to prevent malware by leveraging LLMs.Finally, we evaluate the performance of our proposed risk mitigation strategies against various factors and demonstrate their effectiveness in countering LLM-enabled malware.The paper concludes by suggesting future advancements and areas requiring deeper exploration in this fascinating field of artificial intelligence.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2409.07587v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2409.07587v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
