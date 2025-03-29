@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-03-28.</p><br/>
+            <p>Generated on 2025-03-29.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -348,6 +348,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                StepGrade: Grading Programming Assignments with Context-Aware LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code.To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators.Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students.<span class='px-1 mx-1 bg-yellow-200'>This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.922</span></span><span class='px-1 mx-1 bg-yellow-200'>Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.845</span></span>This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.<span class='px-1 mx-1 bg-yellow-200'>To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span>The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.<span class='px-1 mx-1 bg-yellow-200'>Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.838</span></span><span class='px-1 mx-1 bg-yellow-200'>By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.695</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                The Art of Tool Interface Design
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>We present an agentic framework, Thinker, which achieves state of art performance in challenging reasoning tasks for realistic customer service scenarios that involve complex business logic and human interactions via long horizons.On the $\tau$-bench retail dataset, Thinker achieves 82.6\% success rate with GPT-4o (version 2024-06-01) (baseline: 68.3\%), and 81.9\% success rate with Llama-3.1 405B (baseline: 49.6\%), without any fine-tuning.Thinker effectively closes the gap in reasoning capabilities between the base models by introducing proper structure.   The key features of the Thinker framework are: (1) State-Machine Augmented Generation (SMAG), which represents business logic as state machines and the LLM uses state machines as tools.(2) Delegation of tasks from the main reasoning loop to LLM-powered tools.(3) Adaptive context management.   <span class='px-1 mx-1 bg-yellow-200'>Our prompting-only solution achieves signficant gains, while still maintaining a standard agentic architecture with a ReAct style reasoning loop. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.79</span></span>The key is to innovate on the tool interface design, as exemplified by SMAG and the LLM-powered tools.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.21036v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.21036v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Iterative Prompting with Persuasion Skills in Jailbreaking Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -543,58 +595,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2503.20783v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                StepGrade: Grading Programming Assignments with Context-Aware LLMs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code.To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators.Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students.<span class='px-1 mx-1 bg-yellow-200'>This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.922</span></span><span class='px-1 mx-1 bg-yellow-200'>Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.845</span></span>This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.<span class='px-1 mx-1 bg-yellow-200'>To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span>The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.<span class='px-1 mx-1 bg-yellow-200'>Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.838</span></span><span class='px-1 mx-1 bg-yellow-200'>By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.695</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                The Art of Tool Interface Design
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>We present an agentic framework, Thinker, which achieves state of art performance in challenging reasoning tasks for realistic customer service scenarios that involve complex business logic and human interactions via long horizons.On the $\tau$-bench retail dataset, Thinker achieves 82.6\% success rate with GPT-4o (version 2024-06-01) (baseline: 68.3\%), and 81.9\% success rate with Llama-3.1 405B (baseline: 49.6\%), without any fine-tuning.Thinker effectively closes the gap in reasoning capabilities between the base models by introducing proper structure.   The key features of the Thinker framework are: (1) State-Machine Augmented Generation (SMAG), which represents business logic as state machines and the LLM uses state machines as tools.(2) Delegation of tasks from the main reasoning loop to LLM-powered tools.(3) Adaptive context management.   <span class='px-1 mx-1 bg-yellow-200'>Our prompting-only solution achieves signficant gains, while still maintaining a standard agentic architecture with a ReAct style reasoning loop. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.79</span></span>The key is to innovate on the tool interface design, as exemplified by SMAG and the LLM-powered tools.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.21036v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.21036v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1029,6 +1029,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Playing the Fool: Jailbreaking LLMs and Multimodal LLMs with Out-of-Distribution Strategy
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Despite the remarkable versatility of Large Language Models (LLMs) and Multimodal LLMs (MLLMs) to generalize across both language and vision tasks, LLMs and MLLMs have shown vulnerability to jailbreaking, generating textual outputs that undermine safety, ethical, and bias standards when exposed to harmful or sensitive inputs.With the recent advancement of safety alignment via preference-tuning from human feedback, LLMs and MLLMs have been equipped with safety guardrails to yield safe, ethical, and fair responses with regard to harmful inputs.However, despite the significance of safety alignment, research on the vulnerabilities remains largely underexplored.In this paper, we investigate the unexplored vulnerability of the safety alignment, examining its ability to consistently provide safety guarantees for out-of-distribution(OOD)-ifying harmful inputs that may fall outside the aligned data distribution.<span class='px-1 mx-1 bg-yellow-200'>Our key observation is that OOD-ifying the vanilla harmful inputs highly increases the uncertainty of the model to discern the malicious intent within the input, leading to a higher chance of being jailbroken. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.648</span></span>Exploiting this vulnerability, we propose JOOD, a new Jailbreak framework via OOD-ifying inputs beyond the safety alignment.We explore various off-the-shelf visual and textual transformation techniques for OOD-ifying the harmful inputs.Notably, we observe that even simple mixing-based techniques such as image mixup prove highly effective in increasing the uncertainty of the model, thereby facilitating the bypass of the safety alignment.Experiments across diverse jailbreak scenarios demonstrate that JOOD effectively jailbreaks recent proprietary LLMs and MLLMs such as GPT-4 and o1 with high attack success rate, which previous attack approaches have consistently struggled to jailbreak.Code is available at https://github.com/naver-ai/JOOD.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20823v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20823v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Leveraging LLMs, IDEs, and Semantic Embeddings for Automated Move Method Refactoring
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>MOVEMETHOD is a hallmark refactoring.Despite a plethora of research tools that recommend which methods to move and where, these recommendations do not align with how expert developers perform MOVEMETHOD.Given the extensive training of Large Language Models and their reliance upon naturalness of code, they should expertly recommend which methods are misplaced in a given class and which classes are better hosts.<span class='px-1 mx-1 bg-yellow-200'>Our formative study of 2016 LLM recommendations revealed that LLMs give expert suggestions, yet they are unreliable: up to 80% of the suggestions are hallucinations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.79</span></span>We introduce the first LLM fully powered assistant for MOVEMETHOD refactoring that automates its whole end-to-end lifecycle, from recommendation to execution.<span class='px-1 mx-1 bg-yellow-200'>We designed novel solutions that automatically filter LLM hallucinations using static analysis from IDEs and a novel workflow that requires LLMs to be self-consistent, critique, and rank refactoring suggestions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.947</span></span>As MOVEMETHOD refactoring requires global, projectlevel reasoning, we solved the limited context size of LLMs by employing refactoring-aware retrieval augment generation (RAG).Our approach, MM-assist, synergistically combines the strengths of the LLM, IDE, static analysis, and semantic relevance.In our thorough, multi-methodology empirical evaluation, we compare MM-assist with the previous state-of-the-art approaches.MM-assist significantly outperforms them: (i) on a benchmark widely used by other researchers, our Recall@1 and Recall@3 show a 1.7x improvement; (ii) on a corpus of 210 recent refactorings from Open-source software, our Recall rates improve by at least 2.4x.Lastly, we conducted a user study with 30 experienced participants who used MM-assist to refactor their own code for one week.They rated 82.8% of MM-assist recommendations positively.This shows that MM-assist is both effective and useful.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20934v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20934v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Raising Awareness of Location Information Vulnerabilities in Social Media Photos using LLMs
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1258,58 +1310,6 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Playing the Fool: Jailbreaking LLMs and Multimodal LLMs with Out-of-Distribution Strategy
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Despite the remarkable versatility of Large Language Models (LLMs) and Multimodal LLMs (MLLMs) to generalize across both language and vision tasks, LLMs and MLLMs have shown vulnerability to jailbreaking, generating textual outputs that undermine safety, ethical, and bias standards when exposed to harmful or sensitive inputs.With the recent advancement of safety alignment via preference-tuning from human feedback, LLMs and MLLMs have been equipped with safety guardrails to yield safe, ethical, and fair responses with regard to harmful inputs.However, despite the significance of safety alignment, research on the vulnerabilities remains largely underexplored.In this paper, we investigate the unexplored vulnerability of the safety alignment, examining its ability to consistently provide safety guarantees for out-of-distribution(OOD)-ifying harmful inputs that may fall outside the aligned data distribution.<span class='px-1 mx-1 bg-yellow-200'>Our key observation is that OOD-ifying the vanilla harmful inputs highly increases the uncertainty of the model to discern the malicious intent within the input, leading to a higher chance of being jailbroken. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.648</span></span>Exploiting this vulnerability, we propose JOOD, a new Jailbreak framework via OOD-ifying inputs beyond the safety alignment.We explore various off-the-shelf visual and textual transformation techniques for OOD-ifying the harmful inputs.Notably, we observe that even simple mixing-based techniques such as image mixup prove highly effective in increasing the uncertainty of the model, thereby facilitating the bypass of the safety alignment.Experiments across diverse jailbreak scenarios demonstrate that JOOD effectively jailbreaks recent proprietary LLMs and MLLMs such as GPT-4 and o1 with high attack success rate, which previous attack approaches have consistently struggled to jailbreak.Code is available at https://github.com/naver-ai/JOOD.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20823v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20823v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Leveraging LLMs, IDEs, and Semantic Embeddings for Automated Move Method Refactoring
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>MOVEMETHOD is a hallmark refactoring.Despite a plethora of research tools that recommend which methods to move and where, these recommendations do not align with how expert developers perform MOVEMETHOD.Given the extensive training of Large Language Models and their reliance upon naturalness of code, they should expertly recommend which methods are misplaced in a given class and which classes are better hosts.<span class='px-1 mx-1 bg-yellow-200'>Our formative study of 2016 LLM recommendations revealed that LLMs give expert suggestions, yet they are unreliable: up to 80% of the suggestions are hallucinations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.79</span></span>We introduce the first LLM fully powered assistant for MOVEMETHOD refactoring that automates its whole end-to-end lifecycle, from recommendation to execution.<span class='px-1 mx-1 bg-yellow-200'>We designed novel solutions that automatically filter LLM hallucinations using static analysis from IDEs and a novel workflow that requires LLMs to be self-consistent, critique, and rank refactoring suggestions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.947</span></span>As MOVEMETHOD refactoring requires global, projectlevel reasoning, we solved the limited context size of LLMs by employing refactoring-aware retrieval augment generation (RAG).Our approach, MM-assist, synergistically combines the strengths of the LLM, IDE, static analysis, and semantic relevance.In our thorough, multi-methodology empirical evaluation, we compare MM-assist with the previous state-of-the-art approaches.MM-assist significantly outperforms them: (i) on a benchmark widely used by other researchers, our Recall@1 and Recall@3 show a 1.7x improvement; (ii) on a corpus of 210 recent refactorings from Open-source software, our Recall rates improve by at least 2.4x.Lastly, we conducted a user study with 30 experienced participants who used MM-assist to refactor their own code for one week.They rated 82.8% of MM-assist recommendations positively.This shows that MM-assist is both effective and useful.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20934v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20934v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-25</p>
           </td>
           <td>
@@ -1528,6 +1528,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Playing the Fool: Jailbreaking LLMs and Multimodal LLMs with Out-of-Distribution Strategy
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Despite the remarkable versatility of Large Language Models (LLMs) and Multimodal LLMs (MLLMs) to generalize across both language and vision tasks, LLMs and MLLMs have shown vulnerability to jailbreaking, generating textual outputs that undermine safety, ethical, and bias standards when exposed to harmful or sensitive inputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.765</span></span><span class='px-1 mx-1 bg-yellow-200'>With the recent advancement of safety alignment via preference-tuning from human feedback, LLMs and MLLMs have been equipped with safety guardrails to yield safe, ethical, and fair responses with regard to harmful inputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.7</span></span><span class='px-1 mx-1 bg-yellow-200'>However, despite the significance of safety alignment, research on the vulnerabilities remains largely underexplored. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.745</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we investigate the unexplored vulnerability of the safety alignment, examining its ability to consistently provide safety guarantees for out-of-distribution(OOD)-ifying harmful inputs that may fall outside the aligned data distribution. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.797</span></span><span class='px-1 mx-1 bg-yellow-200'>Our key observation is that OOD-ifying the vanilla harmful inputs highly increases the uncertainty of the model to discern the malicious intent within the input, leading to a higher chance of being jailbroken. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.765</span></span><span class='px-1 mx-1 bg-yellow-200'>Exploiting this vulnerability, we propose JOOD, a new Jailbreak framework via OOD-ifying inputs beyond the safety alignment. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.809</span></span>We explore various off-the-shelf visual and textual transformation techniques for OOD-ifying the harmful inputs.Notably, we observe that even simple mixing-based techniques such as image mixup prove highly effective in increasing the uncertainty of the model, thereby facilitating the bypass of the safety alignment.<span class='px-1 mx-1 bg-yellow-200'>Experiments across diverse jailbreak scenarios demonstrate that JOOD effectively jailbreaks recent proprietary LLMs and MLLMs such as GPT-4 and o1 with high attack success rate, which previous attack approaches have consistently struggled to jailbreak. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.775</span></span>Code is available at https://github.com/naver-ai/JOOD.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20823v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20823v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 TeleLoRA: Teleporting Model-Specific Alignment Across LLMs
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1593,32 +1619,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2503.20320v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Playing the Fool: Jailbreaking LLMs and Multimodal LLMs with Out-of-Distribution Strategy
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Despite the remarkable versatility of Large Language Models (LLMs) and Multimodal LLMs (MLLMs) to generalize across both language and vision tasks, LLMs and MLLMs have shown vulnerability to jailbreaking, generating textual outputs that undermine safety, ethical, and bias standards when exposed to harmful or sensitive inputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.765</span></span><span class='px-1 mx-1 bg-yellow-200'>With the recent advancement of safety alignment via preference-tuning from human feedback, LLMs and MLLMs have been equipped with safety guardrails to yield safe, ethical, and fair responses with regard to harmful inputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.7</span></span><span class='px-1 mx-1 bg-yellow-200'>However, despite the significance of safety alignment, research on the vulnerabilities remains largely underexplored. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.745</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we investigate the unexplored vulnerability of the safety alignment, examining its ability to consistently provide safety guarantees for out-of-distribution(OOD)-ifying harmful inputs that may fall outside the aligned data distribution. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.797</span></span><span class='px-1 mx-1 bg-yellow-200'>Our key observation is that OOD-ifying the vanilla harmful inputs highly increases the uncertainty of the model to discern the malicious intent within the input, leading to a higher chance of being jailbroken. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.765</span></span><span class='px-1 mx-1 bg-yellow-200'>Exploiting this vulnerability, we propose JOOD, a new Jailbreak framework via OOD-ifying inputs beyond the safety alignment. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.809</span></span>We explore various off-the-shelf visual and textual transformation techniques for OOD-ifying the harmful inputs.Notably, we observe that even simple mixing-based techniques such as image mixup prove highly effective in increasing the uncertainty of the model, thereby facilitating the bypass of the safety alignment.<span class='px-1 mx-1 bg-yellow-200'>Experiments across diverse jailbreak scenarios demonstrate that JOOD effectively jailbreaks recent proprietary LLMs and MLLMs such as GPT-4 and o1 with high attack success rate, which previous attack approaches have consistently struggled to jailbreak. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.775</span></span>Code is available at https://github.com/naver-ai/JOOD.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20823v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20823v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2157,6 +2157,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                StepGrade: Grading Programming Assignments with Context-Aware LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code.To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators.Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students.<span class='px-1 mx-1 bg-yellow-200'>This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.704</span></span>Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation.This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced).The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability.By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Can Large Language Models Predict Associations Among Human Attitudes?
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Prior work has shown that large language models (LLMs) can predict human attitudes based on other attitudes, but this work has largely focused on predictions from highly similar and interrelated attitudes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.685</span></span><span class='px-1 mx-1 bg-yellow-200'>In contrast, human attitudes are often strongly associated even across disparate and dissimilar topics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.786</span></span><span class='px-1 mx-1 bg-yellow-200'>Using a novel dataset of human responses toward diverse attitude statements, we found that a frontier language model (GPT-4o) was able to recreate the pairwise correlations among individual attitudes and to predict individuals' attitudes from one another. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.683</span></span>Crucially, in an advance over prior work, we tested GPT-4o's ability to predict in the absence of surface-similarity between attitudes, finding that while surface similarity improves prediction accuracy, the model was still highly-capable of generating meaningful social inferences between dissimilar attitudes.<span class='px-1 mx-1 bg-yellow-200'>Altogether, our findings indicate that LLMs capture crucial aspects of the deeper, latent structure of human belief systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.611</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.21011v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.21011v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 CFunModel: A "Funny" Language Model Capable of Chinese Humor Generation and Processing
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2300,58 +2352,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2503.20786v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                StepGrade: Grading Programming Assignments with Context-Aware LLMs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code.To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators.Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students.<span class='px-1 mx-1 bg-yellow-200'>This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.704</span></span>Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation.This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced).The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability.By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Can Large Language Models Predict Associations Among Human Attitudes?
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Prior work has shown that large language models (LLMs) can predict human attitudes based on other attitudes, but this work has largely focused on predictions from highly similar and interrelated attitudes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.685</span></span><span class='px-1 mx-1 bg-yellow-200'>In contrast, human attitudes are often strongly associated even across disparate and dissimilar topics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.786</span></span><span class='px-1 mx-1 bg-yellow-200'>Using a novel dataset of human responses toward diverse attitude statements, we found that a frontier language model (GPT-4o) was able to recreate the pairwise correlations among individual attitudes and to predict individuals' attitudes from one another. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.683</span></span>Crucially, in an advance over prior work, we tested GPT-4o's ability to predict in the absence of surface-similarity between attitudes, finding that while surface similarity improves prediction accuracy, the model was still highly-capable of generating meaningful social inferences between dissimilar attitudes.<span class='px-1 mx-1 bg-yellow-200'>Altogether, our findings indicate that LLMs capture crucial aspects of the deeper, latent structure of human belief systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.611</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.21011v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.21011v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2539,6 +2539,162 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2503.21670v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                StepGrade: Grading Programming Assignments with Context-Aware LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code.To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators.<span class='px-1 mx-1 bg-yellow-200'>Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges.Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation.This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced).The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability.By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Hacia la interpretabilidad de la detección anticipada de riesgos de depresión utilizando grandes modelos de lenguaje
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Early Detection of Risks (EDR) on the Web involves identifying at-risk users as early as possible.Although Large Language Models (LLMs) have proven to solve various linguistic tasks efficiently, assessing their reasoning ability in specific domains is crucial.<span class='px-1 mx-1 bg-yellow-200'>In this work, we propose a method for solving depression-related EDR using LLMs on Spanish texts, with responses that can be interpreted by humans. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.743</span></span>We define a reasoning criterion to analyze users through a specialist, apply in-context learning to the Gemini model, and evaluate its performance both quantitatively and qualitatively.The results show that accurate predictions can be obtained, supported by explanatory reasoning, providing a deeper understanding of the solution.Our approach offers new perspectives for addressing EDR problems by leveraging the power of LLMs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20939v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20939v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Clean & Clear: Feasibility of Safe LLM Clinical Guidance
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Background:   Clinical guidelines are central to safe evidence-based medicine in modern healthcare, providing diagnostic criteria, treatment options and monitoring advice for a wide range of illnesses.LLM-empowered chatbots have shown great promise in Healthcare Q&A tasks, offering the potential to provide quick and accurate responses to medical inquiries.   Our main objective was the development and preliminary assessment of an LLM-empowered chatbot software capable of reliably answering clinical guideline questions using University College London Hospital (UCLH) clinical guidelines.   Methods: We used the open-weight Llama-3.1-8B LLM to extract relevant information from the UCLH guidelines to answer questions.Our approach highlights the safety and reliability of referencing information over its interpretation and response generation.<span class='px-1 mx-1 bg-yellow-200'>Seven doctors from the ward assessed the chatbot's performance by comparing its answers to the gold standard.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>Results:Our chatbot demonstrates promising performance in terms of relevance, with ~73% of its responses rated as very relevant, showcasing a strong understanding of the clinical context.Importantly, our chatbot achieves a recall of 0.98 for extracted guideline lines, substantially minimising the risk of missing critical information.Approximately 78% of responses were rated satisfactory in terms of completeness.A small portion (~14.5%) contained minor unnecessary information, indicating occasional lapses in precision.The chatbot' showed high efficiency, with an average completion time of 10 seconds, compared to 30 seconds for human respondents.<span class='px-1 mx-1 bg-yellow-200'>Evaluation of clinical reasoning showed that 72% of the chatbot's responses were without flaws. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.684</span></span>Our chatbot demonstrates significant potential to speed up and improve the process of accessing locally relevant clinical information for healthcare professionals.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20953v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20953v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Sociotechnical Effects of Machine Translation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>While the previous chapters have shown how machine translation (MT) can be useful, in this chapter we discuss some of the side-effects and risks that are associated, and how they might be mitigated.<span class='px-1 mx-1 bg-yellow-200'>With the move to neural MT and approaches using Large Language Models (LLMs), there is an associated impact on climate change, as the models built by multinational corporations are massive. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.633</span></span>They are hugely expensive to train, consume large amounts of electricity, and output huge volumes of kgCO2 to boot.However, smaller models which still perform to a high level of quality can be built with much lower carbon footprints, and tuning pre-trained models saves on the requirement to train from scratch.We also discuss the possible detrimental effects of MT on translators and other users.The topics of copyright and ownership of data are discussed, as well as ethical considerations on data and MT use.Finally, we show how if done properly, using MT in crisis scenarios can save lives, and we provide a method of how this might be done.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20959v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20959v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Patients Speak, AI Listens: LLM-based Analysis of Online Reviews Uncovers Key Drivers for Urgent Care Satisfaction
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Investigating the public experience of urgent care facilities is essential for promoting community healthcare development.Traditional survey methods often fall short due to limited scope, time, and spatial coverage.Crowdsourcing through online reviews or social media offers a valuable approach to gaining such insights.With recent advancements in large language models (LLMs), extracting nuanced perceptions from reviews has become feasible.This study collects Google Maps reviews across the DMV and Florida areas and conducts prompt engineering with the GPT model to analyze the aspect-based sentiment of urgent care.We first analyze the geospatial patterns of various aspects, including interpersonal factors, operational efficiency, technical quality, finances, and facilities.<span class='px-1 mx-1 bg-yellow-200'>Next, we determine Census Block Group(CBG)-level characteristics underpinning differences in public perception, including population density, median income, GINI Index, rent-to-income ratio, household below poverty rate, no insurance rate, and unemployment rate. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.629</span></span>Our results show that interpersonal factors and operational efficiency emerge as the strongest determinants of patient satisfaction in urgent care, while technical quality, finances, and facilities show no significant independent effects when adjusted for in multivariate models.<span class='px-1 mx-1 bg-yellow-200'>Among socioeconomic and demographic factors, only population density demonstrates a significant but modest association with patient ratings, while the remaining factors exhibit no significant correlations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.669</span></span>Overall, this study highlights the potential of crowdsourcing to uncover the key factors that matter to residents and provide valuable insights for stakeholders to improve public satisfaction with urgent care.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20981v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20981v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Can Large Language Models Predict Associations Among Human Attitudes?
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Prior work has shown that large language models (LLMs) can predict human attitudes based on other attitudes, but this work has largely focused on predictions from highly similar and interrelated attitudes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.73</span></span><span class='px-1 mx-1 bg-yellow-200'>In contrast, human attitudes are often strongly associated even across disparate and dissimilar topics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.808</span></span><span class='px-1 mx-1 bg-yellow-200'>Using a novel dataset of human responses toward diverse attitude statements, we found that a frontier language model (GPT-4o) was able to recreate the pairwise correlations among individual attitudes and to predict individuals' attitudes from one another. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.71</span></span><span class='px-1 mx-1 bg-yellow-200'>Crucially, in an advance over prior work, we tested GPT-4o's ability to predict in the absence of surface-similarity between attitudes, finding that while surface similarity improves prediction accuracy, the model was still highly-capable of generating meaningful social inferences between dissimilar attitudes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.741</span></span>Altogether, our findings indicate that LLMs capture crucial aspects of the deeper, latent structure of human belief systems.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.21011v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.21011v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2780,162 +2936,6 @@
           </div>
         </td>
       </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                StepGrade: Grading Programming Assignments with Context-Aware LLMs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code.To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators.<span class='px-1 mx-1 bg-yellow-200'>Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges.Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation.This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced).The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability.By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Hacia la interpretabilidad de la detección anticipada de riesgos de depresión utilizando grandes modelos de lenguaje
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Early Detection of Risks (EDR) on the Web involves identifying at-risk users as early as possible.Although Large Language Models (LLMs) have proven to solve various linguistic tasks efficiently, assessing their reasoning ability in specific domains is crucial.<span class='px-1 mx-1 bg-yellow-200'>In this work, we propose a method for solving depression-related EDR using LLMs on Spanish texts, with responses that can be interpreted by humans. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.743</span></span>We define a reasoning criterion to analyze users through a specialist, apply in-context learning to the Gemini model, and evaluate its performance both quantitatively and qualitatively.The results show that accurate predictions can be obtained, supported by explanatory reasoning, providing a deeper understanding of the solution.Our approach offers new perspectives for addressing EDR problems by leveraging the power of LLMs.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20939v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20939v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Clean & Clear: Feasibility of Safe LLM Clinical Guidance
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Background:   Clinical guidelines are central to safe evidence-based medicine in modern healthcare, providing diagnostic criteria, treatment options and monitoring advice for a wide range of illnesses.LLM-empowered chatbots have shown great promise in Healthcare Q&A tasks, offering the potential to provide quick and accurate responses to medical inquiries.   Our main objective was the development and preliminary assessment of an LLM-empowered chatbot software capable of reliably answering clinical guideline questions using University College London Hospital (UCLH) clinical guidelines.   Methods: We used the open-weight Llama-3.1-8B LLM to extract relevant information from the UCLH guidelines to answer questions.Our approach highlights the safety and reliability of referencing information over its interpretation and response generation.<span class='px-1 mx-1 bg-yellow-200'>Seven doctors from the ward assessed the chatbot's performance by comparing its answers to the gold standard.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>Results:Our chatbot demonstrates promising performance in terms of relevance, with ~73% of its responses rated as very relevant, showcasing a strong understanding of the clinical context.Importantly, our chatbot achieves a recall of 0.98 for extracted guideline lines, substantially minimising the risk of missing critical information.Approximately 78% of responses were rated satisfactory in terms of completeness.A small portion (~14.5%) contained minor unnecessary information, indicating occasional lapses in precision.The chatbot' showed high efficiency, with an average completion time of 10 seconds, compared to 30 seconds for human respondents.<span class='px-1 mx-1 bg-yellow-200'>Evaluation of clinical reasoning showed that 72% of the chatbot's responses were without flaws. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.684</span></span>Our chatbot demonstrates significant potential to speed up and improve the process of accessing locally relevant clinical information for healthcare professionals.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20953v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20953v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Sociotechnical Effects of Machine Translation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>While the previous chapters have shown how machine translation (MT) can be useful, in this chapter we discuss some of the side-effects and risks that are associated, and how they might be mitigated.<span class='px-1 mx-1 bg-yellow-200'>With the move to neural MT and approaches using Large Language Models (LLMs), there is an associated impact on climate change, as the models built by multinational corporations are massive. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.633</span></span>They are hugely expensive to train, consume large amounts of electricity, and output huge volumes of kgCO2 to boot.However, smaller models which still perform to a high level of quality can be built with much lower carbon footprints, and tuning pre-trained models saves on the requirement to train from scratch.We also discuss the possible detrimental effects of MT on translators and other users.The topics of copyright and ownership of data are discussed, as well as ethical considerations on data and MT use.Finally, we show how if done properly, using MT in crisis scenarios can save lives, and we provide a method of how this might be done.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20959v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20959v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Patients Speak, AI Listens: LLM-based Analysis of Online Reviews Uncovers Key Drivers for Urgent Care Satisfaction
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Investigating the public experience of urgent care facilities is essential for promoting community healthcare development.Traditional survey methods often fall short due to limited scope, time, and spatial coverage.Crowdsourcing through online reviews or social media offers a valuable approach to gaining such insights.With recent advancements in large language models (LLMs), extracting nuanced perceptions from reviews has become feasible.This study collects Google Maps reviews across the DMV and Florida areas and conducts prompt engineering with the GPT model to analyze the aspect-based sentiment of urgent care.We first analyze the geospatial patterns of various aspects, including interpersonal factors, operational efficiency, technical quality, finances, and facilities.<span class='px-1 mx-1 bg-yellow-200'>Next, we determine Census Block Group(CBG)-level characteristics underpinning differences in public perception, including population density, median income, GINI Index, rent-to-income ratio, household below poverty rate, no insurance rate, and unemployment rate. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.629</span></span>Our results show that interpersonal factors and operational efficiency emerge as the strongest determinants of patient satisfaction in urgent care, while technical quality, finances, and facilities show no significant independent effects when adjusted for in multivariate models.<span class='px-1 mx-1 bg-yellow-200'>Among socioeconomic and demographic factors, only population density demonstrates a significant but modest association with patient ratings, while the remaining factors exhibit no significant correlations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.669</span></span>Overall, this study highlights the potential of crowdsourcing to uncover the key factors that matter to residents and provide valuable insights for stakeholders to improve public satisfaction with urgent care.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20981v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20981v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Can Large Language Models Predict Associations Among Human Attitudes?
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Prior work has shown that large language models (LLMs) can predict human attitudes based on other attitudes, but this work has largely focused on predictions from highly similar and interrelated attitudes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.73</span></span><span class='px-1 mx-1 bg-yellow-200'>In contrast, human attitudes are often strongly associated even across disparate and dissimilar topics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.808</span></span><span class='px-1 mx-1 bg-yellow-200'>Using a novel dataset of human responses toward diverse attitude statements, we found that a frontier language model (GPT-4o) was able to recreate the pairwise correlations among individual attitudes and to predict individuals' attitudes from one another. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.71</span></span><span class='px-1 mx-1 bg-yellow-200'>Crucially, in an advance over prior work, we tested GPT-4o's ability to predict in the absence of surface-similarity between attitudes, finding that while surface similarity improves prediction accuracy, the model was still highly-capable of generating meaningful social inferences between dissimilar attitudes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.741</span></span>Altogether, our findings indicate that LLMs capture crucial aspects of the deeper, latent structure of human belief systems.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.21011v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.21011v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
           <td></td>
           <td>
             <h2 class="text-2xl tracking-tight pt-4 font-bold">LLMs in Education Research</h2>
@@ -3103,6 +3103,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                StepGrade: Grading Programming Assignments with Context-Aware LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.535</span></span><span class='px-1 mx-1 bg-yellow-200'>To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.627</span></span><span class='px-1 mx-1 bg-yellow-200'>Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.508</span></span><span class='px-1 mx-1 bg-yellow-200'>This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.505</span></span>Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation.This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.<span class='px-1 mx-1 bg-yellow-200'>To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.537</span></span>The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.<span class='px-1 mx-1 bg-yellow-200'>Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.532</span></span><span class='px-1 mx-1 bg-yellow-200'>By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.702</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Clean & Clear: Feasibility of Safe LLM Clinical Guidance
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Background:   Clinical guidelines are central to safe evidence-based medicine in modern healthcare, providing diagnostic criteria, treatment options and monitoring advice for a wide range of illnesses.LLM-empowered chatbots have shown great promise in Healthcare Q&A tasks, offering the potential to provide quick and accurate responses to medical inquiries.   <span class='px-1 mx-1 bg-yellow-200'>Our main objective was the development and preliminary assessment of an LLM-empowered chatbot software capable of reliably answering clinical guideline questions using University College London Hospital (UCLH) clinical guidelines.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.583</span></span>Methods: We used the open-weight Llama-3.1-8B LLM to extract relevant information from the UCLH guidelines to answer questions.Our approach highlights the safety and reliability of referencing information over its interpretation and response generation.Seven doctors from the ward assessed the chatbot's performance by comparing its answers to the gold standard.   Results:Our chatbot demonstrates promising performance in terms of relevance, with ~73% of its responses rated as very relevant, showcasing a strong understanding of the clinical context.Importantly, our chatbot achieves a recall of 0.98 for extracted guideline lines, substantially minimising the risk of missing critical information.Approximately 78% of responses were rated satisfactory in terms of completeness.A small portion (~14.5%) contained minor unnecessary information, indicating occasional lapses in precision.The chatbot' showed high efficiency, with an average completion time of 10 seconds, compared to 30 seconds for human respondents.Evaluation of clinical reasoning showed that 72% of the chatbot's responses were without flaws.Our chatbot demonstrates significant potential to speed up and improve the process of accessing locally relevant clinical information for healthcare professionals.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20953v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20953v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 RALLRec+: Retrieval Augmented Large Language Model Recommendation with Reasoning
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3220,58 +3272,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2503.20666v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                StepGrade: Grading Programming Assignments with Context-Aware LLMs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.535</span></span><span class='px-1 mx-1 bg-yellow-200'>To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.627</span></span><span class='px-1 mx-1 bg-yellow-200'>Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.508</span></span><span class='px-1 mx-1 bg-yellow-200'>This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.505</span></span>Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation.This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.<span class='px-1 mx-1 bg-yellow-200'>To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.537</span></span>The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.<span class='px-1 mx-1 bg-yellow-200'>Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.532</span></span><span class='px-1 mx-1 bg-yellow-200'>By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.702</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Clean & Clear: Feasibility of Safe LLM Clinical Guidance
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Background:   Clinical guidelines are central to safe evidence-based medicine in modern healthcare, providing diagnostic criteria, treatment options and monitoring advice for a wide range of illnesses.LLM-empowered chatbots have shown great promise in Healthcare Q&A tasks, offering the potential to provide quick and accurate responses to medical inquiries.   <span class='px-1 mx-1 bg-yellow-200'>Our main objective was the development and preliminary assessment of an LLM-empowered chatbot software capable of reliably answering clinical guideline questions using University College London Hospital (UCLH) clinical guidelines.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.583</span></span>Methods: We used the open-weight Llama-3.1-8B LLM to extract relevant information from the UCLH guidelines to answer questions.Our approach highlights the safety and reliability of referencing information over its interpretation and response generation.Seven doctors from the ward assessed the chatbot's performance by comparing its answers to the gold standard.   Results:Our chatbot demonstrates promising performance in terms of relevance, with ~73% of its responses rated as very relevant, showcasing a strong understanding of the clinical context.Importantly, our chatbot achieves a recall of 0.98 for extracted guideline lines, substantially minimising the risk of missing critical information.Approximately 78% of responses were rated satisfactory in terms of completeness.A small portion (~14.5%) contained minor unnecessary information, indicating occasional lapses in precision.The chatbot' showed high efficiency, with an average completion time of 10 seconds, compared to 30 seconds for human respondents.Evaluation of clinical reasoning showed that 72% of the chatbot's responses were without flaws.Our chatbot demonstrates significant potential to speed up and improve the process of accessing locally relevant clinical information for healthcare professionals.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20953v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20953v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3810,32 +3810,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                RALLRec+: Retrieval Augmented Large Language Model Recommendation with Reasoning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) have been integrated into recommender systems to enhance user behavior comprehension. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.72</span></span>The Retrieval Augmented Generation (RAG) technique is further incorporated into these systems to retrieve more relevant items and improve system performance.However, existing RAG methods have two shortcomings.\textit{(i)} In the \textit{retrieval} stage, they rely primarily on textual semantics and often fail to incorporate the most relevant items, thus constraining system effectiveness.\textit{(ii)}In the \textit{generation} stage, they lack explicit chain-of-thought reasoning, further limiting their potential.   In this paper, we propose Representation learning and \textbf{R}easoning empowered retrieval-\textbf{A}ugmented \textbf{L}arge \textbf{L}anguage model \textbf{Rec}ommendation (RALLRec+).<span class='px-1 mx-1 bg-yellow-200'>Specifically, for the retrieval stage, we prompt LLMs to generate detailed item descriptions and perform joint representation learning, combining textual and collaborative signals extracted from the LLM and recommendation models, respectively. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span><span class='px-1 mx-1 bg-yellow-200'>To account for the time-varying nature of user interests, we propose a simple yet effective reranking method to capture preference dynamics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.702</span></span><span class='px-1 mx-1 bg-yellow-200'>For the generation phase, we first evaluate reasoning LLMs on recommendation tasks, uncovering valuable insights. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span>Then we introduce knowledge-injected prompting and consistency-based merging approach to integrate reasoning LLMs with general-purpose LLMs, enhancing overall performance.Extensive experiments on three real world datasets validate our method's effectiveness.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20430v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20430v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Leveraging LLMs, IDEs, and Semantic Embeddings for Automated Move Method Refactoring
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3849,6 +3823,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2503.20934v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                RALLRec+: Retrieval Augmented Large Language Model Recommendation with Reasoning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) have been integrated into recommender systems to enhance user behavior comprehension. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.72</span></span>The Retrieval Augmented Generation (RAG) technique is further incorporated into these systems to retrieve more relevant items and improve system performance.However, existing RAG methods have two shortcomings.\textit{(i)} In the \textit{retrieval} stage, they rely primarily on textual semantics and often fail to incorporate the most relevant items, thus constraining system effectiveness.\textit{(ii)}In the \textit{generation} stage, they lack explicit chain-of-thought reasoning, further limiting their potential.   In this paper, we propose Representation learning and \textbf{R}easoning empowered retrieval-\textbf{A}ugmented \textbf{L}arge \textbf{L}anguage model \textbf{Rec}ommendation (RALLRec+).<span class='px-1 mx-1 bg-yellow-200'>Specifically, for the retrieval stage, we prompt LLMs to generate detailed item descriptions and perform joint representation learning, combining textual and collaborative signals extracted from the LLM and recommendation models, respectively. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span><span class='px-1 mx-1 bg-yellow-200'>To account for the time-varying nature of user interests, we propose a simple yet effective reranking method to capture preference dynamics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.702</span></span><span class='px-1 mx-1 bg-yellow-200'>For the generation phase, we first evaluate reasoning LLMs on recommendation tasks, uncovering valuable insights. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span>Then we introduce knowledge-injected prompting and consistency-based merging approach to integrate reasoning LLMs with general-purpose LLMs, enhancing overall performance.Extensive experiments on three real world datasets validate our method's effectiveness.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20430v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20430v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -5151,6 +5151,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                CodeTool: Enhancing Programmatic Tool Invocation of LLMs via Process Supervision
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Tool invocation significantly enhances the capabilities of Large Language Models (LLMs), yet challenges persist, particularly in complex task scenarios.Current methods, such as instruction-enhanced reasoning and supervised fine-tuning, often result in unnecessarily long reasoning paths and face difficulties in verifying the correctness of intermediate steps.<span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose CodeTool, a novel framework for stepwise code generation that improves LLM tool invocation by leveraging the concise and easily verifiable nature of code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.841</span></span><span class='px-1 mx-1 bg-yellow-200'>CodeTool incorporates two distinct process rewards: the On-the-spot Reward, which provides immediate feedback on the accuracy of each tool invocation, and the Latent Reward, which assesses the contribution of each step toward overall task completion. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span>By maximizing the cumulative reward of the On-the-spot and Latend Rewards at each step, LLMs are guided to follow efficient and accurate reasoning paths.Extensive experiments on StableToolBench and RestBench-TMDB demonstrate the superiority of CodeTool over existing approaches.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20840v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20840v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                StepGrade: Grading Programming Assignments with Context-Aware LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.696</span></span>To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators.Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students.This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges.Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation.This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.<span class='px-1 mx-1 bg-yellow-200'>To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.688</span></span>The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability.<span class='px-1 mx-1 bg-yellow-200'>By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.8</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 sudo rm -rf agentic_security
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -5294,58 +5346,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2503.20589v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                CodeTool: Enhancing Programmatic Tool Invocation of LLMs via Process Supervision
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Tool invocation significantly enhances the capabilities of Large Language Models (LLMs), yet challenges persist, particularly in complex task scenarios.Current methods, such as instruction-enhanced reasoning and supervised fine-tuning, often result in unnecessarily long reasoning paths and face difficulties in verifying the correctness of intermediate steps.<span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose CodeTool, a novel framework for stepwise code generation that improves LLM tool invocation by leveraging the concise and easily verifiable nature of code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.841</span></span><span class='px-1 mx-1 bg-yellow-200'>CodeTool incorporates two distinct process rewards: the On-the-spot Reward, which provides immediate feedback on the accuracy of each tool invocation, and the Latent Reward, which assesses the contribution of each step toward overall task completion. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span>By maximizing the cumulative reward of the On-the-spot and Latend Rewards at each step, LLMs are guided to follow efficient and accurate reasoning paths.Extensive experiments on StableToolBench and RestBench-TMDB demonstrate the superiority of CodeTool over existing approaches.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20840v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20840v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-03-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                StepGrade: Grading Programming Assignments with Context-Aware LLMs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Grading programming assignments is a labor-intensive and time-consuming process that demands careful evaluation across multiple dimensions of the code. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.696</span></span>To overcome these challenges, automated grading systems are leveraged to enhance efficiency and reduce the workload on educators.Traditional automated grading systems often focus solely on correctness, failing to provide interpretable evaluations or actionable feedback for students.This study introduces StepGrade, which explores the use of Chain-of-Thought (CoT) prompting with Large Language Models (LLMs) as an innovative solution to address these challenges.Unlike regular prompting, which offers limited and surface-level outputs, CoT prompting allows the model to reason step-by-step through the interconnected grading criteria, i.e., functionality, code quality, and algorithmic efficiency, ensuring a more comprehensive and transparent evaluation.This interconnectedness necessitates the use of CoT to systematically address each criterion while considering their mutual influence.<span class='px-1 mx-1 bg-yellow-200'>To empirically validate the efficiency of StepGrade, we conducted a case study involving 30 Python programming assignments across three difficulty levels (easy, intermediate, and advanced). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.688</span></span>The approach is validated against expert human evaluations to assess its consistency, accuracy, and fairness.Results demonstrate that CoT prompting significantly outperforms regular prompting in both grading quality and interpretability.<span class='px-1 mx-1 bg-yellow-200'>By reducing the time and effort required for manual grading, this research demonstrates the potential of GPT-4 with CoT prompting to revolutionize programming education through scalable and pedagogically effective automated grading systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.8</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2503.20851v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2503.20851v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
