@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-05-11.</p><br/>
+            <p>Generated on 2025-05-12.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -30,6 +30,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Prompt Engineering in Large Language Models</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Can Prompting LLMs Unlock Hate Speech Detection across Languages? A Zero-shot and Few-shot Study
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Despite growing interest in automated hate speech detection, most existing approaches overlook the linguistic diversity of online content.Multilingual instruction-tuned large language models such as LLaMA, Aya, Qwen, and BloomZ offer promising capabilities across languages, but their effectiveness in identifying hate speech through zero-shot and few-shot prompting remains underexplored.<span class='px-1 mx-1 bg-yellow-200'>This work evaluates LLM prompting-based detection across eight non-English languages, utilizing several prompting techniques and comparing them to fine-tuned encoder models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.832</span></span>We show that while zero-shot and few-shot prompting lag behind fine-tuned encoder models on most of the real-world evaluation sets, they achieve better generalization on functional tests for hate speech detection.<span class='px-1 mx-1 bg-yellow-200'>Our study also reveals that prompt design plays a critical role, with each language often requiring customized prompting techniques to maximize performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.905</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06149v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2505.06149v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
           </td>
@@ -634,6 +660,58 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Free and Fair Hardware: A Pathway to Copyright Infringement-Free Verilog Generation using LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Limitations in Large Language Model (LLM) capabilities for hardware design tasks, such as generating functional Verilog codes, have motivated various fine-tuning optimizations utilizing curated hardware datasets from open-source repositories.However, these datasets remain limited in size and contain minimal checks on licensing for reuse, resulting in potential copyright violations by fine-tuned LLMs.<span class='px-1 mx-1 bg-yellow-200'>Therefore, we propose an evaluation benchmark to estimate the risk of Verilog-trained LLMs to generate copyright-protected codes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.609</span></span>To minimize this risk, we present an open-source Verilog dataset, FreeSet, containing over 220k files, along with the automated dataset curation framework utilized to provide additional guarantees of fair-use Verilog data.We then execute an LLM fine-tuning framework consisting of continual pre-training, resulting in a fine-tuned Llama model for Verilog, FreeV.<span class='px-1 mx-1 bg-yellow-200'>Our results indicate that FreeV demonstrates the smallest risk of copyright-infringement among prior works, with only a 3% violation rate. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span><span class='px-1 mx-1 bg-yellow-200'>Furthermore, experimental results demonstrate improvements in Verilog generation functionality over its baseline model, improving VerilogEval pass@10 rates by over 10%. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.622</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06096v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2505.06096v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLMs Get Lost In Multi-Turn Conversation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) are conversational interfaces.As such, LLMs have the potential to assist their users not only when they can fully specify the task at hand, but also to help them define, explore, and refine what they need through multi-turn conversational exchange.Although analysis of LLM conversation logs has confirmed that underspecification occurs frequently in user instructions, LLM evaluation has predominantly focused on the single-turn, fully-specified instruction setting.In this work, we perform large-scale simulation experiments to compare LLM performance in single- and multi-turn settings.Our experiments confirm that all the top open- and closed-weight LLMs we test exhibit significantly lower performance in multi-turn conversations than single-turn, with an average drop of 39% across six generation tasks.Analysis of 200,000+ simulated conversations decomposes the performance degradation into two components: a minor loss in aptitude and a significant increase in unreliability.<span class='px-1 mx-1 bg-yellow-200'>We find that LLMs often make assumptions in early turns and prematurely attempt to generate final solutions, on which they overly rely. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.691</span></span>In simpler terms, we discover that *when LLMs take a wrong turn in a conversation, they get lost and do not recover*.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06120v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2505.06120v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
           </td>
           <td>
@@ -1107,84 +1185,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Procedural Memory Is Not All You Need: Bridging Cognitive Gaps in LLM-Based Agents
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) represent a landmark achievement in Artificial Intelligence (AI), demonstrating unprecedented proficiency in procedural tasks such as text generation, code completion, and conversational coherence.These capabilities stem from their architecture, which mirrors human procedural memory -- the brain's ability to automate repetitive, pattern-driven tasks through practice.<span class='px-1 mx-1 bg-yellow-200'>However, as LLMs are increasingly deployed in real-world applications, it becomes impossible to ignore their limitations operating in complex, unpredictable environments. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span>This paper argues that LLMs, while transformative, are fundamentally constrained by their reliance on procedural memory.To create agents capable of navigating ``wicked'' learning environments -- where rules shift, feedback is ambiguous, and novelty is the norm -- we must augment LLMs with semantic memory and associative learning systems.By adopting a modular architecture that decouples these cognitive functions, we can bridge the gap between narrow procedural expertise and the adaptive intelligence required for real-world problem-solving.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.03434v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2505.03434v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-06</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                The Steganographic Potentials of Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The potential for large language models (LLMs) to hide messages within plain text (steganography) poses a challenge to detection and thwarting of unaligned AI agents, and undermines faithfulness of LLMs reasoning.We explore the steganographic capabilities of LLMs fine-tuned via reinforcement learning (RL) to: (1) develop covert encoding schemes, (2) engage in steganography when prompted, and (3) utilize steganography in realistic scenarios where hidden reasoning is likely, but not prompted.<span class='px-1 mx-1 bg-yellow-200'>In these scenarios, we detect the intention of LLMs to hide their reasoning as well as their steganography performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.683</span></span><span class='px-1 mx-1 bg-yellow-200'>Our findings in the fine-tuning experiments as well as in behavioral non fine-tuning evaluations reveal that while current models exhibit rudimentary steganographic abilities in terms of security and capacity, explicit algorithmic guidance markedly enhances their capacity for information concealment. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.627</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.03439v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2505.03439v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-06</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                A Hashgraph-Inspired Consensus Mechanism for Reliable Multi-Model Reasoning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Inconsistent outputs and hallucinations from large language models (LLMs) are major obstacles to reliable AI systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.772</span></span>When different proprietary reasoning models (RMs), such as those by OpenAI, Google, Anthropic, DeepSeek, and xAI, are given the same complex request, they often produce divergent results due to variations in training and inference.This paper proposes a novel consensus mechanism, inspired by distributed ledger technology, to validate and converge these outputs, treating each RM as a black-box peer.Building on the Hashgraph consensus algorithm, our approach employs gossip-about-gossip communication and virtual voting to achieve agreement among an ensemble of RMs.We present an architectural design for a prototype system in which RMs iteratively exchange and update their answers, using information from each round to improve accuracy and confidence in subsequent rounds.This approach goes beyond simple majority voting by incorporating the knowledge and cross-verification content of every model.We justify the feasibility of this Hashgraph-inspired consensus for AI ensembles and outline its advantages over traditional ensembling techniques in reducing nonfactual outputs.Preliminary considerations for implementation, evaluation criteria for convergence and accuracy, and potential challenges are discussed.The proposed mechanism demonstrates a promising direction for multi-agent AI systems to self-validate and deliver high-fidelity responses in complex tasks.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.03553v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2505.03553v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-06</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 LlamaFirewall: An open source guardrail system for building secure AI agents
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1210,6 +1210,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Security Challenges in LLM Development</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Can Prompting LLMs Unlock Hate Speech Detection across Languages? A Zero-shot and Few-shot Study
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Despite growing interest in automated hate speech detection, most existing approaches overlook the linguistic diversity of online content.<span class='px-1 mx-1 bg-yellow-200'>Multilingual instruction-tuned large language models such as LLaMA, Aya, Qwen, and BloomZ offer promising capabilities across languages, but their effectiveness in identifying hate speech through zero-shot and few-shot prompting remains underexplored. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.605</span></span>This work evaluates LLM prompting-based detection across eight non-English languages, utilizing several prompting techniques and comparing them to fine-tuned encoder models.We show that while zero-shot and few-shot prompting lag behind fine-tuned encoder models on most of the real-world evaluation sets, they achieve better generalization on functional tests for hate speech detection.Our study also reveals that prompt design plays a critical role, with each language often requiring customized prompting techniques to maximize performance.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06149v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2505.06149v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
           </td>
@@ -1683,6 +1709,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">HCI in Large Language Models</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLMs Get Lost In Multi-Turn Conversation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) are conversational interfaces.<span class='px-1 mx-1 bg-yellow-200'>As such, LLMs have the potential to assist their users not only when they can fully specify the task at hand, but also to help them define, explore, and refine what they need through multi-turn conversational exchange. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.646</span></span>Although analysis of LLM conversation logs has confirmed that underspecification occurs frequently in user instructions, LLM evaluation has predominantly focused on the single-turn, fully-specified instruction setting.In this work, we perform large-scale simulation experiments to compare LLM performance in single- and multi-turn settings.Our experiments confirm that all the top open- and closed-weight LLMs we test exhibit significantly lower performance in multi-turn conversations than single-turn, with an average drop of 39% across six generation tasks.Analysis of 200,000+ simulated conversations decomposes the performance degradation into two components: a minor loss in aptitude and a significant increase in unreliability.We find that LLMs often make assumptions in early turns and prematurely attempt to generate final solutions, on which they overly rely.In simpler terms, we discover that *when LLMs take a wrong turn in a conversation, they get lost and do not recover*.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06120v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2505.06120v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
           </td>
@@ -2287,32 +2339,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                LLaMA-Omni2: LLM-based Real-time Spoken Chatbot with Autoregressive Streaming Speech Synthesis
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Real-time, intelligent, and natural speech interaction is an essential part of the next-generation human-computer interaction.<span class='px-1 mx-1 bg-yellow-200'>Recent advancements have showcased the potential of building intelligent spoken chatbots based on large language models (LLMs). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.893</span></span>In this paper, we introduce LLaMA-Omni 2, a series of speech language models (SpeechLMs) ranging from 0.5B to 14B parameters, capable of achieving high-quality real-time speech interaction.LLaMA-Omni 2 is built upon the Qwen2.5 series models, integrating a speech encoder and an autoregressive streaming speech decoder.Despite being trained on only 200K multi-turn speech dialogue samples, LLaMA-Omni 2 demonstrates strong performance on several spoken question answering and speech instruction following benchmarks, surpassing previous state-of-the-art SpeechLMs like GLM-4-Voice, which was trained on millions of hours of speech data.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.02625v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2505.02625v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-05</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Exploring LLM-Powered Role and Action-Switching Pedagogical Agents for History Education in Virtual Reality
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2416,6 +2442,58 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Large Language Models in Social Sciences</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Can Prompting LLMs Unlock Hate Speech Detection across Languages? A Zero-shot and Few-shot Study
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Despite growing interest in automated hate speech detection, most existing approaches overlook the linguistic diversity of online content. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.756</span></span>Multilingual instruction-tuned large language models such as LLaMA, Aya, Qwen, and BloomZ offer promising capabilities across languages, but their effectiveness in identifying hate speech through zero-shot and few-shot prompting remains underexplored.This work evaluates LLM prompting-based detection across eight non-English languages, utilizing several prompting techniques and comparing them to fine-tuned encoder models.We show that while zero-shot and few-shot prompting lag behind fine-tuned encoder models on most of the real-world evaluation sets, they achieve better generalization on functional tests for hate speech detection.Our study also reveals that prompt design plays a critical role, with each language often requiring customized prompting techniques to maximize performance.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06149v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2505.06149v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                From Millions of Tweets to Actionable Insights: Leveraging LLMs for User Profiling
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Social media user profiling through content analysis is crucial for tasks like misinformation detection, engagement prediction, hate speech monitoring, and user behavior modeling. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.71</span></span>However, existing profiling techniques, including tweet summarization, attribute-based profiling, and latent representation learning, face significant limitations: they often lack transferability, produce non-interpretable features, require large labeled datasets, or rely on rigid predefined categories that limit adaptability.We introduce a novel large language model (LLM)-based approach that leverages domain-defining statements, which serve as key characteristics outlining the important pillars of a domain as foundations for profiling.Our two-stage method first employs semi-supervised filtering with a domain-specific knowledge base, then generates both abstractive (synthesized descriptions) and extractive (representative tweet selections) user profiles.By harnessing LLMs' inherent knowledge with minimal human validation, our approach is adaptable across domains while reducing the need for large labeled datasets.Our method generates interpretable natural language user profiles, condensing extensive user data into a scale that unlocks LLMs' reasoning and knowledge capabilities for downstream social network tasks.<span class='px-1 mx-1 bg-yellow-200'>We contribute a Persian political Twitter (X) dataset and an LLM-based evaluation framework with human validation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.689</span></span>Experimental results show our method significantly outperforms state-of-the-art LLM-based and traditional methods by 9.8%, demonstrating its effectiveness in creating flexible, adaptable, and interpretable user profiles.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06184v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2505.06184v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
           </td>
@@ -2988,25 +3066,30 @@
           </div>
         </td>
       </tr><tr>
+          <td></td>
+          <td>
+            <h2 class="text-2xl tracking-tight pt-4 font-bold">LLMs in Education Research</h2>
+          </td>
+        </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-05</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Developing A Framework to Support Human Evaluation of Bias in Generated Free Response Text
+                LLMs Get Lost In Multi-Turn Conversation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>LLM evaluation is challenging even the case of base models.In real world deployments, evaluation is further complicated by the interplay of task specific prompts and experiential context.At scale, bias evaluation is often based on short context, fixed choice benchmarks that can be rapidly evaluated, however, these can lose validity when the LLMs' deployed context differs.Large scale human evaluation is often seen as too intractable and costly.<span class='px-1 mx-1 bg-yellow-200'>Here we present our journey towards developing a semi-automated bias evaluation framework for free text responses that has human insights at its core. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.61</span></span>We discuss how we developed an operational definition of bias that helped us automate our pipeline and a methodology for classifying bias beyond multiple choice.<span class='px-1 mx-1 bg-yellow-200'>We additionally comment on how human evaluation helped us uncover problematic templates in a bias benchmark. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.689</span></span></p>
+                  <p>Large Language Models (LLMs) are conversational interfaces.<span class='px-1 mx-1 bg-yellow-200'>As such, LLMs have the potential to assist their users not only when they can fully specify the task at hand, but also to help them define, explore, and refine what they need through multi-turn conversational exchange. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.569</span></span>Although analysis of LLM conversation logs has confirmed that underspecification occurs frequently in user instructions, LLM evaluation has predominantly focused on the single-turn, fully-specified instruction setting.In this work, we perform large-scale simulation experiments to compare LLM performance in single- and multi-turn settings.Our experiments confirm that all the top open- and closed-weight LLMs we test exhibit significantly lower performance in multi-turn conversations than single-turn, with an average drop of 39% across six generation tasks.Analysis of 200,000+ simulated conversations decomposes the performance degradation into two components: a minor loss in aptitude and a significant increase in unreliability.We find that LLMs often make assumptions in early turns and prematurely attempt to generate final solutions, on which they overly rely.In simpler terms, we discover that *when LLMs take a wrong turn in a conversation, they get lost and do not recover*.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.03053v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06120v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.03053v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06120v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3014,11 +3097,6 @@
           </div>
         </td>
       </tr><tr>
-          <td></td>
-          <td>
-            <h2 class="text-2xl tracking-tight pt-4 font-bold">LLMs in Education Research</h2>
-          </td>
-        </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
           </td>
@@ -4226,32 +4304,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Improving LLM Interpretability and Performance via Guided Embedding Refinement for Sequential Recommendation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>The fast development of Large Language Models (LLMs) offers growing opportunities to further improve sequential recommendation systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.755</span></span>Yet for some practitioners, integrating LLMs to their existing base recommendation systems raises questions about model interpretability, transparency and related safety.<span class='px-1 mx-1 bg-yellow-200'>To partly alleviate challenges from these questions, we propose guided embedding refinement, a method that carries out a guided and interpretable usage of LLM to enhance the embeddings associated with the base recommendation system. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.859</span></span><span class='px-1 mx-1 bg-yellow-200'>Instead of directly using LLMs as the backbone of sequential recommendation systems, we utilize them as auxiliary tools to emulate the sales logic of recommendation and generate guided embeddings that capture domain-relevant semantic information on interpretable attributes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span>Benefiting from the strong generalization capabilities of the guided embedding, we construct refined embedding by using the guided embedding and reduced-dimension version of the base embedding.<span class='px-1 mx-1 bg-yellow-200'>We then integrate the refined embedding into the recommendation module for training and inference. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.638</span></span><span class='px-1 mx-1 bg-yellow-200'>A range of numerical experiments demonstrate that guided embedding is adaptable to various given existing base embedding models, and generalizes well across different recommendation tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.814</span></span><span class='px-1 mx-1 bg-yellow-200'>The numerical results show that the refined embedding not only improves recommendation performance, achieving approximately $10\%$ to $50\%$ gains in Mean Reciprocal Rank (MRR), Recall rate, and Normalized Discounted Cumulative Gain (NDCG), but also enhances interpretability, as evidenced by case studies. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.778</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2504.11658v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2504.11658v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-04-15</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Exploring Backdoor Attack and Defense for LLM-empowered Recommendations
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -4278,24 +4330,24 @@
           </td>
         </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                QualBench: Benchmarking Chinese LLMs with Localized Professional Qualifications for Vertical Domain Evaluation
+                Assessing Tenstorrent's RISC-V MatMul Acceleration Capabilities
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The rapid advancement of Chinese large language models (LLMs) underscores the need for domain-specific evaluations to ensure reliable applications.However, existing benchmarks often lack coverage in vertical domains and offer limited insights into the Chinese working context.<span class='px-1 mx-1 bg-yellow-200'>Leveraging qualification exams as a unified framework for human expertise evaluation, we introduce QualBench, the first multi-domain Chinese QA benchmark dedicated to localized assessment of Chinese LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.312</span></span>The dataset includes over 17,000 questions across six vertical domains, with data selections grounded in 24 Chinese qualifications to closely align with national policies and working standards.<span class='px-1 mx-1 bg-yellow-200'>Through comprehensive evaluation, the Qwen2.5 model outperformed the more advanced GPT-4o, with Chinese LLMs consistently surpassing non-Chinese models, highlighting the importance of localized domain knowledge in meeting qualification requirements. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.351</span></span><span class='px-1 mx-1 bg-yellow-200'>The best performance of 75.26% reveals the current gaps in domain coverage within model capabilities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.352</span></span><span class='px-1 mx-1 bg-yellow-200'>Furthermore, we present the failure of LLM collaboration with crowdsourcing mechanisms and suggest the opportunities for multi-domain RAG knowledge enhancement and vertical domain LLM training with Federated Learning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.468</span></span></p>
+                  <p>The increasing demand for generative AI as Large Language Models (LLMs) services has driven the need for specialized hardware architectures that optimize computational efficiency and energy consumption.<span class='px-1 mx-1 bg-yellow-200'>This paper evaluates the performance of the Tenstorrent Grayskull e75 RISC-V accelerator for basic linear algebra kernels at reduced numerical precision, a fundamental operation in LLM computations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.559</span></span><span class='px-1 mx-1 bg-yellow-200'>We present a detailed characterization of Grayskull's execution model, gridsize, matrix dimensions, data formats, and numerical precision impact computational efficiency. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.586</span></span>Furthermore, we compare Grayskull's performance against state-of-the-art architectures with tensor acceleration, including Intel Sapphire Rapids processors and two NVIDIA GPUs (V100 and A100).Whilst NVIDIA GPUs dominate raw performance, Grayskull demonstrates a competitive trade-off between power consumption and computational throughput, reaching a peak of 1.55 TFLOPs/Watt with BF16.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05225v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06085v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05225v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06085v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4304,24 +4356,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Latte: Transfering LLMs` Latent-level Knowledge for Few-shot Tabular Learning
+                Free and Fair Hardware: A Pathway to Copyright Infringement-Free Verilog Generation using LLMs
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Few-shot tabular learning, in which machine learning models are trained with a limited amount of labeled data, provides a cost-effective approach to addressing real-world challenges. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.309</span></span>The advent of Large Language Models (LLMs) has sparked interest in leveraging their pre-trained knowledge for few-shot tabular learning.Despite promising results, existing approaches either rely on test-time knowledge extraction, which introduces undesirable latency, or text-level knowledge, which leads to unreliable feature engineering.<span class='px-1 mx-1 bg-yellow-200'>To overcome these limitations, we propose Latte, a training-time knowledge extraction framework that transfers the latent prior knowledge within LLMs to optimize a more generalized downstream model. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.542</span></span><span class='px-1 mx-1 bg-yellow-200'>Latte enables general knowledge-guided downstream tabular learning, facilitating the weighted fusion of information across different feature values while reducing the risk of overfitting to limited labeled data. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.344</span></span><span class='px-1 mx-1 bg-yellow-200'>Furthermore, Latte is compatible with existing unsupervised pre-training paradigms and effectively utilizes available unlabeled samples to overcome the performance limitations imposed by an extremely small labeled dataset. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.536</span></span>Extensive experiments on various few-shot tabular learning benchmarks demonstrate the superior performance of Latte, establishing it as a state-of-the-art approach in this domain</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Limitations in Large Language Model (LLM) capabilities for hardware design tasks, such as generating functional Verilog codes, have motivated various fine-tuning optimizations utilizing curated hardware datasets from open-source repositories. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.572</span></span><span class='px-1 mx-1 bg-yellow-200'>However, these datasets remain limited in size and contain minimal checks on licensing for reuse, resulting in potential copyright violations by fine-tuned LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.448</span></span><span class='px-1 mx-1 bg-yellow-200'>Therefore, we propose an evaluation benchmark to estimate the risk of Verilog-trained LLMs to generate copyright-protected codes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.509</span></span><span class='px-1 mx-1 bg-yellow-200'>To minimize this risk, we present an open-source Verilog dataset, FreeSet, containing over 220k files, along with the automated dataset curation framework utilized to provide additional guarantees of fair-use Verilog data. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.639</span></span><span class='px-1 mx-1 bg-yellow-200'>We then execute an LLM fine-tuning framework consisting of continual pre-training, resulting in a fine-tuned Llama model for Verilog, FreeV. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.576</span></span><span class='px-1 mx-1 bg-yellow-200'>Our results indicate that FreeV demonstrates the smallest risk of copyright-infringement among prior works, with only a 3% violation rate. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.318</span></span><span class='px-1 mx-1 bg-yellow-200'>Furthermore, experimental results demonstrate improvements in Verilog generation functionality over its baseline model, improving VerilogEval pass@10 rates by over 10%. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.304</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05237v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06096v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05237v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06096v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4330,24 +4382,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                HEXGEN-TEXT2SQL: Optimizing LLM Inference Request Scheduling for Agentic Text-to-SQL Workflow
+                LLMs Outperform Experts on Challenging Biology Benchmarks
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advances in leveraging the agentic paradigm of large language models (LLMs) utilization have significantly enhanced Text-to-SQL capabilities, enabling users without specialized database expertise to query data intuitively. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.352</span></span><span class='px-1 mx-1 bg-yellow-200'>However, deploying these agentic LLM-based Text-to-SQL systems in production poses substantial challenges due to their inherently multi-stage workflows, stringent latency constraints, and potentially heterogeneous GPU infrastructure in enterprise environments. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span><span class='px-1 mx-1 bg-yellow-200'>Current LLM serving frameworks lack effective mechanisms for handling interdependent inference tasks, dynamic latency variability, and resource heterogeneity, leading to suboptimal performance and frequent service-level objective (SLO) violations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.577</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we introduce HEXGEN-TEXT2SQL, a novel framework designed explicitly to schedule and execute agentic multi-stage LLM-based Text-to-SQL workflows on heterogeneous GPU clusters that handle multi-tenant end-to-end queries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.597</span></span><span class='px-1 mx-1 bg-yellow-200'>HEXGEN-TEXT2SQL introduce a hierarchical scheduling approach combining global workload-balanced task dispatching and local adaptive urgency-guided prioritization, guided by a systematic analysis of agentic Text-to-SQL workflows. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.376</span></span><span class='px-1 mx-1 bg-yellow-200'>Additionally, we propose a lightweight simulation-based method for tuning critical scheduling hyperparameters, further enhancing robustness and adaptability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.597</span></span><span class='px-1 mx-1 bg-yellow-200'>Our extensive evaluation on realistic Text-to-SQL benchmarks demonstrates that HEXGEN-TEXT2SQL significantly outperforms state-of-the-art LLM serving frameworks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.543</span></span><span class='px-1 mx-1 bg-yellow-200'>Specifically, HEXGEN-TEXT2SQL reduces latency deadlines by up to 1.67$\times$ (average: 1.41$\times$) and improves system throughput by up to 1.75$\times$ (average: 1.65$\times$) compared to vLLM under diverse, realistic workload conditions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.421</span></span>Our code is available at https://github.com/Relaxed-System-Lab/Hexgen-Flow.</p>
+                  <p>This study systematically evaluates 27 frontier Large Language Models on eight diverse biology benchmarks spanning molecular biology, genetics, cloning, virology, and biosecurity.<span class='px-1 mx-1 bg-yellow-200'>Models from major AI developers released between November 2022 and April 2025 were assessed through ten independent runs per benchmark. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.427</span></span>The findings reveal dramatic improvements in biological capabilities.Top model performance increased more than 4-fold on the challenging text-only subset of the Virology Capabilities Test over the study period, with the top model now performing twice as well as expert virologists.Several models now match or exceed expert-level performance on other challenging benchmarks, including LAB-Bench CloningScenarios and the biology subsets of GPQA and WMDP.Contrary to expectations, chain-of-thought did not substantially improve performance over zero-shot evaluation, while extended reasoning features in o3-mini and Claude 3.7 Sonnet typically improved performance as predicted by inference scaling.Benchmarks such as PubMedQA and the MMLU and WMDP biology subsets exhibited performance plateaus well below 100%, suggesting benchmark saturation and errors in the underlying benchmark data.The analysis highlights the need for more sophisticated evaluation methodologies as AI systems continue to advance.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05286v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06108v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05286v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06108v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4356,24 +4408,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                ICon: In-Context Contribution for Automatic Data Selection
+                LLMs Get Lost In Multi-Turn Conversation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Data selection for instruction tuning is essential for improving the performance of Large Language Models (LLMs) and reducing training cost. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.563</span></span>However, existing automated selection methods either depend on computationally expensive gradient-based measures or manually designed heuristics, which may fail to fully exploit the intrinsic attributes of data.<span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose In-context Learning for Contribution Measurement (ICon), a novel gradient-free method that takes advantage of the implicit fine-tuning nature of in-context learning (ICL) to measure sample contribution without gradient computation or manual indicators engineering. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.417</span></span>ICon offers a computationally efficient alternative to gradient-based methods and reduces human inductive bias inherent in heuristic-based approaches.<span class='px-1 mx-1 bg-yellow-200'>ICon comprises three components and identifies high-contribution data by assessing performance shifts under implicit learning through ICL. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.314</span></span>Extensive experiments on three LLMs across 12 benchmarks and 5 pairwise evaluation sets demonstrate the effectiveness of ICon.<span class='px-1 mx-1 bg-yellow-200'>Remarkably, on LLaMA3.1-8B, models trained on 15% of ICon-selected data outperform full datasets by 5.42% points and exceed the best performance of widely used selection methods by 2.06% points. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.382</span></span>We further analyze high-contribution samples selected by ICon, which show both diverse tasks and appropriate difficulty levels, rather than just the hardest ones.</p>
+                  <p>Large Language Models (LLMs) are conversational interfaces.As such, LLMs have the potential to assist their users not only when they can fully specify the task at hand, but also to help them define, explore, and refine what they need through multi-turn conversational exchange.<span class='px-1 mx-1 bg-yellow-200'>Although analysis of LLM conversation logs has confirmed that underspecification occurs frequently in user instructions, LLM evaluation has predominantly focused on the single-turn, fully-specified instruction setting. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.328</span></span><span class='px-1 mx-1 bg-yellow-200'>In this work, we perform large-scale simulation experiments to compare LLM performance in single- and multi-turn settings. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.418</span></span>Our experiments confirm that all the top open- and closed-weight LLMs we test exhibit significantly lower performance in multi-turn conversations than single-turn, with an average drop of 39% across six generation tasks.Analysis of 200,000+ simulated conversations decomposes the performance degradation into two components: a minor loss in aptitude and a significant increase in unreliability.We find that LLMs often make assumptions in early turns and prematurely attempt to generate final solutions, on which they overly rely.In simpler terms, we discover that *when LLMs take a wrong turn in a conversation, they get lost and do not recover*.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05327v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06120v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05327v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06120v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4382,24 +4434,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                FLAM: Frame-Wise Language-Audio Modeling
+                ELA-ZSON: Efficient Layout-Aware Zero-Shot Object Navigation Agent with Hierarchical Planning
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Recent multi-modal audio-language models (ALMs) excel at text-audio retrieval but struggle with frame-wise audio understanding.Prior works use temporal-aware labels or unsupervised training to improve frame-wise capabilities, but they still lack fine-grained labeling capability to pinpoint when an event occurs.<span class='px-1 mx-1 bg-yellow-200'>While traditional sound event detection models can precisely localize events, they are limited to pre-defined categories, making them ineffective for real-world scenarios with out-of-distribution events. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.313</span></span>In this work, we introduce FLAM, an open-vocabulary contrastive audio-language model capable of localizing specific sound events.<span class='px-1 mx-1 bg-yellow-200'>FLAM employs a memory-efficient and calibrated frame-wise objective with logit adjustment to address spurious correlations, such as event dependencies and label imbalances during training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.406</span></span>To enable frame-wise supervision, we leverage a large-scale dataset with diverse audio events, LLM-generated captions and simulation.<span class='px-1 mx-1 bg-yellow-200'>Experimental results and case studies demonstrate that FLAM significantly improves the open-vocabulary localization capability while maintaining strong performance in global retrieval and downstream tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.331</span></span></p>
+                  <p>We introduce ELA-ZSON, an efficient layout-aware zero-shot object navigation (ZSON) approach designed for complex multi-room indoor environments.   By planning hierarchically leveraging a global topologigal map with layout information and local imperative approach with detailed scene representation memory, ELA-ZSON achieves both efficient and effective navigation.   <span class='px-1 mx-1 bg-yellow-200'>The process is managed by an LLM-powered agent, ensuring seamless effective planning and navigation, without the need for human interaction, complex rewards, or costly training.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.358</span></span>Our experimental results on the MP3D benchmark achieves 85\% object navigation success rate (SR) and 79\% success rate weighted by path length (SPL) (over 40\% point improvement in SR and 60\% improvement in SPL compared to exsisting methods).<span class='px-1 mx-1 bg-yellow-200'>Furthermore, we validate the robustness of our approach through virtual agent and real-world robotic deployment, showcasing its capability in practical scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.329</span></span>See https://anonymous.4open.science/r/ELA-ZSON-C67E/ for details.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05335v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06131v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05335v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06131v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4408,24 +4460,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                DSDrive: Distilling Large Language Model for Lightweight End-to-End Autonomous Driving with Unified Reasoning and Planning
+                Can Prompting LLMs Unlock Hate Speech Detection across Languages? A Zero-shot and Few-shot Study
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>We present DSDrive, a streamlined end-to-end paradigm tailored for integrating the reasoning and planning of autonomous vehicles into a unified framework.<span class='px-1 mx-1 bg-yellow-200'>DSDrive leverages a compact LLM that employs a distillation method to preserve the enhanced reasoning capabilities of a larger-sized vision language model (VLM). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.314</span></span><span class='px-1 mx-1 bg-yellow-200'>To effectively align the reasoning and planning tasks, a waypoint-driven dual-head coordination module is further developed, which synchronizes dataset structures, optimization objectives, and the learning process. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.305</span></span>By integrating these tasks into a unified framework, DSDrive anchors on the planning results while incorporating detailed reasoning insights, thereby enhancing the interpretability and reliability of the end-to-end pipeline.<span class='px-1 mx-1 bg-yellow-200'>DSDrive has been thoroughly tested in closed-loop simulations, where it performs on par with benchmark models and even outperforms in many key metrics, all while being more compact in size. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.349</span></span>Additionally, the computational efficiency of DSDrive (as reflected in its time and memory requirements during inference) has been significantly enhanced.<span class='px-1 mx-1 bg-yellow-200'>Evidently thus, this work brings promising aspects and underscores the potential of lightweight systems in delivering interpretable and efficient solutions for AD. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.437</span></span></p>
+                  <p>Despite growing interest in automated hate speech detection, most existing approaches overlook the linguistic diversity of online content.<span class='px-1 mx-1 bg-yellow-200'>Multilingual instruction-tuned large language models such as LLaMA, Aya, Qwen, and BloomZ offer promising capabilities across languages, but their effectiveness in identifying hate speech through zero-shot and few-shot prompting remains underexplored. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.331</span></span><span class='px-1 mx-1 bg-yellow-200'>This work evaluates LLM prompting-based detection across eight non-English languages, utilizing several prompting techniques and comparing them to fine-tuned encoder models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.424</span></span><span class='px-1 mx-1 bg-yellow-200'>We show that while zero-shot and few-shot prompting lag behind fine-tuned encoder models on most of the real-world evaluation sets, they achieve better generalization on functional tests for hate speech detection. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.39</span></span>Our study also reveals that prompt design plays a critical role, with each language often requiring customized prompting techniques to maximize performance.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05360v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06149v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05360v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06149v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4434,24 +4486,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Frame In, Frame Out: Do LLMs Generate More Biased News Headlines than Humans?
+                A Scaling Law for Token Efficiency in LLM Fine-Tuning Under Fixed Compute Budgets
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Framing in media critically shapes public perception by selectively emphasizing some details while downplaying others.With the rise of large language models in automated news and content creation, there is growing concern that these systems may introduce or even amplify framing biases compared to human authors.In this paper, we explore how framing manifests in both out-of-the-box and fine-tuned LLM-generated news content.Our analysis reveals that, particularly in politically and socially sensitive contexts, LLMs tend to exhibit more pronounced framing than their human counterparts.In addition, we observe significant variation in framing tendencies across different model architectures, with some models displaying notably higher biases.<span class='px-1 mx-1 bg-yellow-200'>These findings point to the need for effective post-training mitigation strategies and tighter evaluation frameworks to ensure that automated news content upholds the standards of balanced reporting. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.547</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce a scaling law for fine-tuning large language models (LLMs) under fixed compute budgets that explicitly accounts for data composition. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.498</span></span><span class='px-1 mx-1 bg-yellow-200'>Conventional approaches measure training data solely by total tokens, yet the number of examples and their average token length -- what we term \emph{dataset volume} -- play a decisive role in model performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.545</span></span>Our formulation is tuned following established procedures.<span class='px-1 mx-1 bg-yellow-200'>Experiments on the BRICC dataset \cite{salavati2024reducing} and subsets of the MMLU dataset \cite{hendrycks2021measuringmassivemultitasklanguage}, evaluated under multiple subsampling strategies, reveal that data composition significantly affects token efficiency. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.404</span></span><span class='px-1 mx-1 bg-yellow-200'>These results motivate refined scaling laws for practical LLM fine-tuning in resource-constrained settings. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05406v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06150v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05406v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06150v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4460,24 +4512,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                TransProQA: an LLM-based literary Translation evaluation metric with Professional Question Answering
+                Turbo-ICL: In-Context Learning-Based Turbo Equalization
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The impact of Large Language Models (LLMs) has extended into literary domains.However, existing evaluation metrics prioritize mechanical accuracy over artistic expression and tend to overrate machine translation (MT) as being superior to experienced professional human translation.In the long run, this bias could result in a permanent decline in translation quality and cultural authenticity.In response to the urgent need for a specialized literary evaluation metric, we introduce TransProQA, a novel, reference-free, LLM-based question-answering (QA) framework designed specifically for literary translation evaluation.TransProQA uniquely integrates insights from professional literary translators and researchers, focusing on critical elements in literary quality assessment such as literary devices, cultural understanding, and authorial voice.Our extensive evaluation shows that while literary-finetuned XCOMET-XL yields marginal gains, TransProQA substantially outperforms current metrics, achieving up to 0.07 gain in correlation (ACC-EQ and Kendall's tau) and surpassing the best state-of-the-art (SOTA) metrics by over 15 points in adequacy assessments.<span class='px-1 mx-1 bg-yellow-200'>Incorporating professional translator insights as weights further improves performance, highlighting the value of translator inputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.332</span></span>Notably, TransProQA approaches human-level evaluation performance comparable to trained linguistic annotators.It demonstrates broad applicability to open-source models such as LLaMA3.3-70b and Qwen2.5-32b, indicating its potential as an accessible and training-free literary evaluation metric and a valuable tool for evaluating texts that require local processing due to copyright or ethical considerations.</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper introduces a novel in-context learning (ICL) framework, inspired by large language models (LLMs), for soft-input soft-output channel equalization in coded multiple-input multiple-output (MIMO) systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.32</span></span>The proposed approach learns to infer posterior symbol distributions directly from a prompt of pilot signals and decoder feedback.<span class='px-1 mx-1 bg-yellow-200'>A key innovation is the use of prompt augmentation to incorporate extrinsic information from the decoder output as additional context, enabling the ICL model to refine its symbol estimates iteratively across turbo decoding iterations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.407</span></span><span class='px-1 mx-1 bg-yellow-200'>Two model variants, based on Transformer and state-space architectures, are developed and evaluated. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.617</span></span><span class='px-1 mx-1 bg-yellow-200'>Extensive simulations demonstrate that, when traditional linear assumptions break down, e.g., in the presence of low-resolution quantization, ICL equalizers consistently outperform conventional model-based baselines, even when the latter are provided with perfect channel state information. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.42</span></span><span class='px-1 mx-1 bg-yellow-200'>Results also highlight the advantage of Transformer-based models under limited training diversity, as well as the efficiency of state-space models in resource-constrained scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.613</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05423v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06175v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05423v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06175v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4486,24 +4538,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Ultra-FineWeb: Efficient Data Filtering and Verification for High-Quality LLM Training Data
+                MonetGPT: Solving Puzzles Enhances MLLMs' Image Retouching Skills
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Data quality has become a key factor in enhancing model performance with the rapid development of large language models (LLMs).<span class='px-1 mx-1 bg-yellow-200'>Model-driven data filtering has increasingly become a primary approach for acquiring high-quality data. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.321</span></span><span class='px-1 mx-1 bg-yellow-200'>However, it still faces two main challenges: (1) the lack of an efficient data verification strategy makes it difficult to provide timely feedback on data quality; and (2) the selection of seed data for training classifiers lacks clear criteria and relies heavily on human expertise, introducing a degree of subjectivity. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.319</span></span><span class='px-1 mx-1 bg-yellow-200'>To address the first challenge, we introduce an efficient verification strategy that enables rapid evaluation of the impact of data on LLM training with minimal computational cost. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.561</span></span><span class='px-1 mx-1 bg-yellow-200'>To tackle the second challenge, we build upon the assumption that high-quality seed data is beneficial for LLM training, and by integrating the proposed verification strategy, we optimize the selection of positive and negative samples and propose an efficient data filtering pipeline. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.41</span></span><span class='px-1 mx-1 bg-yellow-200'>This pipeline not only improves filtering efficiency, classifier quality, and robustness, but also significantly reduces experimental and inference costs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.408</span></span><span class='px-1 mx-1 bg-yellow-200'>In addition, to efficiently filter high-quality data, we employ a lightweight classifier based on fastText, and successfully apply the filtering pipeline to two widely-used pre-training corpora, FineWeb and Chinese FineWeb datasets, resulting in the creation of the higher-quality Ultra-FineWeb dataset. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.557</span></span><span class='px-1 mx-1 bg-yellow-200'>Ultra-FineWeb contains approximately 1 trillion English tokens and 120 billion Chinese tokens. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.496</span></span><span class='px-1 mx-1 bg-yellow-200'>Empirical results demonstrate that the LLMs trained on Ultra-FineWeb exhibit significant performance improvements across multiple benchmark tasks, validating the effectiveness of our pipeline in enhancing both data quality and training efficiency. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.504</span></span></p>
+                  <p>Retouching is an essential task in post-manipulation of raw photographs.Generative editing, guided by text or strokes, provides a new tool accessible to users but can easily change the identity of the original objects in unacceptable and unpredictable ways.In contrast, although traditional procedural edits, as commonly supported by photoediting tools (e.g., Gimp, Lightroom), are conservative, they are still preferred by professionals.Unfortunately, professional quality retouching involves many individual procedural editing operations that is challenging to plan for most novices.In this paper, we ask if a multimodal large language model (MLLM) can be taught to critique raw photographs, suggest suitable remedies, and finally realize them with a given set of pre-authored procedural image operations.We demonstrate that MLLMs can be first made aware of the underlying image processing operations, by training them to solve specially designed visual puzzles.<span class='px-1 mx-1 bg-yellow-200'>Subsequently, such an operation-aware MLLM can both plan and propose edit sequences. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.471</span></span>To facilitate training, given a set of expert-edited photos, we synthesize a reasoning dataset by procedurally manipulating the expert edits and then grounding a pretrained LLM on the visual adjustments, to synthesize reasoning for finetuning.The proposed retouching operations are, by construction, understandable by the users, preserve object details and resolution, and can be optionally overridden.We evaluate our setup on a variety of test examples and show advantages, in terms of explainability and identity preservation, over existing generative and other procedural alternatives.Code, data, models, and supplementary results can be found via our project website at https://monetgpt.github.io.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05427v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06176v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05427v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06176v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4512,24 +4564,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation
+                A Large Language Model-Enhanced Q-learning for Capacitated Vehicle Routing Problem with Time Windows
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Cloud-based mobile agents powered by (multimodal) large language models ((M)LLMs) offer strong reasoning abilities but suffer from high latency and cost.<span class='px-1 mx-1 bg-yellow-200'>While fine-tuned (M)SLMs enable edge deployment, they often lose general capabilities and struggle with complex tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.466</span></span>To address this, we propose EcoAgent, an Edge-Cloud cOllaborative multi-agent framework for mobile automation.EcoAgent features a closed-loop collaboration among a cloud-based Planning Agent and two edge-based agents: the Execution Agent for action execution and the Observation Agent for verifying outcomes.The Observation Agent uses a Pre-Understanding Module to compress screen images into concise text, reducing token usage.In case of failure, the Planning Agent retrieves screen history and replans via a Reflection Module.<span class='px-1 mx-1 bg-yellow-200'>Experiments on AndroidWorld show that EcoAgent maintains high task success rates while significantly reducing MLLM token consumption, enabling efficient and practical mobile automation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.319</span></span></p>
+                  <p>The Capacitated Vehicle Routing Problem with Time Windows (CVRPTW) is a classic NP-hard combinatorial optimization problem widely applied in logistics distribution and transportation management.Its complexity stems from the constraints of vehicle capacity and time windows, which pose significant challenges to traditional approaches.<span class='px-1 mx-1 bg-yellow-200'>Advances in Large Language Models (LLMs) provide new possibilities for finding approximate solutions to CVRPTW. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.325</span></span><span class='px-1 mx-1 bg-yellow-200'>This paper proposes a novel LLM-enhanced Q-learning framework to address the CVRPTW with real-time emergency constraints. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.491</span></span><span class='px-1 mx-1 bg-yellow-200'>Our solution introduces an adaptive two-phase training mechanism that transitions from the LLM-guided exploration phase to the autonomous optimization phase of Q-network. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.438</span></span><span class='px-1 mx-1 bg-yellow-200'>To ensure reliability, we design a three-tier self-correction mechanism based on the Chain-of-Thought (CoT) for LLMs: syntactic validation, semantic verification, and physical constraint enforcement. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.404</span></span>In addition, we also prioritized replay of the experience generated by LLMs to amplify the regulatory role of LLMs in the architecture.<span class='px-1 mx-1 bg-yellow-200'>Experimental results demonstrate that our framework achieves a 7.3\% average reduction in cost compared to traditional Q-learning, with fewer training steps required for convergence. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.66</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05440v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06178v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05440v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06178v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4538,24 +4590,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                clem:todd: A Framework for the Systematic Benchmarking of LLM-Based Task-Oriented Dialogue System Realisations
+                From Millions of Tweets to Actionable Insights: Leveraging LLMs for User Profiling
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The emergence of instruction-tuned large language models (LLMs) has advanced the field of dialogue systems, enabling both realistic user simulations and robust multi-turn conversational agents.However, existing research often evaluates these components in isolation-either focusing on a single user simulator or a specific system design-limiting the generalisability of insights across architectures and configurations.In this work, we propose clem todd (chat-optimized LLMs for task-oriented dialogue systems development), a flexible framework for systematically evaluating dialogue systems under consistent conditions.clem todd enables detailed benchmarking across combinations of user simulators and dialogue systems, whether existing models from literature or newly developed ones.<span class='px-1 mx-1 bg-yellow-200'>It supports plug-and-play integration and ensures uniform datasets, evaluation metrics, and computational constraints. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.548</span></span>We showcase clem todd's flexibility by re-evaluating existing task-oriented dialogue systems within this unified setup and integrating three newly proposed dialogue systems into the same evaluation pipeline.Our results provide actionable insights into how architecture, scale, and prompting strategies affect dialogue performance, offering practical guidance for building efficient and effective conversational AI systems.</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Social media user profiling through content analysis is crucial for tasks like misinformation detection, engagement prediction, hate speech monitoring, and user behavior modeling. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.387</span></span><span class='px-1 mx-1 bg-yellow-200'>However, existing profiling techniques, including tweet summarization, attribute-based profiling, and latent representation learning, face significant limitations: they often lack transferability, produce non-interpretable features, require large labeled datasets, or rely on rigid predefined categories that limit adaptability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.45</span></span><span class='px-1 mx-1 bg-yellow-200'>We introduce a novel large language model (LLM)-based approach that leverages domain-defining statements, which serve as key characteristics outlining the important pillars of a domain as foundations for profiling. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.435</span></span><span class='px-1 mx-1 bg-yellow-200'>Our two-stage method first employs semi-supervised filtering with a domain-specific knowledge base, then generates both abstractive (synthesized descriptions) and extractive (representative tweet selections) user profiles. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.432</span></span><span class='px-1 mx-1 bg-yellow-200'>By harnessing LLMs' inherent knowledge with minimal human validation, our approach is adaptable across domains while reducing the need for large labeled datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.424</span></span><span class='px-1 mx-1 bg-yellow-200'>Our method generates interpretable natural language user profiles, condensing extensive user data into a scale that unlocks LLMs' reasoning and knowledge capabilities for downstream social network tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.399</span></span>We contribute a Persian political Twitter (X) dataset and an LLM-based evaluation framework with human validation.<span class='px-1 mx-1 bg-yellow-200'>Experimental results show our method significantly outperforms state-of-the-art LLM-based and traditional methods by 9.8%, demonstrating its effectiveness in creating flexible, adaptable, and interpretable user profiles. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.302</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05445v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06184v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05445v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06184v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4673,24 +4725,24 @@
           </td>
         </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Unveiling Language-Specific Features in Large Language Models via Sparse Autoencoders
+                Assessing Tenstorrent's RISC-V MatMul Acceleration Capabilities
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The mechanisms behind multilingual capabilities in Large Language Models (LLMs) have been examined using neuron-based or internal-activation-based methods.However, these methods often face challenges such as superposition and layer-wise activation variance, which limit their reliability.Sparse Autoencoders (SAEs) offer a more nuanced analysis by decomposing the activations of LLMs into sparse linear combination of SAE features.We introduce a novel metric to assess the monolinguality of features obtained from SAEs, discovering that some features are strongly related to specific languages.<span class='px-1 mx-1 bg-yellow-200'>Additionally, we show that ablating these SAE features only significantly reduces abilities in one language of LLMs, leaving others almost unaffected. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.453</span></span><span class='px-1 mx-1 bg-yellow-200'>Interestingly, we find some languages have multiple synergistic SAE features, and ablating them together yields greater improvement than ablating individually. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.436</span></span><span class='px-1 mx-1 bg-yellow-200'>Moreover, we leverage these SAE-derived language-specific features to enhance steering vectors, achieving control over the language generated by LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.489</span></span></p>
+                  <p>The increasing demand for generative AI as Large Language Models (LLMs) services has driven the need for specialized hardware architectures that optimize computational efficiency and energy consumption.<span class='px-1 mx-1 bg-yellow-200'>This paper evaluates the performance of the Tenstorrent Grayskull e75 RISC-V accelerator for basic linear algebra kernels at reduced numerical precision, a fundamental operation in LLM computations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.462</span></span><span class='px-1 mx-1 bg-yellow-200'>We present a detailed characterization of Grayskull's execution model, gridsize, matrix dimensions, data formats, and numerical precision impact computational efficiency. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.609</span></span><span class='px-1 mx-1 bg-yellow-200'>Furthermore, we compare Grayskull's performance against state-of-the-art architectures with tensor acceleration, including Intel Sapphire Rapids processors and two NVIDIA GPUs (V100 and A100). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.406</span></span><span class='px-1 mx-1 bg-yellow-200'>Whilst NVIDIA GPUs dominate raw performance, Grayskull demonstrates a competitive trade-off between power consumption and computational throughput, reaching a peak of 1.55 TFLOPs/Watt with BF16. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.453</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05111v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06085v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05111v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06085v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4699,24 +4751,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Text2Cypher: Data Pruning using Hard Example Selection
+                Free and Fair Hardware: A Pathway to Copyright Infringement-Free Verilog Generation using LLMs
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Database query languages such as SQL for relational databases and Cypher for graph databases have been widely adopted.Recent advancements in large language models (LLMs) enable natural language interactions with databases through models like Text2SQL and Text2Cypher.Fine-tuning these models typically requires large, diverse datasets containing non-trivial examples.<span class='px-1 mx-1 bg-yellow-200'>However, as dataset size increases, the cost of fine-tuning also rises. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.567</span></span>This makes smaller, high-quality datasets essential for reducing costs for the same or better performance.In this paper, we propose five hard-example selection techniques for pruning the Text2Cypher dataset, aiming to preserve or improve performance while reducing resource usage.<span class='px-1 mx-1 bg-yellow-200'>Our results show that these hard-example selection approaches can halve training time and costs with minimal impact on performance, and demonstrates that hard-example selection provides a cost-effective solution. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.434</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Limitations in Large Language Model (LLM) capabilities for hardware design tasks, such as generating functional Verilog codes, have motivated various fine-tuning optimizations utilizing curated hardware datasets from open-source repositories. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.466</span></span>However, these datasets remain limited in size and contain minimal checks on licensing for reuse, resulting in potential copyright violations by fine-tuned LLMs.Therefore, we propose an evaluation benchmark to estimate the risk of Verilog-trained LLMs to generate copyright-protected codes.<span class='px-1 mx-1 bg-yellow-200'>To minimize this risk, we present an open-source Verilog dataset, FreeSet, containing over 220k files, along with the automated dataset curation framework utilized to provide additional guarantees of fair-use Verilog data. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.472</span></span><span class='px-1 mx-1 bg-yellow-200'>We then execute an LLM fine-tuning framework consisting of continual pre-training, resulting in a fine-tuned Llama model for Verilog, FreeV. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.502</span></span>Our results indicate that FreeV demonstrates the smallest risk of copyright-infringement among prior works, with only a 3% violation rate.<span class='px-1 mx-1 bg-yellow-200'>Furthermore, experimental results demonstrate improvements in Verilog generation functionality over its baseline model, improving VerilogEval pass@10 rates by over 10%. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.537</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05122v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06096v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05122v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06096v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4725,24 +4777,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                FedTDP: A Privacy-Preserving and Unified Framework for Trajectory Data Preparation via Federated Learning
+                LLMs Get Lost In Multi-Turn Conversation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Trajectory data, which capture the movement patterns of people and vehicles over time and space, are crucial for applications like traffic optimization and urban planning.However, issues such as noise and incompleteness often compromise data quality, leading to inaccurate trajectory analyses and limiting the potential of these applications.While Trajectory Data Preparation (TDP) can enhance data quality, existing methods suffer from two key limitations: (i) they do not address data privacy concerns, particularly in federated settings where trajectory data sharing is prohibited, and (ii) they typically design task-specific models that lack generalizability across diverse TDP scenarios.To overcome these challenges, we propose FedTDP, a privacy-preserving and unified framework that leverages the capabilities of Large Language Models (LLMs) for TDP in federated environments.<span class='px-1 mx-1 bg-yellow-200'>Specifically, we: (i) design a trajectory privacy autoencoder to secure data transmission and protect privacy, (ii) introduce a trajectory knowledge enhancer to improve model learning of TDP-related knowledge, enabling the development of TDP-oriented LLMs, and (iii) propose federated parallel optimization to enhance training efficiency by reducing data transmission and enabling parallel model training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.4</span></span>Experiments on 6 real datasets and 10 mainstream TDP tasks demonstrate that FedTDP consistently outperforms 13 state-of-the-art baselines.</p>
+                  <p>Large Language Models (LLMs) are conversational interfaces.<span class='px-1 mx-1 bg-yellow-200'>As such, LLMs have the potential to assist their users not only when they can fully specify the task at hand, but also to help them define, explore, and refine what they need through multi-turn conversational exchange. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.402</span></span><span class='px-1 mx-1 bg-yellow-200'>Although analysis of LLM conversation logs has confirmed that underspecification occurs frequently in user instructions, LLM evaluation has predominantly focused on the single-turn, fully-specified instruction setting. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.59</span></span><span class='px-1 mx-1 bg-yellow-200'>In this work, we perform large-scale simulation experiments to compare LLM performance in single- and multi-turn settings. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.653</span></span><span class='px-1 mx-1 bg-yellow-200'>Our experiments confirm that all the top open- and closed-weight LLMs we test exhibit significantly lower performance in multi-turn conversations than single-turn, with an average drop of 39% across six generation tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.541</span></span><span class='px-1 mx-1 bg-yellow-200'>Analysis of 200,000+ simulated conversations decomposes the performance degradation into two components: a minor loss in aptitude and a significant increase in unreliability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.439</span></span>We find that LLMs often make assumptions in early turns and prematurely attempt to generate final solutions, on which they overly rely.In simpler terms, we discover that *when LLMs take a wrong turn in a conversation, they get lost and do not recover*.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05155v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06120v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05155v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06120v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4751,24 +4803,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                MARK: Memory Augmented Refinement of Knowledge
+                ELA-ZSON: Efficient Layout-Aware Zero-Shot Object Navigation Agent with Hierarchical Planning
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Large Language Models (LLMs) assist in specialized tasks but struggle to align with evolving domain knowledge without costly fine-tuning.Domain knowledge consists of: Knowledge: Immutable facts (e.g., 'A stone is solid') and generally accepted principles (e.g., ethical standards); Refined Memory: Evolving insights shaped by business needs and real-world changes.However, a significant gap often exists between a domain expert's deep, nuanced understanding and the system's domain knowledge, which can hinder accurate information retrieval and application.<span class='px-1 mx-1 bg-yellow-200'>Our Memory-Augmented Refinement of Knowledge (MARK) framework enables LLMs to continuously learn without retraining by leveraging structured refined memory, inspired by the Society of Mind. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.507</span></span>MARK operates through specialized agents, each serving a distinct role: Residual Refined Memory Agent: Stores and retrieves domain-specific insights to maintain context over time; User Question Refined Memory Agent:Captures user-provided facts, abbreviations, and terminology for better comprehension; LLM Response Refined Memory Agent: Extracts key elements from responses for refinement and personalization.These agents analyse stored refined memory, detect patterns, resolve contradictions, and improve response accuracy.Temporal factors like recency and frequency prioritize relevant information while discarding outdated insights.MARK enhances LLMs in multiple ways: Ground Truth Strategy: Reduces hallucinations by establishing a structured reference; Domain-Specific Adaptation: Essential for fields like healthcare, law, and manufacturing, where proprietary insights are absent from public datasets;Personalized AI Assistants: Improves virtual assistants by remembering user preferences, ensuring coherent responses over time.</p>
+                  <p>We introduce ELA-ZSON, an efficient layout-aware zero-shot object navigation (ZSON) approach designed for complex multi-room indoor environments.   By planning hierarchically leveraging a global topologigal map with layout information and local imperative approach with detailed scene representation memory, ELA-ZSON achieves both efficient and effective navigation.   The process is managed by an LLM-powered agent, ensuring seamless effective planning and navigation, without the need for human interaction, complex rewards, or costly training.   <span class='px-1 mx-1 bg-yellow-200'>Our experimental results on the MP3D benchmark achieves 85\% object navigation success rate (SR) and 79\% success rate weighted by path length (SPL) (over 40\% point improvement in SR and 60\% improvement in SPL compared to exsisting methods). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.465</span></span>Furthermore, we validate the robustness of our approach through virtual agent and real-world robotic deployment, showcasing its capability in practical scenarios.See https://anonymous.4open.science/r/ELA-ZSON-C67E/ for details.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05177v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06131v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05177v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06131v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4777,24 +4829,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Stealthy LLM-Driven Data Poisoning Attacks Against Embedding-Based Retrieval-Augmented Recommender Systems
+                Can Prompting LLMs Unlock Hate Speech Detection across Languages? A Zero-shot and Few-shot Study
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>We present a systematic study of provider-side data poisoning in retrieval-augmented recommender systems (RAG-based).By modifying only a small fraction of tokens within item descriptions -- for instance, adding emotional keywords or borrowing phrases from semantically related items -- an attacker can significantly promote or demote targeted items.We formalize these attacks under token-edit and semantic-similarity constraints, and we examine their effectiveness in both promotion (long-tail items) and demotion (short-head items) scenarios.Our experiments on MovieLens, using two large language model (LLM) retrieval modules, show that even subtle attacks shift final rankings and item exposures while eluding naive detection.<span class='px-1 mx-1 bg-yellow-200'>The results underscore the vulnerability of RAG-based pipelines to small-scale metadata rewrites and emphasize the need for robust textual consistency checks and provenance tracking to thwart stealthy provider-side poisoning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.498</span></span></p>
+                  <p>Despite growing interest in automated hate speech detection, most existing approaches overlook the linguistic diversity of online content.Multilingual instruction-tuned large language models such as LLaMA, Aya, Qwen, and BloomZ offer promising capabilities across languages, but their effectiveness in identifying hate speech through zero-shot and few-shot prompting remains underexplored.This work evaluates LLM prompting-based detection across eight non-English languages, utilizing several prompting techniques and comparing them to fine-tuned encoder models.We show that while zero-shot and few-shot prompting lag behind fine-tuned encoder models on most of the real-world evaluation sets, they achieve better generalization on functional tests for hate speech detection.<span class='px-1 mx-1 bg-yellow-200'>Our study also reveals that prompt design plays a critical role, with each language often requiring customized prompting techniques to maximize performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.43</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05196v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06149v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05196v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06149v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4803,24 +4855,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                QualBench: Benchmarking Chinese LLMs with Localized Professional Qualifications for Vertical Domain Evaluation
+                A Scaling Law for Token Efficiency in LLM Fine-Tuning Under Fixed Compute Budgets
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>The rapid advancement of Chinese large language models (LLMs) underscores the need for domain-specific evaluations to ensure reliable applications.However, existing benchmarks often lack coverage in vertical domains and offer limited insights into the Chinese working context.Leveraging qualification exams as a unified framework for human expertise evaluation, we introduce QualBench, the first multi-domain Chinese QA benchmark dedicated to localized assessment of Chinese LLMs.The dataset includes over 17,000 questions across six vertical domains, with data selections grounded in 24 Chinese qualifications to closely align with national policies and working standards.Through comprehensive evaluation, the Qwen2.5 model outperformed the more advanced GPT-4o, with Chinese LLMs consistently surpassing non-Chinese models, highlighting the importance of localized domain knowledge in meeting qualification requirements.<span class='px-1 mx-1 bg-yellow-200'>The best performance of 75.26% reveals the current gaps in domain coverage within model capabilities. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.425</span></span>Furthermore, we present the failure of LLM collaboration with crowdsourcing mechanisms and suggest the opportunities for multi-domain RAG knowledge enhancement and vertical domain LLM training with Federated Learning.</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce a scaling law for fine-tuning large language models (LLMs) under fixed compute budgets that explicitly accounts for data composition. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.461</span></span>Conventional approaches measure training data solely by total tokens, yet the number of examples and their average token length -- what we term \emph{dataset volume} -- play a decisive role in model performance.Our formulation is tuned following established procedures.Experiments on the BRICC dataset \cite{salavati2024reducing} and subsets of the MMLU dataset \cite{hendrycks2021measuringmassivemultitasklanguage}, evaluated under multiple subsampling strategies, reveal that data composition significantly affects token efficiency.<span class='px-1 mx-1 bg-yellow-200'>These results motivate refined scaling laws for practical LLM fine-tuning in resource-constrained settings. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.587</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05225v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06150v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05225v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06150v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4829,24 +4881,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                HEXGEN-TEXT2SQL: Optimizing LLM Inference Request Scheduling for Agentic Text-to-SQL Workflow
+                Turbo-ICL: In-Context Learning-Based Turbo Equalization
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Recent advances in leveraging the agentic paradigm of large language models (LLMs) utilization have significantly enhanced Text-to-SQL capabilities, enabling users without specialized database expertise to query data intuitively.<span class='px-1 mx-1 bg-yellow-200'>However, deploying these agentic LLM-based Text-to-SQL systems in production poses substantial challenges due to their inherently multi-stage workflows, stringent latency constraints, and potentially heterogeneous GPU infrastructure in enterprise environments. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.578</span></span><span class='px-1 mx-1 bg-yellow-200'>Current LLM serving frameworks lack effective mechanisms for handling interdependent inference tasks, dynamic latency variability, and resource heterogeneity, leading to suboptimal performance and frequent service-level objective (SLO) violations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.59</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we introduce HEXGEN-TEXT2SQL, a novel framework designed explicitly to schedule and execute agentic multi-stage LLM-based Text-to-SQL workflows on heterogeneous GPU clusters that handle multi-tenant end-to-end queries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.5</span></span><span class='px-1 mx-1 bg-yellow-200'>HEXGEN-TEXT2SQL introduce a hierarchical scheduling approach combining global workload-balanced task dispatching and local adaptive urgency-guided prioritization, guided by a systematic analysis of agentic Text-to-SQL workflows. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.567</span></span><span class='px-1 mx-1 bg-yellow-200'>Additionally, we propose a lightweight simulation-based method for tuning critical scheduling hyperparameters, further enhancing robustness and adaptability. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.759</span></span><span class='px-1 mx-1 bg-yellow-200'>Our extensive evaluation on realistic Text-to-SQL benchmarks demonstrates that HEXGEN-TEXT2SQL significantly outperforms state-of-the-art LLM serving frameworks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.498</span></span><span class='px-1 mx-1 bg-yellow-200'>Specifically, HEXGEN-TEXT2SQL reduces latency deadlines by up to 1.67$\times$ (average: 1.41$\times$) and improves system throughput by up to 1.75$\times$ (average: 1.65$\times$) compared to vLLM under diverse, realistic workload conditions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span><span class='px-1 mx-1 bg-yellow-200'>Our code is available at https://github.com/Relaxed-System-Lab/Hexgen-Flow. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.472</span></span></p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This paper introduces a novel in-context learning (ICL) framework, inspired by large language models (LLMs), for soft-input soft-output channel equalization in coded multiple-input multiple-output (MIMO) systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.428</span></span>The proposed approach learns to infer posterior symbol distributions directly from a prompt of pilot signals and decoder feedback.A key innovation is the use of prompt augmentation to incorporate extrinsic information from the decoder output as additional context, enabling the ICL model to refine its symbol estimates iteratively across turbo decoding iterations.Two model variants, based on Transformer and state-space architectures, are developed and evaluated.Extensive simulations demonstrate that, when traditional linear assumptions break down, e.g., in the presence of low-resolution quantization, ICL equalizers consistently outperform conventional model-based baselines, even when the latter are provided with perfect channel state information.Results also highlight the advantage of Transformer-based models under limited training diversity, as well as the efficiency of state-space models in resource-constrained scenarios.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05286v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06175v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05286v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06175v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4855,24 +4907,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                PlaceIt3D: Language-Guided Object Placement in Real 3D Scenes
+                MonetGPT: Solving Puzzles Enhances MLLMs' Image Retouching Skills
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>We introduce the novel task of Language-Guided Object Placement in Real 3D Scenes.Our model is given a 3D scene's point cloud, a 3D asset, and a textual prompt broadly describing where the 3D asset should be placed.The task here is to find a valid placement for the 3D asset that respects the prompt.Compared with other language-guided localization tasks in 3D scenes such as grounding, this task has specific challenges: it is ambiguous because it has multiple valid solutions, and it requires reasoning about 3D geometric relationships and free space.<span class='px-1 mx-1 bg-yellow-200'>We inaugurate this task by proposing a new benchmark and evaluation protocol. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.416</span></span>We also introduce a new dataset for training 3D LLMs on this task, as well as the first method to serve as a non-trivial baseline.We believe that this challenging task and our new benchmark could become part of the suite of benchmarks used to evaluate and compare generalist 3D LLM models.</p>
+                  <p>Retouching is an essential task in post-manipulation of raw photographs.Generative editing, guided by text or strokes, provides a new tool accessible to users but can easily change the identity of the original objects in unacceptable and unpredictable ways.In contrast, although traditional procedural edits, as commonly supported by photoediting tools (e.g., Gimp, Lightroom), are conservative, they are still preferred by professionals.Unfortunately, professional quality retouching involves many individual procedural editing operations that is challenging to plan for most novices.In this paper, we ask if a multimodal large language model (MLLM) can be taught to critique raw photographs, suggest suitable remedies, and finally realize them with a given set of pre-authored procedural image operations.We demonstrate that MLLMs can be first made aware of the underlying image processing operations, by training them to solve specially designed visual puzzles.Subsequently, such an operation-aware MLLM can both plan and propose edit sequences.To facilitate training, given a set of expert-edited photos, we synthesize a reasoning dataset by procedurally manipulating the expert edits and then grounding a pretrained LLM on the visual adjustments, to synthesize reasoning for finetuning.<span class='px-1 mx-1 bg-yellow-200'>The proposed retouching operations are, by construction, understandable by the users, preserve object details and resolution, and can be optionally overridden. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.404</span></span>We evaluate our setup on a variety of test examples and show advantages, in terms of explainability and identity preservation, over existing generative and other procedural alternatives.Code, data, models, and supplementary results can be found via our project website at https://monetgpt.github.io.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05288v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06176v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05288v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06176v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4881,24 +4933,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Toward Reasonable Parrots: Why Large Language Models Should Argue with Us by Design
+                A Large Language Model-Enhanced Q-learning for Capacitated Vehicle Routing Problem with Time Windows
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>In this position paper, we advocate for the development of conversational technology that is inherently designed to support and facilitate argumentative processes.We argue that, at present, large language models (LLMs) are inadequate for this purpose, and we propose an ideal technology design aimed at enhancing argumentative skills.<span class='px-1 mx-1 bg-yellow-200'>This involves re-framing LLMs as tools to exercise our critical thinking rather than replacing them. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.585</span></span>We introduce the concept of 'reasonable parrots' that embody the fundamental principles of relevance, responsibility, and freedom, and that interact through argumentative dialogical moves.These principles and moves arise out of millennia of work in argumentation theory and should serve as the starting point for LLM-based technology that incorporates basic principles of argumentation.</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>The Capacitated Vehicle Routing Problem with Time Windows (CVRPTW) is a classic NP-hard combinatorial optimization problem widely applied in logistics distribution and transportation management. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.504</span></span><span class='px-1 mx-1 bg-yellow-200'>Its complexity stems from the constraints of vehicle capacity and time windows, which pose significant challenges to traditional approaches. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.467</span></span>Advances in Large Language Models (LLMs) provide new possibilities for finding approximate solutions to CVRPTW.<span class='px-1 mx-1 bg-yellow-200'>This paper proposes a novel LLM-enhanced Q-learning framework to address the CVRPTW with real-time emergency constraints. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.442</span></span><span class='px-1 mx-1 bg-yellow-200'>Our solution introduces an adaptive two-phase training mechanism that transitions from the LLM-guided exploration phase to the autonomous optimization phase of Q-network. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.467</span></span><span class='px-1 mx-1 bg-yellow-200'>To ensure reliability, we design a three-tier self-correction mechanism based on the Chain-of-Thought (CoT) for LLMs: syntactic validation, semantic verification, and physical constraint enforcement. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.501</span></span><span class='px-1 mx-1 bg-yellow-200'>In addition, we also prioritized replay of the experience generated by LLMs to amplify the regulatory role of LLMs in the architecture. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.458</span></span><span class='px-1 mx-1 bg-yellow-200'>Experimental results demonstrate that our framework achieves a 7.3\% average reduction in cost compared to traditional Q-learning, with fewer training steps required for convergence. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.499</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05298v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06178v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05298v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06178v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -4907,128 +4959,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-09</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                ICon: In-Context Contribution for Automatic Data Selection
+                From Millions of Tweets to Actionable Insights: Leveraging LLMs for User Profiling
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Data selection for instruction tuning is essential for improving the performance of Large Language Models (LLMs) and reducing training cost. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.537</span></span>However, existing automated selection methods either depend on computationally expensive gradient-based measures or manually designed heuristics, which may fail to fully exploit the intrinsic attributes of data.In this paper, we propose In-context Learning for Contribution Measurement (ICon), a novel gradient-free method that takes advantage of the implicit fine-tuning nature of in-context learning (ICL) to measure sample contribution without gradient computation or manual indicators engineering.ICon offers a computationally efficient alternative to gradient-based methods and reduces human inductive bias inherent in heuristic-based approaches.ICon comprises three components and identifies high-contribution data by assessing performance shifts under implicit learning through ICL.Extensive experiments on three LLMs across 12 benchmarks and 5 pairwise evaluation sets demonstrate the effectiveness of ICon.Remarkably, on LLaMA3.1-8B, models trained on 15% of ICon-selected data outperform full datasets by 5.42% points and exceed the best performance of widely used selection methods by 2.06% points.We further analyze high-contribution samples selected by ICon, which show both diverse tasks and appropriate difficulty levels, rather than just the hardest ones.</p>
+                  <p>Social media user profiling through content analysis is crucial for tasks like misinformation detection, engagement prediction, hate speech monitoring, and user behavior modeling.However, existing profiling techniques, including tweet summarization, attribute-based profiling, and latent representation learning, face significant limitations: they often lack transferability, produce non-interpretable features, require large labeled datasets, or rely on rigid predefined categories that limit adaptability.We introduce a novel large language model (LLM)-based approach that leverages domain-defining statements, which serve as key characteristics outlining the important pillars of a domain as foundations for profiling.Our two-stage method first employs semi-supervised filtering with a domain-specific knowledge base, then generates both abstractive (synthesized descriptions) and extractive (representative tweet selections) user profiles.By harnessing LLMs' inherent knowledge with minimal human validation, our approach is adaptable across domains while reducing the need for large labeled datasets.Our method generates interpretable natural language user profiles, condensing extensive user data into a scale that unlocks LLMs' reasoning and knowledge capabilities for downstream social network tasks.We contribute a Persian political Twitter (X) dataset and an LLM-based evaluation framework with human validation.<span class='px-1 mx-1 bg-yellow-200'>Experimental results show our method significantly outperforms state-of-the-art LLM-based and traditional methods by 9.8%, demonstrating its effectiveness in creating flexible, adaptable, and interpretable user profiles. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.436</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05327v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.06184v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2505.05327v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                FLAM: Frame-Wise Language-Audio Modeling
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Recent multi-modal audio-language models (ALMs) excel at text-audio retrieval but struggle with frame-wise audio understanding.Prior works use temporal-aware labels or unsupervised training to improve frame-wise capabilities, but they still lack fine-grained labeling capability to pinpoint when an event occurs.While traditional sound event detection models can precisely localize events, they are limited to pre-defined categories, making them ineffective for real-world scenarios with out-of-distribution events.In this work, we introduce FLAM, an open-vocabulary contrastive audio-language model capable of localizing specific sound events.<span class='px-1 mx-1 bg-yellow-200'>FLAM employs a memory-efficient and calibrated frame-wise objective with logit adjustment to address spurious correlations, such as event dependencies and label imbalances during training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.605</span></span>To enable frame-wise supervision, we leverage a large-scale dataset with diverse audio events, LLM-generated captions and simulation.<span class='px-1 mx-1 bg-yellow-200'>Experimental results and case studies demonstrate that FLAM significantly improves the open-vocabulary localization capability while maintaining strong performance in global retrieval and downstream tasks. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.419</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05335v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2505.05335v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                DSDrive: Distilling Large Language Model for Lightweight End-to-End Autonomous Driving with Unified Reasoning and Planning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>We present DSDrive, a streamlined end-to-end paradigm tailored for integrating the reasoning and planning of autonomous vehicles into a unified framework.DSDrive leverages a compact LLM that employs a distillation method to preserve the enhanced reasoning capabilities of a larger-sized vision language model (VLM).To effectively align the reasoning and planning tasks, a waypoint-driven dual-head coordination module is further developed, which synchronizes dataset structures, optimization objectives, and the learning process.By integrating these tasks into a unified framework, DSDrive anchors on the planning results while incorporating detailed reasoning insights, thereby enhancing the interpretability and reliability of the end-to-end pipeline.<span class='px-1 mx-1 bg-yellow-200'>DSDrive has been thoroughly tested in closed-loop simulations, where it performs on par with benchmark models and even outperforms in many key metrics, all while being more compact in size. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.472</span></span>Additionally, the computational efficiency of DSDrive (as reflected in its time and memory requirements during inference) has been significantly enhanced.<span class='px-1 mx-1 bg-yellow-200'>Evidently thus, this work brings promising aspects and underscores the potential of lightweight systems in delivering interpretable and efficient solutions for AD. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.42</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05360v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2505.05360v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Frame In, Frame Out: Do LLMs Generate More Biased News Headlines than Humans?
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Framing in media critically shapes public perception by selectively emphasizing some details while downplaying others.With the rise of large language models in automated news and content creation, there is growing concern that these systems may introduce or even amplify framing biases compared to human authors.In this paper, we explore how framing manifests in both out-of-the-box and fine-tuned LLM-generated news content.Our analysis reveals that, particularly in politically and socially sensitive contexts, LLMs tend to exhibit more pronounced framing than their human counterparts.<span class='px-1 mx-1 bg-yellow-200'>In addition, we observe significant variation in framing tendencies across different model architectures, with some models displaying notably higher biases. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.469</span></span><span class='px-1 mx-1 bg-yellow-200'>These findings point to the need for effective post-training mitigation strategies and tighter evaluation frameworks to ensure that automated news content upholds the standards of balanced reporting. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.428</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05406v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2505.05406v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-05-08</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                TransProQA: an LLM-based literary Translation evaluation metric with Professional Question Answering
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The impact of Large Language Models (LLMs) has extended into literary domains.However, existing evaluation metrics prioritize mechanical accuracy over artistic expression and tend to overrate machine translation (MT) as being superior to experienced professional human translation.In the long run, this bias could result in a permanent decline in translation quality and cultural authenticity.In response to the urgent need for a specialized literary evaluation metric, we introduce TransProQA, a novel, reference-free, LLM-based question-answering (QA) framework designed specifically for literary translation evaluation.TransProQA uniquely integrates insights from professional literary translators and researchers, focusing on critical elements in literary quality assessment such as literary devices, cultural understanding, and authorial voice.Our extensive evaluation shows that while literary-finetuned XCOMET-XL yields marginal gains, TransProQA substantially outperforms current metrics, achieving up to 0.07 gain in correlation (ACC-EQ and Kendall's tau) and surpassing the best state-of-the-art (SOTA) metrics by over 15 points in adequacy assessments.<span class='px-1 mx-1 bg-yellow-200'>Incorporating professional translator insights as weights further improves performance, highlighting the value of translator inputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.411</span></span>Notably, TransProQA approaches human-level evaluation performance comparable to trained linguistic annotators.It demonstrates broad applicability to open-source models such as LLaMA3.3-70b and Qwen2.5-32b, indicating its potential as an accessible and training-free literary evaluation metric and a valuable tool for evaluating texts that require local processing due to copyright or ethical considerations.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2505.05423v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2505.05423v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2505.06184v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
