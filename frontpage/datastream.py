@@ -529,12 +529,29 @@ class DataStream:
         data = []
         for item in site_stream:
             id = extract_url_ending(item["url"])
-            categories = []
+            
+            # Find the section with highest max probability across all sentences
+            best_section = None
+            best_max_prob = 0
+            
             for section in item["sections"]:
+                # Find maximum probability for this section across all sentences
+                section_probs = [pred[section] for pred in item["preds"] if pred[section] > THRESHOLDS[section]]
+                if section_probs:
+                    max_prob = max(section_probs)
+                    if max_prob > best_max_prob:
+                        best_max_prob = max_prob
+                        best_section = section
+            
+            # Only add to the best section if one was found
+            if best_section:
                 editable = item.copy()
-                editable["html"] = render_html(editable, section)
-                sections[section]["content"].append(editable)
-                categories.append(section)
+                editable["html"] = render_html(editable, best_section)
+                sections[best_section]["content"].append(editable)
+                categories = [best_section]
+            else:
+                categories = []
+                
             data.append({"id": id, "categories": categories})
 
         for section in sections.keys():
