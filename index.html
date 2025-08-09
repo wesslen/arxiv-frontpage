@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-08-08.</p><br/>
+            <p>Generated on 2025-08-09.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -717,6 +717,84 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                R2GenKG: Hierarchical Multi-modal Knowledge Graph for LLM-based Radiology Report Generation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>X-ray medical report generation is one of the important applications of artificial intelligence in healthcare.With the support of large foundation models, the quality of medical report generation has significantly improved.<span class='px-1 mx-1 bg-yellow-200'>However, challenges such as hallucination and weak disease diagnostic capability still persist. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.673</span></span>In this paper, we first construct a large-scale multi-modal medical knowledge graph (termed M3KG) based on the ground truth medical report using the GPT-4o.It contains 2477 entities, 3 kinds of relations, 37424 triples, and 6943 disease-aware vision tokens for the CheXpert Plus dataset.Then, we sample it to obtain multi-granularity semantic graphs and use an R-GCN encoder for feature extraction.For the input X-ray image, we adopt the Swin-Transformer to extract the vision features and interact with the knowledge using cross-attention.The vision tokens are fed into a Q-former and retrieved the disease-aware vision tokens using another cross-attention.Finally, we adopt the large language model to map the semantic knowledge graph, input X-ray image, and disease-aware vision tokens into language descriptions.Extensive experiments on multiple datasets fully validated the effectiveness of our proposed knowledge graph and X-ray report generation framework.The source code of this paper will be released on https://github.com/Event-AHU/Medical_Image_Analysis.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03426v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2508.03426v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-05</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Semantic-aware Graph-guided Behavior Sequences Generation with Large Language Models for Smart Homes
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>As smart homes become increasingly prevalent, intelligent models are widely used for tasks such as anomaly detection and behavior prediction.These models are typically trained on static datasets, making them brittle to behavioral drift caused by seasonal changes, lifestyle shifts, or evolving routines.However, collecting new behavior data for retraining is often impractical due to its slow pace, high cost, and privacy concerns.In this paper, we propose SmartGen, an LLM-based framework that synthesizes context-aware user behavior data to support continual adaptation of downstream smart home models.SmartGen consists of four key components.First, we design a Time and Semantic-aware Split module to divide long behavior sequences into manageable, semantically coherent subsequences under dual time-span constraints.Second, we propose Semantic-aware Sequence Compression to reduce input length while preserving representative semantics by clustering behavior mapping in latent space.Third, we introduce Graph-guided Sequence Synthesis, which constructs a behavior relationship graph and encodes frequent transitions into prompts, guiding the LLM to generate data aligned with contextual changes while retaining core behavior patterns.Finally, we design a Two-stage Outlier Filter to identify and remove implausible or semantically inconsistent outputs, aiming to improve the factual coherence and behavioral validity of the generated sequences.<span class='px-1 mx-1 bg-yellow-200'>Experiments on three real-world datasets demonstrate that SmartGen significantly enhances model performance on anomaly detection and behavior prediction tasks under behavioral drift, with anomaly detection improving by 85.43% and behavior prediction by 70.51% on average. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.625</span></span>The code is available at https://github.com/horizonsinzqs/SmartGen.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03484v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2508.03484v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-05</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                BitsAI-Fix: LLM-Driven Approach for Automated Lint Error Resolution in Practice
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>As enterprise codebases continue to grow in scale and complexity, the volume of lint errors far exceeds engineers' manual remediation capacity, leading to continuous accumulation of technical debt and hindered development efficiency.<span class='px-1 mx-1 bg-yellow-200'>This paper presents BitsAI-Fix, an automated lint error remediation workflow based on Large Language Models (LLMs), designed to address this critical challenge in industrial-scale environments. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>BitsAI-Fix employs tree-sitter for context expansion and generates search-and-replace format patches through specially trained LLMs, followed by lint scan re-verification to output final remediation results.Additionally, our approach introduces an innovative progressive reinforcement learning (RL) training strategy that can automatically acquire verifiable training data during the project cold-start phase and continuously iterate the model by collecting online samples through feedback after system deployment.Furthermore, we designed a targeted rule-based reward mechanism that combines format rewards and correctness rewards while penalizing redundant modifications.We also propose a "code diff matching" methodology to continuously track online effectiveness.In production deployment at ByteDance, our solution has supported over 5,000 engineers, resolved more than 12,000 static analysis issues, achieved approximately 85% remediation accuracy, with around 1,000 weekly active adopters.This work demonstrates the practical feasibility of LLM-based code remediation solutions in enterprise environments and serves as a reference for automated code fix in large-scale industrial scenarios.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03487v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2508.03487v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-05</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Error Detection and Correction for Interpretable Mathematics in Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -808,58 +886,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2508.03622v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-05</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Majority Bit-Aware Watermarking For Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>The growing deployment of Large Language Models (LLMs) in real-world applications has raised concerns about their potential misuse in generating harmful or deceptive content. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.77</span></span>To address this issue, watermarking techniques have emerged as a promising solution by embedding identifiable binary messages into generated text for origin verification and misuse tracing.While recent efforts have explored multi-bit watermarking schemes capable of embedding rich information such as user identifiers, they typically suffer from the fundamental trade-off between text quality and decoding accuracy: to ensure reliable message decoding, they have to restrict the size of preferred token sets during encoding, yet such restrictions reduce the quality of the generated content.In this work, we propose MajorMark, a novel watermarking method that improves this trade-off through majority bit-aware encoding.MajorMark selects preferred token sets based on the majority bit of the message, enabling a larger and more flexible sampling of tokens.In contrast to prior methods that rely on token frequency analysis for decoding, MajorMark employs a clustering-based decoding strategy, which maintains high decoding accuracy even when the preferred token set is large, thus preserving both content quality and decoding accuracy.We further introduce MajorMark$^+$, which partitions the message into multiple blocks to independently encode and deterministically decode each block, thereby further enhancing the quality of watermarked text and improving decoding accuracy.Extensive experiments on state-of-the-art LLMs demonstrate that our methods significantly enhance both decoding accuracy and text generation quality, outperforming prior multi-bit watermarking baselines.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03829v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2508.03829v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-05</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Hallucination to Truth: A Review of Fact-Checking and Factuality Evaluation in Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) are trained on vast and diverse internet corpora that often include inaccurate or misleading content.<span class='px-1 mx-1 bg-yellow-200'>Consequently, LLMs can generate misinformation, making robust fact-checking essential. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.682</span></span><span class='px-1 mx-1 bg-yellow-200'>This review systematically analyzes how LLM-generated content is evaluated for factual accuracy by exploring key challenges such as hallucinations, dataset limitations, and the reliability of evaluation metrics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.766</span></span>The review emphasizes the need for strong fact-checking frameworks that integrate advanced prompting strategies, domain-specific fine-tuning, and retrieval-augmented generation (RAG) methods.It proposes five research questions that guide the analysis of the recent literature from 2020 to 2025, focusing on evaluation methods and mitigation techniques.The review also discusses the role of instruction tuning, multi-agent reasoning, and external knowledge access via RAG frameworks.Key findings highlight the limitations of current metrics, the value of grounding outputs with validated external evidence, and the importance of domain-specific customization to improve factual consistency.Overall, the review underlines the importance of building LLMs that are not only accurate and explainable but also tailored for domain-specific fact-checking.These insights contribute to the advancement of research toward more trustworthy and context-aware language models.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03860v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2508.03860v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1229,58 +1255,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2508.03470v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-05</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                AttnTrace: Attention-based Context Traceback for Long-Context LLMs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Long-context large language models (LLMs), such as Gemini-2.5-Pro and Claude-Sonnet-4, are increasingly used to empower advanced AI systems, including retrieval-augmented generation (RAG) pipelines and autonomous agents.In these systems, an LLM receives an instruction along with a context--often consisting of texts retrieved from a knowledge database or memory--and generates a response that is contextually grounded by following the instruction.Recent studies have designed solutions to trace back to a subset of texts in the context that contributes most to the response generated by the LLM.<span class='px-1 mx-1 bg-yellow-200'>These solutions have numerous real-world applications, including performing post-attack forensic analysis and improving the interpretability and trustworthiness of LLM outputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.629</span></span>While significant efforts have been made, state-of-the-art solutions such as TracLLM often lead to a high computation cost, e.g., it takes TracLLM hundreds of seconds to perform traceback for a single response-context pair.In this work, we propose AttnTrace, a new context traceback method based on the attention weights produced by an LLM for a prompt.To effectively utilize attention weights, we introduce two techniques designed to enhance the effectiveness of AttnTrace, and we provide theoretical insights for our design choice.We also perform a systematic evaluation for AttnTrace.The results demonstrate that AttnTrace is more accurate and efficient than existing state-of-the-art context traceback methods.We also show that AttnTrace can improve state-of-the-art methods in detecting prompt injection under long contexts through the attribution-before-detection paradigm.As a real-world application, we demonstrate that AttnTrace can effectively pinpoint injected instructions in a paper designed to manipulate LLM-generated reviews.The code is at https://github.com/Wang-Yanting/AttnTrace.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03793v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2508.03793v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-05</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Sotopia-RL: Reward Design for Social Intelligence
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Social intelligence has become a critical capability for large language models (LLMs), enabling them to engage effectively in real-world social tasks such as accommodation, persuasion, collaboration, and negotiation.Reinforcement learning (RL) is a natural fit for training socially intelligent agents because it allows models to learn sophisticated strategies directly through social interactions.However, social interactions have two key characteristics that set barriers for RL training: (1) partial observability, where utterances have indirect and delayed effects that complicate credit assignment, and (2) multi-dimensionality, where behaviors such as rapport-building or knowledge-seeking contribute indirectly to goal achievement.These characteristics make Markov decision process (MDP)-based RL with single-dimensional episode-level rewards inefficient and unstable.To address these challenges, we propose Sotopia-RL, a novel framework that refines coarse episode-level feedback into utterance-level, multi-dimensional rewards.<span class='px-1 mx-1 bg-yellow-200'>Utterance-level credit assignment mitigates partial observability by attributing outcomes to individual utterances, while multi-dimensional rewards capture the full richness of social interactions and reduce reward hacking. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.703</span></span>Experiments in Sotopia, an open-ended social learning environment, demonstrate that Sotopia-RL achieves state-of-the-art social goal completion scores (7.17 on Sotopia-hard and 8.31 on Sotopia-full), significantly outperforming existing approaches.Ablation studies confirm the necessity of both utterance-level credit assignment and multi-dimensional reward design for RL training.Our implementation is publicly available at: https://github.com/sotopia-lab/sotopia-rl.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03905v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2508.03905v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1827,11 +1801,11 @@
                   <p>Human cognition naturally engages with abstract and fluid concepts, whereas existing reasoning models often rely on generating discrete tokens, potentially constraining their expressive capabilities.Recent advancements aim to address this limitation by enabling large language models (LLMs) to generate soft, abstract tokens, thus facilitating reasoning within a continuous concept space.<span class='px-1 mx-1 bg-yellow-200'>This paper explores the `Soft Thinking' capabilities of various LLMs by examining the models' internal behavior using a suite of probing techniques. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.605</span></span>Contrary to the common belief that Soft Thinking enables the simultaneous exploration of diverse reasoning paths, our findings reveal that LLMs predominantly rely on the most influential component of the soft inputs during subsequent decoding steps.This reliance hinders the exploration of different reasoning paths and reduces vanilla Soft Thinking to a form of greedy decoding, obscuring the advantage of transmitting more information through Soft Tokens.To tackle this issue, we explore sampling strategies to introduce \emph{randomness}, employing methods such as Dirichlet resampling and the Gumbel-Softmax trick.Our experiments demonstrate that incorporating randomness can alleviate the limitations of vanilla approaches and unleash the potential of Soft Thinking.Notably, the Gumbel-Softmax trick provides adequate randomness with controlled smoothness, resulting in superior performance across eight reasoning benchmarks.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03440v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03440v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2508.03440v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2508.03440v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2401,19 +2375,19 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                CompassVerifier: A Unified and Robust Verifier for LLMs Evaluation and Outcome Reward
+                Guided Reality: Generating Visually-Enriched AR Task Guidance with LLMs and Vision Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Answer verification is crucial not only for evaluating large language models (LLMs) by matching their unstructured outputs against standard answers, but also serves as the reward model to guide LLM optimization.Most evaluation frameworks rely on regularized matching or employ general LLMs for answer verification, which demands extensive, repetitive customization for regex rules or evaluation prompts.Two fundamental limitations persist in current methodologies: 1) the absence of comprehensive benchmarks that systematically evaluate verification capabilities across different LLMs; and 2) the nascent stage of verifier development, where existing approaches lack both the robustness to handle complex edge cases and the generalizability across different domains.In this work, we develop CompassVerifier, an accurate and robust lightweight verifier model for evaluation and outcome reward.<span class='px-1 mx-1 bg-yellow-200'>It demonstrates multi-domain competency spanning math, knowledge, and diverse reasoning tasks, with the capability to process various answer types, including multi-subproblems, formulas, and sequence answers, while effectively identifying abnormal/invalid responses. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.522</span></span>We introduce VerifierBench benchmark comprising model outputs collected from multiple data sources, augmented through manual analysis of metaerror patterns to enhance CompassVerifier.We anticipate that CompassVerifier and VerifierBench will facilitate answer verification, evaluation protocols, and reinforcement learning research.Code and dataset are available at https://github.com/open-compass/CompassVerifier.</p>
+                  <p>Large language models (LLMs) have enabled the automatic generation of step-by-step augmented reality (AR) instructions for a wide range of physical tasks.<span class='px-1 mx-1 bg-yellow-200'>However, existing LLM-based AR guidance often lacks rich visual augmentations to effectively embed instructions into spatial context for a better user understanding. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.591</span></span>We present Guided Reality, a fully automated AR system that generates embedded and dynamic visual guidance based on step-by-step instructions.<span class='px-1 mx-1 bg-yellow-200'>Our system integrates LLMs and vision models to: 1) generate multi-step instructions from user queries, 2) identify appropriate types of visual guidance, 3) extract spatial information about key interaction points in the real world, and 4) embed visual guidance in physical space to support task execution. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.526</span></span>Drawing from a corpus of user manuals, we define five categories of visual guidance and propose an identification strategy based on the current step.We evaluate the system through a user study (N=16), completing real-world tasks and exploring the system in the wild.<span class='px-1 mx-1 bg-yellow-200'>Additionally, four instructors shared insights on how Guided Reality could be integrated into their training workflows. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.586</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03686v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03547v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2508.03686v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2508.03547v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2427,19 +2401,45 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                A11yShape: AI-Assisted 3-D Modeling for Blind and Low-Vision Programmers
+                Tackling Distribution Shift in LLM via KILO: Knowledge-Instructed Learning for Continual Adaptation
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Building 3-D models is challenging for blind and low-vision (BLV) users due to the inherent complexity of 3-D models and the lack of support for non-visual interaction in existing tools.<span class='px-1 mx-1 bg-yellow-200'>To address this issue, we introduce A11yShape, a novel system designed to help BLV users who possess basic programming skills understand, modify, and iterate on 3-D models. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.51</span></span>A11yShape leverages LLMs and integrates with OpenSCAD, a popular open-source editor that generates 3-D models from code.Key functionalities of A11yShape include accessible descriptions of 3-D models, version control to track changes in models and code, and a hierarchical representation of model components.Most importantly, A11yShape employs a cross-representation highlighting mechanism to synchronize semantic selections across all model representations -- code, semantic hierarchy, AI description, and 3-D rendering.We conducted a multi-session user study with four BLV programmers, where, after an initial tutorial session, participants independently completed 12 distinct models across two testing sessions, achieving results that aligned with their own satisfaction.The result demonstrates that participants were able to comprehend provided 3-D models, as well as independently create and modify 3-D models -- tasks that were previously impossible without assistance from sighted individuals.</p>
+                  <p>Large Language Models (LLMs) often suffer from performance degradation when faced with domain shifts, primarily due to catastrophic forgetting.In this work, we propose KILO (Knowledge-Instructed Learning for Continual Adaptation), a novel continual learning framework that integrates dynamic knowledge graphs with instruction tuning.By leveraging retrieved domain-specific knowledge as guidance during training, KILO enhances both adaptability to new domains and retention of previously acquired knowledge.We pretrain our model on WikiText-103 and evaluate sequential adaptation across four diverse target domains: BioASQ, SciQ, TweetEval, and MIND.Our experiments demonstrate that KILO consistently outperforms strong baselines, including continual fine-tuning, ERNIE 2.0, and CPT, in terms of backward transfer, forward transfer, F1 score, retention rate, and training efficiency.<span class='px-1 mx-1 bg-yellow-200'>These results highlight the effectiveness of combining structured knowledge retrieval and instruction prompting to overcome domain shift challenges in continual learning scenarios. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.553</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03852v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03571v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2508.03852v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2508.03571v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-05</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                CompassVerifier: A Unified and Robust Verifier for LLMs Evaluation and Outcome Reward
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Answer verification is crucial not only for evaluating large language models (LLMs) by matching their unstructured outputs against standard answers, but also serves as the reward model to guide LLM optimization.Most evaluation frameworks rely on regularized matching or employ general LLMs for answer verification, which demands extensive, repetitive customization for regex rules or evaluation prompts.Two fundamental limitations persist in current methodologies: 1) the absence of comprehensive benchmarks that systematically evaluate verification capabilities across different LLMs; and 2) the nascent stage of verifier development, where existing approaches lack both the robustness to handle complex edge cases and the generalizability across different domains.In this work, we develop CompassVerifier, an accurate and robust lightweight verifier model for evaluation and outcome reward.<span class='px-1 mx-1 bg-yellow-200'>It demonstrates multi-domain competency spanning math, knowledge, and diverse reasoning tasks, with the capability to process various answer types, including multi-subproblems, formulas, and sequence answers, while effectively identifying abnormal/invalid responses. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.522</span></span>We introduce VerifierBench benchmark comprising model outputs collected from multiple data sources, augmented through manual analysis of metaerror patterns to enhance CompassVerifier.We anticipate that CompassVerifier and VerifierBench will facilitate answer verification, evaluation protocols, and reinforcement learning research.Code and dataset are available at https://github.com/open-compass/CompassVerifier.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03686v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2508.03686v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3755,11 +3755,11 @@
                   <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in Large Language Models (LLMs) for code optimization have enabled industrial platforms to automate software performance engineering at unprecedented scale and speed. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.732</span></span>Yet, organizations in regulated industries face strict constraints on which LLMs they can use - many cannot utilize commercial models due to data privacy regulations and compliance requirements, creating a significant challenge for achieving high-quality code optimization while maintaining cost-effectiveness.<span class='px-1 mx-1 bg-yellow-200'>We address this by implementing a Mixture-of-Agents (MoA) approach that directly synthesizes code from multiple specialized LLMs, comparing it against TurinTech AI's vanilla Genetic Algorithm (GA)-based ensemble system and individual LLM optimizers using real-world industrial codebases. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.654</span></span>Our key contributions include: (1) First MoA application to industrial code optimization using real-world codebases; (2) Empirical evidence that MoA excels with open-source models, achieving 14.3% to 22.2% cost savings and 28.6% to 32.2% faster optimization times for regulated environments; (3) Deployment guidelines demonstrating GA's advantage with commercial models while both ensembles outperform individual LLMs; and (4) Real-world validation across 50 code snippets and seven LLM combinations, generating over 8,700 variants, addresses gaps in industrial LLM ensemble evaluation.This provides actionable guidance for organizations balancing regulatory compliance with optimization performance in production environments.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03329v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03329v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2508.03329v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2508.03329v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3807,11 +3807,11 @@
                   <p><span class='px-1 mx-1 bg-yellow-200'>Large language models (LLMs) excel at generating code from natural language (NL) descriptions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.919</span></span>However, the plain textual descriptions are inherently ambiguous and often fail to capture complex requirements like intricate system behaviors, conditional logic, and architectural constraints; implicit data dependencies in service-oriented architectures are difficult to infer and handle correctly.<span class='px-1 mx-1 bg-yellow-200'>To bridge this gap, we propose a novel step-by-step code generation framework named UML2Dep by leveraging unambiguous formal specifications of complex requirements. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.832</span></span>First, we introduce an enhanced Unified Modeling Language (UML) sequence diagram tailored for service-oriented architectures.This diagram extends traditional visual syntax by integrating decision tables and API specifications, explicitly formalizing structural relationships and business logic flows in service interactions to rigorously eliminate linguistic ambiguity.Second, recognizing the critical role of data flow, we introduce a dedicated data dependency inference (DDI) task.DDI systematically constructs an explicit data dependency graph prior to actual code synthesis.To ensure reliability, we formalize DDI as a constrained mathematical reasoning task through novel prompting strategies, aligning with LLMs' excellent mathematical strengths.Additional static parsing and dependency pruning further reduce context complexity and cognitive load associated with intricate specifications, thereby enhancing reasoning accuracy and efficiency.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03379v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.03379v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2508.03379v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2508.03379v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3929,6 +3929,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Bridging Language Gaps in Open-Source Documentation with Large-Language-Model Translation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>While open source communities attract diverse contributors globally, few repositories provide essential documentation in languages other than English.<span class='px-1 mx-1 bg-yellow-200'>Large language models (LLMs) have demonstrated remarkable capabilities in software engineering tasks and translations across domains. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.718</span></span>However, little is known about LLM capabilities in translating open-source technical documentation, which mixes natural language, code, URLs, and markdown formatting.To understand the need and potential for LLMs in technical documentation translation, we evaluated community translation activity and English-to-German translations of 50 README files using OpenAI's ChatGPT 4 and Anthropic's Claude.We found scarce translation activity, mostly in larger repositories and community-driven in nature.LLM performance comparison suggests they can provide accurate translations.However, analysis revealed fidelity challenges: both models struggled to preserve structural components (e.g., hyperlinks) and exhibited formatting inconsistencies.These findings highlight both promise and challenges of LLM-assisted documentation internationalization.As a first step toward translation-aware continuous integration pipelines, we introduce TRIFID, an early-stage translation fidelity scoring framework that automatically checks how well translations preserve code, links, and formatting.Our efforts provide a foundation for automated LLM-driven support for creating and maintaining open source documentation.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.02497v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2508.02497v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                AnalogCoder-Pro: Unifying Analog Circuit Generation and Optimization via Multi-modal LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Despite advances in analog design automation, analog front-end design still heavily depends on expert intuition and iterative simulations, underscoring critical gaps in fully automated optimization for performance-critical applications.<span class='px-1 mx-1 bg-yellow-200'>Recently, the rapid development of Large Language Models (LLMs) has brought new promise to analog design automation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span>However, existing work remains in its early stages, and holistic joint optimization for practical end-to-end solutions remains largely unexplored.We propose AnalogCoder-Pro, a unified multimodal LLM-based framework that integrates generative capabilities and optimization techniques to jointly explore circuit topologies and optimize device sizing, automatically generating performance-specific, fully sized schematic netlists.AnalogCoder-Pro employs rejection sampling for fine-tuning LLMs on high-quality synthesized circuit data and introduces a multimodal diagnosis and repair workflow based on functional specifications and waveform images.By leveraging LLMs to interpret generated circuit netlists, AnalogCoder-Pro automates the extraction of critical design parameters and the formulation of parameter spaces, establishing an end-to-end workflow for simultaneous topology generation and device sizing optimization.Extensive experiments demonstrate that these orthogonal approaches significantly improve the success rate of analog circuit design and enhance circuit performance.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.02518v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2508.02518v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-04</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Meta-RAG on Large Codebases Using Code Summarization
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3942,58 +3994,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2508.02611v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Automated Validation of LLM-based Evaluators for Software Engineering Artifacts
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Automation in software engineering increasingly relies on large language models (LLMs) to generate, review, and assess code artifacts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.863</span></span>However, establishing LLMs as reliable evaluators remains an open challenge: human evaluations are costly, subjective and non scalable, while existing automated methods fail to discern fine grained variations in artifact quality.   We introduce REFINE (Ranking Evaluators for FIne grained Nuanced Evaluation), an automated framework for benchmarking LLM based evaluators across software engineering tasks.REFINE comprises of two modules: Hierarchy Dataset Builder applies novel generation techniques to automatically synthesize artifacts with progressively reduced quality, and Evaluator Tester quantifies each candidate evaluator configuration by measuring how closely its rankings align with expected ordering.   A key feature of REFINE is controllability: users can tune the granularity of degradation to progressively refine evaluator configurations, from coarse filtering to stress testing on subtle quality gaps.   While the methodology is general, we focus on coding tasks reflecting the practical demands in our production setting.REFINE was integrated into IBM's internal development workflows and applied to code generation, translation, and summarization for COBOL, an enterprise critical programming language, using industrial data.It was used to identify LLM as a Judge configurations that lifted alignment scores from below $0.7$ to above $0.9$ in some coding tasks.These nuance sensitive evaluators are now actively used by model training teams to support model release decisions.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.02827v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2508.02827v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-08-04</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Polymath: A Self-Optimizing Agent with Dynamic Hierarchical Workflow
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large language models (LLMs) excel at solving complex tasks by executing agentic workflows composed of detailed instructions and structured operations.Yet, building general-purpose agents by manually embedding foundation models into agentic systems such as Chain-of-Thought, Self-Reflection, and ReACT through text interfaces limits scalability and efficiency.<span class='px-1 mx-1 bg-yellow-200'>Recently, many researchers have sought to automate the generation and optimization of these workflows through code-based representations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.817</span></span>However, existing methods often rely on labeled datasets to train and optimize workflows, making them ineffective and inflexible for solving real-world, dynamic problems where labeled data is unavailable.To address this challenge, we introduce Polymath, a self-optimizing agent with dynamic hierarchical workflow that leverages the flexibility of task flow graphs and the expressiveness of code-represented workflows to solve a wide range of real-world, dynamic problems.The proposed optimization methodology integrates multi-grid-inspired graph optimization with a self-reflection-guided evolutionary algorithm to refine workflows without labeled data.Experimental results on six benchmark datasets across coding, math, and multi-turn QA tasks show that Polymath achieves 8.1% average improvement over state-of-the-art baselines.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2508.02959v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2508.02959v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
