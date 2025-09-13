@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-09-12.</p><br/>
+            <p>Generated on 2025-09-13.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -218,6 +218,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLM-Guided Ansätze Design for Quantum Circuit Born Machines in Financial Generative Modeling
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Quantum generative modeling using quantum circuit Born machines (QCBMs) shows promising potential for practical quantum advantage.However, discovering ans\"atze that are both expressive and hardware-efficient remains a key challenge, particularly on noisy intermediate-scale quantum (NISQ) devices.<span class='px-1 mx-1 bg-yellow-200'>In this work, we introduce a prompt-based framework that leverages large language models (LLMs) to generate hardware-aware QCBM architectures. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.786</span></span><span class='px-1 mx-1 bg-yellow-200'>Prompts are conditioned on qubit connectivity, gate error rates, and hardware topology, while iterative feedback, including Kullback-Leibler (KL) divergence, circuit depth, and validity, is used to refine the circuits. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.772</span></span>We evaluate our method on a financial modeling task involving daily changes in Japanese government bond (JGB) interest rates.Our results show that the LLM-generated ans\"atze are significantly shallower and achieve superior generative performance compared to the standard baseline when executed on real IBM quantum hardware using 12 qubits.These findings demonstrate the practical utility of LLM-driven quantum architecture search and highlight a promising path toward robust, deployable generative models for near-term quantum devices.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08385v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.08385v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                X-Teaming Evolutionary M2S: Automated Discovery of Multi-turn to Single-turn Jailbreak Templates
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Multi-turn-to-single-turn (M2S) compresses iterative red-teaming into one structured prompt, but prior work relied on a handful of manually written templates. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span>We present X-Teaming Evolutionary M2S, an automated framework that discovers and optimizes M2S templates through language-model-guided evolution.The system pairs smart sampling from 12 sources with an LLM-as-judge inspired by StrongREJECT and records fully auditable logs.   Maintaining selection pressure by setting the success threshold to $\theta = 0.70$, we obtain five evolutionary generations, two new template families, and 44.8% overall success (103/230) on GPT-4.1.A balanced cross-model panel of 2,500 trials (judge fixed) shows that structural gains transfer but vary by target; two models score zero at the same threshold.<span class='px-1 mx-1 bg-yellow-200'>We also find a positive coupling between prompt length and score, motivating length-aware judging.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.622</span></span>Our results demonstrate that structure-level search is a reproducible route to stronger single-turn probes and underscore the importance of threshold calibration and cross-model evaluation.Code, configurations, and artifacts are available at https://github.com/hyunjun1121/M2S-x-teaming.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08729v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.08729v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 PromptGuard: An Orchestrated Prompting Framework for Principled Synthetic Text Generation for Vulnerable Populations using LLMs with Enhanced Safety, Fairness, and Controllability
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -283,58 +335,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2509.09043v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                LLM-Guided Ansätze Design for Quantum Circuit Born Machines in Financial Generative Modeling
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Quantum generative modeling using quantum circuit Born machines (QCBMs) shows promising potential for practical quantum advantage.However, discovering ans\"atze that are both expressive and hardware-efficient remains a key challenge, particularly on noisy intermediate-scale quantum (NISQ) devices.<span class='px-1 mx-1 bg-yellow-200'>In this work, we introduce a prompt-based framework that leverages large language models (LLMs) to generate hardware-aware QCBM architectures. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.786</span></span><span class='px-1 mx-1 bg-yellow-200'>Prompts are conditioned on qubit connectivity, gate error rates, and hardware topology, while iterative feedback, including Kullback-Leibler (KL) divergence, circuit depth, and validity, is used to refine the circuits. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.772</span></span>We evaluate our method on a financial modeling task involving daily changes in Japanese government bond (JGB) interest rates.Our results show that the LLM-generated ans\"atze are significantly shallower and achieve superior generative performance compared to the standard baseline when executed on real IBM quantum hardware using 12 qubits.These findings demonstrate the practical utility of LLM-driven quantum architecture search and highlight a promising path toward robust, deployable generative models for near-term quantum devices.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08385v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2509.08385v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                X-Teaming Evolutionary M2S: Automated Discovery of Multi-turn to Single-turn Jailbreak Templates
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Multi-turn-to-single-turn (M2S) compresses iterative red-teaming into one structured prompt, but prior work relied on a handful of manually written templates. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.606</span></span>We present X-Teaming Evolutionary M2S, an automated framework that discovers and optimizes M2S templates through language-model-guided evolution.The system pairs smart sampling from 12 sources with an LLM-as-judge inspired by StrongREJECT and records fully auditable logs.   Maintaining selection pressure by setting the success threshold to $\theta = 0.70$, we obtain five evolutionary generations, two new template families, and 44.8% overall success (103/230) on GPT-4.1.A balanced cross-model panel of 2,500 trials (judge fixed) shows that structural gains transfer but vary by target; two models score zero at the same threshold.<span class='px-1 mx-1 bg-yellow-200'>We also find a positive coupling between prompt length and score, motivating length-aware judging.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.622</span></span>Our results demonstrate that structure-level search is a reproducible route to stronger single-turn probes and underscore the importance of threshold calibration and cross-model evaluation.Code, configurations, and artifacts are available at https://github.com/hyunjun1121/M2S-x-teaming.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08729v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2509.08729v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1091,32 +1091,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Towards Trustworthy AI: Characterizing User-Reported Risks across LLMs "In the Wild"
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>While Large Language Models (LLMs) are rapidly integrating into daily life, research on their risks often remains lab-based and disconnected from the problems users encounter "in the wild." <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.672</span></span>While recent HCI research has begun to explore these user-facing risks, it typically concentrates on a singular LLM chatbot like ChatGPT or an isolated risk like privacy.<span class='px-1 mx-1 bg-yellow-200'>To gain a holistic understanding of multi-risk across LLM chatbots, we analyze online discussions on Reddit around seven major LLM chatbots through the U.S. NIST's AI Risk Management Framework. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.732</span></span>We find that user-reported risks are unevenly distributed and platform-specific.While "Valid and Reliable" risk is the most frequently mentioned, each product also exhibits a unique "risk fingerprint;" for instance, user discussions associate GPT more with "Safe" and "Fair" issues, Gemini with "Privacy," and Claude with "Secure and Resilient" risks.Furthermore, the nature of these risks differs by their prevalence: less frequent risks like "Explainability" and "Privacy" manifest as nuanced user trade-offs, more common ones like "Fairness" are experienced as direct personal harms.<span class='px-1 mx-1 bg-yellow-200'>Our findings reveal gaps between risks reported by system-centered studies and by users, highlighting the need for user-centered approaches that support users in their daily use of LLM chatbots. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.843</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08912v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2509.08912v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1130,6 +1104,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2509.08755v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Towards Trustworthy AI: Characterizing User-Reported Risks across LLMs "In the Wild"
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>While Large Language Models (LLMs) are rapidly integrating into daily life, research on their risks often remains lab-based and disconnected from the problems users encounter "in the wild." <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.672</span></span>While recent HCI research has begun to explore these user-facing risks, it typically concentrates on a singular LLM chatbot like ChatGPT or an isolated risk like privacy.<span class='px-1 mx-1 bg-yellow-200'>To gain a holistic understanding of multi-risk across LLM chatbots, we analyze online discussions on Reddit around seven major LLM chatbots through the U.S. NIST's AI Risk Management Framework. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.732</span></span>We find that user-reported risks are unevenly distributed and platform-specific.While "Valid and Reliable" risk is the most frequently mentioned, each product also exhibits a unique "risk fingerprint;" for instance, user discussions associate GPT more with "Safe" and "Fair" issues, Gemini with "Privacy," and Claude with "Secure and Resilient" risks.Furthermore, the nature of these risks differs by their prevalence: less frequent risks like "Explainability" and "Privacy" manifest as nuanced user trade-offs, more common ones like "Fairness" are experienced as direct personal harms.<span class='px-1 mx-1 bg-yellow-200'>Our findings reveal gaps between risks reported by system-centered studies and by users, highlighting the need for user-centered approaches that support users in their daily use of LLM chatbots. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.843</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08912v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.08912v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1460,58 +1460,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                BRoverbs -- Measuring how much LLMs understand Portuguese proverbs
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) exhibit significant performance variations depending on the linguistic and cultural context in which they are applied.This disparity signals the necessity of mature evaluation frameworks that can assess their capabilities in specific regional settings.<span class='px-1 mx-1 bg-yellow-200'>In the case of Portuguese, existing evaluations remain limited, often relying on translated datasets that may not fully capture linguistic nuances or cultural references. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span><span class='px-1 mx-1 bg-yellow-200'>Meanwhile, native Portuguese-language datasets predominantly focus on structured national exams or sentiment analysis of social media interactions, leaving gaps in evaluating broader linguistic understanding. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.781</span></span>To address this limitation, we introduce BRoverbs, a dataset specifically designed to assess LLM performance through Brazilian proverbs.Proverbs serve as a rich linguistic resource, encapsulating cultural wisdom, figurative expressions, and complex syntactic structures that challenge the model comprehension of regional expressions.BRoverbs aims to provide a new evaluation tool for Portuguese-language LLMs, contributing to advancing regionally informed benchmarking.The benchmark is available at https://huggingface.co/datasets/Tropic-AI/BRoverbs.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08960v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2509.08960v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                YouthSafe: A Youth-Centric Safety Benchmark and Safeguard Model for Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) are increasingly used by teenagers and young adults in everyday life, ranging from emotional support and creative expression to educational assistance.However, their unique vulnerabilities and risk profiles remain under-examined in current safety benchmarks and moderation systems, leaving this population disproportionately exposed to harm.In this work, we present Youth AI Risk (YAIR), the first benchmark dataset designed to evaluate and improve the safety of youth LLM interactions.YAIR consists of 12,449 annotated conversation snippets spanning 78 fine grained risk types, grounded in a taxonomy of youth specific harms such as grooming, boundary violation, identity confusion, and emotional overreliance.<span class='px-1 mx-1 bg-yellow-200'>We systematically evaluate widely adopted moderation models on YAIR and find that existing approaches substantially underperform in detecting youth centered risks, often missing contextually subtle yet developmentally harmful interactions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.818</span></span>To address these gaps, we introduce YouthSafe, a real-time risk detection model optimized for youth GenAI contexts.YouthSafe significantly outperforms prior systems across multiple metrics on risk detection and classification, offering a concrete step toward safer and more developmentally appropriate AI interactions for young users.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08997v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2509.08997v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 <think> So let's replace this phrase with insult... </think> Lessons learned from generation of toxic texts with LLMs
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1681,6 +1629,58 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2509.08809v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                BRoverbs -- Measuring how much LLMs understand Portuguese proverbs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) exhibit significant performance variations depending on the linguistic and cultural context in which they are applied.This disparity signals the necessity of mature evaluation frameworks that can assess their capabilities in specific regional settings.<span class='px-1 mx-1 bg-yellow-200'>In the case of Portuguese, existing evaluations remain limited, often relying on translated datasets that may not fully capture linguistic nuances or cultural references. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span><span class='px-1 mx-1 bg-yellow-200'>Meanwhile, native Portuguese-language datasets predominantly focus on structured national exams or sentiment analysis of social media interactions, leaving gaps in evaluating broader linguistic understanding. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.781</span></span>To address this limitation, we introduce BRoverbs, a dataset specifically designed to assess LLM performance through Brazilian proverbs.Proverbs serve as a rich linguistic resource, encapsulating cultural wisdom, figurative expressions, and complex syntactic structures that challenge the model comprehension of regional expressions.BRoverbs aims to provide a new evaluation tool for Portuguese-language LLMs, contributing to advancing regionally informed benchmarking.The benchmark is available at https://huggingface.co/datasets/Tropic-AI/BRoverbs.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08960v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.08960v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-10</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                YouthSafe: A Youth-Centric Safety Benchmark and Safeguard Model for Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) are increasingly used by teenagers and young adults in everyday life, ranging from emotional support and creative expression to educational assistance.However, their unique vulnerabilities and risk profiles remain under-examined in current safety benchmarks and moderation systems, leaving this population disproportionately exposed to harm.In this work, we present Youth AI Risk (YAIR), the first benchmark dataset designed to evaluate and improve the safety of youth LLM interactions.YAIR consists of 12,449 annotated conversation snippets spanning 78 fine grained risk types, grounded in a taxonomy of youth specific harms such as grooming, boundary violation, identity confusion, and emotional overreliance.<span class='px-1 mx-1 bg-yellow-200'>We systematically evaluate widely adopted moderation models on YAIR and find that existing approaches substantially underperform in detecting youth centered risks, often missing contextually subtle yet developmentally harmful interactions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.818</span></span>To address these gaps, we introduce YouthSafe, a real-time risk detection model optimized for youth GenAI contexts.YouthSafe significantly outperforms prior systems across multiple metrics on risk detection and classification, offering a concrete step toward safer and more developmentally appropriate AI interactions for young users.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.08997v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.08997v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
