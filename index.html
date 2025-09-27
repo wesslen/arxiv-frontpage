@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-09-26.</p><br/>
+            <p>Generated on 2025-09-27.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -1403,6 +1403,32 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                From Text to Talk: Audio-Language Model Needs Non-Autoregressive Joint Training
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advances in large language models have attracted significant interest in extending their capabilities to multimodal scenarios, particularly for speech-in speech-out conversational systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.6</span></span>However, existing multimodal models handling interleaved audio and text, such as MOSHI require complex multi stage training pipelines, incurring substantial computational costs.Moreover, these models uniformly apply autoregressive generation to both text and audio tokens, overlooking a fundamental asymmetry in their dependency structures: while text tokens exhibit strong target target dependencies requiring causal ordering, audio tokens are predominantly driven by source target dependencies, where audio outputs primarily condition on source text rather than preceding audio tokens.In this work, we propose TtT, a unified audio-text modeling framework that integrates AR text generation with non-autoregressive audio diffusion within a single Transformer architecture initialized from a pretrained LLM.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.20072v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.20072v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-24</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 DSA, AIA, and LLMs: Approaches to conceptualizing and auditing moderation in LLM-based chatbots across languages and interfaces in the electoral contexts
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1460,14 +1486,14 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advances in large language models have attracted significant interest in extending their capabilities to multimodal scenarios, particularly for speech-in speech-out conversational systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.6</span></span>However, existing multimodal models handling interleaved audio and text, such as MOSHI require complex multi stage training pipelines, incurring substantial computational costs.Moreover, these models uniformly apply autoregressive generation to both text and audio tokens, overlooking a fundamental asymmetry in their dependency structures: while text tokens exhibit strong target target dependencies requiring causal ordering, audio tokens are predominantly driven by source target dependencies, where audio outputs primarily condition on source text rather than preceding audio tokens.In this work, we propose TtT, a unified audio-text modeling framework that integrates AR text generation with non-autoregressive audio diffusion within a single Transformer architecture initialized from a pretrained LLM.</p>
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Recent advances in large language models (LLMs) have attracted significant interest in extending their capabilities to multimodal scenarios, particularly for speech-to-speech conversational systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.668</span></span>However, existing multimodal models handling interleaved audio and text rely on autoregressive methods, overlooking that text depends on target-target relations whereas audio depends mainly on source-target relations.In this work, we propose Text-to-Talk (TtT), a unified audio-text framework that integrates autoregressive (AR) text generation with non-autoregressive (NAR) audio diffusion in a single Transformer.By leveraging the any-order autoregressive property of absorbing discrete diffusion, our approach provides a unified training objective for text and audio.To support this hybrid generation paradigm, we design a modality-aware attention mechanism that enforces causal decoding for text while allowing bidirectional modeling within audio spans, and further introduce three training strategies that reduce train-test discrepancies.During inference, TtT employs block-wise diffusion to synthesize audio in parallel while flexibly handling variable-length outputs.Extensive experiments across Audio-QA and ASR tasks demonstrate the effectiveness of our approach, with detailed ablation studies validating each proposed component.We will open-source our models, data and code to facilitate future research in this direction.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.20072v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.20072v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2509.20072v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2509.20072v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
