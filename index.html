@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-10-01.</p><br/>
+            <p>Generated on 2025-10-02.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -477,6 +477,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Robustness Tools in LLM Safety</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-30</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                ReFACT: A Benchmark for Scientific Confabulation Detection with Positional Error Annotations
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) frequently confabulate scientific facts, severely undermining their trustworthiness.Addressing this challenge requires benchmarks that go beyond binary factuality and enable fine-grained evaluation.We introduce ReFACT (Reddit False And Correct Texts), a benchmark of 1,001 expert-annotated question-answer pairs spanning diverse scientific domains for the detection of scientific confabulation.Each instance includes both a scientifically correct answer and a non-factual counterpart annotated with precise error spans and error types.<span class='px-1 mx-1 bg-yellow-200'>ReFACT enables multi-stage evaluation: (1) confabulation detection, (2) fine-grained error localization, and (3) correction. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span>We benchmark 9 state-of-the-art LLMs, revealing limited performance (about 50 percent accuracy).Even top models such as GPT-4o fail to distinguish factual from confabulated scientific answers, raising concerns about the reliability of LLM-as-judge evaluation paradigms.Our findings highlight the need for fine-grained, human-validated benchmarks to detect and correct scientific confabulation in domain-specific contexts.The dataset is available at: https://github.com/ddz5431/ReFACT</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.25868v2' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.25868v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-30</p>
           </td>
@@ -1247,6 +1273,58 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                A Multimodal LLM Approach for Visual Question Answering on Multiparametric 3D Brain MRI
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce mpLLM, a prompt-conditioned hierarchical mixture-of-experts (MoE) architecture for visual question answering over multi-parametric 3D brain MRI (mpMRI). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span>mpLLM routes across modality-level and token-level projection experts to fuse multiple interrelated 3D modalities, enabling efficient training without image-report pretraining.To address limited image-text paired supervision, mpLLM integrates a synthetic visual question answering (VQA) protocol that generates medically relevant VQA from segmentation annotations, and we collaborate with medical experts for clinical validation.mpLLM outperforms strong medical VLM baselines by 5.3% on average across multiple mpMRI datasets.Our study features three main contributions: (1) the first clinically validated VQA dataset for 3D brain mpMRI, (2) a novel multimodal LLM that handles multiple interrelated 3D modalities, and (3) strong empirical results that demonstrate the medical utility of our methodology.Ablations highlight the importance of modality-level and token-level experts and prompt-conditioned routing.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.25889v2' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.25889v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-30</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                ExoPredicator: Learning Abstract Models of Dynamic Worlds for Robot Planning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Long-horizon embodied planning is challenging because the world does not only change through an agent's actions: exogenous processes (e.g., water heating, dominoes cascading) unfold concurrently with the agent's actions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.608</span></span>We propose a framework for abstract world models that jointly learns (i) symbolic state representations and (ii) causal processes for both endogenous actions and exogenous mechanisms.Each causal process models the time course of a stochastic cause-effect relation.We learn these world models from limited data via variational Bayesian inference combined with LLM proposals.Across five simulated tabletop robotics environments, the learned models enable fast planning that generalizes to held-out tasks with more objects and more complex goals, outperforming a range of baselines.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.26255v2' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.26255v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-30</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 ScheduleMe: Multi-Agent Calendar Assistant
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1255,11 +1333,11 @@
                   <p><span class='px-1 mx-1 bg-yellow-200'>Recent advancements in LLMs have contributed to the rise of advanced conversational assistants that can assist with user needs through natural language conversation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>This paper presents a ScheduleMe, a multi-agent calendar assistant for users to manage google calendar events in natural language.The system uses a graph-structured coordination mechanism where a central supervisory agent supervises specialized task agents, allowing modularity, conflicts resolution, and context-aware interactions to resolve ambiguities and evaluate user commands.This approach sets an example of how structured reasoning and agent cooperation might convince operators to increase the usability and flexibility of personal calendar assistant tools.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.25693v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.25693v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2509.25693v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2509.25693v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1437,11 +1515,11 @@
                   <p><span class='px-1 mx-1 bg-yellow-200'>Existing multi-agent learning approaches have developed interactive training environments to explicitly promote collaboration among multiple Large Language Models (LLMs), thereby constructing stronger multi-agent systems (MAS). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.668</span></span>However, during inference, they require re-executing the MAS to obtain final solutions, which diverges from human cognition that individuals can enhance their reasoning capabilities through interactions with others and resolve questions independently in the future.To investigate whether multi-agent interaction can enhance LLMs' independent problem-solving ability, we introduce ILR, a novel co-learning framework for MAS that integrates two key components: Dynamic Interaction and Perception Calibration.Specifically, Dynamic Interaction first adaptively selects either cooperative or competitive strategies depending on question difficulty and model ability.<span class='px-1 mx-1 bg-yellow-200'>LLMs then exchange information through Idea3 (Idea Sharing, Idea Analysis, and Idea Fusion), an innovative interaction paradigm designed to mimic human discussion, before deriving their respective final answers. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.701</span></span>In Perception Calibration, ILR employs Group Relative Policy Optimization (GRPO) to train LLMs while integrating one LLM's reward distribution characteristics into another's reward function, thereby enhancing the cohesion of multi-agent interactions.We validate ILR on three LLMs across two model families of varying scales, evaluating performance on five mathematical benchmarks and one coding benchmark.Experimental results show that ILR consistently outperforms single-agent learning, yielding an improvement of up to 5% over the strongest baseline.We further discover that Idea3 can enhance the robustness of stronger LLMs during multi-agent inference, and dynamic interaction types can boost multi-agent learning compared to pure cooperative or competitive strategies.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.26306v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.26306v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2509.26306v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2509.26306v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1494,32 +1572,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2509.26593v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-29</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                MoVa: Towards Generalizable Classification of Human Morals and Values
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Identifying human morals and values embedded in language is essential to empirical studies of communication. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.686</span></span>However, researchers often face substantial difficulty navigating the diversity of theoretical frameworks and data available for their analysis.Here, we contribute MoVa, a well-documented suite of resources for generalizable classification of human morals and values, consisting of (1) 16 labeled datasets and benchmarking results from four theoretically-grounded frameworks; (2) a lightweight LLM prompting strategy that outperforms fine-tuned models across multiple domains and frameworks; and (3) a new application that helps evaluate psychological surveys.In practice, we specifically recommend a classification strategy, all@once, that scores all related concepts simultaneously, resembling the well-known multi-label classifier chain.The data and methods in MoVa can facilitate many fine-grained interpretations of human and machine communication, with potential implications for the alignment of machine behavior.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.24216v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2509.24216v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2040,11 +2092,11 @@
                   <p>Large language models (LLMs) integrated into agent-driven workflows hold immense promise for healthcare, yet a significant gap exists between their potential and practical implementation within clinical settings.To address this, we present a practitioner-oriented field manual for deploying generative agents that use electronic health record (EHR) data.This guide is informed by our experience deploying the "irAE-Agent", an automated system to detect immune-related adverse events from clinical notes at Mass General Brigham, and by structured interviews with 20 clinicians, engineers, and informatics leaders involved in the project.<span class='px-1 mx-1 bg-yellow-200'>Our analysis reveals a critical misalignment in clinical AI development: less than 20% of our effort was dedicated to prompt engineering and model development, while over 80% was consumed by the sociotechnical work of implementation. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.774</span></span>We distill this effort into five "heavy lifts": data integration, model validation, ensuring economic value, managing system drift, and governance.By providing actionable solutions for each of these challenges, this field manual shifts the focus from algorithmic development to the essential infrastructure and implementation work required to bridge the "valley of death" and successfully translate generative AI from pilot projects into routine clinical care.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.26153v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.26153v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2509.26153v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2509.26153v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2305,37 +2357,11 @@
                   <p>While large language models (LLMs) with reasoning capabilities are progressing rapidly on high-school math competitions and coding, can they reason effectively through complex, open-ended challenges found in frontier physics research?<span class='px-1 mx-1 bg-yellow-200'>And crucially, what kinds of reasoning tasks do physicists want LLMs to assist with? <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.692</span></span><span class='px-1 mx-1 bg-yellow-200'>To address these questions, we present the CritPt (Complex Research using Integrated Thinking - Physics Test, pronounced "critical point"), the first benchmark designed to test LLMs on unpublished, research-level reasoning tasks that broadly covers modern physics research areas, including condensed matter, quantum physics, atomic, molecular & optical physics, astrophysics, high energy physics, mathematical physics, statistical physics, nuclear physics, nonlinear dynamics, fluid dynamics and biophysics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.525</span></span>CritPt consists of 71 composite research challenges designed to simulate full-scale research projects at the entry level, which are also decomposed to 190 simpler checkpoint tasks for more fine-grained insights.All problems are newly created by 50+ active physics researchers based on their own research.<span class='px-1 mx-1 bg-yellow-200'>Every problem is hand-curated to admit a guess-resistant and machine-verifiable answer and is evaluated by an automated grading pipeline heavily customized for advanced physics-specific output formats. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.507</span></span>We find that while current state-of-the-art LLMs show early promise on isolated checkpoints, they remain far from being able to reliably solve full research-scale challenges: the best average accuracy among base models is only 4.0% , achieved by GPT-5 (high), moderately rising to around 10% when equipped with coding tools.Through the realistic yet standardized evaluation offered by CritPt, we highlight a large disconnect between current model capabilities and realistic physics research demands, offering a foundation to guide the development of scientifically grounded AI tools.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.26574v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.26574v2' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2509.26574v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-29</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Reasoning Beyond Majority Vote: An Explainable SpeechLM Framework for Speech Emotion Recognition
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Speech Emotion Recognition (SER) is typically trained and evaluated on majority-voted labels, which simplifies benchmarking but masks subjectivity and provides little transparency into why predictions are made.This neglects valid minority annotations and limits interpretability.We propose an explainable Speech Language Model (SpeechLM) framework that frames SER as a generative reasoning task.Given an utterance, the model first produces a transcript, then outputs both an emotion label and a concise natural-language rationale grounded in lexical and acoustic cues.<span class='px-1 mx-1 bg-yellow-200'>Rationales are generated by a reasoning-capable teacher LLM and used as intermediate supervision, combined with majority labels during fine-tuning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.527</span></span>Unlike prior work primarily focused on boosting classification accuracy, we aim to enhance explainability while preserving competitive performance.To this end, we complement majority-label metrics with annotator-aware scoring that credits matches with any annotator label.On MSP-Podcast v1.12, our model maintains improvements over zero-shot SpeechLM baselines, and produces rationales that human evaluators find plausible and well grounded.This demonstrates that incorporating rationale supervision offers a practical path toward interpretable SER without sacrificing predictive quality.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.24187v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2509.24187v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2509.26574v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2634,6 +2660,32 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">LLMs as Recommender Systems</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-30</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Reinforced Strategy Optimization for Conversational Recommender Systems via Network-of-Experts
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Conversational Recommender Systems (CRSs) aim to provide personalized recommendations through multi-turn natural language interactions with users. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.839</span></span>Given the strong interaction and reasoning skills of Large Language Models (LLMs), leveraging LLMs for CRSs has recently emerged as a promising direction.However, existing LLM-based methods often lack explicit optimization of interaction strategies, instead relying on unified prompts and the LLM's internal knowledge to decide how to interact, which can lead to suboptimal outcomes.In this paper, we propose a novel Reinforced Strategy Optimization (RSO) method for CRS, which decomposes the process of generating strategy-driven response decisions into the macro-level strategy planning and micro-level strategy adaptation through a network-of-experts architecture.At the macro level, a Planner expert selects macro-level interaction strategies (e.g., recommend, explain, encourage).At the micro level, an Actor expert generates detailed responses conditioned on the selected macro-level strategy, guided by auxiliary experts that provide complementary information such as user preferences and factual grounding.This hierarchical decomposition disentangles the optimization of different sub-tasks involved in CRS response generation, enabling more tractable learning at each level.To address the scarcity of high-quality multi-turn training data, we formulate strategy learning as a reinforcement learning problem, guided by an LLM-based reward model to achieve automatic strategy exploration.Extensive experiments show that RSO significantly improves interaction performance compared to state-of-the-art baselines, demonstrating the effectiveness of explicit hierarchical strategy optimization for CRS.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2509.26093v2' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2509.26093v2' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-09-30</p>
           </td>
