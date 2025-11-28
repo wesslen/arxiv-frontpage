@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-11-27.</p><br/>
+            <p>Generated on 2025-11-28.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -187,24 +187,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-25</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                SAGE: An Agentic Explainer Framework for Interpreting SAE Features in Language Models
+                On the Limits of Innate Planning in Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Large language models (LLMs) have achieved remarkable progress, yet their internal mechanisms remain largely opaque, posing a significant challenge to their safe and reliable deployment.Sparse autoencoders (SAEs) have emerged as a promising tool for decomposing LLM representations into more interpretable features, but explaining the features captured by SAEs remains a challenging task.In this work, we propose SAGE (SAE AGentic Explainer), an agent-based framework that recasts feature interpretation from a passive, single-pass generation task into an active, explanation-driven process.SAGE implements a rigorous methodology by systematically formulating multiple explanations for each feature, designing targeted experiments to test them, and iteratively refining explanations based on empirical activation feedback.<span class='px-1 mx-1 bg-yellow-200'>Experiments on features from SAEs of diverse language models demonstrate that SAGE produces explanations with significantly higher generative and predictive accuracy compared to state-of-the-art baselines.an agent-based framework that recasts feature interpretation from a passive, single-pass generation task into an active, explanationdriven process. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.652</span></span>SAGE implements a rigorous methodology by systematically formulating multiple explanations for each feature, designing targeted experiments to test them, and iteratively refining explanations based on empirical activation feedback.Experiments on features from SAEs of diverse language models demonstrate that SAGE produces explanations with significantly higher generative and predictive accuracy compared to state-of-the-art baselines.</p>
+                  <p>Large language models (LLMs) achieve impressive results on many benchmarks, yet their capacity for planning and stateful reasoning remains unclear.We study these abilities directly, without code execution or other tools, using the 8-puzzle: a classic task that requires state tracking and goal-directed planning while allowing precise, step-by-step evaluation.<span class='px-1 mx-1 bg-yellow-200'>Four models are tested under common prompting conditions (Zero-Shot, Chain-of-Thought, Algorithm-of-Thought) and with tiered corrective feedback. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.879</span></span><span class='px-1 mx-1 bg-yellow-200'>Feedback improves success rates for some model-prompt combinations, but many successful runs are long, computationally expensive, and indirect. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.715</span></span>We then examine the models with an external move validator that provides only valid moves.Despite this level of assistance, none of the models solve any puzzles in this setting.Qualitative analysis reveals two dominant deficits across all models: (1) brittle internal state representations, leading to frequent invalid moves, and (2) weak heuristic planning, with models entering loops or selecting actions that do not reduce the distance to the goal state.These findings indicate that, in the absence of external tools such as code interpreters, current LLMs have substantial limitations in planning and that further progress may require mechanisms for maintaining explicit state and performing structured search.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.20820v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21591v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2511.20820v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2511.21591v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -213,24 +213,24 @@
         </td>
       </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-25</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                E-GEO: A Testbed for Generative Engine Optimization in E-Commerce
+                Escaping the Verifier: Learning to Reason via Demonstrations
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>With the rise of large language models (LLMs), generative engines are becoming powerful alternatives to traditional search, reshaping retrieval tasks.In e-commerce, for instance, conversational shopping agents now guide consumers to relevant products.This shift has created the need for generative engine optimization (GEO)--improving content visibility and relevance for generative engines.Yet despite its growing importance, current GEO practices are ad hoc, and their impacts remain poorly understood, especially in e-commerce.We address this gap by introducing E-GEO, the first benchmark built specifically for e-commerce GEO.E-GEO contains over 7,000 realistic, multi-sentence consumer product queries paired with relevant listings, capturing rich intent, constraints, preferences, and shopping contexts that existing datasets largely miss.Using this benchmark, we conduct the first large-scale empirical study of e-commerce GEO, evaluating 15 common rewriting heuristics and comparing their empirical performance.<span class='px-1 mx-1 bg-yellow-200'>To move beyond heuristics, we further formulate GEO as a tractable optimization problem and develop a lightweight iterative prompt-optimization algorithm that can significantly outperform these baselines. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.676</span></span><span class='px-1 mx-1 bg-yellow-200'>Surprisingly, the optimized prompts reveal a stable, domain-agnostic pattern--suggesting the existence of a "universally effective" GEO strategy. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.627</span></span>Our data and code are publicly available at https://github.com/psbagga17/E-GEO.</p>
+                  <p>Training Large Language Models (LLMs) to reason often relies on Reinforcement Learning (RL) with task-specific verifiers.However, many real-world reasoning-intensive tasks lack verifiers, despite offering abundant expert demonstrations that remain under-utilized for reasoning-focused training.We introduce RARO (Relativistic Adversarial Reasoning Optimization) that learns strong reasoning capabilities from only expert demonstrations via Inverse Reinforcement Learning.Our method sets up an adversarial interaction between a policy (generator) and a relativistic critic (discriminator): the policy learns to mimic expert answers, while the critic learns to compare and distinguish between policy and expert answers.Our method trains both the policy and the critic jointly and continuously via RL, and we identify the key stabilization techniques required for robust learning.Empirically, RARO significantly outperforms strong verifier-free baselines on all of our evaluation tasks -- Countdown, DeepMath, and Poetry Writing -- and enjoys the same robust scaling trends as RL on verifiable tasks.<span class='px-1 mx-1 bg-yellow-200'>These results demonstrate that our method effectively elicits strong reasoning performance from expert demonstrations alone, enabling robust reasoning learning even when task-specific verifiers are unavailable. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.694</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.20867v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21667v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2511.20867v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2511.21667v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -899,32 +899,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                RAVEN++: Pinpointing Fine-Grained Violations in Advertisement Videos with Active Reinforcement Reasoning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Advertising (Ad) is a cornerstone of the digital economy, yet the moderation of video advertisements remains a significant challenge due to their complexity and the need for precise violation localization.<span class='px-1 mx-1 bg-yellow-200'>While recent advancements, such as the RAVEN model, have improved coarse-grained violation detection, critical gaps persist in fine-grained understanding, explainability, and generalization. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.691</span></span>To address these limitations, we propose RAVEN++, a novel framework that introduces three key innovations: 1) Active Reinforcement Learning (RL), which dynamically adapts training to samples of varying difficulty; 2) Fine-Grained Violation Understanding, achieved through hierarchical reward functions and reasoning distillation; and 3) Progressive Multi-Stage Training, which systematically combines knowledge injection, curriculum-based passive RL, and active RL.Extensive experiments on both public and proprietary datasets, on both offline scenarios and online deployed A/B Testing, demonstrate that RAVEN++ outperforms general-purpose LLMs and specialized models like RAVEN in terms of fine-grained violation understanding, reasoning capabilities, and generalization ability.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.19168v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2511.19168v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 HunyuanOCR Technical Report
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1055,6 +1029,32 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                EvilGenie: A Reward Hacking Benchmark
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>We introduce EvilGenie, a benchmark for reward hacking in programming settings. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.776</span></span>We source problems from LiveCodeBench and create an environment in which agents can easily reward hack, such as by hardcoding test cases or editing the testing files.<span class='px-1 mx-1 bg-yellow-200'>We measure reward hacking in three ways: held out unit tests, LLM judges, and test file edit detection. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.751</span></span>We verify these methods against human review and each other.<span class='px-1 mx-1 bg-yellow-200'>We find the LLM judge to be highly effective at detecting reward hacking in unambiguous cases, and observe only minimal improvement from the use of held out test cases. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.747</span></span>In addition to testing many models using Inspect's basic_agent scaffold, we also measure reward hacking rates for three popular proprietary coding agents: OpenAI's Codex, Anthropic's Claude Code, and Google's Gemini CLI Using GPT-5, Claude Sonnet 4, and Gemini 2.5 Pro, respectively.<span class='px-1 mx-1 bg-yellow-200'>We observe explicit reward hacking by both Codex and Claude Code, and misaligned behavior by all three agents. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.691</span></span>Our codebase can be found at https://github.com/JonathanGabor/EvilGenie.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21654v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21654v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-25</p>
           </td>
           <td>
@@ -1086,32 +1086,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Supporting Students in Navigating LLM-Generated Insecure Code
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The advent of Artificial Intelligence (AI), particularly large language models (LLMs), has revolutionized software development by enabling developers to specify tasks in natural language and receive corresponding code, boosting productivity.<span class='px-1 mx-1 bg-yellow-200'>However, this shift also introduces security risks, as LLMs may generate insecure code that can be exploited by adversaries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.858</span></span><span class='px-1 mx-1 bg-yellow-200'>Current educational approaches emphasize efficiency while overlooking these risks, leaving students underprepared to identify and mitigate security issues in AI-assisted workflows.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span><span class='px-1 mx-1 bg-yellow-200'>To address this gap, we present Bifröst, an educational framework that cultivates security awareness in AI-augmented development. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.697</span></span>Bifröst integrates (1) a Visual Studio Code extension simulating realistic environments, (2) adversarially configured LLMs that generate insecure code, and (3) a feedback system highlighting vulnerabilities.<span class='px-1 mx-1 bg-yellow-200'>By immersing students in tasks with compromised LLMs and providing targeted security analysis, Bifröst cultivates critical evaluation skills; classroom deployments (n=61) show vulnerability to insecure code, while a post-intervention survey (n=21) indicates increased skepticism toward LLM outputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.71</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.20878v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2511.20878v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-25</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 APT-CGLP: Advanced Persistent Threat Hunting via Contrastive Graph-Language Pre-Training
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1125,6 +1099,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2511.20290v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-25</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Supporting Students in Navigating LLM-Generated Insecure Code
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The advent of Artificial Intelligence (AI), particularly large language models (LLMs), has revolutionized software development by enabling developers to specify tasks in natural language and receive corresponding code, boosting productivity.<span class='px-1 mx-1 bg-yellow-200'>However, this shift also introduces security risks, as LLMs may generate insecure code that can be exploited by adversaries. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.858</span></span><span class='px-1 mx-1 bg-yellow-200'>Current educational approaches emphasize efficiency while overlooking these risks, leaving students underprepared to identify and mitigate security issues in AI-assisted workflows.    <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.651</span></span><span class='px-1 mx-1 bg-yellow-200'>To address this gap, we present Bifröst, an educational framework that cultivates security awareness in AI-augmented development. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.697</span></span>Bifröst integrates (1) a Visual Studio Code extension simulating realistic environments, (2) adversarially configured LLMs that generate insecure code, and (3) a feedback system highlighting vulnerabilities.<span class='px-1 mx-1 bg-yellow-200'>By immersing students in tasks with compromised LLMs and providing targeted security analysis, Bifröst cultivates critical evaluation skills; classroom deployments (n=61) show vulnerability to insecure code, while a post-intervention survey (n=21) indicates increased skepticism toward LLM outputs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.71</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.20878v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.20878v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2422,6 +2422,58 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Automated Dynamic AI Inference Scaling on HPC-Infrastructure: Integrating Kubernetes, Slurm and vLLM
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Due to rising demands for Artificial Inteligence (AI) inference, especially in higher education, novel solutions utilising existing infrastructure are emerging. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.549</span></span>The utilisation of High-Performance Computing (HPC) has become a prevalent approach for the implementation of such solutions.However, the classical operating model of HPC does not adapt well to the requirements of synchronous, user-facing dynamic AI application workloads.In this paper, we propose our solution that serves LLMs by integrating vLLM, Slurm and Kubernetes on the supercomputer \textit{RAMSES}.The initial benchmark indicates that the proposed architecture scales efficiently for 100, 500 and 1000 concurrent requests, incurring only an overhead of approximately 500 ms in terms of end-to-end latency.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21413v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21413v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Revisiting Generalization Across Difficulty Levels: It's Not So Easy
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>We investigate how well large language models (LLMs) generalize across different task difficulties, a key question for effective data curation and evaluation.Existing research is mixed regarding whether training on easier or harder data leads to better results, and whether those gains come on easier or harder test data.We address this question by conducting a systematic evaluation of LLMs' generalization across models, datasets, and fine-grained groups of example difficulty.<span class='px-1 mx-1 bg-yellow-200'>We rank examples in six datasets using the outputs of thousands of different LLMs and Item Response Theory (IRT), a well-established difficulty metric in educational testing. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.584</span></span>Unlike prior work, our difficulty ratings are therefore determined solely by the abilities of many different LLMs, excluding human opinions of difficulty.With a more objective, larger-scale, and finer-grained analysis, we show that cross-difficulty generalization is often limited; training on either easy or hard data cannot achieve consistent improvements across the full range of difficulties.These results show the importance of having a range of difficulties in both training and evaluation data for LLMs, and that taking shortcuts with respect to difficulty is risky.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21692v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21692v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-25</p>
           </td>
           <td>
@@ -2648,32 +2700,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2511.19749v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-23</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Can LLMs Help Allocate Public Health Resources? A Case Study on Childhood Lead Testing
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Public health agencies face critical challenges in identifying high-risk neighborhoods for childhood lead exposure with limited resources for outreach and intervention programs.To address this, we develop a Priority Score integrating untested children proportions, elevated blood lead prevalence, and public health coverage patterns to support optimized resource allocation decisions across 136 neighborhoods in Chicago, New York City, and Washington, D.C.We leverage these allocation tasks, which require integrating multiple vulnerability indicators and interpreting empirical evidence, to evaluate whether large language models (LLMs) with agentic reasoning and deep research capabilities can effectively allocate public health resources when presented with structured allocation scenarios.<span class='px-1 mx-1 bg-yellow-200'>LLMs were tasked with distributing 1,000 test kits within each city based on neighborhood vulnerability indicators. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.511</span></span>Results reveal significant limitations: LLMs frequently overlooked neighborhoods with highest lead prevalence and largest proportions of untested children, such as West Englewood in Chicago, while allocating disproportionate resources to lower-priority areas like Hunts Point in New York City.Overall accuracy averaged 0.46, reaching a maximum of 0.66 with ChatGPT 5 Deep Research.Despite their marketed deep research capabilities, LLMs struggled with fundamental limitations in information retrieval and evidence-based reasoning, frequently citing outdated data and allowing non-empirical narratives about neighborhood conditions to override quantitative vulnerability indicators.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.18239v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2511.18239v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3243,32 +3269,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Automated Dynamic AI Inference Scaling on HPC-Infrastructure: Integrating Kubernetes, Slurm and vLLM
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Due to rising demands for Artificial Inteligence (AI) inference, especially in higher education, novel solutions utilising existing infrastructure are emerging.<span class='px-1 mx-1 bg-yellow-200'>The utilisation of High-Performance Computing (HPC) has become a prevalent approach for the implementation of such solutions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.309</span></span><span class='px-1 mx-1 bg-yellow-200'>However, the classical operating model of HPC does not adapt well to the requirements of synchronous, user-facing dynamic AI application workloads. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.532</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose our solution that serves LLMs by integrating vLLM, Slurm and Kubernetes on the supercomputer \textit{RAMSES}. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.607</span></span><span class='px-1 mx-1 bg-yellow-200'>The initial benchmark indicates that the proposed architecture scales efficiently for 100, 500 and 1000 concurrent requests, incurring only an overhead of approximately 500 ms in terms of end-to-end latency. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.435</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21413v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2511.21413v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 RoParQ: Paraphrase-Aware Alignment of Large Language Models Towards Robustness to Paraphrased Questions
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3315,6 +3315,136 @@
           </div>
         </td>
       </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Visualizing LLM Latent Space Geometry Through Dimensionality Reduction
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) achieve state-of-the-art results across many natural language tasks, but their internal mechanisms remain difficult to interpret.<span class='px-1 mx-1 bg-yellow-200'>In this work, we extract, process, and visualize latent state geometries in Transformer-based language models through dimensionality reduction. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.319</span></span>We capture layerwise activations at multiple points within Transformer blocks and enable systematic analysis through Principal Component Analysis (PCA) and Uniform Manifold Approximation (UMAP).We demonstrate experiments on GPT-2 and LLaMa models, where we uncover interesting geometric patterns in latent space.Notably, we identify a clear separation between attention and MLP component outputs across intermediate layers, a pattern not documented in prior work to our knowledge.We also characterize the high norm of latent states at the initial sequence position and visualize the layerwise evolution of latent states.Additionally, we demonstrate the high-dimensional helical structure of GPT-2's positional embeddings, the sequence-wise geometric patterns in LLaMa, and experiment with repeating token sequences.We aim to support systematic analysis of Transformer internals with the goal of enabling further reproducible interpretability research.We make our code available at https://github.com/Vainateya/Feature_Geometry_Visualization.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21594v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21594v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Auxiliary Metrics Help Decoding Skill Neurons in the Wild
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) exhibit remarkable capabilities across a wide range of tasks, yet their internal mechanisms remain largely opaque.In this paper, we introduce a simple, lightweight, and broadly applicable method with a focus on isolating neurons that encode specific skills.Building upon prior work that identified "skill neurons" via soft prompt training on classification tasks, our approach extends the analysis to complex scenarios involving multiple skills.We correlate neuron activations with auxiliary metrics -- such as external labels and the model's own confidence score -- thereby uncovering interpretable and task-specific behaviors without the need for manual token aggregation.<span class='px-1 mx-1 bg-yellow-200'>We empirically validate our method on tasks spanning open-ended text generation and natural language inference, demonstrating its ability to detect neurons that not only drive known skills but also reveal previously unidentified shortcuts in arithmetic reasoning on BigBench. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.33</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21610v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21610v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Beyond URLs: Metadata Diversity and Position for Efficient LLM Pretraining
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Incorporating metadata in Large Language Models (LLMs) pretraining has recently emerged as a promising approach to accelerate training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.647</span></span>However prior work highlighted only one useful signal-URLs, leaving open the question of whether other forms of metadata could yield greater benefits.<span class='px-1 mx-1 bg-yellow-200'>In this study, we investigate a wider range of metadata types and find other types of metadata, such as fine-grained indicators of document quality that can also accelerate pretraining when prepended. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.354</span></span>We identify a common feature among effective metadata: they encode information at a finer granularity.<span class='px-1 mx-1 bg-yellow-200'>We further introduce metadata appending as a means of improving training efficiency, where predicting an appropriate metadata as auxiliary task can help speed up pretraining. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.526</span></span><span class='px-1 mx-1 bg-yellow-200'>In addition, learnable meta-tokens trained with masked loss can recover part of the speedup by inducing quality-aware latent structure. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.458</span></span>Using probing, we analyze latent representations to understand how metadata shapes learning.<span class='px-1 mx-1 bg-yellow-200'>Together, these results yield practical guidelines for integrating metadata to improve both the efficiency and effectiveness of LLM pretraining. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.71</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21613v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21613v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Aligning LLMs Toward Multi-Turn Conversational Outcomes Using Iterative PPO
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Optimizing large language models (LLMs) for multi-turn conversational outcomes remains a significant challenge, especially in goal-oriented settings like AI marketing or sales agents who facilitate transactions via messaging platforms. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.408</span></span>The difficulty stems from sparse, long-horizon rewards and the discrepancy between response-level planning and token-level generation.<span class='px-1 mx-1 bg-yellow-200'>In this technical note, we propose a formal reduction of the multi-turn RL problem into a sequence of single-turn RLHF-style problems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.536</span></span><span class='px-1 mx-1 bg-yellow-200'>This is achieved by setting a learned multi-turn Q-function as the reward model for the single-turn problem. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.344</span></span><span class='px-1 mx-1 bg-yellow-200'>We demonstrate and prove a key insight: solving this single-turn RL problem with standard token-level PPO is equivalent to a policy improvement step within the multi-turn problem. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.534</span></span><span class='px-1 mx-1 bg-yellow-200'>This insight naturally leads to Iterative PPO, a batch online policy iteration algorithm that alternates between fitting Q-functions from logged conversation trajectories and improving the policy. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.48</span></span><span class='px-1 mx-1 bg-yellow-200'>A major practical advantage is that Iterative PPO directly leverages stable, off-the-shelf single-turn RLHF tools, making it straightforward to implement. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.516</span></span><span class='px-1 mx-1 bg-yellow-200'>Our method occupies a middle ground between fully online and fully offline approaches, retaining the adaptability of online updates while gaining the stability benefits of offline training. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.649</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21638v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21638v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Matrix: Peer-to-Peer Multi-Agent Synthetic Data Generation Framework
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Synthetic data has become increasingly important for training large language models, especially when real data is scarce, expensive, or privacy-sensitive. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.39</span></span>Many such generation tasks require coordinated multi-agent workflows, where specialized agents collaborate to produce data that is higher quality, more diverse, and structurally richer.However, existing frameworks for multi-agent synthesis often depend on a centralized orchestrator, creating scalability bottlenecks, or are hardcoded for specific domains, limiting flexibility.<span class='px-1 mx-1 bg-yellow-200'>We present \textbf{Matrix}, a decentralized framework that represents both control and data flow as serialized messages passed through distributed queues. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.493</span></span>This peer-to-peer design eliminates the central orchestrator.<span class='px-1 mx-1 bg-yellow-200'>Each task progresses independently through lightweight agents, while compute-intensive operations, such as LLM inference or containerized environments, are handled by distributed services. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.597</span></span><span class='px-1 mx-1 bg-yellow-200'>Built on Ray, Matrix scales to tens of thousands of concurrent agentic workflows and provides a modular, configurable design that enables easy adaptation to a wide range of data generation workflows. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.306</span></span>We evaluate Matrix across diverse synthesis scenarios, such as multi-agent collaborative dialogue, web-based reasoning data extraction, and tool-use trajectory generation in customer service environments.In all cases, Matrix achieves $2$--$15\times$ higher data generation throughput under identical hardware resources, without compromising output quality.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21686v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21686v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td></td>
           <td>
             <h2 class="text-2xl tracking-tight pt-4 font-bold">LLM Model Architectures and Training Techniques</h2>
@@ -3339,6 +3469,58 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2511.21437v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                TAGFN: A Text-Attributed Graph Dataset for Fake News Detection in the Age of LLMs
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have recently revolutionized machine learning on text-attributed graphs, but the application of LLMs to graph outlier detection, particularly in the context of fake news detection, remains significantly underexplored.One of the key challenges is the scarcity of large-scale, realistic, and well-annotated datasets that can serve as reliable benchmarks for outlier detection.To bridge this gap, we introduce TAGFN, a large-scale, real-world text-attributed graph dataset for outlier detection, specifically fake news detection.TAGFN enables rigorous evaluation of both traditional and LLM-based graph outlier detection methods.<span class='px-1 mx-1 bg-yellow-200'>Furthermore, it facilitates the development of misinformation detection capabilities in LLMs through fine-tuning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span>We anticipate that TAGFN will be a valuable resource for the community, fostering progress in robust graph-based outlier detection and trustworthy AI.The dataset is publicly available at https://huggingface.co/datasets/kayzliu/TAGFN and our code is available at https://github.com/kayzliu/tagfn.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21624v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21624v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-11-26</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                DSD: A Distributed Speculative Decoding Solution for Edge-Cloud Agile Large Model Serving
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language model (LLM) inference often suffers from high decoding latency and limited scalability across heterogeneous edge-cloud environments.<span class='px-1 mx-1 bg-yellow-200'>Existing speculative decoding (SD) techniques accelerate token generation but remain confined to single-node execution. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.43</span></span><span class='px-1 mx-1 bg-yellow-200'>We propose DSD, a distributed speculative decoding framework that extends SD to multi-device deployments through coordinated draft-target execution. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.435</span></span><span class='px-1 mx-1 bg-yellow-200'>Given the lack of prior work on simulating this paradigm, we first introduce DSD-Sim, a discrete-event simulator that captures network, batching, and scheduling dynamics. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.4</span></span><span class='px-1 mx-1 bg-yellow-200'>Building on insights from DSD-Sim, we further design an Adaptive Window Control (AWC) policy that dynamically adjusts speculation window size to optimize throughput. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.679</span></span><span class='px-1 mx-1 bg-yellow-200'>Experiments across diverse workloads show that DSD achieves up to 1.1x speedup and 9.7% higher throughput over existing SD baselines, enabling agile and scalable LLM serving across edge and cloud. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.585</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2511.21669v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2511.21669v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
