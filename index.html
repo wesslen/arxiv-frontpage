@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-12-12.</p><br/>
+            <p>Generated on 2025-12-13.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -49,6 +49,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.10931v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-11</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Dynamics of Agentic Loops in Large Language Models: A Geometric Theory of Trajectories
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Agentic systems built on large language models operate through recursive feedback loops, where each output becomes the next input.Yet the geometric behavior of these agentic loops (whether they converge, diverge, or exhibit more complex dynamics) remains poorly understood.This paper introduces a geometric framework for analyzing agentic trajectories in semantic embedding space, treating iterative transformations as discrete dynamical systems.   We distinguish the artifact space, where linguistic transformations occur, from the embedding space, where geometric measurements are performed.Because cosine similarity is biased by embedding anisotropy, we introduce an isotonic calibration that eliminates systematic bias and aligns similarities with human semantic judgments while preserving high local stability.This enables rigorous measurement of trajectories, clusters and attractors.   Through controlled experiments on singular agentic loops, we identify two fundamental regimes.A contractive rewriting loop converges toward a stable attractor with decreasing dispersion, while an exploratory summarize and negate loop produces unbounded divergence with no cluster formation.These regimes display qualitatively distinct geometric signatures of contraction and expansion.   <span class='px-1 mx-1 bg-yellow-200'>Our results show that prompt design directly governs the dynamical regime of an agentic loop, enabling systematic control of convergence, divergence and trajectory structure in iterative LLM transformations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.742</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.10350v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.10350v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -119,7 +145,7 @@
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p>Agentic systems built on large language models operate through recursive feedback loops, where each output becomes the next input.Yet the geometric behavior of these agentic loops (whether they converge, diverge, or exhibit more complex dynamics) remains poorly understood.This paper introduces a geometric framework for analyzing agentic trajectories in semantic embedding space, treating iterative transformations as discrete dynamical systems.   We distinguish the artifact space, where linguistic transformations occur, from the embedding space, where geometric measurements are performed.Because cosine similarity is biased by embedding anisotropy, we introduce an isotonic calibration that eliminates systematic bias and aligns similarities with human semantic judgments while preserving high local stability.This enables rigorous measurement of trajectories, clusters and attractors.   Through controlled experiments on singular agentic loops, we identify two fundamental regimes.A contractive rewriting loop converges toward a stable attractor with decreasing dispersion, while an exploratory summarize and negate loop produces unbounded divergence with no cluster formation.These regimes display qualitatively distinct geometric signatures of contraction and expansion.   <span class='px-1 mx-1 bg-yellow-200'>Our results show that prompt design directly governs the dynamical regime of an agentic loop, enabling systematic control of convergence, divergence and trajectory structure in iterative LLM transformations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.742</span></span></p>
+                  <p>Agentic systems built on large language models operate through recursive feedback loops, where each output becomes the next input.Yet the geometric behavior of these agentic loops (whether they converge, diverge, or exhibit more complex dynamics) remains poorly understood.This paper introduces a geometric framework for analyzing agentic trajectories in semantic embedding space, treating iterative transformations as discrete dynamical systems.We distinguish the artifact space, where linguistic transformations occur, from the embedding space, where geometric measurements are performed.Because cosine similarity is biased by embedding anisotropy, we introduce an isotonic calibration that eliminates systematic bias and aligns similarities with human semantic judgments while preserving high local stability.This enables rigorous measurement of trajectories, clusters and attractors.Through controlled experiments on singular agentic loops, we identify two fundamental regimes.A contractive rewriting loop converges toward a stable attractor with decreasing dispersion, while an exploratory summarize and negate loop produces unbounded divergence with no cluster formation.These regimes display qualitatively distinct geometric signatures of contraction and expansion.<span class='px-1 mx-1 bg-yellow-200'>Our results show that prompt design directly governs the dynamical regime of an agentic loop, enabling systematic control of convergence, divergence and trajectory structure in iterative LLM transformations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.742</span></span></p>
                 </p>
               <p class="pb-2 pt-2 text-center">
                 <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.10350v1' target="_blank">
