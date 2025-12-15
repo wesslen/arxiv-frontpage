@@ -1,3 +1,10 @@
+{"id":"2512.11783v1","categories":["security"]}
+{"id":"2512.11755v1","categories":["architectures"]}
+{"id":"2512.11718v1","categories":["architectures"]}
+{"id":"2512.11689v1","categories":["hci"]}
+{"id":"2512.11661v1","categories":["hci"]}
+{"id":"2512.11615v1","categories":["architectures"]}
+{"id":"2512.11614v1","categories":["production"]}
 {"id":"2512.10858v1","categories":["production"]}
 {"id":"2512.10847v1","categories":["production"]}
 {"id":"2512.10805v1","categories":["production"]}
@@ -14,8 +21,6 @@
 {"id":"2512.10665v1","categories":["hci"]}
 {"id":"2512.10630v1","categories":["social-sciences"]}
 {"id":"2512.10611v1","categories":["hci"]}
-{"id":"2512.10610v1","categories":["architectures"]}
-{"id":"2512.10605v1","categories":["architectures"]}
 {"id":"2512.10575v1","categories":["social-sciences"]}
 {"id":"2512.10534v1","categories":["education"]}
 {"id":"2512.10493v1","categories":["hci"]}
@@ -58,7 +63,7 @@
 {"id":"2512.09872v1","categories":["security"]}
 {"id":"2512.09854v1","categories":["prompt-engineering"]}
 {"id":"2512.09829v1","categories":["robustness"]}
-{"id":"2512.09772v1","categories":["social-sciences"]}
+{"id":"2512.09772v1","categories":["prompt-engineering"]}
 {"id":"2512.09769v1","categories":["prompt-engineering"]}
 {"id":"2512.09730v1","categories":["education"]}
 {"id":"2512.09679v1","categories":["prompt-engineering"]}
@@ -67,7 +72,7 @@
 {"id":"2512.09543v1","categories":["education"]}
 {"id":"2512.09506v1","categories":["security"]}
 {"id":"2512.09485v1","categories":["security"]}
-{"id":"2512.09403v1","categories":["security"]}
+{"id":"2512.09403v1","categories":["robustness"]}
 {"id":"2512.09321v1","categories":["prompt-engineering"]}
 {"id":"2512.09254v1","categories":["hci"]}
 {"id":"2512.09209v1","categories":["prompt-engineering"]}
@@ -92,7 +97,6 @@
 {"id":"2512.08213v1","categories":["programming"]}
 {"id":"2512.08145v1","categories":["prompt-engineering"]}
 {"id":"2512.08139v1","categories":["prompt-engineering"]}
-{"id":"2512.09957v1","categories":["robustness"]}
 {"id":"2512.09199v1","categories":["education"]}
 {"id":"2512.09196v1","categories":["programming"]}
 {"id":"2512.09149v1","categories":["hci"]}
@@ -148,5 +152,3 @@
 {"id":"2511.18740v1","categories":["recommender"]}
 {"id":"2511.19514v1","categories":["recommender"]}
 {"id":"2511.18489v1","categories":["recommender"]}
-{"id":"2511.18413v1","categories":["recommender"]}
-{"id":"2511.18403v1","categories":["recommender"]}
