@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2025-12-19.</p><br/>
+            <p>Generated on 2025-12-20.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -244,84 +244,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                PediatricAnxietyBench: Evaluating Large Language Model Safety Under Parental Anxiety and Pressure in Pediatric Consultations
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large language models (LLMs) are increasingly consulted by parents for pediatric guidance, yet their safety under real-world adversarial pressures is poorly understood.<span class='px-1 mx-1 bg-yellow-200'>Anxious parents often use urgent language that can compromise model safeguards, potentially causing harmful advice. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.774</span></span>PediatricAnxietyBench is an open-source benchmark of 300 high-quality queries across 10 pediatric topics (150 patient-derived, 150 adversarial) enabling reproducible evaluation.Two Llama models (70B and 8B) were assessed using a multi-dimensional safety framework covering diagnostic restraint, referral adherence, hedging, and emergency recognition.Adversarial queries incorporated parental pressure patterns, including urgency, economic barriers, and challenges to disclaimers.Mean safety score was 5.50/15 (SD=2.41).The 70B model outperformed the 8B model (6.26 vs 4.95, p<0.001) with lower critical failures (4.8% vs 12.0%, p=0.02).Adversarial queries reduced safety by 8% (p=0.03), with urgency causing the largest drop (-1.40).Vulnerabilities appeared in seizures (33.3% inappropriate diagnosis) and post-vaccination queries.Hedging strongly correlated with safety (r=0.68, p<0.001), while emergency recognition was absent.Model scale influences safety, yet all models showed vulnerabilities to realistic parental pressures.PediatricAnxietyBench provides a reusable adversarial evaluation framework to reveal clinically significant failure modes overlooked by standard benchmarks.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15894v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15894v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                BRAID: Bounded Reasoning for Autonomous Inference and Decisions
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Large Language Models (LLMs) exhibit nonlinear relationships between performance, cost, and token usage.<span class='px-1 mx-1 bg-yellow-200'>This paper presents a quantitative study on structured prompting using BRAID (Bounded Reasoning for Au tonomous Inference and Decisions) across multiple GPT model tiers, eval uated on the AdvancedIF, GSM-Hard, and the SCALE MultiChallenge benchmark datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.806</span></span>BRAID introduces a bounded reasoning framework using Mermaid-based instruction graphs that enable models to reason struc turally rather than through unbounded natural-language token expansion.<span class='px-1 mx-1 bg-yellow-200'>We show that structured machine-readable prompts substantially increase reasoning accuracy and cost efficiency for agents in production systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.723</span></span>The findings establish BRAID as an effective and scalable technique for optimizing inference efficiency in autonomous agent systems.All datasets and detailed result logs are available at https://benchmark.openserv.ai.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15959v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15959v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Are vision-language models ready to zero-shot replace supervised classification models in agriculture?
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Vision-language models (VLMs) are increasingly proposed as general-purpose solutions for visual recognition tasks, yet their reliability for agricultural decision support remains poorly understood.We benchmark a diverse set of open-source and closed-source VLMs on 27 agricultural classification datasets from the AgML collection, spanning 162 classes across plant disease, pest and damage, and plant and weed species identification.Across all tasks, zero-shot VLMs substantially underperform a supervised task-specific baseline (YOLO11), which consistently achieves markedly higher accuracy than any foundation model.<span class='px-1 mx-1 bg-yellow-200'>Under multiple-choice prompting, the best-performing VLM (Gemini-3 Pro) reaches approximately 62% average accuracy, while open-ended prompting yields much lower performance, with raw accuracies typically below 25%. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>Applying LLM-based semantic judging increases open-ended accuracy (for example, from 21% to 30% for top models) and alters model rankings, demonstrating that evaluation methodology meaningfully affects reported conclusions.Among open-source models, Qwen-VL-72B performs best, approaching closed-source performance under constrained prompting but still trailing top proprietary systems.Task-level analysis shows that plant and weed species classification is consistently easier than pest and damage identification, which remains the most challenging category across models.Overall, these results indicate that current off-the-shelf VLMs are not yet suitable as standalone agricultural diagnostic systems, but can function as assistive components when paired with constrained interfaces, explicit label ontologies, and domain-aware evaluation strategies.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15977v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15977v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Prompt Repetition Improves Non-Reasoning LLMs
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -387,6 +309,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.15000v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                SeBERTis: A Framework for Producing Classifiers of Security-Related Issue Reports
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Monitoring issue tracker submissions is a crucial software maintenance activity.A key goal is the prioritization of high risk, security-related bugs.If such bugs can be recognized early, the risk of propagation to dependent products and endangerment of stakeholder benefits can be mitigated.<span class='px-1 mx-1 bg-yellow-200'>To assist triage engineers with this task, several automatic detection techniques, from Machine Learning (ML) models to prompting Large Language Models (LLMs), have been proposed. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.778</span></span>Although promising to some extent, prior techniques often memorize lexical cues as decision shortcuts, yielding low detection rate specifically for more complex submissions.As such, these classifiers do not yet reach the practical expectations of a real-time detector of security-related issues.To address these limitations, we propose SEBERTIS, a framework to train Deep Neural Networks (DNNs) as classifiers independent of lexical cues, so that they can confidently detect fully unseen security-related issues.SEBERTIS capitalizes on fine-tuning bidirectional transformer architectures as Masked Language Models (MLMs) on a series of semantically equivalent vocabulary to prediction labels (which we call Semantic Surrogates) when they have been replaced with a mask.Our SEBERTIS-trained classifier achieves a 0.9880 F1-score in detecting security-related issues of a curated corpus of 10,000 GitHub issue reports, substantially outperforming state-of-the-art issue classifiers, with 14.44%-96.98%, 15.40%-93.07%, and 14.90%-94.72% higher detection precision, recall, and F1-score over ML-based baselines.Our classifier also substantially surpasses LLM baselines, with an improvement of 23.20%-63.71%, 36.68%-85.63%, and 39.49%-74.53% for precision, recall, and F1-score.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15003v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15003v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -577,6 +525,84 @@
         </td>
       </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                PediatricAnxietyBench: Evaluating Large Language Model Safety Under Parental Anxiety and Pressure in Pediatric Consultations
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large language models (LLMs) are increasingly consulted by parents for pediatric guidance, yet their safety under real-world adversarial pressures is poorly understood.<span class='px-1 mx-1 bg-yellow-200'>Anxious parents often use urgent language that can compromise model safeguards, potentially causing harmful advice. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.774</span></span>PediatricAnxietyBench is an open-source benchmark of 300 high-quality queries across 10 pediatric topics (150 patient-derived, 150 adversarial) enabling reproducible evaluation.Two Llama models (70B and 8B) were assessed using a multi-dimensional safety framework covering diagnostic restraint, referral adherence, hedging, and emergency recognition.Adversarial queries incorporated parental pressure patterns, including urgency, economic barriers, and challenges to disclaimers.Mean safety score was 5.50/15 (SD=2.41).The 70B model outperformed the 8B model (6.26 vs 4.95, p<0.001) with lower critical failures (4.8% vs 12.0%, p=0.02).Adversarial queries reduced safety by 8% (p=0.03), with urgency causing the largest drop (-1.40).Vulnerabilities appeared in seizures (33.3% inappropriate diagnosis) and post-vaccination queries.Hedging strongly correlated with safety (r=0.68, p<0.001), while emergency recognition was absent.Model scale influences safety, yet all models showed vulnerabilities to realistic parental pressures.PediatricAnxietyBench provides a reusable adversarial evaluation framework to reveal clinically significant failure modes overlooked by standard benchmarks.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15894v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15894v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                BRAID: Bounded Reasoning for Autonomous Inference and Decisions
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) exhibit nonlinear relationships between performance, cost, and token usage.<span class='px-1 mx-1 bg-yellow-200'>This paper presents a quantitative study on structured prompting using BRAID (Bounded Reasoning for Au tonomous Inference and Decisions) across multiple GPT model tiers, eval uated on the AdvancedIF, GSM-Hard, and the SCALE MultiChallenge benchmark datasets. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.806</span></span>BRAID introduces a bounded reasoning framework using Mermaid-based instruction graphs that enable models to reason struc turally rather than through unbounded natural-language token expansion.<span class='px-1 mx-1 bg-yellow-200'>We show that structured machine-readable prompts substantially increase reasoning accuracy and cost efficiency for agents in production systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.723</span></span>The findings establish BRAID as an effective and scalable technique for optimizing inference efficiency in autonomous agent systems.All datasets and detailed result logs are available at https://benchmark.openserv.ai.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15959v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15959v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Are vision-language models ready to zero-shot replace supervised classification models in agriculture?
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Vision-language models (VLMs) are increasingly proposed as general-purpose solutions for visual recognition tasks, yet their reliability for agricultural decision support remains poorly understood.We benchmark a diverse set of open-source and closed-source VLMs on 27 agricultural classification datasets from the AgML collection, spanning 162 classes across plant disease, pest and damage, and plant and weed species identification.Across all tasks, zero-shot VLMs substantially underperform a supervised task-specific baseline (YOLO11), which consistently achieves markedly higher accuracy than any foundation model.<span class='px-1 mx-1 bg-yellow-200'>Under multiple-choice prompting, the best-performing VLM (Gemini-3 Pro) reaches approximately 62% average accuracy, while open-ended prompting yields much lower performance, with raw accuracies typically below 25%. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.631</span></span>Applying LLM-based semantic judging increases open-ended accuracy (for example, from 21% to 30% for top models) and alters model rankings, demonstrating that evaluation methodology meaningfully affects reported conclusions.Among open-source models, Qwen-VL-72B performs best, approaching closed-source performance under constrained prompting but still trailing top proprietary systems.Task-level analysis shows that plant and weed species classification is consistently easier than pest and damage identification, which remains the most challenging category across models.Overall, these results indicate that current off-the-shelf VLMs are not yet suitable as standalone agricultural diagnostic systems, but can function as assistive components when paired with constrained interfaces, explicit label ontologies, and domain-aware evaluation strategies.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15977v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15977v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-16</p>
           </td>
           <td>
@@ -717,58 +743,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                TabReX : Tabular Referenceless eXplainable Evaluation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Evaluating the quality of tables generated by large language models (LLMs) remains an open challenge: existing metrics either flatten tables into text, ignoring structure, or rely on fixed references that limit generalization.We present TabReX, a reference-less, property-driven framework for evaluating tabular generation via graph-based reasoning.TabReX converts both source text and generated tables into canonical knowledge graphs, aligns them through an LLM-guided matching process, and computes interpretable, rubric-aware scores that quantify structural and factual fidelity.The resulting metric provides controllable trade-offs between sensitivity and specificity, yielding human-aligned judgments and cell-level error traces.To systematically asses metric robustness, we introduce TabReX-Bench, a large-scale benchmark spanning six domains and twelve planner-driven perturbation types across three difficulty tiers.<span class='px-1 mx-1 bg-yellow-200'>Empirical results show that TabReX achieves the highest correlation with expert rankings, remains stable under harder perturbations, and enables fine-grained model-vs-prompt analysis establishing a new paradigm for trustworthy, explainable evaluation of structured generation systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15907v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15907v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Topic Discovery and Classification for Responsible Generative AI Adaptation in Higher Education
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>As generative artificial intelligence (GenAI) becomes increasingly capable of delivering personalized learning experiences and real-time feedback, a growing number of students are incorporating these tools into their academic workflows.They use GenAI to clarify concepts, solve complex problems, and, in some cases, complete assignments by copying and pasting model-generated contents.<span class='px-1 mx-1 bg-yellow-200'>While GenAI has the potential to enhance learning experience, it also raises concerns around misinformation, hallucinated outputs, and its potential to undermine critical thinking and problem-solving skills. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.698</span></span>In response, many universities, colleges, departments, and instructors have begun to develop and adopt policies to guide responsible integration of GenAI into learning environments.However, these policies vary widely across institutions and contexts, and their evolving nature often leaves students uncertain about expectations and best practices.To address this challenge, the authors designed and implemented an automated system for discovering and categorizing AI-related policies found in course syllabi and institutional policy websites.The system combines unsupervised topic modeling techniques to identify key policy themes with large language models (LLMs) to classify the level of GenAI allowance and other requirements in policy texts.The developed application achieved a coherence score of 0.73 for topic discovery.In addition, GPT-4.0-based classification of policy categories achieved precision between 0.92 and 0.97, and recall between 0.85 and 0.97 across eight identified topics.By providing structured and interpretable policy information, this tool promotes the safe, equitable, and pedagogically aligned use of GenAI technologies in education.Furthermore, the system can be integrated into educational technology platforms to help students understand and comply with relevant guidelines.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.16036v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.16036v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Imitation Game: Reproducing Deep Learning Bugs Leveraging an Intelligent Agent
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -782,6 +756,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.14990v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Beyond Accuracy: A Geometric Stability Analysis of Large Language Models in Chess Evaluation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>The evaluation of Large Language Models (LLMs) in complex reasoning domains typically relies on performance alignment with ground-truth oracles.In the domain of chess, this standard manifests as accuracy benchmarks against strong engines like Stockfish.However, high scalar accuracy does not necessarily imply robust conceptual understanding.This paper argues that standard accuracy metrics fail to distinguish between genuine geometric reasoning and the superficial memorization of canonical board states.To address this gap, we propose a Geometric Stability Framework, a novel evaluation methodology that rigorously tests model consistency under invariant transformations-including board rotation, mirror symmetry, color inversion, and format conversion.We applied this framework to a comparative analysis of six state-of-the-art LLMs including GPT-5.1, Claude Sonnet 4.5, and Kimi K2 Turbo, utilizing a dataset of approximately 3,000 positions.Our results reveal a significant Accuracy-Stability Paradox.While models such as GPT-5.1 achieve near-optimal accuracy on standard positions, they exhibit catastrophic degradation under geometric perturbation, specifically in rotation tasks where error rates surge by over 600%.This disparity suggests a reliance on pattern matching over abstract spatial logic.Conversely, Claude Sonnet 4.5 and Kimi K2 Turbo demonstrate superior dual robustness, maintaining high consistency across all transformation axes.<span class='px-1 mx-1 bg-yellow-200'>Furthermore, we analyze the trade-off between helpfulness and safety, identifying Gemini 2.5 Flash as the leader in illegal state rejection (96.0%). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.604</span></span>We conclude that geometric stability provides an orthogonal and essential metric for AI evaluation, offering a necessary proxy for disentangling reasoning capabilities from data contamination and overfitting in large-scale models.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15033v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15033v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -938,6 +938,84 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.15617v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Darth Vecdor: An Open-Source System for Generating Knowledge Graphs Through Large Language Model Queries
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Many large language models (LLMs) are trained on a massive body of knowledge present on the Internet.Darth Vecdor (DV) was designed to extract this knowledge into a structured, terminology-mapped, SQL database ("knowledge base" or "knowledge graph").Knowledge graphs may be useful in many domains, including healthcare.Although one might query an LLM directly rather than a SQL-based knowledge graph, concerns such as cost, speed, safety, and confidence may arise, especially in high-volume operations.These may be mitigated when the information is pre-extracted from the LLM and becomes query-able through a standard database.However, the author found the need to address several issues.These included erroneous, off-topic, free-text, overly general, and inconsistent LLM responses, as well as allowing for multi-element responses.<span class='px-1 mx-1 bg-yellow-200'>DV was built with features intended to mitigate these issues. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.609</span></span>To facilitate ease of use, and to allow for prompt engineering by those with domain expertise but little technical background, DV provides a simple, browser-based graphical user interface.DV has been released as free, open-source, extensible software, on an "as is" basis, without warranties or conditions of any kind, either express or implied.Users need to be cognizant of the potential risks and benefits of using DV and its outputs, and users are responsible for ensuring any use is safe and effective.<span class='px-1 mx-1 bg-yellow-200'>DV should be assumed to have bugs, potentially very serious ones. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.753</span></span>However, the author hopes that appropriate use of current and future versions of DV and its outputs can help improve healthcare.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15906v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15906v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                TabReX : Tabular Referenceless eXplainable Evaluation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Evaluating the quality of tables generated by large language models (LLMs) remains an open challenge: existing metrics either flatten tables into text, ignoring structure, or rely on fixed references that limit generalization.We present TabReX, a reference-less, property-driven framework for evaluating tabular generation via graph-based reasoning.TabReX converts both source text and generated tables into canonical knowledge graphs, aligns them through an LLM-guided matching process, and computes interpretable, rubric-aware scores that quantify structural and factual fidelity.The resulting metric provides controllable trade-offs between sensitivity and specificity, yielding human-aligned judgments and cell-level error traces.To systematically asses metric robustness, we introduce TabReX-Bench, a large-scale benchmark spanning six domains and twelve planner-driven perturbation types across three difficulty tiers.<span class='px-1 mx-1 bg-yellow-200'>Empirical results show that TabReX achieves the highest correlation with expert rankings, remains stable under harder perturbations, and enables fine-grained model-vs-prompt analysis establishing a new paradigm for trustworthy, explainable evaluation of structured generation systems. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.62</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15907v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15907v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Topic Discovery and Classification for Responsible Generative AI Adaptation in Higher Education
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>As generative artificial intelligence (GenAI) becomes increasingly capable of delivering personalized learning experiences and real-time feedback, a growing number of students are incorporating these tools into their academic workflows.They use GenAI to clarify concepts, solve complex problems, and, in some cases, complete assignments by copying and pasting model-generated contents.<span class='px-1 mx-1 bg-yellow-200'>While GenAI has the potential to enhance learning experience, it also raises concerns around misinformation, hallucinated outputs, and its potential to undermine critical thinking and problem-solving skills. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.698</span></span>In response, many universities, colleges, departments, and instructors have begun to develop and adopt policies to guide responsible integration of GenAI into learning environments.However, these policies vary widely across institutions and contexts, and their evolving nature often leaves students uncertain about expectations and best practices.To address this challenge, the authors designed and implemented an automated system for discovering and categorizing AI-related policies found in course syllabi and institutional policy websites.The system combines unsupervised topic modeling techniques to identify key policy themes with large language models (LLMs) to classify the level of GenAI allowance and other requirements in policy texts.The developed application achieved a coherence score of 0.73 for topic discovery.In addition, GPT-4.0-based classification of policy categories achieved precision between 0.92 and 0.97, and recall between 0.85 and 0.97 across eight identified topics.By providing structured and interpretable policy information, this tool promotes the safe, equitable, and pedagogically aligned use of GenAI technologies in education.Furthermore, the system can be integrated into educational technology platforms to help students understand and comply with relevant guidelines.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.16036v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.16036v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -1164,58 +1242,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                SeBERTis: A Framework for Producing Classifiers of Security-Related Issue Reports
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Monitoring issue tracker submissions is a crucial software maintenance activity.<span class='px-1 mx-1 bg-yellow-200'>A key goal is the prioritization of high risk, security-related bugs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.666</span></span>If such bugs can be recognized early, the risk of propagation to dependent products and endangerment of stakeholder benefits can be mitigated.To assist triage engineers with this task, several automatic detection techniques, from Machine Learning (ML) models to prompting Large Language Models (LLMs), have been proposed.Although promising to some extent, prior techniques often memorize lexical cues as decision shortcuts, yielding low detection rate specifically for more complex submissions.<span class='px-1 mx-1 bg-yellow-200'>As such, these classifiers do not yet reach the practical expectations of a real-time detector of security-related issues. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.626</span></span><span class='px-1 mx-1 bg-yellow-200'>To address these limitations, we propose SEBERTIS, a framework to train Deep Neural Networks (DNNs) as classifiers independent of lexical cues, so that they can confidently detect fully unseen security-related issues. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.817</span></span>SEBERTIS capitalizes on fine-tuning bidirectional transformer architectures as Masked Language Models (MLMs) on a series of semantically equivalent vocabulary to prediction labels (which we call Semantic Surrogates) when they have been replaced with a mask.<span class='px-1 mx-1 bg-yellow-200'>Our SEBERTIS-trained classifier achieves a 0.9880 F1-score in detecting security-related issues of a curated corpus of 10,000 GitHub issue reports, substantially outperforming state-of-the-art issue classifiers, with 14.44%-96.98%, 15.40%-93.07%, and 14.90%-94.72% higher detection precision, recall, and F1-score over ML-based baselines. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.694</span></span>Our classifier also substantially surpasses LLM baselines, with an improvement of 23.20%-63.71%, 36.68%-85.63%, and 39.49%-74.53% for precision, recall, and F1-score.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15003v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15003v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Beyond Accuracy: A Geometric Stability Analysis of Large Language Models in Chess Evaluation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The evaluation of Large Language Models (LLMs) in complex reasoning domains typically relies on performance alignment with ground-truth oracles.In the domain of chess, this standard manifests as accuracy benchmarks against strong engines like Stockfish.However, high scalar accuracy does not necessarily imply robust conceptual understanding.This paper argues that standard accuracy metrics fail to distinguish between genuine geometric reasoning and the superficial memorization of canonical board states.To address this gap, we propose a Geometric Stability Framework, a novel evaluation methodology that rigorously tests model consistency under invariant transformations-including board rotation, mirror symmetry, color inversion, and format conversion.We applied this framework to a comparative analysis of six state-of-the-art LLMs including GPT-5.1, Claude Sonnet 4.5, and Kimi K2 Turbo, utilizing a dataset of approximately 3,000 positions.Our results reveal a significant Accuracy-Stability Paradox.While models such as GPT-5.1 achieve near-optimal accuracy on standard positions, they exhibit catastrophic degradation under geometric perturbation, specifically in rotation tasks where error rates surge by over 600%.This disparity suggests a reliance on pattern matching over abstract spatial logic.Conversely, Claude Sonnet 4.5 and Kimi K2 Turbo demonstrate superior dual robustness, maintaining high consistency across all transformation axes.<span class='px-1 mx-1 bg-yellow-200'>Furthermore, we analyze the trade-off between helpfulness and safety, identifying Gemini 2.5 Flash as the leader in illegal state rejection (96.0%). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.67</span></span>We conclude that geometric stability provides an orthogonal and essential metric for AI evaluation, offering a necessary proxy for disentangling reasoning capabilities from data contamination and overfitting in large-scale models.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15033v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15033v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 Quantifying Return on Security Controls in LLM Systems
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -1359,6 +1385,32 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.15688v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                VET Your Agent: Towards Host-Independent Autonomy via Verifiable Execution Traces
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Recent advances in large language models (LLMs) have enabled a new generation of autonomous agents that operate over sustained periods and manage sensitive resources on behalf of users.Trusted for their ability to act without direct oversight, such agents are increasingly considered in high-stakes domains including financial management, dispute resolution, and governance.Yet in practice, agents execute on infrastructure controlled by a host, who can tamper with models, inputs, or outputs, undermining any meaningful notion of autonomy.   <span class='px-1 mx-1 bg-yellow-200'>We address this gap by introducing VET (Verifiable Execution Traces), a formal framework that achieves host-independent authentication of agent outputs and takes a step toward host-independent autonomy. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.647</span></span>Central to VET is the Agent Identity Document (AID), which specifies an agent's configuration together with the proof systems required for verification.VET is compositional: it supports multiple proof mechanisms, including trusted hardware, succinct cryptographic proofs, and notarized TLS transcripts (Web Proofs).   We implement VET for an API-based LLM agent and evaluate our instantiation on realistic workloads.We find that for today's black-box, secret-bearing API calls, Web Proofs appear to be the most practical choice, with overhead typically under 3$\times$ compared to direct API calls, while for public API calls, a lower-overhead TEE Proxy is often sufficient.As a case study, we deploy a verifiable trading agent that produces proofs for each decision and composes Web Proofs with a TEE Proxy.Our results demonstrate that practical, host-agnostic authentication is already possible with current technology, laying the foundation for future systems that achieve full host-independent autonomy.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15892v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15892v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2084,110 +2136,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                DSO: Direct Steering Optimization for Bias Mitigation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Generative models are often deployed to make decisions on behalf of users, such as vision-language models (VLMs) identifying which person in a room is a doctor to help visually impaired individuals.<span class='px-1 mx-1 bg-yellow-200'>Yet, VLM decisions are influenced by the perceived demographic attributes of people in the input, which can lead to biased outcomes like failing to identify women as doctors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.729</span></span>Moreover, when reducing bias leads to performance loss, users may have varying needs for balancing bias mitigation with overall model capabilities, highlighting the demand for methods that enable controllable bias reduction during inference.Activation steering is a popular approach for inference-time controllability that has shown potential in inducing safer behavior in large language models (LLMs).<span class='px-1 mx-1 bg-yellow-200'>However, we observe that current steering methods struggle to correct biases, where equiprobable outcomes across demographic groups are required. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.702</span></span>To address this, we propose Direct Steering Optimization (DSO) which uses reinforcement learning to find linear transformations for steering activations, tailored to mitigate bias while maintaining control over model performance.We demonstrate that DSO achieves state-of-the-art trade-off between fairness and capabilities on both VLMs and LLMs, while offering practitioners inference-time control over the trade-off.Overall, our work highlights the benefit of designing steering strategies that are directly optimized to control model behavior, providing more effective bias intervention than methods that rely on pre-defined heuristics for controllability.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15926v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15926v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Few-Shot Inference of Human Perceptions of Robot Performance in Social Navigation Scenarios
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Understanding how humans evaluate robot behavior during human-robot interactions is crucial for developing socially aware robots that behave according to human expectations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.844</span></span>While the traditional approach to capturing these evaluations is to conduct a user study, recent work has proposed utilizing machine learning instead.However, existing data-driven methods require large amounts of labeled data, which limits their use in practice.To address this gap, we propose leveraging the few-shot learning capabilities of Large Language Models (LLMs) to improve how well a robot can predict a user's perception of its performance, and study this idea experimentally in social navigation tasks.To this end, we extend the SEAN TOGETHER dataset with additional real-world human-robot navigation episodes and participant feedback.Using this augmented dataset, we evaluate the ability of several LLMs to predict human perceptions of robot performance from a small number of in-context examples, based on observed spatio-temporal cues of the robot and surrounding human motion.Our results demonstrate that LLMs can match or exceed the performance of traditional supervised learning models while requiring an order of magnitude fewer labeled instances.We further show that prediction performance can improve with more in-context examples, confirming the scalability of our approach.Additionally, we investigate what kind of sensor-based information an LLM relies on to make these inferences by conducting an ablation study on the input features considered for performance prediction.Finally, we explore the novel application of personalized examples for in-context learning, i.e., drawn from the same user being evaluated, finding that they further enhance prediction accuracy.This work paves the path to improving robot behavior in a scalable manner through user-centered feedback.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.16019v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.16019v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Cross-Language Bias Examination in Large Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>This study introduces an innovative multilingual bias evaluation framework for assessing bias in Large Language Models, combining explicit bias assessment through the BBQ benchmark with implicit bias measurement using a prompt-based Implicit Association Test. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.795</span></span><span class='px-1 mx-1 bg-yellow-200'>By translating the prompts and word list into five target languages, English, Chinese, Arabic, French, and Spanish, we directly compare different types of bias across languages. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.716</span></span><span class='px-1 mx-1 bg-yellow-200'>The results reveal substantial gaps in bias across languages used in LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.695</span></span><span class='px-1 mx-1 bg-yellow-200'>For example, Arabic and Spanish consistently show higher levels of stereotype bias, while Chinese and English exhibit lower levels of bias. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.879</span></span>We also identify contrasting patterns across bias types.Age shows the lowest explicit bias but the highest implicit bias, emphasizing the importance of detecting implicit biases that are undetectable with standard benchmarks.<span class='px-1 mx-1 bg-yellow-200'>These findings indicate that LLMs vary significantly across languages and bias dimensions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.785</span></span><span class='px-1 mx-1 bg-yellow-200'>This study fills a key research gap by providing a comprehensive methodology for cross-lingual bias analysis. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.864</span></span><span class='px-1 mx-1 bg-yellow-200'>Ultimately, our work establishes a foundation for the development of equitable multilingual LLMs, ensuring fairness and effectiveness across diverse languages and cultures. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.624</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.16029v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.16029v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Are We on the Right Way to Assessing LLM-as-a-Judge?
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>LLM-as-a-Judge has been widely adopted as an evaluation method and served as supervised rewards in model training.However, existing benchmarks for LLM-as-a-Judge are mainly relying on human-annotated ground truth, which introduces human bias that undermines the assessment of reliability and imposes scalability constraints.To overcome these limitations, we introduce Sage, a novel evaluation suite that assesses the quality of LLM judges without necessitating any human annotation.Inspired by axioms of rational choice theory, Sage introduces two new lenses for measuring LLM-as-a-Judge: local self-consistency (pair-wise preference stability) and global logical consistency (transitivity across a full set of preferences).We curate a dataset of 650 questions by combining structured benchmark problems with real-world user queries.Our experiments demonstrate both the stability of our metrics and their high correlation with supervised benchmarks like LLMBar and RewardBench2, confirming Sage's reliability as an evaluation suite for the robustness and accuracy of LLM-as-a-Judge.Based on Sage, we reveal that current state-of-the-art LLMs exhibit significant reliability problems when acting as judges in both scoring and pairwise settings; even the top-performing models, Gemini-2.5-Pro and GPT-5, fail to maintain consistent preferences in nearly a quarter of difficult cases.<span class='px-1 mx-1 bg-yellow-200'>We attribute this to a new phenomenon called situational preference, which explains why explicit rubrics or criteria can help the model judge consistently across answer pairs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span>Our further analysis shows that finetuned LLM-as-a-Judge is a feasible method to boost performance, and the panel-based judge as well as deep reasoning can enhance the judging consistency.<span class='px-1 mx-1 bg-yellow-200'>We also find substantial inconsistency in human judgments, which indicates that human annotation may not be a reliable gold standard. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.741</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.16041v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.16041v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 The Moralization Corpus: Frame-Based Annotation and Analysis of Moralizing Speech Acts across Diverse Text Genres
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -2305,6 +2253,110 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.15674v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                DSO: Direct Steering Optimization for Bias Mitigation
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Generative models are often deployed to make decisions on behalf of users, such as vision-language models (VLMs) identifying which person in a room is a doctor to help visually impaired individuals.<span class='px-1 mx-1 bg-yellow-200'>Yet, VLM decisions are influenced by the perceived demographic attributes of people in the input, which can lead to biased outcomes like failing to identify women as doctors. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.729</span></span>Moreover, when reducing bias leads to performance loss, users may have varying needs for balancing bias mitigation with overall model capabilities, highlighting the demand for methods that enable controllable bias reduction during inference.Activation steering is a popular approach for inference-time controllability that has shown potential in inducing safer behavior in large language models (LLMs).<span class='px-1 mx-1 bg-yellow-200'>However, we observe that current steering methods struggle to correct biases, where equiprobable outcomes across demographic groups are required. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.702</span></span>To address this, we propose Direct Steering Optimization (DSO) which uses reinforcement learning to find linear transformations for steering activations, tailored to mitigate bias while maintaining control over model performance.We demonstrate that DSO achieves state-of-the-art trade-off between fairness and capabilities on both VLMs and LLMs, while offering practitioners inference-time control over the trade-off.Overall, our work highlights the benefit of designing steering strategies that are directly optimized to control model behavior, providing more effective bias intervention than methods that rely on pre-defined heuristics for controllability.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15926v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15926v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Few-Shot Inference of Human Perceptions of Robot Performance in Social Navigation Scenarios
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Understanding how humans evaluate robot behavior during human-robot interactions is crucial for developing socially aware robots that behave according to human expectations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.844</span></span>While the traditional approach to capturing these evaluations is to conduct a user study, recent work has proposed utilizing machine learning instead.However, existing data-driven methods require large amounts of labeled data, which limits their use in practice.To address this gap, we propose leveraging the few-shot learning capabilities of Large Language Models (LLMs) to improve how well a robot can predict a user's perception of its performance, and study this idea experimentally in social navigation tasks.To this end, we extend the SEAN TOGETHER dataset with additional real-world human-robot navigation episodes and participant feedback.Using this augmented dataset, we evaluate the ability of several LLMs to predict human perceptions of robot performance from a small number of in-context examples, based on observed spatio-temporal cues of the robot and surrounding human motion.Our results demonstrate that LLMs can match or exceed the performance of traditional supervised learning models while requiring an order of magnitude fewer labeled instances.We further show that prediction performance can improve with more in-context examples, confirming the scalability of our approach.Additionally, we investigate what kind of sensor-based information an LLM relies on to make these inferences by conducting an ablation study on the input features considered for performance prediction.Finally, we explore the novel application of personalized examples for in-context learning, i.e., drawn from the same user being evaluated, finding that they further enhance prediction accuracy.This work paves the path to improving robot behavior in a scalable manner through user-centered feedback.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.16019v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.16019v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Cross-Language Bias Examination in Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>This study introduces an innovative multilingual bias evaluation framework for assessing bias in Large Language Models, combining explicit bias assessment through the BBQ benchmark with implicit bias measurement using a prompt-based Implicit Association Test. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.795</span></span><span class='px-1 mx-1 bg-yellow-200'>By translating the prompts and word list into five target languages, English, Chinese, Arabic, French, and Spanish, we directly compare different types of bias across languages. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.716</span></span><span class='px-1 mx-1 bg-yellow-200'>The results reveal substantial gaps in bias across languages used in LLMs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.695</span></span><span class='px-1 mx-1 bg-yellow-200'>For example, Arabic and Spanish consistently show higher levels of stereotype bias, while Chinese and English exhibit lower levels of bias. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.879</span></span>We also identify contrasting patterns across bias types.Age shows the lowest explicit bias but the highest implicit bias, emphasizing the importance of detecting implicit biases that are undetectable with standard benchmarks.<span class='px-1 mx-1 bg-yellow-200'>These findings indicate that LLMs vary significantly across languages and bias dimensions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.785</span></span><span class='px-1 mx-1 bg-yellow-200'>This study fills a key research gap by providing a comprehensive methodology for cross-lingual bias analysis. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.864</span></span><span class='px-1 mx-1 bg-yellow-200'>Ultimately, our work establishes a foundation for the development of equitable multilingual LLMs, ensuring fairness and effectiveness across diverse languages and cultures. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.624</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.16029v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.16029v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Are We on the Right Way to Assessing LLM-as-a-Judge?
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>LLM-as-a-Judge has been widely adopted as an evaluation method and served as supervised rewards in model training.However, existing benchmarks for LLM-as-a-Judge are mainly relying on human-annotated ground truth, which introduces human bias that undermines the assessment of reliability and imposes scalability constraints.To overcome these limitations, we introduce Sage, a novel evaluation suite that assesses the quality of LLM judges without necessitating any human annotation.Inspired by axioms of rational choice theory, Sage introduces two new lenses for measuring LLM-as-a-Judge: local self-consistency (pair-wise preference stability) and global logical consistency (transitivity across a full set of preferences).We curate a dataset of 650 questions by combining structured benchmark problems with real-world user queries.Our experiments demonstrate both the stability of our metrics and their high correlation with supervised benchmarks like LLMBar and RewardBench2, confirming Sage's reliability as an evaluation suite for the robustness and accuracy of LLM-as-a-Judge.Based on Sage, we reveal that current state-of-the-art LLMs exhibit significant reliability problems when acting as judges in both scoring and pairwise settings; even the top-performing models, Gemini-2.5-Pro and GPT-5, fail to maintain consistent preferences in nearly a quarter of difficult cases.<span class='px-1 mx-1 bg-yellow-200'>We attribute this to a new phenomenon called situational preference, which explains why explicit rubrics or criteria can help the model judge consistently across answer pairs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.612</span></span>Our further analysis shows that finetuned LLM-as-a-Judge is a feasible method to boost performance, and the panel-based judge as well as deep reasoning can enhance the judging consistency.<span class='px-1 mx-1 bg-yellow-200'>We also find substantial inconsistency in human judgments, which indicates that human annotation may not be a reliable gold standard. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.741</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.16041v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.16041v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2466,32 +2518,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.16425v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Darth Vecdor: An Open-Source System for Generating Knowledge Graphs Through Large Language Model Queries
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Many large language models (LLMs) are trained on a massive body of knowledge present on the Internet.Darth Vecdor (DV) was designed to extract this knowledge into a structured, terminology-mapped, SQL database ("knowledge base" or "knowledge graph").Knowledge graphs may be useful in many domains, including healthcare.Although one might query an LLM directly rather than a SQL-based knowledge graph, concerns such as cost, speed, safety, and confidence may arise, especially in high-volume operations.These may be mitigated when the information is pre-extracted from the LLM and becomes query-able through a standard database.However, the author found the need to address several issues.These included erroneous, off-topic, free-text, overly general, and inconsistent LLM responses, as well as allowing for multi-element responses.DV was built with features intended to mitigate these issues.<span class='px-1 mx-1 bg-yellow-200'>To facilitate ease of use, and to allow for prompt engineering by those with domain expertise but little technical background, DV provides a simple, browser-based graphical user interface. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.539</span></span>DV has been released as free, open-source, extensible software, on an "as is" basis, without warranties or conditions of any kind, either express or implied.Users need to be cognizant of the potential risks and benefits of using DV and its outputs, and users are responsible for ensuring any use is safe and effective.DV should be assumed to have bugs, potentially very serious ones.However, the author hopes that appropriate use of current and future versions of DV and its outputs can help improve healthcare.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15906v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15906v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -3643,58 +3669,6 @@
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                A Neurosymbolic Approach to Loop Invariant Generation via Weakest Precondition Reasoning
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Loop invariant generation remains a critical bottleneck in automated program verification.<span class='px-1 mx-1 bg-yellow-200'>Recent work has begun to explore the use of Large Language Models (LLMs) in this area, yet these approaches tend to lack a reliable and structured methodology, with little reference to existing program verification theory. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.715</span></span>This paper presents NeuroInv, a neurosymbolic approach to loop invariant generation.NeuroInv comprises two key modules: (1) a neural reasoning module that leverages LLMs and Hoare logic to derive and refine candidate invariants via backward-chaining weakest precondition reasoning, and (2) a verification-guided symbolic module that iteratively repairs invariants using counterexamples from OpenJML.We evaluate NeuroInv on a comprehensive benchmark of 150 Java programs, encompassing single and multiple (sequential) loops, multiple arrays, random branching, and noisy code segments.NeuroInv achieves a $99.5\%$ success rate, substantially outperforming the other evaluated approaches.Additionally, we introduce a hard benchmark of $10$ larger multi-loop programs (with an average of $7$ loops each); NeuroInv's performance in this setting demonstrates that it can scale to more complex verification scenarios.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15816v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15816v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                OLAF: Towards Robust LLM-Based Annotation Framework in Empirical Software Engineering
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) are increasingly used in empirical software engineering (ESE) to automate or assist annotation tasks such as labeling commits, issues, and qualitative artifacts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.775</span></span>Yet the reliability and reproducibility of such annotations remain underexplored.Existing studies often lack standardized measures for reliability, calibration, and drift, and frequently omit essential configuration details.We argue that LLM-based annotation should be treated as a measurement process rather than a purely automated activity.In this position paper, we outline the \textbf{Operationalization for LLM-based Annotation Framework (OLAF)}, a conceptual framework that organizes key constructs: \textit{reliability, calibration, drift, consensus, aggregation}, and \textit{transparency}.<span class='px-1 mx-1 bg-yellow-200'>The paper aims to motivate methodological discussion and future empirical work toward more transparent and reproducible LLM-based annotation in software engineering research. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.644</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15979v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.15979v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
                 An Exploratory Study of Bayesian Prompt Optimization for Test-Driven Code Generation with Large Language Models
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
@@ -3786,6 +3760,58 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.15468v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                A Neurosymbolic Approach to Loop Invariant Generation via Weakest Precondition Reasoning
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Loop invariant generation remains a critical bottleneck in automated program verification.<span class='px-1 mx-1 bg-yellow-200'>Recent work has begun to explore the use of Large Language Models (LLMs) in this area, yet these approaches tend to lack a reliable and structured methodology, with little reference to existing program verification theory. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.715</span></span>This paper presents NeuroInv, a neurosymbolic approach to loop invariant generation.NeuroInv comprises two key modules: (1) a neural reasoning module that leverages LLMs and Hoare logic to derive and refine candidate invariants via backward-chaining weakest precondition reasoning, and (2) a verification-guided symbolic module that iteratively repairs invariants using counterexamples from OpenJML.We evaluate NeuroInv on a comprehensive benchmark of 150 Java programs, encompassing single and multiple (sequential) loops, multiple arrays, random branching, and noisy code segments.NeuroInv achieves a $99.5\%$ success rate, substantially outperforming the other evaluated approaches.Additionally, we introduce a hard benchmark of $10$ larger multi-loop programs (with an average of $7$ loops each); NeuroInv's performance in this setting demonstrates that it can scale to more complex verification scenarios.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15816v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15816v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-17</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                OLAF: Towards Robust LLM-Based Annotation Framework in Empirical Software Engineering
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) are increasingly used in empirical software engineering (ESE) to automate or assist annotation tasks such as labeling commits, issues, and qualitative artifacts. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.775</span></span>Yet the reliability and reproducibility of such annotations remain underexplored.Existing studies often lack standardized measures for reliability, calibration, and drift, and frequently omit essential configuration details.We argue that LLM-based annotation should be treated as a measurement process rather than a purely automated activity.In this position paper, we outline the \textbf{Operationalization for LLM-based Annotation Framework (OLAF)}, a conceptual framework that organizes key constructs: \textit{reliability, calibration, drift, consensus, aggregation}, and \textit{transparency}.<span class='px-1 mx-1 bg-yellow-200'>The paper aims to motivate methodological discussion and future empirical work toward more transparent and reproducible LLM-based annotation in software engineering research. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.644</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.15979v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2512.15979v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
