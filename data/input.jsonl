@@ -35,6 +35,11 @@
 {"id":"2512.20908v1","categories":["education"]}
 {"id":"2512.20900v1","categories":["social-sciences"]}
 {"id":"2512.20858v1","categories":["education"]}
+{"id":"2512.20845v1","categories":["robustness"]}
+{"id":"2512.20823v1","categories":["robustness"]}
+{"id":"2512.20822v1","categories":["security"]}
+{"id":"2512.20812v1","categories":["hci"]}
+{"id":"2512.20745v1","categories":["prompt-engineering"]}
 {"id":"2512.20618v1","categories":["education"]}
 {"id":"2512.20617v1","categories":["social-sciences"]}
 {"id":"2512.20586v1","categories":["prompt-engineering"]}
@@ -72,8 +77,6 @@
 {"id":"2512.19980v1","categories":["programming"]}
 {"id":"2512.19950v1","categories":["social-sciences"]}
 {"id":"2512.19937v1","categories":["social-sciences"]}
-{"id":"2512.20812v1","categories":["hci"]}
-{"id":"2512.20745v1","categories":["prompt-engineering"]}
 {"id":"2512.19918v1","categories":["programming"]}
 {"id":"2512.19908v1","categories":["prompt-engineering"]}
 {"id":"2512.19905v1","categories":["social-sciences"]}
