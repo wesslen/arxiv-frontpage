@@ -1,3 +1,8 @@
+{"id":"2512.22113v1","categories":["robustness"]}
+{"id":"2512.22100v1","categories":["architectures"]}
+{"id":"2512.22088v1","categories":["production"]}
+{"id":"2512.22082v1","categories":["hci"]}
+{"id":"2512.22066v1","categories":["architectures"]}
 {"id":"2512.21334v1","categories":["architectures"]}
 {"id":"2512.21332v1","categories":["programming"]}
 {"id":"2512.21326v1","categories":["production"]}
@@ -8,21 +13,17 @@
 {"id":"2512.21243v1","categories":["education"]}
 {"id":"2512.21238v1","categories":["programming"]}
 {"id":"2512.21236v1","categories":["programming"]}
-{"id":"2512.21144v1","categories":["production"]}
+{"id":"2512.21144v1","categories":["architectures"]}
 {"id":"2512.21138v1","categories":["hci"]}
 {"id":"2512.21132v1","categories":["security"]}
 {"id":"2512.21127v1","categories":["social-sciences"]}
 {"id":"2512.21126v1","categories":["education"]}
-{"id":"2512.21120v1","categories":["production"]}
 {"id":"2512.21110v1","categories":["security"]}
 {"id":"2512.21107v1","categories":["prompt-engineering"]}
-{"id":"2512.21106v1","categories":["architectures"]}
-{"id":"2512.21080v1","categories":["production"]}
 {"id":"2512.21066v1","categories":["recommender"]}
 {"id":"2512.21055v1","categories":["hci"]}
 {"id":"2512.21041v1","categories":["social-sciences"]}
 {"id":"2512.21039v1","categories":["hci"]}
-{"id":"2512.21031v1","categories":["production"]}
 {"id":"2512.21028v1","categories":["programming"]}
 {"id":"2512.21010v1","categories":["security"]}
 {"id":"2512.21008v1","categories":["security"]}
@@ -64,7 +65,6 @@
 {"id":"2512.20176v1","categories":["security"]}
 {"id":"2512.20173v1","categories":["social-sciences"]}
 {"id":"2512.20169v1","categories":["prompt-engineering"]}
-{"id":"2512.20168v1","categories":["robustness"]}
 {"id":"2512.20164v1","categories":["programming"]}
 {"id":"2512.20162v1","categories":["social-sciences"]}
 {"id":"2512.20159v1","categories":["programming"]}
@@ -115,7 +115,6 @@
 {"id":"2512.18857v1","categories":["education"]}
 {"id":"2512.18832v1","categories":["hci"]}
 {"id":"2512.18803v1","categories":["hci"]}
-{"id":"2512.18776v1","categories":["hci"]}
 {"id":"2512.18745v1","categories":["education"]}
 {"id":"2512.18669v1","categories":["education"]}
 {"id":"2512.18567v1","categories":["programming"]}
