@@ -19,7 +19,7 @@
           <td>
             <h1 class="text-4xl pt-4 font-bold"><span class="underline">Ryan's</span> Arxiv FrontPage</h1>
             <br>
-            <p>Generated on 2026-01-04.</p><br/>
+            <p>Generated on 2026-01-05.</p><br/>
             <p class="text-sm text-gray-500 pt-2">This frontpage is made by scraping arxiv and by running a sentence-model that detects if the abstract describes a paper about a topic of interest. One cool feature: it all pretty much runs via Github Actions. </p>
             <p class="text-sm text-gray-500 pt-2">This project was originally created by <a href="https://koaning.io/">Vincent Warmerdam</a>, modifying his original <a href="https://koaning.github.io/arxiv-frontpage/">frontpage</a> for different paper categories.</p>
             <br>
@@ -30,6 +30,58 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">Prompt Engineering in Large Language Models</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2026-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Grading Handwritten Engineering Exams with Multimodal Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Handwritten STEM exams capture open-ended reasoning and diagrams, but manual grading is slow and difficult to scale.<span class='px-1 mx-1 bg-yellow-200'>We present an end-to-end workflow for grading scanned handwritten engineering quizzes with multimodal large language models (LLMs) that preserves the standard exam process (A4 paper, unconstrained student handwriting). <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.65</span></span>The lecturer provides only a handwritten reference solution (100%) and a short set of grading rules; the reference is converted into a text-only summary that conditions grading without exposing the reference scan.Reliability is achieved through a multi-stage design with a format/presence check to prevent grading blank answers, an ensemble of independent graders, supervisor aggregation, and rigid templates with deterministic validation to produce auditable, machine-parseable reports.We evaluate the frozen pipeline in a clean-room protocol on a held-out real course quiz in Slovenian, including hand-drawn circuit schematics.<span class='px-1 mx-1 bg-yellow-200'>With state-of-the-art backends (GPT-5.2 and Gemini-3 Pro), the full pipeline achieves $\approx$8-point mean absolute difference to lecturer grades with low bias and an estimated manual-review trigger rate of $\approx$17% at $D_{\max}=40$. Ablations show that trivial prompting and removing the reference solution substantially degrade accuracy and introduce systematic over-grading, confirming that structured prompting and reference grounding are essential. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.672</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2601.00730v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2601.00730v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2026-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                The Reasoning-Creativity Trade-off: Toward Creativity-Driven Problem Solving
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>State-of-the-art large language model (LLM) pipelines rely on bootstrapped reasoning loops: sampling diverse chains of thought and reinforcing the highest-scoring ones, mainly optimizing correctness. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.663</span></span>We analyze how this design choice is sensitive to the collapse of the model's distribution over reasoning paths, slashing semantic entropy and undermining creative problem-solving.To analyze this failure, we introduce Distributional Creative Reasoning (DCR), a unified variational objective that casts training as gradient flow through probability measures on solution traces.STaR, GRPO, and DPO, as well as entropy bonuses, and other methods, all constitute special cases of the same loss.The framework delivers three core results: (i) the diversity decay theorem, describing how correctness-based objectives lead to distinct modes of diversity decay for STaR, GRPO, and DPO; (ii) designs that ensure convergence to a stable and diverse policy, effectively preventing collapse; and (iii) simple, actionable recipes to achieve this in practice.DCR thus offers the first principled recipe for LLMs that remain both correct and creative.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2601.00747v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2601.00747v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-31</p>
           </td>
@@ -361,32 +413,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.24505v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-29</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                CountGD++: Generalized Prompting for Open-World Counting
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>The flexibility and accuracy of methods for automatically counting objects in images and videos are limited by the way the object can be specified.While existing methods allow users to describe the target object with text and visual examples, the visual examples must be manually annotated inside the image, and there is no way to specify what not to count.To address these gaps, we introduce novel capabilities that expand how the target object can be specified.<span class='px-1 mx-1 bg-yellow-200'>Specifically, we extend the prompt to enable what not to count to be described with text and/or visual examples, introduce the concept of `pseudo-exemplars' that automate the annotation of visual examples at inference, and extend counting models to accept visual examples from both natural and synthetic external images. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.614</span></span>We also use our new counting model, CountGD++, as a vision expert agent for an LLM.Together, these contributions expand the prompt flexibility of multi-modal open-world counting and lead to significant improvements in accuracy, efficiency, and generalization across multiple datasets.Code is available at https://github.com/niki-amini-naieni/CountGDPlusPlus.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.23351v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.23351v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2032,6 +2058,32 @@
           </td>
         </tr><tr>
           <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2026-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Exploring the Performance of Large Language Models on Subjective Span Identification Tasks
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Identifying relevant text spans is important for several downstream tasks in NLP, as it contributes to model explainability.While most span identification approaches rely on relatively smaller pre-trained language models like BERT, a few recent approaches have leveraged the latest generation of Large Language Models (LLMs) for the task.Current work has focused on explicit span identification like Named Entity Recognition (NER), while more subjective span identification with LLMs in tasks like Aspect-based Sentiment Analysis (ABSA) has been underexplored.In this paper, we fill this important gap by presenting an evaluation of the performance of various LLMs on text span identification in three popular tasks, namely sentiment analysis, offensive language identification, and claim verification.<span class='px-1 mx-1 bg-yellow-200'>We explore several LLM strategies like instruction tuning, in-context learning, and chain of thought. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.638</span></span>Our results indicate underlying relationships within text aid LLMs in identifying precise text spans.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2601.00736v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2601.00736v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-31</p>
           </td>
           <td>
@@ -2180,136 +2232,6 @@
                 </a>
                 <br>
                 <a href='http://arxiv.org/abs/2512.22627v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                When LLMs fall short in Deductive Coding: Model Comparison and Human AI Collaboration Workflow Design
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>With generative artificial intelligence driving the growth of dialogic data in education, automated coding is a promising direction for learning analytics to improve efficiency. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.652</span></span><span class='px-1 mx-1 bg-yellow-200'>This surge highlights the need to understand the nuances of student-AI interactions, especially those rare yet crucial. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.669</span></span>However, automated coding may struggle to capture these rare codes due to imbalanced data, while human coding remains time-consuming and labour-intensive.The current study examined the potential of large language models (LLMs) to approximate or replace humans in deductive, theory-driven coding, while also exploring how human-AI collaboration might support such coding tasks at scale.We compared the coding performance of small transformer classifiers (e.g., BERT) and LLMs in two datasets, with particular attention to imbalanced head-tail distributions in dialogue codes.Our results showed that LLMs did not outperform BERT-based models and exhibited systematic errors and biases in deductive coding tasks.We designed and evaluated a human-AI collaborative workflow that improved coding efficiency while maintaining coding reliability.Our findings reveal both the limitations of LLMs -- especially their difficulties with semantic similarity and theoretical interpretations and the indispensable role of human judgment -- while demonstrating the practical promise of human-AI collaborative workflows for coding.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.21041v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.21041v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Making AI Work: An Autoethnography of a Workaround in Higher Education
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Research on the implementation of Generative Artificial Intelligence (GenAI) in higher education often focuses on strategic goals, overlooking the hidden, and often politically charged, labour required to make it functional. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.616</span></span>This paper provides an insider's account of the sociotechnical friction that arises when an institutional goal of empowering non-technical staff conflicts with the technical limitations of enterprise Large Language Models (LLMs).Through analytic autoethnography, this study examines a GenAI project pushed to an impasse, focusing on a workaround developed to navigate not only technical constraints but also the combined challenge of organisational territoriality and assertions of positional power.Drawing upon Alter's (2014) theory of workarounds, the analysis interprets "articulation work" as a form of "invisible labour".By engaging with the Information Systems (IS) domains of user innovation and technology-in-practice, this study argues that such user-driven workarounds should be understood not as deviations, but as integral acts of sociotechnical integration.This integration, however, highlights the central paradoxes of modern GenAI where such workarounds for "unfinished" systems can simultaneously create unofficial "shadow" systems and obscure the crucial, yet invisible, sociotechnical labour involved.The findings suggest that the invisible labour required to integrate GenAI within complex organisational politics is an important, rather than peripheral, component of how it becomes functional in practice.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.21055v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.21055v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                MarineEval: Assessing the Marine Intelligence of Vision-Language Models
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>We have witnessed promising progress led by large language models (LLMs) and further vision language models (VLMs) in handling various queries as a general-purpose assistant.VLMs, as a bridge to connect the visual world and language corpus, receive both visual content and various text-only user instructions to generate corresponding responses.Though great success has been achieved by VLMs in various fields, in this work, we ask whether the existing VLMs can act as domain experts, accurately answering marine questions, which require significant domain expertise and address special domain challenges/requirements.To comprehensively evaluate the effectiveness and explore the boundary of existing VLMs, we construct the first large-scale marine VLM dataset and benchmark called MarineEval, with 2,000 image-based question-answering pairs.During our dataset construction, we ensure the diversity and coverage of the constructed data: 7 task dimensions and 20 capacity dimensions.The domain requirements are specially integrated into the data construction and further verified by the corresponding marine domain experts.We comprehensively benchmark 17 existing VLMs on our MarineEval and also investigate the limitations of existing models in answering marine research questions.The experimental results reveal that existing VLMs cannot effectively answer the domain-specific questions, and there is still a large room for further performance improvements.We hope our new benchmark and observations will facilitate future research.<span class='px-1 mx-1 bg-yellow-200'>Project Page: http://marineeval.hkustvgd.com/ <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.518</span></span></p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.21126v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.21126v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                LookPlanGraph: Embodied Instruction Following Method with VLM Graph Augmentation
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Methods that use Large Language Models (LLM) as planners for embodied instruction following tasks have become widespread.<span class='px-1 mx-1 bg-yellow-200'>To successfully complete tasks, the LLM must be grounded in the environment in which the robot operates. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.555</span></span>One solution is to use a scene graph that contains all the necessary information.Modern methods rely on prebuilt scene graphs and assume that all task-relevant information is available at the start of planning.However, these approaches do not account for changes in the environment that may occur between the graph construction and the task execution.We propose LookPlanGraph - a method that leverages a scene graph composed of static assets and object priors.During plan execution, LookPlanGraph continuously updates the graph with relevant objects, either by verifying existing priors or discovering new entities.This is achieved by processing the agents egocentric camera view using a Vision Language Model.We conducted experiments with changed object positions VirtualHome and OmniGibson simulated environments, demonstrating that LookPlanGraph outperforms methods based on predefined static scene graphs.To demonstrate the practical applicability of our approach, we also conducted experiments in a real-world setting.Additionally, we introduce the GraSIF (Graph Scenes for Instruction Following) dataset with automated validation framework, comprising 514 tasks drawn from SayPlan Office, BEHAVIOR-1K, and VirtualHome RobotHow.Project page available at https://lookplangraph.github.io .</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.21243v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.21243v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
-                  Google Scholar
-                </a>
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr><tr>
-          <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-24</p>
-          </td>
-          <td>
-            <div x-data="{open: false}">
-              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Quadrupped-Legged Robot Movement Plan Generation using Large Language Model
-              </span>
-              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
-                <div class="text-center pt-2"></div>
-                <p class="pt-2">
-                  <p>Traditional control interfaces for quadruped robots often impose a high barrier to entry, requiring specialized technical knowledge for effective operation.To address this, this paper presents a novel control framework that integrates Large Language Models (LLMs) to enable intuitive, natural language-based navigation.<span class='px-1 mx-1 bg-yellow-200'>We propose a distributed architecture where high-level instruction processing is offloaded to an external server to overcome the onboard computational constraints of the DeepRobotics Jueying Lite 3 platform. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.516</span></span>The system grounds LLM-generated plans into executable ROS navigation commands using real-time sensor fusion (LiDAR, IMU, and Odometry).Experimental validation was conducted in a structured indoor environment across four distinct scenarios, ranging from single-room tasks to complex cross-zone navigation.The results demonstrate the system's robustness, achieving an aggregate success rate of over 90\% across all scenarios, validating the feasibility of offloaded LLM-based planning for autonomous quadruped deployment in real-world settings.</p>
-                </p>
-              <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.21293v1' target="_blank">
-                  link
-                </a>
-                <br>
-                <a href='http://arxiv.org/abs/2512.21293v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2822,24 +2744,24 @@
           </td>
         </tr><tr>
           <td class="inline-block">
-            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-31</p>
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2026-01-02</p>
           </td>
           <td>
             <div x-data="{open: false}">
               <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
-                Dynamic Large Concept Models: Latent Reasoning in an Adaptive Semantic Space
+                Materials Informatics: Emergence To Autonomous Discovery In The Age Of AI
               </span>
               <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
                 <div class="text-center pt-2"></div>
                 <p class="pt-2">
-                  <p><span class='px-1 mx-1 bg-yellow-200'>Large Language Models (LLMs) apply uniform computation to all tokens, despite language exhibiting highly non-uniform information density. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.597</span></span><span class='px-1 mx-1 bg-yellow-200'>This token-uniform regime wastes capacity on locally predictable spans while under-allocating computation to semantically critical transitions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.391</span></span>We propose $\textbf{Dynamic Large Concept Models (DLCM)}$, a hierarchical language modeling framework that learns semantic boundaries from latent representations and shifts computation from tokens to a compressed concept space where reasoning is more efficient.<span class='px-1 mx-1 bg-yellow-200'>DLCM discovers variable-length concepts end-to-end without relying on predefined linguistic units. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.479</span></span><span class='px-1 mx-1 bg-yellow-200'>Hierarchical compression fundamentally changes scaling behavior. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.448</span></span><span class='px-1 mx-1 bg-yellow-200'>We introduce the first $\textbf{compression-aware scaling law}$, which disentangles token-level capacity, concept-level reasoning capacity, and compression ratio, enabling principled compute allocation under fixed FLOPs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.657</span></span><span class='px-1 mx-1 bg-yellow-200'>To stably train this heterogeneous architecture, we further develop a $\textbf{decoupled $μ$P parametrization}$ that supports zero-shot hyperparameter transfer across widths and compression regimes. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.67</span></span><span class='px-1 mx-1 bg-yellow-200'>At a practical setting ($R=4$, corresponding to an average of four tokens per concept), DLCM reallocates roughly one-third of inference compute into a higher-capacity reasoning backbone, achieving a $\textbf{+2.69$\%$ average improvement}$ across 12 zero-shot benchmarks under matched inference FLOPs. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.515</span></span></p>
+                  <p>This perspective explores the evolution of materials informatics, from its foundational roots in physics and information theory to its maturation through artificial intelligence (AI).We trace the field's trajectory from early milestones to the transformative impact of the Materials Genome Initiative and the recent advent of large language models (LLMs).Rather than a mere toolkit, we present materials informatics as an evolving ecosystem, reviewing key methodologies such as Bayesian Optimization, Reinforcement Learning, and Transformers that drive inverse design and autonomous self-driving laboratories.<span class='px-1 mx-1 bg-yellow-200'>We specifically address the practical challenges of LLM integration, comparing specialist versus generalist models and discussing solutions for uncertainty quantification. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.566</span></span>Looking forward, we assess the transition of AI from a predictive tool to a collaborative research partner.By leveraging active learning and retrieval-augmented generation (RAG), the field is moving toward a new era of autonomous materials science, increasingly characterized by "human-out-of-the-loop" discovery processes.</p>
                 </p>
               <p class="pb-2 pt-2 text-center">
-                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2512.24617v1' target="_blank">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2601.00742v1' target="_blank">
                   link
                 </a>
                 <br>
-                <a href='http://arxiv.org/abs/2512.24617v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                <a href='http://arxiv.org/abs/2601.00742v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
                   Google Scholar
                 </a>
               </p>
@@ -2956,6 +2878,58 @@
             <h2 class="text-2xl tracking-tight pt-4 font-bold">LLM Model Architectures and Training Techniques</h2>
           </td>
         </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2026-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                Memory Bank Compression for Continual Adaptation of Large Language Models
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p>Large Language Models (LLMs) have become a mainstay for many everyday applications.However, as data evolve their knowledge quickly becomes outdated.Continual learning aims to update LLMs with new information without erasing previously acquired knowledge.<span class='px-1 mx-1 bg-yellow-200'>Although methods such as full fine-tuning can incorporate new data, they are computationally expensive and prone to catastrophic forgetting, where prior knowledge is overwritten. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.47</span></span>Memory-augmented approaches address this by equipping LLMs with a memory bank, that is an external memory module which stores information for future use.<span class='px-1 mx-1 bg-yellow-200'>However, these methods face a critical limitation, in particular, the memory bank constantly grows in the real-world scenario when large-scale data streams arrive. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.414</span></span><span class='px-1 mx-1 bg-yellow-200'>In this paper, we propose MBC, a model that compresses the memory bank through a codebook optimization strategy during online adaptation learning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.543</span></span><span class='px-1 mx-1 bg-yellow-200'>To ensure stable learning, we also introduce an online resetting mechanism that prevents codebook collapse. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.451</span></span><span class='px-1 mx-1 bg-yellow-200'>In addition, we employ Key-Value Low-Rank Adaptation in the attention layers of the LLM, enabling efficient utilization of the compressed memory representations. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.468</span></span><span class='px-1 mx-1 bg-yellow-200'>Experiments with benchmark question-answering datasets demonstrate that MBC reduces the memory bank size to 0.3% when compared against the most competitive baseline, while maintaining high retention accuracy during online adaptation learning. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.481</span></span>Our code is publicly available at https://github.com/Thomkat/MBC.</p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2601.00756v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2601.00756v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
+          <td class="inline-block">
+            <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2026-01-02</p>
+          </td>
+          <td>
+            <div x-data="{open: false}">
+              <span @click="open = ! open" class="hover:underline cursor-pointer decoration-2 decoration-green-600 text-gray-800 text-sm">
+                LLM Agents for Combinatorial Efficient Frontiers: Investment Portfolio Optimization
+              </span>
+              <div x-show="open" x-collapse.duration.500ms class="text-sm text-gray-500 pt-2">
+                <div class="text-center pt-2"></div>
+                <p class="pt-2">
+                  <p><span class='px-1 mx-1 bg-yellow-200'>Investment portfolio optimization is a task conducted in all major financial institutions. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.442</span></span><span class='px-1 mx-1 bg-yellow-200'>The Cardinality Constrained Mean-Variance Portfolio Optimization (CCPO) problem formulation is ubiquitous for portfolio optimization. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.421</span></span>The challenge of this type of portfolio optimization, a mixed-integer quadratic programming (MIQP) problem, arises from the intractability of solutions from exact solvers, where heuristic algorithms are used to find approximate portfolio solutions.<span class='px-1 mx-1 bg-yellow-200'>CCPO entails many laborious and complex workflows and also requires extensive effort pertaining to heuristic algorithm development, where the combination of pooled heuristic solutions results in improved efficient frontiers. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.446</span></span>Hence, common approaches are to develop many heuristic algorithms.<span class='px-1 mx-1 bg-yellow-200'>Agentic frameworks emerge as a promising candidate for many problems within combinatorial optimization, as they have been shown to be equally efficient with regard to automating large workflows and have been shown to be excellent in terms of algorithm development, sometimes surpassing human-level performance. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.44</span></span>This study implements a novel agentic framework for the CCPO and explores several concrete architectures.In benchmark problems, the implemented agentic framework matches state-of-the-art algorithms.<span class='px-1 mx-1 bg-yellow-200'>Furthermore, complex workflows and algorithm development efforts are alleviated, while in the worst case, lower but acceptable error is reported. <span style='font-size: 0.65rem;' class='text-purple-500 font-bold'>0.544</span></span></p>
+                </p>
+              <p class="pb-2 pt-2 text-center">
+                <a class="underline decoration-2 text-green-600 text-md pt-2" href='http://arxiv.org/abs/2601.00770v1' target="_blank">
+                  link
+                </a>
+                <br>
+                <a href='http://arxiv.org/abs/2601.00770v1' onclick="extractGSUrl(this.href)" class="underline decoration-2 text-green-600 text-md pt-2">
+                  Google Scholar
+                </a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr><tr>
           <td class="inline-block">
             <p class='font-bold text-black px-2 mx-1 text-xs w-24'>2025-12-31</p>
           </td>
